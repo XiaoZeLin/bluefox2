@@ -1,0 +1,1927 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::DeviceControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::DeviceControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category for device information and control.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::DeviceControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="772,195,921,237"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,426,555,467"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="765,347,928,403"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="759,426,934,467"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="753,491,941,533"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,571,355,613"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,606,728,647"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,571,155,613"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa8fe708bc7cb141db42b52031edb1f30"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aa8fe708bc7cb141db42b52031edb1f30">DeviceControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:aa8fe708bc7cb141db42b52031edb1f30"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html" title="Category for device information and control. ">mvIMPACT::acquire::GenICam::DeviceControl</a></b> object.  <a href="#aa8fe708bc7cb141db42b52031edb1f30">更多...</a><br /></td></tr>
+<tr class="separator:aa8fe708bc7cb141db42b52031edb1f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a3dc9c27ac4a77bac7c2590ef4cb56f15"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a3dc9c27ac4a77bac7c2590ef4cb56f15">deviceType</a></td></tr>
+<tr class="memdesc:a3dc9c27ac4a77bac7c2590ef4cb56f15"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the device type.  <a href="#a3dc9c27ac4a77bac7c2590ef4cb56f15">更多...</a><br /></td></tr>
+<tr class="separator:a3dc9c27ac4a77bac7c2590ef4cb56f15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0cf61d40c7454be475abefd64ab35d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a9a0cf61d40c7454be475abefd64ab35d">deviceScanType</a></td></tr>
+<tr class="memdesc:a9a0cf61d40c7454be475abefd64ab35d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Scan type of the sensor of the device.  <a href="#a9a0cf61d40c7454be475abefd64ab35d">更多...</a><br /></td></tr>
+<tr class="separator:a9a0cf61d40c7454be475abefd64ab35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea67bea3bea7c8c363bb3c6100e7004f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aea67bea3bea7c8c363bb3c6100e7004f">deviceVendorName</a></td></tr>
+<tr class="memdesc:aea67bea3bea7c8c363bb3c6100e7004f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Name of the manufacturer of the device.  <a href="#aea67bea3bea7c8c363bb3c6100e7004f">更多...</a><br /></td></tr>
+<tr class="separator:aea67bea3bea7c8c363bb3c6100e7004f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acff42ebd94b18ac01212b623a8a4812f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#acff42ebd94b18ac01212b623a8a4812f">deviceModelName</a></td></tr>
+<tr class="memdesc:acff42ebd94b18ac01212b623a8a4812f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Model of the device.  <a href="#acff42ebd94b18ac01212b623a8a4812f">更多...</a><br /></td></tr>
+<tr class="separator:acff42ebd94b18ac01212b623a8a4812f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90c0fed8938bd8a829d44b3edf559ad3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a90c0fed8938bd8a829d44b3edf559ad3">deviceFamilyName</a></td></tr>
+<tr class="memdesc:a90c0fed8938bd8a829d44b3edf559ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Identifier of the product family of the device.  <a href="#a90c0fed8938bd8a829d44b3edf559ad3">更多...</a><br /></td></tr>
+<tr class="separator:a90c0fed8938bd8a829d44b3edf559ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0fb1fea197c3afdb2c0181b7724acd37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a0fb1fea197c3afdb2c0181b7724acd37">deviceManufacturerInfo</a></td></tr>
+<tr class="memdesc:a0fb1fea197c3afdb2c0181b7724acd37"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Manufacturer information about the device.  <a href="#a0fb1fea197c3afdb2c0181b7724acd37">更多...</a><br /></td></tr>
+<tr class="separator:a0fb1fea197c3afdb2c0181b7724acd37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4149e3f594161773c8b1f825caa7ece8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a4149e3f594161773c8b1f825caa7ece8">deviceVersion</a></td></tr>
+<tr class="memdesc:a4149e3f594161773c8b1f825caa7ece8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. <a class="el" href="struct_version.html">Version</a> of the device.  <a href="#a4149e3f594161773c8b1f825caa7ece8">更多...</a><br /></td></tr>
+<tr class="separator:a4149e3f594161773c8b1f825caa7ece8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a411bf0b0af1108fc95d2670a73c1387c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a411bf0b0af1108fc95d2670a73c1387c">deviceFirmwareVersion</a></td></tr>
+<tr class="memdesc:a411bf0b0af1108fc95d2670a73c1387c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. <a class="el" href="struct_version.html">Version</a> of the firmware in the device.  <a href="#a411bf0b0af1108fc95d2670a73c1387c">更多...</a><br /></td></tr>
+<tr class="separator:a411bf0b0af1108fc95d2670a73c1387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b2853b6b68c5ce673c604bd260f61a0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a9b2853b6b68c5ce673c604bd260f61a0">mvDeviceFirmwareBuildDate</a></td></tr>
+<tr class="memdesc:a9b2853b6b68c5ce673c604bd260f61a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. The build time and date of the firmware.  <a href="#a9b2853b6b68c5ce673c604bd260f61a0">更多...</a><br /></td></tr>
+<tr class="separator:a9b2853b6b68c5ce673c604bd260f61a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad310abaa033e92efb1cd1d6fa8f67444"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ad310abaa033e92efb1cd1d6fa8f67444">deviceSerialNumber</a></td></tr>
+<tr class="memdesc:ad310abaa033e92efb1cd1d6fa8f67444"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s serial number.  <a href="#ad310abaa033e92efb1cd1d6fa8f67444">更多...</a><br /></td></tr>
+<tr class="separator:ad310abaa033e92efb1cd1d6fa8f67444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf1acdf754bef2f96225897e8982987"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aadf1acdf754bef2f96225897e8982987">deviceID</a></td></tr>
+<tr class="memdesc:aadf1acdf754bef2f96225897e8982987"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. This feature is deprecated (See DeviceSerialNumber).  <a href="#aadf1acdf754bef2f96225897e8982987">更多...</a><br /></td></tr>
+<tr class="separator:aadf1acdf754bef2f96225897e8982987"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93c4d5949d939e7be9e663b78c53a67a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a93c4d5949d939e7be9e663b78c53a67a">deviceUserID</a></td></tr>
+<tr class="memdesc:a93c4d5949d939e7be9e663b78c53a67a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. User-programmable device identifier.  <a href="#a93c4d5949d939e7be9e663b78c53a67a">更多...</a><br /></td></tr>
+<tr class="separator:a93c4d5949d939e7be9e663b78c53a67a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9b1cb64c3dc9af2ec6f7a2c90a465ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ab9b1cb64c3dc9af2ec6f7a2c90a465ae">deviceSFNCVersionMajor</a></td></tr>
+<tr class="memdesc:ab9b1cb64c3dc9af2ec6f7a2c90a465ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Major version of the Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML.  <a href="#ab9b1cb64c3dc9af2ec6f7a2c90a465ae">更多...</a><br /></td></tr>
+<tr class="separator:ab9b1cb64c3dc9af2ec6f7a2c90a465ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a941693542bcc2cda87f52d489e69c09c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a941693542bcc2cda87f52d489e69c09c">deviceSFNCVersionMinor</a></td></tr>
+<tr class="memdesc:a941693542bcc2cda87f52d489e69c09c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Minor version of the Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML.  <a href="#a941693542bcc2cda87f52d489e69c09c">更多...</a><br /></td></tr>
+<tr class="separator:a941693542bcc2cda87f52d489e69c09c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52d3bba7af5d4b694c7ae5ac0fb3d520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a52d3bba7af5d4b694c7ae5ac0fb3d520">deviceSFNCVersionSubMinor</a></td></tr>
+<tr class="memdesc:a52d3bba7af5d4b694c7ae5ac0fb3d520"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sub minor version of Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML.  <a href="#a52d3bba7af5d4b694c7ae5ac0fb3d520">更多...</a><br /></td></tr>
+<tr class="separator:a52d3bba7af5d4b694c7ae5ac0fb3d520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c1da302e9042160f42e6d7eb8e2b15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a2c1da302e9042160f42e6d7eb8e2b15a">deviceManifestEntrySelector</a></td></tr>
+<tr class="memdesc:a2c1da302e9042160f42e6d7eb8e2b15a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects the manifest entry to reference.  <a href="#a2c1da302e9042160f42e6d7eb8e2b15a">更多...</a><br /></td></tr>
+<tr class="separator:a2c1da302e9042160f42e6d7eb8e2b15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec803f5338cd284d08206c8881737ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aec803f5338cd284d08206c8881737ba2">deviceManifestXMLMajorVersion</a></td></tr>
+<tr class="memdesc:aec803f5338cd284d08206c8881737ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the major version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry.  <a href="#aec803f5338cd284d08206c8881737ba2">更多...</a><br /></td></tr>
+<tr class="separator:aec803f5338cd284d08206c8881737ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e20cdae0c0f4a3cdbf2b2ed1bccddf8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a8e20cdae0c0f4a3cdbf2b2ed1bccddf8">deviceManifestXMLMinorVersion</a></td></tr>
+<tr class="memdesc:a8e20cdae0c0f4a3cdbf2b2ed1bccddf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the minor version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry.  <a href="#a8e20cdae0c0f4a3cdbf2b2ed1bccddf8">更多...</a><br /></td></tr>
+<tr class="separator:a8e20cdae0c0f4a3cdbf2b2ed1bccddf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4e70b4af0f3ed3fab5419436279ed5f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ad4e70b4af0f3ed3fab5419436279ed5f">deviceManifestXMLSubMinorVersion</a></td></tr>
+<tr class="memdesc:ad4e70b4af0f3ed3fab5419436279ed5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the subminor version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry.  <a href="#ad4e70b4af0f3ed3fab5419436279ed5f">更多...</a><br /></td></tr>
+<tr class="separator:ad4e70b4af0f3ed3fab5419436279ed5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf29c5fda19d84c7243e8ba39f456ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a2cf29c5fda19d84c7243e8ba39f456ab">deviceManifestSchemaMajorVersion</a></td></tr>
+<tr class="memdesc:a2cf29c5fda19d84c7243e8ba39f456ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the major version number of the schema file of the selected manifest entry.  <a href="#a2cf29c5fda19d84c7243e8ba39f456ab">更多...</a><br /></td></tr>
+<tr class="separator:a2cf29c5fda19d84c7243e8ba39f456ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7bf26e02f8c8c0fc2cae2e4cb822080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ac7bf26e02f8c8c0fc2cae2e4cb822080">deviceManifestSchemaMinorVersion</a></td></tr>
+<tr class="memdesc:ac7bf26e02f8c8c0fc2cae2e4cb822080"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the minor version number of the schema file of the selected manifest entry.  <a href="#ac7bf26e02f8c8c0fc2cae2e4cb822080">更多...</a><br /></td></tr>
+<tr class="separator:ac7bf26e02f8c8c0fc2cae2e4cb822080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7149dfeeae3a7f842d169ba9618610a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a7149dfeeae3a7f842d169ba9618610a9">deviceManifestPrimaryURL</a></td></tr>
+<tr class="memdesc:a7149dfeeae3a7f842d169ba9618610a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the first URL to the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML device description file of the selected manifest entry.  <a href="#a7149dfeeae3a7f842d169ba9618610a9">更多...</a><br /></td></tr>
+<tr class="separator:a7149dfeeae3a7f842d169ba9618610a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e45ae9eba3ba1a6af50a3a2f4f789c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a3e45ae9eba3ba1a6af50a3a2f4f789c7">deviceManifestSecondaryURL</a></td></tr>
+<tr class="memdesc:a3e45ae9eba3ba1a6af50a3a2f4f789c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the second URL to the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML device description file of the selected manifest entry.  <a href="#a3e45ae9eba3ba1a6af50a3a2f4f789c7">更多...</a><br /></td></tr>
+<tr class="separator:a3e45ae9eba3ba1a6af50a3a2f4f789c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014a8319e9e0b720809caf29398e3b8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a014a8319e9e0b720809caf29398e3b8b">deviceTLType</a></td></tr>
+<tr class="memdesc:a014a8319e9e0b720809caf29398e3b8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Transport Layer type of the device.  <a href="#a014a8319e9e0b720809caf29398e3b8b">更多...</a><br /></td></tr>
+<tr class="separator:a014a8319e9e0b720809caf29398e3b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accff8360a9efcd221734d6ef80aa648f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#accff8360a9efcd221734d6ef80aa648f">deviceTLVersionMajor</a></td></tr>
+<tr class="memdesc:accff8360a9efcd221734d6ef80aa648f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Major version of the Transport Layer of the device.  <a href="#accff8360a9efcd221734d6ef80aa648f">更多...</a><br /></td></tr>
+<tr class="separator:accff8360a9efcd221734d6ef80aa648f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73106e374d696420cc8818f0587765b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a73106e374d696420cc8818f0587765b6">deviceTLVersionMinor</a></td></tr>
+<tr class="memdesc:a73106e374d696420cc8818f0587765b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Minor version of the Transport Layer of the device.  <a href="#a73106e374d696420cc8818f0587765b6">更多...</a><br /></td></tr>
+<tr class="separator:a73106e374d696420cc8818f0587765b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24e14cdc73f997aab20a1220a0352938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a24e14cdc73f997aab20a1220a0352938">deviceTLVersionSubMinor</a></td></tr>
+<tr class="memdesc:a24e14cdc73f997aab20a1220a0352938"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sub minor version of the Transport Layer of the device.  <a href="#a24e14cdc73f997aab20a1220a0352938">更多...</a><br /></td></tr>
+<tr class="separator:a24e14cdc73f997aab20a1220a0352938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1694f3b88bad5801fd2e020a025f22b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a1694f3b88bad5801fd2e020a025f22b6">deviceGenCPVersionMajor</a></td></tr>
+<tr class="memdesc:a1694f3b88bad5801fd2e020a025f22b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Major version of the GenCP protocol supported by the device.  <a href="#a1694f3b88bad5801fd2e020a025f22b6">更多...</a><br /></td></tr>
+<tr class="separator:a1694f3b88bad5801fd2e020a025f22b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40f7fb42f5891ef2e6dd5153c973a420"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a40f7fb42f5891ef2e6dd5153c973a420">deviceGenCPVersionMinor</a></td></tr>
+<tr class="memdesc:a40f7fb42f5891ef2e6dd5153c973a420"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Minor version of the GenCP protocol supported by the device.  <a href="#a40f7fb42f5891ef2e6dd5153c973a420">更多...</a><br /></td></tr>
+<tr class="separator:a40f7fb42f5891ef2e6dd5153c973a420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642ae01705aed49770f65e18da80e1a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a642ae01705aed49770f65e18da80e1a4">deviceMaxThroughput</a></td></tr>
+<tr class="memdesc:a642ae01705aed49770f65e18da80e1a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Maximum bandwidth of the data that can be streamed out of the device.  <a href="#a642ae01705aed49770f65e18da80e1a4">更多...</a><br /></td></tr>
+<tr class="separator:a642ae01705aed49770f65e18da80e1a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f72049fbb30bfcb8fd0ca6582ea5f16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a1f72049fbb30bfcb8fd0ca6582ea5f16">deviceConnectionSelector</a></td></tr>
+<tr class="memdesc:a1f72049fbb30bfcb8fd0ca6582ea5f16"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects which Connection of the device to control.  <a href="#a1f72049fbb30bfcb8fd0ca6582ea5f16">更多...</a><br /></td></tr>
+<tr class="separator:a1f72049fbb30bfcb8fd0ca6582ea5f16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2446d5d474ae2805b3f56050361686"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a8c2446d5d474ae2805b3f56050361686">deviceConnectionSpeed</a></td></tr>
+<tr class="memdesc:a8c2446d5d474ae2805b3f56050361686"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the speed of transmission of the specified Connection.  <a href="#a8c2446d5d474ae2805b3f56050361686">更多...</a><br /></td></tr>
+<tr class="separator:a8c2446d5d474ae2805b3f56050361686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68a59391330be62153347f31044a8b5e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a68a59391330be62153347f31044a8b5e">deviceConnectionStatus</a></td></tr>
+<tr class="memdesc:a68a59391330be62153347f31044a8b5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Indicates the status of the specified Connection.  <a href="#a68a59391330be62153347f31044a8b5e">更多...</a><br /></td></tr>
+<tr class="separator:a68a59391330be62153347f31044a8b5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ad8c7f703e9d2587dd376ee55a699da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a7ad8c7f703e9d2587dd376ee55a699da">deviceLinkSelector</a></td></tr>
+<tr class="memdesc:a7ad8c7f703e9d2587dd376ee55a699da"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects which Link of the device to control.  <a href="#a7ad8c7f703e9d2587dd376ee55a699da">更多...</a><br /></td></tr>
+<tr class="separator:a7ad8c7f703e9d2587dd376ee55a699da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa266deca5b9087f6f9ad1413bdff8b2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aa266deca5b9087f6f9ad1413bdff8b2b">deviceLinkSpeed</a></td></tr>
+<tr class="memdesc:aa266deca5b9087f6f9ad1413bdff8b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the speed of transmission negotiated on the specified Link.  <a href="#aa266deca5b9087f6f9ad1413bdff8b2b">更多...</a><br /></td></tr>
+<tr class="separator:aa266deca5b9087f6f9ad1413bdff8b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62067822dcac218a6126ece65f7bee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aa62067822dcac218a6126ece65f7bee1">deviceLinkThroughputLimitMode</a></td></tr>
+<tr class="memdesc:aa62067822dcac218a6126ece65f7bee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls if the DeviceLinkThroughputLimit is active.  <a href="#aa62067822dcac218a6126ece65f7bee1">更多...</a><br /></td></tr>
+<tr class="separator:aa62067822dcac218a6126ece65f7bee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a270167ff893fedfc0e457f880f061d90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a270167ff893fedfc0e457f880f061d90">deviceLinkThroughputLimit</a></td></tr>
+<tr class="memdesc:a270167ff893fedfc0e457f880f061d90"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Limits the maximum bandwidth of the data that will be streamed out by the device on the selected Link.  <a href="#a270167ff893fedfc0e457f880f061d90">更多...</a><br /></td></tr>
+<tr class="separator:a270167ff893fedfc0e457f880f061d90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad484aba1d95520e246b7712354aaaa47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ad484aba1d95520e246b7712354aaaa47">deviceLinkConnectionCount</a></td></tr>
+<tr class="memdesc:ad484aba1d95520e246b7712354aaaa47"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the number of physical connection of the device used by a particular Link.  <a href="#ad484aba1d95520e246b7712354aaaa47">更多...</a><br /></td></tr>
+<tr class="separator:ad484aba1d95520e246b7712354aaaa47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f500ffc1ec75a4776f685e243e653b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a32f500ffc1ec75a4776f685e243e653b">deviceLinkHeartbeatMode</a></td></tr>
+<tr class="memdesc:a32f500ffc1ec75a4776f685e243e653b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Activate or deactivate the Link's heartbeat.  <a href="#a32f500ffc1ec75a4776f685e243e653b">更多...</a><br /></td></tr>
+<tr class="separator:a32f500ffc1ec75a4776f685e243e653b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5615dbc0a4661b0eb0afeb403ea3b92a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a5615dbc0a4661b0eb0afeb403ea3b92a">deviceLinkHeartbeatTimeout</a></td></tr>
+<tr class="memdesc:a5615dbc0a4661b0eb0afeb403ea3b92a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Controls the current heartbeat timeout of the specific Link.  <a href="#a5615dbc0a4661b0eb0afeb403ea3b92a">更多...</a><br /></td></tr>
+<tr class="separator:a5615dbc0a4661b0eb0afeb403ea3b92a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adce2792c1b6e01ef1d14747360829b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#adce2792c1b6e01ef1d14747360829b1b">deviceLinkCommandTimeout</a></td></tr>
+<tr class="memdesc:adce2792c1b6e01ef1d14747360829b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Indicates the command timeout of the specified Link.  <a href="#adce2792c1b6e01ef1d14747360829b1b">更多...</a><br /></td></tr>
+<tr class="separator:adce2792c1b6e01ef1d14747360829b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fafc834ade170cbf44bdf052a803bac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a4fafc834ade170cbf44bdf052a803bac">deviceStreamChannelCount</a></td></tr>
+<tr class="memdesc:a4fafc834ade170cbf44bdf052a803bac"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the number of streaming channels supported by the device.  <a href="#a4fafc834ade170cbf44bdf052a803bac">更多...</a><br /></td></tr>
+<tr class="separator:a4fafc834ade170cbf44bdf052a803bac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2f0492412a8b7f54efdd97c6ee1925"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#acd2f0492412a8b7f54efdd97c6ee1925">deviceStreamChannelSelector</a></td></tr>
+<tr class="memdesc:acd2f0492412a8b7f54efdd97c6ee1925"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects the stream channel to control.  <a href="#acd2f0492412a8b7f54efdd97c6ee1925">更多...</a><br /></td></tr>
+<tr class="separator:acd2f0492412a8b7f54efdd97c6ee1925"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61134540d9f136f68b7d927a67fa43f7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a61134540d9f136f68b7d927a67fa43f7">deviceStreamChannelType</a></td></tr>
+<tr class="memdesc:a61134540d9f136f68b7d927a67fa43f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Reports the type of the stream channel.  <a href="#a61134540d9f136f68b7d927a67fa43f7">更多...</a><br /></td></tr>
+<tr class="separator:a61134540d9f136f68b7d927a67fa43f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99b4cbc9d0b74a503923a747c86d08b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a99b4cbc9d0b74a503923a747c86d08b7">deviceStreamChannelLink</a></td></tr>
+<tr class="memdesc:a99b4cbc9d0b74a503923a747c86d08b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Index of device's Link to use for streaming the specifed stream channel.  <a href="#a99b4cbc9d0b74a503923a747c86d08b7">更多...</a><br /></td></tr>
+<tr class="separator:a99b4cbc9d0b74a503923a747c86d08b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33540ea3ea9d775da3b88d3cde9d12f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a33540ea3ea9d775da3b88d3cde9d12f3">deviceStreamChannelEndianness</a></td></tr>
+<tr class="memdesc:a33540ea3ea9d775da3b88d3cde9d12f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Endianness of multi-byte pixel data for this stream.  <a href="#a33540ea3ea9d775da3b88d3cde9d12f3">更多...</a><br /></td></tr>
+<tr class="separator:a33540ea3ea9d775da3b88d3cde9d12f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a8350b203c1ac3603588e4185dd56d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a8a8350b203c1ac3603588e4185dd56d0">deviceStreamChannelPacketSize</a></td></tr>
+<tr class="memdesc:a8a8350b203c1ac3603588e4185dd56d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Specifies the stream packet size, in bytes, to send on the selected channel for a Transmitter or specifies the maximum packet size supported by a receiver.  <a href="#a8a8350b203c1ac3603588e4185dd56d0">更多...</a><br /></td></tr>
+<tr class="separator:a8a8350b203c1ac3603588e4185dd56d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fcd8c9da11cc57e21379adec8f3b4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aa5fcd8c9da11cc57e21379adec8f3b4e">deviceEventChannelCount</a></td></tr>
+<tr class="memdesc:aa5fcd8c9da11cc57e21379adec8f3b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the number of event channels supported by the device.  <a href="#aa5fcd8c9da11cc57e21379adec8f3b4e">更多...</a><br /></td></tr>
+<tr class="separator:aa5fcd8c9da11cc57e21379adec8f3b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e73c3db7079302dfd97230cc3220bc7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a5e73c3db7079302dfd97230cc3220bc7">deviceMessageChannelCount</a></td></tr>
+<tr class="memdesc:a5e73c3db7079302dfd97230cc3220bc7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated (See DeviceEventChannelCount).  <a href="#a5e73c3db7079302dfd97230cc3220bc7">更多...</a><br /></td></tr>
+<tr class="separator:a5e73c3db7079302dfd97230cc3220bc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a10f20106cff74b1a9e27bcdf0ce722"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a1a10f20106cff74b1a9e27bcdf0ce722">deviceCharacterSet</a></td></tr>
+<tr class="memdesc:a1a10f20106cff74b1a9e27bcdf0ce722"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Character set used by the strings of the device's bootstrap registers.  <a href="#a1a10f20106cff74b1a9e27bcdf0ce722">更多...</a><br /></td></tr>
+<tr class="separator:a1a10f20106cff74b1a9e27bcdf0ce722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21e184091123a7e595203dc108555817"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a21e184091123a7e595203dc108555817">deviceReset</a></td></tr>
+<tr class="memdesc:a21e184091123a7e595203dc108555817"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Resets the device to its power up state.  <a href="#a21e184091123a7e595203dc108555817">更多...</a><br /></td></tr>
+<tr class="separator:a21e184091123a7e595203dc108555817"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62fc0ade07d7b47422b41314eba5d064"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a62fc0ade07d7b47422b41314eba5d064">deviceIndicatorMode</a></td></tr>
+<tr class="memdesc:a62fc0ade07d7b47422b41314eba5d064"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls the behavior of the indicators (such as LEDs) showing the status of the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>.  <a href="#a62fc0ade07d7b47422b41314eba5d064">更多...</a><br /></td></tr>
+<tr class="separator:a62fc0ade07d7b47422b41314eba5d064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63d1e4f414c44a8accb0cd5f06708866"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a63d1e4f414c44a8accb0cd5f06708866">deviceFeaturePersistenceStart</a></td></tr>
+<tr class="memdesc:a63d1e4f414c44a8accb0cd5f06708866"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Indicate to the device and <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML to get ready for persisting of all streamable features.  <a href="#a63d1e4f414c44a8accb0cd5f06708866">更多...</a><br /></td></tr>
+<tr class="separator:a63d1e4f414c44a8accb0cd5f06708866"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537e7e4f92ab052ef3b309a2151da1d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a537e7e4f92ab052ef3b309a2151da1d5">deviceFeaturePersistenceEnd</a></td></tr>
+<tr class="memdesc:a537e7e4f92ab052ef3b309a2151da1d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Indicate to the device the end of feature persistence.  <a href="#a537e7e4f92ab052ef3b309a2151da1d5">更多...</a><br /></td></tr>
+<tr class="separator:a537e7e4f92ab052ef3b309a2151da1d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a081c8a75b02daceb90b8606542f7efaf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a081c8a75b02daceb90b8606542f7efaf">deviceRegistersStreamingStart</a></td></tr>
+<tr class="memdesc:a081c8a75b02daceb90b8606542f7efaf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Prepare the device for registers streaming without checking for consistency.  <a href="#a081c8a75b02daceb90b8606542f7efaf">更多...</a><br /></td></tr>
+<tr class="separator:a081c8a75b02daceb90b8606542f7efaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae36496c8712f92e9ebd582d80299e466"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ae36496c8712f92e9ebd582d80299e466">deviceRegistersStreamingEnd</a></td></tr>
+<tr class="memdesc:ae36496c8712f92e9ebd582d80299e466"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Announce the end of registers streaming.  <a href="#ae36496c8712f92e9ebd582d80299e466">更多...</a><br /></td></tr>
+<tr class="separator:ae36496c8712f92e9ebd582d80299e466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9ff87f7a218936a72c833cdc6f5475d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ad9ff87f7a218936a72c833cdc6f5475d">deviceRegistersCheck</a></td></tr>
+<tr class="memdesc:ad9ff87f7a218936a72c833cdc6f5475d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Perform the validation of the current register set for consistency.  <a href="#ad9ff87f7a218936a72c833cdc6f5475d">更多...</a><br /></td></tr>
+<tr class="separator:ad9ff87f7a218936a72c833cdc6f5475d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25501f7d3647fe89198aa4d5c5044e8b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a25501f7d3647fe89198aa4d5c5044e8b">deviceRegistersValid</a></td></tr>
+<tr class="memdesc:a25501f7d3647fe89198aa4d5c5044e8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Returns if the current register set is valid and consistent.  <a href="#a25501f7d3647fe89198aa4d5c5044e8b">更多...</a><br /></td></tr>
+<tr class="separator:a25501f7d3647fe89198aa4d5c5044e8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfdc5166018186879414681ad6a7e7d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#adfdc5166018186879414681ad6a7e7d7">deviceRegistersEndianness</a></td></tr>
+<tr class="memdesc:adfdc5166018186879414681ad6a7e7d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Endianness of the registers of the device.  <a href="#adfdc5166018186879414681ad6a7e7d7">更多...</a><br /></td></tr>
+<tr class="separator:adfdc5166018186879414681ad6a7e7d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae11bd1ccc67e69edd3e666c79fff778d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ae11bd1ccc67e69edd3e666c79fff778d">deviceTemperatureSelector</a></td></tr>
+<tr class="memdesc:ae11bd1ccc67e69edd3e666c79fff778d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the location within the device, where the temperature will be measured.  <a href="#ae11bd1ccc67e69edd3e666c79fff778d">更多...</a><br /></td></tr>
+<tr class="separator:ae11bd1ccc67e69edd3e666c79fff778d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae76cb8bd59c648976155dcfd93c03bd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ae76cb8bd59c648976155dcfd93c03bd4">deviceTemperature</a></td></tr>
+<tr class="memdesc:ae76cb8bd59c648976155dcfd93c03bd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> temperature in degrees Celsius (C).  <a href="#ae76cb8bd59c648976155dcfd93c03bd4">更多...</a><br /></td></tr>
+<tr class="separator:ae76cb8bd59c648976155dcfd93c03bd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dad6390da7a4e7914a3381b7139efb0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a6dad6390da7a4e7914a3381b7139efb0">deviceClockSelector</a></td></tr>
+<tr class="memdesc:a6dad6390da7a4e7914a3381b7139efb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the clock frequency to access from the device.  <a href="#a6dad6390da7a4e7914a3381b7139efb0">更多...</a><br /></td></tr>
+<tr class="separator:a6dad6390da7a4e7914a3381b7139efb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd853c8c3a5cbe828d9c7f130224b2e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#acd853c8c3a5cbe828d9c7f130224b2e1">deviceClockFrequency</a></td></tr>
+<tr class="memdesc:acd853c8c3a5cbe828d9c7f130224b2e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the frequency of the selected Clock.  <a href="#acd853c8c3a5cbe828d9c7f130224b2e1">更多...</a><br /></td></tr>
+<tr class="separator:acd853c8c3a5cbe828d9c7f130224b2e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff5c54a3673e4ccdbe44380b0ac7dbcc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aff5c54a3673e4ccdbe44380b0ac7dbcc">deviceSerialPortSelector</a></td></tr>
+<tr class="memdesc:aff5c54a3673e4ccdbe44380b0ac7dbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which serial port of the device to control.  <a href="#aff5c54a3673e4ccdbe44380b0ac7dbcc">更多...</a><br /></td></tr>
+<tr class="separator:aff5c54a3673e4ccdbe44380b0ac7dbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a690a42781160cda6d9862185868a27ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a690a42781160cda6d9862185868a27ec">deviceSerialPortBaudRate</a></td></tr>
+<tr class="memdesc:a690a42781160cda6d9862185868a27ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature controls the baud rate used by the selected serial port.  <a href="#a690a42781160cda6d9862185868a27ec">更多...</a><br /></td></tr>
+<tr class="separator:a690a42781160cda6d9862185868a27ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac2c5f9af3720bdd277c34ccda97e7a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aac2c5f9af3720bdd277c34ccda97e7a6">timestamp</a></td></tr>
+<tr class="memdesc:aac2c5f9af3720bdd277c34ccda97e7a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Reports the current value of the device timestamp counter.  <a href="#aac2c5f9af3720bdd277c34ccda97e7a6">更多...</a><br /></td></tr>
+<tr class="separator:aac2c5f9af3720bdd277c34ccda97e7a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10806972cf9d8272b34769de825db3d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a10806972cf9d8272b34769de825db3d4">timestampReset</a></td></tr>
+<tr class="memdesc:a10806972cf9d8272b34769de825db3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Resets the current value of the device timestamp counter.  <a href="#a10806972cf9d8272b34769de825db3d4">更多...</a><br /></td></tr>
+<tr class="separator:a10806972cf9d8272b34769de825db3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f7d5ffaf2717052f55c6eb3ddaa8e35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a9f7d5ffaf2717052f55c6eb3ddaa8e35">timestampLatch</a></td></tr>
+<tr class="memdesc:a9f7d5ffaf2717052f55c6eb3ddaa8e35"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Latches the current timestamp counter into TimestampLatchValue.  <a href="#a9f7d5ffaf2717052f55c6eb3ddaa8e35">更多...</a><br /></td></tr>
+<tr class="separator:a9f7d5ffaf2717052f55c6eb3ddaa8e35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c3e26d9ac8eae5af54a267811451eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a05c3e26d9ac8eae5af54a267811451eb">timestampLatchValue</a></td></tr>
+<tr class="memdesc:a05c3e26d9ac8eae5af54a267811451eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the latched value of the timestamp counter.  <a href="#a05c3e26d9ac8eae5af54a267811451eb">更多...</a><br /></td></tr>
+<tr class="separator:a05c3e26d9ac8eae5af54a267811451eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e49d3e69035f6221d919a791e9f739"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a02e49d3e69035f6221d919a791e9f739">mvDeviceTemperatureRaw</a></td></tr>
+<tr class="memdesc:a02e49d3e69035f6221d919a791e9f739"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> temperature in degrees Celsius (C).  <a href="#a02e49d3e69035f6221d919a791e9f739">更多...</a><br /></td></tr>
+<tr class="separator:a02e49d3e69035f6221d919a791e9f739"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b212b9f38073690363d3a3ffbce955"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a56b212b9f38073690363d3a3ffbce955">mvDeviceTemperatureUpperLimit</a></td></tr>
+<tr class="memdesc:a56b212b9f38073690363d3a3ffbce955"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Upper limit in degrees Celsius(C) for the TemperatureOutOfRange signal.  <a href="#a56b212b9f38073690363d3a3ffbce955">更多...</a><br /></td></tr>
+<tr class="separator:a56b212b9f38073690363d3a3ffbce955"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0958db7ce440469a6c46cbe67e43e539"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a0958db7ce440469a6c46cbe67e43e539">mvDeviceTemperatureLowerLimit</a></td></tr>
+<tr class="memdesc:a0958db7ce440469a6c46cbe67e43e539"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Lower limit in degrees Celsius(C) for the TemperatureOutOfRange signal.  <a href="#a0958db7ce440469a6c46cbe67e43e539">更多...</a><br /></td></tr>
+<tr class="separator:a0958db7ce440469a6c46cbe67e43e539"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f6f3385951482b605c5cf9a096741fa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a8f6f3385951482b605c5cf9a096741fa">mvDeviceTemperatureLimitHysteresis</a></td></tr>
+<tr class="memdesc:a8f6f3385951482b605c5cf9a096741fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Hysteresis in degrees Celsius(C) for temperature limits.  <a href="#a8f6f3385951482b605c5cf9a096741fa">更多...</a><br /></td></tr>
+<tr class="separator:a8f6f3385951482b605c5cf9a096741fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1a0fb21b8f3474949b2e854e23d5674"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ad1a0fb21b8f3474949b2e854e23d5674">mvDeviceClockFrequency</a></td></tr>
+<tr class="memdesc:ad1a0fb21b8f3474949b2e854e23d5674"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Clock frequency of the image sensor of the camera.  <a href="#ad1a0fb21b8f3474949b2e854e23d5674">更多...</a><br /></td></tr>
+<tr class="separator:ad1a0fb21b8f3474949b2e854e23d5674"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab22c5302456ba77dc4ca840edd714703"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ab22c5302456ba77dc4ca840edd714703">mvDeviceClockGranularity</a></td></tr>
+<tr class="memdesc:ab22c5302456ba77dc4ca840edd714703"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Special register to configure the clock granularity for LUPA sensors.  <a href="#ab22c5302456ba77dc4ca840edd714703">更多...</a><br /></td></tr>
+<tr class="separator:ab22c5302456ba77dc4ca840edd714703"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1b2a71a999f0078f7f625a066bc1a1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ab1b2a71a999f0078f7f625a066bc1a1f">mvDeviceSensorName</a></td></tr>
+<tr class="memdesc:ab1b2a71a999f0078f7f625a066bc1a1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Shows the name of the sensor.  <a href="#ab1b2a71a999f0078f7f625a066bc1a1f">更多...</a><br /></td></tr>
+<tr class="separator:ab1b2a71a999f0078f7f625a066bc1a1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51865e07a49ab782998b913c8fb789b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a51865e07a49ab782998b913c8fb789b4">mvDeviceSensorColorMode</a></td></tr>
+<tr class="memdesc:a51865e07a49ab782998b913c8fb789b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Shows color mode of the sensor.  <a href="#a51865e07a49ab782998b913c8fb789b4">更多...</a><br /></td></tr>
+<tr class="separator:a51865e07a49ab782998b913c8fb789b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a717aab62ac9cc3db3531db15a20524cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a717aab62ac9cc3db3531db15a20524cd">mvDeviceSensor</a></td></tr>
+<tr class="memdesc:a717aab62ac9cc3db3531db15a20524cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the sensor interface.  <a href="#a717aab62ac9cc3db3531db15a20524cd">更多...</a><br /></td></tr>
+<tr class="separator:a717aab62ac9cc3db3531db15a20524cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6f8194d5d7cf838ce906f2e66aff2a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#ac6f8194d5d7cf838ce906f2e66aff2a5">mvDeviceFPGAVersion</a></td></tr>
+<tr class="memdesc:ac6f8194d5d7cf838ce906f2e66aff2a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Shows version number of the FPGA.  <a href="#ac6f8194d5d7cf838ce906f2e66aff2a5">更多...</a><br /></td></tr>
+<tr class="separator:ac6f8194d5d7cf838ce906f2e66aff2a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0cc359d7bf6588c9143fb5a5adadff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a0e0cc359d7bf6588c9143fb5a5adadff">mvDeviceFirmwareSource</a></td></tr>
+<tr class="memdesc:a0e0cc359d7bf6588c9143fb5a5adadff"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Shows the location from where the firmware was loaded.  <a href="#a0e0cc359d7bf6588c9143fb5a5adadff">更多...</a><br /></td></tr>
+<tr class="separator:a0e0cc359d7bf6588c9143fb5a5adadff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bcab490cda64eba7273899ba2298d81"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a1bcab490cda64eba7273899ba2298d81">mvDeviceProcessingUnitSelector</a></td></tr>
+<tr class="memdesc:a1bcab490cda64eba7273899ba2298d81"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects the device processing unit.  <a href="#a1bcab490cda64eba7273899ba2298d81">更多...</a><br /></td></tr>
+<tr class="separator:a1bcab490cda64eba7273899ba2298d81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a386dbee5247630990cad0156170f837a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a386dbee5247630990cad0156170f837a">mvDeviceProcessingUnit</a></td></tr>
+<tr class="memdesc:a386dbee5247630990cad0156170f837a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. The processing unit to activate for the selected processing unit.  <a href="#a386dbee5247630990cad0156170f837a">更多...</a><br /></td></tr>
+<tr class="separator:a386dbee5247630990cad0156170f837a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1210386760746822691ccf23f0fe9d4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a1210386760746822691ccf23f0fe9d4e">mvDeviceStatusLEDEnable</a></td></tr>
+<tr class="memdesc:a1210386760746822691ccf23f0fe9d4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. If enabled, the color of the LED changes depending on the state of the camera. Otherwise the LED is Off.  <a href="#a1210386760746822691ccf23f0fe9d4e">更多...</a><br /></td></tr>
+<tr class="separator:a1210386760746822691ccf23f0fe9d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a373e023dc2b65b6df34216eeffb895ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a373e023dc2b65b6df34216eeffb895ec">mvDevicePowerMode</a></td></tr>
+<tr class="memdesc:a373e023dc2b65b6df34216eeffb895ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the device power mode.  <a href="#a373e023dc2b65b6df34216eeffb895ec">更多...</a><br /></td></tr>
+<tr class="separator:a373e023dc2b65b6df34216eeffb895ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18e2fcf8bade18c057a02002aa42379b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a18e2fcf8bade18c057a02002aa42379b">mvDeviceStandbyTimeoutEnable</a></td></tr>
+<tr class="memdesc:a18e2fcf8bade18c057a02002aa42379b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. If enabled, the device switch to standby after a configurable time if no register is read.  <a href="#a18e2fcf8bade18c057a02002aa42379b">更多...</a><br /></td></tr>
+<tr class="separator:a18e2fcf8bade18c057a02002aa42379b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ffcd2e5c7d071fa6a7ea61cdeb8ccfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#a1ffcd2e5c7d071fa6a7ea61cdeb8ccfe">mvDeviceStandbyTimeout</a></td></tr>
+<tr class="memdesc:a1ffcd2e5c7d071fa6a7ea61cdeb8ccfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the time in seconds after which the device automatically switches to standby if no register is read.  <a href="#a1ffcd2e5c7d071fa6a7ea61cdeb8ccfe">更多...</a><br /></td></tr>
+<tr class="separator:a1ffcd2e5c7d071fa6a7ea61cdeb8ccfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category for device information and control. </p>
+<p>This group contains classes and functions that will be available if the device is used with the <b>mvIMPACT::acquire::dilGenICam</b> interface layout. A category for device information and control. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aa8fe708bc7cb141db42b52031edb1f30"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::DeviceControl::DeviceControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html" title="Category for device information and control. ">mvIMPACT::acquire::GenICam::DeviceControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_aa8fe708bc7cb141db42b52031edb1f30_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_aa8fe708bc7cb141db42b52031edb1f30_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_aa8fe708bc7cb141db42b52031edb1f30_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control_aa8fe708bc7cb141db42b52031edb1f30_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="435,20,597,76"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="224,77,387,133"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="224,157,387,213"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="441,201,591,242"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="645,38,864,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="924,5,1073,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="912,70,1085,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1134,92,1362,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1411,99,1635,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="435,107,597,163"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="671,114,839,155"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a1a10f20106cff74b1a9e27bcdf0ce722"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceCharacterSet</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Character set used by the strings of the device's bootstrap registers. </p>
+<p>Character set used by the strings of the device's bootstrap registers.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>UTF8</b> (Display string: 'UTF 8'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> use UTF8 character set.</li>
+<li><b>ASCII</b> (Display string: 'ASCII'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> use ASCII character set.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acd853c8c3a5cbe828d9c7f130224b2e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceClockFrequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the frequency of the selected Clock. </p>
+<p>Returns the frequency of the selected Clock. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6dad6390da7a4e7914a3381b7139efb0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceClockSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the clock frequency to access from the device. </p>
+<p>Selects the clock frequency to access from the device.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Sensor</b> (Display string: 'Sensor'): Clock frequency of the image sensor of the camera.</li>
+<li><b>SensorDigitization</b> (Display string: 'Sensor Digitization'): Clock frequency of the camera A/D conversion stage.</li>
+<li><b>CameraLink</b> (Display string: 'Camera Link'): Frequency of the Camera Link clock.</li>
+<li><b>DeviceSpecific</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Clock Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1f72049fbb30bfcb8fd0ca6582ea5f16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceConnectionSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects which Connection of the device to control. </p>
+<p>Selects which Connection of the device to control. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c2446d5d474ae2805b3f56050361686"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceConnectionSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the speed of transmission of the specified Connection. </p>
+<p>Indicates the speed of transmission of the specified Connection </p>
+
+</div>
+</div>
+<a class="anchor" id="a68a59391330be62153347f31044a8b5e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceConnectionStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Indicates the status of the specified Connection. </p>
+<p>Indicates the status of the specified Connection.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Active</b> (Display string: 'Active'): Connection is in use.</li>
+<li><b>Inactive</b> (Display string: 'Inactive'): Connection is not in use.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5fcd8c9da11cc57e21379adec8f3b4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceEventChannelCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the number of event channels supported by the device. </p>
+<p>Indicates the number of event channels supported by the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a90c0fed8938bd8a829d44b3edf559ad3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceFamilyName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Identifier of the product family of the device. </p>
+<p>Identifier of the product family of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a537e7e4f92ab052ef3b309a2151da1d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceFeaturePersistenceEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Indicate to the device the end of feature persistence. </p>
+<p>Indicate to the device the end of feature persistence. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63d1e4f414c44a8accb0cd5f06708866"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceFeaturePersistenceStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Indicate to the device and <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML to get ready for persisting of all streamable features. </p>
+<p>Indicate to the device and <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML to get ready for persisting of all streamable features. </p>
+
+</div>
+</div>
+<a class="anchor" id="a411bf0b0af1108fc95d2670a73c1387c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceFirmwareVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. <a class="el" href="struct_version.html">Version</a> of the firmware in the device. </p>
+<p><a class="el" href="struct_version.html">Version</a> of the firmware in the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1694f3b88bad5801fd2e020a025f22b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceGenCPVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Major version of the GenCP protocol supported by the device. </p>
+<p>Major version of the GenCP protocol supported by the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a40f7fb42f5891ef2e6dd5153c973a420"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceGenCPVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Minor version of the GenCP protocol supported by the device. </p>
+<p>Minor version of the GenCP protocol supported by the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="aadf1acdf754bef2f96225897e8982987"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. This feature is deprecated (See DeviceSerialNumber). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000037">弃用:</a></b></dt><dd>This feature is deprecated (See DeviceSerialNumber). It was representing the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> unique identifier (serial number). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a62fc0ade07d7b47422b41314eba5d064"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceIndicatorMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls the behavior of the indicators (such as LEDs) showing the status of the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>. </p>
+<p>Controls the behavior of the indicators (such as LEDs) showing the status of the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Inactive</b> (Display string: 'Inactive'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s indicators are inactive (Off).</li>
+<li><b>Active</b> (Display string: 'Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s indicators are active showing their respective status.</li>
+<li><b>ErrorStatus</b> (Display string: 'Error Status'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s indicators are inactive unless an error occurs.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adce2792c1b6e01ef1d14747360829b1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkCommandTimeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Indicates the command timeout of the specified Link. </p>
+<p>Indicates the command timeout of the specified Link. This corresponds to the maximum response time of the device for a command sent on that link. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad484aba1d95520e246b7712354aaaa47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkConnectionCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the number of physical connection of the device used by a particular Link. </p>
+<p>Returns the number of physical connection of the device used by a particular Link. </p>
+
+</div>
+</div>
+<a class="anchor" id="a32f500ffc1ec75a4776f685e243e653b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkHeartbeatMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Activate or deactivate the Link's heartbeat. </p>
+<p>Activate or deactivate the Link's heartbeat.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>On</b> (Display string: 'On'): Enables the Link heartbeat.</li>
+<li><b>Off</b> (Display string: 'Off'): Disables the Link heartbeat.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5615dbc0a4661b0eb0afeb403ea3b92a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkHeartbeatTimeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Controls the current heartbeat timeout of the specific Link. </p>
+<p>Controls the current heartbeat timeout of the specific Link. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7ad8c7f703e9d2587dd376ee55a699da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects which Link of the device to control. </p>
+<p>Selects which Link of the device to control. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa266deca5b9087f6f9ad1413bdff8b2b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the speed of transmission negotiated on the specified Link. </p>
+<p>Indicates the speed of transmission negotiated on the specified Link. </p>
+
+</div>
+</div>
+<a class="anchor" id="a270167ff893fedfc0e457f880f061d90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkThroughputLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Limits the maximum bandwidth of the data that will be streamed out by the device on the selected Link. </p>
+<p>Limits the maximum bandwidth of the data that will be streamed out by the device on the selected Link. If necessary, delays will be uniformly inserted between transport layer packets in order to control the peak bandwidth. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa62067822dcac218a6126ece65f7bee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceLinkThroughputLimitMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls if the DeviceLinkThroughputLimit is active. </p>
+<p>Controls if the DeviceLinkThroughputLimit is active. When disabled, lower level TL specific features are expected to control the throughput. When enabled, DeviceLinkThroughputLimit controls the overall throughput.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>On</b> (Display string: 'On'): Enables the DeviceLinkThroughputLimit feature.</li>
+<li><b>Off</b> (Display string: 'Off'): Disables the DeviceLinkThroughputLimit feature.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c1da302e9042160f42e6d7eb8e2b15a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestEntrySelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects the manifest entry to reference. </p>
+<p>Selects the manifest entry to reference. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7149dfeeae3a7f842d169ba9618610a9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestPrimaryURL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the first URL to the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML device description file of the selected manifest entry. </p>
+<p>Indicates the first URL to the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML device description file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2cf29c5fda19d84c7243e8ba39f456ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestSchemaMajorVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the major version number of the schema file of the selected manifest entry. </p>
+<p>Indicates the major version number of the schema file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7bf26e02f8c8c0fc2cae2e4cb822080"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestSchemaMinorVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the minor version number of the schema file of the selected manifest entry. </p>
+<p>Indicates the minor version number of the schema file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3e45ae9eba3ba1a6af50a3a2f4f789c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestSecondaryURL</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the second URL to the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML device description file of the selected manifest entry. </p>
+<p>Indicates the second URL to the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML device description file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="aec803f5338cd284d08206c8881737ba2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestXMLMajorVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the major version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry. </p>
+<p>Indicates the major version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8e20cdae0c0f4a3cdbf2b2ed1bccddf8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestXMLMinorVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the minor version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry. </p>
+<p>Indicates the minor version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad4e70b4af0f3ed3fab5419436279ed5f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManifestXMLSubMinorVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the subminor version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry. </p>
+<p>Indicates the subminor version number of the <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML file of the selected manifest entry. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0fb1fea197c3afdb2c0181b7724acd37"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceManufacturerInfo</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Manufacturer information about the device. </p>
+<p>Manufacturer information about the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a642ae01705aed49770f65e18da80e1a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceMaxThroughput</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Maximum bandwidth of the data that can be streamed out of the device. </p>
+<p>Maximum bandwidth of the data that can be streamed out of the device. This can be used to estimate if the physical connection(s) can sustain transfer of free-running images from the camera at its maximum speed. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e73c3db7079302dfd97230cc3220bc7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceMessageChannelCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated (See DeviceEventChannelCount). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000038">弃用:</a></b></dt><dd>This feature is deprecated (See DeviceEventChannelCount). It indicates the number of message/event channels supported by the device. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acff42ebd94b18ac01212b623a8a4812f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceModelName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Model of the device. </p>
+<p>Model of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9ff87f7a218936a72c833cdc6f5475d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceRegistersCheck</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Perform the validation of the current register set for consistency. </p>
+<p>Perform the validation of the current register set for consistency. This will update the DeviceRegistersValid flag. </p>
+
+</div>
+</div>
+<a class="anchor" id="adfdc5166018186879414681ad6a7e7d7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceRegistersEndianness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Endianness of the registers of the device. </p>
+<p>Endianness of the registers of the device.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Big</b> (Display string: 'Big'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s registers are big Endian.</li>
+<li><b>Little</b> (Display string: 'Little'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s registers are little Endian.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae36496c8712f92e9ebd582d80299e466"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceRegistersStreamingEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Announce the end of registers streaming. </p>
+<p>Announce the end of registers streaming. This will do a register set validation for consistency and activate it. This will also update the DeviceRegistersValid flag. </p>
+
+</div>
+</div>
+<a class="anchor" id="a081c8a75b02daceb90b8606542f7efaf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceRegistersStreamingStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Prepare the device for registers streaming without checking for consistency. </p>
+<p>Prepare the device for registers streaming without checking for consistency. </p>
+
+</div>
+</div>
+<a class="anchor" id="a25501f7d3647fe89198aa4d5c5044e8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceRegistersValid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Returns if the current register set is valid and consistent. </p>
+<p>Returns if the current register set is valid and consistent. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21e184091123a7e595203dc108555817"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceReset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Resets the device to its power up state. </p>
+<p>Resets the device to its power up state. After reset, the device must be rediscovered. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a0cf61d40c7454be475abefd64ab35d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceScanType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Scan type of the sensor of the device. </p>
+<p>Scan type of the sensor of the device.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Areascan</b> (Display string: 'Areascan'): 2D sensor.</li>
+<li><b>Linescan</b> (Display string: 'Linescan'): 1D sensor.</li>
+<li><b>Areascan3D</b> (Display string: 'Areascan 3 D'): device outputs 2D range image.</li>
+<li><b>Linescan3D</b> (Display string: 'Linescan 3 D'): device outputs 1D range image.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad310abaa033e92efb1cd1d6fa8f67444"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceSerialNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s serial number. </p>
+<p><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a>'s serial number. This string is a unique identifier of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a690a42781160cda6d9862185868a27ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceSerialPortBaudRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature controls the baud rate used by the selected serial port. </p>
+<p>This feature controls the baud rate used by the selected serial port.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Baud9600</b> (Display string: 'Baud 9600'): Serial port speed of 9600 baud.</li>
+<li><b>Baud19200</b> (Display string: 'Baud 19200'): Serial port speed of 19200 baud.</li>
+<li><b>Baud38400</b> (Display string: 'Baud 38400'): Serial port speed of 38400 baud.</li>
+<li><b>Baud57600</b> (Display string: 'Baud 57600'): Serial port speed of 57600 baud.</li>
+<li><b>Baud115200</b> (Display string: 'Baud 115200'): Serial port speed of 115200 baud.</li>
+<li><b>Baud230400</b> (Display string: 'Baud 230400'): Serial port speed of 230400 baud.</li>
+<li><b>Baud460800</b> (Display string: 'Baud 460800'): Serial port speed of 460800 baud.</li>
+<li><b>Baud921600</b> (Display string: 'Baud 921600'): Serial port speed of 921600 baud.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff5c54a3673e4ccdbe44380b0ac7dbcc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceSerialPortSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which serial port of the device to control. </p>
+<p>Selects which serial port of the device to control.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>CameraLink</b> (Display string: 'Camera Link'): Serial port associated to the Camera link connection.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab9b1cb64c3dc9af2ec6f7a2c90a465ae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceSFNCVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Major version of the Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML. </p>
+<p>Major version of the Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML. </p>
+
+</div>
+</div>
+<a class="anchor" id="a941693542bcc2cda87f52d489e69c09c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceSFNCVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Minor version of the Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML. </p>
+<p>Minor version of the Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML. </p>
+
+</div>
+</div>
+<a class="anchor" id="a52d3bba7af5d4b694c7ae5ac0fb3d520"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceSFNCVersionSubMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sub minor version of Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML. </p>
+<p>Sub minor version of Standard Features Naming Convention that was used to create the device's <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> XML. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4fafc834ade170cbf44bdf052a803bac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceStreamChannelCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the number of streaming channels supported by the device. </p>
+<p>Indicates the number of streaming channels supported by the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a33540ea3ea9d775da3b88d3cde9d12f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceStreamChannelEndianness</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Endianness of multi-byte pixel data for this stream. </p>
+<p>Endianness of multi-byte pixel data for this stream.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Big</b> (Display string: 'Big'): Stream channel data is big Endian.</li>
+<li><b>Little</b> (Display string: 'Little'): Stream channel data is little Endian.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a99b4cbc9d0b74a503923a747c86d08b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceStreamChannelLink</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Index of device's Link to use for streaming the specifed stream channel. </p>
+<p>Index of device's Link to use for streaming the specifed stream channel. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8a8350b203c1ac3603588e4185dd56d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceStreamChannelPacketSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Specifies the stream packet size, in bytes, to send on the selected channel for a Transmitter or specifies the maximum packet size supported by a receiver. </p>
+<p>Specifies the stream packet size, in bytes, to send on the selected channel for a Transmitter or specifies the maximum packet size supported by a receiver. </p>
+
+</div>
+</div>
+<a class="anchor" id="acd2f0492412a8b7f54efdd97c6ee1925"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceStreamChannelSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects the stream channel to control. </p>
+<p>Selects the stream channel to control. </p>
+
+</div>
+</div>
+<a class="anchor" id="a61134540d9f136f68b7d927a67fa43f7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceStreamChannelType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Reports the type of the stream channel. </p>
+<p>Reports the type of the stream channel.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Transmitter</b> (Display string: 'Transmitter'): Data stream transmitter channel.</li>
+<li><b>Receiver</b> (Display string: 'Receiver'): Data stream receiver channel.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae76cb8bd59c648976155dcfd93c03bd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceTemperature</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> temperature in degrees Celsius (C). </p>
+<p><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> temperature in degrees Celsius (C). It is measured at the location selected by DeviceTemperatureSelector. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae11bd1ccc67e69edd3e666c79fff778d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceTemperatureSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the location within the device, where the temperature will be measured. </p>
+<p>Selects the location within the device, where the temperature will be measured.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Sensor</b> (Display string: 'Sensor'): Temperature of the image sensor of the camera.</li>
+<li><b>Mainboard</b> (Display string: 'Mainboard'): Temperature of the device's mainboard.</li>
+<li><b>XLamp</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Selector')</li>
+<li><b>SensorCMVx000</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Selector')</li>
+<li><b>SensorInternal</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a014a8319e9e0b720809caf29398e3b8b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceTLType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Transport Layer type of the device. </p>
+<p>Transport Layer type of the device.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>GigEVision</b> (Display string: 'GigE Vision'): GigE Vision.</li>
+<li><b>CameraLink</b> (Display string: 'Camera Link'): Camera Link.</li>
+<li><b>CameraLinkHS</b> (Display string: 'Camera Link HS'): Camera Link High Speed.</li>
+<li><b>CoaXPress</b> (Display string: 'CoaXPress'): CoaXPress.</li>
+<li><b>USB3Vision</b> (Display string: 'USB3 Vision'): USB3 Vision.</li>
+<li><b>Custom</b> (Display string: 'Custom'): Custom Transport Layer.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="accff8360a9efcd221734d6ef80aa648f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceTLVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Major version of the Transport Layer of the device. </p>
+<p>Major version of the Transport Layer of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a73106e374d696420cc8818f0587765b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceTLVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Minor version of the Transport Layer of the device. </p>
+<p>Minor version of the Transport Layer of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a24e14cdc73f997aab20a1220a0352938"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceTLVersionSubMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sub minor version of the Transport Layer of the device. </p>
+<p>Sub minor version of the Transport Layer of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3dc9c27ac4a77bac7c2590ef4cb56f15"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the device type. </p>
+<p>Returns the device type.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Transmitter</b> (Display string: 'Transmitter'): Data stream transmitter device.</li>
+<li><b>Receiver</b> (Display string: 'Receiver'): Data stream receiver device.</li>
+<li><b>Transceiver</b> (Display string: 'Transceiver'): Data stream receiver and transmitter device.</li>
+<li><b>Peripheral</b> (Display string: 'Peripheral'): Controllable device (with no data stream handling).</li>
+<li><b>Custom</b> (Display string: 'Custom'): This enumeration value indicates that this is a device for a custom protocol.</li>
+<li><b>GEV</b> (Display string: 'GigE Vision'): This enumeration value indicates that this is a device for the GigE Vision protocol.</li>
+<li><b>U3V</b> (Display string: 'USB3 Vision'): This enumeration value indicates that this is a device for the USB3 Vision protocol.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a93c4d5949d939e7be9e663b78c53a67a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceUserID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. User-programmable device identifier. </p>
+<p>User-programmable device identifier. </p>
+
+</div>
+</div>
+<a class="anchor" id="aea67bea3bea7c8c363bb3c6100e7004f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceVendorName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Name of the manufacturer of the device. </p>
+<p>Name of the manufacturer of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4149e3f594161773c8b1f825caa7ece8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::deviceVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. <a class="el" href="struct_version.html">Version</a> of the device. </p>
+<p><a class="el" href="struct_version.html">Version</a> of the device. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad1a0fb21b8f3474949b2e854e23d5674"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceClockFrequency</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Clock frequency of the image sensor of the camera. </p>
+<p>Clock frequency of the image sensor of the camera.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>kHz_08000</b> (Display string: '8000 kHz')</li>
+<li><b>kHz_10000</b> (Display string: '10000 kHz')</li>
+<li><b>kHz_11000</b> (Display string: '11000 kHz')</li>
+<li><b>kHz_12000</b> (Display string: '12000 kHz')</li>
+<li><b>kHz_20000</b> (Display string: '20000 kHz')</li>
+<li><b>kHz_22000</b> (Display string: '22000 kHz')</li>
+<li><b>kHz_23000</b> (Display string: '23000 kHz')</li>
+<li><b>kHz_24000</b> (Display string: '24000 kHz')</li>
+<li><b>kHz_24540</b> (Display string: '24540 kHz')</li>
+<li><b>kHz_25000</b> (Display string: '25000 kHz')</li>
+<li><b>kHz_26000</b> (Display string: '26000 kHz')</li>
+<li><b>kHz_27000</b> (Display string: '27000 kHz')</li>
+<li><b>kHz_28000</b> (Display string: '28000 kHz')</li>
+<li><b>kHz_29000</b> (Display string: '29000 kHz')</li>
+<li><b>kHz_29500</b> (Display string: '29500 kHz')</li>
+<li><b>kHz_30000</b> (Display string: '30000 kHz')</li>
+<li><b>kHz_32000</b> (Display string: '32000 kHz')</li>
+<li><b>kHz_36000</b> (Display string: '36000 kHz')</li>
+<li><b>kHz_37120</b> (Display string: '37120 kHz')</li>
+<li><b>kHz_40000</b> (Display string: '40000 kHz')</li>
+<li><b>kHz_45000</b> (Display string: '45000 kHz')</li>
+<li><b>kHz_48000</b> (Display string: '48000 kHz')</li>
+<li><b>kHz_50000</b> (Display string: '50000 kHz')</li>
+<li><b>kHz_56000</b> (Display string: '56000 kHz')</li>
+<li><b>kHz_60000</b> (Display string: '60000 kHz')</li>
+<li><b>kHz_65000</b> (Display string: '65000 kHz')</li>
+<li><b>kHz_66000</b> (Display string: '66000 kHz')</li>
+<li><b>kHz_74250</b> (Display string: '74250 kHz')</li>
+<li><b>kHz_80000</b> (Display string: '80000 kHz')</li>
+<li><b>kHz_85000</b> (Display string: '85000 kHz')</li>
+<li><b>kHz_96000</b> (Display string: '96000 kHz')</li>
+<li><b>kHz_98000</b> (Display string: '98000 kHz')</li>
+<li><b>kHz_120000</b> (Display string: '120000 kHz')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab22c5302456ba77dc4ca840edd714703"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceClockGranularity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Special register to configure the clock granularity for LUPA sensors. </p>
+<p>Special register to configure the clock granularity for LUPA sensors. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9b2853b6b68c5ce673c604bd260f61a0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceFirmwareBuildDate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. The build time and date of the firmware. </p>
+<p>The build time and date of the firmware </p>
+
+</div>
+</div>
+<a class="anchor" id="a0e0cc359d7bf6588c9143fb5a5adadff"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceFirmwareSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Shows the location from where the firmware was loaded. </p>
+<p>Shows the location from where the firmware was loaded.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>BootSection</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Firmware Source')</li>
+<li><b>ProgramSection</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Firmware Source')</li>
+<li><b>Upload</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Firmware Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac6f8194d5d7cf838ce906f2e66aff2a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceFPGAVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Shows version number of the FPGA. </p>
+<p>Shows version number of the FPGA. </p>
+
+</div>
+</div>
+<a class="anchor" id="a373e023dc2b65b6df34216eeffb895ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDevicePowerMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the device power mode. </p>
+<p>Selects the device power mode.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvActive</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Power Mode'): Puts the device to power-active mode. Going back to 'mvActive' will take about 10 seconds.</li>
+<li><b>mvStandby</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Power Mode'): Puts the device in power-saving mode. In this mode the device will only consume up to 20 percent of its normal power consumption. Going back to 'mvActive' will take about 10 seconds.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a386dbee5247630990cad0156170f837a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceProcessingUnit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. The processing unit to activate for the selected processing unit. </p>
+<p>The processing unit to activate for the selected processing unit.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvFFC</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Processing Unit'): Selects the Flat-field correction engine for this processing unit.</li>
+<li><b>mvFrameAverage</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Processing Unit'): Selects the frame average engine for this processing unit.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1bcab490cda64eba7273899ba2298d81"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceProcessingUnitSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects the device processing unit. </p>
+<p>Selects the device processing unit. </p>
+
+</div>
+</div>
+<a class="anchor" id="a717aab62ac9cc3db3531db15a20524cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceSensor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the sensor interface. </p>
+<p>Selects the start-up sensor interface.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mv3DSensor</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Sensor')</li>
+<li><b>mvPreviewSensor</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Sensor')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a51865e07a49ab782998b913c8fb789b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceSensorColorMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Shows color mode of the sensor. </p>
+<p>Shows color mode of the sensor.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Unknown</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Sensor Color Mode')</li>
+<li><b>Grey</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Sensor Color Mode')</li>
+<li><b>BayerMosaic</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Sensor Color Mode')</li>
+<li><b>NearInfraRed</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Sensor Color Mode')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab1b2a71a999f0078f7f625a066bc1a1f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceSensorName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Shows the name of the sensor. </p>
+<p>Shows the name of the sensor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1ffcd2e5c7d071fa6a7ea61cdeb8ccfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceStandbyTimeout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the time in seconds after which the device automatically switches to standby if no register is read. </p>
+<p>Defines the time in seconds after which the device automatically switches to standby if no register is read. </p>
+
+</div>
+</div>
+<a class="anchor" id="a18e2fcf8bade18c057a02002aa42379b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceStandbyTimeoutEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. If enabled, the device switch to standby after a configurable time if no register is read. </p>
+<p>If enabled, the device switch to standby after a configurable time if no register is read. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1210386760746822691ccf23f0fe9d4e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceStatusLEDEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. If enabled, the color of the LED changes depending on the state of the camera. Otherwise the LED is Off. </p>
+<p>If enabled, the color of the LED changes depending on the state of the camera. Otherwise the LED is Off. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8f6f3385951482b605c5cf9a096741fa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceTemperatureLimitHysteresis</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Hysteresis in degrees Celsius(C) for temperature limits. </p>
+<p>Hysteresis in degrees Celsius(C) for temperature limits.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>deg_0p0</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Limit Hysteresis')</li>
+<li><b>deg_1p5</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Limit Hysteresis')</li>
+<li><b>deg_3p0</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Limit Hysteresis')</li>
+<li><b>deg_6p0</b> (Display string: 'mv <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> Temperature Limit Hysteresis')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0958db7ce440469a6c46cbe67e43e539"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceTemperatureLowerLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Lower limit in degrees Celsius(C) for the TemperatureOutOfRange signal. </p>
+<p>Lower limit in degrees Celsius(C) for the TemperatureOutOfRange signal. </p>
+
+</div>
+</div>
+<a class="anchor" id="a02e49d3e69035f6221d919a791e9f739"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceTemperatureRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> temperature in degrees Celsius (C). </p>
+<p><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> temperature in degrees Celsius (C). It is measured at the location selected by DeviceTemperatureSelector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a56b212b9f38073690363d3a3ffbce955"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::mvDeviceTemperatureUpperLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Upper limit in degrees Celsius(C) for the TemperatureOutOfRange signal. </p>
+<p>Upper limit in degrees Celsius(C) for the TemperatureOutOfRange signal. </p>
+
+</div>
+</div>
+<a class="anchor" id="aac2c5f9af3720bdd277c34ccda97e7a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::timestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Reports the current value of the device timestamp counter. </p>
+<p>Reports the current value of the device timestamp counter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f7d5ffaf2717052f55c6eb3ddaa8e35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::timestampLatch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Latches the current timestamp counter into TimestampLatchValue. </p>
+<p>Latches the current timestamp counter into TimestampLatchValue. </p>
+
+</div>
+</div>
+<a class="anchor" id="a05c3e26d9ac8eae5af54a267811451eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DeviceControl::timestampLatchValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the latched value of the timestamp counter. </p>
+<p>Returns the latched value of the timestamp counter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a10806972cf9d8272b34769de825db3d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::DeviceControl::timestampReset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Resets the current value of the device timestamp counter. </p>
+<p>Resets the current value of the device timestamp counter. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html">DeviceControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

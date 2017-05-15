@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT_CPP/mvIMPACT_acquire_GenICam_FileStream.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('mv_i_m_p_a_c_t__acquire___gen_i_cam___file_stream_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">mvIMPACT_acquire_GenICam_FileStream.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef MVIMPACT_ACQUIRE_GENICAM_FILESTREAM_H_</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#if !defined(DOXYGEN_SHOULD_SKIP_THIS) &amp;&amp; !defined(WRAP_ANY)</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#   define MVIMPACT_ACQUIRE_GENICAM_FILESTREAM_H_ MVIMPACT_ACQUIRE_GENICAM_FILESTREAM_H_</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#endif // DOXYGEN_SHOULD_SKIP_THIS &amp;&amp; WRAP_ANY</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;streambuf&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iosfwd&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;mvIMPACT_CPP/mvIMPACT_acquire.h&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#   pragma push_macro(&quot;min&quot;)</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#   undef min</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">namespace </span>mvIMPACT</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">namespace </span>acquire</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">namespace </span>GenICam</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;{</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html">   44</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html">FileProtocolAdapter</a></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;{</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    int64_type Align(</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        int64_type v,</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="keyword">const</span> int64_type i )</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="keywordflow">if</span>( i &gt; 1 )</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            int64_type r = ( v + ( i - 1 ) ) / i;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordflow">return</span> r * i;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        }</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( i &lt; 1 )</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            std::ostringstream oss;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            oss &lt;&lt; <span class="stringliteral">&quot;Unexpected increment &quot;</span> &lt;&lt; i;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527">ExceptionFactory::raiseException</a>( __FUNCTION__, __LINE__, <a class="code" href="group___common_interface.html#gga112225e5fbaaaef6445ff4ebf98f8e03a556fcf72ff59405d5955691b8ee13720">DMR_INVALID_PARAMETER</a>, INVALID_ID, oss.str() );</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">return</span> v;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a9fbeda8fcbc8e475f629159309d0344f">   72</a></span>&#160;    <span class="keyword">explicit</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a9fbeda8fcbc8e475f629159309d0344f">FileProtocolAdapter</a>() {}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac">   77</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac">attach</a>(</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">const</span> std::string&amp; settingName = <span class="stringliteral">&quot;Base&quot;</span> )</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">if</span>( !pDev-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9">isOpen</a>() )</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            pDev-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165">open</a>();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html">mvIMPACT::acquire::DeviceComponentLocator</a> locator( pDev, <a class="code" href="group___common_interface.html#gga0dca79bbf0803a4ecec16d6cbb1a3dbbaf47a23922dbe8011a3bc439f732e54c5">dltSetting</a>, settingName );</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileSelector, <span class="stringliteral">&quot;FileSelector&quot;</span> );</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileOperationSelector, <span class="stringliteral">&quot;FileOperationSelector&quot;</span> );</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileOperationExecute, <span class="stringliteral">&quot;FileOperationExecute@i&quot;</span> );</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileOpenMode, <span class="stringliteral">&quot;FileOpenMode&quot;</span> );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileAccessBuffer, <span class="stringliteral">&quot;FileAccessBuffer&quot;</span> );</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileAccessOffset, <span class="stringliteral">&quot;FileAccessOffset&quot;</span> );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileAccessLength, <span class="stringliteral">&quot;FileAccessLength&quot;</span> );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileOperationStatus, <span class="stringliteral">&quot;FileOperationStatus&quot;</span> );</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileOperationResult, <span class="stringliteral">&quot;FileOperationResult&quot;</span> );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        locator.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a>( m_ptrFileSize, <span class="stringliteral">&quot;FileSize&quot;</span> );</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp; m_ptrFileAccessLength.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp; m_ptrFileAccessOffset.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;               m_ptrFileOpenMode.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp; m_ptrFileOperationExecute.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp; m_ptrFileOperationResult.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp;</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;               m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp; m_ptrFileOperationStatus.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() &amp;&amp; m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    }</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00111"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0">  111</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0">openFile</a>(</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        std::ios_base::openmode mode )</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    {</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        <span class="keywordflow">if</span>( !m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a>() )</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        }</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( pFileName );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <span class="keywordflow">if</span>( mode &amp; ( std::ios_base::out | std::ios_base::trunc ) )</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        {</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            m_ptrFileOpenMode.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Write&quot;</span> );</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mode &amp; std::ios_base::in )</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            m_ptrFileOpenMode.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Read&quot;</span> );</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        }</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        {</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Open&quot;</span> );</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        m_ptrFileOperationExecute.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0">call</a>();</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">return</span> m_ptrFileOperationStatus.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43">readS</a>() == <span class="stringliteral">&quot;Success&quot;</span>;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    }</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00144"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804">  144</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804">closeFile</a>(</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName )</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( pFileName );</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Close&quot;</span> );</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        m_ptrFileOperationExecute.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0">call</a>();</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        <span class="keywordflow">return</span> m_ptrFileOperationStatus.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43">readS</a>() == <span class="stringliteral">&quot;Success&quot;</span>;</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    }</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00157"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9">  157</a></span>&#160;    std::streamsize <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9">write</a>(</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pBuf,</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        int64_type offs,</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        int64_type len,</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName )</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    {</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( pFileName );</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Write&quot;</span> );</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">const</span> std::streamsize maxWriteLen( static_cast&lt;std::streamsize&gt;( m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016">binaryDataBufferMaxSize</a>() ) );</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        std::streamsize bytesWritten = 0;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        <span class="keywordflow">while</span> ( bytesWritten &lt; len )</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        {</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="comment">// copy streamdata to xchange buffer</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <span class="keyword">const</span> int64_type remain( len - bytesWritten );</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keyword">const</span> int64_type writeSize( remain &lt;= maxWriteLen ? remain : maxWriteLen );</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="comment">// offset</span></div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            <span class="keywordflow">if</span>( offs + bytesWritten &gt; m_ptrFileAccessOffset.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aec8c49f90f853f085444f0167385b3b5">getMaxValue</a>() )</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="comment">// we cannot move the outbuffer any further</span></div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            }</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            m_ptrFileAccessOffset.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13">write</a>( offs + bytesWritten );</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            m_ptrFileAccessLength.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13">write</a>( writeSize );</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="comment">// set the buffer</span></div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keyword">const</span> std::string bufS( pBuf + bytesWritten, static_cast&lt;unsigned int&gt;( Align( writeSize, 4 ) ) );</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;            m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#ac08293bd5d249b57a66ea5d325c9a37a">writeBinary</a>( bufS );</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            m_ptrFileOperationExecute.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0">call</a>();</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            bytesWritten += <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>( m_ptrFileOperationResult.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3">read</a>() );</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            <span class="keywordflow">if</span>( m_ptrFileOperationStatus.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43">readS</a>() != <span class="stringliteral">&quot;Success&quot;</span> )</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            {</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;                <span class="comment">// no more space on device</span></div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            }</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        <span class="keywordflow">return</span> bytesWritten;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    }</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;</div>
+<div class="line"><a name="l00204"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5">  204</a></span>&#160;    std::streamsize <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5">read</a>(</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <span class="keywordtype">char</span>* pBuf,</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;        int64_type offs,</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;        std::streamsize len,</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName )</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    {</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( pFileName );</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Read&quot;</span> );</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">const</span> std::streamsize maxReadLen = <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>( m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016">binaryDataBufferMaxSize</a>() );</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;        std::streamsize bytesRead = 0;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        <span class="keywordflow">while</span>( bytesRead &lt; len )</div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="comment">// copy xchange buffer to streamdata</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keyword">const</span> std::streamsize readSize = std::min( len - bytesRead, maxReadLen );</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="comment">// offset</span></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">if</span>( offs + bytesRead &gt; m_ptrFileAccessOffset.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aec8c49f90f853f085444f0167385b3b5">getMaxValue</a>() )</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            {</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                <span class="comment">// we cannot move the inbuffer any further</span></div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            }</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            m_ptrFileAccessOffset.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13">write</a>( offs + bytesRead );</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            m_ptrFileAccessLength.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13">write</a>( readSize );</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            <span class="comment">// fetch file data into xchange buffer</span></div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            m_ptrFileOperationExecute.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0">call</a>();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keyword">const</span> std::streamsize result = <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>( m_ptrFileOperationResult.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3">read</a>() );</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <span class="keyword">const</span> std::string bufS( m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a29342383600102e22fd6e235fcd63728">readBinary</a>() );</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            memcpy( pBuf + bytesRead, bufS.c_str(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( readSize ) );</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            bytesRead += result;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">if</span>( m_ptrFileOperationStatus.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43">readS</a>() != <span class="stringliteral">&quot;Success&quot;</span> )</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            {</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="comment">// reached end of file</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <span class="keywordflow">break</span>;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            }</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        }</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        <span class="keywordflow">return</span> bytesRead;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;    }</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00248"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418">  248</a></span>&#160;    int64_type <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418">getBufSize</a>(</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        std::ios_base::openmode mode )</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        m_ptrFileSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( pFileName );</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        <span class="keywordflow">if</span>( mode &amp; ( std::ios_base::out | std::ios_base::trunc ) )</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;        {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Write&quot;</span> );</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">return</span> m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016">binaryDataBufferMaxSize</a>();</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;        }</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>( mode &amp; ( std::ios_base::in ) )</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;        {</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            m_ptrFileOperationSelector.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a>( <span class="stringliteral">&quot;Read&quot;</span> );</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            <span class="keywordflow">return</span> m_ptrFileAccessBuffer.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016">binaryDataBufferMaxSize</a>();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;        }</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    }</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;</div>
+<div class="line"><a name="l00271"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#ae0c807ddd866348a2bcf9b8886640427">  271</a></span>&#160;    std::streamsize <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#ae0c807ddd866348a2bcf9b8886640427">size</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span>std::streamsize<span class="keyword">&gt;</span>( m_ptrFileSize.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3">read</a>() );</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    }</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileSelector;</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileOperationSelector;</div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>      m_ptrFileOperationExecute;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileOpenMode;</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileAccessOffset;</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileAccessLength;</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>   m_ptrFileAccessBuffer;</div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileOperationStatus;</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileOperationResult;</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">PropertyI64</a> m_ptrFileSize;</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;};</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> CharType, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00295"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">  295</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">IDevFileStreamBuf</a> : <span class="keyword">public</span> std::basic_streambuf&lt;CharType, Traits&gt;</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;{</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keyword">typedef</span> Traits traits_type;</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::int_type int_type;</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::char_type char_type;</div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">IDevFileStreamBuf&lt;CharType, Traits&gt;</a> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>;</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="comment">// GET next ptr</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::gptr;</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="comment">// GET end ptr</span></div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::egptr;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="comment">// GET begin ptr</span></div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::eback;</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="comment">// increment next pointer</span></div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::gbump;</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;    <span class="comment">// set buffer info</span></div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::setg;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00314"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">  314</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">IDevFileStreamBuf</a>() : m_pBuffer( 0 ), m_BufSize( 0 ), m_file( 0 ), m_pAdapter( 0 ), m_fpos( 0 ) {}</div>
+<div class="line"><a name="l00316"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#aadb6c054750ff6390f13d5df7241ef8e">  316</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#aadb6c054750ff6390f13d5df7241ef8e">~IDevFileStreamBuf</a>()</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <span class="comment">// catch and dump all exceptions - we&#39;re in a destructor...</span></div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        {</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;            this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f">close</a>();</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        }</div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        <span class="keywordflow">catch</span>( ... ) {}</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    }</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;</div>
+<div class="line"><a name="l00330"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e">  330</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>* <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e">open</a>(</div>
+<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        std::ios_base::openmode mode = std::ios_base::in )</div>
+<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    {</div>
+<div class="line"><a name="l00338"></a><span class="lineno">  338</span>&#160;        m_pAdapter = <span class="keyword">new</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html">FileProtocolAdapter</a>();</div>
+<div class="line"><a name="l00339"></a><span class="lineno">  339</span>&#160;        <span class="keywordflow">if</span>( !m_pAdapter )</div>
+<div class="line"><a name="l00340"></a><span class="lineno">  340</span>&#160;        {</div>
+<div class="line"><a name="l00341"></a><span class="lineno">  341</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00342"></a><span class="lineno">  342</span>&#160;        }</div>
+<div class="line"><a name="l00343"></a><span class="lineno">  343</span>&#160;</div>
+<div class="line"><a name="l00344"></a><span class="lineno">  344</span>&#160;        <span class="keywordflow">if</span>( !m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac">attach</a>( pDev ) || !m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0">openFile</a>( pFileName, mode ) )</div>
+<div class="line"><a name="l00345"></a><span class="lineno">  345</span>&#160;        {</div>
+<div class="line"><a name="l00346"></a><span class="lineno">  346</span>&#160;            <span class="keyword">delete</span> m_pAdapter;</div>
+<div class="line"><a name="l00347"></a><span class="lineno">  347</span>&#160;            m_pAdapter = 0;</div>
+<div class="line"><a name="l00348"></a><span class="lineno">  348</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00349"></a><span class="lineno">  349</span>&#160;        }</div>
+<div class="line"><a name="l00350"></a><span class="lineno">  350</span>&#160;</div>
+<div class="line"><a name="l00351"></a><span class="lineno">  351</span>&#160;        m_file = pFileName;</div>
+<div class="line"><a name="l00352"></a><span class="lineno">  352</span>&#160;        <span class="comment">// allocate buffer according to file info</span></div>
+<div class="line"><a name="l00353"></a><span class="lineno">  353</span>&#160;        m_BufSize = ( std::streamsize )m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418">getBufSize</a>( m_file, mode );</div>
+<div class="line"><a name="l00354"></a><span class="lineno">  354</span>&#160;        m_pBuffer = <span class="keyword">new</span> char_type[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( m_BufSize ) / <span class="keyword">sizeof</span>( char_type )];</div>
+<div class="line"><a name="l00355"></a><span class="lineno">  355</span>&#160;        <span class="comment">// setg(buffer+pbSize, buffer+pbSize, buffer+pbSize);</span></div>
+<div class="line"><a name="l00356"></a><span class="lineno">  356</span>&#160;        setg( m_pBuffer, m_pBuffer + m_BufSize, m_pBuffer + m_BufSize );</div>
+<div class="line"><a name="l00357"></a><span class="lineno">  357</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l00358"></a><span class="lineno">  358</span>&#160;        <span class="comment">// is this reasonable?</span></div>
+<div class="line"><a name="l00359"></a><span class="lineno">  359</span>&#160;        std::basic_streambuf&lt;CharType, Traits&gt;::_Init();</div>
+<div class="line"><a name="l00360"></a><span class="lineno">  360</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00361"></a><span class="lineno">  361</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00362"></a><span class="lineno">  362</span>&#160;    }</div>
+<div class="line"><a name="l00364"></a><span class="lineno">  364</span>&#160;</div>
+<div class="line"><a name="l00369"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a1582174c671638bd6faedac8e60890e6">  369</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a1582174c671638bd6faedac8e60890e6">is_open</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00370"></a><span class="lineno">  370</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00371"></a><span class="lineno">  371</span>&#160;        <span class="keywordflow">return</span> ( m_pAdapter != 0 ) &amp;&amp; ( m_file != 0 );</div>
+<div class="line"><a name="l00372"></a><span class="lineno">  372</span>&#160;    }</div>
+<div class="line"><a name="l00374"></a><span class="lineno">  374</span>&#160;</div>
+<div class="line"><a name="l00377"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a5994f4d449d11de4188201f74ffafd94">  377</a></span>&#160;    std::streamsize <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a5994f4d449d11de4188201f74ffafd94">size</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;        <span class="keywordflow">return</span> m_pAdapter ? m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#ae0c807ddd866348a2bcf9b8886640427">size</a>() : 0;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;    }</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00387"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f">  387</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>* <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f">close</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;    {</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>* ret = 0;</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;        <span class="keywordflow">if</span>( this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a1582174c671638bd6faedac8e60890e6">is_open</a>() )</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        {</div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;            <span class="keywordflow">if</span>( m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804">closeFile</a>( m_file ) )</div>
+<div class="line"><a name="l00393"></a><span class="lineno">  393</span>&#160;            {</div>
+<div class="line"><a name="l00394"></a><span class="lineno">  394</span>&#160;                <span class="comment">// no error</span></div>
+<div class="line"><a name="l00395"></a><span class="lineno">  395</span>&#160;                ret = <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00396"></a><span class="lineno">  396</span>&#160;            }</div>
+<div class="line"><a name="l00397"></a><span class="lineno">  397</span>&#160;        }</div>
+<div class="line"><a name="l00398"></a><span class="lineno">  398</span>&#160;        <span class="keyword">delete</span> m_pAdapter;</div>
+<div class="line"><a name="l00399"></a><span class="lineno">  399</span>&#160;        m_pAdapter = 0;</div>
+<div class="line"><a name="l00400"></a><span class="lineno">  400</span>&#160;        <span class="keyword">delete</span>[] m_pBuffer;</div>
+<div class="line"><a name="l00401"></a><span class="lineno">  401</span>&#160;        m_pBuffer = 0;</div>
+<div class="line"><a name="l00402"></a><span class="lineno">  402</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00403"></a><span class="lineno">  403</span>&#160;    }</div>
+<div class="line"><a name="l00404"></a><span class="lineno">  404</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00405"></a><span class="lineno">  405</span>&#160;    int_type underflow( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00406"></a><span class="lineno">  406</span>&#160;    {</div>
+<div class="line"><a name="l00407"></a><span class="lineno">  407</span>&#160;        <span class="keywordflow">if</span>( gptr() &lt; egptr() )</div>
+<div class="line"><a name="l00408"></a><span class="lineno">  408</span>&#160;        {</div>
+<div class="line"><a name="l00409"></a><span class="lineno">  409</span>&#160;            <span class="keywordflow">return</span> traits_type::to_int_type( *gptr() );</div>
+<div class="line"><a name="l00410"></a><span class="lineno">  410</span>&#160;        }</div>
+<div class="line"><a name="l00411"></a><span class="lineno">  411</span>&#160;        <span class="keywordflow">if</span>( buffer_in() &lt; 0 )</div>
+<div class="line"><a name="l00412"></a><span class="lineno">  412</span>&#160;        {</div>
+<div class="line"><a name="l00413"></a><span class="lineno">  413</span>&#160;            <span class="keywordflow">return</span> traits_type::eof();</div>
+<div class="line"><a name="l00414"></a><span class="lineno">  414</span>&#160;        }</div>
+<div class="line"><a name="l00415"></a><span class="lineno">  415</span>&#160;        <span class="keywordflow">return</span> traits_type::to_int_type( *gptr() );</div>
+<div class="line"><a name="l00416"></a><span class="lineno">  416</span>&#160;    }</div>
+<div class="line"><a name="l00417"></a><span class="lineno">  417</span>&#160;    int_type pbackfail( int_type c )</div>
+<div class="line"><a name="l00418"></a><span class="lineno">  418</span>&#160;    {</div>
+<div class="line"><a name="l00419"></a><span class="lineno">  419</span>&#160;        <span class="keywordflow">if</span>( ( gptr() != eback() ) || ( eback() &lt; gptr() ) )</div>
+<div class="line"><a name="l00420"></a><span class="lineno">  420</span>&#160;        {</div>
+<div class="line"><a name="l00421"></a><span class="lineno">  421</span>&#160;            gbump( -1 );</div>
+<div class="line"><a name="l00422"></a><span class="lineno">  422</span>&#160;            <span class="keywordflow">if</span>( !traits_type::eq_int_type( c, traits_type::eof() ) )</div>
+<div class="line"><a name="l00423"></a><span class="lineno">  423</span>&#160;            {</div>
+<div class="line"><a name="l00424"></a><span class="lineno">  424</span>&#160;                *( gptr() ) = static_cast&lt;char_type&gt;( traits_type::not_eof( c ) );</div>
+<div class="line"><a name="l00425"></a><span class="lineno">  425</span>&#160;            }</div>
+<div class="line"><a name="l00426"></a><span class="lineno">  426</span>&#160;            <span class="keywordflow">return</span> traits_type::not_eof( c );</div>
+<div class="line"><a name="l00427"></a><span class="lineno">  427</span>&#160;        }</div>
+<div class="line"><a name="l00428"></a><span class="lineno">  428</span>&#160;        <span class="keywordflow">return</span> traits_type::eof();</div>
+<div class="line"><a name="l00429"></a><span class="lineno">  429</span>&#160;    }</div>
+<div class="line"><a name="l00430"></a><span class="lineno">  430</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00431"></a><span class="lineno">  431</span>&#160;    char_type* m_pBuffer;</div>
+<div class="line"><a name="l00432"></a><span class="lineno">  432</span>&#160;    std::streamsize m_BufSize;</div>
+<div class="line"><a name="l00433"></a><span class="lineno">  433</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* m_file;</div>
+<div class="line"><a name="l00434"></a><span class="lineno">  434</span>&#160;    FileProtocolAdapter* m_pAdapter;</div>
+<div class="line"><a name="l00435"></a><span class="lineno">  435</span>&#160;    int64_type m_fpos;</div>
+<div class="line"><a name="l00436"></a><span class="lineno">  436</span>&#160;</div>
+<div class="line"><a name="l00437"></a><span class="lineno">  437</span>&#160;    <span class="keywordtype">int</span> buffer_in( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00438"></a><span class="lineno">  438</span>&#160;    {</div>
+<div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        std::streamsize retval = m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5">read</a>( m_pBuffer, m_fpos, m_BufSize, m_file );</div>
+<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;        <span class="keywordflow">if</span>( retval &lt;= 0 )</div>
+<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;        {</div>
+<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160;            setg( 0, 0, 0 );</div>
+<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;        setg( m_pBuffer, m_pBuffer, m_pBuffer + retval );</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;        m_fpos += retval;</div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( retval );</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160;    }</div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;</div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;    <span class="comment">// prohibit copying and assignment</span></div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">IDevFileStreamBuf</a>( <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">IDevFileStreamBuf</a>&amp; );</div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">IDevFileStreamBuf</a>&amp; operator=( <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">IDevFileStreamBuf</a>&amp; );</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;};</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160;</div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> CharType, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00462"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">  462</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">ODevFileStreamBuf</a> : <span class="keyword">public</span> std::basic_streambuf&lt;CharType, Traits&gt;</div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;{</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;    <span class="keyword">typedef</span> Traits traits_type;</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::int_type int_type;</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::char_type char_type;</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::pos_type pos_type;</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;    <span class="keyword">typedef</span> <span class="keyword">typename</span> Traits::off_type off_type;</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">ODevFileStreamBuf&lt;CharType, Traits&gt;</a> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>;</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;    <span class="comment">// PUT begin</span></div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::pbase;</div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;    <span class="comment">// PUT next</span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::pptr;</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;    <span class="comment">// PUT end</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::epptr;</div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;    <span class="comment">// increment next pointer</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;    <span class="keyword">using</span> std::basic_streambuf&lt;CharType, Traits&gt;::pbump;</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00481"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">  481</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">ODevFileStreamBuf</a>() : m_pBuffer( 0 ), m_file( 0 ), m_pAdapter( 0 ), m_fpos( 0 ) {}</div>
+<div class="line"><a name="l00483"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a96a881b88fe2df12b9a218dcebfd15c4">  483</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a96a881b88fe2df12b9a218dcebfd15c4">~ODevFileStreamBuf</a>()</div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;    {</div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="comment">// catch and dump all exceptions - we&#39;re in a destructor...</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        <span class="keywordflow">try</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        {</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6">close</a>();</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        }</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;        <span class="keywordflow">catch</span>( ... ) {}</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;    }</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;</div>
+<div class="line"><a name="l00497"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60">  497</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>* <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60">open</a>(</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;        std::ios_base::openmode mode )</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;    {</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;        m_pAdapter = <span class="keyword">new</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html">FileProtocolAdapter</a>();</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;        <span class="keywordflow">if</span>( !m_pAdapter )</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        {</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        }</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;        <span class="keywordflow">if</span>( !m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac">attach</a>( pDev ) || !m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0">openFile</a>( pFileName, mode ) )</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        {</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            <span class="keyword">delete</span> m_pAdapter;</div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;            m_pAdapter = 0;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;            <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        }</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        m_file = pFileName;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;        <span class="comment">// allocate buffer according to file info</span></div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        <span class="keyword">const</span> int64_type bufSize = m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418">getBufSize</a>( m_file, mode );</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;        m_pBuffer = <span class="keyword">new</span> char_type[<span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>( bufSize ) / <span class="keyword">sizeof</span>( char_type )];</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;        std::basic_streambuf&lt;CharType, Traits&gt;::setp( m_pBuffer, m_pBuffer + bufSize );</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;    }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;</div>
+<div class="line"><a name="l00531"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#aa349bd80b98040141e7a2b1f02f9cbb5">  531</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#aa349bd80b98040141e7a2b1f02f9cbb5">is_open</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;        <span class="keywordflow">return</span> ( m_pAdapter != 0 ) &amp;&amp; ( m_file != 0 );</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;    }</div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;</div>
+<div class="line"><a name="l00541"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6">  541</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>* <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6">close</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;    {</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>* ret = 0;</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;        <span class="keywordtype">bool</span> syncFailed = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keywordflow">if</span>( this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#aa349bd80b98040141e7a2b1f02f9cbb5">is_open</a>() )</div>
+<div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        {</div>
+<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            <span class="keywordflow">if</span>( sync() )</div>
+<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;            {</div>
+<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                syncFailed = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;            }</div>
+<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;            <span class="keywordflow">if</span>( m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804">closeFile</a>( m_file ) )</div>
+<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;            {</div>
+<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;                ret = syncFailed ? 0 : <span class="keyword">this</span>;</div>
+<div class="line"><a name="l00554"></a><span class="lineno">  554</span>&#160;            }</div>
+<div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        }</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;        <span class="keyword">delete</span> m_pAdapter;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;        m_pAdapter = 0;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        <span class="keyword">delete</span>[] m_pBuffer;</div>
+<div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;        m_pBuffer = 0;</div>
+<div class="line"><a name="l00560"></a><span class="lineno">  560</span>&#160;        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><a name="l00561"></a><span class="lineno">  561</span>&#160;    }</div>
+<div class="line"><a name="l00562"></a><span class="lineno">  562</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;    std::streamsize xsputn( <span class="keyword">const</span> char_type* s, std::streamsize n )</div>
+<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;    {</div>
+<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;        <span class="keywordflow">if</span>( n &lt; epptr() - pptr() )</div>
+<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        {</div>
+<div class="line"><a name="l00567"></a><span class="lineno">  567</span>&#160;            memcpy( pptr(), s, static_cast&lt;size_t&gt;( n ) * <span class="keyword">sizeof</span>( char_type ) );</div>
+<div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;            pbump( static_cast&lt;int&gt;( n ) );</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;            <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;        }</div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;        {</div>
+<div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;            <span class="keywordflow">for</span>( std::streamsize i = 0; i &lt; n; ++i )</div>
+<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;            {</div>
+<div class="line"><a name="l00575"></a><span class="lineno">  575</span>&#160;                <span class="keywordflow">if</span>( traits_type::eq_int_type( std::basic_streambuf&lt;CharType, Traits&gt;::sputc( s[i] ), traits_type::eof() ) )</div>
+<div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;                {</div>
+<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;                    <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;                }</div>
+<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;            }</div>
+<div class="line"><a name="l00580"></a><span class="lineno">  580</span>&#160;            <span class="keywordflow">return</span> n;</div>
+<div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        }</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;    }</div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;    int_type overflow( int_type c = traits_type::eof() )</div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;    {</div>
+<div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;        <span class="keywordflow">if</span> ( buffer_out() &lt; 0 )</div>
+<div class="line"><a name="l00586"></a><span class="lineno">  586</span>&#160;        {</div>
+<div class="line"><a name="l00587"></a><span class="lineno">  587</span>&#160;            <span class="keywordflow">return</span> traits_type::eof();</div>
+<div class="line"><a name="l00588"></a><span class="lineno">  588</span>&#160;        }</div>
+<div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> ( !traits_type::eq_int_type( c, traits_type::eof() ) )</div>
+<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;        {</div>
+<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            <span class="keywordflow">return</span> std::basic_streambuf&lt;CharType, Traits&gt;::sputc( static_cast&lt;char_type&gt;( c ) );</div>
+<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        }</div>
+<div class="line"><a name="l00593"></a><span class="lineno">  593</span>&#160;        <span class="keywordflow">return</span> traits_type::not_eof( c );</div>
+<div class="line"><a name="l00594"></a><span class="lineno">  594</span>&#160;    }</div>
+<div class="line"><a name="l00595"></a><span class="lineno">  595</span>&#160;    <span class="keywordtype">int</span> sync( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;    {</div>
+<div class="line"><a name="l00597"></a><span class="lineno">  597</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>( buffer_out() );</div>
+<div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;    }</div>
+<div class="line"><a name="l00599"></a><span class="lineno">  599</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00600"></a><span class="lineno">  600</span>&#160;    char_type* m_pBuffer;</div>
+<div class="line"><a name="l00601"></a><span class="lineno">  601</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>* m_file;</div>
+<div class="line"><a name="l00602"></a><span class="lineno">  602</span>&#160;    FileProtocolAdapter* m_pAdapter;</div>
+<div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;    int64_type m_fpos;</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;</div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;    int64_type buffer_out( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;    {</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160;        int64_type cnt = pptr() - pbase();</div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;        int64_type retval;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160;        int64_type res = m_pAdapter-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9">write</a>( m_pBuffer, m_fpos, cnt, m_file );</div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;        retval = ( res == cnt ) ? 0 : -1;</div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        m_fpos += res;</div>
+<div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160;        pbump( -static_cast&lt;int&gt;( cnt ) );</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;        <span class="keywordflow">return</span> retval;</div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;    }</div>
+<div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160;</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;    <span class="comment">// prohibit copying assignment</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">ODevFileStreamBuf</a>( <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">ODevFileStreamBuf</a>&amp; );</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">ODevFileStreamBuf</a>&amp; operator=( <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">ODevFileStreamBuf</a>&amp; );</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;};</div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> CharType, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00628"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">  628</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">ODevFileStreamBase</a> : <span class="keyword">public</span> std::basic_ostream&lt;CharType, Traits&gt;</div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;{</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;    <span class="comment">// Non-standard types:</span></div>
+<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">ODevFileStreamBuf&lt;CharType, Traits&gt;</a> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>;</div>
+<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;    <span class="keyword">typedef</span> std::basic_ios&lt;CharType, Traits&gt; ios_type;</div>
+<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;    <span class="keyword">typedef</span> std::basic_ostream&lt;CharType, Traits&gt; ostream_type;</div>
+<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a> m_streambuf;</div>
+<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;<span class="preprocessor">#if defined (_MSC_VER)</span></div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">ODevFileStreamBase</a>() : ostream_type( std::_Noinit ), m_streambuf()</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160;    {</div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160;    }</div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">ODevFileStreamBase</a>(</div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;        std::ios_base::openmode mode = std::ios_base::out | std::ios_base::trunc ) : ostream_type( std::_Noinit ), m_streambuf()</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;    {</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;        this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619">open</a>( pDev, pFileName, mode );</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;    }</div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;<span class="preprocessor">#elif defined (__GNUC__)</span></div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">ODevFileStreamBase</a>() : ostream_type(), m_streambuf()</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;    {</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;    }</div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">ODevFileStreamBase</a>(</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;        std::ios_base::openmode mode = std::ios_base::out | std::ios_base::trunc ) : ostream_type(), m_streambuf()</div>
+<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160;    {</div>
+<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;        this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619">open</a>( pDev, pFileName, mode );</div>
+<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;    }</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;<span class="preprocessor">#   error Unknown C++ library</span></div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;</div>
+<div class="line"><a name="l00682"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7d4c433c77be828124c45899d26ef34e">  682</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>* <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7d4c433c77be828124c45899d26ef34e">rdbuf</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">filebuf_type</a>*<span class="keyword">&gt;</span>( &amp;m_streambuf );</div>
+<div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160;    }</div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;</div>
+<div class="line"><a name="l00692"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#aef7902b4fd30e5dbd799e0dd45e397dc">  692</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#aef7902b4fd30e5dbd799e0dd45e397dc">is_open</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;        <span class="keywordflow">return</span> m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#aa349bd80b98040141e7a2b1f02f9cbb5">is_open</a>();</div>
+<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;    }</div>
+<div class="line"><a name="l00697"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619">  697</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619">open</a>(</div>
+<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00703"></a><span class="lineno">  703</span>&#160;        std::ios_base::openmode mode = std::ios_base::out | std::ios_base::trunc )</div>
+<div class="line"><a name="l00704"></a><span class="lineno">  704</span>&#160;    {</div>
+<div class="line"><a name="l00705"></a><span class="lineno">  705</span>&#160;        <span class="keywordflow">if</span>( !m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60">open</a>( pDev, pFileName, mode ) )</div>
+<div class="line"><a name="l00706"></a><span class="lineno">  706</span>&#160;        {</div>
+<div class="line"><a name="l00707"></a><span class="lineno">  707</span>&#160;            this-&gt;setstate( std::ios_base::failbit );</div>
+<div class="line"><a name="l00708"></a><span class="lineno">  708</span>&#160;        }</div>
+<div class="line"><a name="l00709"></a><span class="lineno">  709</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00710"></a><span class="lineno">  710</span>&#160;        {</div>
+<div class="line"><a name="l00711"></a><span class="lineno">  711</span>&#160;            this-&gt;clear();</div>
+<div class="line"><a name="l00712"></a><span class="lineno">  712</span>&#160;        }</div>
+<div class="line"><a name="l00713"></a><span class="lineno">  713</span>&#160;    }</div>
+<div class="line"><a name="l00715"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a18c100cf08c0f6d64230a569de872a40">  715</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a18c100cf08c0f6d64230a569de872a40">close</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00716"></a><span class="lineno">  716</span>&#160;    {</div>
+<div class="line"><a name="l00717"></a><span class="lineno">  717</span>&#160;        <span class="keywordflow">if</span>( !m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6">close</a>() )</div>
+<div class="line"><a name="l00718"></a><span class="lineno">  718</span>&#160;        {</div>
+<div class="line"><a name="l00719"></a><span class="lineno">  719</span>&#160;            this-&gt;setstate( std::ios_base::failbit );</div>
+<div class="line"><a name="l00720"></a><span class="lineno">  720</span>&#160;        }</div>
+<div class="line"><a name="l00721"></a><span class="lineno">  721</span>&#160;    }</div>
+<div class="line"><a name="l00722"></a><span class="lineno">  722</span>&#160;};</div>
+<div class="line"><a name="l00723"></a><span class="lineno">  723</span>&#160;</div>
+<div class="line"><a name="l00724"></a><span class="lineno">  724</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00726"></a><span class="lineno">  726</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00730"></a><span class="lineno">  730</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> CharType, <span class="keyword">typename</span> Traits&gt;</div>
+<div class="line"><a name="l00731"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">  731</a></span>&#160;<span class="keyword">class </span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">IDevFileStreamBase</a> : <span class="keyword">public</span> std::basic_istream&lt;CharType, Traits&gt;</div>
+<div class="line"><a name="l00732"></a><span class="lineno">  732</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00733"></a><span class="lineno">  733</span>&#160;{</div>
+<div class="line"><a name="l00734"></a><span class="lineno">  734</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00735"></a><span class="lineno">  735</span>&#160;    <span class="comment">// Non-standard types:</span></div>
+<div class="line"><a name="l00736"></a><span class="lineno">  736</span>&#160;    <span class="keyword">typedef</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">IDevFileStreamBuf&lt;CharType, Traits&gt;</a> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>;</div>
+<div class="line"><a name="l00737"></a><span class="lineno">  737</span>&#160;    <span class="keyword">typedef</span> std::basic_ios&lt;CharType, Traits&gt; ios_type;</div>
+<div class="line"><a name="l00738"></a><span class="lineno">  738</span>&#160;    <span class="keyword">typedef</span> std::basic_istream&lt;CharType, Traits&gt; istream_type;</div>
+<div class="line"><a name="l00739"></a><span class="lineno">  739</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00740"></a><span class="lineno">  740</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a> m_streambuf;</div>
+<div class="line"><a name="l00741"></a><span class="lineno">  741</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00742"></a><span class="lineno">  742</span>&#160;<span class="preprocessor">#if defined (_MSC_VER)</span></div>
+<div class="line"><a name="l00743"></a><span class="lineno">  743</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">IDevFileStreamBase</a>() : istream_type( std::_Noinit ), m_streambuf()</div>
+<div class="line"><a name="l00745"></a><span class="lineno">  745</span>&#160;    {</div>
+<div class="line"><a name="l00746"></a><span class="lineno">  746</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00747"></a><span class="lineno">  747</span>&#160;    }</div>
+<div class="line"><a name="l00749"></a><span class="lineno">  749</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">IDevFileStreamBase</a>(</div>
+<div class="line"><a name="l00751"></a><span class="lineno">  751</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00753"></a><span class="lineno">  753</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00755"></a><span class="lineno">  755</span>&#160;        std::ios_base::openmode mode = std::ios_base::in ) : istream_type( std::_Noinit ), m_streambuf()</div>
+<div class="line"><a name="l00756"></a><span class="lineno">  756</span>&#160;    {</div>
+<div class="line"><a name="l00757"></a><span class="lineno">  757</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00758"></a><span class="lineno">  758</span>&#160;        this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b">open</a>( pDev, pFileName, mode );</div>
+<div class="line"><a name="l00759"></a><span class="lineno">  759</span>&#160;    }</div>
+<div class="line"><a name="l00760"></a><span class="lineno">  760</span>&#160;<span class="preprocessor">#elif defined (__GNUC__)</span></div>
+<div class="line"><a name="l00761"></a><span class="lineno">  761</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">IDevFileStreamBase</a>() : istream_type(), m_streambuf()</div>
+<div class="line"><a name="l00763"></a><span class="lineno">  763</span>&#160;    {</div>
+<div class="line"><a name="l00764"></a><span class="lineno">  764</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00765"></a><span class="lineno">  765</span>&#160;    }</div>
+<div class="line"><a name="l00767"></a><span class="lineno">  767</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">IDevFileStreamBase</a>(</div>
+<div class="line"><a name="l00769"></a><span class="lineno">  769</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00771"></a><span class="lineno">  771</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00773"></a><span class="lineno">  773</span>&#160;        std::ios_base::openmode mode = std::ios_base::in ) : istream_type(), m_streambuf()</div>
+<div class="line"><a name="l00774"></a><span class="lineno">  774</span>&#160;    {</div>
+<div class="line"><a name="l00775"></a><span class="lineno">  775</span>&#160;        this-&gt;init( &amp;m_streambuf );</div>
+<div class="line"><a name="l00776"></a><span class="lineno">  776</span>&#160;        this-&gt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b">open</a>( pDev, pFileName, mode );</div>
+<div class="line"><a name="l00777"></a><span class="lineno">  777</span>&#160;    }</div>
+<div class="line"><a name="l00778"></a><span class="lineno">  778</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00779"></a><span class="lineno">  779</span>&#160;<span class="preprocessor">#   error Unknown C++ library</span></div>
+<div class="line"><a name="l00780"></a><span class="lineno">  780</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00781"></a><span class="lineno">  781</span>&#160;</div>
+<div class="line"><a name="l00785"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#af0eeb589e3eb0e62c6bb25d372c0df35">  785</a></span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>* <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#af0eeb589e3eb0e62c6bb25d372c0df35">rdbuf</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00786"></a><span class="lineno">  786</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00787"></a><span class="lineno">  787</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">const_cast&lt;</span><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">filebuf_type</a>*<span class="keyword">&gt;</span>( &amp;m_streambuf );</div>
+<div class="line"><a name="l00788"></a><span class="lineno">  788</span>&#160;    }</div>
+<div class="line"><a name="l00790"></a><span class="lineno">  790</span>&#160;</div>
+<div class="line"><a name="l00795"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a46f61f8585c3da76cb235213ab8f4672">  795</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a46f61f8585c3da76cb235213ab8f4672">is_open</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00796"></a><span class="lineno">  796</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00797"></a><span class="lineno">  797</span>&#160;        <span class="keywordflow">return</span> m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a1582174c671638bd6faedac8e60890e6">is_open</a>();</div>
+<div class="line"><a name="l00798"></a><span class="lineno">  798</span>&#160;    }</div>
+<div class="line"><a name="l00800"></a><span class="lineno">  800</span>&#160;</div>
+<div class="line"><a name="l00804"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b">  804</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b">open</a>(</div>
+<div class="line"><a name="l00806"></a><span class="lineno">  806</span>&#160;        <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev,</div>
+<div class="line"><a name="l00808"></a><span class="lineno">  808</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">char</span>* pFileName,</div>
+<div class="line"><a name="l00810"></a><span class="lineno">  810</span>&#160;        std::ios_base::openmode mode = std::ios_base::in )</div>
+<div class="line"><a name="l00811"></a><span class="lineno">  811</span>&#160;    {</div>
+<div class="line"><a name="l00812"></a><span class="lineno">  812</span>&#160;        <span class="keywordflow">if</span>( !m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e">open</a>( pDev, pFileName, mode ) )</div>
+<div class="line"><a name="l00813"></a><span class="lineno">  813</span>&#160;        {</div>
+<div class="line"><a name="l00814"></a><span class="lineno">  814</span>&#160;            this-&gt;setstate( std::ios_base::failbit );</div>
+<div class="line"><a name="l00815"></a><span class="lineno">  815</span>&#160;        }</div>
+<div class="line"><a name="l00816"></a><span class="lineno">  816</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00817"></a><span class="lineno">  817</span>&#160;        {</div>
+<div class="line"><a name="l00818"></a><span class="lineno">  818</span>&#160;            this-&gt;clear();</div>
+<div class="line"><a name="l00819"></a><span class="lineno">  819</span>&#160;        }</div>
+<div class="line"><a name="l00820"></a><span class="lineno">  820</span>&#160;    }</div>
+<div class="line"><a name="l00822"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2c2982dc80de791f717eb33c400b56">  822</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2c2982dc80de791f717eb33c400b56">close</a>( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00823"></a><span class="lineno">  823</span>&#160;    {</div>
+<div class="line"><a name="l00824"></a><span class="lineno">  824</span>&#160;        <span class="keywordflow">if</span>( !m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f">close</a>() )</div>
+<div class="line"><a name="l00825"></a><span class="lineno">  825</span>&#160;        {</div>
+<div class="line"><a name="l00826"></a><span class="lineno">  826</span>&#160;            this-&gt;setstate( std::ios_base::failbit );</div>
+<div class="line"><a name="l00827"></a><span class="lineno">  827</span>&#160;        }</div>
+<div class="line"><a name="l00828"></a><span class="lineno">  828</span>&#160;    }</div>
+<div class="line"><a name="l00830"></a><span class="lineno"><a class="line" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2968a48ee9754c0b8731298385beaa">  830</a></span>&#160;    std::streamsize <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2968a48ee9754c0b8731298385beaa">size</a>( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00831"></a><span class="lineno">  831</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00832"></a><span class="lineno">  832</span>&#160;        <span class="keywordflow">return</span> m_streambuf.<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a5994f4d449d11de4188201f74ffafd94">size</a>();</div>
+<div class="line"><a name="l00833"></a><span class="lineno">  833</span>&#160;    }</div>
+<div class="line"><a name="l00834"></a><span class="lineno">  834</span>&#160;};</div>
+<div class="line"><a name="l00835"></a><span class="lineno">  835</span>&#160;</div>
+<div class="line"><a name="l00837"></a><span class="lineno">  837</span>&#160;</div>
+<div class="line"><a name="l00922"></a><span class="lineno"><a class="line" href="group___gen_i_cam_interface_file_stream.html#ga7d9df27b854d193a06556bda6f1a9488">  922</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">ODevFileStreamBase&lt;char, std::char_traits&lt;char&gt;</a> &gt; <a class="code" href="group___gen_i_cam_interface_file_stream.html#ga7d9df27b854d193a06556bda6f1a9488">ODevFileStream</a>;</div>
+<div class="line"><a name="l00924"></a><span class="lineno">  924</span>&#160;</div>
+<div class="line"><a name="l01004"></a><span class="lineno"><a class="line" href="group___gen_i_cam_interface_file_stream.html#ga35f546ea58f515c24771b20132efacbc"> 1004</a></span>&#160;<span class="keyword">typedef</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">IDevFileStreamBase&lt;char, std::char_traits&lt;char&gt;</a> &gt; <a class="code" href="group___gen_i_cam_interface_file_stream.html#ga35f546ea58f515c24771b20132efacbc">IDevFileStream</a>;</div>
+<div class="line"><a name="l01005"></a><span class="lineno"> 1005</span>&#160;</div>
+<div class="line"><a name="l01007"></a><span class="lineno"> 1007</span>&#160;</div>
+<div class="line"><a name="l01008"></a><span class="lineno"> 1008</span>&#160;} <span class="comment">// namespace GenICam</span></div>
+<div class="line"><a name="l01009"></a><span class="lineno"> 1009</span>&#160;} <span class="comment">// namespace acquire</span></div>
+<div class="line"><a name="l01010"></a><span class="lineno"> 1010</span>&#160;} <span class="comment">// namespace mvIMPACT</span></div>
+<div class="line"><a name="l01011"></a><span class="lineno"> 1011</span>&#160;</div>
+<div class="line"><a name="l01012"></a><span class="lineno"> 1012</span>&#160;<span class="preprocessor">#ifdef _MSC_VER</span></div>
+<div class="line"><a name="l01013"></a><span class="lineno"> 1013</span>&#160;<span class="preprocessor">#   pragma pop_macro(&quot;min&quot;)</span></div>
+<div class="line"><a name="l01014"></a><span class="lineno"> 1014</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l01015"></a><span class="lineno"> 1015</span>&#160;</div>
+<div class="line"><a name="l01016"></a><span class="lineno"> 1016</span>&#160;<span class="preprocessor">#endif // MVIMPACT_ACQUIRE_GENICAM_FILESTREAM_H_</span></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html_a0bdb237270baa68431793dcf5de9c30f"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f">mvIMPACT::acquire::GenICam::IDevFileStreamBuf::close</a></div><div class="ttdeci">filebuf_type * close(void)</div><div class="ttdoc">Closes a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:387</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_a89f55f99f0e20b79d2d7258f04fc5804"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804">mvIMPACT::acquire::GenICam::FileProtocolAdapter::closeFile</a></div><div class="ttdeci">bool closeFile(const char *pFileName)</div><div class="ttdoc">Close a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:144</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64_html_af07a08bb44499e26f0886a4aca9c5e13"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13">mvIMPACT::acquire::EnumPropertyI64::write</a></div><div class="ttdeci">const EnumPropertyI64 &amp; write(ZYX value, int index=0) const </div><div class="ttdoc">Writes one value to the property. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4289</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_ae0c807ddd866348a2bcf9b8886640427"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#ae0c807ddd866348a2bcf9b8886640427">mvIMPACT::acquire::GenICam::FileProtocolAdapter::size</a></div><div class="ttdeci">std::streamsize size(void) const </div><div class="ttdoc">Fetch the size of the file currently selected on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:271</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_acb66bce933bb96624a3e3ae9427ec418"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418">mvIMPACT::acquire::GenICam::FileProtocolAdapter::getBufSize</a></div><div class="ttdeci">int64_type getBufSize(const char *pFileName, std::ios_base::openmode mode)</div><div class="ttdoc">Fetch max FileAccessBuffer length for a file. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:248</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html_a17357fc5b1015fe5c851cdcf07ade0bf"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a17357fc5b1015fe5c851cdcf07ade0bf">mvIMPACT::acquire::GenICam::IDevFileStreamBuf::IDevFileStreamBuf</a></div><div class="ttdeci">IDevFileStreamBuf()</div><div class="ttdoc">Constructs a new mvIMPACT::acquire::GenICam::IDevFileStreamBuf object. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:314</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html">mvIMPACT::acquire::GenICam::ODevFileStreamBase</a></div><div class="ttdoc">An output stream buffer derived from std::basic_ostream used to write to a file on a device...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:628</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_a9fbeda8fcbc8e475f629159309d0344f"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a9fbeda8fcbc8e475f629159309d0344f">mvIMPACT::acquire::GenICam::FileProtocolAdapter::FileProtocolAdapter</a></div><div class="ttdeci">FileProtocolAdapter()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:72</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_html_a51893d14c0fc6128bc9f4cc0ba5a7e5d"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">mvIMPACT::acquire::Property::writeS</a></div><div class="ttdeci">const Property &amp; writeS(const std::string &amp;value, int index=0) const </div><div class="ttdoc">Assigns a new value to this property. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:2747</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf_html_af6d1706049789ff8937e353bbb5f7cd6"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6">mvIMPACT::acquire::GenICam::ODevFileStreamBuf::close</a></div><div class="ttdeci">filebuf_type * close(void)</div><div class="ttdoc">Closes a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:541</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_a6b697a1b2250aca9e7b118d83f7e12ac"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac">mvIMPACT::acquire::GenICam::FileProtocolAdapter::attach</a></div><div class="ttdeci">bool attach(mvIMPACT::acquire::Device *pDev, const std::string &amp;settingName=&quot;Base&quot;)</div><div class="ttdoc">Attach file protocol adapter to the corresponding properties. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:77</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64_html_aa9ee83a5b6b5243f05a85a769ef3d3f3"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3">mvIMPACT::acquire::EnumPropertyI64::read</a></div><div class="ttdeci">ZYX read(int index=0) const </div><div class="ttdoc">Reads a value from a property. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4161</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html_a1582174c671638bd6faedac8e60890e6"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a1582174c671638bd6faedac8e60890e6">mvIMPACT::acquire::GenICam::IDevFileStreamBuf::is_open</a></div><div class="ttdeci">bool is_open(void) const </div><div class="ttdoc">Determines if a file is open. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:369</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base_html_a18c100cf08c0f6d64230a569de872a40"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a18c100cf08c0f6d64230a569de872a40">mvIMPACT::acquire::GenICam::ODevFileStreamBase::close</a></div><div class="ttdeci">void close(void)</div><div class="ttdoc">Close the file on device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:715</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html_a5994f4d449d11de4188201f74ffafd94"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a5994f4d449d11de4188201f74ffafd94">mvIMPACT::acquire::GenICam::IDevFileStreamBuf::size</a></div><div class="ttdeci">std::streamsize size(void) const </div><div class="ttdoc">Fetch the size of the file currently selected on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:377</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf_html_a96a881b88fe2df12b9a218dcebfd15c4"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a96a881b88fe2df12b9a218dcebfd15c4">mvIMPACT::acquire::GenICam::ODevFileStreamBuf::~ODevFileStreamBuf</a></div><div class="ttdeci">~ODevFileStreamBuf()</div><div class="ttdoc">class destructor. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:483</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s_html_a8d0247ac6a035407c0ba751bc23ac016"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016">mvIMPACT::acquire::PropertyS::binaryDataBufferMaxSize</a></div><div class="ttdeci">unsigned int binaryDataBufferMaxSize(void) const </div><div class="ttdoc">Reads the max size(in bytes) of binary data this property can store. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4535</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_a849322aeba6552b08ac0ef4c69c390b0"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0">mvIMPACT::acquire::GenICam::FileProtocolAdapter::openFile</a></div><div class="ttdeci">bool openFile(const char *pFileName, std::ios_base::openmode mode)</div><div class="ttdoc">Open a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:111</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_html_a07a75604e54c78ff772d9e0731c8a318"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">mvIMPACT::acquire::ComponentLocatorBase::bindComponent</a></div><div class="ttdeci">bool bindComponent(Component &amp;access, const std::string &amp;name, int searchMode=0, int maxSearchDepth=INT_MAX) const </div><div class="ttdoc">Binds an access object to an internal driver object. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:1888</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base_html_a7d4c433c77be828124c45899d26ef34e"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7d4c433c77be828124c45899d26ef34e">mvIMPACT::acquire::GenICam::ODevFileStreamBase::rdbuf</a></div><div class="ttdeci">filebuf_type * rdbuf(void) const </div><div class="ttdoc">Returns the address of the stored stream buffer. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:682</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_method_html_a0f6be3f09242b7a2fab7e45342c80fb0"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0">mvIMPACT::acquire::Method::call</a></div><div class="ttdeci">int call(const std::string &amp;params, const std::string &amp;delimiters=&quot; &quot;) const </div><div class="ttdoc">Calls an underlying driver function. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:2211</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base_html_a9a2c2982dc80de791f717eb33c400b56"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2c2982dc80de791f717eb33c400b56">mvIMPACT::acquire::GenICam::IDevFileStreamBase::close</a></div><div class="ttdeci">void close(void)</div><div class="ttdoc">Close the file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:822</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base_html_a7320dc61122a8643618f16afa01e7619"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619">mvIMPACT::acquire::GenICam::ODevFileStreamBase::open</a></div><div class="ttdeci">void open(mvIMPACT::acquire::Device *pDev, const char *pFileName, std::ios_base::openmode mode=std::ios_base::out|std::ios_base::trunc)</div><div class="ttdoc">Open file on device in write mode. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:697</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html">mvIMPACT::acquire::DeviceComponentLocator</a></div><div class="ttdoc">A class to locate components within the driver. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:6568</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_html_ac51e55e7e046101f3c6119d84123abd5"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">mvIMPACT::acquire::Component::isValid</a></div><div class="ttdeci">bool isValid(void) const </div><div class="ttdoc">Checks if the internal component referenced by this object is still valid. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:1319</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_a6fb017f1185bb2d85069dd77d50654b9"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9">mvIMPACT::acquire::GenICam::FileProtocolAdapter::write</a></div><div class="ttdeci">std::streamsize write(const char *pBuf, int64_type offs, int64_type len, const char *pFileName)</div><div class="ttdoc">Writes data into a file. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:157</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s_html_a29342383600102e22fd6e235fcd63728"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a29342383600102e22fd6e235fcd63728">mvIMPACT::acquire::PropertyS::readBinary</a></div><div class="ttdeci">std::string readBinary(int index=0) const </div><div class="ttdoc">Reads a value stored in the property as binary data. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4595</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base_html_aef7902b4fd30e5dbd799e0dd45e397dc"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#aef7902b4fd30e5dbd799e0dd45e397dc">mvIMPACT::acquire::GenICam::ODevFileStreamBase::is_open</a></div><div class="ttdeci">bool is_open(void) const </div><div class="ttdoc">Determines if a file is open. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:692</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html_a37d4353bb8aa6f0b2d41a14c52eb2ab5"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5">mvIMPACT::acquire::GenICam::FileProtocolAdapter::read</a></div><div class="ttdeci">std::streamsize read(char *pBuf, int64_type offs, std::streamsize len, const char *pFileName)</div><div class="ttdoc">Read data from the device into a buffer. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:204</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_html_adf4cb4c232b202a51c7161caf9b36165"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165">mvIMPACT::acquire::Device::open</a></div><div class="ttdeci">void open(void)</div><div class="ttdoc">Opens a device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:5431</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf_html_afbe8e24163d5bd9cfdd353341ffd0e60"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60">mvIMPACT::acquire::GenICam::ODevFileStreamBuf::open</a></div><div class="ttdeci">filebuf_type * open(mvIMPACT::acquire::Device *pDev, const char *pFileName, std::ios_base::openmode mode)</div><div class="ttdoc">Opens a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:497</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s_html_ac08293bd5d249b57a66ea5d325c9a37a"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#ac08293bd5d249b57a66ea5d325c9a37a">mvIMPACT::acquire::PropertyS::writeBinary</a></div><div class="ttdeci">const PropertyS &amp; writeBinary(const std::string &amp;value, int index=0) const </div><div class="ttdoc">Writes a block of binary data to one entry of the property. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4684</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf_html_a20d6928c14478b475109f079baf0ecb0"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a20d6928c14478b475109f079baf0ecb0">mvIMPACT::acquire::GenICam::ODevFileStreamBuf::ODevFileStreamBuf</a></div><div class="ttdeci">ODevFileStreamBuf()</div><div class="ttdoc">Constructs a new mvIMPACT::acquire::GenICam::ODevFileStreamBuf object. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:481</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html">mvIMPACT::acquire::GenICam::FileProtocolAdapter</a></div><div class="ttdoc">Adapter between the std::iostreambuf and the SFNC Features representing the device file system...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:44</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base_html_a46f61f8585c3da76cb235213ab8f4672"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a46f61f8585c3da76cb235213ab8f4672">mvIMPACT::acquire::GenICam::IDevFileStreamBase::is_open</a></div><div class="ttdeci">bool is_open(void) const </div><div class="ttdoc">Determines if a file is open. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:795</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory_html_a70b2f93291f2269c04ef2092c7872527"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527">mvIMPACT::acquire::ExceptionFactory::raiseException</a></div><div class="ttdeci">static void raiseException(const char *pFunctionName, int lineNumber, int errorCode, HOBJ objectHandle=INVALID_ID, const std::string &amp;additionalInfo=&quot;&quot;)</div><div class="ttdoc">Raises an exception from an error code, its origin, a string with additional information and an optio...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:19067</div></div>
+<div class="ttc" id="group___gen_i_cam_interface_file_stream_html_ga35f546ea58f515c24771b20132efacbc"><div class="ttname"><a href="group___gen_i_cam_interface_file_stream.html#ga35f546ea58f515c24771b20132efacbc">mvIMPACT::acquire::GenICam::IDevFileStream</a></div><div class="ttdeci">IDevFileStreamBase&lt; char, std::char_traits&lt; char &gt; &gt; IDevFileStream</div><div class="ttdoc">A type for char type file access. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:1004</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_html_aa5fe87d8c899f71c88a7cacb4da2fb43"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43">mvIMPACT::acquire::Property::readS</a></div><div class="ttdeci">std::string readS(int index=0, const std::string &amp;format=&quot;&quot;) const </div><div class="ttdoc">Reads data from this property as a string. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:2556</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base_html_a9a2968a48ee9754c0b8731298385beaa"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2968a48ee9754c0b8731298385beaa">mvIMPACT::acquire::GenICam::IDevFileStreamBase::size</a></div><div class="ttdeci">std::streamsize size(void) const </div><div class="ttdoc">Returns the size of the file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:830</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::EnumPropertyI64&lt; int64_type &gt;</a></div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base_html_a76b6d17adb3ec0657f14deb374c5ff0b"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b">mvIMPACT::acquire::GenICam::IDevFileStreamBase::open</a></div><div class="ttdeci">void open(mvIMPACT::acquire::Device *pDev, const char *pFileName, std::ios_base::openmode mode=std::ios_base::in)</div><div class="ttdoc">Opens a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:804</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html">mvIMPACT::acquire::GenICam::IDevFileStreamBase</a></div><div class="ttdoc">An output stream buffer derived from std::basic_istream used to read from a file on a device...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:731</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a></div><div class="ttdoc">This class and its functions represent an actual device detected by this interface in the current sys...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:5161</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf_html_aa349bd80b98040141e7a2b1f02f9cbb5"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#aa349bd80b98040141e7a2b1f02f9cbb5">mvIMPACT::acquire::GenICam::ODevFileStreamBuf::is_open</a></div><div class="ttdeci">bool is_open(void) const </div><div class="ttdoc">Determines if a file is open. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:531</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_html_a1c8ba8de5814f1034487245ae57840f9"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9">mvIMPACT::acquire::Device::isOpen</a></div><div class="ttdeci">bool isOpen(void) const </div><div class="ttdoc">Returns the current initialisation status in this process. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:5374</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html_abeac383d8920db202b6b9aa6d5ec557e"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e">mvIMPACT::acquire::GenICam::IDevFileStreamBuf::open</a></div><div class="ttdeci">filebuf_type * open(mvIMPACT::acquire::Device *pDev, const char *pFileName, std::ios_base::openmode mode=std::ios_base::in)</div><div class="ttdoc">Opens a file on the device. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:330</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64_html_aec8c49f90f853f085444f0167385b3b5"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aec8c49f90f853f085444f0167385b3b5">mvIMPACT::acquire::EnumPropertyI64::getMaxValue</a></div><div class="ttdeci">ZYX getMaxValue(void) const </div><div class="ttdoc">Reads the maximum value from a property. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4186</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base_html_af0eeb589e3eb0e62c6bb25d372c0df35"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#af0eeb589e3eb0e62c6bb25d372c0df35">mvIMPACT::acquire::GenICam::IDevFileStreamBase::rdbuf</a></div><div class="ttdeci">filebuf_type * rdbuf(void) const </div><div class="ttdoc">Returns the address of the stored stream buffer. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:785</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html_aadb6c054750ff6390f13d5df7241ef8e"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#aadb6c054750ff6390f13d5df7241ef8e">mvIMPACT::acquire::GenICam::IDevFileStreamBuf::~IDevFileStreamBuf</a></div><div class="ttdeci">~IDevFileStreamBuf()</div><div class="ttdoc">class destructor. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:316</div></div>
+<div class="ttc" id="group___common_interface_html_gga112225e5fbaaaef6445ff4ebf98f8e03a556fcf72ff59405d5955691b8ee13720"><div class="ttname"><a href="group___common_interface.html#gga112225e5fbaaaef6445ff4ebf98f8e03a556fcf72ff59405d5955691b8ee13720">DMR_INVALID_PARAMETER</a></div><div class="ttdoc">An invalid parameter has been passed to a function. </div><div class="ttdef"><b>Definition:</b> mvDriverBaseEnums.h:2481</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html">mvIMPACT::acquire::GenICam::IDevFileStreamBuf</a></div><div class="ttdoc">An input stream buffer derived from std::basic_streambuf used to read from a file of a device...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:295</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_method_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">mvIMPACT::acquire::Method</a></div><div class="ttdoc">A class to call arbitrary driver functions. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:2157</div></div>
+<div class="ttc" id="group___gen_i_cam_interface_file_stream_html_ga7d9df27b854d193a06556bda6f1a9488"><div class="ttname"><a href="group___gen_i_cam_interface_file_stream.html#ga7d9df27b854d193a06556bda6f1a9488">mvIMPACT::acquire::GenICam::ODevFileStream</a></div><div class="ttdeci">ODevFileStreamBase&lt; char, std::char_traits&lt; char &gt; &gt; ODevFileStream</div><div class="ttdoc">A type for char type file access. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:922</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">mvIMPACT::acquire::PropertyS</a></div><div class="ttdoc">A class to represent string properties. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:4479</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html">mvIMPACT::acquire::GenICam::ODevFileStreamBuf</a></div><div class="ttdoc">An output stream buffer derived from std::basic_streambuf used to write to a file on a device...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam_FileStream.h:462</div></div>
+<div class="ttc" id="group___common_interface_html_gga0dca79bbf0803a4ecec16d6cbb1a3dbbaf47a23922dbe8011a3bc439f732e54c5"><div class="ttname"><a href="group___common_interface.html#gga0dca79bbf0803a4ecec16d6cbb1a3dbbaf47a23922dbe8011a3bc439f732e54c5">mvIMPACT::acquire::dltSetting</a></div><div class="ttdoc">Specifies a certain setting. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:6397</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_4f40284522bfc2df77cb93c28ac80267.html">mvIMPACT_CPP</a></li><li class="navelem"><b>mvIMPACT_acquire_GenICam_FileStream.h</b></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:21 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

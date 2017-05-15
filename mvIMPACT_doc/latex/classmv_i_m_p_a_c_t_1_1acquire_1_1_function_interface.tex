@@ -1,0 +1,959 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Function\+Interface类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+}
+
+
+The function interface to devices supported by this interface.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb}{Function\+Interface} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory}{Request\+Factory} $\ast$p\+Request\+Factory=0)
+\begin{DoxyCompactList}\small\item\em Constructs a new function interface for the device pointed to by {\itshape p\+Dev}. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a875c9c5693422ca7b7a3d284b029134e}{Function\+Interface} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{Function\+Interface} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} from and existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ad5050198e319bb23b3f4db71dbddf8fb}{virtual \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ad5050198e319bb23b3f4db71dbddf8fb}{$\sim$\+Function\+Interface} (void)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ad5050198e319bb23b3f4db71dbddf8fb}
+
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a697ea6ae2fce0f864fff73aa8e0fc056}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{Function\+Interface} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a697ea6ae2fce0f864fff73aa8e0fc056}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{Function\+Interface} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a697ea6ae2fce0f864fff73aa8e0fc056}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} objects. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{acquisition\+Start} (void) const 
+\begin{DoxyCompactList}\small\item\em Manually starts the acquisition engine of this device driver instance. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab52b63727aa33cb4cc2bdd0856c0f237}{acquisition\+Stop} (void) const 
+\begin{DoxyCompactList}\small\item\em Manually stops the acquisition engine of this device driver instance. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a64b15537a09e6bb887075b15cba2c90b}{create\+Image\+Request\+Control} (const std\+::string \&name, const std\+::string \&parent=\char`\"{}Base\char`\"{}, Component\+List $\ast$p\+New\+Request\+Control=0)
+\begin{DoxyCompactList}\small\item\em Creates a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{create\+Setting} (const std\+::string \&name, const std\+::string \&parent=\char`\"{}Base\char`\"{}, Component\+List $\ast$p\+New\+Setting=0)
+\begin{DoxyCompactList}\small\item\em Creates a new setting. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{get\+Available\+Settings} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the names of the settings available for this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::string $>$ \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a5e9a808de6c96158960cbdcc7dcf7734}{get\+Available\+Image\+Request\+Controls} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the names of the image request controls available for this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_afea62dee2bda1b47c24821f9121c5505}{get\+Request} (int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to the desired {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{Component\+List} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2}{get\+Setting} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} object to a setting with a specified name. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{image\+Request\+Configure} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$p\+Request) const 
+\begin{DoxyCompactList}\small\item\em Allows to set a request into configuration mode. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}{image\+Request\+Result\+Queue\+Element\+Count} (int queue\+Nr=0) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects in the result queue . \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{image\+Request\+Reset} (int request\+Ctrl\+Nr, int mode) const 
+\begin{DoxyCompactList}\small\item\em Deletes all requests currently queued for the specified {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{image\+Request\+Single} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{Image\+Request\+Control} $\ast$p\+Image\+Request\+Control=0, int $\ast$p\+Request\+Used=0) const 
+\begin{DoxyCompactList}\small\item\em Sends an image request to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} driver. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{image\+Request\+Unlock} (int nr) const 
+\begin{DoxyCompactList}\small\item\em Unlocks the request for the driver again. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{image\+Request\+Wait\+For} (int timeout\+\_\+ms, int queue\+Nr=0) const 
+\begin{DoxyCompactList}\small\item\em Waits for an image request to become ready. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a}{get\+Current\+Capture\+Buffer\+Layout} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{Image\+Request\+Control} \&image\+Request\+Control, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$$\ast$pp\+Request=0, int $\ast$p\+Alignment=0) const 
+\begin{DoxyCompactList}\small\item\em Returns information about the current capture buffer requirements. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae7b571a1f0d1cbaebfb7d117799edcd0}{get\+Current\+Capture\+Buffer\+Layout} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{Image\+Request\+Control} \&image\+Request\+Control, int \&size, int \&alignment) const 
+\begin{DoxyCompactList}\small\item\em Returns information about the current capture buffer requirements. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a44e5c0d39914e25243bc61c18cc5d954}{is\+Request\+Nr\+Valid} (int nr) const 
+\begin{DoxyCompactList}\small\item\em Check if {\itshape nr} specifies a valid {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae494724c1e29e38f0e83e8a5f5793772}{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P} (bool is\+Request\+O\+K(const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$p) const )
+\begin{DoxyCompactList}\small\item\em Checks if a request has been processed successfully({\bfseries deprecated}). \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab670f49c3a55f7e90d52935a9194bdb0}{load\+Setting} (const std\+::string \&name, \hyperlink{group___common_interface_ga9390ccf3b2ebe68eee998798d59dc823}{T\+Storage\+Flag} storage\+Flags=\hyperlink{group___common_interface_gga9390ccf3b2ebe68eee998798d59dc823a7558412f9b613d098c692dbd1dab68b2}{sf\+Native}, \hyperlink{group___common_interface_gae6cc8fec0123f239690564ecdeba4350}{T\+Scope} scope=\hyperlink{group___common_interface_ggae6cc8fec0123f239690564ecdeba4350a54b8661877c9fef76d20cc2b83722c60}{s\+Global}) const 
+\begin{DoxyCompactList}\small\item\em Loads a previously stored setting. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a113132465f900b0d60b44ecc71640270}{load\+Setting\+From\+Default} (\hyperlink{group___common_interface_gae6cc8fec0123f239690564ecdeba4350}{T\+Scope} scope=\hyperlink{group___common_interface_ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79}{s\+User}) const 
+\begin{DoxyCompactList}\small\item\em Loads the default settings. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af013eddce4d0a33e580079969d1ce3c0}{request\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of available request objects. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af58882e7db1d92551f83ca39f4d6516d}{save\+Setting} (const std\+::string \&name, \hyperlink{group___common_interface_ga9390ccf3b2ebe68eee998798d59dc823}{T\+Storage\+Flag} storage\+Flags=\hyperlink{group___common_interface_gga9390ccf3b2ebe68eee998798d59dc823a7558412f9b613d098c692dbd1dab68b2}{sf\+Native}, \hyperlink{group___common_interface_gae6cc8fec0123f239690564ecdeba4350}{T\+Scope} scope=\hyperlink{group___common_interface_ggae6cc8fec0123f239690564ecdeba4350a54b8661877c9fef76d20cc2b83722c60}{s\+Global}) const 
+\begin{DoxyCompactList}\small\item\em Stores the current settings. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a68667a298b96ed10a0d8cecebbd9b9a6}{save\+Setting\+To\+Default} (\hyperlink{group___common_interface_gae6cc8fec0123f239690564ecdeba4350}{T\+Scope} scope=\hyperlink{group___common_interface_ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79}{s\+User}) const 
+\begin{DoxyCompactList}\small\item\em Stores the current settings under a default location. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae0f9f7f436a40980ce6d346ecc0e3030}{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P} (int save\+System\+To\+Default(\hyperlink{group___common_interface_gae6cc8fec0123f239690564ecdeba4350}{T\+Scope} scope=\hyperlink{group___common_interface_ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79}{s\+User}) const )
+\begin{DoxyCompactList}\small\item\em Stores the current system settings under a default location ({\bfseries deprecated}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+The function interface to devices supported by this interface. 
+
+This class contains all the basic functions needed when working with a device. There are not too many functions as most data will be represented by 'properties' in other classes of this module, keeping the set of functions to remember rather small. To construct a new function interface, a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object must be passed to the constructor of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}. In order to work with the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} object the device needs to be initialized, so if the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object pointed to by {\itshape p\+Dev} in the constructors parameter list hasn't been opened already the constructor will try to do that. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!Function\+Interface@{Function\+Interface}}
+\index{Function\+Interface@{Function\+Interface}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{Function\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::\+Function\+Interface (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{{\bf Request\+Factory} $\ast$}]{p\+Request\+Factory = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb}
+
+
+Constructs a new function interface for the device pointed to by {\itshape p\+Dev}. 
+
+In order to work with the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} object the device needs to be initialized, so if the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object pointed to by {\itshape p\+Dev} in the constructors parameter list hasn't been opened already the constructor will try to do that. Thus internally a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open}} might be preformed with all consequences following from this call.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{Device\+::open}} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em p\+Request\+Factory} & A pointer to a request factory. By supplying a custom request factory the user can control the type of request objects that will be created by the function interface. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{自从}
+1.\+12.\+56 
+\end{DoxySince}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a875c9c5693422ca7b7a3d284b029134e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!Function\+Interface@{Function\+Interface}}
+\index{Function\+Interface@{Function\+Interface}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{Function\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::\+Function\+Interface (
+\begin{DoxyParamCaption}
+\item[{const {\bf Function\+Interface} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a875c9c5693422ca7b7a3d284b029134e}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} from and existing one. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em src} & A constant reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} object, this object shall be created from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!acquisition\+Start@{acquisition\+Start}}
+\index{acquisition\+Start@{acquisition\+Start}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{acquisition\+Start}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}
+
+
+Manually starts the acquisition engine of this device driver instance. 
+
+Calling this function will manually start this device driver's acquisition engine. This will only have an effect on the overall behaviour if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::assb\+User}.
+
+If supported by the device driver, starting and stopping the acquisition engine manually can sometimes help to overcome capture queue underruns or certain restrictions in the underlying device driver technology.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab52b63727aa33cb4cc2bdd0856c0f237}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Stop}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+11
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E} if this device/driver combination does not support manual control over the acquisition engine. This will also happen if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::assb\+User}.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab52b63727aa33cb4cc2bdd0856c0f237}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!acquisition\+Stop@{acquisition\+Stop}}
+\index{acquisition\+Stop@{acquisition\+Stop}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{acquisition\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab52b63727aa33cb4cc2bdd0856c0f237}
+
+
+Manually stops the acquisition engine of this device driver instance. 
+
+Calling this function will manually stop this device drivers acquisition engine. This will only have effect on the overall behaviour, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::assb\+User}.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Start}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+11
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E} if this device/driver combination does not support manual control over the acquisition engine. This will also happen if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::assb\+User}.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a64b15537a09e6bb887075b15cba2c90b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!create\+Image\+Request\+Control@{create\+Image\+Request\+Control}}
+\index{create\+Image\+Request\+Control@{create\+Image\+Request\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{create\+Image\+Request\+Control}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Image\+Request\+Control (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{parent = {\ttfamily \char`\"{}Base\char`\"{}}, }
+\item[{{\bf Component\+List} $\ast$}]{p\+New\+Request\+Control = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a64b15537a09e6bb887075b15cba2c90b}
+
+
+Creates a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object. 
+
+This function creates a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} based on an existing one. New {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} instances can only be derived from {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} instances that already exist. When the driver has been initialized there will at least be one base {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} called 'Base', which acts as the base for all other request controls.
+
+All {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} constructed by the application must be derived either from this base or any of its children using this function.
+
+When this function succeeds, the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} constructor can be called with the {\itshape name} parameter passed to this function to get access to this newly registered {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}.
+
+\begin{DoxyNote}{注解}
+See all comments made under {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} for understanding the relationship between base and derived {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} objects. 
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object. \\
+\hline
+\mbox{\tt in}  & {\em parent} & The name of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} the new object shall be derived from. \\
+\hline
+\mbox{\tt out}  & {\em p\+New\+Request\+Control} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} object that will receive the I\+D of the newly created request control. This parameter can be 0 if the application is not interested in that parameter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!create\+Setting@{create\+Setting}}
+\index{create\+Setting@{create\+Setting}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{create\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{const std\+::string \&}]{parent = {\ttfamily \char`\"{}Base\char`\"{}}, }
+\item[{{\bf Component\+List} $\ast$}]{p\+New\+Setting = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}
+
+
+Creates a new setting. 
+
+This function creates a new setting base on an existing one. New settings can only be derived from settings that already exist. When the driver has been initialized there will at least be one base setting called 'Base', which acts as the base for all other settings.
+
+When a new setting is created it derives all the properties from the parent setting. That means initially the new setting will contain the very same data as the parent setting. As long as a component hasn't been modified in the new setting it will depend on the parent settings data. That means if e.\+g. a property in the parent list is modified, the newly created setting will also benefit from the updated value.
+
+To release a certain component from this dependency it must be assigned a new value. The function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae5ea06015da01ed640f4a357d90326f9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Default}} will return false afterwards indicating that the component no longer depends on the parent.
+
+To restore this parent $<$-\/$>$ child dependency the user can call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa13d62964b8282fd66f6d4fae48f85b2}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::restore\+Default}}. Afterwards settings applied to the parent component will also be visible in the child component again.
+
+When a new setting has been created successfully the name used to create the setting can be passed to any of the constructors of the setting related classes ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}, ...) to access the new components. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the setting to be created. \\
+\hline
+\mbox{\tt in}  & {\em parent} & The name of the setting to derive the new setting from. \\
+\hline
+\mbox{\tt out}  & {\em p\+New\+Setting} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} object that will receive the I\+D of the newly created setting. This parameter can be 0 if the application is not interested in that parameter. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a5e9a808de6c96158960cbdcc7dcf7734}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!get\+Available\+Image\+Request\+Controls@{get\+Available\+Image\+Request\+Controls}}
+\index{get\+Available\+Image\+Request\+Controls@{get\+Available\+Image\+Request\+Controls}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{get\+Available\+Image\+Request\+Controls}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$std\+::string$>$\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Image\+Request\+Controls (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a5e9a808de6c96158960cbdcc7dcf7734}
+
+
+Returns the names of the image request controls available for this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. 
+
+This function returns a const reference to a string array containing the names of all image request controls available for the current {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. These names are valid constructor parameters for objects of the type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}.
+
+New image request controls can be created by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a64b15537a09e6bb887075b15cba2c90b}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Image\+Request\+Control}}. \begin{DoxyReturn}{返回}
+A const reference to an array containing the names of all settings available. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!get\+Available\+Settings@{get\+Available\+Settings}}
+\index{get\+Available\+Settings@{get\+Available\+Settings}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{get\+Available\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$std\+::string$>$\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}
+
+
+Returns the names of the settings available for this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. 
+
+This function returns a const reference to a string array containing the names of all settings available for the current {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. These names are valid constructor parameters for objects like {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}} or classes derived from these types.
+
+New settings can be created by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \begin{DoxyReturn}{返回}
+A const reference to an array containing the names of all request controls available. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!get\+Current\+Capture\+Buffer\+Layout@{get\+Current\+Capture\+Buffer\+Layout}}
+\index{get\+Current\+Capture\+Buffer\+Layout@{get\+Current\+Capture\+Buffer\+Layout}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{get\+Current\+Capture\+Buffer\+Layout}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Current\+Capture\+Buffer\+Layout (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Request\+Control} \&}]{image\+Request\+Control, }
+\item[{{\bf Request} $\ast$$\ast$}]{pp\+Request = {\ttfamily 0}, }
+\item[{int $\ast$}]{p\+Alignment = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a}
+
+
+Returns information about the current capture buffer requirements. 
+
+When an application wants to provide capture buffers, this function will be needed in order to get information on how the capture buffers must be constructed. The most important parameters will probably be {\itshape alignment} and {\itshape size}, thus for most application calling the other overload of this function will probably be enough.
+
+To find out more about capturing to user memory please refer to the application
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+68
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em image\+Request\+Control} & A reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object containing the setting for which the current capture buffer layout shall be queried. The setting can be defined via the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acf18030a40a4c3ea66a14097f81a2652}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::setting}}. \\
+\hline
+\mbox{\tt out}  & {\em pp\+Request} & On a successful call this variable will receive a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object reflecting the current capture buffer layout. \\
+\hline
+\mbox{\tt out}  & {\em p\+Alignment} & On a successful call this variable will receive the alignment needed for capturing into user supplied buffers that use the current settings. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae7b571a1f0d1cbaebfb7d117799edcd0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!get\+Current\+Capture\+Buffer\+Layout@{get\+Current\+Capture\+Buffer\+Layout}}
+\index{get\+Current\+Capture\+Buffer\+Layout@{get\+Current\+Capture\+Buffer\+Layout}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{get\+Current\+Capture\+Buffer\+Layout}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Current\+Capture\+Buffer\+Layout (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Request\+Control} \&}]{image\+Request\+Control, }
+\item[{int \&}]{size, }
+\item[{int \&}]{alignment}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae7b571a1f0d1cbaebfb7d117799edcd0}
+
+
+Returns information about the current capture buffer requirements. 
+
+When an application wants to provide capture buffers, this function will be needed in order to get information on how the capture buffers must be constructed.
+
+To find out more about capturing to user memory please refer to the application Capture\+To\+User\+Memory.\+cpp
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+68
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em image\+Request\+Control} & A reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object containing the setting for which the current capture buffer layout shall be queried. The setting can be defined via the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acf18030a40a4c3ea66a14097f81a2652}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::setting}}. \\
+\hline
+\mbox{\tt out}  & {\em size} & On a successful call this variable will receive the size needed for capturing into user supplied buffers that use the current settings. \\
+\hline
+\mbox{\tt out}  & {\em alignment} & On a successful call this variable will receive the alignment needed for capturing into user supplied buffers that use the current settings. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_afea62dee2bda1b47c24821f9121c5505}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!get\+Request@{get\+Request}}
+\index{get\+Request@{get\+Request}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{get\+Request}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Request}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Request (
+\begin{DoxyParamCaption}
+\item[{int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_afea62dee2bda1b47c24821f9121c5505}
+
+
+Returns a pointer to the desired {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}. 
+
+This function returns a pointer to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} stored at {\itshape nr} in the internal array of requests. \begin{DoxyReturn}{返回}
+A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the request to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!get\+Setting@{get\+Setting}}
+\index{get\+Setting@{get\+Setting}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{get\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component\+List} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Setting (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2}
+
+
+Returns a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} object to a setting with a specified name. 
+
+This function returns a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} object to a setting with a specified name or will raise an exception if no such setting exists.
+
+\begin{DoxySince}{自从}
+1.\+12.\+58
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} object to a setting with a specified name 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the setting to locate \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!image\+Request\+Configure@{image\+Request\+Configure}}
+\index{image\+Request\+Configure@{image\+Request\+Configure}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{image\+Request\+Configure}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} $\ast$}]{p\+Request}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}
+
+
+Allows to set a request into configuration mode. 
+
+\begin{DoxyNote}{注解}
+Another version of this function is available that might be nicer to use depending on personal preferences and use case\+: {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}.
+\end{DoxyNote}
+In configuration mode certain properties like {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Data}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Size}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a05c7f2aad294449e1a9f6eb4a13597d4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Memory\+Mode}} of a request object can be modified. This can be used to configure one or more requests to use a user supplied memory. To use only a subset of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects available the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::request\+To\+Use}} feature can be used.
+
+Only requests that are currently not used by the driver and are not locked because they contain image data that hasn't been processed can be set into configuration mode.
+
+\begin{DoxyNote}{注解}
+Instead of calling this function directly for most cases it is much more convenient to use the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}} instead.
+\end{DoxyNote}
+User supplied buffers must follow the alignment and size requirements reported by versions of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Current\+Capture\+Buffer\+Layout}}. Calling a version of this function will return all the information required to allocate buffers that can be used to capture data for the specified settings.
+
+When allocating memory on the heap, the complete buffer size is needed which is calculated like this\+:
+
+{\bfseries size} + alignment
+
+\begin{DoxyNote}{注解}
+The address passed to the request object must be aligned already!
+
+A request that is in configuration mode can't be sent to the driver for acquisition until {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}} or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}} has been called again. By using {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}} this locking and unlocking is done internally thus the application does not need to worry about this.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+10.\+31
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Request} & A const pointer to the request object to configure \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!image\+Request\+Reset@{image\+Request\+Reset}}
+\index{image\+Request\+Reset@{image\+Request\+Reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{image\+Request\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset (
+\begin{DoxyParamCaption}
+\item[{int}]{request\+Ctrl\+Nr, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}
+
+
+Deletes all requests currently queued for the specified {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}. 
+
+This function will terminate all running image acquisitions associated with the queue bound to the specified image request control and in addition to that will empty the queue of pending image requests for that queue. \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em request\+Ctrl\+Nr} & The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} for which all the requests shall be cancelled. \\
+\hline
+\mbox{\tt in}  & {\em mode} & Currently unsupported. M\+U\+S\+T be set 0. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!image\+Request\+Result\+Queue\+Element\+Count@{image\+Request\+Result\+Queue\+Element\+Count}}
+\index{image\+Request\+Result\+Queue\+Element\+Count@{image\+Request\+Result\+Queue\+Element\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{image\+Request\+Result\+Queue\+Element\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Result\+Queue\+Element\+Count (
+\begin{DoxyParamCaption}
+\item[{int}]{queue\+Nr = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}
+
+
+Returns the number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects in the result queue . 
+
+This functions queries the number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects currently in the result queue
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Start}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab52b63727aa33cb4cc2bdd0856c0f237}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Stop}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Result\+Queue\+Element\+Count}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}} ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+9.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item The number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects in the result queue if successful.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+Q\+U\+E\+U\+E\+\_\+\+S\+E\+L\+E\+C\+T\+I\+O\+N} if the selected result queue does not exist.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em queue\+Nr} & The result queue to be queried. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!image\+Request\+Single@{image\+Request\+Single}}
+\index{image\+Request\+Single@{image\+Request\+Single}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{image\+Request\+Single}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single (
+\begin{DoxyParamCaption}
+\item[{{\bf Image\+Request\+Control} $\ast$}]{p\+Image\+Request\+Control = {\ttfamily 0}, }
+\item[{int $\ast$}]{p\+Request\+Used = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}
+
+
+Sends an image request to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} driver. 
+
+This functions sends a single image request to the capture device. To wait for the image to become ready call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}.
+
+\begin{DoxyAttention}{注意}
+In order to make sure that no image data is lost, it is important to understand how the request mechanism works. The driver works with a fixed number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects. The number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects available to the driver can be set by modifying the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aebae5e452b01f037b681faca41fb70ac}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::request\+Count}}. Each {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} will consume a certain amount of memory. Once an image has been captured by the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}, this amount will be slightly more than the image itself needs in memory, so modify this parameter gently. On the other hand, it's necessary to have more than a single request in order to ensure a lossless acquisition. E.\+g. when working with free running cameras an image might be lost because while an image has been captured and is being processed, the next vertical sync. pulse is already missed before the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} is unlocked again.
+\end{DoxyAttention}
+\begin{DoxyNote}{注解}
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::assb\+User} several calls to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}} will {\bfseries N\+O\+T} start the data acquisition! After requests have been send down to the driver, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Start}} must be called. For performance reasons some device drivers will {\bfseries N\+O\+T} allow to request data into buffers which have not been known to the driver when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Start}} was called, thus before starting the acquisition, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}} should be called as many times as there are request objects. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a91750ec88416ca6557b1bbb10ebc5039}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Start}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab52b63727aa33cb4cc2bdd0856c0f237}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::acquisition\+Stop}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Result\+Queue\+Element\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+N\+O\+\_\+\+F\+R\+E\+E\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E} if all \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request} objects are currently in use (either owned by the user or queued for acquisition).
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+N\+U\+M\+B\+E\+R} if the request number defined by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}{Image\+Request\+Control\+::request\+To\+Use}} is invalid (out of bounds).
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+I\+N\+\_\+\+U\+S\+E} if the request number defined by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}{Image\+Request\+Control\+::request\+To\+Use}} is already in use (either owned by the user or queued for acquisition).
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Image\+Request\+Control} & A pointer to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object to be used for this request. {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} objects define (among other things), which setting will be used for this image acquisition (via the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acf18030a40a4c3ea66a14097f81a2652}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::setting}}). \\
+\hline
+\mbox{\tt out}  & {\em p\+Request\+Used} & If a valid pointer to an integer is passed here, this variable receives the number of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} which will be used to process this request. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!image\+Request\+Unlock@{image\+Request\+Unlock}}
+\index{image\+Request\+Unlock@{image\+Request\+Unlock}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{image\+Request\+Unlock}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock (
+\begin{DoxyParamCaption}
+\item[{int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}
+
+
+Unlocks the request for the driver again. 
+
+\begin{DoxyNote}{注解}
+Another version of this function is available that might be nicer to use depending on personal preferences and use case\+: {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}. Unlocking a certain request might be nicer by using this function, e.\+g. unlocking {\bfseries A\+L\+L} requests in a loop is probably easier done by writing
+\end{DoxyNote}
+To ensure that no image data is overwritten by another image request while the user still deals with the image from a previous acquisition each image buffer will be locked by the driver when it is returned to the user by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}. No new image will be captured into the same buffer until the user unlocks the buffer again by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}.
+
+\begin{DoxyNote}{注解}
+After unlocking a request it is no longer guaranteed that the memory once referenced by the request and the image buffer belonging to it stays valid, so do {\bfseries N\+E\+V\+E\+R} try to access memory belonging to an unlocked request object. If you need to copy the image buffer or modify it in any other way, do everything you have to do {\bfseries B\+E\+F\+O\+R\+E} calling this function!
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Result\+Queue\+Element\+Count}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+C\+A\+N\+T\+\_\+\+B\+E\+\_\+\+U\+N\+L\+O\+C\+K\+E\+D} if the request number defined by {\itshape nr} is currently not owned by the application (either already unlocked or queued for acquisition).
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+T\+O\+O\+\_\+\+S\+M\+A\+L\+L} if the request number defined by {\itshape nr} has been configured to capture into a user supplied buffer but the buffer is too small to acquire data into.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+M\+I\+S\+A\+L\+I\+G\+N\+E\+D} if the request number defined by {\itshape nr} has been configured to capture into a user supplied buffer but this buffer is not aligned in order to the alignment restrictions reported by this driver/device combination.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+B\+U\+F\+F\+E\+R\+\_\+\+I\+N\+V\+A\+L\+I\+D} if the request number defined by {\itshape nr} has been configured to capture into a user supplied buffer but an invalid (N\+U\+L\+L) pointer has been attached to the request.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+N\+U\+M\+B\+E\+R} if the request number defined by {\itshape nr} is invalid (out of bounds).
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the request to unlock. This is typically a value returned from a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!image\+Request\+Wait\+For@{image\+Request\+Wait\+For}}
+\index{image\+Request\+Wait\+For@{image\+Request\+Wait\+For}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{image\+Request\+Wait\+For}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For (
+\begin{DoxyParamCaption}
+\item[{int}]{timeout\+\_\+ms, }
+\item[{int}]{queue\+Nr = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}
+
+
+Waits for an image request to become ready. 
+
+This function waits for an image request previously sent to the capture device by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}.
+
+\begin{DoxyNote}{注解}
+Whenever a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} is returned to the user the image data described by the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} remains valid until the user unlocks the image buffer again or the driver is closed.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a7e608625f2db03327c3fe9964967d0bc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Result\+Queue\+Element\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_afea62dee2bda1b47c24821f9121c5505}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Request}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+If the return value is positive, the return value is the request number of the image request in the interface's internal array of image requests. In this case the user can call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_afea62dee2bda1b47c24821f9121c5505}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Request}} to get access to the results. ~\newline
+ ~\newline
+ If the result is negative, the return value is an error code. The error code that is returned in most cases will be {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+W\+A\+I\+T\+\_\+\+F\+O\+R\+\_\+\+R\+E\+Q\+U\+E\+S\+T\+\_\+\+F\+A\+I\+L\+E\+D}. To find out possible reasons for this error, look at the corresponding explanation. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em timeout\+\_\+ms} & The maximum wait time in milliseconds (ms) for this request to become ready. If {\itshape timeout\+\_\+ms} is '-\/1', the function's time-\/out interval never elapses. Please note that each request has its own timeout that is independent from this wait timeout, thus this function will return with a valid request after the timeout for this request has elapsed even if e.\+g. a trigger has not been detected. For detailed information on the interaction of the timeout of this function and the timeout of a request please refer to the chapter Image\+Acquisition\+\_\+section\+\_\+capture in the C++ section. \\
+\hline
+\mbox{\tt in}  & {\em queue\+Nr} & The queue where to wait for the request. The number of request queues available depends on the number of video channels offered by the device. The queue a processed request ends up in can be defined using the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a9a5ed0f41db0291bc13ebe37e09fb84d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::result\+Queue}}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a44e5c0d39914e25243bc61c18cc5d954}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!is\+Request\+Nr\+Valid@{is\+Request\+Nr\+Valid}}
+\index{is\+Request\+Nr\+Valid@{is\+Request\+Nr\+Valid}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{is\+Request\+Nr\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::is\+Request\+Nr\+Valid (
+\begin{DoxyParamCaption}
+\item[{int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a44e5c0d39914e25243bc61c18cc5d954}
+
+
+Check if {\itshape nr} specifies a valid {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}. 
+
+\begin{DoxyReturn}{返回}
+~\newline
+
+\begin{DoxyItemize}
+\item true if {\itshape nr} specifies a valid request.
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab670f49c3a55f7e90d52935a9194bdb0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!load\+Setting@{load\+Setting}}
+\index{load\+Setting@{load\+Setting}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{load\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::load\+Setting (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf T\+Storage\+Flag}}]{storage\+Flags = {\ttfamily {\bf sf\+Native}}, }
+\item[{{\bf T\+Scope}}]{scope = {\ttfamily {\bf s\+Global}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab670f49c3a55f7e90d52935a9194bdb0}
+
+
+Loads a previously stored setting. 
+
+This function can be used to restore a previously stored setting again.
+
+To load a setting from a file the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sf\+File} should be specified as part of {\itshape storage\+Flags}. To load a setting from a platform specific location such as the Registry under Windows\copyright{} {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sf\+Native} should be specified. It's not allowed to combine {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sf\+File} and {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sf\+Native} for this operation.
+
+\begin{DoxyWarning}{警告}
+Since mv\+I\+M\+P\+A\+C\+T Acquire 2.\+9.\+0 \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{Gen\+I\+Cam} devices will be able to save their properties in a X\+M\+L File, only if the properties have the {\bfseries streamable} attribute set (for more information refer to the \href{http://www.emva.org/standards-technology/genicam/genicam-downloads/}{\tt Gen\+I\+Cam standard specification}). Properties with no {\bfseries streamable} attribute set, will be silently ignored when saving, which means they will {\bfseries not} be saved in the X\+M\+L file. For M\+A\+T\+R\+I\+X V\+I\+S\+I\+O\+N \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{Gen\+I\+Cam} cameras, starting with firmware version 1.\+6.\+414 the {\bfseries streamable} attribute is set for all the necessary properties.
+\end{DoxyWarning}
+~\newline
+
+
+\begin{DoxyWarning}{警告}
+Since mv\+I\+M\+P\+A\+C\+T Acquire 2.\+9.\+0 and again in version 2.\+11.\+0 storing and loading of camera settings in a X\+M\+L file for the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Gen\+I\+Cam} interface layout has been updated. As a result X\+M\+L files created with newer versions of mv\+I\+M\+P\+A\+C\+T Acquire might {\bfseries not} be readable on systems with older version of mv\+I\+M\+P\+A\+C\+T Acquire installed. X\+M\+L files created on systems with earlier versions of mv\+I\+M\+P\+A\+C\+T Acquire will always be readable this or newer versions. See the following table for details. \begin{TabularC}{4}
+\hline
+\rowcolor{lightgray}{\bf mv\+I\+M\+P\+A\+C\+T Acquire \hyperlink{struct_version}{Version}}&{\bf Loading a X\+M\+L settings file created with mv\+I\+M\+P\+A\+C\+T Acquire version $<$ 2.\+9.\+0}&{\bf Loading a X\+M\+L settings file created with mv\+I\+M\+P\+A\+C\+T Acquire version 2.\+9.\+0 -\/ 2.\+10.\+1}&{\bf Loading a X\+M\+L settings file created with mv\+I\+M\+P\+A\+C\+T Acquire version 2.\+11.\+0 or later }\\\cline{1-4}
+\rowcolor{lightgray}{\bf $<$ 2.\+9.\+0 }&Y\+E\+S &N\+O &N\+O \\\cline{1-4}
+\rowcolor{lightgray}{\bf 2.\+9.\+0 -\/ 2.\+10.\+1 }&Y\+E\+S &Y\+E\+S &N\+O \\\cline{1-4}
+\rowcolor{lightgray}{\bf $>$= 2.\+11.\+0 }&Y\+E\+S &Y\+E\+S &Y\+E\+S \\\cline{1-4}
+\end{TabularC}
+
+\end{DoxyWarning}
+\begin{DoxyNote}{注解}
+For devices operated in the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Gen\+I\+Cam} interface layout further restriction apply\+: Settings created with a certain product type can only be used with other devices belonging to the exact same type as defined by the property \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_af37787e344732926a99103df8faf05be}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::product} inside the device list (the one device specific property list that is accessible without initialising the device before). Even if a setting can be used with various firmware versions it is recommended to use one setting for multiple devices all updated to the very same firmware version to avoid compatibility problems.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af58882e7db1d92551f83ca39f4d6516d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::save\+Setting}}. 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name or the full path under where the setting is located \\
+\hline
+\mbox{\tt in}  & {\em storage\+Flags} & The flags which define which information shall be read from the location and how this information shall be interpreted. \\
+\hline
+\mbox{\tt in}  & {\em scope} & Specifies where the information is located. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a113132465f900b0d60b44ecc71640270}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!load\+Setting\+From\+Default@{load\+Setting\+From\+Default}}
+\index{load\+Setting\+From\+Default@{load\+Setting\+From\+Default}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{load\+Setting\+From\+Default}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::load\+Setting\+From\+Default (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Scope}}]{scope = {\ttfamily {\bf s\+User}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a113132465f900b0d60b44ecc71640270}
+
+
+Loads the default settings. 
+
+This function will try to load the settings from a default location. This function can only succeed if a setting has been stored previously by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a68667a298b96ed10a0d8cecebbd9b9a6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::save\+Setting\+To\+Default}}.
+
+\begin{DoxyWarning}{警告}
+There has been an incompatible change when loading settings in version 2.\+9.\+0 and 2.\+11.\+0 of mv\+I\+M\+P\+A\+C\+T Acquire. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab670f49c3a55f7e90d52935a9194bdb0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::load\+Setting}} for details.
+\end{DoxyWarning}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em scope} & Specifies where the information is located. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae494724c1e29e38f0e83e8a5f5793772}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}}
+\index{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::\+M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P (
+\begin{DoxyParamCaption}
+\item[{bool is\+Request\+O\+K(const {\bf Request} $\ast$p)}]{const}
+\end{DoxyParamCaption}
+)}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae494724c1e29e38f0e83e8a5f5793772}
+
+
+Checks if a request has been processed successfully({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000018}{弃用}]This function has been declared deprecated and will be removed in future versions of this interface. Use {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7120b640d76a3f8ed3711a8a773ad4be}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::is\+O\+K()}} instead and see the corresponding 'Porting existing code' section in the documentation. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the request has been processed successfully.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae0f9f7f436a40980ce6d346ecc0e3030}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}}
+\index{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::\+M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P (
+\begin{DoxyParamCaption}
+\item[{int save\+System\+To\+Default({\bf T\+Scope} scope={\bf s\+User})}]{const}
+\end{DoxyParamCaption}
+)}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ae0f9f7f436a40980ce6d346ecc0e3030}
+
+
+Stores the current system settings under a default location ({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000019}{弃用}]\end{DoxyRefDesc}
+\begin{DoxyNote}{注解}
+This function has been declared deprecated and will be removed in version 2.\+0.\+0 of this interface. All features that have been stored using this method will now also be handled by the functions that load and save settings. Please see the corresponding 'Porting existing code' section in the documentation.
+\end{DoxyNote}
+These are the settings which can be altered by creating an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}. Under Windows\copyright{} this function will store the current settings in the Registry.
+
+Modifying data in this section of properties will affect every device belonging to the same family (e.\+g. every U\+S\+B 2.\+0 camera device) when the data is saved. When the modified data is stored it will be restored by each device belonging to the same family during the next initialisation. So at runtime changing and saving the settings of one device will not affect the behaviour of another until the data has been stored and the other device has been closed and reopened again. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af013eddce4d0a33e580079969d1ce3c0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!request\+Count@{request\+Count}}
+\index{request\+Count@{request\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{request\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::request\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af013eddce4d0a33e580079969d1ce3c0}
+
+
+Returns the number of available request objects. 
+
+\begin{DoxyReturn}{返回}
+Returns the number of available request objects. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af58882e7db1d92551f83ca39f4d6516d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!save\+Setting@{save\+Setting}}
+\index{save\+Setting@{save\+Setting}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{save\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::save\+Setting (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{{\bf T\+Storage\+Flag}}]{storage\+Flags = {\ttfamily {\bf sf\+Native}}, }
+\item[{{\bf T\+Scope}}]{scope = {\ttfamily {\bf s\+Global}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af58882e7db1d92551f83ca39f4d6516d}
+
+
+Stores the current settings. 
+
+This function can be used to store the current settings either in a X\+M\+L-\/file or (under Windows\copyright{}) into the Registry. A setting contains all the values set for properties that control the overall way an image is acquired( e.\+g. the exposure time, etc.).
+
+To store a setting in a file the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sf\+File} should be specified as part of {\itshape storage\+Flags}. To store a setting in a platform specific location such as the Registry under Windows\copyright{} {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sf\+Native} should be specified. Both flags can be combined. In that case the same setting will be stored in a file {\bfseries A\+N\+D} in a platform specific location if these location differ (platform dependent!).
+
+\begin{DoxyWarning}{警告}
+There has been an incompatible change when loading settings in version 2.\+9.\+0 and 2.\+11.\+0 of mv\+I\+M\+P\+A\+C\+T Acquire. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab670f49c3a55f7e90d52935a9194bdb0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::load\+Setting}} for details.
+\end{DoxyWarning}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name or the full path under which this setting shall be stored \\
+\hline
+\mbox{\tt in}  & {\em storage\+Flags} & The flags which define which information shall be stored and how this information shall be stored. \\
+\hline
+\mbox{\tt in}  & {\em scope} & Specifies where the information shall be stored. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a68667a298b96ed10a0d8cecebbd9b9a6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}!save\+Setting\+To\+Default@{save\+Setting\+To\+Default}}
+\index{save\+Setting\+To\+Default@{save\+Setting\+To\+Default}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}}
+\subsubsection[{save\+Setting\+To\+Default}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::save\+Setting\+To\+Default (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Scope}}]{scope = {\ttfamily {\bf s\+User}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a68667a298b96ed10a0d8cecebbd9b9a6}
+
+
+Stores the current settings under a default location. 
+
+Under Windows\copyright{} this will be in the Registry. A setting contains all the values set for properties that control the overall way an image is acquired( e.\+g. the exposure time, etc.).
+
+\begin{DoxyWarning}{警告}
+There has been an incompatible change when loading settings in version 2.\+9.\+0 and 2.\+11.\+0 of mv\+I\+M\+P\+A\+C\+T Acquire. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_ab670f49c3a55f7e90d52935a9194bdb0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::load\+Setting}} for details.
+\end{DoxyWarning}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em scope} & Specifies where the information shall be stored. \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

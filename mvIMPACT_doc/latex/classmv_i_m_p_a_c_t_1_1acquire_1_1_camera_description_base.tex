@@ -1,0 +1,264 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Base类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+}
+
+
+A base class to describe a camera ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a4ba5034e10839da1e3d9cb6e1a95092f}{get\+Class\+Name} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the class this description is belonging to. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ab449bcb1f45d79f311728d22b4e60369}{copy\+Description} (const std\+::string \&new\+Name) const 
+\begin{DoxyCompactList}\small\item\em Creates a new camera description list as a copy of the current one. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a75ca8307f89a995695a8331f8a6ba463}{export\+Description} (void) const 
+\begin{DoxyCompactList}\small\item\em Stores the current camera description on disc. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_aee33a8a6a0e801eae4684dcb2a84c841}{import\+Description} (void) const 
+\begin{DoxyCompactList}\small\item\em Updates a camera description with the data stored in a previous session or with the original default data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a9bc921e1dbf216ffa7235163c270f2f5}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a9bc921e1dbf216ffa7235163c270f2f5}{name}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a9bc921e1dbf216ffa7235163c270f2f5}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries read-\/only} containing the name of this camera description list. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga48585b26ebc31ccee54f34c7d6bbdda3}{Property\+I\+Camera\+Output} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ad9b68e97cdf203d455e773e0901324a7}{video\+Output}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the type of video outputs this camera offers. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gad01921546e8dc7787753af3e80401ab4}{Property\+I\+Camera\+Interlaced\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_accd697662a91ec66a710677104ab1fe1}{interlaced\+Type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining how the camera transmits image data. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a9171f2b04296ef8bd8768b50da62a3c0}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a9171f2b04296ef8bd8768b50da62a3c0}{aoi\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a9171f2b04296ef8bd8768b50da62a3c0}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of active lines to capture from the camera. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a1a54bb523e9d28917a14ca67c3dbcd46}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a1a54bb523e9d28917a14ca67c3dbcd46}{aoi\+Start\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a1a54bb523e9d28917a14ca67c3dbcd46}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the X-\/offset in pixels to the first active pixel to capture. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a92905ad4932a8a8b06d5b18597349513}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a92905ad4932a8a8b06d5b18597349513}{aoi\+Start\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a92905ad4932a8a8b06d5b18597349513}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the Y-\/offset in lines to the first active line to capture. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a0a121e69df859f7384e48d52875aabd7}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a0a121e69df859f7384e48d52875aabd7}{aoi\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a0a121e69df859f7384e48d52875aabd7}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of active pixels to capture per line. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a8885c8249fe94a4145bdc076165de433}{{\bfseries Camera\+Description\+Base} (H\+D\+R\+V h\+Drv, H\+L\+I\+S\+T h\+List)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a8885c8249fe94a4145bdc076165de433}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to describe a camera ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+A camera description object provides an abstract way to prepare the capture device (e.\+g. a frame grabber) for the connected imaging device (e.\+g. a camera).
+
+By selecting one of the available camera descriptions the underlying hardware will use the information provided in the camera description to prepare the image capture. Therefore it is crucial to select a camera description that matches the connected video signal as close as possible. If no description for the camera or imaging device connected is available a new description should be generated from one of the existing ones. This can be achieved by calling the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ab449bcb1f45d79f311728d22b4e60369}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::copy\+Description}}. A new camera description with the name that is passed to the function will be created.
+
+\begin{DoxyNote}{注解}
+The name must be unique. There can't be two descriptions with the same name belonging to the same generic class (i.\+e. {\itshape 'Standard'} or {\itshape 'Camera\+Link'\textregistered{}}). However it's perfectly legal to have a camera description for standard analogue video signals and one for e.\+g. Camera\+Link\textregistered{} signals with the same name.
+\end{DoxyNote}
+This new description will be an exact copy of the one the copy function has been executed for. After creation this description can be selected e.\+g. by setting the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}} to the name of the new description.
+
+\begin{DoxyNote}{注解}
+Please note that the name passed to the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}} does {\bfseries N\+O\+T} exactly correspond to the name assigned to the new camera description. It is a combination of the class the camera is belonging to (e.\+g. {\itshape 'Standard'}) and the actual name. So to select a camera description the name must be build from teh return value of a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a4ba5034e10839da1e3d9cb6e1a95092f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::get\+Class\+Name}}, an underscore ('\+\_\+') and the actual name of the description\+: $<$class name$>$\+\_\+$<$desc. name$>$
+\end{DoxyNote}
+Example\+: For a standard description with the name {\itshape 'My\+Cam'} the full name would be {\itshape 'Standard\+\_\+\+My\+Cam'}.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ab449bcb1f45d79f311728d22b4e60369}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}!copy\+Description@{copy\+Description}}
+\index{copy\+Description@{copy\+Description}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+\subsubsection[{copy\+Description}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::copy\+Description (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{new\+Name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ab449bcb1f45d79f311728d22b4e60369}
+
+
+Creates a new camera description list as a copy of the current one. 
+
+This function can be used to create a new camera description list. It will create a deep copy of the properties referenced by this camera description and will append the new description to the list of camera descriptions.
+
+\begin{DoxyNote}{注解}
+This will {\bfseries N\+O\+T} store the new description permanently. After the driver has been closed, this data will be lost. To store the new list in a way that it will be available the next time the driver/device is opened again, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a75ca8307f89a995695a8331f8a6ba463}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::export\+Description}} must be called with the handle of the newly created description after this function. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a75ca8307f89a995695a8331f8a6ba463}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::export\+Description}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_aee33a8a6a0e801eae4684dcb2a84c841}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::import\+Description}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+E\+V\+\_\+\+I\+N\+P\+U\+T\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D} if new name matches a description that is already existing.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em new\+Name} & The name for the newly created camera description. This name {\bfseries M\+U\+S\+T} N\+O\+T match a description already existing. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a75ca8307f89a995695a8331f8a6ba463}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}!export\+Description@{export\+Description}}
+\index{export\+Description@{export\+Description}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+\subsubsection[{export\+Description}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::export\+Description (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a75ca8307f89a995695a8331f8a6ba463}
+
+
+Stores the current camera description on disc. 
+
+This function can be used to store the current settings of a camera description permanently so that the next time the driver is initialized these settings are restored.
+
+When exporting a camera description a file in X\+M\+L format will be written to disc. Under Windows\textregistered{} camera descriptions will be stored under Windows\textregistered{} camera descriptions will be stored under 
+\begin{DoxyCode}
+%ALLUSERS%\(\backslash\)Documents\(\backslash\)MATRIX VISION\(\backslash\)mvIMPACT acquire\(\backslash\)CameraFiles
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}
+%MVIMPACT\_ACQUIRE\_DATA\_DIR%\(\backslash\)CameraFiles
+\end{DoxyCode}
+ which will point to the same folder), under Linux\textregistered{} this directory will be 
+\begin{DoxyCode}
+/etc/matrix-vision/mvimpact-acquire/camerafiles
+\end{DoxyCode}
+ while under other platforms these files will end up in the current working directory. This behaviour can be modified by writing the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a356137fa9ec71b56e7981276aaf3c4f2}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::custom\+Data\+Directory}} before initialising the device.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ab449bcb1f45d79f311728d22b4e60369}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::copy\+Description}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_aee33a8a6a0e801eae4684dcb2a84c841}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::import\+Description}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a4ba5034e10839da1e3d9cb6e1a95092f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}!get\+Class\+Name@{get\+Class\+Name}}
+\index{get\+Class\+Name@{get\+Class\+Name}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+\subsubsection[{get\+Class\+Name}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::get\+Class\+Name (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a4ba5034e10839da1e3d9cb6e1a95092f}
+
+
+Returns the class this description is belonging to. 
+
+\begin{DoxyReturn}{返回}
+The class this description is belonging to. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a4ba5034e10839da1e3d9cb6e1a95092f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_aee33a8a6a0e801eae4684dcb2a84c841}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}!import\+Description@{import\+Description}}
+\index{import\+Description@{import\+Description}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+\subsubsection[{import\+Description}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::import\+Description (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_aee33a8a6a0e801eae4684dcb2a84c841}
+
+
+Updates a camera description with the data stored in a previous session or with the original default data. 
+
+When importing a camera description the device driver will try to retrieve the parameters needed from a X\+M\+L file. Under Windows\textregistered{} camera descriptions M\+U\+S\+T be stored under 
+\begin{DoxyCode}
+%ALLUSERS%\(\backslash\)Documents\(\backslash\)MATRIX VISION\(\backslash\)mvIMPACT acquire\(\backslash\)CameraFiles
+\end{DoxyCode}
+ or 
+\begin{DoxyCode}
+%MVIMPACT\_ACQUIRE\_DATA\_DIR%\(\backslash\)CameraFiles
+\end{DoxyCode}
+ which will point to the same folder), under Linux\textregistered{} this directory will be 
+\begin{DoxyCode}
+/etc/matrix-vision/mvimpact-acquire/camerafiles
+\end{DoxyCode}
+ while under other platforms these files M\+U\+S\+T be located in the current working directory. This behaviour can be modified by writing the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a356137fa9ec71b56e7981276aaf3c4f2}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::custom\+Data\+Directory}} before initialising the device. To get access to a X\+M\+L description file within the application, these file must be copied to this directory {\bfseries B\+E\+F\+O\+R\+E} the device is initialized. During the initialisation process the device driver will process every file located under this location and will add them to the internal list of descriptions. Every camera located during this process and also descriptions created later on during the program operation can be selected via the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}}.
+
+\begin{DoxyNote}{注解}
+In order not to bloat the device driver with redundant data it's wise only to store the descriptions needed for the application to run under this location.
+
+Only camera descriptions supported by the capture device will be added to the device drivers internal list and will therefore be accessible via the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}.
+\end{DoxyNote}
+To restore the default values valid during the driver was initialized the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection_a986cf6758394195fb4f47e8b5b9d0c8a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Collection\+::restore\+Default}} can be used as well.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_a75ca8307f89a995695a8331f8a6ba463}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::export\+Description}}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ab449bcb1f45d79f311728d22b4e60369}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::copy\+Description} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+P\+R\+O\+P\+H\+A\+N\+D\+L\+I\+N\+G\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_accd697662a91ec66a710677104ab1fe1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}!interlaced\+Type@{interlaced\+Type}}
+\index{interlaced\+Type@{interlaced\+Type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+\subsubsection[{interlaced\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Interlaced\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::interlaced\+Type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_accd697662a91ec66a710677104ab1fe1}
+
+
+An enumerated integer property defining how the camera transmits image data. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Interlaced\+Type}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ad9b68e97cdf203d455e773e0901324a7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}!video\+Output@{video\+Output}}
+\index{video\+Output@{video\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}
+\subsubsection[{video\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Output} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::video\+Output}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_ad9b68e97cdf203d455e773e0901324a7}
+
+
+An enumerated integer property defining the type of video outputs this camera offers. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Output}.
+
+\begin{DoxyNote}{注解}
+This property will be {\bfseries }(read-\/only) for camera descriptions of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}} as for these camera types the video output depends on certain other parameters according to the corresponding standard. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

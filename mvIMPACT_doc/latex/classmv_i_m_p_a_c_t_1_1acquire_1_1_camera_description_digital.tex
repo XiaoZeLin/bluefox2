@@ -1,0 +1,102 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}}
+}
+
+
+A class to describe a non-\/standard digital video signal({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_gaac63793b596b074fc5012dd82aafd035}{Property\+I\+Camera\+External\+Sync\+Edge} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a645b292f957b6124ac83181de0afae0b}{frame\+Sync}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the edge valid for the frame sync signal of this camera. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaac63793b596b074fc5012dd82aafd035}{Property\+I\+Camera\+External\+Sync\+Edge} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a777652c7193f75207a48601790a19762}{line\+Sync}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the edge valid for the line sync. of this camera. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaac63793b596b074fc5012dd82aafd035}{Property\+I\+Camera\+External\+Sync\+Edge} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a2b852526d2ca8cc3203e64af6903596e}{pixel\+Clk}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the edge valid for the pixel clock of this camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a754f74db1fd8a2e7cf0bca76c10d00dd}{class {\bfseries Camera\+Description\+Manager}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a754f74db1fd8a2e7cf0bca76c10d00dd}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to describe a non-\/standard digital video signal({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides access to all settings specific for non-\/standard digital video signals.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a645b292f957b6124ac83181de0afae0b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}!frame\+Sync@{frame\+Sync}}
+\index{frame\+Sync@{frame\+Sync}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}}
+\subsubsection[{frame\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Edge} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+::frame\+Sync}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a645b292f957b6124ac83181de0afae0b}
+
+
+An enumerated integer property defining the edge valid for the frame sync signal of this camera. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Edge}.
+
+\begin{DoxyNote}{注解}
+Not every value defined by this enumeration will be supported by this property. Check which values are available by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+External\+Sync\+Edge\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+External\+Sync\+Edge\+::get\+Translation\+Dict\+Value}} 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a777652c7193f75207a48601790a19762}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}!line\+Sync@{line\+Sync}}
+\index{line\+Sync@{line\+Sync}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}}
+\subsubsection[{line\+Sync}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Edge} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+::line\+Sync}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a777652c7193f75207a48601790a19762}
+
+
+An enumerated integer property defining the edge valid for the line sync. of this camera. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Edge}.
+
+\begin{DoxyNote}{注解}
+Not every value defined by this enumeration will be supported by this property. Check which values are available by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+External\+Sync\+Edge\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+External\+Sync\+Edge\+::get\+Translation\+Dict\+Value}} 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a2b852526d2ca8cc3203e64af6903596e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}!pixel\+Clk@{pixel\+Clk}}
+\index{pixel\+Clk@{pixel\+Clk}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}}
+\subsubsection[{pixel\+Clk}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Edge} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+::pixel\+Clk}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_a2b852526d2ca8cc3203e64af6903596e}
+
+
+An enumerated integer property defining the edge valid for the pixel clock of this camera. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Edge}.
+
+\begin{DoxyNote}{注解}
+Not every value defined by this enumeration will be supported by this property. Check which values are available by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+External\+Sync\+Edge\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+External\+Sync\+Edge\+::get\+Translation\+Dict\+Value}} 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

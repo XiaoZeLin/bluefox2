@@ -1,0 +1,267 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: CaptureThread类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_capture_thread.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_capture_thread-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">CaptureThread类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 CaptureThread 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_capture_thread__inherit__graph.png" border="0" usemap="#_capture_thread_inherit__map" alt="Inheritance graph"/></div>
+<map name="_capture_thread_inherit__map" id="_capture_thread_inherit__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+CaptureThread 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_capture_thread__coll__graph.png" border="0" usemap="#_capture_thread_coll__map" alt="Collaboration graph"/></div>
+<map name="_capture_thread_coll__map" id="_capture_thread_coll__map">
+</map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a1e78fe40e3015c6f38cbbd79ff943c5a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e78fe40e3015c6f38cbbd79ff943c5a"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>MB</b> = 1024 * 1024, 
+<b>MAX_MEMORY_FOR_RECORDING_ON_32_BIT</b> = 768 * MB
+ }</td></tr>
+<tr class="separator:a1e78fe40e3015c6f38cbbd79ff943c5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad24259e69fbf7f648ff01c88d38bb683"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad24259e69fbf7f648ff01c88d38bb683"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CaptureThread</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">mvIMPACT::acquire::FunctionInterface</a> *pFuncInterface, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, wxWindow *pParentWindow, unsigned int pendingImageQueueDepth)</td></tr>
+<tr class="separator:ad24259e69fbf7f648ff01c88d38bb683"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1237df9b006897557885e516405c74f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1237df9b006897557885e516405c74f0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DisplaySequenceRequest</b> (size_t nr=0)</td></tr>
+<tr class="separator:a1237df9b006897557885e516405c74f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d9be1a6b9cd170dacd00f49f3afc04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36d9be1a6b9cd170dacd00f49f3afc04"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DisplaySequenceRequestNext</b> (void)</td></tr>
+<tr class="separator:a36d9be1a6b9cd170dacd00f49f3afc04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089d340173f29f56e348bbed34ae2bb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a089d340173f29f56e348bbed34ae2bb0"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>DisplaySequenceRequestPrev</b> (void)</td></tr>
+<tr class="separator:a089d340173f29f56e348bbed34ae2bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d04be266205c3032443a769ff60cbe2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d04be266205c3032443a769ff60cbe2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>FreeSequence</b> (int requestNotToUnlock=INVALID_ID)</td></tr>
+<tr class="separator:a2d04be266205c3032443a769ff60cbe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb33cb0eb5e8fd61aa13d13a77055b5b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb33cb0eb5e8fd61aa13d13a77055b5b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetCaptureQueueDepth</b> (void) const </td></tr>
+<tr class="separator:aeb33cb0eb5e8fd61aa13d13a77055b5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1d4b5a3a2a140ec332dace493479c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff1d4b5a3a2a140ec332dace493479c1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetContinuousRecording</b> (void) const </td></tr>
+<tr class="separator:aff1d4b5a3a2a140ec332dace493479c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3a0766d3c6edc355cf8690b29f420bb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3a0766d3c6edc355cf8690b29f420bb"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentSequenceIndex</b> (void) const </td></tr>
+<tr class="separator:ac3a0766d3c6edc355cf8690b29f420bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76e35f11ebeb4a63fe01f4b20dd107da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a76e35f11ebeb4a63fe01f4b20dd107da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageData</b> (<a class="el" href="struct_request_data.html">RequestData</a> &amp;requestData, const bool boFromRecordedStream) const </td></tr>
+<tr class="separator:a76e35f11ebeb4a63fe01f4b20dd107da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfa2d88afa3a07e6db6b74adcedfc54d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfa2d88afa3a07e6db6b74adcedfc54d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageInfo</b> (std::vector&lt; wxString &gt; &amp;infoStrings) const </td></tr>
+<tr class="separator:adfa2d88afa3a07e6db6b74adcedfc54d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a033f5278ba0358e00316fd5df325e294"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a033f5278ba0358e00316fd5df325e294"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetLiveMode</b> (void) const </td></tr>
+<tr class="separator:a033f5278ba0358e00316fd5df325e294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1350950434dda89bc417eb9145fad76a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1350950434dda89bc417eb9145fad76a"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetMultiFrameSequenceSize</b> (void) const </td></tr>
+<tr class="separator:a1350950434dda89bc417eb9145fad76a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370420c885ff8571abb6ce1495b1fcd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a370420c885ff8571abb6ce1495b1fcd1"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecordMode</b> (void) const </td></tr>
+<tr class="separator:a370420c885ff8571abb6ce1495b1fcd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada397f67e741acfac452ff7233113960"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada397f67e741acfac452ff7233113960"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecordSequenceSize</b> (void) const </td></tr>
+<tr class="separator:ada397f67e741acfac452ff7233113960"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e2fe7801261917e56a0f6b730c560aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e2fe7801261917e56a0f6b730c560aa"></a>
+RequestContainer::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>GetRecordedSequenceSize</b> (void) const </td></tr>
+<tr class="separator:a5e2fe7801261917e56a0f6b730c560aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59f3789a6fff136a4d9867e4e622e9f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59f3789a6fff136a4d9867e4e622e9f3"></a>
+size_t&#160;</td><td class="memItemRight" valign="bottom"><b>GetSkippedImageCount</b> (void)</td></tr>
+<tr class="separator:a59f3789a6fff136a4d9867e4e622e9f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1009a1bb42306a9c8f63813aa6f20c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1009a1bb42306a9c8f63813aa6f20c1"></a>
+double&#160;</td><td class="memItemRight" valign="bottom"><b>GetPercentageOfImagesSentToDisplay</b> (void) const </td></tr>
+<tr class="separator:ad1009a1bb42306a9c8f63813aa6f20c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73c2d904b53dfc97060e712cbe986cfd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73c2d904b53dfc97060e712cbe986cfd"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RecordSequence</b> (void)</td></tr>
+<tr class="separator:a73c2d904b53dfc97060e712cbe986cfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26a787c952ba608057d81706282810e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26a787c952ba608057d81706282810e4"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RequestSingle</b> (bool boInformUserOnRecordStart)</td></tr>
+<tr class="separator:a26a787c952ba608057d81706282810e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2ea3644da05b8fc70ae4db4edaaa46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d2ea3644da05b8fc70ae4db4edaaa46"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActive</b> (void)</td></tr>
+<tr class="separator:a5d2ea3644da05b8fc70ae4db4edaaa46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63f88ba9bb3805502b4bf120cd6bfb29"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63f88ba9bb3805502b4bf120cd6bfb29"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCaptureMode</b> (bool boForwardIncompleteFrames)</td></tr>
+<tr class="separator:a63f88ba9bb3805502b4bf120cd6bfb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d46acc8493f77073abe6518c4a2c96c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d46acc8493f77073abe6518c4a2c96c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCaptureQueueDepth</b> (int queueDepth)</td></tr>
+<tr class="separator:a4d46acc8493f77073abe6518c4a2c96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad886773c55d2de26cd39e4acae723e2b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad886773c55d2de26cd39e4acae723e2b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCaptureSettingUsageMode</b> (TCaptureSettingUsageMode mode)</td></tr>
+<tr class="separator:ad886773c55d2de26cd39e4acae723e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9bdd94288f4c453c58460b19ab8b93"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c9bdd94288f4c453c58460b19ab8b93"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetContinuousRecording</b> (bool boContinuous)</td></tr>
+<tr class="separator:a9c9bdd94288f4c453c58460b19ab8b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac33ec0ae29f3334e31b16f20f715b0f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac33ec0ae29f3334e31b16f20f715b0f8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentPlotInfoPath</b> (const std::string &amp;currentPlotInfoPath)</td></tr>
+<tr class="separator:ac33ec0ae29f3334e31b16f20f715b0f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47721b704497e30384749c32284e3543"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47721b704497e30384749c32284e3543"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageProcessingMode</b> (<a class="el" href="group___common_interface.html#gaee0074fce284fcdf9ead4ad607e85a06">TImageProcessingMode</a> mode)</td></tr>
+<tr class="separator:a47721b704497e30384749c32284e3543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bf48c382e7851d568b44c0e7884b488"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7bf48c382e7851d568b44c0e7884b488"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetLiveMode</b> (bool boOn, bool boInformUserOnRecordStart=true)</td></tr>
+<tr class="separator:a7bf48c382e7851d568b44c0e7884b488"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a861574b9268eb73c3697d6a7e0f2b65b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a861574b9268eb73c3697d6a7e0f2b65b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetMultiFrameSequenceSize</b> (size_t sequenceSize)</td></tr>
+<tr class="separator:a861574b9268eb73c3697d6a7e0f2b65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f662e20d2cc72fc5b01c64f000ede4c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f662e20d2cc72fc5b01c64f000ede4c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPendingImageQueueDepth</b> (unsigned int value)</td></tr>
+<tr class="separator:a6f662e20d2cc72fc5b01c64f000ede4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd51d5a09d8ec4053dada37fc049512e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd51d5a09d8ec4053dada37fc049512e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecordMode</b> (bool boOn)</td></tr>
+<tr class="separator:afd51d5a09d8ec4053dada37fc049512e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b0f6ebc9c7150a742dda6678ae3fbd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b0f6ebc9c7150a742dda6678ae3fbd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetRecordSequenceSize</b> (size_t sequenceSize)</td></tr>
+<tr class="separator:a2b0f6ebc9c7150a742dda6678ae3fbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6eddace76e950ecdbef9132848b70a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6eddace76e950ecdbef9132848b70a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UnlockRequest</b> (int nr, bool boForceUnlock=false)</td></tr>
+<tr class="separator:aa6eddace76e950ecdbef9132848b70a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9511d7d715e971a35e327a955c424d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e9511d7d715e971a35e327a955c424d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateSettingTable</b> (void)</td></tr>
+<tr class="separator:a5e9511d7d715e971a35e327a955c424d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9474b16f7c92216025a77842dcc5a4dc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9474b16f7c92216025a77842dcc5a4dc"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>RequestReset</b> (void)</td></tr>
+<tr class="separator:a9474b16f7c92216025a77842dcc5a4dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a4dbbe4fe65412b8d04edbf47ffcdf968"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4dbbe4fe65412b8d04edbf47ffcdf968"></a>
+void *&#160;</td><td class="memItemRight" valign="bottom"><b>Entry</b> (void)</td></tr>
+<tr class="separator:a4dbbe4fe65412b8d04edbf47ffcdf968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>apps/mvPropView/<a class="el" href="_capture_thread_8h_source.html">CaptureThread.h</a></li>
+<li>apps/mvPropView/CaptureThread.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_capture_thread.html">CaptureThread</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:21 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

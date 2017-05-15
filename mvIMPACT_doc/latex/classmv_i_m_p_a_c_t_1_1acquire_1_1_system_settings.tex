@@ -1,0 +1,247 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:System\+Settings类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+}
+
+
+A base class for accessing settings that control the overall behaviour of a device driver.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:System\+Settings 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:System\+Settings 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aa494575f3d3beef84ba4789ecaf182ae}{System\+Settings} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aebae5e452b01f037b681faca41fb70ac}{request\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of requests allocated by the driver. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga3d8854715fb4cb82a7d770ba632ae479}{Property\+I\+Thread\+Priority} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aafbaa96af758fe0681ac20ca0746b229}{worker\+Priority}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the thread priority of the drivers internal worker thread. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gadfe0e124b4ab278eb8bb228d3c4ba63b}{Property\+I\+Acquisition\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a8d3f1dbe3ba66311d79fdbe217acd9a9}{acquisition\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the acquisition mode of the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a2903927f7e84385d4fb1d4241a54084b}{acquisition\+Idle\+Time\+Max\+\_\+ms}
+\begin{DoxyCompactList}\small\item\em An integer property defining the maximum time in ms the driver waits for new requests being queued until streaming by the device will automatically be stopped. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12e3e1568fb58b1cb24383af267c53f7}{Property\+I\+Image\+Processing\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0e9c91668ae90fb631d5d69c32395fce}{image\+Processing\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property influencing the behaviour of the internal image processing pipeline. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gad70153dd4d03d0db8f97382da8ae2d05}{Property\+I\+Image\+Processing\+Optimization} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_afa429bb0a75e996fba2493c320003d7f}{image\+Processing\+Optimization}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property influencing the behaviour of the internal image processing algorithms. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a527250faf209d3f965146a88ea3a4369}{feature\+Polling\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining whether features defining a polling time shall be updated automatically or not. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0dcec7c243f9dc081e51da6842e3a0a4}{feature\+Polling\+Interval\+\_\+ms}
+\begin{DoxyCompactList}\small\item\em An integer property defining the polling interval in ms the driver waits for each iteration before running through update loop again. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_ac2f583cba036d74278d8093d4f529c4a}{method\+Polling\+Interval\+\_\+ms}
+\begin{DoxyCompactList}\small\item\em An integer property defining the polling interval in ms the driver waits during each iteration before checking a methods execution state again. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a130e46bcd1eaf610f17c9049534b04e0}{method\+Polling\+Max\+Retry\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property defining the polling interval in ms the driver waits during each iteration before checking a methods execution state again. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class for accessing settings that control the overall behaviour of a device driver. 
+
+Instances of this class can't be constructed directly. Use one of the derived types. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aa494575f3d3beef84ba4789ecaf182ae}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!System\+Settings@{System\+Settings}}
+\index{System\+Settings@{System\+Settings}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{System\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::\+System\+Settings (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aa494575f3d3beef84ba4789ecaf182ae}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aa494575f3d3beef84ba4789ecaf182ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a2903927f7e84385d4fb1d4241a54084b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!acquisition\+Idle\+Time\+Max\+\_\+ms@{acquisition\+Idle\+Time\+Max\+\_\+ms}}
+\index{acquisition\+Idle\+Time\+Max\+\_\+ms@{acquisition\+Idle\+Time\+Max\+\_\+ms}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{acquisition\+Idle\+Time\+Max\+\_\+ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::acquisition\+Idle\+Time\+Max\+\_\+ms}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a2903927f7e84385d4fb1d4241a54084b}
+
+
+An integer property defining the maximum time in ms the driver waits for new requests being queued until streaming by the device will automatically be stopped. 
+
+This property defines the maximum time in milliseconds the driver waits for new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects being queued by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}} once the driver will automatically send an acquisition stop command to a streaming device (such as a Gig\+E Vision device) when the driver's request queue has run empty (thus the driver has no more buffers to capture data into).
+
+This property will only be taken into account when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}} has been set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::assb\+Default}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every device. Right now only devices operated through the {\itshape Gen\+T\+L} driver package will support this feature.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+4.\+1 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a8d3f1dbe3ba66311d79fdbe217acd9a9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!acquisition\+Mode@{acquisition\+Mode}}
+\index{acquisition\+Mode@{acquisition\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{acquisition\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Acquisition\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::acquisition\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a8d3f1dbe3ba66311d79fdbe217acd9a9}
+
+
+An enumerated integer property defining the acquisition mode of the device. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Acquisition\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a527250faf209d3f965146a88ea3a4369}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!feature\+Polling\+Enable@{feature\+Polling\+Enable}}
+\index{feature\+Polling\+Enable@{feature\+Polling\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{feature\+Polling\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::feature\+Polling\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a527250faf209d3f965146a88ea3a4369}
+
+
+An enumerated integer property defining whether features defining a polling time shall be updated automatically or not. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+\begin{DoxySeeAlso}{参见}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0dcec7c243f9dc081e51da6842e3a0a4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::feature\+Polling\+Interval\+\_\+ms} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0dcec7c243f9dc081e51da6842e3a0a4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!feature\+Polling\+Interval\+\_\+ms@{feature\+Polling\+Interval\+\_\+ms}}
+\index{feature\+Polling\+Interval\+\_\+ms@{feature\+Polling\+Interval\+\_\+ms}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{feature\+Polling\+Interval\+\_\+ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::feature\+Polling\+Interval\+\_\+ms}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0dcec7c243f9dc081e51da6842e3a0a4}
+
+
+An integer property defining the polling interval in ms the driver waits for each iteration before running through update loop again. 
+
+Some features define a so called {\ttfamily polling} {\ttfamily time}. This is a recommendation by the device/driver stating that this property might change it's value without user interaction act a certain rate (e.\+g. the device temperature could be one example for a feature with such a behaviour). When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a527250faf209d3f965146a88ea3a4369}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::feature\+Polling\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} a thread will check every {\ttfamily feature\+Polling\+Interval\+\_\+ms} if features need to be updated. This will only cause communication with a device for each feature who's polling time has elapsed.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every device. Right now only devices operated through the {\itshape Gen\+T\+L} driver package will support this feature.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+18.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0e9c91668ae90fb631d5d69c32395fce}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!image\+Processing\+Mode@{image\+Processing\+Mode}}
+\index{image\+Processing\+Mode@{image\+Processing\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{image\+Processing\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Processing\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::image\+Processing\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0e9c91668ae90fb631d5d69c32395fce}
+
+
+An enumerated integer property influencing the behaviour of the internal image processing pipeline. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Processing\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::user\+Controlled\+Image\+Processing\+Enable}} has been set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} before the device is opened.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::user\+Controlled\+Image\+Processing\+Enable}} ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::has\+Processing\+Been\+Skipped}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+14.\+0 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_afa429bb0a75e996fba2493c320003d7f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!image\+Processing\+Optimization@{image\+Processing\+Optimization}}
+\index{image\+Processing\+Optimization@{image\+Processing\+Optimization}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{image\+Processing\+Optimization}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Processing\+Optimization} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::image\+Processing\+Optimization}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_afa429bb0a75e996fba2493c320003d7f}
+
+
+An enumerated integer property influencing the behaviour of the internal image processing algorithms. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Processing\+Optimization}.
+
+\begin{DoxySince}{自从}
+2.\+12.\+2 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_ac2f583cba036d74278d8093d4f529c4a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!method\+Polling\+Interval\+\_\+ms@{method\+Polling\+Interval\+\_\+ms}}
+\index{method\+Polling\+Interval\+\_\+ms@{method\+Polling\+Interval\+\_\+ms}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{method\+Polling\+Interval\+\_\+ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::method\+Polling\+Interval\+\_\+ms}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_ac2f583cba036d74278d8093d4f529c4a}
+
+
+An integer property defining the polling interval in ms the driver waits during each iteration before checking a methods execution state again. 
+
+When working with a \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{Gen\+I\+Cam} compliant device, \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{Gen\+I\+Cam} method objects need to be checked for their completion status every now and then. This parameter allows to configure how often this shall be done.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every device. Right now only devices operated through the {\itshape Gen\+T\+L} driver package will support this feature.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+18.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a130e46bcd1eaf610f17c9049534b04e0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!method\+Polling\+Max\+Retry\+Count@{method\+Polling\+Max\+Retry\+Count}}
+\index{method\+Polling\+Max\+Retry\+Count@{method\+Polling\+Max\+Retry\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{method\+Polling\+Max\+Retry\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::method\+Polling\+Max\+Retry\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a130e46bcd1eaf610f17c9049534b04e0}
+
+
+An integer property defining the polling interval in ms the driver waits during each iteration before checking a methods execution state again. 
+
+When working with a \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{Gen\+I\+Cam} compliant device, \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{Gen\+I\+Cam} method objects need to be checked for their completion status every now and then. This parameter allows to configure how often this shall be done at all. A method is checked for completion {\ttfamily method\+Polling\+Max\+Retry\+Count} $\ast$ {\ttfamily method\+Polling\+Interval\+\_\+ms} at max. Until then either the device starts to inform the driver that it needs more time {\bfseries O\+R} the execution of the method has completed successfully {\bfseries or} an error will be generated.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every device. Right now only devices operated through the {\itshape Gen\+T\+L} driver package will support this feature.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+18.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aebae5e452b01f037b681faca41fb70ac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!request\+Count@{request\+Count}}
+\index{request\+Count@{request\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{request\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::request\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aebae5e452b01f037b681faca41fb70ac}
+
+
+An integer property defining the number of requests allocated by the driver. 
+
+Each request object can be used to capture data into. Multiple requests can be processed by a device driver as background tasks.
+
+\begin{DoxyNote}{注解}
+for performance reasons this value can be increased at any time(only exception\+: Working with the interface layout {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Gen\+I\+Cam} while streaming is active) but can only be decreased when no request object is currently locked by the application and no requests has been queued for acquisition. So modifying this value might require the application to call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}} and several calls to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}} before.
+\end{DoxyNote}
+There are not too many reasons to modify the default request count suggested by the device driver. Good reasons include\+:
+
+
+\begin{DoxyItemize}
+\item a single image is huge compared to the overall system memory(e.\+g. a single image has 200\+M\+B while the system itself only has about 2\+G\+B of R\+A\+M. Here it might make sense to reduce the number of capture buffers to 1 or 2.
+\item the frame rate is high(larger than 100 frames per second) and no frames shall be lost. Here it might make sense to set the number of capture buffers to something like frame rate divided by 10 as a rule of thumb.
+\end{DoxyItemize}
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_af013eddce4d0a33e580079969d1ce3c0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::request\+Count}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aafbaa96af758fe0681ac20ca0746b229}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}!worker\+Priority@{worker\+Priority}}
+\index{worker\+Priority@{worker\+Priority}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings}}
+\subsubsection[{worker\+Priority}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Thread\+Priority} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::worker\+Priority}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aafbaa96af758fe0681ac20ca0746b229}
+
+
+An enumerated integer property defining the thread priority of the drivers internal worker thread. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Thread\+Priority}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

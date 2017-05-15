@@ -1,0 +1,157 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+S\+P\+I\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+}
+
+
+Category that contains features to access the device internal S\+P\+I bus.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+S\+P\+I\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+S\+P\+I\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a037d88b9ba208e0f88844e255ae4e5df}{mv\+S\+P\+I\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_ab66a5a78e13a79a3cd365c57ad77b56a}{mv\+S\+P\+I\+Device\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the S\+P\+I device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_acd7ac08de101ff82313c9f99066a18b9}{mv\+S\+P\+I\+Operation\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the operation. Write\+: mv\+S\+P\+I\+Access\+Length bytes are written to S\+P\+I device. Synchronously read bytes are stored to internal buffer. Read\+: Reads mv\+S\+P\+I\+Access\+Length from internal buffer. If mv\+S\+P\+I\+Access\+Length $>$ internal buffer size\+: Additional 'write zeros' will be done. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_ad30bb2d3142e194403bc35755ee10f5c}{mv\+S\+P\+I\+Operation\+Execute}
+\begin{DoxyCompactList}\small\item\em A method object. Executes the operation selected by mv\+S\+P\+I\+Operation\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a766fa7394efffd648bf5bbc3d6f54435}{mv\+S\+P\+I\+Access\+Buffer}
+\begin{DoxyCompactList}\small\item\em A string property. Defines the intermediate access buffer that allows the exchange of data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a6558bcdf2437ea8e15ffc043ee235053}{mv\+S\+P\+I\+Access\+Length}
+\begin{DoxyCompactList}\small\item\em An integer property. Controls the length of the data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Category that contains features to access the device internal S\+P\+I bus. 
+
+A category that contains features to access the device internal S\+P\+I bus. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a037d88b9ba208e0f88844e255ae4e5df}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}!mv\+S\+P\+I\+Control@{mv\+S\+P\+I\+Control}}
+\index{mv\+S\+P\+I\+Control@{mv\+S\+P\+I\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+\subsubsection[{mv\+S\+P\+I\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control\+::mv\+S\+P\+I\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a037d88b9ba208e0f88844e255ae4e5df}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a037d88b9ba208e0f88844e255ae4e5df_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a766fa7394efffd648bf5bbc3d6f54435}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}!mv\+S\+P\+I\+Access\+Buffer@{mv\+S\+P\+I\+Access\+Buffer}}
+\index{mv\+S\+P\+I\+Access\+Buffer@{mv\+S\+P\+I\+Access\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+\subsubsection[{mv\+S\+P\+I\+Access\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control\+::mv\+S\+P\+I\+Access\+Buffer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a766fa7394efffd648bf5bbc3d6f54435}
+
+
+A string property. Defines the intermediate access buffer that allows the exchange of data. 
+
+Defines the intermediate access buffer that allows the exchange of data. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a6558bcdf2437ea8e15ffc043ee235053}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}!mv\+S\+P\+I\+Access\+Length@{mv\+S\+P\+I\+Access\+Length}}
+\index{mv\+S\+P\+I\+Access\+Length@{mv\+S\+P\+I\+Access\+Length}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+\subsubsection[{mv\+S\+P\+I\+Access\+Length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control\+::mv\+S\+P\+I\+Access\+Length}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_a6558bcdf2437ea8e15ffc043ee235053}
+
+
+An integer property. Controls the length of the data. 
+
+Controls the length of the data. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_ab66a5a78e13a79a3cd365c57ad77b56a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}!mv\+S\+P\+I\+Device\+Selector@{mv\+S\+P\+I\+Device\+Selector}}
+\index{mv\+S\+P\+I\+Device\+Selector@{mv\+S\+P\+I\+Device\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+\subsubsection[{mv\+S\+P\+I\+Device\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control\+::mv\+S\+P\+I\+Device\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_ab66a5a78e13a79a3cd365c57ad77b56a}
+
+
+An enumerated integer property. Selects the S\+P\+I device. 
+
+Selects the S\+P\+I device.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Device0} (Display string\+: 'mv S\+P\+I \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} Selector')
+\item {\bfseries mv\+Device1} (Display string\+: 'mv S\+P\+I \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} Selector')
+\item {\bfseries mv\+Device2} (Display string\+: 'mv S\+P\+I \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} Selector')
+\item {\bfseries mv\+Device3} (Display string\+: 'mv S\+P\+I \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_ad30bb2d3142e194403bc35755ee10f5c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}!mv\+S\+P\+I\+Operation\+Execute@{mv\+S\+P\+I\+Operation\+Execute}}
+\index{mv\+S\+P\+I\+Operation\+Execute@{mv\+S\+P\+I\+Operation\+Execute}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+\subsubsection[{mv\+S\+P\+I\+Operation\+Execute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control\+::mv\+S\+P\+I\+Operation\+Execute}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_ad30bb2d3142e194403bc35755ee10f5c}
+
+
+A method object. Executes the operation selected by mv\+S\+P\+I\+Operation\+Selector. 
+
+Executes the operation selected by mv\+S\+P\+I\+Operation\+Selector. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_acd7ac08de101ff82313c9f99066a18b9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}!mv\+S\+P\+I\+Operation\+Selector@{mv\+S\+P\+I\+Operation\+Selector}}
+\index{mv\+S\+P\+I\+Operation\+Selector@{mv\+S\+P\+I\+Operation\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control}}
+\subsubsection[{mv\+S\+P\+I\+Operation\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+S\+P\+I\+Control\+::mv\+S\+P\+I\+Operation\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control_acd7ac08de101ff82313c9f99066a18b9}
+
+
+An enumerated integer property. Selects the operation. Write\+: mv\+S\+P\+I\+Access\+Length bytes are written to S\+P\+I device. Synchronously read bytes are stored to internal buffer. Read\+: Reads mv\+S\+P\+I\+Access\+Length from internal buffer. If mv\+S\+P\+I\+Access\+Length $>$ internal buffer size\+: Additional 'write zeros' will be done. 
+
+Selects the operation. Write\+: mv\+S\+P\+I\+Access\+Length bytes are written to S\+P\+I device. Synchronously read bytes are stored to internal buffer. Read\+: Reads mv\+S\+P\+I\+Access\+Length from internal buffer. If mv\+S\+P\+I\+Access\+Length $>$ internal buffer size\+: Additional 'write zeros' will be done.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Read} (Display string\+: 'mv S\+P\+I Operation Selector')
+\item {\bfseries Write} (Display string\+: 'mv S\+P\+I Operation Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

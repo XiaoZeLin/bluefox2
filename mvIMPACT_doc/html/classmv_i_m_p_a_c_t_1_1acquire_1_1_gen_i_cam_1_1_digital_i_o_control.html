@@ -1,0 +1,750 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::DigitalIOControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::DigitalIOControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category that contains the digital input and output control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::DigitalIOControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="619,143,781,199"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,198,555,239"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="606,223,794,265"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,198,355,239"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,198,155,239"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a7a1bf59d9fddd27e95b04e12e4039b18"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a7a1bf59d9fddd27e95b04e12e4039b18">DigitalIOControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a7a1bf59d9fddd27e95b04e12e4039b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html" title="Category that contains the digital input and output control features. ">mvIMPACT::acquire::GenICam::DigitalIOControl</a></b> object.  <a href="#a7a1bf59d9fddd27e95b04e12e4039b18">更多...</a><br /></td></tr>
+<tr class="separator:a7a1bf59d9fddd27e95b04e12e4039b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:afbd78071c4f6edc4bf4dca924c969e97"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#afbd78071c4f6edc4bf4dca924c969e97">lineSelector</a></td></tr>
+<tr class="memdesc:afbd78071c4f6edc4bf4dca924c969e97"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure.  <a href="#afbd78071c4f6edc4bf4dca924c969e97">更多...</a><br /></td></tr>
+<tr class="separator:afbd78071c4f6edc4bf4dca924c969e97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29a79ff170f40fe0edf89f93c0d97d2f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a29a79ff170f40fe0edf89f93c0d97d2f">lineMode</a></td></tr>
+<tr class="memdesc:a29a79ff170f40fe0edf89f93c0d97d2f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls if the physical Line is used to Input or Output a signal.  <a href="#a29a79ff170f40fe0edf89f93c0d97d2f">更多...</a><br /></td></tr>
+<tr class="separator:a29a79ff170f40fe0edf89f93c0d97d2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c64d63aafc81c859db263133c91ba2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a05c64d63aafc81c859db263133c91ba2">lineInverter</a></td></tr>
+<tr class="memdesc:a05c64d63aafc81c859db263133c91ba2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Controls the inversion of the signal of the selected input or output Line.  <a href="#a05c64d63aafc81c859db263133c91ba2">更多...</a><br /></td></tr>
+<tr class="separator:a05c64d63aafc81c859db263133c91ba2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5db5fc8881e558c398580000f34874cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a5db5fc8881e558c398580000f34874cb">lineStatus</a></td></tr>
+<tr class="memdesc:a5db5fc8881e558c398580000f34874cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Returns the current status of the selected input or output Line.  <a href="#a5db5fc8881e558c398580000f34874cb">更多...</a><br /></td></tr>
+<tr class="separator:a5db5fc8881e558c398580000f34874cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d27fa917e5f45b123e14c5d5d19f98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a09d27fa917e5f45b123e14c5d5d19f98">lineStatusAll</a></td></tr>
+<tr class="memdesc:a09d27fa917e5f45b123e14c5d5d19f98"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the current status of all available Line signals at time of polling in a single bitfield.  <a href="#a09d27fa917e5f45b123e14c5d5d19f98">更多...</a><br /></td></tr>
+<tr class="separator:a09d27fa917e5f45b123e14c5d5d19f98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf9678823e6ff4071d5fdf3fa0c0a6a6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#abf9678823e6ff4071d5fdf3fa0c0a6a6">lineSource</a></td></tr>
+<tr class="memdesc:abf9678823e6ff4071d5fdf3fa0c0a6a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which internal acquisition or I/O source signal to output on the selected Line.  <a href="#abf9678823e6ff4071d5fdf3fa0c0a6a6">更多...</a><br /></td></tr>
+<tr class="separator:abf9678823e6ff4071d5fdf3fa0c0a6a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefba4c332122a43b6c713a9eb72b3cd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#aefba4c332122a43b6c713a9eb72b3cd6">lineFormat</a></td></tr>
+<tr class="memdesc:aefba4c332122a43b6c713a9eb72b3cd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls the current electrical format of the selected physical input or output Line.  <a href="#aefba4c332122a43b6c713a9eb72b3cd6">更多...</a><br /></td></tr>
+<tr class="separator:aefba4c332122a43b6c713a9eb72b3cd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d77f4a5ce746a4db6d50ca6d3f72c62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a9d77f4a5ce746a4db6d50ca6d3f72c62">userOutputSelector</a></td></tr>
+<tr class="memdesc:a9d77f4a5ce746a4db6d50ca6d3f72c62"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which bit of the User Output register will be set by UserOutputValue.  <a href="#a9d77f4a5ce746a4db6d50ca6d3f72c62">更多...</a><br /></td></tr>
+<tr class="separator:a9d77f4a5ce746a4db6d50ca6d3f72c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061e414fc5254821a2bd512ae7c7e4af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a061e414fc5254821a2bd512ae7c7e4af">userOutputValue</a></td></tr>
+<tr class="memdesc:a061e414fc5254821a2bd512ae7c7e4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Sets the value of the bit selected by UserOutputSelector.  <a href="#a061e414fc5254821a2bd512ae7c7e4af">更多...</a><br /></td></tr>
+<tr class="separator:a061e414fc5254821a2bd512ae7c7e4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b61661cdb50161e17bb472614610506"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a2b61661cdb50161e17bb472614610506">userOutputValueAll</a></td></tr>
+<tr class="memdesc:a2b61661cdb50161e17bb472614610506"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the value of all the bits of the User Output register.  <a href="#a2b61661cdb50161e17bb472614610506">更多...</a><br /></td></tr>
+<tr class="separator:a2b61661cdb50161e17bb472614610506"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa33c5e4bfa78eb795e30bcdce7c72180"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#aa33c5e4bfa78eb795e30bcdce7c72180">userOutputValueAllMask</a></td></tr>
+<tr class="memdesc:aa33c5e4bfa78eb795e30bcdce7c72180"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the write mask to apply to the value specified by UserOutputValueAll before writing it in the User Output register.  <a href="#aa33c5e4bfa78eb795e30bcdce7c72180">更多...</a><br /></td></tr>
+<tr class="separator:aa33c5e4bfa78eb795e30bcdce7c72180"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf56d4b22274bef29f4b24d2ee8047a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#aeaf56d4b22274bef29f4b24d2ee8047a">mvLineDebounceTimeRisingEdge</a></td></tr>
+<tr class="memdesc:aeaf56d4b22274bef29f4b24d2ee8047a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the debounce time in micro seconds for low to high transitions.  <a href="#aeaf56d4b22274bef29f4b24d2ee8047a">更多...</a><br /></td></tr>
+<tr class="separator:aeaf56d4b22274bef29f4b24d2ee8047a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75bce21349d5f1d97ac09495d8b0edb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#aa75bce21349d5f1d97ac09495d8b0edb">mvLineDebounceTimeFallingEdge</a></td></tr>
+<tr class="memdesc:aa75bce21349d5f1d97ac09495d8b0edb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the debounce time in micro seconds for high to low transitions.  <a href="#aa75bce21349d5f1d97ac09495d8b0edb">更多...</a><br /></td></tr>
+<tr class="separator:aa75bce21349d5f1d97ac09495d8b0edb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb3910b12f431df5027cf4edbce49040"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#adb3910b12f431df5027cf4edbce49040">mvRTMInputSelector</a></td></tr>
+<tr class="memdesc:adb3910b12f431df5027cf4edbce49040"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which RTM input to configure.  <a href="#adb3910b12f431df5027cf4edbce49040">更多...</a><br /></td></tr>
+<tr class="separator:adb3910b12f431df5027cf4edbce49040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbac9e850186a10d255032480059c308"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#afbac9e850186a10d255032480059c308">mvRTMSource</a></td></tr>
+<tr class="memdesc:afbac9e850186a10d255032480059c308"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which signal to connect to the selected RTM input.  <a href="#afbac9e850186a10d255032480059c308">更多...</a><br /></td></tr>
+<tr class="separator:afbac9e850186a10d255032480059c308"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category that contains the digital input and output control features. </p>
+<p>A category that contains the digital input and output control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a7a1bf59d9fddd27e95b04e12e4039b18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::DigitalIOControl::DigitalIOControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html" title="Category that contains the digital input and output control features. ">mvIMPACT::acquire::GenICam::DigitalIOControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="443,23,605,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="232,88,395,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="232,168,395,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="653,38,872,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="932,5,1081,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="920,70,1093,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1142,92,1370,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1419,99,1643,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="443,103,605,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="449,182,599,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="679,110,847,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aefba4c332122a43b6c713a9eb72b3cd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineFormat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls the current electrical format of the selected physical input or output Line. </p>
+<p>Controls the current electrical format of the selected physical input or output Line.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>NoConnect</b> (Display string: 'No Connect'): The Line is not connected.</li>
+<li><b>TriState</b> (Display string: 'Tri State'): The Line is currently in Tri-State mode (Not driven).</li>
+<li><b>TTL</b> (Display string: 'TTL'): The Line is currently accepting or sending TTL level signals.</li>
+<li><b>LVDS</b> (Display string: 'LVDS'): The Line is currently accepting or sending LVDS level signals.</li>
+<li><b>RS422</b> (Display string: 'RS 422'): The Line is currently accepting or sending RS422 level signals.</li>
+<li><b>OptoCoupled</b> (Display string: 'Opto Coupled'): The Line is opto-coupled.</li>
+<li><b>OpenDrain</b> (Display string: 'Open Drain'): The Line is Open Drain (or Open Collector).</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a05c64d63aafc81c859db263133c91ba2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineInverter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Controls the inversion of the signal of the selected input or output Line. </p>
+<p>Controls the inversion of the signal of the selected input or output Line. </p>
+
+</div>
+</div>
+<a class="anchor" id="a29a79ff170f40fe0edf89f93c0d97d2f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls if the physical Line is used to Input or Output a signal. </p>
+<p>Controls if the physical Line is used to Input or Output a signal.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Input</b> (Display string: 'Input'): The selected physical line is used to Input an electrical signal.</li>
+<li><b>Output</b> (Display string: 'Output'): The selected physical line is used to Output an electrical signal.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afbd78071c4f6edc4bf4dca924c969e97"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure. </p>
+<p>Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Line0</b> (Display string: 'Line 0'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Index of the virtual line going on the Transport layer to use.</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Index of the virtual line going on the Transport layer to use.</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Index of the virtual line going on the Transport layer to use.</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Index of the virtual line going on the Transport layer to use.</li>
+<li><b>CC1</b> (Display string: 'CC 1'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC2</b> (Display string: 'CC 2'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC3</b> (Display string: 'CC 3'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC4</b> (Display string: 'CC 4'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC#5#</b> (Display string: 'CC #5#'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>Line3</b> (Display string: 'Line 3'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line4</b> (Display string: 'Line 4'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line5</b> (Display string: 'Line 5'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line6</b> (Display string: 'Line 6'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line7</b> (Display string: 'Line 7'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line8</b> (Display string: 'Line 8'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line9</b> (Display string: 'Line 9'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line10</b> (Display string: 'Line 10'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line11</b> (Display string: 'Line 11'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line12</b> (Display string: 'Line 12'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line13</b> (Display string: 'Line 13'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line14</b> (Display string: 'Line 14'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>Line15</b> (Display string: 'Line 15'): Index of the physical line and associated I/O control block to use.</li>
+<li><b>CC5</b> (Display string: 'CC 5'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC6</b> (Display string: 'CC 6'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC7</b> (Display string: 'CC 7'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC8</b> (Display string: 'CC 8'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC9</b> (Display string: 'CC 9'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC10</b> (Display string: 'CC 10'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC11</b> (Display string: 'CC 11'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC12</b> (Display string: 'CC 12'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC13</b> (Display string: 'CC 13'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC14</b> (Display string: 'CC 14'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC15</b> (Display string: 'CC 15'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink Product only.</li>
+<li><b>CC16</b> (Display string: 'Line Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties.</dd></dl>
+<p>See <b>lineStatusAll</b> to find out which line corresponds to which input or output of your device </p>
+
+</div>
+</div>
+<a class="anchor" id="abf9678823e6ff4071d5fdf3fa0c0a6a6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which internal acquisition or I/O source signal to output on the selected Line. </p>
+<p>Selects which internal acquisition or I/O source signal to output on the selected Line. LineMode must be Output.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Line output is disabled (Tri-State).</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>AcquisitionTriggerWait</b> (Display string: 'Acquisition Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a trigger for the capture of one or many Frames.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a trigger for the capture of one or many Frames.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed an Acquisition start trigger.</li>
+<li><b>AcquisitionActive</b> (Display string: 'Acquisition Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing an acquisition of one or many Frames.</li>
+<li><b>FrameTriggerWait</b> (Display string: 'Frame Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Frame start trigger.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Frame start trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a Frame start trigger.</li>
+<li><b>FrameActive</b> (Display string: 'Frame Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing the capture of a Frame.</li>
+<li><b>ExposureActive</b> (Display string: 'Exposure Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is doing the exposure of a Frame (or Line).</li>
+<li><b>LineTriggerWait</b> (Display string: 'Line Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Line start trigger.</li>
+<li><b>LineTrigger</b> (Display string: 'Line Trigger'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Line start trigger.</li>
+<li><b>LineTriggerMissed</b> (Display string: 'Line Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a Line start trigger.</li>
+<li><b>LineActive</b> (Display string: 'Line Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing the capture of a Line.</li>
+<li><b>Counter0Active</b> (Display string: 'Counter 0 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter1Active</b> (Display string: 'Counter 1 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter2Active</b> (Display string: 'Counter 2 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter#3#Active</b> (Display string: 'Counter #3# Active'): The chosen counter is in active state (counting).</li>
+<li><b>Timer0Active</b> (Display string: 'Timer 0 Active'): The chosen Timer is in active state.</li>
+<li><b>Timer1Active</b> (Display string: 'Timer 1 Active'): The chosen Timer is in active state.</li>
+<li><b>Timer2Active</b> (Display string: 'Timer 2 Active'): The chosen Timer is in active state.</li>
+<li><b>Timer#3#Active</b> (Display string: 'Timer #3# Active'): The chosen Timer is in active state.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): The chosen Encoder Output state.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): The chosen Encoder Output state.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): The chosen Encoder Output state.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): The chosen Encoder Output state.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): The choosen Logic Block output state.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): The choosen Logic Block output state.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): The choosen Logic Block output state.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): The choosen Logic Block output state.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): The choosen Software Signal output state.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): The choosen Software Signal output state.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): The choosen Software Signal output state.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): The choosen Software Signal output state.</li>
+<li><b>Stream0TransferActive</b> (Display string: 'Stream 0 Transfer Active'): Transfer on the stream is active.</li>
+<li><b>Stream1TransferActive</b> (Display string: 'Stream 1 Transfer Active'): Transfer on the stream is active.</li>
+<li><b>Stream#2#TransferActive</b> (Display string: 'Stream #2# Transfer Active'): Transfer on the stream is active.</li>
+<li><b>Stream0TransferPaused</b> (Display string: 'Stream 0 Transfer Paused'): Transfer on the stream is paused.</li>
+<li><b>Stream1TransferPaused</b> (Display string: 'Stream 1 Transfer Paused'): Transfer on the stream is paused.</li>
+<li><b>Stream#2#TransferPaused</b> (Display string: 'Stream #2# Transfer Paused'): Transfer on the stream is paused.</li>
+<li><b>Stream0TransferStopping</b> (Display string: 'Stream 0 Transfer Stopping'): Transfer on the stream is stopping.</li>
+<li><b>Stream1TransferStopping</b> (Display string: 'Stream 1 Transfer Stopping'): Transfer on the stream is stopping.</li>
+<li><b>Stream#2#TransferStopping</b> (Display string: 'Stream #2# Transfer Stopping'): Transfer on the stream is stopping.</li>
+<li><b>Stream0TransferStopped</b> (Display string: 'Stream 0 Transfer Stopped'): Transfer on the stream is stopped.</li>
+<li><b>Stream1TransferStopped</b> (Display string: 'Stream 1 Transfer Stopped'): Transfer on the stream is stopped.</li>
+<li><b>Stream#2#TransferStopped</b> (Display string: 'Stream #2# Transfer Stopped'): Transfer on the stream is stopped.</li>
+<li><b>Stream0TransferOverflow</b> (Display string: 'Stream 0 Transfer Overflow'): Transfer on the stream is in overflow.</li>
+<li><b>Stream1TransferOverflow</b> (Display string: 'Stream 1 Transfer Overflow'): Transfer on the stream is in overflow.</li>
+<li><b>Stream#2#TransferOverflow</b> (Display string: 'Stream #2# Transfer Overflow'): Transfer on the stream is in overflow.</li>
+<li><b>mvExposureSensor2Active</b> (Display string: 'Line Source')</li>
+<li><b>UserOutput3</b> (Display string: 'User Output 3'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput4</b> (Display string: 'User Output 4'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput5</b> (Display string: 'User Output 5'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput6</b> (Display string: 'User Output 6'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput7</b> (Display string: 'User Output 7'): The chosen User Output Bit state as defined by its current UserOutputValue.</li>
+<li><b>Counter3Active</b> (Display string: 'Counter 3 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter4Active</b> (Display string: 'Counter 4 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter5Active</b> (Display string: 'Counter 5 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter6Active</b> (Display string: 'Counter 6 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter7Active</b> (Display string: 'Counter 7 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter8Active</b> (Display string: 'Counter 8 Active'): The chosen counter is in active state (counting).</li>
+<li><b>mvReadOutActive</b> (Display string: 'Line Source')</li>
+<li><b>mvExposureAndAcquisitionActive</b> (Display string: 'Line Source')</li>
+<li><b>mvTemperatureOutOfRange</b> (Display string: 'Line Source')</li>
+<li><b>mvLogicGateOR1Output</b> (Display string: 'Line Source')</li>
+<li><b>mvLogicGateOR2Output</b> (Display string: 'Line Source')</li>
+<li><b>mvLogicGateOR3Output</b> (Display string: 'Line Source')</li>
+<li><b>mvLogicGateOR4Output</b> (Display string: 'Line Source')</li>
+<li><b>mvExposureActive</b> (Display string: 'Line Source')</li>
+<li><b>mvRTMOutput0</b> (Display string: 'Line Source')</li>
+<li><b>mvRTMOutput1</b> (Display string: 'Line Source')</li>
+<li><b>mvRTMOutput2</b> (Display string: 'Line Source')</li>
+<li><b>mvRTMOutput3</b> (Display string: 'Line Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5db5fc8881e558c398580000f34874cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Returns the current status of the selected input or output Line. </p>
+<p>Returns the current status of the selected input or output Line. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09d27fa917e5f45b123e14c5d5d19f98"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::lineStatusAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the current status of all available Line signals at time of polling in a single bitfield. </p>
+<p>Returns the current status of all available Line signals at time of polling in a single bitfield.</p>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueLYNX-M7</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">in 0 </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">in 1 </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">out 2 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">out 3 </td></tr>
+<tr>
+<td class="indexvalue">6</td><td class="indexvalue">in 2 </td></tr>
+<tr>
+<td class="indexvalue">7</td><td class="indexvalue">in 3 </td></tr>
+<tr>
+<td class="indexvalue">8</td><td class="indexvalue">in 4 </td></tr>
+<tr>
+<td class="indexvalue">9</td><td class="indexvalue">out 4 </td></tr>
+<tr>
+<td class="indexvalue">10</td><td class="indexvalue">out 5 </td></tr>
+</table>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueCOUGAR-P</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">in 0 </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">in 1 </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">out 2 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">out 3 </td></tr>
+</table>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueCOUGAR-X</b> and <b>mvBlueFOX3</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO</td><td class="header">LineSelectorValue </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0</td><td class="indexvalue">Line0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1</td><td class="indexvalue">Line1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">out 2</td><td class="indexvalue">Line2 </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">out 3</td><td class="indexvalue">Line3 </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">in 0</td><td class="indexvalue">Line4 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">in 1</td><td class="indexvalue">Line5 </td></tr>
+</table>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueCOUGAR-X-POE</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO</td><td class="header">LineSelectorValue </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0</td><td class="indexvalue">Line0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1</td><td class="indexvalue">Line1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">-</td><td class="indexvalue">- </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">-</td><td class="indexvalue">- </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">in 0</td><td class="indexvalue">Line4 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">in 1</td><td class="indexvalue">Line5 </td></tr>
+</table>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueCOUGAR-X-POEI</b> <b>mvBlueCOUGAR-XD</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO</td><td class="header">LineSelectorValue </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0</td><td class="indexvalue">Line0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1</td><td class="indexvalue">Line1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">out 2</td><td class="indexvalue">Line2 </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">out 3</td><td class="indexvalue">Line3 </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">in 0</td><td class="indexvalue">Line4 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">in 1</td><td class="indexvalue">Line5 </td></tr>
+<tr>
+<td class="indexvalue">6</td><td class="indexvalue">in 2</td><td class="indexvalue">Line6 </td></tr>
+<tr>
+<td class="indexvalue">7</td><td class="indexvalue">in 3</td><td class="indexvalue">Line7 </td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="aa75bce21349d5f1d97ac09495d8b0edb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::mvLineDebounceTimeFallingEdge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the debounce time in micro seconds for high to low transitions. </p>
+<p>Sets the debounce time in micro seconds for high to low transitions. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeaf56d4b22274bef29f4b24d2ee8047a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::mvLineDebounceTimeRisingEdge</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the debounce time in micro seconds for low to high transitions. </p>
+<p>Sets the debounce time in micro seconds for low to high transitions. </p>
+
+</div>
+</div>
+<a class="anchor" id="adb3910b12f431df5027cf4edbce49040"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::mvRTMInputSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which RTM input to configure. </p>
+<p>Selects which RTM input to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvRTMInput0</b> (Display string: 'mv RTM Input Selector')</li>
+<li><b>mvRTMInput1</b> (Display string: 'mv RTM Input Selector')</li>
+<li><b>mvRTMInput2</b> (Display string: 'mv RTM Input Selector')</li>
+<li><b>mvRTMInput3</b> (Display string: 'mv RTM Input Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afbac9e850186a10d255032480059c308"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::mvRTMSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which signal to connect to the selected RTM input. </p>
+<p>Selects which signal to connect to the selected RTM input.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv RTM Source')</li>
+<li><b>Line4</b> (Display string: 'mv RTM Source')</li>
+<li><b>Line5</b> (Display string: 'mv RTM Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d77f4a5ce746a4db6d50ca6d3f72c62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::userOutputSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which bit of the User Output register will be set by UserOutputValue. </p>
+<p>Selects which bit of the User Output register will be set by UserOutputValue.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): Selects the bit 0 of the User Output register.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): Selects the bit 1 of the User Output register.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): Selects the bit 2 of the User Output register.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): Selects the bit #3# of the User Output register.</li>
+<li><b>UserOutput3</b> (Display string: 'User Output 3'): Selects the bit 3 of the User Output register.</li>
+<li><b>UserOutput4</b> (Display string: 'User Output 4'): Selects the bit 4 of the User Output register.</li>
+<li><b>UserOutput5</b> (Display string: 'User Output 5'): Selects the bit 5 of the User Output register.</li>
+<li><b>UserOutput6</b> (Display string: 'User Output 6'): Selects the bit 6 of the User Output register.</li>
+<li><b>UserOutput7</b> (Display string: 'User Output 7'): Selects the bit 7 of the User Output register.</li>
+<li><b>UserOutput8</b> (Display string: 'User Output 8'): Selects the bit 8 of the User Output register.</li>
+<li><b>UserOutput9</b> (Display string: 'User Output 9'): Selects the bit 9 of the User Output register.</li>
+<li><b>UserOutput10</b> (Display string: 'User Output 10'): Selects the bit 10 of the User Output register.</li>
+<li><b>UserOutput11</b> (Display string: 'User Output 11'): Selects the bit 11 of the User Output register.</li>
+<li><b>UserOutput12</b> (Display string: 'User Output 12'): Selects the bit 12 of the User Output register.</li>
+<li><b>UserOutput13</b> (Display string: 'User Output 13'): Selects the bit 13 of the User Output register.</li>
+<li><b>UserOutput14</b> (Display string: 'User Output 14'): Selects the bit 14 of the User Output register.</li>
+<li><b>UserOutput15</b> (Display string: 'User Output 15'): Selects the bit 15 of the User Output register.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a061e414fc5254821a2bd512ae7c7e4af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::DigitalIOControl::userOutputValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Sets the value of the bit selected by UserOutputSelector. </p>
+<p>Sets the value of the bit selected by UserOutputSelector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2b61661cdb50161e17bb472614610506"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::userOutputValueAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the value of all the bits of the User Output register. </p>
+<p>Sets the value of all the bits of the User Output register. It is subject to the UserOutputValueAllMask. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa33c5e4bfa78eb795e30bcdce7c72180"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::DigitalIOControl::userOutputValueAllMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the write mask to apply to the value specified by UserOutputValueAll before writing it in the User Output register. </p>
+<p>Sets the write mask to apply to the value specified by UserOutputValueAll before writing it in the User Output register. If the UserOutputValueAllMask feature is present, setting the user Output register using UserOutputValueAll will only change the bits that have a corresponding bit in the mask set to one. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html">DigitalIOControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

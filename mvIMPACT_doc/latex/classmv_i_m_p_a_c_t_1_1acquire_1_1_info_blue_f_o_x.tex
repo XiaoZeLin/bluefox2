@@ -1,0 +1,161 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Info\+Blue\+F\+O\+X类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+}
+
+
+A more specific class to query information about a {\bfseries mv\+Blue\+F\+O\+X} device and its driver({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Info\+Blue\+F\+O\+X 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Info\+Blue\+F\+O\+X 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1adc3c7014728a039f0956cbb3cede81}{Info\+Blue\+F\+O\+X} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_acc3b699f351fc92e7a2ab7de8aaf91a7}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_acc3b699f351fc92e7a2ab7de8aaf91a7}{firmware\+Version}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_acc3b699f351fc92e7a2ab7de8aaf91a7}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the firmware version of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a571b20bb38f76c76728e0784b23e78a4}{sensor\+F\+P\+G\+A\+Version}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the F\+P\+G\+A version of the camera(if known). \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gafffac026d1345f9026199ff9e237f8ad}{Property\+I\+Blue\+F\+O\+X\+Info\+Sensor\+Capabilities} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_af1b01c915e47ab797ce087f6a2eec2c9}{sensor\+Caps}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing a bit mask containing information about the sensors capabilities(if known). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1d0d0c36611aa0358b055c95ca70a3f9}{device\+Sensor\+Revision}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the current revision of the sensor head of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a57fce60a1a0f1890efd1b4515a2fced4}{user\+E\+E\+P\+R\+O\+M\+Size}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the size of the user E\+E\+P\+R\+O\+M that can be accessed using the I2\+C access features of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_abb564f09fadeb6f34ed442ff12c1f4ea}{device\+Temperature}
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the temperature of the selected temperature sensor on the device in degrees Celsius. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A more specific class to query information about a {\bfseries mv\+Blue\+F\+O\+X} device and its driver({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class contains a collection of properties providing various information about a {\bfseries mv\+Blue\+F\+O\+X} device and its driver.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1adc3c7014728a039f0956cbb3cede81}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}!Info\+Blue\+F\+O\+X@{Info\+Blue\+F\+O\+X}}
+\index{Info\+Blue\+F\+O\+X@{Info\+Blue\+F\+O\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+\subsubsection[{Info\+Blue\+F\+O\+X}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X\+::\+Info\+Blue\+F\+O\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1adc3c7014728a039f0956cbb3cede81}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1adc3c7014728a039f0956cbb3cede81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1d0d0c36611aa0358b055c95ca70a3f9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}!device\+Sensor\+Revision@{device\+Sensor\+Revision}}
+\index{device\+Sensor\+Revision@{device\+Sensor\+Revision}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+\subsubsection[{device\+Sensor\+Revision}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X\+::device\+Sensor\+Revision}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a1d0d0c36611aa0358b055c95ca70a3f9}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the current revision of the sensor head of this device. 
+
+\begin{DoxyNote}{注解}
+This feature is currently not supported by all sensors. If a sensor can't provide this information, the value of this property will remain 0 at all time.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+1.\+12.\+65 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_abb564f09fadeb6f34ed442ff12c1f4ea}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}!device\+Temperature@{device\+Temperature}}
+\index{device\+Temperature@{device\+Temperature}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+\subsubsection[{device\+Temperature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X\+::device\+Temperature}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_abb564f09fadeb6f34ed442ff12c1f4ea}
+
+
+A float property {\bfseries }(read-\/only) containing the temperature of the selected temperature sensor on the device in degrees Celsius. 
+
+\begin{DoxyNote}{注解}
+This property will not be available for every mv\+Blue\+F\+O\+X. Right now this feature is only implemented for 202d version of the mv\+Blue\+F\+O\+X.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+1.\+12.\+62 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_af1b01c915e47ab797ce087f6a2eec2c9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}!sensor\+Caps@{sensor\+Caps}}
+\index{sensor\+Caps@{sensor\+Caps}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+\subsubsection[{sensor\+Caps}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Blue\+F\+O\+X\+Info\+Sensor\+Capabilities} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X\+::sensor\+Caps}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_af1b01c915e47ab797ce087f6a2eec2c9}
+
+
+An integer property {\bfseries }(read-\/only) containing a bit mask containing information about the sensors capabilities(if known). 
+
+\begin{DoxyNote}{注解}
+If nothing is known about this feature, this property will contain '-\/1'. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a571b20bb38f76c76728e0784b23e78a4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}!sensor\+F\+P\+G\+A\+Version@{sensor\+F\+P\+G\+A\+Version}}
+\index{sensor\+F\+P\+G\+A\+Version@{sensor\+F\+P\+G\+A\+Version}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+\subsubsection[{sensor\+F\+P\+G\+A\+Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X\+::sensor\+F\+P\+G\+A\+Version}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a571b20bb38f76c76728e0784b23e78a4}
+
+
+An integer property {\bfseries }(read-\/only) containing the F\+P\+G\+A version of the camera(if known). 
+
+\begin{DoxyNote}{注解}
+If nothing is known about this feature, this property will contain '-\/1'. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a57fce60a1a0f1890efd1b4515a2fced4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}!user\+E\+E\+P\+R\+O\+M\+Size@{user\+E\+E\+P\+R\+O\+M\+Size}}
+\index{user\+E\+E\+P\+R\+O\+M\+Size@{user\+E\+E\+P\+R\+O\+M\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X}}
+\subsubsection[{user\+E\+E\+P\+R\+O\+M\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+F\+O\+X\+::user\+E\+E\+P\+R\+O\+M\+Size}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x_a57fce60a1a0f1890efd1b4515a2fced4}
+
+
+An integer property {\bfseries }(read-\/only) containing the size of the user E\+E\+P\+R\+O\+M that can be accessed using the I2\+C access features of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}. 
+
+\begin{DoxyNote}{注解}
+The size may vary depending on the product. Even different products with the same sensor might report different values here.
+
+The user E\+E\+P\+R\+O\+M uses a virtual I2\+C address of 0x1\+A2 for write access and 0x1\+A3 for read access. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

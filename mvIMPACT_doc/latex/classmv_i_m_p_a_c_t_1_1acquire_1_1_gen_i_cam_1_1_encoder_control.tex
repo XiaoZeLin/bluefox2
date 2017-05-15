@@ -1,0 +1,348 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Encoder\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+}
+
+
+Category that contains the quadrature Encoder Control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Encoder\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a33339c7f0b709d90dfdad3be7c0b6c37}{Encoder\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a1a1395b78f2907c71bce8f511e38a123}{encoder\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Encoder to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a10c9b2deca4c4db3e72b43747cb1a6ef}{encoder\+Source\+A}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the signal which will be the source of the A input of the Encoder. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a05d60aa41efeeecd3682c8f3ffc01cd6}{encoder\+Source\+B}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the signal which will be the source of the B input of the Encoder. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a6825f0b4f99463f39de11401c67fb67e}{encoder\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects if the count of encoder uses Four\+Phase mode with jitter filtering or the High\+Resolution mode without jitter filtering. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_aad764e7913eb8f8ce1b8ba247a17b34a}{encoder\+Divider}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets how many Encoder increment/decrements that are needed generate an Encoder output pulse signal. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a7a40405d4f56f2631eaba4f26edca5f5}{encoder\+Output\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the conditions for the Encoder interface to generate a valid Encoder output signal. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a8708ad7edd51797a09c2b4202faac011}{encoder\+Status}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the motion status of the encoder. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a677351d73e21b249dfe42edbd15211a7}{encoder\+Timeout}
+\begin{DoxyCompactList}\small\item\em A floating point property. Sets the maximum time interval between encoder counter increments before the status turns to static. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a31fc18b202aa161011717d6436a910cd}{encoder\+Reset\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the signals that will be the source to reset the Encoder. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a4368e6fc149c01b706f2e89d522c1a4a}{encoder\+Reset\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the Activation mode of the Encoder Reset Source signal. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a09291b0a28dfba6043befecf136894cc}{encoder\+Reset}
+\begin{DoxyCompactList}\small\item\em A method object. Does a software reset of the selected Encoder and starts it. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a155593f156aca42831131b788eb25b63}{encoder\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Reads or writes the current value of the position counter of the selected Encoder. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_abe3354fcac087829fe183d54f9a8da19}{encoder\+Value\+At\+Reset}
+\begin{DoxyCompactList}\small\item\em An integer property. Reads the value of the of the position counter of the selected Encoder when it was reset by a signal or by an explicit Encoder\+Reset command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category that contains the quadrature Encoder Control features. 
+
+A category that contains the quadrature Encoder Control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a33339c7f0b709d90dfdad3be7c0b6c37}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!Encoder\+Control@{Encoder\+Control}}
+\index{Encoder\+Control@{Encoder\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{Encoder\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::\+Encoder\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a33339c7f0b709d90dfdad3be7c0b6c37}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a33339c7f0b709d90dfdad3be7c0b6c37_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_aad764e7913eb8f8ce1b8ba247a17b34a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Divider@{encoder\+Divider}}
+\index{encoder\+Divider@{encoder\+Divider}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Divider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Divider}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_aad764e7913eb8f8ce1b8ba247a17b34a}
+
+
+An integer property. Sets how many Encoder increment/decrements that are needed generate an Encoder output pulse signal. 
+
+Sets how many Encoder increment/decrements that are needed generate an Encoder output pulse signal. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a6825f0b4f99463f39de11401c67fb67e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Mode@{encoder\+Mode}}
+\index{encoder\+Mode@{encoder\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a6825f0b4f99463f39de11401c67fb67e}
+
+
+An enumerated integer property. Selects if the count of encoder uses Four\+Phase mode with jitter filtering or the High\+Resolution mode without jitter filtering. 
+
+Selects if the count of encoder uses Four\+Phase mode with jitter filtering or the High\+Resolution mode without jitter filtering.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Four\+Phase} (Display string\+: 'Four Phase')\+: The counter increments or decrements 1 for every full quadrature cycle with jitter filtering.
+\item {\bfseries High\+Resolution} (Display string\+: 'High Resolution')\+: The counter increments or decrements every quadrature phase for high resolution counting, but without jitter filtering.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a7a40405d4f56f2631eaba4f26edca5f5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Output\+Mode@{encoder\+Output\+Mode}}
+\index{encoder\+Output\+Mode@{encoder\+Output\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Output\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Output\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a7a40405d4f56f2631eaba4f26edca5f5}
+
+
+An enumerated integer property. Selects the conditions for the Encoder interface to generate a valid Encoder output signal. 
+
+Selects the conditions for the Encoder interface to generate a valid Encoder output signal.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: No output pulse are generated.
+\item {\bfseries Position\+Up} (Display string\+: 'Position Up')\+: Output pulses are generated at all new positions in the positive direction. If the encoder reverses no output pulse are generated until it has again passed the position where the reversal started.
+\item {\bfseries Position\+Down} (Display string\+: 'Position Down')\+: Output pulses are generated at all new positions in the negative direction. If the encoder reverses no output pulse are generated until it has again passed the position where the reversal started.
+\item {\bfseries Direction\+Up} (Display string\+: 'Direction Up')\+: Output pulses are generated at all position increments in the positive direction while ignoring negative direction motion.
+\item {\bfseries Direction\+Down} (Display string\+: 'Direction Down')\+: Output pulses are generated at all position increments in the negative direction while ignoring positive direction motion.
+\item {\bfseries Motion} (Display string\+: 'Motion')\+: Output pulses are generated at all motion increments in both directions.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a09291b0a28dfba6043befecf136894cc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Reset@{encoder\+Reset}}
+\index{encoder\+Reset@{encoder\+Reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Reset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a09291b0a28dfba6043befecf136894cc}
+
+
+A method object. Does a software reset of the selected Encoder and starts it. 
+
+Does a software reset of the selected Encoder and starts it. The Encoder starts counting events immediately after the reset. Encoder\+Reset can be used to reset the Encoder independently from the Encoder\+Reset\+Source. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a4368e6fc149c01b706f2e89d522c1a4a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Reset\+Activation@{encoder\+Reset\+Activation}}
+\index{encoder\+Reset\+Activation@{encoder\+Reset\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Reset\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Reset\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a4368e6fc149c01b706f2e89d522c1a4a}
+
+
+An enumerated integer property. Selects the Activation mode of the Encoder Reset Source signal. 
+
+Selects the Activation mode of the Encoder Reset Source signal.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Resets the Encoder on the Rising Edge of the signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Resets the Encoder on the Falling Edge of the signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Resets the Encoder on the Falling or rising Edge of the selected signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Resets the Encoder as long as the selected signal level is High.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Resets the Encoder as long as the selected signal level is Low.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a31fc18b202aa161011717d6436a910cd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Reset\+Source@{encoder\+Reset\+Source}}
+\index{encoder\+Reset\+Source@{encoder\+Reset\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Reset\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Reset\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a31fc18b202aa161011717d6436a910cd}
+
+
+An enumerated integer property. Selects the signals that will be the source to reset the Encoder. 
+
+Selects the signals that will be the source to reset the Encoder.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disable the Encoder Reset trigger.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: Resets with the reception of the Acquisition Trigger.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: Resets with the reception of a missed Acquisition Trigger.
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Resets with the reception of the Acquisition Start.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Resets with the reception of the Acquisition End.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: Resets with the reception of the Frame Start Trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: Resets with the reception of a missed Frame Trigger.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Resets with the reception of the Frame Start.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Resets with the reception of the Frame End.
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Resets with the reception of the Exposure Start.
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Resets with the reception of the Exposure End.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Resets by the chosen User Output bit.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Reset by the choosen Logic Block signal.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Reset by the choosen Logic Block signal.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Reset by the choosen Logic Block signal.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Reset by the choosen Logic Block signal.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a1a1395b78f2907c71bce8f511e38a123}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Selector@{encoder\+Selector}}
+\index{encoder\+Selector@{encoder\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a1a1395b78f2907c71bce8f511e38a123}
+
+
+An enumerated integer property. Selects which Encoder to configure. 
+
+Selects which Encoder to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Selects Encoder 0.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Selects Encoder 1.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Selects Encoder 2.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Selects Encoder \#3\#.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a10c9b2deca4c4db3e72b43747cb1a6ef}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Source\+A@{encoder\+Source\+A}}
+\index{encoder\+Source\+A@{encoder\+Source\+A}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Source\+A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Source\+A}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a10c9b2deca4c4db3e72b43747cb1a6ef}
+
+
+An enumerated integer property. Selects the signal which will be the source of the A input of the Encoder. 
+
+Selects the signal which will be the source of the A input of the Encoder.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Counter is stopped.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Encoder Forward input is taken from the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Encoder Forward input is taken from the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Encoder Forward input is taken from the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Encoder Forward input is taken from the chosen I/\+O Line.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a05d60aa41efeeecd3682c8f3ffc01cd6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Source\+B@{encoder\+Source\+B}}
+\index{encoder\+Source\+B@{encoder\+Source\+B}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Source\+B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Source\+B}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a05d60aa41efeeecd3682c8f3ffc01cd6}
+
+
+An enumerated integer property. Selects the signal which will be the source of the B input of the Encoder. 
+
+Selects the signal which will be the source of the B input of the Encoder.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Counter is stopped.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Encoder Reverse input is taken from the chosen I/\+O Line..
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Encoder Reverse input is taken from the chosen I/\+O Line..
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Encoder Reverse input is taken from the chosen I/\+O Line..
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Encoder Reverse input is taken from the chosen I/\+O Line..
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a8708ad7edd51797a09c2b4202faac011}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Status@{encoder\+Status}}
+\index{encoder\+Status@{encoder\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a8708ad7edd51797a09c2b4202faac011}
+
+
+An enumerated integer property. Returns the motion status of the encoder. 
+
+Returns the motion status of the encoder.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Encoder\+Up} (Display string\+: 'Encoder Up')\+: The encoder counter last incremented.
+\item {\bfseries Encoder\+Down} (Display string\+: 'Encoder Down')\+: The encoder counter last decremented.
+\item {\bfseries Encoder\+Idle} (Display string\+: 'Encoder Idle')\+: The encoder is not active.
+\item {\bfseries Encoder\+Static} (Display string\+: 'Encoder Static')\+: No motion within the Encoder\+Timeout time.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a677351d73e21b249dfe42edbd15211a7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Timeout@{encoder\+Timeout}}
+\index{encoder\+Timeout@{encoder\+Timeout}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Timeout}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a677351d73e21b249dfe42edbd15211a7}
+
+
+A floating point property. Sets the maximum time interval between encoder counter increments before the status turns to static. 
+
+Sets the maximum time interval between encoder counter increments before the status turns to static. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a155593f156aca42831131b788eb25b63}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Value@{encoder\+Value}}
+\index{encoder\+Value@{encoder\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_a155593f156aca42831131b788eb25b63}
+
+
+An integer property. Reads or writes the current value of the position counter of the selected Encoder. 
+
+Reads or writes the current value of the position counter of the selected Encoder. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_abe3354fcac087829fe183d54f9a8da19}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}!encoder\+Value\+At\+Reset@{encoder\+Value\+At\+Reset}}
+\index{encoder\+Value\+At\+Reset@{encoder\+Value\+At\+Reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control}}
+\subsubsection[{encoder\+Value\+At\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Encoder\+Control\+::encoder\+Value\+At\+Reset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control_abe3354fcac087829fe183d54f9a8da19}
+
+
+An integer property. Reads the value of the of the position counter of the selected Encoder when it was reset by a signal or by an explicit Encoder\+Reset command. 
+
+Reads the value of the of the position counter of the selected Encoder when it was reset by a signal or by an explicit Encoder\+Reset command. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

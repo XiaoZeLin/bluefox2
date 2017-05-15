@@ -1,0 +1,496 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::CameraSettingsVirtualDevice类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::CameraSettingsVirtualDevice类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><b>mvVirtualDevice</b> related camera settings(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::CameraSettingsVirtualDevice 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). " alt="" coords="28,187,176,229"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html" title="A base class for essential device related settings. " alt="" coords="28,97,176,138"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="28,6,176,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::CameraSettingsVirtualDevice 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). " alt="" coords="1517,193,1667,234"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html" title="A base class for essential device related settings. " alt="" coords="1071,150,1220,191"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="605,173,755,214"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="605,107,755,149"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,451,555,493"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="605,275,755,317"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TImageBuffer\lPixelFormat \&gt;" alt="" coords="799,29,999,85"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TVirtualDevice\lTestMode \&gt;" alt="" coords="1273,367,1479,423"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraAoiMode \&gt;" alt="" coords="779,427,1018,469"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBayerMosaic\lParity \&gt;" alt="" coords="1043,483,1248,539"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TVirtualDevice\lImageType \&gt;" alt="" coords="1273,540,1479,596"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="1505,609,1679,650"/><area shape="rect" id="node16" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraTaps\lXGeometry \&gt;" alt="" coords="797,656,1001,712"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraTaps\lYGeometry \&gt;" alt="" coords="1043,725,1247,781"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,451,355,493"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,451,155,493"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ab3c227879b2b35d67a4598af1dd9f25c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#ab3c227879b2b35d67a4598af1dd9f25c">CameraSettingsVirtualDevice</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:ab3c227879b2b35d67a4598af1dd9f25c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html" title="mvVirtualDevice related camera settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsVirtualDevice</a></b> object.  <a href="#ab3c227879b2b35d67a4598af1dd9f25c">更多...</a><br /></td></tr>
+<tr class="separator:ab3c227879b2b35d67a4598af1dd9f25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html">mvIMPACT::acquire::CameraSettingsBase</a></td></tr>
+<tr class="memitem:a48c2eadebe65f845c04cf014703e725a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a48c2eadebe65f845c04cf014703e725a">CameraSettingsBase</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a48c2eadebe65f845c04cf014703e725a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b> object.  <a href="#a48c2eadebe65f845c04cf014703e725a">更多...</a><br /></td></tr>
+<tr class="separator:a48c2eadebe65f845c04cf014703e725a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html">mvIMPACT::acquire::BasicDeviceSettings</a></td></tr>
+<tr class="memitem:a4956794c96ca7afea6910d6fdbfd3257 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#a4956794c96ca7afea6910d6fdbfd3257">BasicDeviceSettings</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a4956794c96ca7afea6910d6fdbfd3257 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html" title="A base class for essential device related settings. ">mvIMPACT::acquire::BasicDeviceSettings</a></b> object.  <a href="#a4956794c96ca7afea6910d6fdbfd3257">更多...</a><br /></td></tr>
+<tr class="separator:a4956794c96ca7afea6910d6fdbfd3257 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:acdafab3d8e09657de37e15f066c41d33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gac3481ade98270de3d8aa7ae47cbe5c4e">PropertyICameraAoiMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#acdafab3d8e09657de37e15f066c41d33">aoiMode</a></td></tr>
+<tr class="memdesc:acdafab3d8e09657de37e15f066c41d33"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the used <a class="el" href="struct_a_o_i.html">AOI</a> mode for the image capture.  <a href="#acdafab3d8e09657de37e15f066c41d33">更多...</a><br /></td></tr>
+<tr class="separator:acdafab3d8e09657de37e15f066c41d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4337e2da0e836c79f18b619dc68d8681"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a4337e2da0e836c79f18b619dc68d8681">gain_dB</a></td></tr>
+<tr class="memdesc:a4337e2da0e836c79f18b619dc68d8681"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining the gain in dB to be applied to the test image.  <a href="#a4337e2da0e836c79f18b619dc68d8681">更多...</a><br /></td></tr>
+<tr class="separator:a4337e2da0e836c79f18b619dc68d8681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a804a5ef868aaf896d39986547d8407f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga3e8eeaeee6e265c687f5f1bcc8f086a6">PropertyIVirtualDeviceTestMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a804a5ef868aaf896d39986547d8407f6">testMode</a></td></tr>
+<tr class="memdesc:a804a5ef868aaf896d39986547d8407f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the test mode use to generate the dummy images.  <a href="#a804a5ef868aaf896d39986547d8407f6">更多...</a><br /></td></tr>
+<tr class="separator:a804a5ef868aaf896d39986547d8407f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8d2e4f540d6c550d7ef0140260d3d91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#aa8d2e4f540d6c550d7ef0140260d3d91">channelBitDepth</a></td></tr>
+<tr class="memdesc:aa8d2e4f540d6c550d7ef0140260d3d91"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the channel bit depth for certain test image generation modes.  <a href="#aa8d2e4f540d6c550d7ef0140260d3d91">更多...</a><br /></td></tr>
+<tr class="separator:aa8d2e4f540d6c550d7ef0140260d3d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0aeed2e2b157d75a0e3f6fe1914c3328"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a0aeed2e2b157d75a0e3f6fe1914c3328">paddingX</a></td></tr>
+<tr class="memdesc:a0aeed2e2b157d75a0e3f6fe1914c3328"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the padding(in bytes) in X-direction for certain test image generation modes.  <a href="#a0aeed2e2b157d75a0e3f6fe1914c3328">更多...</a><br /></td></tr>
+<tr class="separator:a0aeed2e2b157d75a0e3f6fe1914c3328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bbf2c1250572ec75184d9a56fc12de2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gadb3acd27da51bc318c073aa7d052607b">PropertyICameraTapsXGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a0bbf2c1250572ec75184d9a56fc12de2">tapsXGeometry</a></td></tr>
+<tr class="memdesc:a0bbf2c1250572ec75184d9a56fc12de2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the way this camera transmits the pixel data in X direction.  <a href="#a0bbf2c1250572ec75184d9a56fc12de2">更多...</a><br /></td></tr>
+<tr class="separator:a0bbf2c1250572ec75184d9a56fc12de2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9547245a868b5fb47a0f8591b4b5408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga8ca68a8fc0e8c81dacb76b2cfc289909">PropertyICameraTapsYGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#af9547245a868b5fb47a0f8591b4b5408">tapsYGeometry</a></td></tr>
+<tr class="memdesc:af9547245a868b5fb47a0f8591b4b5408"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the way this camera transmits the pixel data in Y direction.  <a href="#af9547245a868b5fb47a0f8591b4b5408">更多...</a><br /></td></tr>
+<tr class="separator:af9547245a868b5fb47a0f8591b4b5408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adc7091ec9b1537ff57011f25eb4f7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2adc7091ec9b1537ff57011f25eb4f7a"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a2adc7091ec9b1537ff57011f25eb4f7a">frameDelay_us</a></td></tr>
+<tr class="memdesc:a2adc7091ec9b1537ff57011f25eb4f7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining a delay in us before the 'captured' image is returned to the user. <br /></td></tr>
+<tr class="separator:a2adc7091ec9b1537ff57011f25eb4f7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a399ecae9be05ea1c5bc3f73565fb7ea5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a399ecae9be05ea1c5bc3f73565fb7ea5">imageDirectory</a></td></tr>
+<tr class="memdesc:a399ecae9be05ea1c5bc3f73565fb7ea5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property defining the directory to capture images from.  <a href="#a399ecae9be05ea1c5bc3f73565fb7ea5">更多...</a><br /></td></tr>
+<tr class="separator:a399ecae9be05ea1c5bc3f73565fb7ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2e7f03546b993681065cf0e5ff870dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gacfecce2b643c06f4a31fbced42789247">PropertyIVirtualDeviceImageType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#aa2e7f03546b993681065cf0e5ff870dc">imageType</a></td></tr>
+<tr class="memdesc:aa2e7f03546b993681065cf0e5ff870dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining what images shall be captured from harddisc.  <a href="#aa2e7f03546b993681065cf0e5ff870dc">更多...</a><br /></td></tr>
+<tr class="separator:aa2e7f03546b993681065cf0e5ff870dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a869a0aa796304b7c181fce9ff7a6abec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gafaa3668c30761b139d7ff110ac2c83e4">PropertyIBayerMosaicParity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a869a0aa796304b7c181fce9ff7a6abec">bayerMosaicParity</a></td></tr>
+<tr class="memdesc:a869a0aa796304b7c181fce9ff7a6abec"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the bayer attribute assigned to the generated test image.  <a href="#a869a0aa796304b7c181fce9ff7a6abec">更多...</a><br /></td></tr>
+<tr class="separator:a869a0aa796304b7c181fce9ff7a6abec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a874e311390efb6d1399422843a0a6f01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a874e311390efb6d1399422843a0a6f01"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a874e311390efb6d1399422843a0a6f01">testImageBarWidth</a></td></tr>
+<tr class="memdesc:a874e311390efb6d1399422843a0a6f01"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the width (in pixels) of the different bars in certain test modes. <br /></td></tr>
+<tr class="separator:a874e311390efb6d1399422843a0a6f01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb3e253cf1ce3d67b534362fd93856ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#abb3e253cf1ce3d67b534362fd93856ec">userData</a></td></tr>
+<tr class="memdesc:abb3e253cf1ce3d67b534362fd93856ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property that will be copied into the user data property of each request.  <a href="#abb3e253cf1ce3d67b534362fd93856ec">更多...</a><br /></td></tr>
+<tr class="separator:abb3e253cf1ce3d67b534362fd93856ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html">mvIMPACT::acquire::CameraSettingsBase</a></td></tr>
+<tr class="memitem:a0058890a1b217348bc9d74276d136cd0 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0058890a1b217348bc9d74276d136cd0"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a0058890a1b217348bc9d74276d136cd0">aoiHeight</a></td></tr>
+<tr class="memdesc:a0058890a1b217348bc9d74276d136cd0 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the number of lines to capture. <br /></td></tr>
+<tr class="separator:a0058890a1b217348bc9d74276d136cd0 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfbd65eb718a5a57084b7fc8f594ace inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#adbfbd65eb718a5a57084b7fc8f594ace">aoiStartX</a></td></tr>
+<tr class="memdesc:adbfbd65eb718a5a57084b7fc8f594ace inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the X-offset for each capture line.  <a href="#adbfbd65eb718a5a57084b7fc8f594ace">更多...</a><br /></td></tr>
+<tr class="separator:adbfbd65eb718a5a57084b7fc8f594ace inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848ee514681ffe6bf617cf6de0bf5a48 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a848ee514681ffe6bf617cf6de0bf5a48">aoiStartY</a></td></tr>
+<tr class="memdesc:a848ee514681ffe6bf617cf6de0bf5a48 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the Y-offset.  <a href="#a848ee514681ffe6bf617cf6de0bf5a48">更多...</a><br /></td></tr>
+<tr class="separator:a848ee514681ffe6bf617cf6de0bf5a48 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d058292017a9d17046e5ab3ba38933 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d058292017a9d17046e5ab3ba38933"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#ac1d058292017a9d17046e5ab3ba38933">aoiWidth</a></td></tr>
+<tr class="memdesc:ac1d058292017a9d17046e5ab3ba38933 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the number of pixels to capture per line. <br /></td></tr>
+<tr class="separator:ac1d058292017a9d17046e5ab3ba38933 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af295aa670e45c6cbdb6e5d8517922371 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga4f53082cdae4edfc1f87e928a0ab4184">PropertyIImageBufferPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#af295aa670e45c6cbdb6e5d8517922371">pixelFormat</a></td></tr>
+<tr class="memdesc:af295aa670e45c6cbdb6e5d8517922371 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the pixel format used to transfer the image data into the target systems host memory.  <a href="#af295aa670e45c6cbdb6e5d8517922371">更多...</a><br /></td></tr>
+<tr class="separator:af295aa670e45c6cbdb6e5d8517922371 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html">mvIMPACT::acquire::BasicDeviceSettings</a></td></tr>
+<tr class="memitem:aa6ca2a2fe4794fbc5bf638b48440eac1 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#aa6ca2a2fe4794fbc5bf638b48440eac1">basedOn</a></td></tr>
+<tr class="memdesc:aa6ca2a2fe4794fbc5bf638b48440eac1 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the name of the setting this setting is based on.  <a href="#aa6ca2a2fe4794fbc5bf638b48440eac1">更多...</a><br /></td></tr>
+<tr class="separator:aa6ca2a2fe4794fbc5bf638b48440eac1 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbc413a2afe5a1d8eb673ba14047ae2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#a5bbc413a2afe5a1d8eb673ba14047ae2">imageRequestTimeout_ms</a></td></tr>
+<tr class="memdesc:a5bbc413a2afe5a1d8eb673ba14047ae2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the maximum time to wait for an image in ms.  <a href="#a5bbc413a2afe5a1d8eb673ba14047ae2">更多...</a><br /></td></tr>
+<tr class="separator:a5bbc413a2afe5a1d8eb673ba14047ae2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><b>mvVirtualDevice</b> related camera settings(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<dl class="section note"><dt>注解</dt><dd>As this is a device driver meant for testing the interface an allowing to start the integration of mvIMPACT Acquire into an application, this class might change at ANY time! Changes in the virtual device driver might not be backward compatible!</dd>
+<dd>
+This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="ab3c227879b2b35d67a4598af1dd9f25c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::CameraSettingsVirtualDevice::CameraSettingsVirtualDevice </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html" title="mvVirtualDevice related camera settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsVirtualDevice</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="256,65,419,121"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="467,29,629,85"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="473,109,623,150"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="703,5,871,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="677,70,896,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="956,37,1105,78"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="944,102,1117,143"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1166,124,1394,180"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1443,131,1667,173"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="acdafab3d8e09657de37e15f066c41d33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gac3481ade98270de3d8aa7ae47cbe5c4e">PropertyICameraAoiMode</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::aoiMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the used <a class="el" href="struct_a_o_i.html">AOI</a> mode for the image capture. </p>
+<p>This feature will only be visible, when the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a804a5ef868aaf896d39986547d8407f6" title="An enumerated integer property defining the test mode use to generate the dummy images. ">mvIMPACT::acquire::CameraSettingsVirtualDevice::testMode</a></b> is set to <b>mvIMPACT::acquire::vdtmImageDirectory</b>. Then this property will allow to enforce a certain image dimension ( <b>mvIMPACT::acquire::camUser</b> ) or to capture every image file in its original dimensions ( <b>mvIMPACT::acquire::camFull</b> ). Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraAoiMode</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.11.9 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a869a0aa796304b7c181fce9ff7a6abec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gafaa3668c30761b139d7ff110ac2c83e4">PropertyIBayerMosaicParity</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::bayerMosaicParity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the bayer attribute assigned to the generated test image. </p>
+<p>When images are acquired via a directory, or a bayer test pattern is generated this can be used to specify the bayer parity. <b>mvIMPACT::acquire::bmpUndefined</b> will set the buffers bayer attribute thus will result in a grey(mono) buffer being returned.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBayerMosaicParity</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8d2e4f540d6c550d7ef0140260d3d91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::channelBitDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the channel bit depth for certain test image generation modes. </p>
+<p>When <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#af295aa670e45c6cbdb6e5d8517922371" title="An enumerated integer property defining the pixel format used to transfer the image data into the tar...">mvIMPACT::acquire::CameraSettingsBase::pixelFormat</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::ibpfAuto</b>, this this property will become invisible.</p>
+<p>When <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a804a5ef868aaf896d39986547d8407f6" title="An enumerated integer property defining the test mode use to generate the dummy images. ">mvIMPACT::acquire::CameraSettingsVirtualDevice::testMode</a></b> is set to <b>mvIMPACT::acquire::vdtmMovingMonoRamp</b>, <b>mvIMPACT::acquire::vdtmMovingBayerDataRamp</b> or <b>mvIMPACT::acquire::vdtmBayerWhiteBalanceTestImage</b> this property will allow to define the pixel format for the test image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4337e2da0e836c79f18b619dc68d8681"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::gain_dB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property defining the gain in dB to be applied to the test image. </p>
+<p>The formula for given <code>gain_dB</code> is </p><div class="fragment"><div class="line">gain_x= 10 ^ (<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a4337e2da0e836c79f18b619dc68d8681">gain_dB</a>/20)</div>
+</div><!-- fragment --><p><b>Example:</b> </p>
+<div class="fragment"><div class="line">gain_x = 10 ^ (6/20) = 1.995</div>
+</div><!-- fragment --><p>I.e. increasing the gain setting by 6dB corresponds to factor of 2.</p>
+<p>The formula for given gain_x is </p><div class="fragment"><div class="line"><a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a4337e2da0e836c79f18b619dc68d8681">gain_dB</a> = 20*log(gain_x) dB</div>
+</div><!-- fragment --><p>Where: <br />
+<code>gain_dB:</code> MATRIX VISION gain value (logarithmic) <br />
+<code>gain_x:</code> multiplicative gain <br />
+<code>^</code>: power function <br />
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a399ecae9be05ea1c5bc3f73565fb7ea5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::imageDirectory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property defining the directory to capture images from. </p>
+<p>This feature will only be visible, when the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a804a5ef868aaf896d39986547d8407f6" title="An enumerated integer property defining the test mode use to generate the dummy images. ">mvIMPACT::acquire::CameraSettingsVirtualDevice::testMode</a></b> is set to <b>mvIMPACT::acquire::vdtmImageDirectory</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2e7f03546b993681065cf0e5ff870dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gacfecce2b643c06f4a31fbced42789247">PropertyIVirtualDeviceImageType</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::imageType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining what images shall be captured from harddisc. </p>
+<p>This feature will only be visible, when the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a804a5ef868aaf896d39986547d8407f6" title="An enumerated integer property defining the test mode use to generate the dummy images. ">mvIMPACT::acquire::CameraSettingsVirtualDevice::testMode</a></b> is set to <b>mvIMPACT::acquire::vdtmImageDirectory</b>.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TVirtualDeviceTestMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0aeed2e2b157d75a0e3f6fe1914c3328"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::paddingX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the padding(in bytes) in X-direction for certain test image generation modes. </p>
+<p>When <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#a804a5ef868aaf896d39986547d8407f6" title="An enumerated integer property defining the test mode use to generate the dummy images. ">mvIMPACT::acquire::CameraSettingsVirtualDevice::testMode</a></b> is set to a mono format(not the weird packed ones!), <b>mvIMPACT::acquire::vdtmMovingBayerDataRamp</b> or <b>mvIMPACT::acquire::vdtmBayerWhiteBalanceTestImage</b> this property will allow to define the padding in bytes for each line. This will result in images where the line pitch differs from the width multiplied by the bytes per pixel value. E.g. a padding of 1 in X-direction and a width of 5 for a 16 bit mono format will result in a line pitch of 11 bytes(5*2 + 1). </p>
+
+</div>
+</div>
+<a class="anchor" id="a0bbf2c1250572ec75184d9a56fc12de2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gadb3acd27da51bc318c073aa7d052607b">PropertyICameraTapsXGeometry</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::tapsXGeometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the way this camera transmits the pixel data in X direction. </p>
+<p>Within the virtual device driver, modifying this property internally will only attach the corresponding attribute to the request buffer, thus might result in the tap sort filter to process the data. This is mainly meant for testing purposes.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraTapsXGeometry</b>. </p><dl class="section since"><dt>自从</dt><dd>2.5.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af9547245a868b5fb47a0f8591b4b5408"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga8ca68a8fc0e8c81dacb76b2cfc289909">PropertyICameraTapsYGeometry</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::tapsYGeometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the way this camera transmits the pixel data in Y direction. </p>
+<p>Within the virtual device driver, modifying this property internally will only attach the corresponding attribute to the request buffer, thus might result in the tap sort filter to process the data. This is mainly meant for testing purposes.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraTapsYGeometry</b>. </p><dl class="section since"><dt>自从</dt><dd>2.5.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a804a5ef868aaf896d39986547d8407f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga3e8eeaeee6e265c687f5f1bcc8f086a6">PropertyIVirtualDeviceTestMode</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::testMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the test mode use to generate the dummy images. </p>
+<p>When <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#af295aa670e45c6cbdb6e5d8517922371" title="An enumerated integer property defining the pixel format used to transfer the image data into the tar...">mvIMPACT::acquire::CameraSettingsBase::pixelFormat</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::ibpfAuto</b>, this this property will become invisible.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TVirtualDeviceTestMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="abb3e253cf1ce3d67b534362fd93856ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::CameraSettingsVirtualDevice::userData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property that will be copied into the user data property of each request. </p>
+<p>This e.g. can be used to assign a certain identifier to each image request. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html">CameraSettingsVirtualDevice</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

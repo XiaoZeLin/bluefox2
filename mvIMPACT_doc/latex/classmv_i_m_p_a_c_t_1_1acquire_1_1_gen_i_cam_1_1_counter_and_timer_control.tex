@@ -1,0 +1,989 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Counter\+And\+Timer\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+}
+
+
+Category that contains the Counter and Timer control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Counter\+And\+Timer\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4}{Counter\+And\+Timer\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a2a8a3d52a70268d61a7f33ccedaa6c9c}{counter\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Counter to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a449221a170934fd17e3c3253f935074a}{counter\+Event\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Select the events that will be the source to increment the Counter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ab70baba2a6ef16bf43522414274b3740}{counter\+Event\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the Activation mode \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source signal. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aec76b87580e5aef5ef034d11b44f1428}{counter\+Reset\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the signals that will be the source to reset the Counter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a94c6a18dd21c201e57240f0d7427958f}{counter\+Reset\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the Activation mode of the Counter Reset Source signal. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a8bb2c2964ae66f7250a37348e5b37ec6}{counter\+Reset}
+\begin{DoxyCompactList}\small\item\em A method object. Does a software reset of the selected Counter and starts it. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aa20aa23c911bdf08578a68724c5d52c3}{counter\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Reads or writes the current value of the selected Counter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a545eb5fdfc9e07d616a39080813acfd1}{counter\+Value\+At\+Reset}
+\begin{DoxyCompactList}\small\item\em An integer property. Reads the value of the selected Counter when it was reset by a trigger or by an explicit Counter\+Reset command. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a08e6a31eafa31c6217d3fec3de878c61}{counter\+Duration}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the duration (or number of events) before the Counter\+End event is generated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a45615d283c7dff07df8e05fc4679ad40}{counter\+Status}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the current status of the Counter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a794668b6daf40a909de1d84fa1408859}{counter\+Trigger\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the source to start the Counter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ae3e718076d7c1392e360281172930b4c}{counter\+Trigger\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the activation mode of the trigger to start the Counter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a98aaeada13d3a3f9edc2abfeeba6077e}{timer\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Timer to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a1129d4390fb2db6fc43dea90a16ca32c}{timer\+Duration}
+\begin{DoxyCompactList}\small\item\em A floating point property. Sets the duration (in microseconds) of the Timer pulse. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ac8814d7bc9581dadc3411ceef2a4cb1e}{timer\+Duration\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aed0a836e1b087f5d8977334073e34788}{timer\+Delay}
+\begin{DoxyCompactList}\small\item\em A floating point property. Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ae2a98a11b7a8ffd4379474d8d2118564}{timer\+Delay\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a5b4a47b49eeeb512aa34c9a9118fd378}{timer\+Reset}
+\begin{DoxyCompactList}\small\item\em A method object. Does a software reset of the selected timer and starts it. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a21f6143f2f21f2d22394455a9df22a42}{timer\+Value}
+\begin{DoxyCompactList}\small\item\em A floating point property. Reads or writes the current value (in microseconds) of the selected Timer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a550a983e7334e89b755076bcee3cf80d}{timer\+Value\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a119e611c5ad880862fd3194de9f63c61}{timer\+Status}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the current status of the Timer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ace2a27d5ef880f1590cca9313ec84684}{timer\+Trigger\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the source of the trigger to start the Timer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aafe9deefca2b00ca24218d2763082720}{timer\+Trigger\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the activation mode of the trigger to start the Timer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category that contains the Counter and Timer control features. 
+
+A category that contains the Counter and Timer control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!Counter\+And\+Timer\+Control@{Counter\+And\+Timer\+Control}}
+\index{Counter\+And\+Timer\+Control@{Counter\+And\+Timer\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{Counter\+And\+Timer\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::\+Counter\+And\+Timer\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a08e6a31eafa31c6217d3fec3de878c61}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Duration@{counter\+Duration}}
+\index{counter\+Duration@{counter\+Duration}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Duration}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a08e6a31eafa31c6217d3fec3de878c61}
+
+
+An integer property. Sets the duration (or number of events) before the Counter\+End event is generated. 
+
+Sets the duration (or number of events) before the Counter\+End event is generated. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ab70baba2a6ef16bf43522414274b3740}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Event\+Activation@{counter\+Event\+Activation}}
+\index{counter\+Event\+Activation@{counter\+Event\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Event\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Event\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ab70baba2a6ef16bf43522414274b3740}
+
+
+An enumerated integer property. Selects the Activation mode \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source signal. 
+
+Selects the Activation mode \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source signal.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Counts on the Rising Edge of the signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Counts on the Falling Edge of the signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Counts on the Falling or rising Edge of the selected signal.
+\item {\bfseries Level\+High} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Activation')
+\item {\bfseries Level\+Low} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Activation')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a449221a170934fd17e3c3253f935074a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Event\+Source@{counter\+Event\+Source}}
+\index{counter\+Event\+Source@{counter\+Event\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Event\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Event\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a449221a170934fd17e3c3253f935074a}
+
+
+An enumerated integer property. Select the events that will be the source to increment the Counter. 
+
+Select the events that will be the source to increment the Counter.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Counter is stopped.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: Counts the number of Acquisition Trigger.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: Counts the number of missed Acquisition Start Trigger.
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Counts the number of Acquisition Start.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Counts the number of Acquisition End.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: Counts the number of Frame Start Trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: Counts the number of missed Frame Start Trigger.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Counts the number of Frame Start.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Counts the number of Frame End.
+\item {\bfseries Frame\+Burst\+Start} (Display string\+: 'Frame Burst Start')\+: Counts the number of Frame Burst Start.
+\item {\bfseries Frame\+Burst\+End} (Display string\+: 'Frame Burst End')\+: Counts the number of Frame Burst End.
+\item {\bfseries Line\+Trigger} (Display string\+: 'Line Trigger')\+: Counts the number of Line Start Trigger.
+\item {\bfseries Line\+Trigger\+Missed} (Display string\+: 'Line Trigger Missed')\+: Counts the number of missed Line Start Trigger.
+\item {\bfseries Line\+Start} (Display string\+: 'Line Start')\+: Counts the number of Line Start.
+\item {\bfseries Line\+End} (Display string\+: 'Line End')\+: Counts the number of Line End.
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Counts the number of Exposure Start.
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Counts the number of Exposure End.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Counts the number of Counter Start.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Counts the number of Counter Start.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Counts the number of Counter Start.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Counts the number of Counter Start.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Counts the number of Counter End.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Counts the number of Timer Start pulses generated.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Counts the number of Timer Start pulses generated.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Counts the number of Timer Start pulses generated.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Counts the number of Timer Start pulses generated.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Counts the number of Encoder output pulses.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Counts the number of Encoder output pulses.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Counts the number of Encoder output pulses.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Counts the number of Encoder output pulses.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Counts the number of Logic Block output pulses.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Counts the number of Logic Block output pulses.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Counts the number of Logic Block output pulses.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Counts the number of Logic Block output pulses.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Counts the number of Software Signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Counts the number of Software Signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Counts the number of Software Signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Counts the number of Software Signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Counts the number of Link Trigger.
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Counts the number of Link Trigger.
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Counts the number of Link Trigger.
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Counts the number of Link Trigger.
+\item {\bfseries Timestamp\+Tick} (Display string\+: 'Timestamp Tick')\+: Counts the number of clock ticks of the Timestamp clock. Can be used to create a programmable timer.
+\item {\bfseries Line3} (Display string\+: 'Line 3')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line4} (Display string\+: 'Line 4')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line5} (Display string\+: 'Line 5')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line6} (Display string\+: 'Line 6')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line7} (Display string\+: 'Line 7')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line8} (Display string\+: 'Line 8')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line9} (Display string\+: 'Line 9')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line10} (Display string\+: 'Line 10')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line11} (Display string\+: 'Line 11')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line12} (Display string\+: 'Line 12')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line13} (Display string\+: 'Line 13')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line14} (Display string\+: 'Line 14')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Line15} (Display string\+: 'Line 15')\+: Counts the number of transitions on the chosen I/\+O Line.
+\item {\bfseries Counter3\+End} (Display string\+: 'Counter 3 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter4\+End} (Display string\+: 'Counter 4 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter5\+End} (Display string\+: 'Counter 5 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter6\+End} (Display string\+: 'Counter 6 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter7\+End} (Display string\+: 'Counter 7 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter8\+End} (Display string\+: 'Counter 8 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter9\+End} (Display string\+: 'Counter 9 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter10\+End} (Display string\+: 'Counter 10 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter11\+End} (Display string\+: 'Counter 11 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter12\+End} (Display string\+: 'Counter 12 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter13\+End} (Display string\+: 'Counter 13 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter14\+End} (Display string\+: 'Counter 14 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter15\+End} (Display string\+: 'Counter 15 End')\+: Counts the number of Counter End.
+\item {\bfseries Counter16\+End} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Timer3\+End} (Display string\+: 'Timer 3 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer4\+End} (Display string\+: 'Timer 4 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer5\+End} (Display string\+: 'Timer 5 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer6\+End} (Display string\+: 'Timer 6 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer7\+End} (Display string\+: 'Timer 7 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer8\+End} (Display string\+: 'Timer 8 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer9\+End} (Display string\+: 'Timer 9 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer10\+End} (Display string\+: 'Timer 10 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer11\+End} (Display string\+: 'Timer 11 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer12\+End} (Display string\+: 'Timer 12 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer13\+End} (Display string\+: 'Timer 13 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer14\+End} (Display string\+: 'Timer 14 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer15\+End} (Display string\+: 'Timer 15 End')\+: Counts the number of Timer End pulses generated.
+\item {\bfseries Timer16\+End} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Action3} (Display string\+: 'Action 3')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action4} (Display string\+: 'Action 4')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action5} (Display string\+: 'Action 5')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action6} (Display string\+: 'Action 6')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action7} (Display string\+: 'Action 7')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action8} (Display string\+: 'Action 8')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action9} (Display string\+: 'Action 9')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action10} (Display string\+: 'Action 10')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action11} (Display string\+: 'Action 11')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action12} (Display string\+: 'Action 12')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action13} (Display string\+: 'Action 13')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action14} (Display string\+: 'Action 14')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action15} (Display string\+: 'Action 15')\+: Counts the number of assertions of the chosen action signal.
+\item {\bfseries Action16} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line0\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line1\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line2\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line3\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line4\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line5\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line6\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line7\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line8\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line9\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line10\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line11\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line12\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line13\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line14\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries Line15\+Rising\+Edge} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries mv\+Temperature\+Out\+Of\+Range} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R1\+Output} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R2\+Output} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R3\+Output} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R4\+Output} (Display string\+: 'Counter \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a8bb2c2964ae66f7250a37348e5b37ec6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Reset@{counter\+Reset}}
+\index{counter\+Reset@{counter\+Reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Reset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a8bb2c2964ae66f7250a37348e5b37ec6}
+
+
+A method object. Does a software reset of the selected Counter and starts it. 
+
+Does a software reset of the selected Counter and starts it. The counter starts counting events immediately after the reset unless a Counter trigger is active. Counter\+Reset can be used to reset the Counter independently from the Counter\+Reset\+Source. To disable the counter temporarily, set Counter\+Event\+Source to Off. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a94c6a18dd21c201e57240f0d7427958f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Reset\+Activation@{counter\+Reset\+Activation}}
+\index{counter\+Reset\+Activation@{counter\+Reset\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Reset\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Reset\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a94c6a18dd21c201e57240f0d7427958f}
+
+
+An enumerated integer property. Selects the Activation mode of the Counter Reset Source signal. 
+
+Selects the Activation mode of the Counter Reset Source signal.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Resets the counter on the Rising Edge of the signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Resets the counter on the Falling Edge of the signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Resets the counter on the Falling or rising Edge of the selected signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Resets the counter as long as the selected signal level is High.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Resets the counter as long as the selected signal level is Low.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aec76b87580e5aef5ef034d11b44f1428}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Reset\+Source@{counter\+Reset\+Source}}
+\index{counter\+Reset\+Source@{counter\+Reset\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Reset\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Reset\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aec76b87580e5aef5ef034d11b44f1428}
+
+
+An enumerated integer property. Selects the signals that will be the source to reset the Counter. 
+
+Selects the signals that will be the source to reset the Counter.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disable the Counter Reset trigger.
+\item {\bfseries Counter\+Trigger} (Display string\+: 'Counter Trigger')\+: Resets with the reception of a trigger on the Counter\+Trigger\+Source.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: Resets with the reception of the Acquisition Trigger.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: Resets with the reception of the missed Acquisition start trigger.
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Resets with the reception of the Acquisition Start.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Resets with the reception of the Acquisition End.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: Resets with the reception of the Frame Start Trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: Resets with the reception of the missed Frame start trigger.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Resets with the reception of the Frame Start.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Resets with the reception of the Frame End.
+\item {\bfseries Line\+Trigger} (Display string\+: 'Line Trigger')\+: Resets with the reception of the Line Start Trigger.
+\item {\bfseries Line\+Trigger\+Missed} (Display string\+: 'Line Trigger Missed')\+: Resets with the reception of the missed Line start trigger.
+\item {\bfseries Line\+Start} (Display string\+: 'Line Start')\+: Resets with the reception of the Line Start.
+\item {\bfseries Line\+End} (Display string\+: 'Line End')\+: Resets with the reception of the Line End.
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Resets with the reception of the Exposure Start.
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Resets with the reception of the Exposure End.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Resets by the chosen User Output bit.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Resets with the reception of the Counter Start.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Resets with the reception of the Timer Start.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Resets with the reception of the Encoder output signal.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Resets with the reception of the Encoder output signal.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Resets with the reception of the Encoder output signal.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Resets with the reception of the Encoder output signal.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Resets with the reception of the Logic\+Block output signal.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Resets with the reception of the Logic\+Block output signal.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Resets with the reception of the Logic\+Block output signal.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Resets with the reception of the Logic\+Block output signal.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Resets on the reception of the Software Signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Resets on the reception of the chosen Link Trigger (received from the transport layer).
+\item {\bfseries Line3} (Display string\+: 'Line 3')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line4} (Display string\+: 'Line 4')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line5} (Display string\+: 'Line 5')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line6} (Display string\+: 'Line 6')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line7} (Display string\+: 'Line 7')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line8} (Display string\+: 'Line 8')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line9} (Display string\+: 'Line 9')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line10} (Display string\+: 'Line 10')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line11} (Display string\+: 'Line 11')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line12} (Display string\+: 'Line 12')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line13} (Display string\+: 'Line 13')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line14} (Display string\+: 'Line 14')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Line15} (Display string\+: 'Line 15')\+: Resets by the chosen I/\+O Line.
+\item {\bfseries Counter3\+End} (Display string\+: 'Counter 3 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter4\+End} (Display string\+: 'Counter 4 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter5\+End} (Display string\+: 'Counter 5 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter6\+End} (Display string\+: 'Counter 6 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter7\+End} (Display string\+: 'Counter 7 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter8\+End} (Display string\+: 'Counter 8 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter9\+End} (Display string\+: 'Counter 9 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter10\+End} (Display string\+: 'Counter 10 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter11\+End} (Display string\+: 'Counter 11 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter12\+End} (Display string\+: 'Counter 12 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter13\+End} (Display string\+: 'Counter 13 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter14\+End} (Display string\+: 'Counter 14 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter15\+End} (Display string\+: 'Counter 15 End')\+: Resets with the reception of the Counter End.
+\item {\bfseries Counter16\+End} (Display string\+: 'Counter Reset Source')
+\item {\bfseries Timer3\+End} (Display string\+: 'Timer 3 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer4\+End} (Display string\+: 'Timer 4 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer5\+End} (Display string\+: 'Timer 5 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer6\+End} (Display string\+: 'Timer 6 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer7\+End} (Display string\+: 'Timer 7 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer8\+End} (Display string\+: 'Timer 8 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer9\+End} (Display string\+: 'Timer 9 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer10\+End} (Display string\+: 'Timer 10 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer11\+End} (Display string\+: 'Timer 11 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer12\+End} (Display string\+: 'Timer 12 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer13\+End} (Display string\+: 'Timer 13 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer14\+End} (Display string\+: 'Timer 14 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer15\+End} (Display string\+: 'Timer 15 End')\+: Resets with the reception of the Timer End.
+\item {\bfseries Timer16\+End} (Display string\+: 'Counter Reset Source')
+\item {\bfseries User\+Output3} (Display string\+: 'User Output 3')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output4} (Display string\+: 'User Output 4')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output5} (Display string\+: 'User Output 5')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output6} (Display string\+: 'User Output 6')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output7} (Display string\+: 'User Output 7')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output8} (Display string\+: 'User Output 8')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output9} (Display string\+: 'User Output 9')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output10} (Display string\+: 'User Output 10')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output11} (Display string\+: 'User Output 11')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output12} (Display string\+: 'User Output 12')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output13} (Display string\+: 'User Output 13')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output14} (Display string\+: 'User Output 14')\+: Resets by the chosen User Output bit.
+\item {\bfseries User\+Output15} (Display string\+: 'User Output 15')\+: Resets by the chosen User Output bit.
+\item {\bfseries Action3} (Display string\+: 'Action 3')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action4} (Display string\+: 'Action 4')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action5} (Display string\+: 'Action 5')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action6} (Display string\+: 'Action 6')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action7} (Display string\+: 'Action 7')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action8} (Display string\+: 'Action 8')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action9} (Display string\+: 'Action 9')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action10} (Display string\+: 'Action 10')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action11} (Display string\+: 'Action 11')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action12} (Display string\+: 'Action 12')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action13} (Display string\+: 'Action 13')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action14} (Display string\+: 'Action 14')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action15} (Display string\+: 'Action 15')\+: Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).
+\item {\bfseries Action16} (Display string\+: 'Counter Reset Source')
+\item {\bfseries mv\+Temperature\+Out\+Of\+Range} (Display string\+: 'Counter Reset Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R1\+Output} (Display string\+: 'Counter Reset Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R2\+Output} (Display string\+: 'Counter Reset Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R3\+Output} (Display string\+: 'Counter Reset Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R4\+Output} (Display string\+: 'Counter Reset Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a2a8a3d52a70268d61a7f33ccedaa6c9c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Selector@{counter\+Selector}}
+\index{counter\+Selector@{counter\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a2a8a3d52a70268d61a7f33ccedaa6c9c}
+
+
+An enumerated integer property. Selects which Counter to configure. 
+
+Selects which Counter to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Counter0} (Display string\+: 'Counter 0')\+: Selects the counter 0.
+\item {\bfseries Counter1} (Display string\+: 'Counter 1')\+: Selects the counter 1.
+\item {\bfseries Counter2} (Display string\+: 'Counter 2')\+: Selects the counter 2.
+\item {\bfseries Counter\#3\#} (Display string\+: 'Counter \#3\#')\+: Selects the counter \#3\#.
+\item {\bfseries Counter3} (Display string\+: 'Counter 3')\+: Selects the counter 3.
+\item {\bfseries Counter4} (Display string\+: 'Counter 4')\+: Selects the counter 4.
+\item {\bfseries Counter5} (Display string\+: 'Counter 5')\+: Selects the counter 5.
+\item {\bfseries Counter6} (Display string\+: 'Counter 6')\+: Selects the counter 6.
+\item {\bfseries Counter7} (Display string\+: 'Counter 7')\+: Selects the counter 7.
+\item {\bfseries Counter8} (Display string\+: 'Counter 8')\+: Selects the counter 8.
+\item {\bfseries Counter9} (Display string\+: 'Counter 9')\+: Selects the counter 9.
+\item {\bfseries Counter10} (Display string\+: 'Counter 10')\+: Selects the counter 10.
+\item {\bfseries Counter11} (Display string\+: 'Counter 11')\+: Selects the counter 11.
+\item {\bfseries Counter12} (Display string\+: 'Counter 12')\+: Selects the counter 12.
+\item {\bfseries Counter13} (Display string\+: 'Counter 13')\+: Selects the counter 13.
+\item {\bfseries Counter14} (Display string\+: 'Counter 14')\+: Selects the counter 14.
+\item {\bfseries Counter15} (Display string\+: 'Counter 15')\+: Selects the counter 15.
+\item {\bfseries Counter16} (Display string\+: 'Counter Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a45615d283c7dff07df8e05fc4679ad40}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Status@{counter\+Status}}
+\index{counter\+Status@{counter\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a45615d283c7dff07df8e05fc4679ad40}
+
+
+An enumerated integer property. Returns the current status of the Counter. 
+
+Returns the current status of the Counter.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Counter\+Idle} (Display string\+: 'Counter Idle')\+: The counter is idle.
+\item {\bfseries Counter\+Trigger\+Wait} (Display string\+: 'Counter Trigger Wait')\+: The counter is waiting for a start trigger.
+\item {\bfseries Counter\+Active} (Display string\+: 'Counter Active')\+: The counter is counting for the specified duration.
+\item {\bfseries Counter\+Completed} (Display string\+: 'Counter Completed')\+: The counter reached the Counter\+Duration count.
+\item {\bfseries Counter\+Overflow} (Display string\+: 'Counter Overflow')\+: The counter reached its maximum possible count.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ae3e718076d7c1392e360281172930b4c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Trigger\+Activation@{counter\+Trigger\+Activation}}
+\index{counter\+Trigger\+Activation@{counter\+Trigger\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Trigger\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Trigger\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ae3e718076d7c1392e360281172930b4c}
+
+
+An enumerated integer property. Selects the activation mode of the trigger to start the Counter. 
+
+Selects the activation mode of the trigger to start the Counter.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Starts counting on the Rising Edge of the selected trigger signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Starts counting on the Falling Edge of the selected trigger signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Starts counting on the Falling or rising Edge of the selected trigger signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Counts as long as the selected trigger signal level is High.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Counts as long as the selected trigger signal level is Low.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a794668b6daf40a909de1d84fa1408859}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Trigger\+Source@{counter\+Trigger\+Source}}
+\index{counter\+Trigger\+Source@{counter\+Trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a794668b6daf40a909de1d84fa1408859}
+
+
+An enumerated integer property. Selects the source to start the Counter. 
+
+Selects the source to start the Counter.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the Counter trigger.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: Starts with the reception of the Acquisition Trigger.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} has missed an Acquisition start trigger.
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Starts with the reception of the Acquisition Start.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Starts with the reception of the Acquisition End.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: Starts with the reception of the Frame Start Trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} has missed a Frame start trigger.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Starts with the reception of the Frame Start.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Starts with the reception of the Frame End.
+\item {\bfseries Frame\+Burst\+Start} (Display string\+: 'Frame Burst Start')\+: Starts with the reception of the Frame Burst Start.
+\item {\bfseries Frame\+Burst\+End} (Display string\+: 'Frame Burst End')\+: Starts with the reception of the Frame Burst End.
+\item {\bfseries Line\+Trigger} (Display string\+: 'Line Trigger')\+: Starts with the reception of the Line Start Trigger.
+\item {\bfseries Line\+Trigger\+Missed} (Display string\+: 'Line Trigger Missed')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} has missed a Line start trigger.
+\item {\bfseries Line\+Start} (Display string\+: 'Line Start')\+: Starts with the reception of the Line Start.
+\item {\bfseries Line\+End} (Display string\+: 'Line End')\+: Starts with the reception of the Line End.
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Starts with the reception of the Exposure Start.
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Starts with the reception of the Exposure End.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Starts with the reception of the chosen Link Trigger signal.
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Starts with the reception of the chosen Link Trigger signal.
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Starts with the reception of the chosen Link Trigger signal.
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Starts with the reception of the chosen Link Trigger signal.
+\item {\bfseries Line3} (Display string\+: 'Line 3')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line4} (Display string\+: 'Line 4')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line5} (Display string\+: 'Line 5')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line6} (Display string\+: 'Line 6')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line7} (Display string\+: 'Line 7')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line8} (Display string\+: 'Line 8')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line9} (Display string\+: 'Line 9')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line10} (Display string\+: 'Line 10')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line11} (Display string\+: 'Line 11')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line12} (Display string\+: 'Line 12')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line13} (Display string\+: 'Line 13')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line14} (Display string\+: 'Line 14')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line15} (Display string\+: 'Line 15')\+: Starts when the specified Counter\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries User\+Output3} (Display string\+: 'User Output 3')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output4} (Display string\+: 'User Output 4')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output5} (Display string\+: 'User Output 5')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output6} (Display string\+: 'User Output 6')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output7} (Display string\+: 'User Output 7')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output8} (Display string\+: 'User Output 8')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output9} (Display string\+: 'User Output 9')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output10} (Display string\+: 'User Output 10')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output11} (Display string\+: 'User Output 11')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output12} (Display string\+: 'User Output 12')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output13} (Display string\+: 'User Output 13')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output14} (Display string\+: 'User Output 14')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output15} (Display string\+: 'User Output 15')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Counter3\+End} (Display string\+: 'Counter 3 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter4\+End} (Display string\+: 'Counter 4 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter5\+End} (Display string\+: 'Counter 5 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter6\+End} (Display string\+: 'Counter 6 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter7\+End} (Display string\+: 'Counter 7 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter8\+End} (Display string\+: 'Counter 8 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter9\+End} (Display string\+: 'Counter 9 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter10\+End} (Display string\+: 'Counter 10 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter11\+End} (Display string\+: 'Counter 11 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter12\+End} (Display string\+: 'Counter 12 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter13\+End} (Display string\+: 'Counter 13 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter14\+End} (Display string\+: 'Counter 14 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter15\+End} (Display string\+: 'Counter 15 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter16\+End} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries Timer3\+End} (Display string\+: 'Timer 3 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer4\+End} (Display string\+: 'Timer 4 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer5\+End} (Display string\+: 'Timer 5 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer6\+End} (Display string\+: 'Timer 6 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer7\+End} (Display string\+: 'Timer 7 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer8\+End} (Display string\+: 'Timer 8 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer9\+End} (Display string\+: 'Timer 9 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer10\+End} (Display string\+: 'Timer 10 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer11\+End} (Display string\+: 'Timer 11 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer12\+End} (Display string\+: 'Timer 12 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer13\+End} (Display string\+: 'Timer 13 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer14\+End} (Display string\+: 'Timer 14 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer15\+End} (Display string\+: 'Timer 15 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer16\+End} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries Action3} (Display string\+: 'Action 3')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action4} (Display string\+: 'Action 4')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action5} (Display string\+: 'Action 5')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action6} (Display string\+: 'Action 6')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action7} (Display string\+: 'Action 7')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action8} (Display string\+: 'Action 8')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action9} (Display string\+: 'Action 9')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action10} (Display string\+: 'Action 10')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action11} (Display string\+: 'Action 11')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action12} (Display string\+: 'Action 12')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action13} (Display string\+: 'Action 13')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action14} (Display string\+: 'Action 14')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action15} (Display string\+: 'Action 15')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action16} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R1\+Output} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R2\+Output} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R3\+Output} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R4\+Output} (Display string\+: 'Counter Trigger Source')
+\item {\bfseries mv\+Read\+Out\+Active} (Display string\+: 'Counter Trigger Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aa20aa23c911bdf08578a68724c5d52c3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Value@{counter\+Value}}
+\index{counter\+Value@{counter\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aa20aa23c911bdf08578a68724c5d52c3}
+
+
+An integer property. Reads or writes the current value of the selected Counter. 
+
+Reads or writes the current value of the selected Counter. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a545eb5fdfc9e07d616a39080813acfd1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!counter\+Value\+At\+Reset@{counter\+Value\+At\+Reset}}
+\index{counter\+Value\+At\+Reset@{counter\+Value\+At\+Reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{counter\+Value\+At\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::counter\+Value\+At\+Reset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a545eb5fdfc9e07d616a39080813acfd1}
+
+
+An integer property. Reads the value of the selected Counter when it was reset by a trigger or by an explicit Counter\+Reset command. 
+
+Reads the value of the selected Counter when it was reset by a trigger or by an explicit Counter\+Reset command. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aed0a836e1b087f5d8977334073e34788}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Delay@{timer\+Delay}}
+\index{timer\+Delay@{timer\+Delay}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Delay}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aed0a836e1b087f5d8977334073e34788}
+
+
+A floating point property. Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer. 
+
+Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ae2a98a11b7a8ffd4379474d8d2118564}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Delay\+Raw@{timer\+Delay\+Raw}}
+\index{timer\+Delay\+Raw@{timer\+Delay\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Delay\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Delay\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ae2a98a11b7a8ffd4379474d8d2118564}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000052}{弃用}]This feature is deprecated. It sets the duration in device-\/specific unit of the delay to apply after the reception of a trigger before starting the Timer. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a1129d4390fb2db6fc43dea90a16ca32c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Duration@{timer\+Duration}}
+\index{timer\+Duration@{timer\+Duration}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Duration}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a1129d4390fb2db6fc43dea90a16ca32c}
+
+
+A floating point property. Sets the duration (in microseconds) of the Timer pulse. 
+
+Sets the duration (in microseconds) of the Timer pulse. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ac8814d7bc9581dadc3411ceef2a4cb1e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Duration\+Raw@{timer\+Duration\+Raw}}
+\index{timer\+Duration\+Raw@{timer\+Duration\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Duration\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Duration\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ac8814d7bc9581dadc3411ceef2a4cb1e}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000051}{弃用}]This feature is deprecated. It sets the duration in device-\/specific unit of the Timer pulse. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a5b4a47b49eeeb512aa34c9a9118fd378}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Reset@{timer\+Reset}}
+\index{timer\+Reset@{timer\+Reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Reset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Reset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a5b4a47b49eeeb512aa34c9a9118fd378}
+
+
+A method object. Does a software reset of the selected timer and starts it. 
+
+Does a software reset of the selected timer and starts it. The timer starts immediately after the reset unless a timer trigger is active. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a98aaeada13d3a3f9edc2abfeeba6077e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Selector@{timer\+Selector}}
+\index{timer\+Selector@{timer\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a98aaeada13d3a3f9edc2abfeeba6077e}
+
+
+An enumerated integer property. Selects which Timer to configure. 
+
+Selects which Timer to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Timer0} (Display string\+: 'Timer 0')\+: Selects the Timer 0.
+\item {\bfseries Timer1} (Display string\+: 'Timer 1')\+: Selects the Timer 1.
+\item {\bfseries Timer2} (Display string\+: 'Timer 2')\+: Selects the Timer 2.
+\item {\bfseries Timer\#3\#} (Display string\+: 'Timer \#3\#')\+: Selects the Timer \#3\#.
+\item {\bfseries Timer3} (Display string\+: 'Timer 3')\+: Selects the Timer 3.
+\item {\bfseries Timer4} (Display string\+: 'Timer 4')\+: Selects the Timer 4.
+\item {\bfseries Timer5} (Display string\+: 'Timer 5')\+: Selects the Timer 5.
+\item {\bfseries Timer6} (Display string\+: 'Timer 6')\+: Selects the Timer 6.
+\item {\bfseries Timer7} (Display string\+: 'Timer 7')\+: Selects the Timer 7.
+\item {\bfseries Timer8} (Display string\+: 'Timer 8')\+: Selects the Timer 8.
+\item {\bfseries Timer9} (Display string\+: 'Timer 9')\+: Selects the Timer 9.
+\item {\bfseries Timer10} (Display string\+: 'Timer 10')\+: Selects the Timer 10.
+\item {\bfseries Timer11} (Display string\+: 'Timer 11')\+: Selects the Timer 11.
+\item {\bfseries Timer12} (Display string\+: 'Timer 12')\+: Selects the Timer 12.
+\item {\bfseries Timer13} (Display string\+: 'Timer 13')\+: Selects the Timer 13.
+\item {\bfseries Timer14} (Display string\+: 'Timer 14')\+: Selects the Timer 14.
+\item {\bfseries Timer15} (Display string\+: 'Timer 15')\+: Selects the Timer 15.
+\item {\bfseries Timer16} (Display string\+: 'Timer Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a119e611c5ad880862fd3194de9f63c61}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Status@{timer\+Status}}
+\index{timer\+Status@{timer\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a119e611c5ad880862fd3194de9f63c61}
+
+
+An enumerated integer property. Returns the current status of the Timer. 
+
+Returns the current status of the Timer.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Timer\+Idle} (Display string\+: 'Timer Idle')\+: The Timer is idle.
+\item {\bfseries Timer\+Trigger\+Wait} (Display string\+: 'Timer Trigger Wait')\+: The Timer is waiting for a start trigger.
+\item {\bfseries Timer\+Active} (Display string\+: 'Timer Active')\+: The Timer is counting for the specified duration.
+\item {\bfseries Timer\+Completed} (Display string\+: 'Timer Completed')\+: The Timer reached the Timer\+Duration count.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aafe9deefca2b00ca24218d2763082720}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Trigger\+Activation@{timer\+Trigger\+Activation}}
+\index{timer\+Trigger\+Activation@{timer\+Trigger\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Trigger\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Trigger\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_aafe9deefca2b00ca24218d2763082720}
+
+
+An enumerated integer property. Selects the activation mode of the trigger to start the Timer. 
+
+Selects the activation mode of the trigger to start the Timer.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Starts counting on the Rising Edge of the selected trigger signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Starts counting on the Falling Edge of the selected trigger signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Starts counting on the Falling or Rising Edge of the selected trigger signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Counts as long as the selected trigger signal level is High.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Counts as long as the selected trigger signal level is Low.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ace2a27d5ef880f1590cca9313ec84684}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Trigger\+Source@{timer\+Trigger\+Source}}
+\index{timer\+Trigger\+Source@{timer\+Trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_ace2a27d5ef880f1590cca9313ec84684}
+
+
+An enumerated integer property. Selects the source of the trigger to start the Timer. 
+
+Selects the source of the trigger to start the Timer.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the Timer trigger.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: Starts with the reception of the Acquisition Trigger.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: Starts with the reception of a missed Acquisition Trigger.
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Starts with the reception of the Acquisition Start.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Starts with the reception of the Acquisition End.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: Starts with the reception of the Frame Start Trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: Starts with the reception of a missed Frame Trigger.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Starts with the reception of the Frame Start.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Starts with the reception of the Frame End.
+\item {\bfseries Frame\+Burst\+Start} (Display string\+: 'Frame Burst Start')\+: Starts with the reception of the Frame Burst Start.
+\item {\bfseries Frame\+Burst\+End} (Display string\+: 'Frame Burst End')\+: Starts with the reception of the Frame Burst End.
+\item {\bfseries Line\+Trigger} (Display string\+: 'Line Trigger')\+: Starts with the reception of the Line Start Trigger.
+\item {\bfseries Line\+Trigger\+Missed} (Display string\+: 'Line Trigger Missed')\+: Starts with the reception of a missed Line Trigger.
+\item {\bfseries Line\+Start} (Display string\+: 'Line Start')\+: Starts with the reception of the Line Start.
+\item {\bfseries Line\+End} (Display string\+: 'Line End')\+: Starts with the reception of the Line End.
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Starts with the reception of the Exposure Start.
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Starts with the reception of the Exposure End.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Starts with the reception of the Logic Block output signal.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Line3} (Display string\+: 'Line 3')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line4} (Display string\+: 'Line 4')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line5} (Display string\+: 'Line 5')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line6} (Display string\+: 'Line 6')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line7} (Display string\+: 'Line 7')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line8} (Display string\+: 'Line 8')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line9} (Display string\+: 'Line 9')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line10} (Display string\+: 'Line 10')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line11} (Display string\+: 'Line 11')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line12} (Display string\+: 'Line 12')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line13} (Display string\+: 'Line 13')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line14} (Display string\+: 'Line 14')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line15} (Display string\+: 'Line 15')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries User\+Output3} (Display string\+: 'User Output 3')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output4} (Display string\+: 'User Output 4')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output5} (Display string\+: 'User Output 5')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output6} (Display string\+: 'User Output 6')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output7} (Display string\+: 'User Output 7')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Counter3\+End} (Display string\+: 'Counter 3 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter4\+End} (Display string\+: 'Counter 4 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter5\+End} (Display string\+: 'Counter 5 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter6\+End} (Display string\+: 'Counter 6 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter7\+End} (Display string\+: 'Counter 7 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter8\+End} (Display string\+: 'Counter 8 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter9\+End} (Display string\+: 'Counter 9 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter10\+End} (Display string\+: 'Counter 10 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter11\+End} (Display string\+: 'Counter 11 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter12\+End} (Display string\+: 'Counter 12 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter13\+End} (Display string\+: 'Counter 13 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter14\+End} (Display string\+: 'Counter 14 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter15\+End} (Display string\+: 'Counter 15 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter16\+End} (Display string\+: 'Timer Trigger Source')
+\item {\bfseries Timer3\+End} (Display string\+: 'Timer 3 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer4\+End} (Display string\+: 'Timer 4 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer5\+End} (Display string\+: 'Timer 5 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer6\+End} (Display string\+: 'Timer 6 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer7\+End} (Display string\+: 'Timer 7 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer8\+End} (Display string\+: 'Timer 8 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer9\+End} (Display string\+: 'Timer 9 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer10\+End} (Display string\+: 'Timer 10 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer11\+End} (Display string\+: 'Timer 11 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer12\+End} (Display string\+: 'Timer 12 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer13\+End} (Display string\+: 'Timer 13 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer14\+End} (Display string\+: 'Timer 14 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer15\+End} (Display string\+: 'Timer 15 End')\+: Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.
+\item {\bfseries Timer16\+End} (Display string\+: 'Timer Trigger Source')
+\item {\bfseries Action3} (Display string\+: 'Action 3')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action4} (Display string\+: 'Action 4')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action5} (Display string\+: 'Action 5')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action6} (Display string\+: 'Action 6')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action7} (Display string\+: 'Action 7')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action8} (Display string\+: 'Action 8')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action9} (Display string\+: 'Action 9')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action10} (Display string\+: 'Action 10')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action11} (Display string\+: 'Action 11')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action12} (Display string\+: 'Action 12')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action13} (Display string\+: 'Action 13')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action14} (Display string\+: 'Action 14')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action15} (Display string\+: 'Action 15')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action16} (Display string\+: 'Timer Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R1\+Output} (Display string\+: 'Timer Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R2\+Output} (Display string\+: 'Timer Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R3\+Output} (Display string\+: 'Timer Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R4\+Output} (Display string\+: 'Timer Trigger Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a21f6143f2f21f2d22394455a9df22a42}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Value@{timer\+Value}}
+\index{timer\+Value@{timer\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a21f6143f2f21f2d22394455a9df22a42}
+
+
+A floating point property. Reads or writes the current value (in microseconds) of the selected Timer. 
+
+Reads or writes the current value (in microseconds) of the selected Timer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a550a983e7334e89b755076bcee3cf80d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}!timer\+Value\+Raw@{timer\+Value\+Raw}}
+\index{timer\+Value\+Raw@{timer\+Value\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control}}
+\subsubsection[{timer\+Value\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Counter\+And\+Timer\+Control\+::timer\+Value\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a550a983e7334e89b755076bcee3cf80d}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000053}{弃用}]This feature is deprecated. This feature is used to read the current value in device-\/specific unit of the selected Timer. \end{DoxyRefDesc}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

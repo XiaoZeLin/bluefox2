@@ -1,0 +1,500 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Digital\+I\+O\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+}
+
+
+Category that contains the digital input and output control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Digital\+I\+O\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18}{Digital\+I\+O\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_afbd78071c4f6edc4bf4dca924c969e97}{line\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a29a79ff170f40fe0edf89f93c0d97d2f}{line\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls if the physical Line is used to Input or Output a signal. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a05c64d63aafc81c859db263133c91ba2}{line\+Inverter}
+\begin{DoxyCompactList}\small\item\em A boolean property. Controls the inversion of the signal of the selected input or output Line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a5db5fc8881e558c398580000f34874cb}{line\+Status}
+\begin{DoxyCompactList}\small\item\em A boolean property. Returns the current status of the selected input or output Line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a09d27fa917e5f45b123e14c5d5d19f98}{line\+Status\+All}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the current status of all available Line signals at time of polling in a single bitfield. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_abf9678823e6ff4071d5fdf3fa0c0a6a6}{line\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which internal acquisition or I/\+O source signal to output on the selected Line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aefba4c332122a43b6c713a9eb72b3cd6}{line\+Format}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls the current electrical format of the selected physical input or output Line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a9d77f4a5ce746a4db6d50ca6d3f72c62}{user\+Output\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which bit of the User Output register will be set by User\+Output\+Value. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a061e414fc5254821a2bd512ae7c7e4af}{user\+Output\+Value}
+\begin{DoxyCompactList}\small\item\em A boolean property. Sets the value of the bit selected by User\+Output\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a2b61661cdb50161e17bb472614610506}{user\+Output\+Value\+All}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the value of all the bits of the User Output register. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aa33c5e4bfa78eb795e30bcdce7c72180}{user\+Output\+Value\+All\+Mask}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the write mask to apply to the value specified by User\+Output\+Value\+All before writing it in the User Output register. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aeaf56d4b22274bef29f4b24d2ee8047a}{mv\+Line\+Debounce\+Time\+Rising\+Edge}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the debounce time in micro seconds for low to high transitions. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aa75bce21349d5f1d97ac09495d8b0edb}{mv\+Line\+Debounce\+Time\+Falling\+Edge}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the debounce time in micro seconds for high to low transitions. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_adb3910b12f431df5027cf4edbce49040}{mv\+R\+T\+M\+Input\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which R\+T\+M input to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_afbac9e850186a10d255032480059c308}{mv\+R\+T\+M\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which signal to connect to the selected R\+T\+M input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category that contains the digital input and output control features. 
+
+A category that contains the digital input and output control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!Digital\+I\+O\+Control@{Digital\+I\+O\+Control}}
+\index{Digital\+I\+O\+Control@{Digital\+I\+O\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{Digital\+I\+O\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::\+Digital\+I\+O\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a7a1bf59d9fddd27e95b04e12e4039b18_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aefba4c332122a43b6c713a9eb72b3cd6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Format@{line\+Format}}
+\index{line\+Format@{line\+Format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aefba4c332122a43b6c713a9eb72b3cd6}
+
+
+An enumerated integer property. Controls the current electrical format of the selected physical input or output Line. 
+
+Controls the current electrical format of the selected physical input or output Line.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries No\+Connect} (Display string\+: 'No Connect')\+: The Line is not connected.
+\item {\bfseries Tri\+State} (Display string\+: 'Tri State')\+: The Line is currently in Tri-\/\+State mode (Not driven).
+\item {\bfseries T\+T\+L} (Display string\+: 'T\+T\+L')\+: The Line is currently accepting or sending T\+T\+L level signals.
+\item {\bfseries L\+V\+D\+S} (Display string\+: 'L\+V\+D\+S')\+: The Line is currently accepting or sending L\+V\+D\+S level signals.
+\item {\bfseries R\+S422} (Display string\+: 'R\+S 422')\+: The Line is currently accepting or sending R\+S422 level signals.
+\item {\bfseries Opto\+Coupled} (Display string\+: 'Opto Coupled')\+: The Line is opto-\/coupled.
+\item {\bfseries Open\+Drain} (Display string\+: 'Open Drain')\+: The Line is Open Drain (or Open Collector).
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a05c64d63aafc81c859db263133c91ba2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Inverter@{line\+Inverter}}
+\index{line\+Inverter@{line\+Inverter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Inverter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Inverter}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a05c64d63aafc81c859db263133c91ba2}
+
+
+A boolean property. Controls the inversion of the signal of the selected input or output Line. 
+
+Controls the inversion of the signal of the selected input or output Line. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a29a79ff170f40fe0edf89f93c0d97d2f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Mode@{line\+Mode}}
+\index{line\+Mode@{line\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a29a79ff170f40fe0edf89f93c0d97d2f}
+
+
+An enumerated integer property. Controls if the physical Line is used to Input or Output a signal. 
+
+Controls if the physical Line is used to Input or Output a signal.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Input} (Display string\+: 'Input')\+: The selected physical line is used to Input an electrical signal.
+\item {\bfseries Output} (Display string\+: 'Output')\+: The selected physical line is used to Output an electrical signal.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_afbd78071c4f6edc4bf4dca924c969e97}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Selector@{line\+Selector}}
+\index{line\+Selector@{line\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_afbd78071c4f6edc4bf4dca924c969e97}
+
+
+An enumerated integer property. Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure. 
+
+Selects the physical line (or pin) of the external device connector or the virtual line of the Transport Layer to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Index of the virtual line going on the Transport layer to use.
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Index of the virtual line going on the Transport layer to use.
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Index of the virtual line going on the Transport layer to use.
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Index of the virtual line going on the Transport layer to use.
+\item {\bfseries C\+C1} (Display string\+: 'C\+C 1')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C2} (Display string\+: 'C\+C 2')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C3} (Display string\+: 'C\+C 3')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C4} (Display string\+: 'C\+C 4')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C\#5\#} (Display string\+: 'C\+C \#5\#')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries Line3} (Display string\+: 'Line 3')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line4} (Display string\+: 'Line 4')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line5} (Display string\+: 'Line 5')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line6} (Display string\+: 'Line 6')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line7} (Display string\+: 'Line 7')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line8} (Display string\+: 'Line 8')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line9} (Display string\+: 'Line 9')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line10} (Display string\+: 'Line 10')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line11} (Display string\+: 'Line 11')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line12} (Display string\+: 'Line 12')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line13} (Display string\+: 'Line 13')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line14} (Display string\+: 'Line 14')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries Line15} (Display string\+: 'Line 15')\+: Index of the physical line and associated I/\+O control block to use.
+\item {\bfseries C\+C5} (Display string\+: 'C\+C 5')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C6} (Display string\+: 'C\+C 6')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C7} (Display string\+: 'C\+C 7')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C8} (Display string\+: 'C\+C 8')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C9} (Display string\+: 'C\+C 9')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C10} (Display string\+: 'C\+C 10')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C11} (Display string\+: 'C\+C 11')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C12} (Display string\+: 'C\+C 12')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C13} (Display string\+: 'C\+C 13')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C14} (Display string\+: 'C\+C 14')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C15} (Display string\+: 'C\+C 15')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link Product only.
+\item {\bfseries C\+C16} (Display string\+: 'Line Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties.
+\end{DoxyNote}
+See {\bfseries line\+Status\+All} to find out which line corresponds to which input or output of your device \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_abf9678823e6ff4071d5fdf3fa0c0a6a6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Source@{line\+Source}}
+\index{line\+Source@{line\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_abf9678823e6ff4071d5fdf3fa0c0a6a6}
+
+
+An enumerated integer property. Selects which internal acquisition or I/\+O source signal to output on the selected Line. 
+
+Selects which internal acquisition or I/\+O source signal to output on the selected Line. Line\+Mode must be Output.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Line output is disabled (Tri-\/\+State).
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries Acquisition\+Trigger\+Wait} (Display string\+: 'Acquisition Trigger Wait')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a trigger for the capture of one or many Frames.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a trigger for the capture of one or many Frames.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} has missed an Acquisition start trigger.
+\item {\bfseries Acquisition\+Active} (Display string\+: 'Acquisition Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently doing an acquisition of one or many Frames.
+\item {\bfseries Frame\+Trigger\+Wait} (Display string\+: 'Frame Trigger Wait')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a Frame start trigger.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a Frame start trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} has missed a Frame start trigger.
+\item {\bfseries Frame\+Active} (Display string\+: 'Frame Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently doing the capture of a Frame.
+\item {\bfseries Exposure\+Active} (Display string\+: 'Exposure Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is doing the exposure of a Frame (or Line).
+\item {\bfseries Line\+Trigger\+Wait} (Display string\+: 'Line Trigger Wait')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a Line start trigger.
+\item {\bfseries Line\+Trigger} (Display string\+: 'Line Trigger')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a Line start trigger.
+\item {\bfseries Line\+Trigger\+Missed} (Display string\+: 'Line Trigger Missed')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} has missed a Line start trigger.
+\item {\bfseries Line\+Active} (Display string\+: 'Line Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently doing the capture of a Line.
+\item {\bfseries Counter0\+Active} (Display string\+: 'Counter 0 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter1\+Active} (Display string\+: 'Counter 1 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter2\+Active} (Display string\+: 'Counter 2 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter\#3\#Active} (Display string\+: 'Counter \#3\# Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Timer0\+Active} (Display string\+: 'Timer 0 Active')\+: The chosen Timer is in active state.
+\item {\bfseries Timer1\+Active} (Display string\+: 'Timer 1 Active')\+: The chosen Timer is in active state.
+\item {\bfseries Timer2\+Active} (Display string\+: 'Timer 2 Active')\+: The chosen Timer is in active state.
+\item {\bfseries Timer\#3\#Active} (Display string\+: 'Timer \#3\# Active')\+: The chosen Timer is in active state.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: The chosen Encoder Output state.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: The chosen Encoder Output state.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: The chosen Encoder Output state.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: The chosen Encoder Output state.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: The choosen Logic Block output state.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: The choosen Logic Block output state.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: The choosen Logic Block output state.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: The choosen Logic Block output state.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: The choosen Software Signal output state.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: The choosen Software Signal output state.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: The choosen Software Signal output state.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: The choosen Software Signal output state.
+\item {\bfseries Stream0\+Transfer\+Active} (Display string\+: 'Stream 0 Transfer Active')\+: Transfer on the stream is active.
+\item {\bfseries Stream1\+Transfer\+Active} (Display string\+: 'Stream 1 Transfer Active')\+: Transfer on the stream is active.
+\item {\bfseries Stream\#2\#Transfer\+Active} (Display string\+: 'Stream \#2\# Transfer Active')\+: Transfer on the stream is active.
+\item {\bfseries Stream0\+Transfer\+Paused} (Display string\+: 'Stream 0 Transfer Paused')\+: Transfer on the stream is paused.
+\item {\bfseries Stream1\+Transfer\+Paused} (Display string\+: 'Stream 1 Transfer Paused')\+: Transfer on the stream is paused.
+\item {\bfseries Stream\#2\#Transfer\+Paused} (Display string\+: 'Stream \#2\# Transfer Paused')\+: Transfer on the stream is paused.
+\item {\bfseries Stream0\+Transfer\+Stopping} (Display string\+: 'Stream 0 Transfer Stopping')\+: Transfer on the stream is stopping.
+\item {\bfseries Stream1\+Transfer\+Stopping} (Display string\+: 'Stream 1 Transfer Stopping')\+: Transfer on the stream is stopping.
+\item {\bfseries Stream\#2\#Transfer\+Stopping} (Display string\+: 'Stream \#2\# Transfer Stopping')\+: Transfer on the stream is stopping.
+\item {\bfseries Stream0\+Transfer\+Stopped} (Display string\+: 'Stream 0 Transfer Stopped')\+: Transfer on the stream is stopped.
+\item {\bfseries Stream1\+Transfer\+Stopped} (Display string\+: 'Stream 1 Transfer Stopped')\+: Transfer on the stream is stopped.
+\item {\bfseries Stream\#2\#Transfer\+Stopped} (Display string\+: 'Stream \#2\# Transfer Stopped')\+: Transfer on the stream is stopped.
+\item {\bfseries Stream0\+Transfer\+Overflow} (Display string\+: 'Stream 0 Transfer Overflow')\+: Transfer on the stream is in overflow.
+\item {\bfseries Stream1\+Transfer\+Overflow} (Display string\+: 'Stream 1 Transfer Overflow')\+: Transfer on the stream is in overflow.
+\item {\bfseries Stream\#2\#Transfer\+Overflow} (Display string\+: 'Stream \#2\# Transfer Overflow')\+: Transfer on the stream is in overflow.
+\item {\bfseries mv\+Exposure\+Sensor2\+Active} (Display string\+: 'Line Source')
+\item {\bfseries User\+Output3} (Display string\+: 'User Output 3')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output4} (Display string\+: 'User Output 4')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output5} (Display string\+: 'User Output 5')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output6} (Display string\+: 'User Output 6')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries User\+Output7} (Display string\+: 'User Output 7')\+: The chosen User Output Bit state as defined by its current User\+Output\+Value.
+\item {\bfseries Counter3\+Active} (Display string\+: 'Counter 3 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter4\+Active} (Display string\+: 'Counter 4 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter5\+Active} (Display string\+: 'Counter 5 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter6\+Active} (Display string\+: 'Counter 6 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter7\+Active} (Display string\+: 'Counter 7 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries Counter8\+Active} (Display string\+: 'Counter 8 Active')\+: The chosen counter is in active state (counting).
+\item {\bfseries mv\+Read\+Out\+Active} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Exposure\+And\+Acquisition\+Active} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Temperature\+Out\+Of\+Range} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R1\+Output} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R2\+Output} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R3\+Output} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R4\+Output} (Display string\+: 'Line Source')
+\item {\bfseries mv\+Exposure\+Active} (Display string\+: 'Line Source')
+\item {\bfseries mv\+R\+T\+M\+Output0} (Display string\+: 'Line Source')
+\item {\bfseries mv\+R\+T\+M\+Output1} (Display string\+: 'Line Source')
+\item {\bfseries mv\+R\+T\+M\+Output2} (Display string\+: 'Line Source')
+\item {\bfseries mv\+R\+T\+M\+Output3} (Display string\+: 'Line Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a5db5fc8881e558c398580000f34874cb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Status@{line\+Status}}
+\index{line\+Status@{line\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a5db5fc8881e558c398580000f34874cb}
+
+
+A boolean property. Returns the current status of the selected input or output Line. 
+
+Returns the current status of the selected input or output Line. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a09d27fa917e5f45b123e14c5d5d19f98}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!line\+Status\+All@{line\+Status\+All}}
+\index{line\+Status\+All@{line\+Status\+All}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{line\+Status\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::line\+Status\+All}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a09d27fa917e5f45b123e14c5d5d19f98}
+
+
+An integer property. Returns the current status of all available Line signals at time of polling in a single bitfield. 
+
+Returns the current status of all available Line signals at time of polling in a single bitfield.
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} devices\+:
+
+\begin{TabularC}{2}
+\hline
+bit&I\+O \\\cline{1-2}
+0&out 0 \\\cline{1-2}
+1&out 1 \\\cline{1-2}
+2&in 0 \\\cline{1-2}
+3&in 1 \\\cline{1-2}
+4&out 2 \\\cline{1-2}
+5&out 3 \\\cline{1-2}
+6&in 2 \\\cline{1-2}
+7&in 3 \\\cline{1-2}
+8&in 4 \\\cline{1-2}
+9&out 4 \\\cline{1-2}
+10&out 5 \\\cline{1-2}
+\end{TabularC}
+
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+P} devices\+:
+
+\begin{TabularC}{2}
+\hline
+bit&I\+O \\\cline{1-2}
+0&out 0 \\\cline{1-2}
+1&out 1 \\\cline{1-2}
+2&in 0 \\\cline{1-2}
+3&in 1 \\\cline{1-2}
+4&out 2 \\\cline{1-2}
+5&out 3 \\\cline{1-2}
+\end{TabularC}
+
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+X} and {\bfseries mv\+Blue\+F\+O\+X3} devices\+:
+
+\begin{TabularC}{3}
+\hline
+bit&I\+O&Line\+Selector\+Value \\\cline{1-3}
+0&out 0&Line0 \\\cline{1-3}
+1&out 1&Line1 \\\cline{1-3}
+2&out 2&Line2 \\\cline{1-3}
+3&out 3&Line3 \\\cline{1-3}
+4&in 0&Line4 \\\cline{1-3}
+5&in 1&Line5 \\\cline{1-3}
+\end{TabularC}
+
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+X-\/\+P\+O\+E} devices\+:
+
+\begin{TabularC}{3}
+\hline
+bit&I\+O&Line\+Selector\+Value \\\cline{1-3}
+0&out 0&Line0 \\\cline{1-3}
+1&out 1&Line1 \\\cline{1-3}
+2&-\/&-\/ \\\cline{1-3}
+3&-\/&-\/ \\\cline{1-3}
+4&in 0&Line4 \\\cline{1-3}
+5&in 1&Line5 \\\cline{1-3}
+\end{TabularC}
+
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+X-\/\+P\+O\+E\+I} {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+X\+D} devices\+:
+
+\begin{TabularC}{3}
+\hline
+bit&I\+O&Line\+Selector\+Value \\\cline{1-3}
+0&out 0&Line0 \\\cline{1-3}
+1&out 1&Line1 \\\cline{1-3}
+2&out 2&Line2 \\\cline{1-3}
+3&out 3&Line3 \\\cline{1-3}
+4&in 0&Line4 \\\cline{1-3}
+5&in 1&Line5 \\\cline{1-3}
+6&in 2&Line6 \\\cline{1-3}
+7&in 3&Line7 \\\cline{1-3}
+\end{TabularC}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aa75bce21349d5f1d97ac09495d8b0edb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!mv\+Line\+Debounce\+Time\+Falling\+Edge@{mv\+Line\+Debounce\+Time\+Falling\+Edge}}
+\index{mv\+Line\+Debounce\+Time\+Falling\+Edge@{mv\+Line\+Debounce\+Time\+Falling\+Edge}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{mv\+Line\+Debounce\+Time\+Falling\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::mv\+Line\+Debounce\+Time\+Falling\+Edge}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aa75bce21349d5f1d97ac09495d8b0edb}
+
+
+An integer property. Sets the debounce time in micro seconds for high to low transitions. 
+
+Sets the debounce time in micro seconds for high to low transitions. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aeaf56d4b22274bef29f4b24d2ee8047a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!mv\+Line\+Debounce\+Time\+Rising\+Edge@{mv\+Line\+Debounce\+Time\+Rising\+Edge}}
+\index{mv\+Line\+Debounce\+Time\+Rising\+Edge@{mv\+Line\+Debounce\+Time\+Rising\+Edge}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{mv\+Line\+Debounce\+Time\+Rising\+Edge}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::mv\+Line\+Debounce\+Time\+Rising\+Edge}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aeaf56d4b22274bef29f4b24d2ee8047a}
+
+
+An integer property. Sets the debounce time in micro seconds for low to high transitions. 
+
+Sets the debounce time in micro seconds for low to high transitions. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_adb3910b12f431df5027cf4edbce49040}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!mv\+R\+T\+M\+Input\+Selector@{mv\+R\+T\+M\+Input\+Selector}}
+\index{mv\+R\+T\+M\+Input\+Selector@{mv\+R\+T\+M\+Input\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{mv\+R\+T\+M\+Input\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::mv\+R\+T\+M\+Input\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_adb3910b12f431df5027cf4edbce49040}
+
+
+An enumerated integer property. Selects which R\+T\+M input to configure. 
+
+Selects which R\+T\+M input to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+R\+T\+M\+Input0} (Display string\+: 'mv R\+T\+M Input Selector')
+\item {\bfseries mv\+R\+T\+M\+Input1} (Display string\+: 'mv R\+T\+M Input Selector')
+\item {\bfseries mv\+R\+T\+M\+Input2} (Display string\+: 'mv R\+T\+M Input Selector')
+\item {\bfseries mv\+R\+T\+M\+Input3} (Display string\+: 'mv R\+T\+M Input Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_afbac9e850186a10d255032480059c308}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!mv\+R\+T\+M\+Source@{mv\+R\+T\+M\+Source}}
+\index{mv\+R\+T\+M\+Source@{mv\+R\+T\+M\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{mv\+R\+T\+M\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::mv\+R\+T\+M\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_afbac9e850186a10d255032480059c308}
+
+
+An enumerated integer property. Selects which signal to connect to the selected R\+T\+M input. 
+
+Selects which signal to connect to the selected R\+T\+M input.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'mv R\+T\+M Source')
+\item {\bfseries Line4} (Display string\+: 'mv R\+T\+M Source')
+\item {\bfseries Line5} (Display string\+: 'mv R\+T\+M Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a9d77f4a5ce746a4db6d50ca6d3f72c62}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!user\+Output\+Selector@{user\+Output\+Selector}}
+\index{user\+Output\+Selector@{user\+Output\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{user\+Output\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::user\+Output\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a9d77f4a5ce746a4db6d50ca6d3f72c62}
+
+
+An enumerated integer property. Selects which bit of the User Output register will be set by User\+Output\+Value. 
+
+Selects which bit of the User Output register will be set by User\+Output\+Value.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Selects the bit 0 of the User Output register.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Selects the bit 1 of the User Output register.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Selects the bit 2 of the User Output register.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Selects the bit \#3\# of the User Output register.
+\item {\bfseries User\+Output3} (Display string\+: 'User Output 3')\+: Selects the bit 3 of the User Output register.
+\item {\bfseries User\+Output4} (Display string\+: 'User Output 4')\+: Selects the bit 4 of the User Output register.
+\item {\bfseries User\+Output5} (Display string\+: 'User Output 5')\+: Selects the bit 5 of the User Output register.
+\item {\bfseries User\+Output6} (Display string\+: 'User Output 6')\+: Selects the bit 6 of the User Output register.
+\item {\bfseries User\+Output7} (Display string\+: 'User Output 7')\+: Selects the bit 7 of the User Output register.
+\item {\bfseries User\+Output8} (Display string\+: 'User Output 8')\+: Selects the bit 8 of the User Output register.
+\item {\bfseries User\+Output9} (Display string\+: 'User Output 9')\+: Selects the bit 9 of the User Output register.
+\item {\bfseries User\+Output10} (Display string\+: 'User Output 10')\+: Selects the bit 10 of the User Output register.
+\item {\bfseries User\+Output11} (Display string\+: 'User Output 11')\+: Selects the bit 11 of the User Output register.
+\item {\bfseries User\+Output12} (Display string\+: 'User Output 12')\+: Selects the bit 12 of the User Output register.
+\item {\bfseries User\+Output13} (Display string\+: 'User Output 13')\+: Selects the bit 13 of the User Output register.
+\item {\bfseries User\+Output14} (Display string\+: 'User Output 14')\+: Selects the bit 14 of the User Output register.
+\item {\bfseries User\+Output15} (Display string\+: 'User Output 15')\+: Selects the bit 15 of the User Output register.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a061e414fc5254821a2bd512ae7c7e4af}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!user\+Output\+Value@{user\+Output\+Value}}
+\index{user\+Output\+Value@{user\+Output\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{user\+Output\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::user\+Output\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a061e414fc5254821a2bd512ae7c7e4af}
+
+
+A boolean property. Sets the value of the bit selected by User\+Output\+Selector. 
+
+Sets the value of the bit selected by User\+Output\+Selector. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a2b61661cdb50161e17bb472614610506}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!user\+Output\+Value\+All@{user\+Output\+Value\+All}}
+\index{user\+Output\+Value\+All@{user\+Output\+Value\+All}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{user\+Output\+Value\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::user\+Output\+Value\+All}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_a2b61661cdb50161e17bb472614610506}
+
+
+An integer property. Sets the value of all the bits of the User Output register. 
+
+Sets the value of all the bits of the User Output register. It is subject to the User\+Output\+Value\+All\+Mask. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aa33c5e4bfa78eb795e30bcdce7c72180}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}!user\+Output\+Value\+All\+Mask@{user\+Output\+Value\+All\+Mask}}
+\index{user\+Output\+Value\+All\+Mask@{user\+Output\+Value\+All\+Mask}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control}}
+\subsubsection[{user\+Output\+Value\+All\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Digital\+I\+O\+Control\+::user\+Output\+Value\+All\+Mask}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control_aa33c5e4bfa78eb795e30bcdce7c72180}
+
+
+An integer property. Sets the write mask to apply to the value specified by User\+Output\+Value\+All before writing it in the User Output register. 
+
+Sets the write mask to apply to the value specified by User\+Output\+Value\+All before writing it in the User Output register. If the User\+Output\+Value\+All\+Mask feature is present, setting the user Output register using User\+Output\+Value\+All will only change the bits that have a corresponding bit in the mask set to one. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

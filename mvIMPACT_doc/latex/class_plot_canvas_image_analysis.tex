@@ -1,0 +1,309 @@
+\hypertarget{class_plot_canvas_image_analysis}{\section{Plot\+Canvas\+Image\+Analysis类 参考}
+\label{class_plot_canvas_image_analysis}\index{Plot\+Canvas\+Image\+Analysis@{Plot\+Canvas\+Image\+Analysis}}
+}
+
+
+类 Plot\+Canvas\+Image\+Analysis 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plot_canvas_image_analysis__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Plot\+Canvas\+Image\+Analysis 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plot_canvas_image_analysis__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_plot_canvas_image_analysis_1_1_named_colour}{Named\+Colour}
+\end{DoxyCompactItemize}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a808e23b20edfe21314eaf05c7b82feb4}{enum {\bfseries T\+Display\+Method} \{ {\bfseries dm\+Graphical}, 
+{\bfseries dm\+Numerical}
+ \}}\label{class_plot_canvas_image_analysis_a808e23b20edfe21314eaf05c7b82feb4}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a0e82e20537c699017c6a25f9a3363c67}{enum {\bfseries T\+Plot\+Feature} \{ \\*
+{\bfseries pf\+Percentage\+Window}, 
+{\bfseries pf\+History\+Depth}, 
+{\bfseries pf\+Step\+Width}, 
+{\bfseries pf\+Grid\+Steps}, 
+\\*
+{\bfseries pf\+Process\+Bayer\+Parity}
+ \}}\label{class_plot_canvas_image_analysis_a0e82e20537c699017c6a25f9a3363c67}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a96835d1670093c0592297681aae8545d}{{\bfseries Plot\+Canvas\+Image\+Analysis} (wx\+Window $\ast$parent, const wx\+String \&config\+Name, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Plot\+Canvas\+Image\+Analysis\char`\"{}), bool bo\+Active=false, int channel\+Count=0)}\label{class_plot_canvas_image_analysis_a96835d1670093c0592297681aae8545d}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a34022c488c879efb01763dc73d2d4500}{void {\bfseries Create\+Grid} (wx\+Window $\ast$p\+Parent, wx\+Window\+I\+D grid\+I\+D)}\label{class_plot_canvas_image_analysis_a34022c488c879efb01763dc73d2d4500}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a0de3ed8d8981bd654c5df73357f6934f}{wx\+Grid $\ast$ {\bfseries Get\+Grid} (void) const }\label{class_plot_canvas_image_analysis_a0de3ed8d8981bd654c5df73357f6934f}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aa960161e42c4db18e408512246e87fd7}{virtual void {\bfseries Set\+Grid\+Value\+Format\+String} (const wx\+String \&grid\+Value\+Format\+String)}\label{class_plot_canvas_image_analysis_aa960161e42c4db18e408512246e87fd7}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a89529da16294cca067b0d7376ae10e54}{void {\bfseries Set\+Display\+Method} (T\+Display\+Method display\+Method)}\label{class_plot_canvas_image_analysis_a89529da16294cca067b0d7376ae10e54}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a88cf1bc99c6c67d0dd50d830fa965d6b}{T\+Display\+Method {\bfseries Get\+Display\+Method} (void) const }\label{class_plot_canvas_image_analysis_a88cf1bc99c6c67d0dd50d830fa965d6b}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a736d1bb4c05c15599dc9e91739abb14f}{const wx\+String \& {\bfseries Get\+Config\+Name} (void) const }\label{class_plot_canvas_image_analysis_a736d1bb4c05c15599dc9e91739abb14f}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a8965ed89c758d628de6cbefe0aabb94e}{virtual void {\bfseries Refresh\+Data} (const \hyperlink{struct_request_data}{Request\+Data} \&data, int x=-\/1, int y=-\/1, int w=-\/1, int h=-\/1, bool bo\+Force\+Refresh=false)=0}\label{class_plot_canvas_image_analysis_a8965ed89c758d628de6cbefe0aabb94e}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a365da242c6dcf871d425a3f0e68a692f}{virtual void {\bfseries Set\+Active} (bool bo\+Active)}\label{class_plot_canvas_image_analysis_a365da242c6dcf871d425a3f0e68a692f}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a3e60acd3279c019c09930e5b575ee391}{bool {\bfseries Is\+A\+O\+I\+Full\+Mode\+Active} (void) const }\label{class_plot_canvas_image_analysis_a3e60acd3279c019c09930e5b575ee391}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a68289ab262c35f5a928bee3186ac1d9c}{void {\bfseries Set\+A\+O\+I\+Full\+Mode} (bool bo\+Active)}\label{class_plot_canvas_image_analysis_a68289ab262c35f5a928bee3186ac1d9c}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a14b80bf0232916e2ddb373f8b9d66930}{void {\bfseries Set\+A\+O\+I\+Colour} (const wx\+Colour \&)}\label{class_plot_canvas_image_analysis_a14b80bf0232916e2ddb373f8b9d66930}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_af142fe0d8065b51760bd4aca4ee7ab4e}{const \hyperlink{struct_a_o_i}{A\+O\+I} $\ast$ {\bfseries Get\+A\+O\+I} (void) const }\label{class_plot_canvas_image_analysis_af142fe0d8065b51760bd4aca4ee7ab4e}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a37e4e7f26972deb9d6644ce4b51b71a3}{wx\+Rect {\bfseries Get\+A\+O\+I\+Rect} (void) const }\label{class_plot_canvas_image_analysis_a37e4e7f26972deb9d6644ce4b51b71a3}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a12d68489bfa8764b20b4216ca0bbc1dd}{void {\bfseries Set\+Process\+Bayer\+Parity} (bool bo\+Active)}\label{class_plot_canvas_image_analysis_a12d68489bfa8764b20b4216ca0bbc1dd}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_ad686ffe6ac959ff5d8c2cd944c26b5fb}{bool {\bfseries Get\+Process\+Bayer\+Parity} (void) const }\label{class_plot_canvas_image_analysis_ad686ffe6ac959ff5d8c2cd944c26b5fb}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_af3157b911e775c08b94467a662efdea5}{bool {\bfseries Has\+Plot\+Selection} (void) const }\label{class_plot_canvas_image_analysis_af3157b911e775c08b94467a662efdea5}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a976fe218c7439a1581a0be8e63195ced}{const std\+::vector$<$ wx\+String $>$ \& {\bfseries Get\+Available\+Plot\+Selections} (void) const }\label{class_plot_canvas_image_analysis_a976fe218c7439a1581a0be8e63195ced}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a162bffd09dd5ff26dfb81b6b302b3c2a}{virtual wx\+String {\bfseries Get\+Plot\+Selection} (void) const }\label{class_plot_canvas_image_analysis_a162bffd09dd5ff26dfb81b6b302b3c2a}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aa99c214b5b6d9e1c6bd9f331d437f650}{virtual void {\bfseries Set\+Plot\+Selection} (const wx\+String \&)}\label{class_plot_canvas_image_analysis_aa99c214b5b6d9e1c6bd9f331d437f650}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a6ef3a4d2c4db0ddc367efab7d19536d9}{bool {\bfseries Has\+Feature} (T\+Plot\+Feature feature) const }\label{class_plot_canvas_image_analysis_a6ef3a4d2c4db0ddc367efab7d19536d9}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a75a0c328b42ddcb652904fcbc1bc13c0}{void {\bfseries Set\+History\+Depth} (unsigned int history\+Depth)}\label{class_plot_canvas_image_analysis_a75a0c328b42ddcb652904fcbc1bc13c0}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aa5a4b19504d792a84bc9eaa1069e35f6}{unsigned int {\bfseries Get\+History\+Depth} (void) const }\label{class_plot_canvas_image_analysis_aa5a4b19504d792a84bc9eaa1069e35f6}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_ac3cd24f43c30c74e4092f73be7aeef8e}{void {\bfseries Set\+Draw\+Start\+Percent} (int value\+\_\+percent)}\label{class_plot_canvas_image_analysis_ac3cd24f43c30c74e4092f73be7aeef8e}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_afb061eb3de76eb6e6fe832ff222668f2}{void {\bfseries Set\+Draw\+Window\+Width\+Percent} (int value\+\_\+percent)}\label{class_plot_canvas_image_analysis_afb061eb3de76eb6e6fe832ff222668f2}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a38842e3f061b97836166fdb5188a40a0}{void {\bfseries Set\+Grid\+Steps} (int X\+Steps, int Y\+Steps)}\label{class_plot_canvas_image_analysis_a38842e3f061b97836166fdb5188a40a0}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_ac552f56110f1977c9f0cc57e330a4bba}{void {\bfseries Register\+Image\+Canvas} (\hyperlink{class_image_canvas}{Image\+Canvas} $\ast$p)}\label{class_plot_canvas_image_analysis_ac552f56110f1977c9f0cc57e330a4bba}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a841cc0bd89a032f5ad1e3683a0cf5858}{\hyperlink{class_image_canvas}{Image\+Canvas} $\ast$ {\bfseries Get\+Image\+Canvas} (void) const }\label{class_plot_canvas_image_analysis_a841cc0bd89a032f5ad1e3683a0cf5858}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_image_analysis_adfd494e5094b11436e0feea4547f7879}{enum \{ \\*
+{\bfseries V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+8\+\_\+\+B\+I\+T} = 256, 
+{\bfseries V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+10\+\_\+\+B\+I\+T} = V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+8\+\_\+\+B\+I\+T $<$$<$ 2, 
+{\bfseries V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+12\+\_\+\+B\+I\+T} = V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+8\+\_\+\+B\+I\+T $<$$<$ 4, 
+{\bfseries V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+14\+\_\+\+B\+I\+T} = V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+8\+\_\+\+B\+I\+T $<$$<$ 6, 
+\\*
+{\bfseries V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+16\+\_\+\+B\+I\+T} = V\+A\+L\+\_\+\+C\+O\+U\+N\+T\+\_\+8\+\_\+\+B\+I\+T $<$$<$ 8
+ \}}\label{class_plot_canvas_image_analysis_adfd494e5094b11436e0feea4547f7879}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a13860f290e9ba4c7dc84e94784239695}{enum {\bfseries T\+Plane} \{ \\*
+{\bfseries p\+Red} = 0, 
+{\bfseries p\+Y} = 0, 
+{\bfseries p\+Even\+Even} = 0, 
+{\bfseries p\+Channel0\+Hor} = 0, 
+\\*
+{\bfseries p\+Channel0} = 0, 
+{\bfseries p\+Green} = 1, 
+{\bfseries p\+U} = 1, 
+{\bfseries p\+Cb} = 1, 
+\\*
+{\bfseries p\+Even\+Odd} = 1, 
+{\bfseries p\+Channel0\+Ver} = 1, 
+{\bfseries p\+Channel1} = 1, 
+{\bfseries p\+Blue} = 2, 
+\\*
+{\bfseries p\+Cr} = 2, 
+{\bfseries p\+V} = 2, 
+{\bfseries p\+Odd\+Even} = 2, 
+{\bfseries p\+Channel1\+Hor} = 2, 
+\\*
+{\bfseries p\+Channel2} = 2, 
+{\bfseries p\+Odd\+Odd} = 3, 
+{\bfseries p\+Channel1\+Ver} = 3, 
+{\bfseries p\+Channel2\+Hor} = 4, 
+\\*
+{\bfseries p\+Channel2\+Ver} = 5, 
+{\bfseries p\+Channel3\+Hor} = 6, 
+{\bfseries p\+Channel3\+Ver} = 7, 
+{\bfseries P\+L\+A\+N\+E\+\_\+\+C\+N\+T}
+ \}}\label{class_plot_canvas_image_analysis_a13860f290e9ba4c7dc84e94784239695}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aefb4e2a4fa18e4a66b6aba0f527478dd}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\bool {\bfseries Assign\+Display\+Parameter} (\+\_\+\+Ty \&parameter, const \+\_\+\+Ty \&new\+Value)}\label{class_plot_canvas_image_analysis_aefb4e2a4fa18e4a66b6aba0f527478dd}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_adeb883c037f8c92454ce9300edb70530}{virtual void {\bfseries Create\+Grid\+Custom} (void)}\label{class_plot_canvas_image_analysis_adeb883c037f8c92454ce9300edb70530}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a406fd13bbd154e8fc6b5290072ed271a}{int {\bfseries Get\+Percentage\+To\+Draw} (void) const }\label{class_plot_canvas_image_analysis_a406fd13bbd154e8fc6b5290072ed271a}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_af4675e96cb818c159974152f981da583}{void {\bfseries Get\+Draw\+Range} (unsigned int $\ast$p\+From, unsigned int $\ast$p\+To) const }\label{class_plot_canvas_image_analysis_af4675e96cb818c159974152f981da583}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a62e4e4b402b84ebc14f6b66afb9c243d}{virtual int {\bfseries Get\+Row\+Count\+Needed\+For\+Numerical\+Display} (void) const }\label{class_plot_canvas_image_analysis_a62e4e4b402b84ebc14f6b66afb9c243d}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aa770147d8a90fe155ed384e0df56fe3a}{virtual void {\bfseries Handle\+Size\+Event} (wx\+Size\+Event \&e)}\label{class_plot_canvas_image_analysis_aa770147d8a90fe155ed384e0df56fe3a}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a4a802b5180ce2c13c9bee1b81e65a3a2}{bool {\bfseries Must\+Update} (const mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer $\ast$p\+I\+B, int plot\+Channel\+Count, int x, int y, int w, int h, bool bo\+Force\+Refresh, bool $\ast$pbo\+A\+O\+I\+Changed=0, bool $\ast$pbo\+Image\+Format\+Changed=0)}\label{class_plot_canvas_image_analysis_a4a802b5180ce2c13c9bee1b81e65a3a2}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a11b1a4cee17e04d938b426b8fd14b97a}{virtual void {\bfseries Refresh\+Analysis\+Data} (void)}\label{class_plot_canvas_image_analysis_a11b1a4cee17e04d938b426b8fd14b97a}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a4c87fedc65d95593746b934cecd2b6df}{void {\bfseries Set\+Default\+Pens} (\hyperlink{group___common_interface_ga456e8aa76e06bb761f27c52141475985}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format} pixel\+Format)}\label{class_plot_canvas_image_analysis_a4c87fedc65d95593746b934cecd2b6df}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a0381eeb3669719a4749f6b0b9be9dad3}{void {\bfseries Set\+Bayer\+Descriptions} (\hyperlink{group___common_interface_ga9e2a1b46f3ed21b46b867c6d88d25598}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity} bayer\+Parity)}\label{class_plot_canvas_image_analysis_a0381eeb3669719a4749f6b0b9be9dad3}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a6f5fc0b5cc5368790c6563cc1cb975ae}{void {\bfseries Set\+Bayer\+Pens} (\hyperlink{group___common_interface_ga456e8aa76e06bb761f27c52141475985}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format} pixel\+Format, \hyperlink{group___common_interface_ga9e2a1b46f3ed21b46b867c6d88d25598}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity} bayer\+Parity)}\label{class_plot_canvas_image_analysis_a6f5fc0b5cc5368790c6563cc1cb975ae}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a49b5e6ea717ee59fecd6102f82dcb2e4}{void {\bfseries Setup\+G\+D\+I\+Data} (const mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer $\ast$p\+I\+B, int channel\+Count, \hyperlink{group___common_interface_ga9e2a1b46f3ed21b46b867c6d88d25598}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity} bayer\+Parity)}\label{class_plot_canvas_image_analysis_a49b5e6ea717ee59fecd6102f82dcb2e4}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a43fa290ebedb903e30345f2e0f4269a7}{void {\bfseries Update\+Analysis\+Output} (bool bo\+Erase\+Background)}\label{class_plot_canvas_image_analysis_a43fa290ebedb903e30345f2e0f4269a7}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a2fafef720a7146ba8dbaef0c8c7ba9f6}{virtual void {\bfseries Update\+Grid} (void)}\label{class_plot_canvas_image_analysis_a2fafef720a7146ba8dbaef0c8c7ba9f6}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a5b0327704354652459604acf2ee01fea}{virtual void {\bfseries Update\+Internal\+Data} (void)}\label{class_plot_canvas_image_analysis_a5b0327704354652459604acf2ee01fea}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a0080ec3b145fa76332c1afa62efcfccf}{unsigned int {\bfseries m\+\_\+val\+Count}}\label{class_plot_canvas_image_analysis_a0080ec3b145fa76332c1afa62efcfccf}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_adf75b850510714342fc3ce6e43dac212}{int {\bfseries m\+\_\+\+A\+O\+Ix}}\label{class_plot_canvas_image_analysis_adf75b850510714342fc3ce6e43dac212}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a51ae0cd4d1325b5693da297fec1fee2a}{int {\bfseries m\+\_\+\+A\+O\+Iy}}\label{class_plot_canvas_image_analysis_a51ae0cd4d1325b5693da297fec1fee2a}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aa831745594a9d46f6ca6ab2de8d425fe}{int {\bfseries m\+\_\+\+A\+O\+Iw}}\label{class_plot_canvas_image_analysis_aa831745594a9d46f6ca6ab2de8d425fe}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a9f85fd17437e056045dff4c0ec4652c8}{int {\bfseries m\+\_\+\+A\+O\+Ih}}\label{class_plot_canvas_image_analysis_a9f85fd17437e056045dff4c0ec4652c8}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a67058a96926d4a8a8b3dc1caaadbbfc2}{\hyperlink{struct_a_o_i}{A\+O\+I} $\ast$ {\bfseries m\+\_\+p\+A\+O\+I}}\label{class_plot_canvas_image_analysis_a67058a96926d4a8a8b3dc1caaadbbfc2}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a620811cf70e525914e14ca76ef597189}{std\+::set$<$ T\+Plot\+Feature $>$ {\bfseries m\+\_\+plot\+Features}}\label{class_plot_canvas_image_analysis_a620811cf70e525914e14ca76ef597189}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_ac6facc560fce2e48c9f5fa8fa0bebad9}{unsigned int {\bfseries m\+\_\+\+History\+Depth}}\label{class_plot_canvas_image_analysis_ac6facc560fce2e48c9f5fa8fa0bebad9}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a32c9f90a99c056f03518841afd997075}{int {\bfseries m\+\_\+\+Grid\+Steps\+X}}\label{class_plot_canvas_image_analysis_a32c9f90a99c056f03518841afd997075}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a55c8e0fa361e33be822483b20ce3a2e8}{int {\bfseries m\+\_\+\+Grid\+Steps\+Y}}\label{class_plot_canvas_image_analysis_a55c8e0fa361e33be822483b20ce3a2e8}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aa95bfa2723ea25ba854bc8a34574ef68}{int {\bfseries m\+\_\+\+Channel\+Count}}\label{class_plot_canvas_image_analysis_aa95bfa2723ea25ba854bc8a34574ef68}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a1ce66c3d1b5ba105efb42638e43451eb}{std\+::vector$<$ wx\+String $>$ {\bfseries m\+\_\+\+Plot\+Names}}\label{class_plot_canvas_image_analysis_a1ce66c3d1b5ba105efb42638e43451eb}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a46e020fb299076e17f744445e3794065}{\hyperlink{group___common_interface_ga456e8aa76e06bb761f27c52141475985}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format} {\bfseries m\+\_\+pixel\+Format}}\label{class_plot_canvas_image_analysis_a46e020fb299076e17f744445e3794065}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a12aa8da491f1359c373b8b295ef5519f}{\hyperlink{group___common_interface_ga9e2a1b46f3ed21b46b867c6d88d25598}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity} {\bfseries m\+\_\+bayer\+Parity}}\label{class_plot_canvas_image_analysis_a12aa8da491f1359c373b8b295ef5519f}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aea5d213a8b343fb76a5e139d5c709b87}{bool {\bfseries m\+\_\+bo\+Unsupported\+Pixel\+Format}}\label{class_plot_canvas_image_analysis_aea5d213a8b343fb76a5e139d5c709b87}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_aec57561055883e01312d6f9145f932a1}{\hyperlink{struct_plot_canvas_image_analysis_1_1_named_colour}{Named\+Colour} {\bfseries m\+\_\+\+Pens} \mbox{[}P\+L\+A\+N\+E\+\_\+\+C\+N\+T\mbox{]}}\label{class_plot_canvas_image_analysis_aec57561055883e01312d6f9145f932a1}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a912ed5e5bbd9bbf02b47a716b906af04}{int {\bfseries m\+\_\+\+Draw\+Start\+\_\+percent}}\label{class_plot_canvas_image_analysis_a912ed5e5bbd9bbf02b47a716b906af04}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a1e798314bc8af470088d36578091aef1}{int {\bfseries m\+\_\+\+Draw\+Window\+\_\+percent}}\label{class_plot_canvas_image_analysis_a1e798314bc8af470088d36578091aef1}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a712d539751651c7966fbd37b6fa9a3b7}{\hyperlink{class_data_grid_with_clipboard_feature}{Data\+Grid\+With\+Clipboard\+Feature} $\ast$ {\bfseries m\+\_\+p\+Numerical\+Display}}\label{class_plot_canvas_image_analysis_a712d539751651c7966fbd37b6fa9a3b7}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a77e37cf17edb450129ab91c2f129c413}{static const wx\+Colour {\bfseries m\+\_\+\+A\+Darker\+Kind\+Of\+Green} = wx\+Colour( 0, 150, 0 )}\label{class_plot_canvas_image_analysis_a77e37cf17edb450129ab91c2f129c413}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a39b79d6b419b36c392f3d960cad59e86}{static const wx\+Colour {\bfseries m\+\_\+\+Cyan\+Light} = wx\+Colour( 0, 200, 200 )}\label{class_plot_canvas_image_analysis_a39b79d6b419b36c392f3d960cad59e86}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_ae4d90192b1e216f2b4edfb24d7fb6b90}{static const wx\+Colour {\bfseries m\+\_\+\+Magenta} = wx\+Colour( 255, 0, 255 )}\label{class_plot_canvas_image_analysis_ae4d90192b1e216f2b4edfb24d7fb6b90}
+
+\item 
+\hypertarget{class_plot_canvas_image_analysis_a082d9be1d0b8f73f2ece7b9c55c87d56}{static const wx\+Colour {\bfseries m\+\_\+\+Magenta\+Light} = wx\+Colour( 200, 0, 200 )}\label{class_plot_canvas_image_analysis_a082d9be1d0b8f73f2ece7b9c55c87d56}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Plot\+Canvas\+Image\+Analysis.\+h\item 
+apps/mv\+Prop\+View/Plot\+Canvas\+Image\+Analysis.\+cpp\end{DoxyCompactItemize}

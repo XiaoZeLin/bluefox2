@@ -1,0 +1,70 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Exception\+Factory类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory}}
+}
+
+
+A factory class to raise mv\+I\+M\+P\+A\+C\+T acquire related exceptions.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory_a70b2f93291f2269c04ef2092c7872527}{raise\+Exception} (const char $\ast$p\+Function\+Name, int line\+Number, int error\+Code, H\+O\+B\+J object\+Handle=I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+D, const std\+::string \&additional\+Info=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Raises an exception from an error code, its origin, a string with additional information and an optional component handle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A factory class to raise mv\+I\+M\+P\+A\+C\+T acquire related exceptions. 
+
+This class contains a collection of static member functions that are used inside the interface to raise the appropriate exception in case of an error 
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory_a70b2f93291f2269c04ef2092c7872527}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory}!raise\+Exception@{raise\+Exception}}
+\index{raise\+Exception@{raise\+Exception}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory}}
+\subsubsection[{raise\+Exception}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Exception\+Factory\+::raise\+Exception (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Function\+Name, }
+\item[{int}]{line\+Number, }
+\item[{int}]{error\+Code, }
+\item[{H\+O\+B\+J}]{object\+Handle = {\ttfamily INVALID\+\_\+ID}, }
+\item[{const std\+::string \&}]{additional\+Info = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory_a70b2f93291f2269c04ef2092c7872527}
+
+
+Raises an exception from an error code, its origin, a string with additional information and an optional component handle. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Function\+Name} & The name of the function this exception was raised from. \\
+\hline
+\mbox{\tt in}  & {\em line\+Number} & The line number in the source this exception was raised from. \\
+\hline
+\mbox{\tt in}  & {\em error\+Code} & The error code. \\
+\hline
+\mbox{\tt in}  & {\em object\+Handle} & A handle to an object. \\
+\hline
+\mbox{\tt in}  & {\em additional\+Info} & A string with additional information. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory_a70b2f93291f2269c04ef2092c7872527_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

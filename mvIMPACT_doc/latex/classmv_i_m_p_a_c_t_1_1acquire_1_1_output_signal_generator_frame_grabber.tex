@@ -1,0 +1,539 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Output\+Signal\+Generator\+Frame\+Grabber类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+}
+
+
+A class to create complex digital output signals({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Output\+Signal\+Generator\+Frame\+Grabber 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a}{Output\+Signal\+Generator\+Frame\+Grabber} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9c9a7fe10cc42c34c82712caad48b147}{Output\+Signal\+Generator\+Frame\+Grabber} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{Output\+Signal\+Generator\+Frame\+Grabber} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} from and existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa833724f43161d0f9fe7f7764a761891}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa833724f43161d0f9fe7f7764a761891}{$\sim$\+Output\+Signal\+Generator\+Frame\+Grabber} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa833724f43161d0f9fe7f7764a761891}
+
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7a558c69cbbce2745dac0c7020f4f963}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{Output\+Signal\+Generator\+Frame\+Grabber} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7a558c69cbbce2745dac0c7020f4f963}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{Output\+Signal\+Generator\+Frame\+Grabber} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7a558c69cbbce2745dac0c7020f4f963}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} objects. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ad184bc7320099f53b9859e42c30da858}{define\+Pulse} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, int polarity, int delay, int width, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration}{Pulse\+Start\+Configuration} $\ast$p\+Pulse\+Start\+Configuration=0)
+\begin{DoxyCompactList}\small\item\em Assigns a single pulse to a digital output. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a10d99336c129dae39d28b1c53795f00e}{define\+Pulse\+Sequence} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, int start\+Level, const std\+::vector$<$ int $>$ \&sequence, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration}{Pulse\+Start\+Configuration} $\ast$p\+Pulse\+Start\+Configuration=0)
+\begin{DoxyCompactList}\small\item\em Assigns a complex signal to a digital output. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ae53d34b33acf4b256f3b0d27bdf2dd26}{get\+Valid\+Signals\+For\+Pass\+Through\+Modes} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, std\+::vector$<$ std\+::pair$<$ std\+::string, \hyperlink{group___device_specific_interface_ga29840a466892bced617a5f3a6edb5218}{T\+Digital\+Signal} $>$ $>$ \&sequence) const 
+\begin{DoxyCompactList}\small\item\em Receives a list of valid signals that can be passed directly to a certain digital output pin. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a80eb29acf966b1cf37a72e570bfaf77a}{get\+Valid\+Pass\+Through\+Signal\+Count} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of signals that can be used for pass through signal definitions for a certain digital output pin of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga29840a466892bced617a5f3a6edb5218}{T\+Digital\+Signal} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c}{get\+Valid\+Pass\+Through\+Signal\+Value} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, int index=0) const 
+\begin{DoxyCompactList}\small\item\em Receives a valid signal that can be passed directly to a certain digital output pin. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845}{get\+Valid\+Pass\+Through\+Signal\+String} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, int index=0) const 
+\begin{DoxyCompactList}\small\item\em Receives a valid string representation of a signal that can be passed directly to a certain digital output pin. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a210e143a9bcd614d5bed0b104594f709}{define\+Pass\+Through\+Signal} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, \hyperlink{group___device_specific_interface_ga29840a466892bced617a5f3a6edb5218}{T\+Digital\+Signal} digital\+Signal, bool bo\+Inverted=false)
+\begin{DoxyCompactList}\small\item\em Assing a certain signal to a digital output. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_abc196b3121a43ba476e2f8b2415c0c8a}{define\+Pass\+Through\+Signal} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, const std\+::string \&digital\+Signal, bool bo\+Inverted=false)
+\begin{DoxyCompactList}\small\item\em Assing a certain signal to a digital output. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}{undefine\+Signal} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output)
+\begin{DoxyCompactList}\small\item\em Removes the signal definition from the specified output pin. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5}{define\+Line\+Scan\+Pulse} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{Digital\+Output} $\ast$p\+Output, \hyperlink{group___device_specific_interface_ga83333b94d7a6a3f1ba96189b4e71fac0}{T\+Device\+Signal\+Output\+Start\+Event} pulse\+Start\+Event\+Value, int software\+Signal\+Period\+\_\+pclk, int width\+\_\+pclk, int polarity, unsigned int divider)
+\begin{DoxyCompactList}\small\item\em Defines a pulse to trigger line scan cameras. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga00cd9778dbab384a83457d98ff8c3d97}{Property\+I\+Digital\+Output\+Control\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a16a2f8eea50086e015adb7e40088e765}{control\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the general method used to create output signals. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga63bede647f87c0203f196d9002ffac9e}{Property\+I\+Device\+Signal\+Output\+Start\+Event} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa2102a162653d84112dcebbd90086ad4}{pulse\+Start\+Event}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the general behaviour of created output signals. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga0a157bd269e0e43d0d944d3f9615f770}{Property\+I\+Device\+Image\+Trigger} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}{image\+Trigger}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the general behaviour of created output signals. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A class to create complex digital output signals({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+Instances of this class can be used to create more complex digital output related signals like a single pulse or sequence of pulses on a certain pin as a reaction on a signal on one of the digital inputs of a device.
+
+The availability of the features provided by this class heavily depends on the used capture device. Therefore it's crucial to check if a desired feature is available at all. This class either provides the functions needed for these checks or its functions will return appropriate error codes.
+
+\begin{DoxyNote}{注解}
+If the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a16a2f8eea50086e015adb7e40088e765}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::control\+Mode}} is not available {\bfseries N\+O} feature of this class can be used.
+
+If the translation dictionary of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a16a2f8eea50086e015adb7e40088e765}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::control\+Mode}} does not contain {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::docm\+R\+T\+C} the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Line\+Scan\+Pulse}} will {\bfseries N\+O\+T} be available.
+
+Calling unsupported functions or accessing unsupported features will raise an exception.
+\end{DoxyNote}
+Pointers to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} objects {\bfseries M\+U\+S\+T} be obtained by an instance to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} object of the same device.
+
+Whenever a signal has been defined for a a certain digital output pin, this pin can no longer controlled using the corresponding functions in the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}. In order to do that the pin in question must be released using the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::undefine\+Signal}}.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!Output\+Signal\+Generator\+Frame\+Grabber@{Output\+Signal\+Generator\+Frame\+Grabber}}
+\index{Output\+Signal\+Generator\+Frame\+Grabber@{Output\+Signal\+Generator\+Frame\+Grabber}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{Output\+Signal\+Generator\+Frame\+Grabber}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::\+Output\+Signal\+Generator\+Frame\+Grabber (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} object. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9c9a7fe10cc42c34c82712caad48b147}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!Output\+Signal\+Generator\+Frame\+Grabber@{Output\+Signal\+Generator\+Frame\+Grabber}}
+\index{Output\+Signal\+Generator\+Frame\+Grabber@{Output\+Signal\+Generator\+Frame\+Grabber}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{Output\+Signal\+Generator\+Frame\+Grabber}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::\+Output\+Signal\+Generator\+Frame\+Grabber (
+\begin{DoxyParamCaption}
+\item[{const {\bf Output\+Signal\+Generator\+Frame\+Grabber} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9c9a7fe10cc42c34c82712caad48b147}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} from and existing one. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em src} & A constant reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} object, this object shall be created from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!define\+Line\+Scan\+Pulse@{define\+Line\+Scan\+Pulse}}
+\index{define\+Line\+Scan\+Pulse@{define\+Line\+Scan\+Pulse}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{define\+Line\+Scan\+Pulse}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Line\+Scan\+Pulse (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{{\bf T\+Device\+Signal\+Output\+Start\+Event}}]{pulse\+Start\+Event\+Value, }
+\item[{int}]{software\+Signal\+Period\+\_\+pclk, }
+\item[{int}]{width\+\_\+pclk, }
+\item[{int}]{polarity, }
+\item[{unsigned int}]{divider}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5}
+
+
+Defines a pulse to trigger line scan cameras. 
+
+Calling this function without setting {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a16a2f8eea50086e015adb7e40088e765}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::control\+Mode}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::docm\+R\+T\+C} will have {\bfseries N\+O} effect.
+
+\begin{DoxyNote}{注解}
+Not every frame grabber will offer the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::docm\+R\+T\+C} mode. Check is the mode is available by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Digital\+Output\+Control\+Mode\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Digital\+Output\+Control\+Mode\+::get\+Translation\+Dict\+Value}}. The detailed description of this class might contain source code examples for the language you are working with.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::undefine\+Signal}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em pulse\+Start\+Event\+Value} & Defines the start event for the signal generation. Valid values for this parameter are defined by {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Signal\+Output\+Start\+Event}. \\
+\hline
+\mbox{\tt in}  & {\em software\+Signal\+Period\+\_\+pclk} & Defines the frequency for a continuously generated signal if {\itshape pulse\+Start\+Event\+Value} is {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Sync\+In\+Rising\+Edge} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Sync\+In\+Falling\+Edge} and is ignored otherwise. \\
+\hline
+\mbox{\tt in}  & {\em width\+\_\+pclk} & The width of the signal to generate if {\itshape pulse\+Start\+Event\+Value} is {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Sync\+In\+Rising\+Edge}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Periodically} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Sync\+In\+Falling\+Edge} and is ignored otherwise. \\
+\hline
+\mbox{\tt in}  & {\em polarity} & The polarity of the signal to generate if {\itshape pulse\+Start\+Event\+Value} is {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Sync\+In\+Rising\+Edge}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Periodically} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Sync\+In\+Falling\+Edge} and is ignored otherwise.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyItemize}
+\item 0\+: The signal will be low for {\itshape width\+\_\+pclk} and high otherwise
+\item 1\+: The signal will be high for {\itshape width\+\_\+pclk} and high otherwise 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em divider} & Defines the divider value if {\itshape pulse\+Start\+Event\+Value} is {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsose\+Periodically} \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a210e143a9bcd614d5bed0b104594f709}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!define\+Pass\+Through\+Signal@{define\+Pass\+Through\+Signal}}
+\index{define\+Pass\+Through\+Signal@{define\+Pass\+Through\+Signal}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{define\+Pass\+Through\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pass\+Through\+Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{{\bf T\+Digital\+Signal}}]{digital\+Signal, }
+\item[{bool}]{bo\+Inverted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a210e143a9bcd614d5bed0b104594f709}
+
+
+Assing a certain signal to a digital output. 
+
+Some digital input signals or even some internal signals can be passed directly to one or more digital outputs.
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em digital\+Signal} & The digital signal that shall be passed to the digital output. Valid values for this parameter will be obtained by a call to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ae53d34b33acf4b256f3b0d27bdf2dd26}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Signals\+For\+Pass\+Through\+Modes}} \\
+\hline
+\mbox{\tt in}  & {\em bo\+Inverted} & If set to {\itshape true}, the signal will be inverted internally before being passed to the output. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_abc196b3121a43ba476e2f8b2415c0c8a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!define\+Pass\+Through\+Signal@{define\+Pass\+Through\+Signal}}
+\index{define\+Pass\+Through\+Signal@{define\+Pass\+Through\+Signal}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{define\+Pass\+Through\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pass\+Through\+Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{const std\+::string \&}]{digital\+Signal, }
+\item[{bool}]{bo\+Inverted = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_abc196b3121a43ba476e2f8b2415c0c8a}
+
+
+Assing a certain signal to a digital output. 
+
+Some digital input signals or even some internal signals can be passed directly to one or more digital outputs.
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em digital\+Signal} & The string representation of the digital output that shall be passed to the digital output. Valid values for this parameter will be obtained by a call to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ae53d34b33acf4b256f3b0d27bdf2dd26}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Signals\+For\+Pass\+Through\+Modes}} \\
+\hline
+\mbox{\tt in}  & {\em bo\+Inverted} & If set to {\itshape true}, the signal will be inverted internally before being passed to the output. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ad184bc7320099f53b9859e42c30da858}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!define\+Pulse@{define\+Pulse}}
+\index{define\+Pulse@{define\+Pulse}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{define\+Pulse}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pulse (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{int}]{polarity, }
+\item[{int}]{delay, }
+\item[{int}]{width, }
+\item[{{\bf Pulse\+Start\+Configuration} $\ast$}]{p\+Pulse\+Start\+Configuration = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ad184bc7320099f53b9859e42c30da858}
+
+
+Assigns a single pulse to a digital output. 
+
+Whenever a single pulse of a certain duration and polarity shall be generated on a digital output as a reaction on a trigger signal that was either generated by one of digital inputs of the device or software this is the right function to use.
+
+When the signal is generated can be defined by the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa2102a162653d84112dcebbd90086ad4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::pulse\+Start\+Event}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::image\+Trigger}}.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::undefine\+Signal}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em polarity} & The polarity of the pulse to generate.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyItemize}
+\item 0\+: The pulse will be low for {\itshape width\+\_\+pclk} and high otherwise
+\item 1\+: The pulse will be high for {\itshape width\+\_\+pclk} and high otherwise 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em delay} & The delay after the trigger event before a signal generation starts \\
+\hline
+\mbox{\tt in}  & {\em width} & The width of the pulse to generate \\
+\hline
+\mbox{\tt in}  & {\em p\+Pulse\+Start\+Configuration} & The pulse start configuration to be used for this pulse sequence. Not every device will support the use of pulse start configurations. Valid objects that can be passed to this function can be obtained from a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_af699c6e691ece416ec2242d08e35cb58}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration}}, and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a6f33bc4f6613b7c8b268beba61a09661}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration\+Count}}. If objects of these type are not supported, pass 0 or ignore this parameter. In that case the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::image\+Trigger}} will define the start condition for the signal output. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a10d99336c129dae39d28b1c53795f00e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!define\+Pulse\+Sequence@{define\+Pulse\+Sequence}}
+\index{define\+Pulse\+Sequence@{define\+Pulse\+Sequence}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{define\+Pulse\+Sequence}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pulse\+Sequence (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{int}]{start\+Level, }
+\item[{const std\+::vector$<$ int $>$ \&}]{sequence, }
+\item[{{\bf Pulse\+Start\+Configuration} $\ast$}]{p\+Pulse\+Start\+Configuration = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a10d99336c129dae39d28b1c53795f00e}
+
+
+Assigns a complex signal to a digital output. 
+
+This function can be used when a complex signal shall be generated on a digital output as a reaction on a trigger signal that was either generated by one of digital inputs of the device or software.
+
+When the signal is generated can be defined by the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa2102a162653d84112dcebbd90086ad4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::pulse\+Start\+Event}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::image\+Trigger}}.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::undefine\+Signal}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em start\+Level} & The start level of the generated signal.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyItemize}
+\item 0\+: The signal will start with 'low'
+\item 1\+: The signal will start with 'high' 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em sequence} & An array of integer values. Each values defines a switch in polarity of the signal after 'x' us. An array containing '1000', '2000' therefore will describe a signal starting with {\itshape start\+Level}, switches polarity after 1000 us and then again switches polarity after 2000 us. \\
+\hline
+\mbox{\tt in}  & {\em p\+Pulse\+Start\+Configuration} & The pulse start configuration to be used for this pulse sequence. Not every device will support the use of pulse start configurations. Valid objects that can be passed to this function can be obtained from a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_af699c6e691ece416ec2242d08e35cb58}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration}}, and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a6f33bc4f6613b7c8b268beba61a09661}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration\+Count}}. If objects of these type are not supported, pass 0 or ignore this parameter. In that case the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::image\+Trigger}} will define the start condition for the signal output. \\
+\hline
+\end{DoxyParams}
+
+\end{DoxyItemize}\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a80eb29acf966b1cf37a72e570bfaf77a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!get\+Valid\+Pass\+Through\+Signal\+Count@{get\+Valid\+Pass\+Through\+Signal\+Count}}
+\index{get\+Valid\+Pass\+Through\+Signal\+Count@{get\+Valid\+Pass\+Through\+Signal\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{get\+Valid\+Pass\+Through\+Signal\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a80eb29acf966b1cf37a72e570bfaf77a}
+
+
+Returns the number of signals that can be used for pass through signal definitions for a certain digital output pin of this device. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!get\+Valid\+Pass\+Through\+Signal\+String@{get\+Valid\+Pass\+Through\+Signal\+String}}
+\index{get\+Valid\+Pass\+Through\+Signal\+String@{get\+Valid\+Pass\+Through\+Signal\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{get\+Valid\+Pass\+Through\+Signal\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845}
+
+
+Receives a valid string representation of a signal that can be passed directly to a certain digital output pin. 
+
+Whenever it is necessary to output a certain signal (e.\+g. a digital input signal connected to the device or an internal digital signal like e.\+g. a frame valid signal) to a digital output of the device this can be done by a call to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a210e143a9bcd614d5bed0b104594f709}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pass\+Through\+Signal}} 
+
+As the type of signals that a device can send to a digital output depends heavily on the device and even on the digital output as well, this function together with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+String}} can be used to query a list of strings and a numerical representation for each signal that can be sent to this digital output. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em index} & The index of the entry to read from the property. The find out the last valid value for this parameter call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a80eb29acf966b1cf37a72e570bfaf77a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+Count}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!get\+Valid\+Pass\+Through\+Signal\+Value@{get\+Valid\+Pass\+Through\+Signal\+Value}}
+\index{get\+Valid\+Pass\+Through\+Signal\+Value@{get\+Valid\+Pass\+Through\+Signal\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{get\+Valid\+Pass\+Through\+Signal\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Digital\+Signal} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c}
+
+
+Receives a valid signal that can be passed directly to a certain digital output pin. 
+
+Whenever it is necessary to output a certain signal (e.\+g. a digital input signal connected to the device or an internal digital signal like e.\+g. a frame valid signal) to a digital output of the device this can be done by a call to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a210e143a9bcd614d5bed0b104594f709}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pass\+Through\+Signal}} 
+
+As the type of signals that a device can send to a digital output depends heavily on the device and even on the digital output as well, this function together with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+String}} can be used to query a list of strings and a numerical representation for each signal that can be sent to this digital output. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt in}  & {\em index} & The index of the entry to read from the property. The find out the last valid value for this parameter call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a80eb29acf966b1cf37a72e570bfaf77a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+Count}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ae53d34b33acf4b256f3b0d27bdf2dd26}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!get\+Valid\+Signals\+For\+Pass\+Through\+Modes@{get\+Valid\+Signals\+For\+Pass\+Through\+Modes}}
+\index{get\+Valid\+Signals\+For\+Pass\+Through\+Modes@{get\+Valid\+Signals\+For\+Pass\+Through\+Modes}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{get\+Valid\+Signals\+For\+Pass\+Through\+Modes}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Signals\+For\+Pass\+Through\+Modes (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output, }
+\item[{std\+::vector$<$ std\+::pair$<$ std\+::string, {\bf T\+Digital\+Signal} $>$ $>$ \&}]{sequence}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_ae53d34b33acf4b256f3b0d27bdf2dd26}
+
+
+Receives a list of valid signals that can be passed directly to a certain digital output pin. 
+
+Whenever it is necessary to output a certain signal (e.\+g. a digital input signal connected to the device or an internal digital signal like e.\+g. a frame valid signal) to a digital output of the device this can be done by a call to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a210e143a9bcd614d5bed0b104594f709}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::define\+Pass\+Through\+Signal}} 
+
+As the type of signals that a device can send to a digital output depends heavily on the device and even on the digital output as well, this function will return a list of strings and a numerical representation for each signal that can be sent to this digital output.
+
+\begin{DoxyNote}{注解}
+This function is much more efficient than calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c}{Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+Value}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845}{Output\+Signal\+Generator\+Frame\+Grabber\+::get\+Valid\+Pass\+Through\+Signal\+String}} and therefore this function should be called whenever all entries are required.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\mbox{\tt out}  & {\em sequence} & A reference to a vector that will receive the list of allowed digital signals for this particular digital output pin. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!undefine\+Signal@{undefine\+Signal}}
+\index{undefine\+Signal@{undefine\+Signal}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{undefine\+Signal}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::undefine\+Signal (
+\begin{DoxyParamCaption}
+\item[{{\bf Digital\+Output} $\ast$}]{p\+Output}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a4311d27a250b52f733074778a31ac822}
+
+
+Removes the signal definition from the specified output pin. 
+
+Whenever a signal has been defined for a a certain digital output pin, this pin can no longer controlled using the corresponding functions in the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}. This function removes the signal definition and hands back manual control of that digital output to the user. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Output} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}} object obtained from an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} for this device. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a16a2f8eea50086e015adb7e40088e765}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!control\+Mode@{control\+Mode}}
+\index{control\+Mode@{control\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{control\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Digital\+Output\+Control\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::control\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a16a2f8eea50086e015adb7e40088e765}
+
+
+An enumerated integer property defining the general method used to create output signals. 
+
+This setting always applies to every signal defined. Modifying this property will also change the behaviour of signals already defined.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Digital\+Output\+Control\+Mode}.
+
+When switching to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::docm\+R\+T\+C} mode only one signal can be created currently.
+
+\begin{DoxyNote}{注解}
+Not every frame grabber will offer the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::docm\+R\+T\+C} mode. Check if the mode is available by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Digital\+Output\+Control\+Mode\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Digital\+Output\+Control\+Mode\+::get\+Translation\+Dict\+Value}}.
+\end{DoxyNote}
+Some devices will offer a more flexible way to define this behaviour. In this case, this property won't be available (a call to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} will return false). However then calls to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a6f33bc4f6613b7c8b268beba61a09661}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration\+Count}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_af699c6e691ece416ec2242d08e35cb58}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration}} will succeed and the objects returned by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_af699c6e691ece416ec2242d08e35cb58}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+Pulse\+Start\+Configuration}} ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Pulse\+Start\+Configuration}}) will provide a more sofisticated way to define the signal output behaviour of a device. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!image\+Trigger@{image\+Trigger}}
+\index{image\+Trigger@{image\+Trigger}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{image\+Trigger}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Image\+Trigger} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::image\+Trigger}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a7b84a665907ea8d08f8dbf0be76f8388}
+
+
+An enumerated integer property defining the general behaviour of created output signals. 
+
+This setting always applies to every signal defined. Modifying this property will also change the behaviour of signals already defined.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Image\+Trigger}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa2102a162653d84112dcebbd90086ad4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}!pulse\+Start\+Event@{pulse\+Start\+Event}}
+\index{pulse\+Start\+Event@{pulse\+Start\+Event}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}}
+\subsubsection[{pulse\+Start\+Event}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Signal\+Output\+Start\+Event} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber\+::pulse\+Start\+Event}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_aa2102a162653d84112dcebbd90086ad4}
+
+
+An enumerated integer property defining the general behaviour of created output signals. 
+
+This setting always applies to every signal defined. Modifying this property will also change the behaviour of signals already defined.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Signal\+Output\+Start\+Event}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,27 @@
+var classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control =
+[
+    [ "CounterAndTimerControl", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a9ca851d25166e401670195607f772ef4", null ],
+    [ "counterDuration", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a08e6a31eafa31c6217d3fec3de878c61", null ],
+    [ "counterEventActivation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ab70baba2a6ef16bf43522414274b3740", null ],
+    [ "counterEventSource", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a449221a170934fd17e3c3253f935074a", null ],
+    [ "counterReset", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a8bb2c2964ae66f7250a37348e5b37ec6", null ],
+    [ "counterResetActivation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a94c6a18dd21c201e57240f0d7427958f", null ],
+    [ "counterResetSource", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aec76b87580e5aef5ef034d11b44f1428", null ],
+    [ "counterSelector", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a2a8a3d52a70268d61a7f33ccedaa6c9c", null ],
+    [ "counterStatus", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a45615d283c7dff07df8e05fc4679ad40", null ],
+    [ "counterTriggerActivation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ae3e718076d7c1392e360281172930b4c", null ],
+    [ "counterTriggerSource", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a794668b6daf40a909de1d84fa1408859", null ],
+    [ "counterValue", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aa20aa23c911bdf08578a68724c5d52c3", null ],
+    [ "counterValueAtReset", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a545eb5fdfc9e07d616a39080813acfd1", null ],
+    [ "timerDelay", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aed0a836e1b087f5d8977334073e34788", null ],
+    [ "timerDelayRaw", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ae2a98a11b7a8ffd4379474d8d2118564", null ],
+    [ "timerDuration", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a1129d4390fb2db6fc43dea90a16ca32c", null ],
+    [ "timerDurationRaw", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ac8814d7bc9581dadc3411ceef2a4cb1e", null ],
+    [ "timerReset", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a5b4a47b49eeeb512aa34c9a9118fd378", null ],
+    [ "timerSelector", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a98aaeada13d3a3f9edc2abfeeba6077e", null ],
+    [ "timerStatus", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a119e611c5ad880862fd3194de9f63c61", null ],
+    [ "timerTriggerActivation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aafe9deefca2b00ca24218d2763082720", null ],
+    [ "timerTriggerSource", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ace2a27d5ef880f1590cca9313ec84684", null ],
+    [ "timerValue", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a21f6143f2f21f2d22394455a9df22a42", null ],
+    [ "timerValueRaw", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a550a983e7334e89b755076bcee3cf80d", null ]
+];

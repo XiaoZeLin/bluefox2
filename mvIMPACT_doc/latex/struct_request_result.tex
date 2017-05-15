@@ -1,0 +1,46 @@
+\hypertarget{struct_request_result}{\section{Request\+Result结构体 参考}
+\label{struct_request_result}\index{Request\+Result@{Request\+Result}}
+}
+
+
+Contains status information about the capture process.  
+
+
+
+
+{\ttfamily \#include $<$mv\+Device\+Manager.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_gab6148762ea638f8eabbabfc9468b0d4c}{T\+Request\+Result} \hyperlink{struct_request_result_ab83a12ae3a933add3b4c699c4eeb0c8c}{result}
+\begin{DoxyCompactList}\small\item\em The result of this request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gacaa15d9102d56c38e659c31c678a640d}{T\+Request\+State} \hyperlink{struct_request_result_a4dd2118f067f90283440567f2319cf90}{state}
+\begin{DoxyCompactList}\small\item\em The current state of this request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Contains status information about the capture process. 
+
+This part of a complete request contains general status information about the request or the image currently referenced by it. 
+
+\subsection{类成员变量说明}
+\hypertarget{struct_request_result_ab83a12ae3a933add3b4c699c4eeb0c8c}{\index{Request\+Result@{Request\+Result}!result@{result}}
+\index{result@{result}!Request\+Result@{Request\+Result}}
+\subsubsection[{result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Request\+Result} Request\+Result\+::result}}\label{struct_request_result_ab83a12ae3a933add3b4c699c4eeb0c8c}
+
+
+The result of this request. 
+
+This parameter indicates whether a previous image acquisition has been successful or not. \hypertarget{struct_request_result_a4dd2118f067f90283440567f2319cf90}{\index{Request\+Result@{Request\+Result}!state@{state}}
+\index{state@{state}!Request\+Result@{Request\+Result}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Request\+State} Request\+Result\+::state}}\label{struct_request_result_a4dd2118f067f90283440567f2319cf90}
+
+
+The current state of this request. 
+
+This parameter indicates the current state of this request. A request e.\+g. can currently be idle. This would mean, that it is currently not used for image acquisition. Also a request can be in 'Capturing' state, which means it is currently processed by the driver. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+Device\+Manager/\+Include/mv\+Device\+Manager.\+h\end{DoxyCompactItemize}

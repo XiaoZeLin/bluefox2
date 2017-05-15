@@ -1,0 +1,221 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:R\+T\+Ctr\+Program类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+}
+
+
+A class to represent real time control programs({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:R\+T\+Ctr\+Program 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:R\+T\+Ctr\+Program 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a85a17c1481565ea345c117bd71470e16}{R\+T\+Ctr\+Program} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{R\+T\+Ctr\+Program} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} from an existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_acc3bda72e0bfccbba8443ef9d15bc0c9}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_acc3bda72e0bfccbba8443ef9d15bc0c9}{$\sim$\+R\+T\+Ctr\+Program} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_acc3bda72e0bfccbba8443ef9d15bc0c9}
+
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a24b2698264f92a65405f9e27d878863b}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{R\+T\+Ctr\+Program} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a24b2698264f92a65405f9e27d878863b}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{R\+T\+Ctr\+Program} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a24b2698264f92a65405f9e27d878863b}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} objects. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a285318f623f43356a98a9c816fb12393}{set\+Program\+Size} (int new\+Size)
+\begin{DoxyCompactList}\small\item\em A function to define the number of instructions this program should consist of. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a996c3b454f02e3dc3e84b3fc9142e946}{get\+Program\+Size} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of program instructions for this program. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{R\+T\+Ctr\+Program\+Step} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ad15489b2d15c594dd44f01d4f515c97f}{program\+Step} (unsigned int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a program instruction of the program. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a349cc9c552585fe4d795b7655d9b3bde}{load} (void)
+\begin{DoxyCompactList}\small\item\em Loads an existing program specified by the property {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::file\+Name}. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a937c09b17d8343c2f7f3142abeeb836f}{save} (void)
+\begin{DoxyCompactList}\small\item\em stores the current state of the program under the name specified by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ab43275f87f5032016f0ec4dfba643343}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::filename}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_gae76ca31bc5381777584ad1431182d5d4}{Property\+I\+R\+T\+Ctrl\+Modes} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a6bce5448e7fcf2f383f829be831820eb}{mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the current state this program is into. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ab43275f87f5032016f0ec4dfba643343}{filename}
+\begin{DoxyCompactList}\small\item\em A string property storing the filename for this program. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a35c50a3c87cf8b72ebe58ffa74d17f67}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a35c50a3c87cf8b72ebe58ffa74d17f67}{program\+State}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a35c50a3c87cf8b72ebe58ffa74d17f67}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing information about the current state of the program. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a3a1008d5502332da6f64a8940aa3a007}{class {\bfseries I\+O\+Sub\+System}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a3a1008d5502332da6f64a8940aa3a007}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to represent real time control programs({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+Real time control programs can be used to control the way how an when images are exposed and transmitted to the user.
+
+An {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} e.\+g. can be used to achieve a constant frame rate with a desired frequency. This can be done e.\+g. by triggering the camera with a constant frequency.
+
+Once this program has been defined it can be executed by setting the {\itshape mode} property to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Mode\+Run}. As in this example we do not wait for an external signal the property {\bfseries trigger\+Mode} must be set to a value demanding an external signal (e.\+g. {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ctm\+On\+High\+Level} ; You will find a summary of the valid trigger modes in the sensor specific data in the \char`\"{}\+Sensor data\char`\"{} chapter of the specific product manual. {\bfseries trigger\+Mode} must be set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cts\+R\+T\+Ctrl} to inform the driver that the signal generate by the real time program shall be used as the trigger signal.
+
+\begin{DoxyNote}{注解}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} objects can't be created directly! To access an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} associated with a certain device create an instance of an object derived from {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}} and then use the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_ae93c1931f9b2c53d8e1aaa7c74afccc8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::\+R\+T\+Ctr\+Program\+Count()}} to find out if there are hardware real time controller machines available for this device and if so how many of them can be accessed. Pointers to the machines then can be obtained by calling the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a1b2329037b2d00dda936ad2e33b92471}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::get\+R\+T\+Ctr\+Program()}} with the number of the controller (zero based) to be modified.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a85a17c1481565ea345c117bd71470e16}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!R\+T\+Ctr\+Program@{R\+T\+Ctr\+Program}}
+\index{R\+T\+Ctr\+Program@{R\+T\+Ctr\+Program}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{R\+T\+Ctr\+Program}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::\+R\+T\+Ctr\+Program (
+\begin{DoxyParamCaption}
+\item[{const {\bf R\+T\+Ctr\+Program} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a85a17c1481565ea345c117bd71470e16}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} from an existing one. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em src} & A constant reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} object, this object shall be created from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a996c3b454f02e3dc3e84b3fc9142e946}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!get\+Program\+Size@{get\+Program\+Size}}
+\index{get\+Program\+Size@{get\+Program\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{get\+Program\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::get\+Program\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a996c3b454f02e3dc3e84b3fc9142e946}
+
+
+Returns the number of program instructions for this program. 
+
+\begin{DoxyReturn}{返回}
+The number of program instructions for this program. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a349cc9c552585fe4d795b7655d9b3bde}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!load@{load}}
+\index{load@{load}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{load}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::load (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a349cc9c552585fe4d795b7655d9b3bde}
+
+
+Loads an existing program specified by the property {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::file\+Name}. 
+
+The default file extension for these programs is '$\ast$.rtp'. If the user doesn't specify this file extension, it is appended automatically. Only files of this type can be loaded by this function. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ad15489b2d15c594dd44f01d4f515c97f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!program\+Step@{program\+Step}}
+\index{program\+Step@{program\+Step}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{program\+Step}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+T\+Ctr\+Program\+Step}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::program\+Step (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ad15489b2d15c594dd44f01d4f515c97f}
+
+
+Returns a pointer to a program instruction of the program. 
+
+\begin{DoxyReturn}{返回}
+A pointer to a program instruction of the program. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The index of the program instruction to obtain. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a937c09b17d8343c2f7f3142abeeb836f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!save@{save}}
+\index{save@{save}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{save}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::save (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a937c09b17d8343c2f7f3142abeeb836f}
+
+
+stores the current state of the program under the name specified by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ab43275f87f5032016f0ec4dfba643343}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::filename}} 
+
+The default file extension for files stored using this function is '$\ast$.rtp'. If the user doesn't specify this file extension, it is appended automatically. Only files of this type can be loaded by the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a349cc9c552585fe4d795b7655d9b3bde}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::load}}. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a285318f623f43356a98a9c816fb12393}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!set\+Program\+Size@{set\+Program\+Size}}
+\index{set\+Program\+Size@{set\+Program\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{set\+Program\+Size}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::set\+Program\+Size (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a285318f623f43356a98a9c816fb12393}
+
+
+A function to define the number of instructions this program should consist of. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em new\+Size} & The new number of program instructions \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ab43275f87f5032016f0ec4dfba643343}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!filename@{filename}}
+\index{filename@{filename}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{filename}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::filename}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ab43275f87f5032016f0ec4dfba643343}
+
+
+A string property storing the filename for this program. 
+
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} s can be stored and loaded from/to X\+M\+L files. To do this, this property must be set to the desired filename. \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a349cc9c552585fe4d795b7655d9b3bde}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::load}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a937c09b17d8343c2f7f3142abeeb836f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::save}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a6bce5448e7fcf2f383f829be831820eb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}!mode@{mode}}
+\index{mode@{mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+R\+T\+Ctrl\+Modes} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_a6bce5448e7fcf2f383f829be831820eb}
+
+
+An enumerated integer property defining the current state this program is into. 
+
+In order to affect the behaviour of the image acquisition an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} must be in running mode. Apart from that the property {\bfseries trigger\+Source} must be set appropriately.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+R\+T\+Ctrl\+Modes}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

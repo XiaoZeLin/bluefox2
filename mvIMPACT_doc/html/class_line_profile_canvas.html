@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: LineProfileCanvas类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_line_profile_canvas.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="class_line_profile_canvas-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">LineProfileCanvas类 参考<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 LineProfileCanvas 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_line_profile_canvas__inherit__graph.png" border="0" usemap="#_line_profile_canvas_inherit__map" alt="Inheritance graph"/></div>
+<map name="_line_profile_canvas_inherit__map" id="_line_profile_canvas_inherit__map">
+<area shape="rect" id="node7" href="class_line_profile_canvas_horizontal.html" title="LineProfileCanvasHorizontal" alt="" coords="5,379,192,405"/><area shape="rect" id="node8" href="class_line_profile_canvas_vertical.html" title="LineProfileCanvasVertical" alt="" coords="217,379,388,405"/><area shape="rect" id="node2" href="class_plot_canvas_image_analysis.html" title="PlotCanvasImageAnalysis" alt="" coords="112,229,288,256"/><area shape="rect" id="node3" href="class_plot_canvas.html" title="PlotCanvas" alt="" coords="83,155,173,181"/><area shape="rect" id="node4" href="class_drawing_canvas.html" title="DrawingCanvas" alt="" coords="71,80,185,107"/><area shape="rect" id="node6" href="class_data_grid_data_provider.html" title="DataGridDataProvider" alt="" coords="198,155,348,181"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+LineProfileCanvas 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_line_profile_canvas__coll__graph.png" border="0" usemap="#_line_profile_canvas_coll__map" alt="Collaboration graph"/></div>
+<map name="_line_profile_canvas_coll__map" id="_line_profile_canvas_coll__map">
+<area shape="rect" id="node2" href="class_plot_canvas_image_analysis.html" title="PlotCanvasImageAnalysis" alt="" coords="803,107,979,133"/><area shape="rect" id="node3" href="class_plot_canvas.html" title="PlotCanvas" alt="" coords="476,5,567,32"/><area shape="rect" id="node4" href="class_drawing_canvas.html" title="DrawingCanvas" alt="" coords="189,35,304,61"/><area shape="rect" id="node9" href="struct_a_o_i.html" title="AOI" alt="" coords="499,56,544,83"/><area shape="rect" id="node6" href="class_data_grid_data_provider.html" title="DataGridDataProvider" alt="" coords="446,107,597,133"/><area shape="rect" id="node7" href="class_data_grid_with_clipboard_feature.html" title="DataGridWithClipboardFeature" alt="" coords="421,157,621,184"/><area shape="rect" id="node10" href="struct_plot_canvas_image_analysis_1_1_named_colour.html" title="PlotCanvasImageAnalysis\l::NamedColour" alt="" coords="433,209,609,250"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a2a5cf98d2c2cad1f2bac5ec9e917a28d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a5cf98d2c2cad1f2bac5ec9e917a28d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>LineProfileCanvas</b> (wxWindow *parent, const wxString &amp;configName, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxBORDER_NONE, const wxString &amp;name=wxT(&quot;Line Profile&quot;), bool boActive=false)</td></tr>
+<tr class="separator:a2a5cf98d2c2cad1f2bac5ec9e917a28d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7520ae5663ed28834ebe92e62c36c61c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7520ae5663ed28834ebe92e62c36c61c"></a>
+virtual wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetGridValue</b> (int row, int col) const </td></tr>
+<tr class="separator:a7520ae5663ed28834ebe92e62c36c61c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d2fa6f0bf9ccbe20227ab6d9329b858"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d2fa6f0bf9ccbe20227ab6d9329b858"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshData</b> (const <a class="el" href="struct_request_data.html">RequestData</a> &amp;data, int x=-1, int y=-1, int w=-1, int h=-1, bool boForceRefresh=false)</td></tr>
+<tr class="separator:a7d2fa6f0bf9ccbe20227ab6d9329b858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_plot_canvas_image_analysis"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_plot_canvas_image_analysis')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a></td></tr>
+<tr class="memitem:a96835d1670093c0592297681aae8545d inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96835d1670093c0592297681aae8545d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PlotCanvasImageAnalysis</b> (wxWindow *parent, const wxString &amp;configName, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxBORDER_NONE, const wxString &amp;name=wxT(&quot;PlotCanvasImageAnalysis&quot;), bool boActive=false, int channelCount=0)</td></tr>
+<tr class="separator:a96835d1670093c0592297681aae8545d inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34022c488c879efb01763dc73d2d4500 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34022c488c879efb01763dc73d2d4500"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGrid</b> (wxWindow *pParent, wxWindowID gridID)</td></tr>
+<tr class="separator:a34022c488c879efb01763dc73d2d4500 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de3ed8d8981bd654c5df73357f6934f inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0de3ed8d8981bd654c5df73357f6934f"></a>
+wxGrid *&#160;</td><td class="memItemRight" valign="bottom"><b>GetGrid</b> (void) const </td></tr>
+<tr class="separator:a0de3ed8d8981bd654c5df73357f6934f inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa960161e42c4db18e408512246e87fd7 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa960161e42c4db18e408512246e87fd7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGridValueFormatString</b> (const wxString &amp;gridValueFormatString)</td></tr>
+<tr class="separator:aa960161e42c4db18e408512246e87fd7 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89529da16294cca067b0d7376ae10e54 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a89529da16294cca067b0d7376ae10e54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDisplayMethod</b> (TDisplayMethod displayMethod)</td></tr>
+<tr class="separator:a89529da16294cca067b0d7376ae10e54 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88cf1bc99c6c67d0dd50d830fa965d6b inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88cf1bc99c6c67d0dd50d830fa965d6b"></a>
+TDisplayMethod&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayMethod</b> (void) const </td></tr>
+<tr class="separator:a88cf1bc99c6c67d0dd50d830fa965d6b inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736d1bb4c05c15599dc9e91739abb14f inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a736d1bb4c05c15599dc9e91739abb14f"></a>
+const wxString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetConfigName</b> (void) const </td></tr>
+<tr class="separator:a736d1bb4c05c15599dc9e91739abb14f inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a365da242c6dcf871d425a3f0e68a692f inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a365da242c6dcf871d425a3f0e68a692f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActive</b> (bool boActive)</td></tr>
+<tr class="separator:a365da242c6dcf871d425a3f0e68a692f inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e60acd3279c019c09930e5b575ee391 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e60acd3279c019c09930e5b575ee391"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsAOIFullModeActive</b> (void) const </td></tr>
+<tr class="separator:a3e60acd3279c019c09930e5b575ee391 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68289ab262c35f5a928bee3186ac1d9c inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68289ab262c35f5a928bee3186ac1d9c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAOIFullMode</b> (bool boActive)</td></tr>
+<tr class="separator:a68289ab262c35f5a928bee3186ac1d9c inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14b80bf0232916e2ddb373f8b9d66930 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14b80bf0232916e2ddb373f8b9d66930"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAOIColour</b> (const wxColour &amp;)</td></tr>
+<tr class="separator:a14b80bf0232916e2ddb373f8b9d66930 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af142fe0d8065b51760bd4aca4ee7ab4e inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af142fe0d8065b51760bd4aca4ee7ab4e"></a>
+const <a class="el" href="struct_a_o_i.html">AOI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetAOI</b> (void) const </td></tr>
+<tr class="separator:af142fe0d8065b51760bd4aca4ee7ab4e inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37e4e7f26972deb9d6644ce4b51b71a3 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37e4e7f26972deb9d6644ce4b51b71a3"></a>
+wxRect&#160;</td><td class="memItemRight" valign="bottom"><b>GetAOIRect</b> (void) const </td></tr>
+<tr class="separator:a37e4e7f26972deb9d6644ce4b51b71a3 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12d68489bfa8764b20b4216ca0bbc1dd inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12d68489bfa8764b20b4216ca0bbc1dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetProcessBayerParity</b> (bool boActive)</td></tr>
+<tr class="separator:a12d68489bfa8764b20b4216ca0bbc1dd inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad686ffe6ac959ff5d8c2cd944c26b5fb inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad686ffe6ac959ff5d8c2cd944c26b5fb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetProcessBayerParity</b> (void) const </td></tr>
+<tr class="separator:ad686ffe6ac959ff5d8c2cd944c26b5fb inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3157b911e775c08b94467a662efdea5 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3157b911e775c08b94467a662efdea5"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasPlotSelection</b> (void) const </td></tr>
+<tr class="separator:af3157b911e775c08b94467a662efdea5 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a976fe218c7439a1581a0be8e63195ced inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a976fe218c7439a1581a0be8e63195ced"></a>
+const std::vector&lt; wxString &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetAvailablePlotSelections</b> (void) const </td></tr>
+<tr class="separator:a976fe218c7439a1581a0be8e63195ced inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a162bffd09dd5ff26dfb81b6b302b3c2a inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a162bffd09dd5ff26dfb81b6b302b3c2a"></a>
+virtual wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetPlotSelection</b> (void) const </td></tr>
+<tr class="separator:a162bffd09dd5ff26dfb81b6b302b3c2a inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99c214b5b6d9e1c6bd9f331d437f650 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa99c214b5b6d9e1c6bd9f331d437f650"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPlotSelection</b> (const wxString &amp;)</td></tr>
+<tr class="separator:aa99c214b5b6d9e1c6bd9f331d437f650 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef3a4d2c4db0ddc367efab7d19536d9 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ef3a4d2c4db0ddc367efab7d19536d9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasFeature</b> (TPlotFeature feature) const </td></tr>
+<tr class="separator:a6ef3a4d2c4db0ddc367efab7d19536d9 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75a0c328b42ddcb652904fcbc1bc13c0 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75a0c328b42ddcb652904fcbc1bc13c0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetHistoryDepth</b> (unsigned int historyDepth)</td></tr>
+<tr class="separator:a75a0c328b42ddcb652904fcbc1bc13c0 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5a4b19504d792a84bc9eaa1069e35f6 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5a4b19504d792a84bc9eaa1069e35f6"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetHistoryDepth</b> (void) const </td></tr>
+<tr class="separator:aa5a4b19504d792a84bc9eaa1069e35f6 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3cd24f43c30c74e4092f73be7aeef8e inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3cd24f43c30c74e4092f73be7aeef8e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawStartPercent</b> (int value_percent)</td></tr>
+<tr class="separator:ac3cd24f43c30c74e4092f73be7aeef8e inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb061eb3de76eb6e6fe832ff222668f2 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb061eb3de76eb6e6fe832ff222668f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDrawWindowWidthPercent</b> (int value_percent)</td></tr>
+<tr class="separator:afb061eb3de76eb6e6fe832ff222668f2 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38842e3f061b97836166fdb5188a40a0 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38842e3f061b97836166fdb5188a40a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGridSteps</b> (int XSteps, int YSteps)</td></tr>
+<tr class="separator:a38842e3f061b97836166fdb5188a40a0 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac552f56110f1977c9f0cc57e330a4bba inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac552f56110f1977c9f0cc57e330a4bba"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterImageCanvas</b> (<a class="el" href="class_image_canvas.html">ImageCanvas</a> *p)</td></tr>
+<tr class="separator:ac552f56110f1977c9f0cc57e330a4bba inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a841cc0bd89a032f5ad1e3683a0cf5858 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a841cc0bd89a032f5ad1e3683a0cf5858"></a>
+<a class="el" href="class_image_canvas.html">ImageCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageCanvas</b> (void) const </td></tr>
+<tr class="separator:a841cc0bd89a032f5ad1e3683a0cf5858 inherit pub_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_plot_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_plot_canvas')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_plot_canvas.html">PlotCanvas</a></td></tr>
+<tr class="memitem:a2a252e506a73b3f49d278b6911a47232 inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a252e506a73b3f49d278b6911a47232"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PlotCanvas</b> (wxWindow *parent, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxBORDER_NONE, const wxString &amp;name=wxT(&quot;PlotCanvas&quot;), bool boActive=false)</td></tr>
+<tr class="separator:a2a252e506a73b3f49d278b6911a47232 inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ab50ba1fb3a311265b3e3274f220b5c inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ab50ba1fb3a311265b3e3274f220b5c"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetUpdateFrequency</b> (int frequency)</td></tr>
+<tr class="separator:a3ab50ba1fb3a311265b3e3274f220b5c inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14e1ee51587c627e11e811eb7866b215 inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14e1ee51587c627e11e811eb7866b215"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetUpdateFrequency</b> (void) const </td></tr>
+<tr class="separator:a14e1ee51587c627e11e811eb7866b215 inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea23c053ab2c95ec81175f4e62b39225 inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea23c053ab2c95ec81175f4e62b39225"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetUpdateFrequencyMin</b> (void) const </td></tr>
+<tr class="separator:aea23c053ab2c95ec81175f4e62b39225 inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aecbd8bf3461d8651b59e3ff1d4a6e5 inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3aecbd8bf3461d8651b59e3ff1d4a6e5"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetUpdateFrequencyMax</b> (void) const </td></tr>
+<tr class="separator:a3aecbd8bf3461d8651b59e3ff1d4a6e5 inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6d6dc17298dbdf6155db1d053267cde inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6d6dc17298dbdf6155db1d053267cde"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetBorderWidth</b> (void) const </td></tr>
+<tr class="separator:ae6d6dc17298dbdf6155db1d053267cde inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15bec8adff88a87e8afeb443ab587a1b inherit pub_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a15bec8adff88a87e8afeb443ab587a1b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBorderWidth</b> (int borderWidth)</td></tr>
+<tr class="separator:a15bec8adff88a87e8afeb443ab587a1b inherit pub_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:a881bb87309826c92c0564de4363cbcd2 inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a881bb87309826c92c0564de4363cbcd2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DrawingCanvas</b> (wxWindow *parent, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxBORDER_NONE, const wxString &amp;name=wxT(&quot;DrawingCanvas&quot;), bool boActive=false)</td></tr>
+<tr class="separator:a881bb87309826c92c0564de4363cbcd2 inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9f8216597135cd8f7ae1969dadbf74 inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab9f8216597135cd8f7ae1969dadbf74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> (void) const </td></tr>
+<tr class="separator:aab9f8216597135cd8f7ae1969dadbf74 inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1387ecc7ce03e14b61827e2d7b487a86 inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1387ecc7ce03e14b61827e2d7b487a86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSize</b> (wxSizeEvent &amp;)</td></tr>
+<tr class="separator:a1387ecc7ce03e14b61827e2d7b487a86 inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_data_grid_data_provider"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_data_grid_data_provider')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_data_grid_data_provider.html">DataGridDataProvider</a></td></tr>
+<tr class="memitem:a85523631b2bbac7684d329e6c938770e inherit pub_methods_class_data_grid_data_provider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85523631b2bbac7684d329e6c938770e"></a>
+const wxString &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>GetGridValueFormatString</b> (void) const </td></tr>
+<tr class="separator:a85523631b2bbac7684d329e6c938770e inherit pub_methods_class_data_grid_data_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad50afaeca3ba2a6b9914f2b4bebc463a inherit pub_methods_class_data_grid_data_provider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad50afaeca3ba2a6b9914f2b4bebc463a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetGridValue</b> (int, int, const wxString &amp;)</td></tr>
+<tr class="separator:ad50afaeca3ba2a6b9914f2b4bebc463a inherit pub_methods_class_data_grid_data_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:ae247b81501a381b9a7617bfe923db30a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae247b81501a381b9a7617bfe923db30a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CalculateData</b> (const <a class="el" href="struct_image_buffer.html">ImageBuffer</a> *pIB, const <a class="el" href="group___common_interface.html#ga9e2a1b46f3ed21b46b867c6d88d25598">TBayerMosaicParity</a> bayerParity)=0</td></tr>
+<tr class="separator:ae247b81501a381b9a7617bfe923db30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85d80306f42caf5126122d2b0b963ad8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85d80306f42caf5126122d2b0b963ad8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DeallocateProfileBuffer</b> (void)</td></tr>
+<tr class="separator:a85d80306f42caf5126122d2b0b963ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8d7280f444e30dc175b6f30962a29d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae8d7280f444e30dc175b6f30962a29d8"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetDataCount</b> (void) const =0</td></tr>
+<tr class="separator:ae8d7280f444e30dc175b6f30962a29d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a334e213f608e6d32288c916e0a2d2927"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a334e213f608e6d32288c916e0a2d2927"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScaleY</b> (wxCoord h) const </td></tr>
+<tr class="separator:a334e213f608e6d32288c916e0a2d2927"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addf36475adb367f5787cd4b0c40f4ac5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="addf36475adb367f5787cd4b0c40f4ac5"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPaintCustom</b> (wxPaintDC &amp;dc)</td></tr>
+<tr class="separator:addf36475adb367f5787cd4b0c40f4ac5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_plot_canvas_image_analysis"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_plot_canvas_image_analysis')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a></td></tr>
+<tr class="memitem:aefb4e2a4fa18e4a66b6aba0f527478dd inherit pro_methods_class_plot_canvas_image_analysis"><td class="memTemplParams" colspan="2"><a class="anchor" id="aefb4e2a4fa18e4a66b6aba0f527478dd"></a>
+template&lt;typename _Ty &gt; </td></tr>
+<tr class="memitem:aefb4e2a4fa18e4a66b6aba0f527478dd inherit pro_methods_class_plot_canvas_image_analysis"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>AssignDisplayParameter</b> (_Ty &amp;parameter, const _Ty &amp;newValue)</td></tr>
+<tr class="separator:aefb4e2a4fa18e4a66b6aba0f527478dd inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeb883c037f8c92454ce9300edb70530 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeb883c037f8c92454ce9300edb70530"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>CreateGridCustom</b> (void)</td></tr>
+<tr class="separator:adeb883c037f8c92454ce9300edb70530 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a406fd13bbd154e8fc6b5290072ed271a inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a406fd13bbd154e8fc6b5290072ed271a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetPercentageToDraw</b> (void) const </td></tr>
+<tr class="separator:a406fd13bbd154e8fc6b5290072ed271a inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4675e96cb818c159974152f981da583 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4675e96cb818c159974152f981da583"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>GetDrawRange</b> (unsigned int *pFrom, unsigned int *pTo) const </td></tr>
+<tr class="separator:af4675e96cb818c159974152f981da583 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e4e4b402b84ebc14f6b66afb9c243d inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62e4e4b402b84ebc14f6b66afb9c243d"></a>
+virtual int&#160;</td><td class="memItemRight" valign="bottom"><b>GetRowCountNeededForNumericalDisplay</b> (void) const </td></tr>
+<tr class="separator:a62e4e4b402b84ebc14f6b66afb9c243d inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa770147d8a90fe155ed384e0df56fe3a inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa770147d8a90fe155ed384e0df56fe3a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSizeEvent</b> (wxSizeEvent &amp;e)</td></tr>
+<tr class="separator:aa770147d8a90fe155ed384e0df56fe3a inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a802b5180ce2c13c9bee1b81e65a3a2 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4a802b5180ce2c13c9bee1b81e65a3a2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>MustUpdate</b> (const mvIMPACT::acquire::ImageBuffer *pIB, int plotChannelCount, int x, int y, int w, int h, bool boForceRefresh, bool *pboAOIChanged=0, bool *pboImageFormatChanged=0)</td></tr>
+<tr class="separator:a4a802b5180ce2c13c9bee1b81e65a3a2 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11b1a4cee17e04d938b426b8fd14b97a inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11b1a4cee17e04d938b426b8fd14b97a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshAnalysisData</b> (void)</td></tr>
+<tr class="separator:a11b1a4cee17e04d938b426b8fd14b97a inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c87fedc65d95593746b934cecd2b6df inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c87fedc65d95593746b934cecd2b6df"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDefaultPens</b> (<a class="el" href="group___common_interface.html#ga456e8aa76e06bb761f27c52141475985">mvIMPACT::acquire::TImageBufferPixelFormat</a> pixelFormat)</td></tr>
+<tr class="separator:a4c87fedc65d95593746b934cecd2b6df inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0381eeb3669719a4749f6b0b9be9dad3 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0381eeb3669719a4749f6b0b9be9dad3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBayerDescriptions</b> (<a class="el" href="group___common_interface.html#ga9e2a1b46f3ed21b46b867c6d88d25598">mvIMPACT::acquire::TBayerMosaicParity</a> bayerParity)</td></tr>
+<tr class="separator:a0381eeb3669719a4749f6b0b9be9dad3 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f5fc0b5cc5368790c6563cc1cb975ae inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f5fc0b5cc5368790c6563cc1cb975ae"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetBayerPens</b> (<a class="el" href="group___common_interface.html#ga456e8aa76e06bb761f27c52141475985">mvIMPACT::acquire::TImageBufferPixelFormat</a> pixelFormat, <a class="el" href="group___common_interface.html#ga9e2a1b46f3ed21b46b867c6d88d25598">mvIMPACT::acquire::TBayerMosaicParity</a> bayerParity)</td></tr>
+<tr class="separator:a6f5fc0b5cc5368790c6563cc1cb975ae inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49b5e6ea717ee59fecd6102f82dcb2e4 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49b5e6ea717ee59fecd6102f82dcb2e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupGDIData</b> (const mvIMPACT::acquire::ImageBuffer *pIB, int channelCount, <a class="el" href="group___common_interface.html#ga9e2a1b46f3ed21b46b867c6d88d25598">mvIMPACT::acquire::TBayerMosaicParity</a> bayerParity)</td></tr>
+<tr class="separator:a49b5e6ea717ee59fecd6102f82dcb2e4 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43fa290ebedb903e30345f2e0f4269a7 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a43fa290ebedb903e30345f2e0f4269a7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateAnalysisOutput</b> (bool boEraseBackground)</td></tr>
+<tr class="separator:a43fa290ebedb903e30345f2e0f4269a7 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fafef720a7146ba8dbaef0c8c7ba9f6 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fafef720a7146ba8dbaef0c8c7ba9f6"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateGrid</b> (void)</td></tr>
+<tr class="separator:a2fafef720a7146ba8dbaef0c8c7ba9f6 inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0327704354652459604acf2ee01fea inherit pro_methods_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b0327704354652459604acf2ee01fea"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>UpdateInternalData</b> (void)</td></tr>
+<tr class="separator:a5b0327704354652459604acf2ee01fea inherit pro_methods_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_plot_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_plot_canvas')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_plot_canvas.html">PlotCanvas</a></td></tr>
+<tr class="memitem:a7d33e169a519f3c8173514deed67c954 inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d33e169a519f3c8173514deed67c954"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawInfoString</b> (wxPaintDC &amp;dc, const wxString &amp;info, wxCoord &amp;xOffset, wxCoord yOffset, const wxColour &amp;colour) const </td></tr>
+<tr class="separator:a7d33e169a519f3c8173514deed67c954 inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab408942eaa307fd7e14cdc0693e080c4 inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab408942eaa307fd7e14cdc0693e080c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawMarkerLines</b> (wxPaintDC &amp;dc, const wxCoord w, const wxCoord h, const double scaleX) const </td></tr>
+<tr class="separator:ab408942eaa307fd7e14cdc0693e080c4 inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a002a805720751e56824734cfe42027ef inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a002a805720751e56824734cfe42027ef"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DrawProfileLine</b> (wxPaintDC &amp;dc, int h, int startOffset, double scaleX, double scaleY, unsigned int from, unsigned int to, int *pData, int elementCount, const wxColour &amp;colour) const </td></tr>
+<tr class="separator:a002a805720751e56824734cfe42027ef inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61a712fb45b875da1ac93324ee8d6d87 inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61a712fb45b875da1ac93324ee8d6d87"></a>
+virtual double&#160;</td><td class="memItemRight" valign="bottom"><b>GetScaleX</b> (wxCoord) const </td></tr>
+<tr class="separator:a61a712fb45b875da1ac93324ee8d6d87 inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271de403c21aec07d1c8c54310a05b6b inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a271de403c21aec07d1c8c54310a05b6b"></a>
+virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetXMarkerParameters</b> (unsigned int &amp;from, unsigned int &amp;to) const =0</td></tr>
+<tr class="separator:a271de403c21aec07d1c8c54310a05b6b inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30951c51b13bc973a93675ad3b31f5b inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af30951c51b13bc973a93675ad3b31f5b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPaint</b> (wxPaintEvent &amp;)</td></tr>
+<tr class="separator:af30951c51b13bc973a93675ad3b31f5b inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abeb512d4044ba2fe5943be89be7909bd inherit pro_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abeb512d4044ba2fe5943be89be7909bd"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdateFrequencyChanged</b> (void)</td></tr>
+<tr class="separator:abeb512d4044ba2fe5943be89be7909bd inherit pro_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ad6e2adc66f683ca6ac18855d90b8ca91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6e2adc66f683ca6ac18855d90b8ca91"></a>
+int **&#160;</td><td class="memItemRight" valign="bottom"><b>m_ppData</b></td></tr>
+<tr class="separator:ad6e2adc66f683ca6ac18855d90b8ca91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af462171e7b87565ed03c4785b3e4fba7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af462171e7b87565ed03c4785b3e4fba7"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_horDataCount</b></td></tr>
+<tr class="separator:af462171e7b87565ed03c4785b3e4fba7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7dc76447b5e041f5bc27cc16ba9376d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7dc76447b5e041f5bc27cc16ba9376d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_verDataCount</b></td></tr>
+<tr class="separator:ac7dc76447b5e041f5bc27cc16ba9376d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_plot_canvas_image_analysis"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_plot_canvas_image_analysis')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a></td></tr>
+<tr class="memitem:a0080ec3b145fa76332c1afa62efcfccf inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0080ec3b145fa76332c1afa62efcfccf"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_valCount</b></td></tr>
+<tr class="separator:a0080ec3b145fa76332c1afa62efcfccf inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf75b850510714342fc3ce6e43dac212 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf75b850510714342fc3ce6e43dac212"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_AOIx</b></td></tr>
+<tr class="separator:adf75b850510714342fc3ce6e43dac212 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51ae0cd4d1325b5693da297fec1fee2a inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51ae0cd4d1325b5693da297fec1fee2a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_AOIy</b></td></tr>
+<tr class="separator:a51ae0cd4d1325b5693da297fec1fee2a inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa831745594a9d46f6ca6ab2de8d425fe inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa831745594a9d46f6ca6ab2de8d425fe"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_AOIw</b></td></tr>
+<tr class="separator:aa831745594a9d46f6ca6ab2de8d425fe inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f85fd17437e056045dff4c0ec4652c8 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f85fd17437e056045dff4c0ec4652c8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_AOIh</b></td></tr>
+<tr class="separator:a9f85fd17437e056045dff4c0ec4652c8 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67058a96926d4a8a8b3dc1caaadbbfc2 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67058a96926d4a8a8b3dc1caaadbbfc2"></a>
+<a class="el" href="struct_a_o_i.html">AOI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pAOI</b></td></tr>
+<tr class="separator:a67058a96926d4a8a8b3dc1caaadbbfc2 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a620811cf70e525914e14ca76ef597189 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a620811cf70e525914e14ca76ef597189"></a>
+std::set&lt; TPlotFeature &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_plotFeatures</b></td></tr>
+<tr class="separator:a620811cf70e525914e14ca76ef597189 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6facc560fce2e48c9f5fa8fa0bebad9 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6facc560fce2e48c9f5fa8fa0bebad9"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>m_HistoryDepth</b></td></tr>
+<tr class="separator:ac6facc560fce2e48c9f5fa8fa0bebad9 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32c9f90a99c056f03518841afd997075 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32c9f90a99c056f03518841afd997075"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_GridStepsX</b></td></tr>
+<tr class="separator:a32c9f90a99c056f03518841afd997075 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55c8e0fa361e33be822483b20ce3a2e8 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55c8e0fa361e33be822483b20ce3a2e8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_GridStepsY</b></td></tr>
+<tr class="separator:a55c8e0fa361e33be822483b20ce3a2e8 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa95bfa2723ea25ba854bc8a34574ef68 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa95bfa2723ea25ba854bc8a34574ef68"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_ChannelCount</b></td></tr>
+<tr class="separator:aa95bfa2723ea25ba854bc8a34574ef68 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ce66c3d1b5ba105efb42638e43451eb inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ce66c3d1b5ba105efb42638e43451eb"></a>
+std::vector&lt; wxString &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>m_PlotNames</b></td></tr>
+<tr class="separator:a1ce66c3d1b5ba105efb42638e43451eb inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46e020fb299076e17f744445e3794065 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46e020fb299076e17f744445e3794065"></a>
+<a class="el" href="group___common_interface.html#ga456e8aa76e06bb761f27c52141475985">mvIMPACT::acquire::TImageBufferPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_pixelFormat</b></td></tr>
+<tr class="separator:a46e020fb299076e17f744445e3794065 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12aa8da491f1359c373b8b295ef5519f inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12aa8da491f1359c373b8b295ef5519f"></a>
+<a class="el" href="group___common_interface.html#ga9e2a1b46f3ed21b46b867c6d88d25598">mvIMPACT::acquire::TBayerMosaicParity</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_bayerParity</b></td></tr>
+<tr class="separator:a12aa8da491f1359c373b8b295ef5519f inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea5d213a8b343fb76a5e139d5c709b87 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5d213a8b343fb76a5e139d5c709b87"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_boUnsupportedPixelFormat</b></td></tr>
+<tr class="separator:aea5d213a8b343fb76a5e139d5c709b87 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec57561055883e01312d6f9145f932a1 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec57561055883e01312d6f9145f932a1"></a>
+<a class="el" href="struct_plot_canvas_image_analysis_1_1_named_colour.html">NamedColour</a>&#160;</td><td class="memItemRight" valign="bottom"><b>m_Pens</b> [PLANE_CNT]</td></tr>
+<tr class="separator:aec57561055883e01312d6f9145f932a1 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a912ed5e5bbd9bbf02b47a716b906af04 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a912ed5e5bbd9bbf02b47a716b906af04"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_DrawStart_percent</b></td></tr>
+<tr class="separator:a912ed5e5bbd9bbf02b47a716b906af04 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e798314bc8af470088d36578091aef1 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e798314bc8af470088d36578091aef1"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_DrawWindow_percent</b></td></tr>
+<tr class="separator:a1e798314bc8af470088d36578091aef1 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a712d539751651c7966fbd37b6fa9a3b7 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a712d539751651c7966fbd37b6fa9a3b7"></a>
+<a class="el" href="class_data_grid_with_clipboard_feature.html">DataGridWithClipboardFeature</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pNumericalDisplay</b></td></tr>
+<tr class="separator:a712d539751651c7966fbd37b6fa9a3b7 inherit pro_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_plot_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_plot_canvas')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_plot_canvas.html">PlotCanvas</a></td></tr>
+<tr class="memitem:abd4a6690f369d0a73d69d0053dc3c2c9 inherit pro_attribs_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd4a6690f369d0a73d69d0053dc3c2c9"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_ImageCount</b></td></tr>
+<tr class="separator:abd4a6690f369d0a73d69d0053dc3c2c9 inherit pro_attribs_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0bec66c9cae1f6fba5ad13eb928c2184 inherit pro_attribs_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0bec66c9cae1f6fba5ad13eb928c2184"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_UpdateFrequency</b></td></tr>
+<tr class="separator:a0bec66c9cae1f6fba5ad13eb928c2184 inherit pro_attribs_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae865582d895070a4013bfe6d69b2f17a inherit pro_attribs_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae865582d895070a4013bfe6d69b2f17a"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_UpdateFrequencyMin</b></td></tr>
+<tr class="separator:ae865582d895070a4013bfe6d69b2f17a inherit pro_attribs_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d99e757507e301b366e4169ff9346f inherit pro_attribs_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a44d99e757507e301b366e4169ff9346f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>m_UpdateFrequencyMax</b></td></tr>
+<tr class="separator:a44d99e757507e301b366e4169ff9346f inherit pro_attribs_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:a6be903bfad178b8e1777f297930119ae inherit pro_attribs_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be903bfad178b8e1777f297930119ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_boActive</b></td></tr>
+<tr class="separator:a6be903bfad178b8e1777f297930119ae inherit pro_attribs_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97d516b6f924da07d4b9ce5db0ecb62 inherit pro_attribs_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad97d516b6f924da07d4b9ce5db0ecb62"></a>
+wxCriticalSection&#160;</td><td class="memItemRight" valign="bottom"><b>m_critSect</b></td></tr>
+<tr class="separator:ad97d516b6f924da07d4b9ce5db0ecb62 inherit pro_attribs_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_data_grid_data_provider"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_data_grid_data_provider')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_data_grid_data_provider.html">DataGridDataProvider</a></td></tr>
+<tr class="memitem:a817bfaf9a82b37508c82b1445167cb17 inherit pro_attribs_class_data_grid_data_provider"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a817bfaf9a82b37508c82b1445167cb17"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>m_GridValueFormatString</b></td></tr>
+<tr class="separator:a817bfaf9a82b37508c82b1445167cb17 inherit pro_attribs_class_data_grid_data_provider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_types_class_plot_canvas_image_analysis"><td colspan="2" onclick="javascript:toggleInherit('pub_types_class_plot_canvas_image_analysis')"><img src="closed.png" alt="-"/>&#160;Public 类型 继承自 <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a></td></tr>
+<tr class="memitem:a808e23b20edfe21314eaf05c7b82feb4 inherit pub_types_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a808e23b20edfe21314eaf05c7b82feb4"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TDisplayMethod</b> { <b>dmGraphical</b>, 
+<b>dmNumerical</b>
+ }</td></tr>
+<tr class="separator:a808e23b20edfe21314eaf05c7b82feb4 inherit pub_types_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e82e20537c699017c6a25f9a3363c67 inherit pub_types_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0e82e20537c699017c6a25f9a3363c67"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TPlotFeature</b> { <br />
+&#160;&#160;<b>pfPercentageWindow</b>, 
+<b>pfHistoryDepth</b>, 
+<b>pfStepWidth</b>, 
+<b>pfGridSteps</b>, 
+<br />
+&#160;&#160;<b>pfProcessBayerParity</b>
+<br />
+ }</td></tr>
+<tr class="separator:a0e82e20537c699017c6a25f9a3363c67 inherit pub_types_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:a7153565fd6483fa98858aa0c2e841753 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7153565fd6483fa98858aa0c2e841753"></a>
+static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>GetMono12Packed_V1Pixel</b> (const unsigned char *const pBuffer, int pixel)</td></tr>
+<tr class="separator:a7153565fd6483fa98858aa0c2e841753 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1615b8f32f7a20e51e6cb1adbfbf5877 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1615b8f32f7a20e51e6cb1adbfbf5877"></a>
+static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>GetMonoPacked_V2Pixel</b> (const unsigned char *const pBuffer, int pixel, int shift)</td></tr>
+<tr class="separator:a1615b8f32f7a20e51e6cb1adbfbf5877 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb088653169a2af43c54c0dafb5fa288 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb088653169a2af43c54c0dafb5fa288"></a>
+static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>GetMono12Packed_V2Pixel</b> (const unsigned char *const pBuffer, int pixel)</td></tr>
+<tr class="separator:afb088653169a2af43c54c0dafb5fa288 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23881a32a4344c99287805a272e9ab22 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23881a32a4344c99287805a272e9ab22"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetBGR101010Packed_V2Pixel</b> (unsigned int pixel, unsigned short &amp;red, unsigned short &amp;green, unsigned short &amp;blue)</td></tr>
+<tr class="separator:a23881a32a4344c99287805a272e9ab22 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_class_plot_canvas_image_analysis"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_plot_canvas_image_analysis')"><img src="closed.png" alt="-"/>&#160;Protected 类型 继承自 <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a></td></tr>
+<tr class="memitem:adfd494e5094b11436e0feea4547f7879 inherit pro_types_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adfd494e5094b11436e0feea4547f7879"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<b>VAL_COUNT_8_BIT</b> = 256, 
+<b>VAL_COUNT_10_BIT</b> = VAL_COUNT_8_BIT &lt;&lt; 2, 
+<b>VAL_COUNT_12_BIT</b> = VAL_COUNT_8_BIT &lt;&lt; 4, 
+<b>VAL_COUNT_14_BIT</b> = VAL_COUNT_8_BIT &lt;&lt; 6, 
+<br />
+&#160;&#160;<b>VAL_COUNT_16_BIT</b> = VAL_COUNT_8_BIT &lt;&lt; 8
+<br />
+ }</td></tr>
+<tr class="separator:adfd494e5094b11436e0feea4547f7879 inherit pro_types_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13860f290e9ba4c7dc84e94784239695 inherit pro_types_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a13860f290e9ba4c7dc84e94784239695"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TPlane</b> { <br />
+&#160;&#160;<b>pRed</b> = 0, 
+<b>pY</b> = 0, 
+<b>pEvenEven</b> = 0, 
+<b>pChannel0Hor</b> = 0, 
+<br />
+&#160;&#160;<b>pChannel0</b> = 0, 
+<b>pGreen</b> = 1, 
+<b>pU</b> = 1, 
+<b>pCb</b> = 1, 
+<br />
+&#160;&#160;<b>pEvenOdd</b> = 1, 
+<b>pChannel0Ver</b> = 1, 
+<b>pChannel1</b> = 1, 
+<b>pBlue</b> = 2, 
+<br />
+&#160;&#160;<b>pCr</b> = 2, 
+<b>pV</b> = 2, 
+<b>pOddEven</b> = 2, 
+<b>pChannel1Hor</b> = 2, 
+<br />
+&#160;&#160;<b>pChannel2</b> = 2, 
+<b>pOddOdd</b> = 3, 
+<b>pChannel1Ver</b> = 3, 
+<b>pChannel2Hor</b> = 4, 
+<br />
+&#160;&#160;<b>pChannel2Ver</b> = 5, 
+<b>pChannel3Hor</b> = 6, 
+<b>pChannel3Ver</b> = 7, 
+<b>PLANE_CNT</b>
+<br />
+ }</td></tr>
+<tr class="separator:a13860f290e9ba4c7dc84e94784239695 inherit pro_types_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_class_plot_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_class_plot_canvas')"><img src="closed.png" alt="-"/>&#160;静态 Protected 成员函数 继承自 <a class="el" href="class_plot_canvas.html">PlotCanvas</a></td></tr>
+<tr class="memitem:a1346e9c291fbee3cada9f757f8dd12fd inherit pro_static_methods_class_plot_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1346e9c291fbee3cada9f757f8dd12fd"></a>
+static unsigned int&#160;</td><td class="memItemRight" valign="bottom"><b>GetXMarkerStepWidth</b> (const unsigned int from, const unsigned int to)</td></tr>
+<tr class="separator:a1346e9c291fbee3cada9f757f8dd12fd inherit pro_static_methods_class_plot_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_attribs_class_plot_canvas_image_analysis"><td colspan="2" onclick="javascript:toggleInherit('pro_static_attribs_class_plot_canvas_image_analysis')"><img src="closed.png" alt="-"/>&#160;静态 Protected 属性 继承自 <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a></td></tr>
+<tr class="memitem:a77e37cf17edb450129ab91c2f129c413 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77e37cf17edb450129ab91c2f129c413"></a>
+static const wxColour&#160;</td><td class="memItemRight" valign="bottom"><b>m_ADarkerKindOfGreen</b> = wxColour( 0, 150, 0 )</td></tr>
+<tr class="separator:a77e37cf17edb450129ab91c2f129c413 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39b79d6b419b36c392f3d960cad59e86 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39b79d6b419b36c392f3d960cad59e86"></a>
+static const wxColour&#160;</td><td class="memItemRight" valign="bottom"><b>m_CyanLight</b> = wxColour( 0, 200, 200 )</td></tr>
+<tr class="separator:a39b79d6b419b36c392f3d960cad59e86 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d90192b1e216f2b4edfb24d7fb6b90 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae4d90192b1e216f2b4edfb24d7fb6b90"></a>
+static const wxColour&#160;</td><td class="memItemRight" valign="bottom"><b>m_Magenta</b> = wxColour( 255, 0, 255 )</td></tr>
+<tr class="separator:ae4d90192b1e216f2b4edfb24d7fb6b90 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082d9be1d0b8f73f2ece7b9c55c87d56 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a082d9be1d0b8f73f2ece7b9c55c87d56"></a>
+static const wxColour&#160;</td><td class="memItemRight" valign="bottom"><b>m_MagentaLight</b> = wxColour( 200, 0, 200 )</td></tr>
+<tr class="separator:a082d9be1d0b8f73f2ece7b9c55c87d56 inherit pro_static_attribs_class_plot_canvas_image_analysis"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>apps/mvPropView/<a class="el" href="_line_profile_canvas_8h_source.html">LineProfileCanvas.h</a></li>
+<li>apps/mvPropView/LineProfileCanvas.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_line_profile_canvas.html">LineProfileCanvas</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:21 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

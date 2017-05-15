@@ -1,0 +1,1121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::Device类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::Device类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>This class and its functions represent an actual device detected by this interface in the current system.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::Device 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_device_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_device_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_device_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="653,135,803,177"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,490,555,531"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="653,201,803,242"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceAccess\lMode \&gt;" alt="" coords="621,265,835,321"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceLoad\lSettings \&gt;" alt="" coords="629,345,827,401"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; THWUpdateResult \&gt;" alt="" coords="606,425,850,466"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceCapability \&gt;" alt="" coords="608,490,848,531"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAcquisition\lStartStopBehaviour \&gt;" alt="" coords="631,555,825,611"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="634,634,822,675"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceInterface\lLayout \&gt;" alt="" coords="617,699,839,755"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceClass \&gt;" alt="" coords="620,778,836,819"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceState \&gt;" alt="" coords="621,843,835,885"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,490,355,531"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,490,155,531"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a20235ebedf424e31d1fed2433ba3408f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a20235ebedf424e31d1fed2433ba3408f">Device</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> &amp;src)</td></tr>
+<tr class="memdesc:a20235ebedf424e31d1fed2433ba3408f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="#a20235ebedf424e31d1fed2433ba3408f">更多...</a><br /></td></tr>
+<tr class="separator:a20235ebedf424e31d1fed2433ba3408f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eeacbcb3dcfd03d39faa3eba43ead6f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a4eeacbcb3dcfd03d39faa3eba43ead6f">~Device</a> (void)</td></tr>
+<tr class="memdesc:a4eeacbcb3dcfd03d39faa3eba43ead6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor.  <a href="#a4eeacbcb3dcfd03d39faa3eba43ead6f">更多...</a><br /></td></tr>
+<tr class="separator:a4eeacbcb3dcfd03d39faa3eba43ead6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4faaf1d0c1d88c0daecace9b9e3abc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f4faaf1d0c1d88c0daecace9b9e3abc"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a3f4faaf1d0c1d88c0daecace9b9e3abc">operator=</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a3f4faaf1d0c1d88c0daecace9b9e3abc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows assignments of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> objects. <br /></td></tr>
+<tr class="separator:a3f4faaf1d0c1d88c0daecace9b9e3abc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00da7acbf28c1591163682b7bdf611a4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4">close</a> (void)</td></tr>
+<tr class="memdesc:a00da7acbf28c1591163682b7bdf611a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Closes an opened device.  <a href="#a00da7acbf28c1591163682b7bdf611a4">更多...</a><br /></td></tr>
+<tr class="separator:a00da7acbf28c1591163682b7bdf611a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d37b729e39fcb65e29a66cb34c5b78c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1d37b729e39fcb65e29a66cb34c5b78c">hasCapability</a> (<a class="el" href="group___common_interface.html#gab025951bf5eb52c67790e7ecd197b76e">TDeviceCapability</a> capability) const </td></tr>
+<tr class="memdesc:a1d37b729e39fcb65e29a66cb34c5b78c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether this device has a certain capability.  <a href="#a1d37b729e39fcb65e29a66cb34c5b78c">更多...</a><br /></td></tr>
+<tr class="separator:a1d37b729e39fcb65e29a66cb34c5b78c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73fb3a8ac92b197700f04e1df9c250e7"><td class="memItemLeft" align="right" valign="top">HDEV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a73fb3a8ac92b197700f04e1df9c250e7">hDev</a> (void) const </td></tr>
+<tr class="memdesc:a73fb3a8ac92b197700f04e1df9c250e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier for this device.  <a href="#a73fb3a8ac92b197700f04e1df9c250e7">更多...</a><br /></td></tr>
+<tr class="separator:a73fb3a8ac92b197700f04e1df9c250e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826a7861a74496152b8b56d917ae1dbe"><td class="memItemLeft" align="right" valign="top">HDRV&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a826a7861a74496152b8b56d917ae1dbe">hDrv</a> (void) const </td></tr>
+<tr class="memdesc:a826a7861a74496152b8b56d917ae1dbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier for the functionality offered by this device.  <a href="#a826a7861a74496152b8b56d917ae1dbe">更多...</a><br /></td></tr>
+<tr class="separator:a826a7861a74496152b8b56d917ae1dbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41a5bc2d37b631bf6b258d9ac64a62b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html">ComponentList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a41a5bc2d37b631bf6b258d9ac64a62b1">deviceDriverFeatureList</a> (void) const </td></tr>
+<tr class="memdesc:a41a5bc2d37b631bf6b258d9ac64a62b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a list providing access to driver library specific features.  <a href="#a41a5bc2d37b631bf6b258d9ac64a62b1">更多...</a><br /></td></tr>
+<tr class="separator:a41a5bc2d37b631bf6b258d9ac64a62b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c8ba8de5814f1034487245ae57840f9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9">isOpen</a> (void) const </td></tr>
+<tr class="memdesc:a1c8ba8de5814f1034487245ae57840f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current initialisation status in this process.  <a href="#a1c8ba8de5814f1034487245ae57840f9">更多...</a><br /></td></tr>
+<tr class="separator:a1c8ba8de5814f1034487245ae57840f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a300801d194f3800120140ad4bcdbcd1a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a300801d194f3800120140ad4bcdbcd1a">isInUse</a> (void) const </td></tr>
+<tr class="memdesc:a300801d194f3800120140ad4bcdbcd1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current usage status of this device.  <a href="#a300801d194f3800120140ad4bcdbcd1a">更多...</a><br /></td></tr>
+<tr class="separator:a300801d194f3800120140ad4bcdbcd1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4cb4c232b202a51c7161caf9b36165"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165">open</a> (void)</td></tr>
+<tr class="memdesc:adf4cb4c232b202a51c7161caf9b36165"><td class="mdescLeft">&#160;</td><td class="mdescRight">Opens a device.  <a href="#adf4cb4c232b202a51c7161caf9b36165">更多...</a><br /></td></tr>
+<tr class="separator:adf4cb4c232b202a51c7161caf9b36165"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cf73e03bb07320488a703a573f043ac"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a3cf73e03bb07320488a703a573f043ac">setID</a> (int newID) const </td></tr>
+<tr class="memdesc:a3cf73e03bb07320488a703a573f043ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a new ID to this device.  <a href="#a3cf73e03bb07320488a703a573f043ac">更多...</a><br /></td></tr>
+<tr class="separator:a3cf73e03bb07320488a703a573f043ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5584b58e68c8e3237b7fcdb698d36b7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5584b58e68c8e3237b7fcdb698d36b7">updateFirmware</a> (void) const </td></tr>
+<tr class="memdesc:aa5584b58e68c8e3237b7fcdb698d36b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the firmware of the device.  <a href="#aa5584b58e68c8e3237b7fcdb698d36b7">更多...</a><br /></td></tr>
+<tr class="separator:aa5584b58e68c8e3237b7fcdb698d36b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08734e0c6fd862e3c6e7160c66b927ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html">UserData</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a08734e0c6fd862e3c6e7160c66b927ec">getUserData</a> (void)</td></tr>
+<tr class="memdesc:a08734e0c6fd862e3c6e7160c66b927ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a helper class to handle user specific data stored in the devices non-volatile memory(if available).  <a href="#a08734e0c6fd862e3c6e7160c66b927ec">更多...</a><br /></td></tr>
+<tr class="separator:a08734e0c6fd862e3c6e7160c66b927ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a3cc7db9051fa3ebe73a8f38a274dad19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaa711dff24b159d7f25686f736db21a2f">PropertyIDeviceClass</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a3cc7db9051fa3ebe73a8f38a274dad19">deviceClass</a></td></tr>
+<tr class="memdesc:a3cc7db9051fa3ebe73a8f38a274dad19"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) defining the device class this device belongs to.  <a href="#a3cc7db9051fa3ebe73a8f38a274dad19">更多...</a><br /></td></tr>
+<tr class="separator:a3cc7db9051fa3ebe73a8f38a274dad19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abaf3edcac50921a93df9080c39c75fc3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abaf3edcac50921a93df9080c39c75fc3"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#abaf3edcac50921a93df9080c39c75fc3">family</a></td></tr>
+<tr class="memdesc:abaf3edcac50921a93df9080c39c75fc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the family name of this device. <br /></td></tr>
+<tr class="separator:abaf3edcac50921a93df9080c39c75fc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37787e344732926a99103df8faf05be"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af37787e344732926a99103df8faf05be"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#af37787e344732926a99103df8faf05be">product</a></td></tr>
+<tr class="memdesc:af37787e344732926a99103df8faf05be"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the product name of this device. <br /></td></tr>
+<tr class="separator:af37787e344732926a99103df8faf05be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae12276c8f5655fa8d771774804e53c13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga4a143abc5e951b2d4a22a0a835d4c5d1">PropertyIDeviceCapability</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ae12276c8f5655fa8d771774804e53c13">capabilities</a></td></tr>
+<tr class="memdesc:ae12276c8f5655fa8d771774804e53c13"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) defining special device capabilities.  <a href="#ae12276c8f5655fa8d771774804e53c13">更多...</a><br /></td></tr>
+<tr class="separator:ae12276c8f5655fa8d771774804e53c13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d4f0c0118d979c503abeb37f65b0c8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d4f0c0118d979c503abeb37f65b0c8b"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a7d4f0c0118d979c503abeb37f65b0c8b">serial</a></td></tr>
+<tr class="memdesc:a7d4f0c0118d979c503abeb37f65b0c8b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the serial number of this device. <br /></td></tr>
+<tr class="separator:a7d4f0c0118d979c503abeb37f65b0c8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4861037a845148f813bc72bad7334ebd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga1127fb45b2263d328e769e81b1096baf">PropertyIDeviceState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a4861037a845148f813bc72bad7334ebd">state</a></td></tr>
+<tr class="memdesc:a4861037a845148f813bc72bad7334ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) containing the current state of this device.  <a href="#a4861037a845148f813bc72bad7334ebd">更多...</a><br /></td></tr>
+<tr class="separator:a4861037a845148f813bc72bad7334ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a239e7c6f214d441015ef15e4cbde83ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a239e7c6f214d441015ef15e4cbde83ca">deviceID</a></td></tr>
+<tr class="memdesc:a239e7c6f214d441015ef15e4cbde83ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the device ID associated with this device.  <a href="#a239e7c6f214d441015ef15e4cbde83ca">更多...</a><br /></td></tr>
+<tr class="separator:a239e7c6f214d441015ef15e4cbde83ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52f3dd5742f14fff0c6fabeae0ccaee1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a52f3dd5742f14fff0c6fabeae0ccaee1">deviceVersion</a></td></tr>
+<tr class="memdesc:a52f3dd5742f14fff0c6fabeae0ccaee1"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the version(e.g. the hard ware revision) of this device.  <a href="#a52f3dd5742f14fff0c6fabeae0ccaee1">更多...</a><br /></td></tr>
+<tr class="separator:a52f3dd5742f14fff0c6fabeae0ccaee1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74abbd0bc1fda2dce54e28c6076f9528"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a74abbd0bc1fda2dce54e28c6076f9528">firmwareVersion</a></td></tr>
+<tr class="memdesc:a74abbd0bc1fda2dce54e28c6076f9528"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the firmware version of this device.  <a href="#a74abbd0bc1fda2dce54e28c6076f9528">更多...</a><br /></td></tr>
+<tr class="separator:a74abbd0bc1fda2dce54e28c6076f9528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4bcb8da9f46585ea042a6b3fa618933"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga8af4dfc27c6b4403fb87ad509f67181b">PropertyIDeviceLoadSettings</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ac4bcb8da9f46585ea042a6b3fa618933">loadSettings</a></td></tr>
+<tr class="memdesc:ac4bcb8da9f46585ea042a6b3fa618933"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to define which previously stored setting to load when the device is opened.  <a href="#ac4bcb8da9f46585ea042a6b3fa618933">更多...</a><br /></td></tr>
+<tr class="separator:ac4bcb8da9f46585ea042a6b3fa618933"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3130a245e1dc22be91511ce6a6bdf957"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a3130a245e1dc22be91511ce6a6bdf957">autoLoadSettingOrder</a></td></tr>
+<tr class="memdesc:a3130a245e1dc22be91511ce6a6bdf957"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the auto load order of feature settings that is executed during initialisation of the device.  <a href="#a3130a245e1dc22be91511ce6a6bdf957">更多...</a><br /></td></tr>
+<tr class="separator:a3130a245e1dc22be91511ce6a6bdf957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4dd0ecc9d456bb5ddc01d844c9d6f2d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gab90d40765ad00c8bd36b05645f3472dc">PropertyIDeviceInterfaceLayout</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d">interfaceLayout</a></td></tr>
+<tr class="memdesc:ab4dd0ecc9d456bb5ddc01d844c9d6f2d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to define which interface layout shall be used when the device is opened.  <a href="#ab4dd0ecc9d456bb5ddc01d844c9d6f2d">更多...</a><br /></td></tr>
+<tr class="separator:ab4dd0ecc9d456bb5ddc01d844c9d6f2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a356137fa9ec71b56e7981276aaf3c4f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a356137fa9ec71b56e7981276aaf3c4f2">customDataDirectory</a></td></tr>
+<tr class="memdesc:a356137fa9ec71b56e7981276aaf3c4f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only once the device is open) containing a path to a custom directory for the location of.  <a href="#a356137fa9ec71b56e7981276aaf3c4f2">更多...</a><br /></td></tr>
+<tr class="separator:a356137fa9ec71b56e7981276aaf3c4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a703ef11aee37b938415a85c9f9256222"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a703ef11aee37b938415a85c9f9256222">defaultRequestCount</a></td></tr>
+<tr class="memdesc:a703ef11aee37b938415a85c9f9256222"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property that defines the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects to be created when the device is opened.  <a href="#a703ef11aee37b938415a85c9f9256222">更多...</a><br /></td></tr>
+<tr class="separator:a703ef11aee37b938415a85c9f9256222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93878aa300a8cff3dc3c4ef84d5d4276"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a93878aa300a8cff3dc3c4ef84d5d4276">resultQueueCount</a></td></tr>
+<tr class="memdesc:a93878aa300a8cff3dc3c4ef84d5d4276"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property that defines the number of result queues to be created when the device is opened.  <a href="#a93878aa300a8cff3dc3c4ef84d5d4276">更多...</a><br /></td></tr>
+<tr class="separator:a93878aa300a8cff3dc3c4ef84d5d4276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d5db996353c3b9ada5f6a15fb19f9eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a4d5db996353c3b9ada5f6a15fb19f9eb">userControlledImageProcessingEnable</a></td></tr>
+<tr class="memdesc:a4d5db996353c3b9ada5f6a15fb19f9eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining whether user controlled image processing related features shall be created under 'System Settings' or not.  <a href="#a4d5db996353c3b9ada5f6a15fb19f9eb">更多...</a><br /></td></tr>
+<tr class="separator:a4d5db996353c3b9ada5f6a15fb19f9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cce00cf697d950dace425bcc7a61b82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1cce00cf697d950dace425bcc7a61b82">allowUnrecommendedFeatures</a></td></tr>
+<tr class="memdesc:a1cce00cf697d950dace425bcc7a61b82"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to unlock certain features, that are available but not recommended by the device manufacturer.  <a href="#a1cce00cf697d950dace425bcc7a61b82">更多...</a><br /></td></tr>
+<tr class="separator:a1cce00cf697d950dace425bcc7a61b82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5cdb4615de973bbf1c24f2fd5a3d1b5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga4b53c0f0c5478e5c079b4c2082c53690">PropertyIAcquisitionStartStopBehaviour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5cdb4615de973bbf1c24f2fd5a3d1b5">acquisitionStartStopBehaviour</a></td></tr>
+<tr class="memdesc:aa5cdb4615de973bbf1c24f2fd5a3d1b5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the start/stop behaviour during acquisition of this driver instance.  <a href="#aa5cdb4615de973bbf1c24f2fd5a3d1b5">更多...</a><br /></td></tr>
+<tr class="separator:aa5cdb4615de973bbf1c24f2fd5a3d1b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e6d960358632d3e55f2f20474a3aa26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga111916e947fe10d171bc6c2a10f15ae2">PropertyIHWUpdateResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a8e6d960358632d3e55f2f20474a3aa26">HWUpdateResult</a></td></tr>
+<tr class="memdesc:a8e6d960358632d3e55f2f20474a3aa26"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) defining user executed hardware update results.  <a href="#a8e6d960358632d3e55f2f20474a3aa26">更多...</a><br /></td></tr>
+<tr class="separator:a8e6d960358632d3e55f2f20474a3aa26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3ee34abadfd5192050fb3281282190d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa3ee34abadfd5192050fb3281282190d">manufacturer</a></td></tr>
+<tr class="memdesc:aa3ee34abadfd5192050fb3281282190d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the name of the manufacturer of this device.  <a href="#aa3ee34abadfd5192050fb3281282190d">更多...</a><br /></td></tr>
+<tr class="separator:aa3ee34abadfd5192050fb3281282190d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad10fa0ebc71bae2bf872fcbed6d34701"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ad10fa0ebc71bae2bf872fcbed6d34701">manufacturerSpecificInformation</a></td></tr>
+<tr class="memdesc:ad10fa0ebc71bae2bf872fcbed6d34701"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing manufacturer specific information of this device.  <a href="#ad10fa0ebc71bae2bf872fcbed6d34701">更多...</a><br /></td></tr>
+<tr class="separator:ad10fa0ebc71bae2bf872fcbed6d34701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26e3ec1dd3b45767268946aebfbc3250"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gac860ed08eaeb7ccb3cbc879a22ca43c9">PropertyIDeviceAccessMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a26e3ec1dd3b45767268946aebfbc3250">desiredAccess</a></td></tr>
+<tr class="memdesc:a26e3ec1dd3b45767268946aebfbc3250"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property that can be used to define the desired access to the device when opening it.  <a href="#a26e3ec1dd3b45767268946aebfbc3250">更多...</a><br /></td></tr>
+<tr class="separator:a26e3ec1dd3b45767268946aebfbc3250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bafdfce12e0ea8b8f9fa0c3c36ab4bb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gac860ed08eaeb7ccb3cbc879a22ca43c9">PropertyIDeviceAccessMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1bafdfce12e0ea8b8f9fa0c3c36ab4bb">grantedAccess</a></td></tr>
+<tr class="memdesc:a1bafdfce12e0ea8b8f9fa0c3c36ab4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) that can be used to query the granted access to the device after an attempt to open it.  <a href="#a1bafdfce12e0ea8b8f9fa0c3c36ab4bb">更多...</a><br /></td></tr>
+<tr class="separator:a1bafdfce12e0ea8b8f9fa0c3c36ab4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aead9a9546ea765538d3f95894afea912"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aead9a9546ea765538d3f95894afea912"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>DeviceManager</b></td></tr>
+<tr class="separator:aead9a9546ea765538d3f95894afea912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>This class and its functions represent an actual device detected by this interface in the current system. </p>
+<p>Instances of it can only be created by instances of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> class as only the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> has the precise knowledge to do that anyway. As a result from this fact pointers to instances of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> can be obtained via a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object only.</p>
+<dl class="section attention"><dt>注意</dt><dd><b>NEVER</b> try to explicitly delete an instance of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a>!</b> You did not allocate it and the result will be a crash! The <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> will take care of all resources for you.</dd></dl>
+<p>A valid pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object is needed to construct most of the other objects available in this interface.</p>
+<p>Almost every object requiering a valid pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object will need to device in an initialized state as the properties provided e.g. by the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b> will be constructed when the device is initialized. To initialize a device this class provides the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">Device::open</a></b>. However every object which needs an initialized device to be constructed successfully will try to open the device when it hasn't been opened before, so the user does not need to call this function explicitly.</p>
+<dl class="section attention"><dt>注意</dt><dd>Whenever a device is closed via a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4" title="Closes an opened device. ">mvIMPACT::acquire::Device::close</a></b> all other objects constructed with a pointer to that device(e.g. <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b> before will become invalid and need to be reconstructed afterwards, so don't close a device needlessly.</dd>
+<dd>
+Whenever the last instance to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">DeviceManager</a></b> object get's destroyed within the current process every remaining device that was opened in this process before will be closed automatically! Thus every instance to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> objects or objects created with a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object will become invalid automatically. Therefore the user has to make sure there is always at least one instance to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object within the current process unless no more device access functions shall be called! </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a20235ebedf424e31d1fed2433ba3408f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::Device::Device </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Copy constructor. </p>
+<p>Creates a new object from an existing device object. Keep in mind that this new object will provide access to the very same hardware and therefore you might as well use the original reference returned from the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b>. This constructor is only provided for internal reference counting to guarantee correct operation of the objects of this class under all platforms and languages. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4eeacbcb3dcfd03d39faa3eba43ead6f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::Device::~Device </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Class destructor. </p>
+<dl class="section note"><dt>注解</dt><dd>This destructor must only be called for objects that have been created directly by the user on unmanaged heaps. Under most circumstances this means <b>NEVER</b>. E.g. for instances that have been obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object do <b>NOT</b> call this destructor. The <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> will take care of all the resources for you. </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a00da7acbf28c1591163682b7bdf611a4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::Device::close </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Closes an opened device. </p>
+<p>This function closes a device previously opened again.</p>
+<dl class="section attention"><dt>注意</dt><dd>Whenever a device is closed via a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4" title="Closes an opened device. ">mvIMPACT::acquire::Device::close</a></b> all other objects constructed with a pointer to that device(e.g. <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b> before will become invalid and need to be reconstructed afterwards, so don't close a device needlessly.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">Device::open</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9" title="Returns the current initialisation status in this process. ">Device::isOpen</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41a5bc2d37b631bf6b258d9ac64a62b1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html">ComponentList</a> mvIMPACT::acquire::Device::deviceDriverFeatureList </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a list providing access to driver library specific features. </p>
+<p>This list does exist only once per device driver library. Changes in this list will affect all devices that are operated using this device driver library.</p>
+<dl class="section since"><dt>自从</dt><dd>2.17.0 </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="264,38,483,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="543,5,692,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="531,70,704,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="753,92,981,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1029,99,1253,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#afa84665420b30c9d83ed1aada601a583" title="Constructs a new mvIMPACT::acquire::GenICam::SystemModule object. " alt="" coords="267,5,440,61"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_interface_module.html#a2939c8a2d9adedceb650168ace3fcab5" title="Constructs a new mvIMPACT::acquire::GenICam::InterfaceModule object. " alt="" coords="264,85,443,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a08734e0c6fd862e3c6e7160c66b927ec"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html">UserData</a>&amp; mvIMPACT::acquire::Device::getUserData </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to a helper class to handle user specific data stored in the devices non-volatile memory(if available). </p>
+<dl class="section return"><dt>返回</dt><dd>A reference to a helper class to handle user specific data stored in the devices non-volatile memory(if available). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d37b729e39fcb65e29a66cb34c5b78c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Device::hasCapability </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#gab025951bf5eb52c67790e7ecd197b76e">TDeviceCapability</a>&#160;</td>
+          <td class="paramname"><em>capability</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks whether this device has a certain capability. </p>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the device has the capability in question</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">capability</td><td>The capability who's presence shall be checked. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a73fb3a8ac92b197700f04e1df9c250e7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HDEV mvIMPACT::acquire::Device::hDev </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A unique identifier for this device. </p>
+<dl class="section note"><dt>注解</dt><dd>This handle is <b>NOT</b> to be confused with the id stored in the devices EEPROM The latter one represents a number stored somewhere in the physical device's EEPROM, while this handle can be assumed as a handle from a software based point of view. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a826a7861a74496152b8b56d917ae1dbe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HDRV mvIMPACT::acquire::Device::hDrv </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>A unique identifier for the functionality offered by this device. </p>
+<dl class="section note"><dt>注解</dt><dd>This identifier is only valid, if the device has been initialized before by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">Device::open</a></b> </dd></dl>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html#af77f54da12e74ce5100afbb8cd8b12c7" title="Assign a new search base to the locator. " alt="" coords="240,5,413,61"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html#a5ec444f1ca44491ea53969ba7690e736" title="Constructs a new mvIMPACT::acquire::IOSubSystemBlueFOX object. " alt="" coords="244,85,409,141"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common.html#a0c3d31940f4d07a231a2b08e749d1ef1" title="Constructs a new mvIMPACT::acquire::IOSubSystemCommon object. " alt="" coords="203,165,450,221"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager.html#aa13872274650dd27f2b13fcb2463e5d8" title="Constructs a new mvIMPACT::acquire::CameraDescriptionManager object. " alt="" coords="231,245,423,301"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#aeb3e2612fd93d61ac176da74f235a0eb" title="Constructs a new function interface for the device pointed to by pDev. " alt="" coords="499,5,680,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a300801d194f3800120140ad4bcdbcd1a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Device::isInUse </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current usage status of this device. </p>
+<p>If this function returns <em>true</em>, this device was not in use at the time of calling this function. A call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">mvIMPACT::acquire::Device::open()</a></b> can still fail afterwards if some other process on the system claimed the device in the time between this call and the call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">mvIMPACT::acquire::Device::open()</a></b>.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">Device::open</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4" title="Closes an opened device. ">Device::close</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.0.11 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the device is in use by at least one process(this includes the calling process).</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,38,421,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="481,5,631,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,70,643,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,92,919,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,99,1192,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a1c8ba8de5814f1034487245ae57840f9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Device::isOpen </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current initialisation status in this process. </p>
+<p>If this function returns <em>true</em>, this only states that the current process has not opened the device in question already. A call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">mvIMPACT::acquire::Device::open()</a></b> can still fail because of some other process using this device.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">Device::open</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4" title="Closes an opened device. ">Device::close</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the device is initialized(opened) in the current process.</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html#af77f54da12e74ce5100afbb8cd8b12c7" title="Assign a new search base to the locator. " alt="" coords="216,5,389,61"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#aeb3e2612fd93d61ac176da74f235a0eb" title="Constructs a new function interface for the device pointed to by pDev. " alt="" coords="480,39,661,95"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager.html#aa13872274650dd27f2b13fcb2463e5d8" title="Constructs a new mvIMPACT::acquire::CameraDescriptionManager object. " alt="" coords="207,136,399,192"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac" title="Attach file protocol adapter to the corresponding properties. " alt="" coords="203,216,403,272"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e" title="Opens a file on the device. " alt="" coords="454,190,687,231"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60" title="Opens a file on the device. " alt="" coords="451,255,690,297"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b" title="Opens a file on the device. " alt="" coords="743,190,985,231"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619" title="Open file on device in write mode. " alt="" coords="739,255,989,297"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf4cb4c232b202a51c7161caf9b36165"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::Device::open </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Opens a device. </p>
+<p>This function will try to open the device represented by this instance of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>. If this fails for any reason an exception will be thrown. The exception object will contain additional information about the reason for the error.</p>
+<p>Calling this function is not really necessary, as each object for accessing other settings of the device or even the function interface need the device to be opened in order to be constructed. Therefore all the constructors for these objects check if the device is open by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9" title="Returns the current initialisation status in this process. ">mvIMPACT::acquire::Device::isOpen</a></b> and open the device if necessary.</p>
+<dl class="section note"><dt>注解</dt><dd>Keep in mind that the first object trying to open the device might therefore throw an exception as well if opening the device fails for some reason.</dd></dl>
+<p>Whenever a device is opened, the driver executes the following procedure:</p>
+<div align="center"><div class="image">
+<img src="./Device_Setting_Start_Procedure.png"  alt="Device_Setting_Start_Procedure.png"/>
+</div>
+</div> <center><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> setting start procedure</center><p>Please have a look <a href="../GUI_page_mvPropView.html" class="el">here</a> for more information about automatic loading of settings when a device is opened. </p>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,38,421,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="481,5,631,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,70,643,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,92,919,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,99,1192,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html#af77f54da12e74ce5100afbb8cd8b12c7" title="Assign a new search base to the locator. " alt="" coords="216,5,389,61"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#aeb3e2612fd93d61ac176da74f235a0eb" title="Constructs a new function interface for the device pointed to by pDev. " alt="" coords="480,39,661,95"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager.html#aa13872274650dd27f2b13fcb2463e5d8" title="Constructs a new mvIMPACT::acquire::CameraDescriptionManager object. " alt="" coords="207,136,399,192"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac" title="Attach file protocol adapter to the corresponding properties. " alt="" coords="203,216,403,272"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e" title="Opens a file on the device. " alt="" coords="454,190,687,231"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60" title="Opens a file on the device. " alt="" coords="451,255,690,297"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b" title="Opens a file on the device. " alt="" coords="743,190,985,231"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619" title="Open file on device in write mode. " alt="" coords="739,255,989,297"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3cf73e03bb07320488a703a573f043ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::Device::setID </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>newID</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a new ID to this device. </p>
+<p>To allow any application to distinguish between different devices of the same type the user can assign an unique ID to each device using this function. This ID currently is limited to values between 0 and 250 and is stored in the devices internal memory. This ID is <b>NOT</b> volatile. It will remain stored even if the device is unplugged.</p>
+<dl class="section note"><dt>注解</dt><dd><b>REMARKS:</b> </dd>
+<dd>
+<ul>
+<li>The device must be <b>closed</b> to assign a new ID.</li>
+<li>This ID is not to be confused with the handle returned by the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a73fb3a8ac92b197700f04e1df9c250e7" title="A unique identifier for this device. ">mvIMPACT::acquire::Device::hDev</a></b>. The latter one represents something which can be assumed as a handle from a software based point of view, while the ID represented by the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a239e7c6f214d441015ef15e4cbde83ca" title="An integer property (read-only) containing the device ID associated with this device. ">mvIMPACT::acquire::Device::deviceID</a></b> is an ID stored in the physical devices EEPROM.</li>
+<li>Not every device will offer this feature! When calling this function for a device that does not offer this feature, the function will return <b>mvIMPACT::acquire::DMR_FEATURE_NOT_AVAILABLE</b>.</li>
+</ul>
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">mvIMPACT::acquire::Device::open</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4" title="Closes an opened device. ">mvIMPACT::acquire::Device::close</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newID</td><td>The new <em>ID</em> that shall be assigned to the device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5584b58e68c8e3237b7fcdb698d36b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::Device::updateFirmware </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the firmware of the device. </p>
+<p>calling this function will cause the driver to download the firmware version compiled into the driver library into the devices internal memory. This ID is <b>NOT</b> volatile. It will remain stored even if the device is unplugged.</p>
+<dl class="section note"><dt>注解</dt><dd><ul>
+<li>This feature currently is only available for <b>mvBlueFOX</b> devices. To update the firmware of other devices please refer to the tool <code>mvDeviceConfigure(this tool also offers a command line interface)</code> </li>
+<li>Be sure what you are doing <b>before</b> calling this function. Under normal circumstances it won't be necessary to update a devices firmware.</li>
+<li>The download will take some time (depending on the device up to 30 seconds). During this time the device and the thread calling this function will <b>NOT</b> respond.</li>
+<li>Do <b>NOT</b> interrupt this download.</li>
+<li>After a successful download a USB device needs to be unplugged and plugged in again. Otherwise the new firmware version will not be activated.</li>
+<li>To download a new firmware version the device must be <b>closed</b>.</li>
+<li>Not every device will offer this feature! When calling this function for a device that does not offer this feature, the function will return <b>mvIMPACT::acquire::DMR_FEATURE_NOT_AVAILABLE</b>.</li>
+</ul>
+</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">mvIMPACT::acquire::Device::open</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a00da7acbf28c1591163682b7bdf611a4" title="Closes an opened device. ">mvIMPACT::acquire::Device::close</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="aa5cdb4615de973bbf1c24f2fd5a3d1b5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga4b53c0f0c5478e5c079b4c2082c53690">PropertyIAcquisitionStartStopBehaviour</a> mvIMPACT::acquire::Device::acquisitionStartStopBehaviour</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the start/stop behaviour during acquisition of this driver instance. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TAcquisitionStartStopBehaviour</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become read-only while the device is open.</dd>
+<dd>
+This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not.</dd></dl>
+<p>Not every device will offer the same options. Check for valid modes by reading the properties translation dictionary with the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#af5ec5a9c3657af2917f4ead78ef067db" title="This function reads a single translation table string entry from a property. ">mvIMPACT::acquire::PropertyIAcquisitionStartStopBehaviour::getTranslationDictString</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0c50700ebff2806621c63d03b624f200" title="This function reads a single translation table value entry from a property. ">mvIMPACT::acquire::PropertyIAcquisitionStartStopBehaviour::getTranslationDictValue</a></b>.</p>
+<dl class="section since"><dt>自从</dt><dd>1.12.11 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1cce00cf697d950dace425bcc7a61b82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::Device::allowUnrecommendedFeatures</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to unlock certain features, that are available but not recommended by the device manufacturer. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<p>This property will be invisible by default. As the name indicates its use requires special knowledge that can be provided by the device manufacturer on request.</p>
+<dl class="section note"><dt>注解</dt><dd>Once the device is in use (has been initialized) this property will become <b></b>(read-only).</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>Unlocking certain unrecommended features might result in the appearance of new translation dictionary entries for certain properties. Some of these translation strings might contain an exclamation mark ('!') in its name. <b>NEVER</b> rely on that! These exclamation marks or even the complete entry might disappear with a new driver release without further notice! </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3130a245e1dc22be91511ce6a6bdf957"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::Device::autoLoadSettingOrder</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property <b></b>(read-only) containing the auto load order of feature settings that is executed during initialisation of the device. </p>
+<p>The first setting detected on the system will be used. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae12276c8f5655fa8d771774804e53c13"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga4a143abc5e951b2d4a22a0a835d4c5d1">PropertyIDeviceCapability</a> mvIMPACT::acquire::Device::capabilities</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) defining special device capabilities. </p>
+<p>This property allows to query certain device capabilities without opening the device.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceCapability</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a356137fa9ec71b56e7981276aaf3c4f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::Device::customDataDirectory</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property <b></b>(read-only once the device is open) containing a path to a custom directory for the location of. </p>
+<p>camera description files, etc.</p>
+<p>When a custom path is assigned to this property this path will be used to locate certain driver specific files and folders. Under this folder the following structure must be created:</p>
+<div class="fragment"><div class="line">&lt;<a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a356137fa9ec71b56e7981276aaf3c4f2">customDataDirectory</a>&gt;</div>
+<div class="line">    |- CameraFiles  <span class="comment">// this folder will be searched by frame grabbers for camera description files</span></div>
+<div class="line">    |- GenICam      <span class="comment">// this folder will be searched by GenICam compliant devices that refer to a local GenICam&amp;trade; description file</span></div>
+</div><!-- fragment --><p>If this property is left empty </p><div class="fragment"><div class="line">%ALL USERS%\Documents\MATRIX VISION\mvIMPACT acquire</div>
+</div><!-- fragment --><p> will be used by default on Windows&trade; platforms and </p><div class="fragment"><div class="line">/etc/matrix-vision/mvimpact-acquire</div>
+</div><!-- fragment --><p> on Linux platforms. </p>
+
+</div>
+</div>
+<a class="anchor" id="a703ef11aee37b938415a85c9f9256222"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Device::defaultRequestCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property that defines the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects to be created when the device is opened. </p>
+<p>By writing to this property an application can define the default number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects that will be allocated when opening the device.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become read-only while the device is open. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a26e3ec1dd3b45767268946aebfbc3250"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gac860ed08eaeb7ccb3cbc879a22ca43c9">PropertyIDeviceAccessMode</a> mvIMPACT::acquire::Device::desiredAccess</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property that can be used to define the desired access to the device when opening it. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceAccessMode</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become read-only while the device is open.</dd>
+<dd>
+This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3cc7db9051fa3ebe73a8f38a274dad19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaa711dff24b159d7f25686f736db21a2f">PropertyIDeviceClass</a> mvIMPACT::acquire::Device::deviceClass</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) defining the device class this device belongs to. </p>
+<dl class="section note"><dt>注解</dt><dd>This property has been added to the device driver in version 1.8.3 thus might not be available when working with old device drivers. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a239e7c6f214d441015ef15e4cbde83ca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Device::deviceID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the device ID associated with this device. </p>
+<p>A device ID can be used to identify a certain device in the system. The ID is an 8 bit unsigned integer value stored in the device's EEPROM. In order to allow the distinct detection of a device via its device ID, the user has to make sure that two devices belonging to the same product family never share the same ID.</p>
+<dl class="section note"><dt>注解</dt><dd><b>REMARKS:</b> </dd>
+<dd>
+<ul>
+<li>To modify the device ID a separate tool will be provided. To modify the device ID without that tool the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a3cf73e03bb07320488a703a573f043ac" title="Assigns a new ID to this device. ">mvIMPACT::acquire::Device::setID</a></b> can be called.</li>
+<li>This ID is not to be confused with the handle returned by the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a73fb3a8ac92b197700f04e1df9c250e7" title="A unique identifier for this device. ">mvIMPACT::acquire::Device::hDev</a></b>. The latter one represents something which can be assumed as a handle from a software based point of view, while the ID represented by the property <em>deviceID</em> is an ID stored in the physical devices EEPROM. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a52f3dd5742f14fff0c6fabeae0ccaee1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::Device::deviceVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property <b></b>(read-only) containing the version(e.g. the hard ware revision) of this device. </p>
+<dl class="section note"><dt>注解</dt><dd>This feature is supported by every device driver. If a device does not seem to support this feature (calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> returns false) a driver update will fix this. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a74abbd0bc1fda2dce54e28c6076f9528"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Device::firmwareVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the firmware version of this device. </p>
+<p>A firmware is considered to be something that is stored in non volatile device memory, thus when a device is disconnected from the power supply and plugged into a different target system the same code will be executed on the device.</p>
+<p>Some devices however may not support non volatile memory to accommodate a firmware. Typically the device driver then will download a firmware into the devices RAM at startup. Such devices will be considered as not supporting a firmware as in this case only the driver version present on the target system has impact on the devices behaviour.</p>
+<p>When a device does not support a non volatile firmware, reading this property will always return 0. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bafdfce12e0ea8b8f9fa0c3c36ab4bb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gac860ed08eaeb7ccb3cbc879a22ca43c9">PropertyIDeviceAccessMode</a> mvIMPACT::acquire::Device::grantedAccess</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) that can be used to query the granted access to the device after an attempt to open it. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceAccessMode</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8e6d960358632d3e55f2f20474a3aa26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga111916e947fe10d171bc6c2a10f15ae2">PropertyIHWUpdateResult</a> mvIMPACT::acquire::Device::HWUpdateResult</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) defining user executed hardware update results. </p>
+<p>This property e.g. might contain the result of a user executed firmware update. Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::THWUpdateResult</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4dd0ecc9d456bb5ddc01d844c9d6f2d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gab90d40765ad00c8bd36b05645f3472dc">PropertyIDeviceInterfaceLayout</a> mvIMPACT::acquire::Device::interfaceLayout</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to define which interface layout shall be used when the device is opened. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceInterfaceLayout</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>Once the device is in use (has been initialized) this property will become <b></b>(read-only).</dd>
+<dd>
+This feature is available for every device. A device not offering this feature requires a driver update. Always check for the availability of this feature by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b>.</dd></dl>
+<p>Not every device will offer the same options. Check for valid modes by reading the properties translation dictionary with the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#af5ec5a9c3657af2917f4ead78ef067db" title="This function reads a single translation table string entry from a property. ">mvIMPACT::acquire::PropertyIDeviceInterfaceLayout::getTranslationDictString</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0c50700ebff2806621c63d03b624f200" title="This function reads a single translation table value entry from a property. ">mvIMPACT::acquire::PropertyIDeviceInterfaceLayout::getTranslationDictValue</a></b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac4bcb8da9f46585ea042a6b3fa618933"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga8af4dfc27c6b4403fb87ad509f67181b">PropertyIDeviceLoadSettings</a> mvIMPACT::acquire::Device::loadSettings</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to define which previously stored setting to load when the device is opened. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceLoadSettings</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>Once the device is in use (has been initialized) this property will become <b></b>(read-only). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa3ee34abadfd5192050fb3281282190d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::Device::manufacturer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property <b></b>(read-only) containing the name of the manufacturer of this device. </p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.11.3 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad10fa0ebc71bae2bf872fcbed6d34701"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::Device::manufacturerSpecificInformation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property <b></b>(read-only) containing manufacturer specific information of this device. </p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.18.3 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a93878aa300a8cff3dc3c4ef84d5d4276"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Device::resultQueueCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property that defines the number of result queues to be created when the device is opened. </p>
+<p>By writing to this property an application can define the number of result queues that will be allocated when opening the device. When requesting buffers the user can define in which result queue a processed request shall end up by writing to the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#a9a5ed0f41db0291bc13ebe37e09fb84d" title="An integer property defining to which result queue the resulting image will be sent after the acquisi...">mvIMPACT::acquire::ImageRequestControl::resultQueue</a></b>. When waiting for a request to become ready by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b> the application can specify on which queue to wait.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become read-only while the device is open.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#a9a5ed0f41db0291bc13ebe37e09fb84d" title="An integer property defining to which result queue the resulting image will be sent after the acquisi...">mvIMPACT::acquire::ImageRequestControl::resultQueue</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4861037a845148f813bc72bad7334ebd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga1127fb45b2263d328e769e81b1096baf">PropertyIDeviceState</a> mvIMPACT::acquire::Device::state</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) containing the current state of this device. </p>
+<p>This property e.g. provides information about the current state of the device. For USB devices this can e.g. indicate whether a device is currently plugged into the system or not.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceState</b>.</p>
+<p><b>GenICam/GenTL</b> <b>device</b> <b>specific:</b> In order to reduce the amount of network traffic to a minimum, this property will only be updated automatically for network devices if the property <b>mvIMPACT::acquire::Device::registerErrorEvent</b> is set to <b>mvIMPACT::acquire::bTrue</b> (which is the default behaviour). If the IP addresses stay the same the connection is automatically re-established then once the device is detected by the driver again. However if the IP address of the device and/or the network adapter of the system it is used from changes <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html#a2078f9532f67854352c3be3e32364879" title="Updates the internal device list. ">mvIMPACT::acquire::DeviceManager::updateDeviceList()</a></b> must be called regardless of the value of <b>mvIMPACT::acquire::Device::registerErrorEvent</b> before a device that was lost can re-establish a connection to the capture driver. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4d5db996353c3b9ada5f6a15fb19f9eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::Device::userControlledImageProcessingEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining whether user controlled image processing related features shall be created under 'System Settings' or not. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<p>Setting this feature to <b>mvIMPACT::acquire::bTrue</b> will result in a separate thread being created when opening the device driver instance. The thread will decouple the host based image processing from the acquisition engine. Apart from that it will also create additional properties in the <code>ImageProcessingControl</code> list under <code><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html" title="A base class for accessing settings that control the overall behaviour of a device driver...">SystemSettings</a></code> that can be used to control the behaviour of this thread. This might be useful e.g. to make sure images can be acquired faster than they can be processed and it is not needed to processed each image.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become read-only while the device is open.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html#a0e9c91668ae90fb631d5d69c32395fce" title="An enumerated integer property influencing the behaviour of the internal image processing pipeline...">mvIMPACT::acquire::SystemSettings::imageProcessingMode</a></b> <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a523d15ab27c20de51f0c5ffd41ff3834" title="Checks if image processing that was set up for this request has been skipped for performance reasons...">mvIMPACT::acquire::Request::hasProcessingBeenSkipped</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.14.0 </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

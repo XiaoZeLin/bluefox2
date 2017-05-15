@@ -1,0 +1,1746 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::ImageFormatControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::ImageFormatControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category for Image Format Control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::ImageFormatControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="619,124,781,180"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,203,555,245"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="613,203,787,245"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="606,282,794,323"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,203,355,245"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,203,155,245"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a4588e35f52c727616fad4f7331d625a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a4588e35f52c727616fad4f7331d625a7">ImageFormatControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a4588e35f52c727616fad4f7331d625a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html" title="Category for Image Format Control features. ">mvIMPACT::acquire::GenICam::ImageFormatControl</a></b> object.  <a href="#a4588e35f52c727616fad4f7331d625a7">更多...</a><br /></td></tr>
+<tr class="separator:a4588e35f52c727616fad4f7331d625a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a8d8306c00755dc6bdaf9ef5b74806a62"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a8d8306c00755dc6bdaf9ef5b74806a62">sensorWidth</a></td></tr>
+<tr class="memdesc:a8d8306c00755dc6bdaf9ef5b74806a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Effective width of the sensor in pixels.  <a href="#a8d8306c00755dc6bdaf9ef5b74806a62">更多...</a><br /></td></tr>
+<tr class="separator:a8d8306c00755dc6bdaf9ef5b74806a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af009ab8eff29c63d559ef2b7d01f4385"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#af009ab8eff29c63d559ef2b7d01f4385">sensorHeight</a></td></tr>
+<tr class="memdesc:af009ab8eff29c63d559ef2b7d01f4385"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Effective height of the sensor in pixels.  <a href="#af009ab8eff29c63d559ef2b7d01f4385">更多...</a><br /></td></tr>
+<tr class="separator:af009ab8eff29c63d559ef2b7d01f4385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae184aeb41a502148279aa64314633ec7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ae184aeb41a502148279aa64314633ec7">sensorShutterMode</a></td></tr>
+<tr class="memdesc:ae184aeb41a502148279aa64314633ec7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the shutter mode of the device.  <a href="#ae184aeb41a502148279aa64314633ec7">更多...</a><br /></td></tr>
+<tr class="separator:ae184aeb41a502148279aa64314633ec7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a061befe497a01e76983ba841c48fbbad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a061befe497a01e76983ba841c48fbbad">sensorTaps</a></td></tr>
+<tr class="memdesc:a061befe497a01e76983ba841c48fbbad"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Number of taps of the camera sensor.  <a href="#a061befe497a01e76983ba841c48fbbad">更多...</a><br /></td></tr>
+<tr class="separator:a061befe497a01e76983ba841c48fbbad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaeaaa96bce4671d14b71656f65e52749"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#aaeaaa96bce4671d14b71656f65e52749">sensorDigitizationTaps</a></td></tr>
+<tr class="memdesc:aaeaaa96bce4671d14b71656f65e52749"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Number of digitized samples outputted simultaneously by the camera A/D conversion stage.  <a href="#aaeaaa96bce4671d14b71656f65e52749">更多...</a><br /></td></tr>
+<tr class="separator:aaeaaa96bce4671d14b71656f65e52749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c55b3c587d1938aaed00089b322114c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a2c55b3c587d1938aaed00089b322114c">widthMax</a></td></tr>
+<tr class="memdesc:a2c55b3c587d1938aaed00089b322114c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Maximum width of the image (in pixels).  <a href="#a2c55b3c587d1938aaed00089b322114c">更多...</a><br /></td></tr>
+<tr class="separator:a2c55b3c587d1938aaed00089b322114c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8540e7cd78b644f597cd679a11558603"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a8540e7cd78b644f597cd679a11558603">heightMax</a></td></tr>
+<tr class="memdesc:a8540e7cd78b644f597cd679a11558603"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Maximum height of the image (in pixels).  <a href="#a8540e7cd78b644f597cd679a11558603">更多...</a><br /></td></tr>
+<tr class="separator:a8540e7cd78b644f597cd679a11558603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad28b74200b11a31434c8bfeedc408e2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#aad28b74200b11a31434c8bfeedc408e2">regionSelector</a></td></tr>
+<tr class="memdesc:aad28b74200b11a31434c8bfeedc408e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the Region of interest to control.  <a href="#aad28b74200b11a31434c8bfeedc408e2">更多...</a><br /></td></tr>
+<tr class="separator:aad28b74200b11a31434c8bfeedc408e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad297d28dbc9bcd73a6f6af1ddaff8b6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ad297d28dbc9bcd73a6f6af1ddaff8b6f">regionMode</a></td></tr>
+<tr class="memdesc:ad297d28dbc9bcd73a6f6af1ddaff8b6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls if the selected Region of interest is active and streaming.  <a href="#ad297d28dbc9bcd73a6f6af1ddaff8b6f">更多...</a><br /></td></tr>
+<tr class="separator:ad297d28dbc9bcd73a6f6af1ddaff8b6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0cbc8a0b29c1406c45ef8b16bd92bdb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#aa0cbc8a0b29c1406c45ef8b16bd92bdb">regionDestination</a></td></tr>
+<tr class="memdesc:aa0cbc8a0b29c1406c45ef8b16bd92bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Control the destination of the selected region.  <a href="#aa0cbc8a0b29c1406c45ef8b16bd92bdb">更多...</a><br /></td></tr>
+<tr class="separator:aa0cbc8a0b29c1406c45ef8b16bd92bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25e094bef27e094cac127f308dae8407"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a25e094bef27e094cac127f308dae8407">regionIDValue</a></td></tr>
+<tr class="memdesc:a25e094bef27e094cac127f308dae8407"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns a unique Identifier value that correspond to the selected Region.  <a href="#a25e094bef27e094cac127f308dae8407">更多...</a><br /></td></tr>
+<tr class="separator:a25e094bef27e094cac127f308dae8407"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1096fd210e8ed296fc47a416688b8678"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a1096fd210e8ed296fc47a416688b8678">componentSelector</a></td></tr>
+<tr class="memdesc:a1096fd210e8ed296fc47a416688b8678"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects a component to activate/deactivate its data streaming.  <a href="#a1096fd210e8ed296fc47a416688b8678">更多...</a><br /></td></tr>
+<tr class="separator:a1096fd210e8ed296fc47a416688b8678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12e4c6659914f9a24825c2f4a0720cfe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a12e4c6659914f9a24825c2f4a0720cfe">componentEnable</a></td></tr>
+<tr class="memdesc:a12e4c6659914f9a24825c2f4a0720cfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Controls if the selected component streaming is active.  <a href="#a12e4c6659914f9a24825c2f4a0720cfe">更多...</a><br /></td></tr>
+<tr class="separator:a12e4c6659914f9a24825c2f4a0720cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99685f27c0089fe69239c14a503342c1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a99685f27c0089fe69239c14a503342c1">componentIDValue</a></td></tr>
+<tr class="memdesc:a99685f27c0089fe69239c14a503342c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns a unique Identifier value that correspond to the selected <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> type.  <a href="#a99685f27c0089fe69239c14a503342c1">更多...</a><br /></td></tr>
+<tr class="separator:a99685f27c0089fe69239c14a503342c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca6d7404e0a91dffc11e1ac777f2d23"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a9ca6d7404e0a91dffc11e1ac777f2d23">imageComponentSelector</a></td></tr>
+<tr class="memdesc:a9ca6d7404e0a91dffc11e1ac777f2d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature is deprecated (See ComponentSelector).  <a href="#a9ca6d7404e0a91dffc11e1ac777f2d23">更多...</a><br /></td></tr>
+<tr class="separator:a9ca6d7404e0a91dffc11e1ac777f2d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb89d1bfa99e26551bb92e842195d2f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#abb89d1bfa99e26551bb92e842195d2f8">imageComponentEnable</a></td></tr>
+<tr class="memdesc:abb89d1bfa99e26551bb92e842195d2f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. This feature is deprecated (See ComponentEnable).  <a href="#abb89d1bfa99e26551bb92e842195d2f8">更多...</a><br /></td></tr>
+<tr class="separator:abb89d1bfa99e26551bb92e842195d2f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26c77884743e27837dda64cc08d9266c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a26c77884743e27837dda64cc08d9266c">width</a></td></tr>
+<tr class="memdesc:a26c77884743e27837dda64cc08d9266c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Width of the image provided by the device (in pixels).  <a href="#a26c77884743e27837dda64cc08d9266c">更多...</a><br /></td></tr>
+<tr class="separator:a26c77884743e27837dda64cc08d9266c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3f3b5d6644aa765cce4f52b872a5c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a5e3f3b5d6644aa765cce4f52b872a5c3">height</a></td></tr>
+<tr class="memdesc:a5e3f3b5d6644aa765cce4f52b872a5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Height of the image provided by the device (in pixels).  <a href="#a5e3f3b5d6644aa765cce4f52b872a5c3">更多...</a><br /></td></tr>
+<tr class="separator:a5e3f3b5d6644aa765cce4f52b872a5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae60f5a436f0da44d0afa63e489c56bea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ae60f5a436f0da44d0afa63e489c56bea">offsetX</a></td></tr>
+<tr class="memdesc:ae60f5a436f0da44d0afa63e489c56bea"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Horizontal offset from the origin to the region of interest (in pixels).  <a href="#ae60f5a436f0da44d0afa63e489c56bea">更多...</a><br /></td></tr>
+<tr class="separator:ae60f5a436f0da44d0afa63e489c56bea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37364805be675d07c59be811b50cda3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#af37364805be675d07c59be811b50cda3">offsetY</a></td></tr>
+<tr class="memdesc:af37364805be675d07c59be811b50cda3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Vertical offset from the origin to the region of interest (in pixels).  <a href="#af37364805be675d07c59be811b50cda3">更多...</a><br /></td></tr>
+<tr class="separator:af37364805be675d07c59be811b50cda3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1cd2b204ca9e46d5408f2d1fff86d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ace1cd2b204ca9e46d5408f2d1fff86d8">mvMultiAreaMode</a></td></tr>
+<tr class="memdesc:ace1cd2b204ca9e46d5408f2d1fff86d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the overall multi area mode.  <a href="#ace1cd2b204ca9e46d5408f2d1fff86d8">更多...</a><br /></td></tr>
+<tr class="separator:ace1cd2b204ca9e46d5408f2d1fff86d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1672002a8299739cf2253de54bab577"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ae1672002a8299739cf2253de54bab577">mvAreaSelector</a></td></tr>
+<tr class="memdesc:ae1672002a8299739cf2253de54bab577"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the area.  <a href="#ae1672002a8299739cf2253de54bab577">更多...</a><br /></td></tr>
+<tr class="separator:ae1672002a8299739cf2253de54bab577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67272b208d0d914f46877d65a66c95f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a67272b208d0d914f46877d65a66c95f3">mvAreaEnable</a></td></tr>
+<tr class="memdesc:a67272b208d0d914f46877d65a66c95f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Is this area active?  <a href="#a67272b208d0d914f46877d65a66c95f3">更多...</a><br /></td></tr>
+<tr class="separator:a67272b208d0d914f46877d65a66c95f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6804a01fa7faa08f73491fb0aa1d7c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a6804a01fa7faa08f73491fb0aa1d7c05">mvAreaWidth</a></td></tr>
+<tr class="memdesc:a6804a01fa7faa08f73491fb0aa1d7c05"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Width of this area's part of the image (in pixels).  <a href="#a6804a01fa7faa08f73491fb0aa1d7c05">更多...</a><br /></td></tr>
+<tr class="separator:a6804a01fa7faa08f73491fb0aa1d7c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3bc8fc4c97d3c668a504fec6b990b1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#af3bc8fc4c97d3c668a504fec6b990b1b">mvAreaHeight</a></td></tr>
+<tr class="memdesc:af3bc8fc4c97d3c668a504fec6b990b1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Height of this area's part of the image (in pixels).  <a href="#af3bc8fc4c97d3c668a504fec6b990b1b">更多...</a><br /></td></tr>
+<tr class="separator:af3bc8fc4c97d3c668a504fec6b990b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78f0647bc26627d3b47d3600beca1586"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a78f0647bc26627d3b47d3600beca1586">mvAreaOffsetX</a></td></tr>
+<tr class="memdesc:a78f0647bc26627d3b47d3600beca1586"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Horizontal offset of this area within the image (in pixels).  <a href="#a78f0647bc26627d3b47d3600beca1586">更多...</a><br /></td></tr>
+<tr class="separator:a78f0647bc26627d3b47d3600beca1586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a413bde6385d3cdf6265e7bf2dabe2fd6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a413bde6385d3cdf6265e7bf2dabe2fd6">mvAreaOffsetY</a></td></tr>
+<tr class="memdesc:a413bde6385d3cdf6265e7bf2dabe2fd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Vertical offset of this area within the image (in pixels).  <a href="#a413bde6385d3cdf6265e7bf2dabe2fd6">更多...</a><br /></td></tr>
+<tr class="separator:a413bde6385d3cdf6265e7bf2dabe2fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada77ff6906f66a517387bb52d7fb755f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ada77ff6906f66a517387bb52d7fb755f">mvAreaResultingOffsetX</a></td></tr>
+<tr class="memdesc:ada77ff6906f66a517387bb52d7fb755f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Horizontal offset of this area within the resulting image (in pixels).  <a href="#ada77ff6906f66a517387bb52d7fb755f">更多...</a><br /></td></tr>
+<tr class="separator:ada77ff6906f66a517387bb52d7fb755f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6df2ff8dd4593af0221154f44878f7fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a6df2ff8dd4593af0221154f44878f7fd">mvAreaResultingOffsetY</a></td></tr>
+<tr class="memdesc:a6df2ff8dd4593af0221154f44878f7fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Vertical offset of this area within the resulting image (in pixels).  <a href="#a6df2ff8dd4593af0221154f44878f7fd">更多...</a><br /></td></tr>
+<tr class="separator:a6df2ff8dd4593af0221154f44878f7fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cf918c428ca52a9c1f7f8b481ab2bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a96cf918c428ca52a9c1f7f8b481ab2bf">linePitchEnable</a></td></tr>
+<tr class="memdesc:a96cf918c428ca52a9c1f7f8b481ab2bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. This feature controls whether the LinePitch feature is writable.  <a href="#a96cf918c428ca52a9c1f7f8b481ab2bf">更多...</a><br /></td></tr>
+<tr class="separator:a96cf918c428ca52a9c1f7f8b481ab2bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a709a0ec40bef18f6a7a57d17b7a1fb72"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a709a0ec40bef18f6a7a57d17b7a1fb72">linePitch</a></td></tr>
+<tr class="memdesc:a709a0ec40bef18f6a7a57d17b7a1fb72"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Total number of bytes between the starts of 2 consecutive lines.  <a href="#a709a0ec40bef18f6a7a57d17b7a1fb72">更多...</a><br /></td></tr>
+<tr class="separator:a709a0ec40bef18f6a7a57d17b7a1fb72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc9a8da47925016f49531ccc884fcf8a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#abc9a8da47925016f49531ccc884fcf8a">binningSelector</a></td></tr>
+<tr class="memdesc:abc9a8da47925016f49531ccc884fcf8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which binning engine is controlled by the BinningHorizontal and BinningVertical features.  <a href="#abc9a8da47925016f49531ccc884fcf8a">更多...</a><br /></td></tr>
+<tr class="separator:abc9a8da47925016f49531ccc884fcf8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c3bf007ccc16a550ae487cddb9343e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#aa5c3bf007ccc16a550ae487cddb9343e">binningHorizontalMode</a></td></tr>
+<tr class="memdesc:aa5c3bf007ccc16a550ae487cddb9343e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the mode to use to combine horizontal photo-sensitive cells together when BinningHorizontal is used.  <a href="#aa5c3bf007ccc16a550ae487cddb9343e">更多...</a><br /></td></tr>
+<tr class="separator:aa5c3bf007ccc16a550ae487cddb9343e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a907bd8d4f8c18b487718a5cfea0ed2e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a907bd8d4f8c18b487718a5cfea0ed2e6">binningHorizontal</a></td></tr>
+<tr class="memdesc:a907bd8d4f8c18b487718a5cfea0ed2e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Number of horizontal photo-sensitive cells to combine together.  <a href="#a907bd8d4f8c18b487718a5cfea0ed2e6">更多...</a><br /></td></tr>
+<tr class="separator:a907bd8d4f8c18b487718a5cfea0ed2e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0da18196345e5cfa2a106b143afd777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#aa0da18196345e5cfa2a106b143afd777">binningVerticalMode</a></td></tr>
+<tr class="memdesc:aa0da18196345e5cfa2a106b143afd777"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the mode used to combine horizontal photo-sensitive cells together when BinningVertical is used.  <a href="#aa0da18196345e5cfa2a106b143afd777">更多...</a><br /></td></tr>
+<tr class="separator:aa0da18196345e5cfa2a106b143afd777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac766f2fc87ea58efeb031ccdd83d204a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ac766f2fc87ea58efeb031ccdd83d204a">binningVertical</a></td></tr>
+<tr class="memdesc:ac766f2fc87ea58efeb031ccdd83d204a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Number of vertical photo-sensitive cells to combine together.  <a href="#ac766f2fc87ea58efeb031ccdd83d204a">更多...</a><br /></td></tr>
+<tr class="separator:ac766f2fc87ea58efeb031ccdd83d204a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8eae7ba917fb06636756e081796006b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ae8eae7ba917fb06636756e081796006b">decimationHorizontalMode</a></td></tr>
+<tr class="memdesc:ae8eae7ba917fb06636756e081796006b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the mode used to reduce the horizontal resolution when DecimationHorizontal is used.  <a href="#ae8eae7ba917fb06636756e081796006b">更多...</a><br /></td></tr>
+<tr class="separator:ae8eae7ba917fb06636756e081796006b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af3c2ae5e5f9aaea7a762f3cd10ce1ebb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#af3c2ae5e5f9aaea7a762f3cd10ce1ebb">decimationHorizontal</a></td></tr>
+<tr class="memdesc:af3c2ae5e5f9aaea7a762f3cd10ce1ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Horizontal sub-sampling of the image.  <a href="#af3c2ae5e5f9aaea7a762f3cd10ce1ebb">更多...</a><br /></td></tr>
+<tr class="separator:af3c2ae5e5f9aaea7a762f3cd10ce1ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81098f47bf7166c3b8abb47fde14ed85"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a81098f47bf7166c3b8abb47fde14ed85">decimationVerticalMode</a></td></tr>
+<tr class="memdesc:a81098f47bf7166c3b8abb47fde14ed85"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the mode used to reduce the Vertical resolution when DecimationVertical is used.  <a href="#a81098f47bf7166c3b8abb47fde14ed85">更多...</a><br /></td></tr>
+<tr class="separator:a81098f47bf7166c3b8abb47fde14ed85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee18567f6502e019607cab86903a68af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#aee18567f6502e019607cab86903a68af">decimationVertical</a></td></tr>
+<tr class="memdesc:aee18567f6502e019607cab86903a68af"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Vertical sub-sampling of the image.  <a href="#aee18567f6502e019607cab86903a68af">更多...</a><br /></td></tr>
+<tr class="separator:aee18567f6502e019607cab86903a68af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53ced6d3112b74803251afaad3bfe073"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a53ced6d3112b74803251afaad3bfe073">reverseX</a></td></tr>
+<tr class="memdesc:a53ced6d3112b74803251afaad3bfe073"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Flip horizontally the image sent by the device.  <a href="#a53ced6d3112b74803251afaad3bfe073">更多...</a><br /></td></tr>
+<tr class="separator:a53ced6d3112b74803251afaad3bfe073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5909e5548bb71e53b5d7d32d1e06c894"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a5909e5548bb71e53b5d7d32d1e06c894">reverseY</a></td></tr>
+<tr class="memdesc:a5909e5548bb71e53b5d7d32d1e06c894"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Flip vertically the image sent by the device.  <a href="#a5909e5548bb71e53b5d7d32d1e06c894">更多...</a><br /></td></tr>
+<tr class="separator:a5909e5548bb71e53b5d7d32d1e06c894"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f91f3c763df04e2957c3435a76705aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a7f91f3c763df04e2957c3435a76705aa">pixelFormat</a></td></tr>
+<tr class="memdesc:a7f91f3c763df04e2957c3435a76705aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Format of the pixels provided by the device.  <a href="#a7f91f3c763df04e2957c3435a76705aa">更多...</a><br /></td></tr>
+<tr class="separator:a7f91f3c763df04e2957c3435a76705aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afece092c2b57040873197c80520a2d65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#afece092c2b57040873197c80520a2d65">pixelFormatInfoSelector</a></td></tr>
+<tr class="memdesc:afece092c2b57040873197c80520a2d65"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Select the pixel format for which the information will be returned.  <a href="#afece092c2b57040873197c80520a2d65">更多...</a><br /></td></tr>
+<tr class="separator:afece092c2b57040873197c80520a2d65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883b137388bec227535b01c76661c634"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a883b137388bec227535b01c76661c634">pixelFormatInfoID</a></td></tr>
+<tr class="memdesc:a883b137388bec227535b01c76661c634"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the value used by the streaming channels to identify the selected pixel format.  <a href="#a883b137388bec227535b01c76661c634">更多...</a><br /></td></tr>
+<tr class="separator:a883b137388bec227535b01c76661c634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9eac6c5f816b0325c6d82d6007b44c33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a9eac6c5f816b0325c6d82d6007b44c33">pixelCoding</a></td></tr>
+<tr class="memdesc:a9eac6c5f816b0325c6d82d6007b44c33"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature is deprecated.  <a href="#a9eac6c5f816b0325c6d82d6007b44c33">更多...</a><br /></td></tr>
+<tr class="separator:a9eac6c5f816b0325c6d82d6007b44c33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53cd02f210eb37fea2b598a5918b92b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ae53cd02f210eb37fea2b598a5918b92b">pixelSize</a></td></tr>
+<tr class="memdesc:ae53cd02f210eb37fea2b598a5918b92b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Total size in bits of a pixel of the image.  <a href="#ae53cd02f210eb37fea2b598a5918b92b">更多...</a><br /></td></tr>
+<tr class="separator:ae53cd02f210eb37fea2b598a5918b92b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2b95c8ec6a3310fe5203ad1146fa41"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a4c2b95c8ec6a3310fe5203ad1146fa41">pixelColorFilter</a></td></tr>
+<tr class="memdesc:a4c2b95c8ec6a3310fe5203ad1146fa41"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Type of color filter that is applied to the image.  <a href="#a4c2b95c8ec6a3310fe5203ad1146fa41">更多...</a><br /></td></tr>
+<tr class="separator:a4c2b95c8ec6a3310fe5203ad1146fa41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a434df34fdcccc6adeb2c2b1ebc9ccc82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a434df34fdcccc6adeb2c2b1ebc9ccc82">pixelDynamicRangeMin</a></td></tr>
+<tr class="memdesc:a434df34fdcccc6adeb2c2b1ebc9ccc82"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Minimum value that can be returned during the digitization process.  <a href="#a434df34fdcccc6adeb2c2b1ebc9ccc82">更多...</a><br /></td></tr>
+<tr class="separator:a434df34fdcccc6adeb2c2b1ebc9ccc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea6f4380cf3602ce729c53f83ec078c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a3ea6f4380cf3602ce729c53f83ec078c">pixelDynamicRangeMax</a></td></tr>
+<tr class="memdesc:a3ea6f4380cf3602ce729c53f83ec078c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Maximum value that will be returned during the digitization process.  <a href="#a3ea6f4380cf3602ce729c53f83ec078c">更多...</a><br /></td></tr>
+<tr class="separator:a3ea6f4380cf3602ce729c53f83ec078c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1008e10eaea4f9fe5a93410883543de"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#af1008e10eaea4f9fe5a93410883543de">testPatternGeneratorSelector</a></td></tr>
+<tr class="memdesc:af1008e10eaea4f9fe5a93410883543de"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which test pattern generator is controlled by the TestPattern feature.  <a href="#af1008e10eaea4f9fe5a93410883543de">更多...</a><br /></td></tr>
+<tr class="separator:af1008e10eaea4f9fe5a93410883543de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34c6fda7818b0225f41f1cbca82cb8cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a34c6fda7818b0225f41f1cbca82cb8cd">testPattern</a></td></tr>
+<tr class="memdesc:a34c6fda7818b0225f41f1cbca82cb8cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the type of test pattern that is generated by the device as image source.  <a href="#a34c6fda7818b0225f41f1cbca82cb8cd">更多...</a><br /></td></tr>
+<tr class="separator:a34c6fda7818b0225f41f1cbca82cb8cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34aeaf5d248f18129d9c3751c6b2fa24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a34aeaf5d248f18129d9c3751c6b2fa24">testImageSelector</a></td></tr>
+<tr class="memdesc:a34aeaf5d248f18129d9c3751c6b2fa24"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature is deprecated (See TestPattern).  <a href="#a34aeaf5d248f18129d9c3751c6b2fa24">更多...</a><br /></td></tr>
+<tr class="separator:a34aeaf5d248f18129d9c3751c6b2fa24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1e64f8caa06a00302a3a77d9206e16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a4a1e64f8caa06a00302a3a77d9206e16">deinterlacing</a></td></tr>
+<tr class="memdesc:a4a1e64f8caa06a00302a3a77d9206e16"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls how the device performs de-interlacing.  <a href="#a4a1e64f8caa06a00302a3a77d9206e16">更多...</a><br /></td></tr>
+<tr class="separator:a4a1e64f8caa06a00302a3a77d9206e16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8c0807f112b80394f607bf8c7975bd9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ab8c0807f112b80394f607bf8c7975bd9">imageCompressionMode</a></td></tr>
+<tr class="memdesc:ab8c0807f112b80394f607bf8c7975bd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Enable a specific image compression mode as the base mode for image transfer.  <a href="#ab8c0807f112b80394f607bf8c7975bd9">更多...</a><br /></td></tr>
+<tr class="separator:ab8c0807f112b80394f607bf8c7975bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22653a4407894a6665295887050343a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a22653a4407894a6665295887050343a2">imageCompressionRateOption</a></td></tr>
+<tr class="memdesc:a22653a4407894a6665295887050343a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Two rate controlling options are offered: fixed bit rate or fixed quality.  <a href="#a22653a4407894a6665295887050343a2">更多...</a><br /></td></tr>
+<tr class="separator:a22653a4407894a6665295887050343a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb54973b40c5ad21e4ed201712de6e52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#adb54973b40c5ad21e4ed201712de6e52">imageCompressionQuality</a></td></tr>
+<tr class="memdesc:adb54973b40c5ad21e4ed201712de6e52"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Control the quality of the produced compressed stream.  <a href="#adb54973b40c5ad21e4ed201712de6e52">更多...</a><br /></td></tr>
+<tr class="separator:adb54973b40c5ad21e4ed201712de6e52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abae73448ae7d81315f5094df43f6d098"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#abae73448ae7d81315f5094df43f6d098">imageCompressionBitrate</a></td></tr>
+<tr class="memdesc:abae73448ae7d81315f5094df43f6d098"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Control the rate of the produced compressed stream.  <a href="#abae73448ae7d81315f5094df43f6d098">更多...</a><br /></td></tr>
+<tr class="separator:abae73448ae7d81315f5094df43f6d098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d90d8a836cb87ea44db50f47d53dd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a44d90d8a836cb87ea44db50f47d53dd5">imageCompressionJPEGFormatOption</a></td></tr>
+<tr class="memdesc:a44d90d8a836cb87ea44db50f47d53dd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. When JPEG is selected as the compression format, a device might optionally offer better control over JPEG-specific options through this feature.  <a href="#a44d90d8a836cb87ea44db50f47d53dd5">更多...</a><br /></td></tr>
+<tr class="separator:a44d90d8a836cb87ea44db50f47d53dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7618e267ca5f88f5a9c295069653fb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ac7618e267ca5f88f5a9c295069653fb1">mvSensorDigitizationBitDepth</a></td></tr>
+<tr class="memdesc:ac7618e267ca5f88f5a9c295069653fb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature allows to manually select the resolution of the device's ADC.  <a href="#ac7618e267ca5f88f5a9c295069653fb1">更多...</a><br /></td></tr>
+<tr class="separator:ac7618e267ca5f88f5a9c295069653fb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a859caad7f8c8da99428ad30eb7c23c90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a859caad7f8c8da99428ad30eb7c23c90">mvDebayerAlgorithm</a></td></tr>
+<tr class="memdesc:a859caad7f8c8da99428ad30eb7c23c90"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature allows to select the algorithm used to convert the Bayer data into RGB.  <a href="#a859caad7f8c8da99428ad30eb7c23c90">更多...</a><br /></td></tr>
+<tr class="separator:a859caad7f8c8da99428ad30eb7c23c90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e0b05208b8e91d1d1d70f09d7ccc9dd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a0e0b05208b8e91d1d1d70f09d7ccc9dd">mvOffsetYSensorB</a></td></tr>
+<tr class="memdesc:a0e0b05208b8e91d1d1d70f09d7ccc9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Vertical offset of SensorB from the origin to the region of interest (in pixels).  <a href="#a0e0b05208b8e91d1d1d70f09d7ccc9dd">更多...</a><br /></td></tr>
+<tr class="separator:a0e0b05208b8e91d1d1d70f09d7ccc9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a370dcf48c65b4970b4f22856fc7c5094"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a370dcf48c65b4970b4f22856fc7c5094">mvSensorLineOffsetSelector</a></td></tr>
+<tr class="memdesc:a370dcf48c65b4970b4f22856fc7c5094"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the sensor to configure.  <a href="#a370dcf48c65b4970b4f22856fc7c5094">更多...</a><br /></td></tr>
+<tr class="separator:a370dcf48c65b4970b4f22856fc7c5094"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dd5e96d70d8a3c73ce5ca9c6a1e09c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a0dd5e96d70d8a3c73ce5ca9c6a1e09c9">mvSensorLineOffset</a></td></tr>
+<tr class="memdesc:a0dd5e96d70d8a3c73ce5ca9c6a1e09c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the offset of the sensor selected by mvSensorLineOffsetSelector.  <a href="#a0dd5e96d70d8a3c73ce5ca9c6a1e09c9">更多...</a><br /></td></tr>
+<tr class="separator:a0dd5e96d70d8a3c73ce5ca9c6a1e09c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0faf88fa51cd24bf5e07e234f41a7ab"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#ab0faf88fa51cd24bf5e07e234f41a7ab">mvSensorLinePeriod</a></td></tr>
+<tr class="memdesc:ab0faf88fa51cd24bf5e07e234f41a7ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Time in nanoseconds for one line.  <a href="#ab0faf88fa51cd24bf5e07e234f41a7ab">更多...</a><br /></td></tr>
+<tr class="separator:ab0faf88fa51cd24bf5e07e234f41a7ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category for Image Format Control features. </p>
+<p>A category for Image Format Control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a4588e35f52c727616fad4f7331d625a7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::ImageFormatControl::ImageFormatControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html" title="Category for Image Format Control features. ">mvIMPACT::acquire::GenICam::ImageFormatControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_a4588e35f52c727616fad4f7331d625a7_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_a4588e35f52c727616fad4f7331d625a7_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_a4588e35f52c727616fad4f7331d625a7_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_a4588e35f52c727616fad4f7331d625a7_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="469,23,632,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="259,88,421,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="259,168,421,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="680,38,899,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="959,5,1108,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="947,70,1120,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1169,92,1397,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1445,99,1669,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="469,103,632,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="476,182,625,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="705,110,873,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a907bd8d4f8c18b487718a5cfea0ed2e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::binningHorizontal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Number of horizontal photo-sensitive cells to combine together. </p>
+<p>Number of horizontal photo-sensitive cells to combine together. This reduces the horizontal resolution (width) of the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa5c3bf007ccc16a550ae487cddb9343e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::binningHorizontalMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the mode to use to combine horizontal photo-sensitive cells together when BinningHorizontal is used. </p>
+<p>Sets the mode to use to combine horizontal photo-sensitive cells together when BinningHorizontal is used.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b><a class="el" href="class_sum.html">Sum</a></b> (Display string: '<a class="el" href="class_sum.html">Sum</a>'): The response from the combined cells will be added, resulting in increased sensitivity.</li>
+<li><b>Average</b> (Display string: 'Average'): The response from the combined cells will be averaged, resulting in increased signal/noise ratio.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abc9a8da47925016f49531ccc884fcf8a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::binningSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which binning engine is controlled by the BinningHorizontal and BinningVertical features. </p>
+<p>Selects which binning engine is controlled by the BinningHorizontal and BinningVertical features.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Sensor</b> (Display string: 'Sensor'): Selected features will control the sensor binning.</li>
+<li><b>Region0</b> (Display string: 'Region 0'): Selected feature will control the region 0 binning.</li>
+<li><b>Region1</b> (Display string: 'Region 1'): Selected feature will control the region 1 binning.</li>
+<li><b>Region2</b> (Display string: 'Region 2'): Selected feature will control the region 2 binning.</li>
+<li><b>Region#3#</b> (Display string: 'Region #3#'): Selected feature will control the region #3# binning.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac766f2fc87ea58efeb031ccdd83d204a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::binningVertical</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Number of vertical photo-sensitive cells to combine together. </p>
+<p>Number of vertical photo-sensitive cells to combine together. This reduces the vertical resolution (height) of the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa0da18196345e5cfa2a106b143afd777"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::binningVerticalMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the mode used to combine horizontal photo-sensitive cells together when BinningVertical is used. </p>
+<p>Sets the mode used to combine horizontal photo-sensitive cells together when BinningVertical is used.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b><a class="el" href="class_sum.html">Sum</a></b> (Display string: '<a class="el" href="class_sum.html">Sum</a>'): The response from the combined cells will be added, resulting in increased sensitivity.</li>
+<li><b>Average</b> (Display string: 'Average'): The response from the combined cells will be averaged, resulting in increased signal/noise ratio.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a12e4c6659914f9a24825c2f4a0720cfe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ImageFormatControl::componentEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Controls if the selected component streaming is active. </p>
+<p>Controls if the selected component streaming is active. </p>
+
+</div>
+</div>
+<a class="anchor" id="a99685f27c0089fe69239c14a503342c1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::componentIDValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns a unique Identifier value that correspond to the selected <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> type. </p>
+<p>Returns a unique Identifier value that correspond to the selected <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> type. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1096fd210e8ed296fc47a416688b8678"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::componentSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects a component to activate/deactivate its data streaming. </p>
+<p>Selects a component to activate/deactivate its data streaming.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Intensity</b> (Display string: 'Intensity'): The acquisition of intensity (monochrome or color) of the visible reflected light is controlled.</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): The acquisition of non-visible infrared light is controlled.</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): The acquisition of non-visible ultraviolet light is controlled.</li>
+<li><b>Range</b> (Display string: 'Range'): The acquisition of range (distance) data is controlled. The data produced may be only range (2.5D) or a point cloud giving the 3D coordinates depending on the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html" title="Category for control of 3D camera specific features. ">Scan3dControl</a>.</li>
+<li><b>Reflectance</b> (Display string: 'Reflectance'): The reflected intensity acquired together with Range in a Linescan3D sensor acquiring a single linescan profile for each exposure of the sensor.</li>
+<li><b>Confidence</b> (Display string: 'Confidence'): The acquisition of confidence map of the acquired image is controlled. Confidence data may be binary (0 - invalid) or an integer where 0 is invalid and increasing value is increased confidence in the data in the corresponding pixel. If floating point representation is used the confidence image is normalized to the range [0,1], for integer representation the maximum possible integer represents maximum confidence.</li>
+<li><b>Disparity</b> (Display string: 'Disparity'): The acquisition of stereo camera disparity data is controlled. Disparity is a more specific range format approximately inversely proportional to distance. Disparity is typically given in pixel units.</li>
+<li><b>Scatter</b> (Display string: 'Scatter'): The acquisition of data measuring how much light is scattered around the reflected light. In processing this is used as an additional intensity image, often together with the standard intensity or reflectance.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af3c2ae5e5f9aaea7a762f3cd10ce1ebb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::decimationHorizontal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Horizontal sub-sampling of the image. </p>
+<p>Horizontal sub-sampling of the image. This reduces the horizontal resolution (width) of the image by the specified horizontal decimation factor. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae8eae7ba917fb06636756e081796006b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::decimationHorizontalMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the mode used to reduce the horizontal resolution when DecimationHorizontal is used. </p>
+<p>Sets the mode used to reduce the horizontal resolution when DecimationHorizontal is used.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Discard</b> (Display string: 'Discard'): The value of every Nth pixel is kept, others are discarded.</li>
+<li><b>Average</b> (Display string: 'Average'): The value of a group of N adjacents pixels are averaged.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aee18567f6502e019607cab86903a68af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::decimationVertical</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Vertical sub-sampling of the image. </p>
+<p>Vertical sub-sampling of the image. This reduces the vertical resolution (height) of the image by the specified vertical decimation factor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a81098f47bf7166c3b8abb47fde14ed85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::decimationVerticalMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the mode used to reduce the Vertical resolution when DecimationVertical is used. </p>
+<p>Sets the mode used to reduce the Vertical resolution when DecimationVertical is used.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Discard</b> (Display string: 'Discard'): The value of every Nth pixel is kept, others are discarded.</li>
+<li><b>Average</b> (Display string: 'Average'): The value of a group of N adjacents pixels are averaged.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4a1e64f8caa06a00302a3a77d9206e16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::deinterlacing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls how the device performs de-interlacing. </p>
+<p>Controls how the device performs de-interlacing.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): The device doesn't perform de-interlacing.</li>
+<li><b>LineDuplication</b> (Display string: 'Line Duplication'): The device performs de-interlacing by outputting each line of each field twice.</li>
+<li><b>Weave</b> (Display string: 'Weave'): The device performs de-interlacing by interleaving the lines of all fields.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5e3f3b5d6644aa765cce4f52b872a5c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::height</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Height of the image provided by the device (in pixels). </p>
+<p>Height of the image provided by the device (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a8540e7cd78b644f597cd679a11558603"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::heightMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Maximum height of the image (in pixels). </p>
+<p>Maximum height of the image (in pixels). This dimension is calculated after vertical binning, decimation or any other function changing the vertical dimension of the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="abb89d1bfa99e26551bb92e842195d2f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageComponentEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. This feature is deprecated (See ComponentEnable). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000040">弃用:</a></b></dt><dd>This feature is deprecated (See ComponentEnable). It was used to control if the selected component streaming is active. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ca6d7404e0a91dffc11e1ac777f2d23"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageComponentSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature is deprecated (See ComponentSelector). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000039">弃用:</a></b></dt><dd>This feature is deprecated (See ComponentSelector). It was used to select a component.</dd></dl>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Intensity</b> (Display string: 'Intensity'): The acquisition of intensity (monochrome or color) of the visible reflected light is controlled.</li>
+<li><b>Color</b> (Display string: 'Color'): The acquisition of color of the reflected light is controlled</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): The acquisition of non-visible infrared light is controlled.</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): The acquisition of non-visible ultraviolet light is controlled.</li>
+<li><b>Range</b> (Display string: 'Range'): The acquisition of range (distance) data is controlled. The data produced may be only range (2.5D) or a point cloud 3D coordinates depending on the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html" title="Category for control of 3D camera specific features. ">Scan3dControl</a>.</li>
+<li><b>Confidence</b> (Display string: 'Confidence'): The acquisition of confidence map of the acquired image is controlled. Confidence data may be binary (0 - invalid) or an integer where 0 is invalid and increasing value is increased confidence in the data in the corresponding pixel. If floating point representation is used the confidence image is normalized to the range [0,1], for integer representation the maximum possible integer represents maximum confidence.</li>
+<li><b>Disparity</b> (Display string: 'Disparity'): The acquisition of stereo camera disparity data is controlled. Disparity is a more specific range format approximately inversely proportional to distance. Disparity is typically given in pixel units.</li>
+<li><b>Scatter</b> (Display string: 'Scatter'): The acquisition of data measuring how much light is scattered around the reflected light. In processing this is used as an additional intensity image, often together with the standard intensity.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abae73448ae7d81315f5094df43f6d098"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageCompressionBitrate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Control the rate of the produced compressed stream. </p>
+<p>Control the rate of the produced compressed stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a44d90d8a836cb87ea44db50f47d53dd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageCompressionJPEGFormatOption</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. When JPEG is selected as the compression format, a device might optionally offer better control over JPEG-specific options through this feature. </p>
+<p>When JPEG is selected as the compression format, a device might optionally offer better control over JPEG-specific options through this feature.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Lossless</b> (Display string: 'Lossless'): Selects lossless JPEG compression based on a predictive coding model.</li>
+<li><b>BaselineStandard</b> (Display string: 'Baseline Standard'): Indicates this is a baseline sequential (single-scan) DCT-based JPEG.</li>
+<li><b>BaselineOptimized</b> (Display string: 'Baseline Optimized'): Provides optimized color and slightly better compression than baseline standard by using custom Huffman tables optimized after statistical analysis of the image content.</li>
+<li><b>Progressive</b> (Display string: 'Progressive'): Indicates this is a progressive (multi-scan) DCT-based JPEG.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab8c0807f112b80394f607bf8c7975bd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageCompressionMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Enable a specific image compression mode as the base mode for image transfer. </p>
+<p>Enable a specific image compression mode as the base mode for image transfer. Optionally, chunk data can be appended to the compressed image (See the Chunk Data Control chapter).</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Default value. Image compression is disabled. Images are transmitted uncompressed.</li>
+<li><b>JPEG</b> (Display string: 'JPEG'): JPEG compression is selected.</li>
+<li><b>JPEG2000</b> (Display string: 'JPEG 2000'): JPEG 2000 compression is selected.</li>
+<li><b>H264</b> (Display string: 'H 264'): H.264 compression is selected.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adb54973b40c5ad21e4ed201712de6e52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageCompressionQuality</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Control the quality of the produced compressed stream. </p>
+<p>Control the quality of the produced compressed stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a22653a4407894a6665295887050343a2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::imageCompressionRateOption</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Two rate controlling options are offered: fixed bit rate or fixed quality. </p>
+<p>Two rate controlling options are offered: fixed bit rate or fixed quality. The exact implementation to achieve one or the other is vendor-specific.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>FixBitrate</b> (Display string: 'Fix Bitrate'): Output stream follows a constant bit rate. Allows easy bandwidth management on the link.</li>
+<li><b>FixQuality</b> (Display string: 'Fix Quality'): Output stream has a constant image quality. Can be used when image processing algorithms are sensitive to image degradation caused by excessive data compression.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a709a0ec40bef18f6a7a57d17b7a1fb72"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::linePitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Total number of bytes between the starts of 2 consecutive lines. </p>
+<p>Total number of bytes between the starts of 2 consecutive lines. This feature is used to facilitate alignment of image data. </p>
+
+</div>
+</div>
+<a class="anchor" id="a96cf918c428ca52a9c1f7f8b481ab2bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ImageFormatControl::linePitchEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. This feature controls whether the LinePitch feature is writable. </p>
+<p>This feature controls whether the LinePitch feature is writable. Otherwise LinePitch is implicitly controlled by the combination of features like Width, PixelFormat, etc... </p>
+
+</div>
+</div>
+<a class="anchor" id="a67272b208d0d914f46877d65a66c95f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Is this area active? </p>
+<p>Is this area active? </p>
+
+</div>
+</div>
+<a class="anchor" id="af3bc8fc4c97d3c668a504fec6b990b1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Height of this area's part of the image (in pixels). </p>
+<p>Height of this area's part of the image (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a78f0647bc26627d3b47d3600beca1586"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Horizontal offset of this area within the image (in pixels). </p>
+<p>Horizontal offset of this area within the image (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a413bde6385d3cdf6265e7bf2dabe2fd6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Vertical offset of this area within the image (in pixels). </p>
+<p>Vertical offset of this area within the image (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="ada77ff6906f66a517387bb52d7fb755f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaResultingOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Horizontal offset of this area within the resulting image (in pixels). </p>
+<p>Horizontal offset of this area within the resulting image (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a6df2ff8dd4593af0221154f44878f7fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaResultingOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Vertical offset of this area within the resulting image (in pixels). </p>
+<p>Vertical offset of this area within the resulting image (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1672002a8299739cf2253de54bab577"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the area. </p>
+<p>Selects the area.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvArea0</b> (Display string: 'mv Area Selector'): First area.</li>
+<li><b>mvArea1</b> (Display string: 'mv Area Selector'): Second area.</li>
+<li><b>mvArea2</b> (Display string: 'mv Area Selector'): Third area.</li>
+<li><b>mvArea3</b> (Display string: 'mv Area Selector'): Fourth area.</li>
+<li><b>mvArea4</b> (Display string: 'mv Area Selector'): Fifth area.</li>
+<li><b>mvArea5</b> (Display string: 'mv Area Selector'): Sixth area.</li>
+<li><b>mvArea6</b> (Display string: 'mv Area Selector'): Seventh area.</li>
+<li><b>mvArea7</b> (Display string: 'mv Area Selector'): Eighth area.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6804a01fa7faa08f73491fb0aa1d7c05"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvAreaWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Width of this area's part of the image (in pixels). </p>
+<p>Width of this area's part of the image (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a859caad7f8c8da99428ad30eb7c23c90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvDebayerAlgorithm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature allows to select the algorithm used to convert the Bayer data into RGB. </p>
+<p>This feature allows to select the algorithm used to convert the Bayer data into RGB</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Bilinear_1</b> (Display string: 'mv Debayer Algorithm')</li>
+<li><b>Bilinear_2</b> (Display string: 'mv Debayer Algorithm')</li>
+<li><b>Replication</b> (Display string: 'mv Debayer Algorithm')</li>
+<li><b>Kernel_5x5</b> (Display string: 'mv Debayer Algorithm')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ace1cd2b204ca9e46d5408f2d1fff86d8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvMultiAreaMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the overall multi area mode. </p>
+<p>Selects the overall multi area mode.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvOff</b> (Display string: 'mv Multi Area Mode'): Multi area mode is altogether switched off. Only one single <a class="el" href="struct_a_o_i.html">AOI</a> as defined in Width, Height, OffsetX and OffsetY properties is used and valid.</li>
+<li><b>mvMultiAreasCombined</b> (Display string: 'mv Multi Area Mode'): Image is combined from multiple areas. The overlapping of areas is allowed. The camera decides which areas it needs to crop from the image and combines all areas into one image.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0e0b05208b8e91d1d1d70f09d7ccc9dd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvOffsetYSensorB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Vertical offset of SensorB from the origin to the region of interest (in pixels). </p>
+<p>Vertical offset of SensorB from the origin to the region of interest (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="ac7618e267ca5f88f5a9c295069653fb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvSensorDigitizationBitDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature allows to manually select the resolution of the device's ADC. </p>
+<p>This feature allows to manually select the resolution of the device's ADC.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Auto</b> (Display string: 'mv Sensor Digitization Bit Depth'): When the selected pixel format has 12 bits or more the ADC will work with 12 bits. Otherwise the ADC will work with 10 bits.</li>
+<li><b>Bpp8</b> (Display string: 'mv Sensor Digitization Bit Depth'): The ADC will always work with a resolution of 8 bits no matter which pixel format has been selected.</li>
+<li><b>Bpp10</b> (Display string: 'mv Sensor Digitization Bit Depth'): The ADC will always work with a resolution of 10 bits no matter which pixel format has been selected.</li>
+<li><b>Bpp12</b> (Display string: 'mv Sensor Digitization Bit Depth'): The ADC will always work with a resolution of 12 bits no matter which pixel format has been selected. This will allow to achieve higher precision and thus improved quality when internal processing is done (e.g. when applying digital gain to the image).</li>
+<li><b>Fixed</b> (Display string: 'mv Sensor Digitization Bit Depth')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0dd5e96d70d8a3c73ce5ca9c6a1e09c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvSensorLineOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the offset of the sensor selected by mvSensorLineOffsetSelector. </p>
+<p>Sets the offset of the sensor selected by mvSensorLineOffsetSelector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a370dcf48c65b4970b4f22856fc7c5094"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvSensorLineOffsetSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the sensor to configure. </p>
+<p>Selects the sensor to configure</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>SensorA</b> (Display string: 'mv Sensor Line Offset Selector')</li>
+<li><b>SensorB</b> (Display string: 'mv Sensor Line Offset Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab0faf88fa51cd24bf5e07e234f41a7ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::mvSensorLinePeriod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Time in nanoseconds for one line. </p>
+<p>Time in nanoseconds for one line </p>
+
+</div>
+</div>
+<a class="anchor" id="ae60f5a436f0da44d0afa63e489c56bea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::offsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Horizontal offset from the origin to the region of interest (in pixels). </p>
+<p>Horizontal offset from the origin to the region of interest (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="af37364805be675d07c59be811b50cda3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::offsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Vertical offset from the origin to the region of interest (in pixels). </p>
+<p>Vertical offset from the origin to the region of interest (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a9eac6c5f816b0325c6d82d6007b44c33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelCoding</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000041">弃用:</a></b></dt><dd>This feature is deprecated. It represents the coding of the pixels in the image. Raw gives the data in the native format of the sensor.</dd></dl>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Mono</b> (Display string: 'Mono'): Mono.</li>
+<li><b>MonoSigned</b> (Display string: 'MonoSigned'): Mono signed.</li>
+<li><b>MonoPacked</b> (Display string: 'MonoPacked'): Mono packed.</li>
+<li><b>RGBPacked</b> (Display string: 'RGBPacked'): RGB packed.</li>
+<li><b>BGRPacked</b> (Display string: 'BGRPacked'): BGR packed.</li>
+<li><b>RGBAPacked</b> (Display string: 'RGBAPacked'): RGBA packed.</li>
+<li><b>BGRAPacked</b> (Display string: 'BGRAPacked'): BGRA packed.</li>
+<li><b>RGBPlanar</b> (Display string: 'RGBPlanar'): RGB planar.</li>
+<li><b>YUV411Packed</b> (Display string: 'YUV411Packed'): YUV 411 packed.</li>
+<li><b>YUV422Packed</b> (Display string: 'YUV422Packed'): YUV 422 packed.</li>
+<li><b>YUV444Packed</b> (Display string: 'YUV444Packed'): YUV 444 packed.</li>
+<li><b>YUYVPacked</b> (Display string: 'YUYVPacked'): YUYV packed.</li>
+<li><b>Raw</b> (Display string: 'Raw'): Raw.</li>
+<li><b>RawPacked</b> (Display string: 'RawPacked'): Raw packed.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c2b95c8ec6a3310fe5203ad1146fa41"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelColorFilter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Type of color filter that is applied to the image. </p>
+<p>Type of color filter that is applied to the image.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>None</b> (Display string: 'None'): No color filter.</li>
+<li><b>BayerRG</b> (Display string: 'BayerRG'): Bayer Red Green filter.</li>
+<li><b>BayerGB</b> (Display string: 'BayerGB'): Bayer Green Blue filter.</li>
+<li><b>BayerGR</b> (Display string: 'BayerGR'): Bayer Green Red filter.</li>
+<li><b>BayerBG</b> (Display string: 'BayerBG'): Bayer Blue Green filter.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3ea6f4380cf3602ce729c53f83ec078c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelDynamicRangeMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Maximum value that will be returned during the digitization process. </p>
+<p>Maximum value that will be returned during the digitization process. This corresponds to the brightest value of the camera. For color camera, this returns the biggest value that each color component can take. </p>
+
+</div>
+</div>
+<a class="anchor" id="a434df34fdcccc6adeb2c2b1ebc9ccc82"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelDynamicRangeMin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Minimum value that can be returned during the digitization process. </p>
+<p>Minimum value that can be returned during the digitization process. This corresponds to the darkest value of the camera. For color camera, this returns the smallest value that each color component can take. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f91f3c763df04e2957c3435a76705aa"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelFormat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Format of the pixels provided by the device. </p>
+<p>Format of the pixels provided by the device. It represents all the information provided by PixelSize, PixelColorFilter combined in a single feature.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Mono1p</b> (Display string: 'Mono1p'): Mono 1 bit packed.</li>
+<li><b>Mono2p</b> (Display string: 'Mono2p'): Mono 2 bit packed.</li>
+<li><b>Mono4p</b> (Display string: 'Mono4p'): Mono 4 bit packed.</li>
+<li><b>Mono8</b> (Display string: 'Mono8'): Mono 8 bit packed.</li>
+<li><b>Mono8s</b> (Display string: 'Mono8s'): Mono 1 bit signed.</li>
+<li><b>Mono10</b> (Display string: 'Mono10'): Mono 10 bit.</li>
+<li><b>Mono10p</b> (Display string: 'Mono10p'): Mono 10 bit packed.</li>
+<li><b>Mono12</b> (Display string: 'Mono12'): Mono 12 bit.</li>
+<li><b>Mono12p</b> (Display string: 'Mono12p'): Mono 12 bit packed.</li>
+<li><b>Mono14</b> (Display string: 'Mono14'): Mono 14 bit.</li>
+<li><b>Mono16</b> (Display string: 'Mono16'): Mono 16 bit.</li>
+<li><b>R8</b> (Display string: 'R8'): Red 8 bit.</li>
+<li><b>G8</b> (Display string: 'G8'): Green 8 bit.</li>
+<li><b>B8</b> (Display string: 'B8'): Blue 8 bit.</li>
+<li><b>RGB8</b> (Display string: 'RGB8'): Red, Green, Blue 8 bit</li>
+<li><b>RGB8_Planar</b> (Display string: 'RGB8_Planar'): Red, Green, Blue 8 bit planar.</li>
+<li><b>RGBa8</b> (Display string: 'RGBa8'): Red, Green, Blue 8 bit aligned on 8 bit</li>
+<li><b>RGB10</b> (Display string: 'RGB10'): Red, Green, Blue 10 bit.</li>
+<li><b>RGB10_Planar</b> (Display string: 'RGB10_Planar'): Red, Green, Blue 10 bit planar.</li>
+<li><b>RGB10p32</b> (Display string: 'RGB10p32'): Red, Green, Blue 10 bit packed in 32 bit pixel.</li>
+<li><b>RGB12</b> (Display string: 'RGB12'): Red, Green, Blue 12 bit.</li>
+<li><b>RGB12_Planar</b> (Display string: 'RGB12_Planar'): Red, Green, Blue 12 bit planar.</li>
+<li><b>RGB16</b> (Display string: 'RGB16'): Red, Green, Blue 16 bit.</li>
+<li><b>RGB16_Planar</b> (Display string: 'RGB16_Planar'): Red, Green, Blue 16 bit planar.</li>
+<li><b>RGB565p</b> (Display string: 'RGB565p'): Red, Green, Blue 16 bit packet in 5, 6, 5 bits.</li>
+<li><b>BGR10</b> (Display string: 'BGR10'): Blue, Green, Red, 10 bit.</li>
+<li><b>BGR12</b> (Display string: 'BGR12'): Blue, Green, Red, 12 bit.</li>
+<li><b>BGR16</b> (Display string: 'BGR16'): Blue, Green, Red, 16 bit.</li>
+<li><b>BGR565p</b> (Display string: 'BGR565p'): Blue, Green, Red, 16 bit packet in 5, 6, 5 bits.</li>
+<li><b>BGR8</b> (Display string: 'BGR8'): Blue, Green, Red, 8 bit.</li>
+<li><b>BGRa8</b> (Display string: 'BGRa8'): Blue, Green, Red, Alpha 8 bit.</li>
+<li><b>YUV422_8</b> (Display string: 'YUV422_8'): YUV 422 8 bit.</li>
+<li><b>YCbCr411_8</b> (Display string: 'YCbCr411_8'): YCrCb 411 8 bit.</li>
+<li><b>YCbCr422_8</b> (Display string: 'YCbCr422_8'): YCrCb 422 8 bit.</li>
+<li><b>YCbCr601_422_8</b> (Display string: 'YCbCr601_422_8'): YCrCb 601 422 8 bit.</li>
+<li><b>YCbCr709_422_8</b> (Display string: 'YCbCr709_422_8'): YCrCb 709 422 8 bit.</li>
+<li><b>YCbCr8</b> (Display string: 'YCbCr8'): YCbCr 8 bit.</li>
+<li><b>BayerBG8</b> (Display string: 'BayerBG8'): Bayer Blue Green 8 bit.</li>
+<li><b>BayerGB8</b> (Display string: 'BayerGB8'): Bayer Green Blue 8 bit.</li>
+<li><b>BayerGR8</b> (Display string: 'BayerGR8'): Bayer Green Red 8 bit.</li>
+<li><b>BayerRG8</b> (Display string: 'BayerRG8'): Bayer Red Green 8 bit.</li>
+<li><b>BayerBG10</b> (Display string: 'BayerBG10'): Bayer Blue Green 10 bit.</li>
+<li><b>BayerGB10</b> (Display string: 'BayerGB10'): Bayer Green Blue 10 bit.</li>
+<li><b>BayerGR10</b> (Display string: 'BayerGR10'): Bayer Green Red 10 bit.</li>
+<li><b>BayerRG10</b> (Display string: 'BayerRG10'): Bayer Red Green 10 bit.</li>
+<li><b>BayerBG12</b> (Display string: 'BayerBG12'): Bayer Blue Green 12 bit</li>
+<li><b>BayerGB12</b> (Display string: 'BayerGB12'): Bayer Green Blue 12 bit</li>
+<li><b>BayerGR12</b> (Display string: 'BayerGR12'): Bayer Green Red 12 bit.</li>
+<li><b>BayerRG12</b> (Display string: 'BayerRG12'): Bayer Red Green 12 bit.</li>
+<li><b>BayerBG16</b> (Display string: 'BayerBG16'): Bayer Blue Green 16 bit.</li>
+<li><b>BayerGB16</b> (Display string: 'BayerGB16'): Bayer Green Blue 16 bit.</li>
+<li><b>BayerGR16</b> (Display string: 'BayerGR16'): Bayer Green Red 16 bit.</li>
+<li><b>BayerRG16</b> (Display string: 'BayerRG16'): Bayer Red Green 16 bit.</li>
+<li><b>Coord3D_A8</b> (Display string: 'Coord3D_A8'): 3D coordinate, first component 8 bit.</li>
+<li><b>Coord3D_B8</b> (Display string: 'Coord3D_B8'): 3D coordinate, second component 8 bit.</li>
+<li><b>Coord3D_C8</b> (Display string: 'Coord3D_C8'): 3D coordinate, third component 8 bit.</li>
+<li><b>Coord3D_ABC8</b> (Display string: 'Coord3D_ABC8'): 3D coordinates, 3 components 8 bit.</li>
+<li><b>Coord3D_ABC8_Planar</b> (Display string: 'Coord3D_ABC8_Planar'): 3D coordinates, 3 components 8 bit planar.</li>
+<li><b>Coord3D_A16</b> (Display string: 'Coord3D_A16'): 3D coordinate, first component 16 bit.</li>
+<li><b>Coord3D_B16</b> (Display string: 'Coord3D_B16'): 3D coordinate, second component 16 bit.</li>
+<li><b>Coord3D_C16</b> (Display string: 'Coord3D_C16'): 3D coordinate, third component 16 bit.</li>
+<li><b>Coord3D_ABC16</b> (Display string: 'Coord3D_ABC16'): 3D coordinates, 3 components 16 bit.</li>
+<li><b>Coord3D_ABC16_Planar</b> (Display string: 'Coord3D_ABC16_Planar'): 3D coordinates, 3 components 16 bit planar.</li>
+<li><b>Coord3D_A32f</b> (Display string: 'Coord3D_A32f'): 3D coordinate, first component 32 bit float.</li>
+<li><b>Coord3D_B32f</b> (Display string: 'Coord3D_B32f'): 3D coordinate, second component 32 bit float.</li>
+<li><b>Coord3D_C32f</b> (Display string: 'Coord3D_C32f'): 3D coordinate, third component 32 bit float.</li>
+<li><b>Coord3D_ABC32f</b> (Display string: 'Coord3D_ABC32f'): 3D coordinates, 3 components 32 bit float.</li>
+<li><b>Coord3D_ABC32f_Planar</b> (Display string: 'Coord3D_ABC32f_Planar'): 3D coordinates, 3 components 32 bit float planar.</li>
+<li><b>Confidence1</b> (Display string: 'Confidence1'): Confidence data 1 bit.</li>
+<li><b>Confidence1p</b> (Display string: 'Confidence1p'): Confidence data 1 bit packed.</li>
+<li><b>Confidence8</b> (Display string: 'Confidence8'): Confidence data 8 bit.</li>
+<li><b>Confidence16</b> (Display string: 'Confidence16'): Confidence data 16 bit.</li>
+<li><b>Confidence32f</b> (Display string: 'Confidence32f'): Confidence data 32 bit float.</li>
+<li><b>Raw8</b> (Display string: 'Raw8'): Raw 8 bit.</li>
+<li><b>Raw16</b> (Display string: 'Raw16'): Raw 16 bit.</li>
+<li><b>Mono12Packed</b> (Display string: 'Mono12Packed'): Mono 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGR10Packed</b> (Display string: 'BayerGR10Packed'): Bayer GR 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerRG10Packed</b> (Display string: 'BayerRG10Packed'): Bayer RG 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGB10Packed</b> (Display string: 'BayerGB10Packed'): Bayer GB 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerBG10Packed</b> (Display string: 'BayerBG10Packed'): Bayer BG 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGR12Packed</b> (Display string: 'BayerGR12Packed'): Bayer GR 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerRG12Packed</b> (Display string: 'BayerRG12Packed'): Bayer RG 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGB12Packed</b> (Display string: 'BayerGB12Packed'): Bayer GB 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerBG12Packed</b> (Display string: 'BayerBG12Packed'): Bayer BG 12 bit packed (GigE Vision Specific).</li>
+<li><b>RGB10V1Packed</b> (Display string: 'RGB10V1Packed'): RGB 10 bit packed (GigE Vision Specific).</li>
+<li><b>BGR10V1Packed</b> (Display string: 'BGR10V1Packed'): BGR 10 bit packed (GigE Vision Specific).</li>
+<li><b>RGB12V1Packed</b> (Display string: 'RGB12V1Packed'): RGB 12 bit packed (GigE Vision Specific).</li>
+<li><b>Mono8Signed</b> (Display string: 'Pixel Format')</li>
+<li><b>Mono10Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB8Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>BGR8Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGBA8Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>BGRA8Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB10Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>BGR10Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB12Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>BGR12Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB16Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB10V2Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB565Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>BGR565Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>YUV411Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>YUV422Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>YUV444Packed</b> (Display string: 'Pixel Format')</li>
+<li><b>YUYVPacked</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB8Planar</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB10Planar</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB12Planar</b> (Display string: 'Pixel Format')</li>
+<li><b>RGB16Planar</b> (Display string: 'Pixel Format')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a883b137388bec227535b01c76661c634"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelFormatInfoID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the value used by the streaming channels to identify the selected pixel format. </p>
+<p>Returns the value used by the streaming channels to identify the selected pixel format. </p>
+
+</div>
+</div>
+<a class="anchor" id="afece092c2b57040873197c80520a2d65"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelFormatInfoSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Select the pixel format for which the information will be returned. </p>
+<p>Select the pixel format for which the information will be returned.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Mono1p</b> (Display string: 'Mono1p'): Mono 1 bit packed.</li>
+<li><b>Mono2p</b> (Display string: 'Mono2p'): Mono 2 bit packed.</li>
+<li><b>Mono4p</b> (Display string: 'Mono4p'): Mono 4 bit packed.</li>
+<li><b>Mono8</b> (Display string: 'Mono8'): Mono 8 bit packed.</li>
+<li><b>Mono10</b> (Display string: 'Mono10'): Mono 10 bit.</li>
+<li><b>Mono10p</b> (Display string: 'Mono10p'): Mono 10 bit packed.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae53cd02f210eb37fea2b598a5918b92b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::pixelSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Total size in bits of a pixel of the image. </p>
+<p>Total size in bits of a pixel of the image.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Bpp1</b> (Display string: 'Bpp1'): 1 bit per pixel.</li>
+<li><b>Bpp2</b> (Display string: 'Bpp2'): 2 bits per pixel.</li>
+<li><b>Bpp4</b> (Display string: 'Bpp4'): 4 bits per pixel.</li>
+<li><b>Bpp8</b> (Display string: 'Bpp8'): 8 bits per pixel.</li>
+<li><b>Bpp10</b> (Display string: 'Bpp10'): 10 bits per pixel.</li>
+<li><b>Bpp12</b> (Display string: 'Bpp12'): 12 bits per pixel.</li>
+<li><b>Bpp14</b> (Display string: 'Bpp14'): 14 bits per pixel.</li>
+<li><b>Bpp16</b> (Display string: 'Bpp16'): 16 bits per pixel.</li>
+<li><b>Bpp20</b> (Display string: 'Bpp20'): 20 bits per pixel.</li>
+<li><b>Bpp24</b> (Display string: 'Bpp24'): 24 bits per pixel.</li>
+<li><b>Bpp30</b> (Display string: 'Bpp30'): 30 bits per pixel.</li>
+<li><b>Bpp32</b> (Display string: 'Bpp32'): 32 bits per pixel.</li>
+<li><b>Bpp36</b> (Display string: 'Bpp36'): 36 bits per pixel.</li>
+<li><b>Bpp48</b> (Display string: 'Bpp48'): 48 bits per pixel.</li>
+<li><b>Bpp64</b> (Display string: 'Bpp64'): 64 bits per pixel.</li>
+<li><b>Bpp96</b> (Display string: 'Bpp96'): 96 bits per pixel.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa0cbc8a0b29c1406c45ef8b16bd92bdb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::regionDestination</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Control the destination of the selected region. </p>
+<p>Control the destination of the selected region.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Stream0</b> (Display string: 'Stream 0'): The destination of the region is the data stream 0.</li>
+<li><b>Stream1</b> (Display string: 'Stream 1'): The destination of the region is the data stream 1.</li>
+<li><b>Stream2</b> (Display string: 'Stream 2'): The destination of the region is the data stream 2.</li>
+<li><b>Stream#3#</b> (Display string: 'Stream #3#'): The destination of the region is the data stream #3#.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a25e094bef27e094cac127f308dae8407"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::regionIDValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns a unique Identifier value that correspond to the selected Region. </p>
+<p>Returns a unique Identifier value that correspond to the selected Region. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad297d28dbc9bcd73a6f6af1ddaff8b6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::regionMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls if the selected Region of interest is active and streaming. </p>
+<p>Controls if the selected Region of interest is active and streaming.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disable the usage of the Region.</li>
+<li><b>On</b> (Display string: 'On'): Enable the usage of the Region.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aad28b74200b11a31434c8bfeedc408e2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::regionSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the Region of interest to control. </p>
+<p>Selects the Region of interest to control. The RegionSelector feature allows devices that are able to extract multiple regions out of an image, to configure the features of those individual regions independently.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Region0</b> (Display string: 'Region 0'): Selected feature will control the region 0.</li>
+<li><b>Region1</b> (Display string: 'Region 1'): Selected feature will control the region 1.</li>
+<li><b>Region2</b> (Display string: 'Region 2'): Selected feature will control the region 2.</li>
+<li><b>Region#3#</b> (Display string: 'Region #3#'): Selected feature will control the region #3#.</li>
+<li><b>Scan3dExtraction0</b> (Display string: 'Scan 3d Extraction 0'): Selected feature will control the Scan3dExtraction0 output Region.</li>
+<li><b>Scan3dExtraction1</b> (Display string: 'Scan 3d Extraction 1'): Selected feature will control the Scan3dExtraction1 output Region.</li>
+<li><b>Scan3dExtraction2</b> (Display string: 'Scan 3d Extraction 2'): Selected feature will control the Scan3dExtraction2 output Region.</li>
+<li><b>All</b> (Display string: 'All'): Selected features will control all the regions at the same time.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a53ced6d3112b74803251afaad3bfe073"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ImageFormatControl::reverseX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Flip horizontally the image sent by the device. </p>
+<p>Flip horizontally the image sent by the device. The Region of interest is applied after the flipping. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5909e5548bb71e53b5d7d32d1e06c894"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ImageFormatControl::reverseY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Flip vertically the image sent by the device. </p>
+<p>Flip vertically the image sent by the device. The Region of interest is applied after the flipping. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaeaaa96bce4671d14b71656f65e52749"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::sensorDigitizationTaps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Number of digitized samples outputted simultaneously by the camera A/D conversion stage. </p>
+<p>Number of digitized samples outputted simultaneously by the camera A/D conversion stage.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>One</b> (Display string: 'One'): 1 tap.</li>
+<li><b>Two</b> (Display string: 'Two'): 2 taps.</li>
+<li><b>Three</b> (Display string: 'Three'): 3 taps.</li>
+<li><b>Four</b> (Display string: 'Four'): 4 taps.</li>
+<li><b>Eight</b> (Display string: 'Eight'): 8 taps.</li>
+<li><b>Ten</b> (Display string: 'Ten'): 10 taps.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af009ab8eff29c63d559ef2b7d01f4385"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::sensorHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Effective height of the sensor in pixels. </p>
+<p>Effective height of the sensor in pixels. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae184aeb41a502148279aa64314633ec7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::sensorShutterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the shutter mode of the device. </p>
+<p>Sets the shutter mode of the device.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Global</b> (Display string: 'Global'): The shutter opens and closes at the same time for all pixels. All the pixels are exposed for the same length of time at the same time.</li>
+<li><b>Rolling</b> (Display string: 'Rolling'): The shutter opens and closes sequentially for groups (typically lines) of pixels. All the pixels are exposed for the same length of time but not at the same time.</li>
+<li><b>GlobalReset</b> (Display string: 'Global Reset'): The shutter opens at the same time for all pixels but ends in a sequential manner. The pixels are exposed for different lengths of time.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a061befe497a01e76983ba841c48fbbad"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::sensorTaps</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Number of taps of the camera sensor. </p>
+<p>Number of taps of the camera sensor.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>One</b> (Display string: 'One'): 1 tap.</li>
+<li><b>Two</b> (Display string: 'Two'): 2 taps.</li>
+<li><b>Three</b> (Display string: 'Three'): 3 taps.</li>
+<li><b>Four</b> (Display string: 'Four'): 4 taps.</li>
+<li><b>Eight</b> (Display string: 'Eight'): 8 taps.</li>
+<li><b>Ten</b> (Display string: 'Ten'): 10 taps.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8d8306c00755dc6bdaf9ef5b74806a62"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::sensorWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Effective width of the sensor in pixels. </p>
+<p>Effective width of the sensor in pixels. </p>
+
+</div>
+</div>
+<a class="anchor" id="a34aeaf5d248f18129d9c3751c6b2fa24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::testImageSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature is deprecated (See TestPattern). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">弃用:</a></b></dt><dd>This feature is deprecated (See TestPattern). Selects the type of test image that is sent by the device.</dd></dl>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Image is coming from the sensor.</li>
+<li><b>Black</b> (Display string: 'Black'): Image is filled with the darkest possible image.</li>
+<li><b>White</b> (Display string: 'White'): Image is filled with the brightest possible image.</li>
+<li><b>GreyHorizontalRamp</b> (Display string: 'Grey Horizontal Ramp'): Image is filled horizontally with an image that goes from the darkest possible value to the brightest.</li>
+<li><b>GreyVerticalRamp</b> (Display string: 'Grey Vertical Ramp'): Image is filled vertically with an image that goes from the darkest possible value to the brightest.</li>
+<li><b>GreyHorizontalRampMoving</b> (Display string: 'Grey Horizontal Ramp Moving'): Image is filled horizontally with an image that goes from the darkest possible value to the brightest and that moves horizontally from left to right at each frame.</li>
+<li><b>GreyVerticalRampMoving</b> (Display string: 'Grey Vertical Ramp Moving'): Image is filled vertically with an image that goes from the darkest possible value to the brightest and that moves verticaly from top to bottom at each frame.</li>
+<li><b>HorizontalLineMoving</b> (Display string: 'Horizontal Line Moving'): A moving horizontal line is superimposed on the live image.</li>
+<li><b>VerticalLineMoving</b> (Display string: 'Vertical Line Moving'): A moving vertical line is superimposed on the live image.</li>
+<li><b>ColorBar</b> (Display string: 'Color Bar'): Image is filled with stripes of color including White, Black, Red, Green, Blue, Cyan, Magenta and Yellow.</li>
+<li><b>FrameCounter</b> (Display string: 'Frame Counter'): A frame counter is superimposed on the live image.</li>
+<li><b>HorzontalLineMoving</b> (Display string: 'Test Image Selector')</li>
+<li><b>mvBayerRaw</b> (Display string: 'Test Image Selector')</li>
+<li><b>mvGreyDiagonalRamp</b> (Display string: 'Test Image Selector')</li>
+<li><b>mvFadeToGreyColorBar</b> (Display string: 'Test Image Selector')</li>
+<li><b>mvFFCImage</b> (Display string: 'Test Image Selector')</li>
+<li><b>mvMovingGreyDiagonalRamp</b> (Display string: 'Test Image Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a34c6fda7818b0225f41f1cbca82cb8cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::testPattern</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the type of test pattern that is generated by the device as image source. </p>
+<p>Selects the type of test pattern that is generated by the device as image source.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Image is coming from the sensor.</li>
+<li><b>Black</b> (Display string: 'Black'): Image is filled with the darkest possible image.</li>
+<li><b>White</b> (Display string: 'White'): Image is filled with the brightest possible image.</li>
+<li><b>GreyHorizontalRamp</b> (Display string: 'Grey Horizontal Ramp'): Image is filled horizontally with an image that goes from the darkest possible value to the brightest.</li>
+<li><b>GreyVerticalRamp</b> (Display string: 'Grey Vertical Ramp'): Image is filled vertically with an image that goes from the darkest possible value to the brightest.</li>
+<li><b>GreyHorizontalRampMoving</b> (Display string: 'Grey Horizontal Ramp Moving'): Image is filled horizontally with an image that goes from the darkest possible value to the brightest and that moves horizontally from left to right at each frame.</li>
+<li><b>GreyVerticalRampMoving</b> (Display string: 'Grey Vertical Ramp Moving'): Image is filled vertically with an image that goes from the darkest possible value to the brightest and that moves verticaly from top to bottom at each frame.</li>
+<li><b>HorizontalLineMoving</b> (Display string: 'Horizontal Line Moving'): A moving horizontal line is superimposed on the live image.</li>
+<li><b>VerticalLineMoving</b> (Display string: 'Vertical Line Moving'): A moving vertical line is superimposed on the live image.</li>
+<li><b>ColorBar</b> (Display string: 'Color Bar'): Image is filled with stripes of color including White, Black, Red, Green, Blue, Cyan, Magenta and Yellow.</li>
+<li><b>FrameCounter</b> (Display string: 'Frame Counter'): A frame counter is superimposed on the live image.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af1008e10eaea4f9fe5a93410883543de"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::testPatternGeneratorSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which test pattern generator is controlled by the TestPattern feature. </p>
+<p>Selects which test pattern generator is controlled by the TestPattern feature.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Sensor</b> (Display string: 'Sensor'): TestPattern feature will control the sensor's test pattern generator.</li>
+<li><b>Region0</b> (Display string: 'Region 0'): TestPattern feature will control the region 0 test pattern generator.</li>
+<li><b>Region1</b> (Display string: 'Region 1'): TestPattern feature will control the region 1 test pattern generator.</li>
+<li><b>Region2</b> (Display string: 'Region 2'): TestPattern feature will control the region 2 test pattern generator.</li>
+<li><b>Region#3#</b> (Display string: 'Region #3#'): TestPattern feature will control the region #3# test pattern generator.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a26c77884743e27837dda64cc08d9266c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::width</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Width of the image provided by the device (in pixels). </p>
+<p>Width of the image provided by the device (in pixels). </p>
+
+</div>
+</div>
+<a class="anchor" id="a2c55b3c587d1938aaed00089b322114c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ImageFormatControl::widthMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Maximum width of the image (in pixels). </p>
+<p>Maximum width of the image (in pixels). The dimension is calculated after horizontal binning, decimation or any other function changing the horizontal dimension of the image. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html">ImageFormatControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

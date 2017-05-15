@@ -1,0 +1,482 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::I2CControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::I2CControl类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Properties for accessing features belonging to the I2C control(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::I2CControl 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="4,6,152,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::I2CControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="781,5,931,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="781,70,931,111"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,207,555,249"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="781,135,931,177"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TI2COperation\lMode \&gt;" alt="" coords="753,200,959,256"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TI2COperation\lStatus \&gt;" alt="" coords="753,280,959,336"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,286,355,327"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,323,728,365"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,286,155,327"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a0caccb546bad1ad3fa85e5ab7f908099"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a0caccb546bad1ad3fa85e5ab7f908099">I2CControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="memdesc:a0caccb546bad1ad3fa85e5ab7f908099"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html" title="Properties for accessing features belonging to the I2C control(Device specific interface layout only)...">mvIMPACT::acquire::I2CControl</a></b> object.  <a href="#a0caccb546bad1ad3fa85e5ab7f908099">更多...</a><br /></td></tr>
+<tr class="separator:a0caccb546bad1ad3fa85e5ab7f908099"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1024608c37ae9b43cc2bf6b7e73b105"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#ad1024608c37ae9b43cc2bf6b7e73b105">I2CRead</a> (int deviceAddress, int deviceSubAddress, int deviceSubAddressWidth, int byteCnt)</td></tr>
+<tr class="memdesc:ad1024608c37ae9b43cc2bf6b7e73b105"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from an I2C device.  <a href="#ad1024608c37ae9b43cc2bf6b7e73b105">更多...</a><br /></td></tr>
+<tr class="separator:ad1024608c37ae9b43cc2bf6b7e73b105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae251dc9025461c7096e0cf54919c8ed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#ae251dc9025461c7096e0cf54919c8ed8">I2CWrite</a> (int deviceAddress, int deviceSubAddress, int deviceSubAddressWidth, const std::string &amp;data)</td></tr>
+<tr class="memdesc:ae251dc9025461c7096e0cf54919c8ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write data to a I2C device.  <a href="#ae251dc9025461c7096e0cf54919c8ed8">更多...</a><br /></td></tr>
+<tr class="separator:ae251dc9025461c7096e0cf54919c8ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a748f6467d536445c1cfef03dbe74104c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga605f7a21a4a20a008acbd59d6f18f3e9">PropertyII2COperationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a748f6467d536445c1cfef03dbe74104c">I2COperationMode</a></td></tr>
+<tr class="memdesc:a748f6467d536445c1cfef03dbe74104c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property to select the I2C operation.  <a href="#a748f6467d536445c1cfef03dbe74104c">更多...</a><br /></td></tr>
+<tr class="separator:a748f6467d536445c1cfef03dbe74104c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da9d7067602fe987ac12cbf3c007d84"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8da9d7067602fe987ac12cbf3c007d84"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a8da9d7067602fe987ac12cbf3c007d84">I2COperationExecute</a></td></tr>
+<tr class="memdesc:a8da9d7067602fe987ac12cbf3c007d84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calling this function will execute the operation selected by <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a748f6467d536445c1cfef03dbe74104c" title="An enumerated integer property to select the I2C operation. ">mvIMPACT::acquire::I2CControl::I2COperationMode</a></b>. <br /></td></tr>
+<tr class="separator:a8da9d7067602fe987ac12cbf3c007d84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36782988f085b21b07f05b496af21b80"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga4e0a176291dd65f15a0fddf3c1d552a1">PropertyII2COperationStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a36782988f085b21b07f05b496af21b80">I2COperationStatus</a></td></tr>
+<tr class="memdesc:a36782988f085b21b07f05b496af21b80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the I2C operation execution status.  <a href="#a36782988f085b21b07f05b496af21b80">更多...</a><br /></td></tr>
+<tr class="separator:a36782988f085b21b07f05b496af21b80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e0c719578f2e4a4acb7e952ac12e8d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e0c719578f2e4a4acb7e952ac12e8d6"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a1e0c719578f2e4a4acb7e952ac12e8d6">I2CDeviceAddress</a></td></tr>
+<tr class="memdesc:a1e0c719578f2e4a4acb7e952ac12e8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property storing the address of the I2C device to communicate with. <br /></td></tr>
+<tr class="separator:a1e0c719578f2e4a4acb7e952ac12e8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e555a00afae7ba4008c20ef23586cd3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a7e555a00afae7ba4008c20ef23586cd3">I2CDeviceSubAddressWidth</a></td></tr>
+<tr class="memdesc:a7e555a00afae7ba4008c20ef23586cd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property storing the sub-address width(in bits) of the I2C device to communicate with.  <a href="#a7e555a00afae7ba4008c20ef23586cd3">更多...</a><br /></td></tr>
+<tr class="separator:a7e555a00afae7ba4008c20ef23586cd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a319eb3849d69e8e19bbe606934eedf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a9a319eb3849d69e8e19bbe606934eedf">I2CDeviceSubAddress</a></td></tr>
+<tr class="memdesc:a9a319eb3849d69e8e19bbe606934eedf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property storing the sub-address of the I2C device to communicate with.  <a href="#a9a319eb3849d69e8e19bbe606934eedf">更多...</a><br /></td></tr>
+<tr class="separator:a9a319eb3849d69e8e19bbe606934eedf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9693f8fbf9f3e22af775d7756d27a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#ab9693f8fbf9f3e22af775d7756d27a6c">I2CBuffer</a></td></tr>
+<tr class="memdesc:ab9693f8fbf9f3e22af775d7756d27a6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines the intermediate access buffer that allows the exchange of data between the I2C device and the application.  <a href="#ab9693f8fbf9f3e22af775d7756d27a6c">更多...</a><br /></td></tr>
+<tr class="separator:ab9693f8fbf9f3e22af775d7756d27a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7b76f5aa0deae04e8ba5b2f74bff98a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7b76f5aa0deae04e8ba5b2f74bff98a"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#aa7b76f5aa0deae04e8ba5b2f74bff98a">I2CBufferLength</a></td></tr>
+<tr class="memdesc:aa7b76f5aa0deae04e8ba5b2f74bff98a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property controlling the length of the mapping between the I2C device and the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#ab9693f8fbf9f3e22af775d7756d27a6c" title="Defines the intermediate access buffer that allows the exchange of data between the I2C device and th...">mvIMPACT::acquire::I2CControl::I2CBuffer</a></b> property. <br /></td></tr>
+<tr class="separator:aa7b76f5aa0deae04e8ba5b2f74bff98a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Properties for accessing features belonging to the I2C control(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>Properties in this class will only be available if a device has a local I2C bus and this is configured for access from an application. Right now this is only the case for mvBlueFOX-MLC devices.</p>
+<p><b>mvBlueFOX</b> <b>specific:</b> </p>
+<p>For mvBlueFOX devices</p><ul>
+<li>clock stretching is supported</li>
+<li>bus master is supported</li>
+</ul>
+<p>The following I2C addresses will be blocked for access from an application: </p><table class="doxtable">
+<tr>
+<td class="header">i2c address</td><td class="header">remark </td></tr>
+<tr>
+<td class="indexvalue">0x20-0x3F</td><td class="indexvalue">- </td></tr>
+<tr>
+<td class="indexvalue">0x66-0x67</td><td class="indexvalue">- </td></tr>
+<tr>
+<td class="indexvalue">0x90-0x91</td><td class="indexvalue">mvBlueFOX-200w only </td></tr>
+<tr>
+<td class="indexvalue">0xA0-0xA3</td><td class="indexvalue">- </td></tr>
+<tr>
+<td class="indexvalue">0xA6-0xA7</td><td class="indexvalue">- </td></tr>
+<tr>
+<td class="indexvalue">0xBA-0xBB</td><td class="indexvalue">mvBlueFOX-202a and mvBlueFOX-205 only </td></tr>
+</table>
+<dl class="section note"><dt>注解</dt><dd>This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a0caccb546bad1ad3fa85e5ab7f908099"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::I2CControl::I2CControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html" title="Properties for accessing features belonging to the I2C control(Device specific interface layout only)...">mvIMPACT::acquire::I2CControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="421,103,584,159"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="421,23,584,79"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="211,139,373,195"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="211,219,373,275"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="657,110,825,151"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="632,38,851,79"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="911,5,1060,46"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="899,70,1072,111"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1121,92,1349,148"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1397,99,1621,141"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="428,226,577,267"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad1024608c37ae9b43cc2bf6b7e73b105"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mvIMPACT::acquire::I2CControl::I2CRead </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceSubAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceSubAddressWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>byteCnt</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read data from an I2C device. </p>
+<p>This is a convenience function that wraps the property access a little. In order to find out if the command has been executed successfully <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a36782988f085b21b07f05b496af21b80" title="Represents the I2C operation execution status. ">mvIMPACT::acquire::I2CControl::I2COperationStatus</a></b> should be checked afterwards. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceAddress</td><td>The address of the I2C device to communicate with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceSubAddress</td><td>The sub-address of the I2C device to communicate with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceSubAddressWidth</td><td>The sub-address width(in bits) of the I2C device to communicate with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">byteCnt</td><td>The amount of bytes to read. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae251dc9025461c7096e0cf54919c8ed8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::I2CControl::I2CWrite </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceSubAddress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>deviceSubAddressWidth</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>data</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Write data to a I2C device. </p>
+<p>This is a convenience function that wraps the property access a little. In order to find out if the command has been executed successfully <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a36782988f085b21b07f05b496af21b80" title="Represents the I2C operation execution status. ">mvIMPACT::acquire::I2CControl::I2COperationStatus</a></b> should be checked afterwards. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceAddress</td><td>The address of the I2C device to communicate with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceSubAddress</td><td>The sub-address of the I2C device to communicate with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">deviceSubAddressWidth</td><td>The sub-address width(in bits) of the I2C device to communicate with. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">data</td><td>The data to write to the I2C device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ab9693f8fbf9f3e22af775d7756d27a6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::I2CControl::I2CBuffer</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines the intermediate access buffer that allows the exchange of data between the I2C device and the application. </p>
+<p>This property can store binary data. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9a319eb3849d69e8e19bbe606934eedf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::I2CControl::I2CDeviceSubAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property storing the sub-address of the I2C device to communicate with. </p>
+<p>When <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a7e555a00afae7ba4008c20ef23586cd3" title="An enumerated integer property storing the sub-address width(in bits) of the I2C device to communicat...">mvIMPACT::acquire::I2CControl::I2CDeviceSubAddressWidth</a></b> is set to 0, this property will be ignored. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7e555a00afae7ba4008c20ef23586cd3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::I2CControl::I2CDeviceSubAddressWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property storing the sub-address width(in bits) of the I2C device to communicate with. </p>
+<p>Valid values for this property are:</p>
+<ul>
+<li>0</li>
+<li>8</li>
+<li>16</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>This property must be set to 0 for devices not supporting a sub-address. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a748f6467d536445c1cfef03dbe74104c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga605f7a21a4a20a008acbd59d6f18f3e9">PropertyII2COperationMode</a> mvIMPACT::acquire::I2CControl::I2COperationMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property to select the I2C operation. </p>
+<p>The selected operation is executed when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a8da9d7067602fe987ac12cbf3c007d84" title="Calling this function will execute the operation selected by mvIMPACT::acquire::I2CControl::I2COperat...">mvIMPACT::acquire::I2CControl::I2COperationExecute</a></b> is called.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TI2COperationMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a36782988f085b21b07f05b496af21b80"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga4e0a176291dd65f15a0fddf3c1d552a1">PropertyII2COperationStatus</a> mvIMPACT::acquire::I2CControl::I2COperationStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Represents the I2C operation execution status. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TI2COperationStatus</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html">I2CControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

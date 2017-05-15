@@ -1,0 +1,821 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::mvLogicGateControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::mvLogicGateControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category that contains features to control the devices Logic Gate Control parameters.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::GenICam::mvLogicGateControl 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="33,6,181,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::mvLogicGateControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="625,5,775,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="619,180,781,236"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,234,555,275"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="606,261,794,302"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,234,355,275"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,234,155,275"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3d5e4d1397ec8548401a5c2ab1a82080"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a3d5e4d1397ec8548401a5c2ab1a82080">mvLogicGateControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a3d5e4d1397ec8548401a5c2ab1a82080"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html" title="Category that contains features to control the devices Logic Gate Control parameters. ">mvIMPACT::acquire::GenICam::mvLogicGateControl</a></b> object.  <a href="#a3d5e4d1397ec8548401a5c2ab1a82080">更多...</a><br /></td></tr>
+<tr class="separator:a3d5e4d1397ec8548401a5c2ab1a82080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:abba6d54999f450e8f08934c0af5bec0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#abba6d54999f450e8f08934c0af5bec0d">mvLogicGateANDSelector</a></td></tr>
+<tr class="memdesc:abba6d54999f450e8f08934c0af5bec0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the AND gate to configure.  <a href="#abba6d54999f450e8f08934c0af5bec0d">更多...</a><br /></td></tr>
+<tr class="separator:abba6d54999f450e8f08934c0af5bec0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff3a8ed67455967905fcf463c85ff0f3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#aff3a8ed67455967905fcf463c85ff0f3">mvLogicGateANDSource1</a></td></tr>
+<tr class="memdesc:aff3a8ed67455967905fcf463c85ff0f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the first input signal of the AND gate selected by mvLogicGateANDSelector.  <a href="#aff3a8ed67455967905fcf463c85ff0f3">更多...</a><br /></td></tr>
+<tr class="separator:aff3a8ed67455967905fcf463c85ff0f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd58d1cddd078640f1080fb2f140dcd5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#acd58d1cddd078640f1080fb2f140dcd5">mvANDSource1Inverter</a></td></tr>
+<tr class="memdesc:acd58d1cddd078640f1080fb2f140dcd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Inverts the first input signal of the AND gate selected by mvLogicGateANDSelector.  <a href="#acd58d1cddd078640f1080fb2f140dcd5">更多...</a><br /></td></tr>
+<tr class="separator:acd58d1cddd078640f1080fb2f140dcd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99264f802944238bb3811996ad3bda19"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a99264f802944238bb3811996ad3bda19">mvLogicGateANDSource2</a></td></tr>
+<tr class="memdesc:a99264f802944238bb3811996ad3bda19"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the second input signal of the AND gate selected by mvLogicGateANDSelector.  <a href="#a99264f802944238bb3811996ad3bda19">更多...</a><br /></td></tr>
+<tr class="separator:a99264f802944238bb3811996ad3bda19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af34f748bfd0df08d6c5a915794a0eea2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#af34f748bfd0df08d6c5a915794a0eea2">mvANDSource2Inverter</a></td></tr>
+<tr class="memdesc:af34f748bfd0df08d6c5a915794a0eea2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Inverts the second input signal of the AND gate selected by mvLogicGateANDSelector.  <a href="#af34f748bfd0df08d6c5a915794a0eea2">更多...</a><br /></td></tr>
+<tr class="separator:af34f748bfd0df08d6c5a915794a0eea2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9652a51b62c599a9301d99d9fb5452d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#ad9652a51b62c599a9301d99d9fb5452d">mvLogicGateORSelector</a></td></tr>
+<tr class="memdesc:ad9652a51b62c599a9301d99d9fb5452d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the OR gate to configure.  <a href="#ad9652a51b62c599a9301d99d9fb5452d">更多...</a><br /></td></tr>
+<tr class="separator:ad9652a51b62c599a9301d99d9fb5452d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7036f5051e1126c79f002edb61934005"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a7036f5051e1126c79f002edb61934005">mvLogicGateORSource1</a></td></tr>
+<tr class="memdesc:a7036f5051e1126c79f002edb61934005"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the first input signal of the OR gate selected by mvLogicGateORSelector.  <a href="#a7036f5051e1126c79f002edb61934005">更多...</a><br /></td></tr>
+<tr class="separator:a7036f5051e1126c79f002edb61934005"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a353a54d135685ff6a49fcdf63cf8a1eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a353a54d135685ff6a49fcdf63cf8a1eb">mvLogicGateORSource2</a></td></tr>
+<tr class="memdesc:a353a54d135685ff6a49fcdf63cf8a1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the second input signal of the OR gate selected by mvLogicGateORSelector.  <a href="#a353a54d135685ff6a49fcdf63cf8a1eb">更多...</a><br /></td></tr>
+<tr class="separator:a353a54d135685ff6a49fcdf63cf8a1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a15bc3b47b09064645418e4ba079948"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a9a15bc3b47b09064645418e4ba079948">mvLogicGateORSource3</a></td></tr>
+<tr class="memdesc:a9a15bc3b47b09064645418e4ba079948"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the third input signal of the OR gate selected by mvLogicGateORSelector.  <a href="#a9a15bc3b47b09064645418e4ba079948">更多...</a><br /></td></tr>
+<tr class="separator:a9a15bc3b47b09064645418e4ba079948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a68bd0cd86529ce32ea5c06401c701e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a6a68bd0cd86529ce32ea5c06401c701e">mvLogicGateORSource4</a></td></tr>
+<tr class="memdesc:a6a68bd0cd86529ce32ea5c06401c701e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the fourth input signal of the OR gate selected by mvLogicGateORSelector.  <a href="#a6a68bd0cd86529ce32ea5c06401c701e">更多...</a><br /></td></tr>
+<tr class="separator:a6a68bd0cd86529ce32ea5c06401c701e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cf94ca87af9ebd46fda681f936d3a11"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a2cf94ca87af9ebd46fda681f936d3a11">mvLogicGateSourceSelector</a></td></tr>
+<tr class="memdesc:a2cf94ca87af9ebd46fda681f936d3a11"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the LogicGateSource of the ANDORMatrix.  <a href="#a2cf94ca87af9ebd46fda681f936d3a11">更多...</a><br /></td></tr>
+<tr class="separator:a2cf94ca87af9ebd46fda681f936d3a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d479832eb171e652ee95de12a1b5117"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a6d479832eb171e652ee95de12a1b5117">mvLogicGateSource</a></td></tr>
+<tr class="memdesc:a6d479832eb171e652ee95de12a1b5117"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the input signal of the ANDORMatrix selected by mvLogicGateSourceSelector.  <a href="#a6d479832eb171e652ee95de12a1b5117">更多...</a><br /></td></tr>
+<tr class="separator:a6d479832eb171e652ee95de12a1b5117"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad028a53703d0d80731468d75a55a6071"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#ad028a53703d0d80731468d75a55a6071">mvLogicGateSourceInverter</a></td></tr>
+<tr class="memdesc:ad028a53703d0d80731468d75a55a6071"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Inverts the input signal.  <a href="#ad028a53703d0d80731468d75a55a6071">更多...</a><br /></td></tr>
+<tr class="separator:ad028a53703d0d80731468d75a55a6071"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28bfaafbd816387721c325710151f78d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a28bfaafbd816387721c325710151f78d">mvLogicGateANDTermSelector</a></td></tr>
+<tr class="memdesc:a28bfaafbd816387721c325710151f78d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the AND-term of the AND-OR-matrix.  <a href="#a28bfaafbd816387721c325710151f78d">更多...</a><br /></td></tr>
+<tr class="separator:a28bfaafbd816387721c325710151f78d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eefe30ae8aa7fc1f738becc8e5d529"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a71eefe30ae8aa7fc1f738becc8e5d529">mvLogicGateANDTermSrc0</a></td></tr>
+<tr class="memdesc:a71eefe30ae8aa7fc1f738becc8e5d529"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the first input signal of the AND-term selected by mvLogicGateANDTermSelector.  <a href="#a71eefe30ae8aa7fc1f738becc8e5d529">更多...</a><br /></td></tr>
+<tr class="separator:a71eefe30ae8aa7fc1f738becc8e5d529"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eb76d114a2504d40b571ab83c4e2b9d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#a4eb76d114a2504d40b571ab83c4e2b9d">mvLogicGateANDTermSrc1</a></td></tr>
+<tr class="memdesc:a4eb76d114a2504d40b571ab83c4e2b9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the second input signal of the AND-term selected by mvLogicGateANDTermSelector.  <a href="#a4eb76d114a2504d40b571ab83c4e2b9d">更多...</a><br /></td></tr>
+<tr class="separator:a4eb76d114a2504d40b571ab83c4e2b9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af26ef99b8f2eb5b478ea576e4ebd3c70"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#af26ef99b8f2eb5b478ea576e4ebd3c70">mvLogicGateORTermSelector</a></td></tr>
+<tr class="memdesc:af26ef99b8f2eb5b478ea576e4ebd3c70"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the OR-term of the AND-OR-matrix.  <a href="#af26ef99b8f2eb5b478ea576e4ebd3c70">更多...</a><br /></td></tr>
+<tr class="separator:af26ef99b8f2eb5b478ea576e4ebd3c70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedff5baffbe81054b6e2d043664d8bbb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#aedff5baffbe81054b6e2d043664d8bbb">mvLogicGateORTermSrc0</a></td></tr>
+<tr class="memdesc:aedff5baffbe81054b6e2d043664d8bbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the first input signal of the ORTerm selected by mvLogicGateORTermSelector.  <a href="#aedff5baffbe81054b6e2d043664d8bbb">更多...</a><br /></td></tr>
+<tr class="separator:aedff5baffbe81054b6e2d043664d8bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acede1a2a2dc54878a67f52f25aec782b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#acede1a2a2dc54878a67f52f25aec782b">mvLogicGateORTermSrc1</a></td></tr>
+<tr class="memdesc:acede1a2a2dc54878a67f52f25aec782b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the second input signal of the ORTerm selected by mvLogicGateORTermSelector.  <a href="#acede1a2a2dc54878a67f52f25aec782b">更多...</a><br /></td></tr>
+<tr class="separator:acede1a2a2dc54878a67f52f25aec782b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category that contains features to control the devices Logic Gate Control parameters. </p>
+<p>A category that contains features to control the devices Logic Gate Control parameters. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3d5e4d1397ec8548401a5c2ab1a82080"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html" title="Category that contains features to control the devices Logic Gate Control parameters. ">mvIMPACT::acquire::GenICam::mvLogicGateControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_a3d5e4d1397ec8548401a5c2ab1a82080_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_a3d5e4d1397ec8548401a5c2ab1a82080_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_a3d5e4d1397ec8548401a5c2ab1a82080_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control_a3d5e4d1397ec8548401a5c2ab1a82080_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="469,23,632,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="259,88,421,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="259,168,421,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="680,38,899,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="959,5,1108,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="947,70,1120,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1169,92,1397,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1445,99,1669,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="469,103,632,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="476,182,625,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="705,110,873,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="acd58d1cddd078640f1080fb2f140dcd5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvANDSource1Inverter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Inverts the first input signal of the AND gate selected by mvLogicGateANDSelector. </p>
+<p>Inverts the first input signal of the AND gate selected by mvLogicGateANDSelector </p>
+
+</div>
+</div>
+<a class="anchor" id="af34f748bfd0df08d6c5a915794a0eea2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvANDSource2Inverter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Inverts the second input signal of the AND gate selected by mvLogicGateANDSelector. </p>
+<p>Inverts the second input signal of the AND gate selected by mvLogicGateANDSelector </p>
+
+</div>
+</div>
+<a class="anchor" id="abba6d54999f450e8f08934c0af5bec0d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateANDSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the AND gate to configure. </p>
+<p>This enumeration selects the AND gate to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateAND1</b> (Display string: 'mv Logic Gate AND Selector')</li>
+<li><b>mvLogicGateAND2</b> (Display string: 'mv Logic Gate AND Selector')</li>
+<li><b>mvLogicGateAND3</b> (Display string: 'mv Logic Gate AND Selector')</li>
+<li><b>mvLogicGateAND4</b> (Display string: 'mv Logic Gate AND Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff3a8ed67455967905fcf463c85ff0f3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateANDSource1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the first input signal of the AND gate selected by mvLogicGateANDSelector. </p>
+<p>This enumeration can be used to select the first input signal of the AND gate selected by mvLogicGateANDSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line4</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line5</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line6</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line7</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line12</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line13</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line14</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Line15</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>ExposureActive</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>mvExposureSensor2Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput0</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput1</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput2</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput3</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput4</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput5</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput6</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>UserOutput7</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Timer1Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Timer2Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Timer3Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter1Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter2Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter3Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter4Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter5Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter6Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter7Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>Counter8Active</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>AcquisitionActive</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>FrameActive</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>LineActive</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>FrameTriggerWait</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>mvTemperatureOutOfRange</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+<li><b>mvExposureActive</b> (Display string: 'mv Logic Gate AND Source 1')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a99264f802944238bb3811996ad3bda19"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateANDSource2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the second input signal of the AND gate selected by mvLogicGateANDSelector. </p>
+<p>This enumeration can be used to select the second input signal of the AND gate selected by mvLogicGateANDSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line4</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line5</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line6</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line7</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line12</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line13</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line14</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Line15</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>ExposureActive</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>mvExposureSensor2Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput0</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput1</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput2</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput3</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput4</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput5</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput6</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>UserOutput7</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Timer1Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Timer2Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Timer3Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter1Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter2Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter3Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter4Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter5Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter6Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter7Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>Counter8Active</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>AcquisitionActive</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>FrameActive</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>LineActive</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>FrameTriggerWait</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>mvTemperatureOutOfRange</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+<li><b>mvExposureActive</b> (Display string: 'mv Logic Gate AND Source 2')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a28bfaafbd816387721c325710151f78d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateANDTermSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the AND-term of the AND-OR-matrix. </p>
+<p>Selects the AND-term of the AND-OR-matrix.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateANDTerm0</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm1</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm2</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm3</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm4</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm5</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm6</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+<li><b>mvLogicGateANDTerm7</b> (Display string: 'mv Logic Gate AND Term Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a71eefe30ae8aa7fc1f738becc8e5d529"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateANDTermSrc0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the first input signal of the AND-term selected by mvLogicGateANDTermSelector. </p>
+<p>Selects the first input signal of the AND-term selected by mvLogicGateANDTermSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource0</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource1</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource2</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource3</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource4</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource5</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource6</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+<li><b>mvLogicGateSource7</b> (Display string: 'mv Logic Gate AND Term Src 0')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4eb76d114a2504d40b571ab83c4e2b9d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateANDTermSrc1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the second input signal of the AND-term selected by mvLogicGateANDTermSelector. </p>
+<p>Selects the second input signal of the AND-term selected by mvLogicGateANDTermSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource0</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource1</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource2</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource3</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource4</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource5</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource6</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+<li><b>mvLogicGateSource7</b> (Display string: 'mv Logic Gate AND Term Src 1')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad9652a51b62c599a9301d99d9fb5452d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the OR gate to configure. </p>
+<p>This enumeration selects the OR gate to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateOR1</b> (Display string: 'mv Logic Gate OR Selector')</li>
+<li><b>mvLogicGateOR2</b> (Display string: 'mv Logic Gate OR Selector')</li>
+<li><b>mvLogicGateOR3</b> (Display string: 'mv Logic Gate OR Selector')</li>
+<li><b>mvLogicGateOR4</b> (Display string: 'mv Logic Gate OR Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7036f5051e1126c79f002edb61934005"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORSource1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the first input signal of the OR gate selected by mvLogicGateORSelector. </p>
+<p>This enumeration can be used to select the first input signal of the OR gate selected by mvLogicGateORSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateAND1Output</b> (Display string: 'mv Logic Gate OR Source 1')</li>
+<li><b>mvLogicGateAND2Output</b> (Display string: 'mv Logic Gate OR Source 1')</li>
+<li><b>mvLogicGateAND3Output</b> (Display string: 'mv Logic Gate OR Source 1')</li>
+<li><b>mvLogicGateAND4Output</b> (Display string: 'mv Logic Gate OR Source 1')</li>
+<li><b>Off</b> (Display string: 'mv Logic Gate OR Source 1')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a353a54d135685ff6a49fcdf63cf8a1eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORSource2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the second input signal of the OR gate selected by mvLogicGateORSelector. </p>
+<p>This enumeration can be used to select the second input signal of the OR gate selected by mvLogicGateORSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateAND1Output</b> (Display string: 'mv Logic Gate OR Source 2')</li>
+<li><b>mvLogicGateAND2Output</b> (Display string: 'mv Logic Gate OR Source 2')</li>
+<li><b>mvLogicGateAND3Output</b> (Display string: 'mv Logic Gate OR Source 2')</li>
+<li><b>mvLogicGateAND4Output</b> (Display string: 'mv Logic Gate OR Source 2')</li>
+<li><b>Off</b> (Display string: 'mv Logic Gate OR Source 2')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a15bc3b47b09064645418e4ba079948"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORSource3</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the third input signal of the OR gate selected by mvLogicGateORSelector. </p>
+<p>This enumeration can be used to select the third input signal of the OR gate selected by mvLogicGateORSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateAND1Output</b> (Display string: 'mv Logic Gate OR Source 3')</li>
+<li><b>mvLogicGateAND2Output</b> (Display string: 'mv Logic Gate OR Source 3')</li>
+<li><b>mvLogicGateAND3Output</b> (Display string: 'mv Logic Gate OR Source 3')</li>
+<li><b>mvLogicGateAND4Output</b> (Display string: 'mv Logic Gate OR Source 3')</li>
+<li><b>Off</b> (Display string: 'mv Logic Gate OR Source 3')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6a68bd0cd86529ce32ea5c06401c701e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORSource4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the fourth input signal of the OR gate selected by mvLogicGateORSelector. </p>
+<p>This enumeration can be used to select the fourth input signal of the OR gate selected by mvLogicGateORSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateAND1Output</b> (Display string: 'mv Logic Gate OR Source 4')</li>
+<li><b>mvLogicGateAND2Output</b> (Display string: 'mv Logic Gate OR Source 4')</li>
+<li><b>mvLogicGateAND3Output</b> (Display string: 'mv Logic Gate OR Source 4')</li>
+<li><b>mvLogicGateAND4Output</b> (Display string: 'mv Logic Gate OR Source 4')</li>
+<li><b>Off</b> (Display string: 'mv Logic Gate OR Source 4')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af26ef99b8f2eb5b478ea576e4ebd3c70"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORTermSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the OR-term of the AND-OR-matrix. </p>
+<p>Selects the OR-term of the AND-OR-matrix.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateORTerm0</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm1</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm2</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm3</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm4</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm5</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm6</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+<li><b>mvLogicGateORTerm7</b> (Display string: 'mv Logic Gate OR Term Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aedff5baffbe81054b6e2d043664d8bbb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORTermSrc0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the first input signal of the ORTerm selected by mvLogicGateORTermSelector. </p>
+<p>Selects the first input signal of the ORTerm selected by mvLogicGateORTermSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm0</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm1</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm2</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm3</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm4</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm5</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm6</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+<li><b>mvLogicGateANDTerm7</b> (Display string: 'mv Logic Gate OR Term Src 0')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acede1a2a2dc54878a67f52f25aec782b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateORTermSrc1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the second input signal of the ORTerm selected by mvLogicGateORTermSelector. </p>
+<p>Selects the second input signal of the ORTerm selected by mvLogicGateORTermSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm0</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm1</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm2</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm3</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm4</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm5</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm6</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+<li><b>mvLogicGateANDTerm7</b> (Display string: 'mv Logic Gate OR Term Src 1')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d479832eb171e652ee95de12a1b5117"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the input signal of the ANDORMatrix selected by mvLogicGateSourceSelector. </p>
+<p>Selects the input signal of the ANDORMatrix selected by mvLogicGateSourceSelector.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Line4</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Line5</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Line6</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Line7</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>ExposureActive</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>mvExposureSensor2Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput0</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput1</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput2</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput3</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput4</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput5</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput6</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>UserOutput7</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Timer1Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Timer2Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Timer3Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter1Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter2Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter3Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter4Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter5Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter6Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter7Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>Counter8Active</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>AcquisitionActive</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>FrameActive</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>LineActive</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>FrameTriggerWait</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>mvTemperatureOutOfRange</b> (Display string: 'mv Logic Gate Source')</li>
+<li><b>mvExposureActive</b> (Display string: 'mv Logic Gate Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad028a53703d0d80731468d75a55a6071"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateSourceInverter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Inverts the input signal. </p>
+<p>Inverts the input signal. </p>
+
+</div>
+</div>
+<a class="anchor" id="a2cf94ca87af9ebd46fda681f936d3a11"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::mvLogicGateControl::mvLogicGateSourceSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the LogicGateSource of the ANDORMatrix. </p>
+<p>Selects the LogicGateSource of the ANDORMatrix.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvLogicGateSource0</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource1</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource2</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource3</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource4</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource5</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource6</b> (Display string: 'mv Logic Gate Source Selector')</li>
+<li><b>mvLogicGateSource7</b> (Display string: 'mv Logic Gate Source Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html">mvLogicGateControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

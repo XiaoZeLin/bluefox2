@@ -1,0 +1,238 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: apps/mvPropView/DevCtrl.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_dev_ctrl_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">DevCtrl.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef DevCtrlH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define DevCtrlH DevCtrlH</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;DevData.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;mvIMPACT_CPP/mvIMPACT_acquire_GenICam.h&gt;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;PropTree.h&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &lt;wx/string.h&gt;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;wx/thread.h&gt;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">class </span>wxPropertyGridPage;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">typedef</span> std::map&lt;mvIMPACT::acquire::Device*, DeviceData*&gt; DevToTreeMap;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_device_property_handler.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_device_property_handler.html">DevicePropertyHandler</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="class_device_property_handler.html">DevicePropertyHandler</a>( wxPropertyGridPage* pPGDevice, <span class="keywordtype">bool</span> boDisplayDebugInfo, <span class="keywordtype">bool</span> boDisplayFullTree, <span class="keywordtype">bool</span> boDisplayInvisibleComponents );</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    ~<a class="code" href="class_device_property_handler.html">DevicePropertyHandler</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keyword">enum</span> TViewMode</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    {</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        vmStandard,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        vmDeveloper,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        vmLAST</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    };</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span>                                        CloseDriver( <span class="keyword">const</span> wxString&amp; name );</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">bool</span>                                        DoesActiveDeviceSupportWizard( TWizardIDs wID ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>*                  GetActiveDevice( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">mvIMPACT::acquire::FunctionInterface</a>** ppFI = 0, <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics.html">mvIMPACT::acquire::Statistics</a>** ppS = 0, <a class="code" href="class_capture_thread.html">CaptureThread</a>** ppCT = 0 ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">mvIMPACT::acquire::Property</a>                 GetActiveDeviceAcquisitionMode( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::PropertyI64</a>              GetActiveDeviceAcquisitionFrameCount( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::PropertyI64</a>              GetActiveDeviceAcquisitionMemoryFrameCount( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span>                                        GetActiveDeviceFeatureVsTimePlotInfo( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&amp; feature, wxString&amp; featureFullPath );</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">const</span> SequencerSetToDisplayMap              GetActiveDeviceSequencerSetToDisplayMap( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">const</span> SettingToDisplayDict                  GetActiveDeviceSettingToDisplayDict( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">const</span> WizardFeatureMap                      GetActiveDeviceSupportedWizards( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">bool</span>                                        GetDeviceData( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev, <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">mvIMPACT::acquire::FunctionInterface</a>** ppFI = 0, <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics.html">mvIMPACT::acquire::Statistics</a>** ppS = 0, <a class="code" href="class_capture_thread.html">CaptureThread</a>** ppCT = 0 ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html">mvIMPACT::acquire::DeviceManager</a>&amp;     GetDevMgr( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">return</span> m_devMgr;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    int64_type                                  GetGenTLInterfaceCount( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    EDisplayFlags                               GetDisplayFlags( <span class="keywordtype">void</span> ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    TViewMode                                   GetViewMode( <span class="keywordtype">void</span> )<span class="keyword"> const</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="keywordflow">return</span> m_viewMode;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    wxString                                    OpenDriver( <span class="keyword">const</span> wxString&amp; name, wxWindow* pParentWindow, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> pendingImageQueueDepth );</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span>                                        SetActiveDevice( <span class="keyword">const</span> wxString&amp; name );</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">void</span>                                        SetActiveDeviceFeatureVsTimePlotInfo( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> feature, <span class="keyword">const</span> wxString&amp; featureFullPath );</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span>                                        SetActiveDeviceSequencerSetToDisplayMap( <span class="keyword">const</span> SequencerSetToDisplayMap&amp; m );</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">void</span>                                        SetActiveDeviceSettingToDisplayDict( <span class="keyword">const</span> SettingToDisplayDict&amp; m );</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span>                                        SetViewMode( TViewMode mode, <span class="keywordtype">bool</span> boUseHexIndices, <span class="keywordtype">bool</span> boUseDisplayNames, <span class="keywordtype">bool</span> boUseSelectorGrouping );</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span>                                        ValidateTrees( <span class="keywordtype">bool</span> boForceCleanup = <span class="keyword">false</span> );</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                m_actDevListChangedCounter;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                m_actDrvListChangedCounter;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span>                                        m_boDisplayDebugInfo;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">bool</span>                                        m_boDisplayInvisibleComponents;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="group___common_interface.html#ga75b333e3ba771df98bde9ee1e12f57a0">mvIMPACT::acquire::TComponentVisibility</a>     m_componentVisibility;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                                m_fullTreeChangedCounter;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <a class="code" href="class_prop_tree.html">PropTree</a>*                                   m_pFullTree;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html">mvIMPACT::acquire::DeviceManager</a>            m_devMgr;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html">mvIMPACT::acquire::GenICam::SystemModule</a>*   m_pSystemModule;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    DevToTreeMap                                m_devToTreeMap;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="struct_device_data.html">DeviceData</a>*                                 m_pActiveDevData;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>*                  m_pActiveDevice;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    wxPropertyGridPage*                         m_pPGDevice;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">mutable</span> wxCriticalSection                   m_critSect;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    TViewMode                                   m_viewMode;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">bool</span>                                        m_boUseHexIndices;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">bool</span>                                        m_boUseDisplayNames;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">bool</span>                                        m_boUseSelectorGrouping;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span>                                 AddFeatureToSetIfValid( std::set&lt;HOBJ&gt;&amp; s, <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&amp; c );</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span>                                        GetInterfaceClasses( <span class="keyword">const</span> <a class="code" href="struct_device_data.html">DeviceData</a>* p, <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">mvIMPACT::acquire::FunctionInterface</a>** ppFI = 0, <span class="keyword">const</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics.html">mvIMPACT::acquire::Statistics</a>** ppS = 0, <a class="code" href="class_capture_thread.html">CaptureThread</a>** ppCT = 0 ) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">void</span>                                        ReCreateDriverTrees( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span>                                        ReCreateFullTree( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span>                                        CheckForWizards( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a>* pDev, <a class="code" href="struct_device_data.html">DeviceData</a>* pDevData );</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span>                                        UpdateTree( <a class="code" href="class_prop_tree.html">PropTree</a>* pTree, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>&amp; actChangedCounter, <span class="keyword">const</span> <span class="keywordtype">bool</span> boForceRedraw, <span class="keyword">const</span> <span class="keywordtype">bool</span> boForceCleanup );</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span>                                        UpdateTreeMap( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span>                                        CreateDriverTrees( DevToTreeMap::iterator&amp; it );</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span>                                        DeleteDriverTrees( DevToTreeMap::iterator&amp; it );</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span>                                        PrepareTreeArray( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">void</span>                                        PrepareTreeArrayCommon( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">struct </span>TreeProp</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        TreeProp( <span class="keyword">const</span> std::string&amp; listName, <span class="keyword">const</span> std::string&amp; displayedName ) : ListName( listName ),</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            DisplayName( displayedName ), ChangedCounter( 0 ), ListType( <a class="code" href="group___common_interface.html#gga0dca79bbf0803a4ecec16d6cbb1a3dbba64656c81b86974fb95dfec65a07cd38e">mvIMPACT::acquire::dltUndefined</a> ) {}</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        TreeProp( <a class="code" href="group___common_interface.html#ga0dca79bbf0803a4ecec16d6cbb1a3dbb">mvIMPACT::acquire::TDeviceListType</a> listType, <span class="keyword">const</span> std::string&amp; displayedName ) : ListName( <span class="stringliteral">&quot;&quot;</span> ),</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            DisplayName( displayedName ), ChangedCounter( 0 ), ListType( listType ) {}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        std::string                         ListName;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        std::string                         DisplayName;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>                        ChangedCounter;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <a class="code" href="group___common_interface.html#ga0dca79bbf0803a4ecec16d6cbb1a3dbb">mvIMPACT::acquire::TDeviceListType</a>  ListType;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    };</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    std::vector&lt;TreeProp&gt; m_vTreeProps;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;};</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="preprocessor">#endif // DevCtrlH</span></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html">mvIMPACT::acquire::GenICam::SystemModule</a></div><div class="ttdoc">Category that contains items that belong to the system module of the transport layer. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire_GenICam.h:13345</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">mvIMPACT::acquire::FunctionInterface</a></div><div class="ttdoc">The function interface to devices supported by this interface. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:8471</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">mvIMPACT::acquire::Component</a></div><div class="ttdoc">A base class to implement access to internal driver components. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:1034</div></div>
+<div class="ttc" id="struct_device_data_html"><div class="ttname"><a href="struct_device_data.html">DeviceData</a></div><div class="ttdef"><b>Definition:</b> DevData.h:42</div></div>
+<div class="ttc" id="group___common_interface_html_ga0dca79bbf0803a4ecec16d6cbb1a3dbb"><div class="ttname"><a href="group___common_interface.html#ga0dca79bbf0803a4ecec16d6cbb1a3dbb">mvIMPACT::acquire::TDeviceListType</a></div><div class="ttdeci">TDeviceListType</div><div class="ttdoc">Defines valid interface list types, which can be located using an instance of mvIMPACT::acquire::Devi...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:6388</div></div>
+<div class="ttc" id="class_capture_thread_html"><div class="ttname"><a href="class_capture_thread.html">CaptureThread</a></div><div class="ttdef"><b>Definition:</b> CaptureThread.h:33</div></div>
+<div class="ttc" id="class_prop_tree_html"><div class="ttname"><a href="class_prop_tree.html">PropTree</a></div><div class="ttdef"><b>Definition:</b> PropTree.h:55</div></div>
+<div class="ttc" id="class_device_property_handler_html"><div class="ttname"><a href="class_device_property_handler.html">DevicePropertyHandler</a></div><div class="ttdef"><b>Definition:</b> DevCtrl.h:16</div></div>
+<div class="ttc" id="group___common_interface_html_ga75b333e3ba771df98bde9ee1e12f57a0"><div class="ttname"><a href="group___common_interface.html#ga75b333e3ba771df98bde9ee1e12f57a0">TComponentVisibility</a></div><div class="ttdeci">TComponentVisibility</div><div class="ttdoc">Defines valid recommended visibilities for features. </div><div class="ttdef"><b>Definition:</b> mvPropHandlingDatatypes.h:347</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics.html">mvIMPACT::acquire::Statistics</a></div><div class="ttdoc">Contains basic statistical information. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:11296</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::EnumPropertyI64&lt; int64_type &gt;</a></div></div>
+<div class="ttc" id="group___common_interface_html_gga0dca79bbf0803a4ecec16d6cbb1a3dbba64656c81b86974fb95dfec65a07cd38e"><div class="ttname"><a href="group___common_interface.html#gga0dca79bbf0803a4ecec16d6cbb1a3dbba64656c81b86974fb95dfec65a07cd38e">mvIMPACT::acquire::dltUndefined</a></div><div class="ttdoc">A placeholder for an undefined list type. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:6392</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html">mvIMPACT::acquire::DeviceManager</a></div><div class="ttdoc">Grants access to devices that can be operated by this software interface. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:5943</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a></div><div class="ttdoc">This class and its functions represent an actual device detected by this interface in the current sys...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:5161</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">mvIMPACT::acquire::Property</a></div><div class="ttdoc">A base class for properties. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:2376</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9654b8d08f4bba4e84b362c5fd320bee.html">apps</a></li><li class="navelem"><a class="el" href="dir_b4314176cc98ce955dd99bdce49b32af.html">mvPropView</a></li><li class="navelem"><b>DevCtrl.h</b></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:18 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

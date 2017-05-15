@@ -1,0 +1,1221 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Request类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+}
+
+
+Contains information about a captured image.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Request 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_request__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{类}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structmv_i_m_p_a_c_t_1_1acquire_1_1_request_1_1_reference_counted_data}{Reference\+Counted\+Data}
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a43a70b9653e60efd9ecfb33433518981}{Request} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} from and existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a634f1302fbb2f3aebe1e3d11ce5c0eb1}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a634f1302fbb2f3aebe1e3d11ce5c0eb1}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a634f1302fbb2f3aebe1e3d11ce5c0eb1}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator}{Device\+Component\+Locator} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a2dc69f50a17c1319ddcbbef5fd3ab2bd}{get\+Component\+Locator} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a component locator for this request. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a57688f576163674a855a07854fa9e7a3}{int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a57688f576163674a855a07854fa9e7a3}{get\+Number} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a57688f576163674a855a07854fa9e7a3}
+
+\begin{DoxyCompactList}\small\item\em Returns the number associated with this request. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{Image\+Buffer\+Desc} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39}{get\+Image\+Buffer\+Desc} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a const reference to the image buffer descriptor of this request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga461a5ba2197d9e599ee35e2514d684ef}{Component\+Iterator} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d82ad8332a4fd79db9bcb59970836f1}{get\+Info\+Iterator} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns an iterator to for iterating inside the info list of the request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga461a5ba2197d9e599ee35e2514d684ef}{Component\+Iterator} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3df38a3b0375cea7fed2826b62163264}{get\+Image\+Processing\+Results\+Iterator} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns an iterator to for iterating inside the info/image\+Processing\+Results list of the request. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834}{has\+Processing\+Been\+Skipped} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if image processing that was set up for this request has been skipped for performance reasons. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7282a37729fa0a4e02f0e77d9a39d27}{get\+Chunk\+Counter\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of counter values that can be returned as part of the additional data of the buffer containing the request data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a07d7edad7cdae47d16de0356ebb2e42e}{get\+Chunk\+Counter\+Value} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a 64 bit integer property {\bfseries }(read-\/only) defining the selected counter value at the time of the internal frame start event for this request. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad6458f69adbeb566126db8fbda2e84df}{get\+Chunk\+Timer\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of timer values that can be returned as part of the additional data of the buffer containing the request data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a459a1c5b4cdb00df81e73f66b5985557}{get\+Chunk\+Timer\+Value} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a floating point property {\bfseries }(read-\/only) defining the selected timer value at the time of the internal frame start event for this request. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ae940fe94ee8091d89cf9f4d4e7808c81}{get\+Chunk\+Gain\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of gain values that can be returned as part of the additional data of the buffer containing the request data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a89d55e162f431703c1dc495de6b34a08}{get\+Chunk\+Gain} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a floating point property {\bfseries }(read-\/only) defining the selected gain value at the time of the internal frame start event for this request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98}{get\+Chunk\+Gain} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a floating point property {\bfseries }(read-\/only) defining the selected gain value at the time of the internal frame start event for this request. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7120b640d76a3f8ed3711a8a773ad4be}{is\+O\+K} (void) const 
+\begin{DoxyCompactList}\small\item\em Convenience function to check if a request has been processed successfully. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{configure} (void)
+\begin{DoxyCompactList}\small\item\em Allows to set a request into configuration mode. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{unlock} (void)
+\begin{DoxyCompactList}\small\item\em Unlocks the request for the driver again. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{attach\+User\+Buffer} (void $\ast$p\+Buf, int buf\+Size)
+\begin{DoxyCompactList}\small\item\em Convenience function to attach a user supplied buffer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{detach\+User\+Buffer} (void)
+\begin{DoxyCompactList}\small\item\em Convenience function to detach a user supplied buffer from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga1589b24b307be9af82ada97e4588a6bd}{Property\+I\+Request\+Result} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a90b174d20b986b585b37c74791726012}{request\+Result}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) defining the result of this request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaa47cf118ef2a24f22680d3a3b2fcdf60}{Property\+I\+Request\+State} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acf9adfbc13cad31da7c10741252ed1e1}{request\+State}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) defining the current state of this request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a08460d237bdcedcbfbca11aa528969e6}{info\+Frame\+I\+D}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing a frame identifier. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4e740dd9dbe32832ce1b87e417f74c7b}{\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4e740dd9dbe32832ce1b87e417f74c7b}{info\+Frame\+Nr}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4e740dd9dbe32832ce1b87e417f74c7b}
+
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the number of images captured since the driver has been initialized including the current image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac54da8206db5d5175d1c4c25baf0b134}{info\+Expose\+Start\+\_\+us}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing a timestamp (in us) defining the time the device started the exposure of the image associated with this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a872084ae4d05e6276afb06a314d8af59}{info\+Expose\+Time\+\_\+us}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the 'real' expose time (in us) used to generate this image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6e57b8102fcc2bed76459ed24c09f6cf}{info\+Transfer\+Delay\+\_\+us}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the time the transaction of this image has been delayed (in us) because either the bus was blocked or the C\+P\+U was busy. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a8d6be44d8421373b538b60ca56633385}{\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a8d6be44d8421373b538b60ca56633385}{info\+Gain\+\_\+d\+B}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a8d6be44d8421373b538b60ca56633385}
+
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the gain(in d\+B) this image has been taken with. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac26005e19f53dc564e3c3763a1fccaee}{info\+Time\+Stamp\+\_\+us}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing a timestamp to define the exact time this image has been captured (stored after the integration). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6bed2d106f7443c329eb3afa9d658af0}{info\+Setting\+Used}
+\begin{DoxyCompactList}\small\item\em A enumerated integer property {\bfseries }(read-\/only) containing the setting that was used for processing this request. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1426e97c10c38d2a22c5dda70ac4fd42}{\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1426e97c10c38d2a22c5dda70ac4fd42}{info\+Image\+Average}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1426e97c10c38d2a22c5dda70ac4fd42}
+
+\begin{DoxyCompactList}\small\item\em Currently unsupported. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a18a833becdf1c41fa70dac4824d5ea01}{info\+Video\+Channel}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the video input channel of the device this image has been acquired from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga48585b26ebc31ccee54f34c7d6bbdda3}{Property\+I\+Camera\+Output} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a531770aef701671337f6a75f6d08aa09}{info\+Camera\+Output\+Used}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the camera output used to transmit the image to the capture device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a22b3b014b6d006099e6bd2db72ca65fe}{info\+Line\+Counter}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of lines since the last trigger event. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a91a5b9cb9445b7730686c02036c47274}{info\+Missing\+Data\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the amount of data missing in the current image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a510ba758567a030145090f020fa9a732}{info\+I\+O\+States\+At\+Exposure\+Start}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the state of all the I\+O lines at the beginning of the frame exposure as a device specific bit field. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a39f42fe7bd18748985f3d0bca0c2ad01}{info\+I\+O\+States\+At\+Exposure\+End}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the state of all the I\+O lines at the end of the frame exposure as a device specific bit field. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af0a8aaee59305ce3215db9bea6826958}{chunk\+Offset\+X}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the X-\/offset of the image in pixels as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aadd30b0a6de334e3819621b37e0e2c63}{chunk\+Offset\+Y}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the Y-\/offset of the image in pixels as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acda54bfbef3fcf4719dc68d16c2b5193}{chunk\+Width}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the width of the image in pixels as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4e0047f0e5ea3bd83ebb77786a787f45}{chunk\+Height}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the height of the image in pixels as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aff2e190d6cc5eed39686684febf2b633}{chunk\+Pixel\+Format}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the pixel format of the image as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ada6f72ff16650724cfd26d8048673081}{chunk\+Dynamic\+Range\+Min}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the minimum value of dynamic range of the image as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a093f5ff03d40b74691acd10724f66885}{chunk\+Dynamic\+Range\+Max}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the maximum value of dynamic range of the image as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3a511879bedfe4c8104b12e512144bed}{chunk\+Exposure\+Time}
+\begin{DoxyCompactList}\small\item\em A floating point property {\bfseries }(read-\/only) containing the exposure time used to capture the image as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a72c1a18dd08d50deeb4117baf25225b2}{chunk\+Timestamp}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the timestamp value of the internal frame start signal of the image as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a659b5850f2db44b715b3d17af425c263}{chunk\+Line\+Status\+All}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the status of all I/\+O lines at the time of the internal frame start signal of the image as returned in the chunk data attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aa66d08fd7e75d93657c403d6c697e656}{chunk\+Sequencer\+Set\+Active}
+\begin{DoxyCompactList}\small\item\em A 64-\/bit integer property {\bfseries }(read-\/only) containing the index of the active set of the running sequencer use during the creation of this block of data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{chunkmv\+Custom\+Identifier}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the previously configured user defined identifier attached to the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga9fb22f658031cb16ba91a7446462670f}{Property\+I\+Request\+Image\+Memory\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a05c7f2aad294449e1a9f6eb4a13597d4}{image\+Memory\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the memory mode used for this request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga4f53082cdae4edfc1f87e928a0ab4184}{Property\+I\+Image\+Buffer\+Pixel\+Format} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4b904be99f464613adb54c09cf674ad9}{image\+Pixel\+Format}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the pixel format of this image. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr}{Property\+Ptr} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{image\+Data}
+\begin{DoxyCompactList}\small\item\em A pointer property {\bfseries }(read-\/only) containing the start address of the image data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}{image\+Size}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the size (in bytes) of the whole image. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr}{Property\+Ptr} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acb47966e7619eec1fa38befb388a2f39}{image\+Footer}
+\begin{DoxyCompactList}\small\item\em A pointer property {\bfseries }(read-\/only) containing the start address of the footer associated with this image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6d8df3daf87f05fefbad25b7591a2459}{image\+Footer\+Size}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the size (in bytes) of the footer associated with this image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a00bdcb0cbf23ca71092474d93a80fb0c}{image\+Pixel\+Pitch}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the offset (in bytes) to the next pixel of the specified channel of this image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_abdd5f9eac58473f54725987c7fd1d9a7}{image\+Channel\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of channels this image consists of. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a06a1b6f82fadab310b409434af963b36}{image\+Channel\+Offset}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the offset (in bytes) to each channel belonging to the current image relative to the address. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aee32f6b6dabfd192119afa932045ecbe}{image\+Channel\+Bit\+Depth}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of effective bits stored in each channel belonging to the current image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac94ef78b0834deb1f291dacc97c600bc}{image\+Line\+Pitch}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the offset (in bytes) to the next line of each channel belonging to the current image. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac0e635d0a9be516925d40c5d1b77b1da}{image\+Channel\+Desc}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the string descriptors of each channel belonging to the current image. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a85e4317ddfdd7d8d67c3a2fae94d8045}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a85e4317ddfdd7d8d67c3a2fae94d8045}{image\+Bytes\+Per\+Pixel}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a85e4317ddfdd7d8d67c3a2fae94d8045}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of bytes per pixel in this image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d51bca84206dbed070f85751dbdbb92}{image\+Offset\+X}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the X-\/offset of the image in pixels. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6f815967e03ba2d74ffbe66006a30ac1}{image\+Offset\+Y}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the Y-\/offset of the image in pixels. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3b55253e7d176517fd60ddae724f974c}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3b55253e7d176517fd60ddae724f974c}{image\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3b55253e7d176517fd60ddae724f974c}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the width of the image in pixels. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7a509bd410685fe447196c821db0926e}{image\+Width\+Total}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the total width of the image in pixels if this buffer is part of a larger image. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7654539fb5277dec6f7b59fa428354f}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7654539fb5277dec6f7b59fa428354f}{image\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7654539fb5277dec6f7b59fa428354f}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the height of the image in pixels. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a84c5b14d9856295065bdd4efa2371484}{image\+Height\+Total}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the total height of the image in pixels. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gafaa3668c30761b139d7ff110ac2c83e4}{Property\+I\+Bayer\+Mosaic\+Parity} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4db5758c23b9167a1af7da2f9829289a}{image\+Bayer\+Mosaic\+Parity}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the bayer parity of this image if this buffer is part of a larger image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a582f7755c88d450da1c9c4ff0f818d02}{{\bfseries Request} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, int request\+Nr)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a582f7755c88d450da1c9c4ff0f818d02}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ab173ef7ecf6f0d750214fd6d3afc16fc}{struct \\*
+\hyperlink{structmv_i_m_p_a_c_t_1_1acquire_1_1_request_1_1_reference_counted_data}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::\+Reference\+Counted\+Data} $\ast$ {\bfseries m\+\_\+p\+Ref\+Data}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ab173ef7ecf6f0d750214fd6d3afc16fc}
+
+\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a09d9d7eed388a7128da621fce0de1548}{class {\bfseries Function\+Interface}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a09d9d7eed388a7128da621fce0de1548}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Contains information about a captured image. 
+
+This class provides access to all sorts of information about the captured image. Only Instances of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface}} are allowed to create objects of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}. Consequently the only way to get access to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object is via a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_afea62dee2bda1b47c24821f9121c5505}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Request}}.
+
+A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} represents an object used by the driver to fill its internal job queues. Whenever an image shall be captured a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} is sent to the driver and the hardware then tries to capture the desired image as fast as possible.
+
+Requests are managed by the driver. The only thing the user needs to configure is the maximum number of requests he wants the driver to work with. To make sure a certain number of requests are available, the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_aebae5e452b01f037b681faca41fb70ac}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::request\+Count}} can be used. This can be useful for time critical applications where the hardware can capture images in the background while the P\+C performs other tasks. In that case it's necessary to make sure that the request queue never runs low to ensure loss less image acquisition. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a43a70b9653e60efd9ecfb33433518981}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!Request@{Request}}
+\index{Request@{Request}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{Request}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a43a70b9653e60efd9ecfb33433518981}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} from and existing one. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em src} & A constant reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object, this object shall be created from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!attach\+User\+Buffer@{attach\+User\+Buffer}}
+\index{attach\+User\+Buffer@{attach\+User\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{attach\+User\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p\+Buf, }
+\item[{int}]{buf\+Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}
+
+
+Convenience function to attach a user supplied buffer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. 
+
+This function just provides a nicer way to attach a user supplied buffer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}.
+
+To find out more about capturing to user supplied buffers please refer to the example Capture\+To\+User\+Memory.\+cpp and have a look at the documentation of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+68
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Buf} & A pointer to a user supplied buffer \\
+\hline
+\mbox{\tt in}  & {\em buf\+Size} & The size of the user supplied buffer \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!configure@{configure}}
+\index{configure@{configure}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{configure}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}
+
+
+Allows to set a request into configuration mode. 
+
+In configuration mode certain properties like {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Data}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Size}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a05c7f2aad294449e1a9f6eb4a13597d4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Memory\+Mode}} of a request object can be modified. This can be used to configure one or more requests to use a user supplied memory. To use only a subset of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects available the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::request\+To\+Use}} feature can be used.
+
+Only requests that are currently not used by the driver and are not locked because they contain image data that hasn't been processed can be set into configuration mode.
+
+\begin{DoxyNote}{注解}
+Instead of calling this function directly for most cases it is much more convenient to use the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}} instead.
+\end{DoxyNote}
+User supplied buffers must follow the alignment and size requirements reported by versions of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Current\+Capture\+Buffer\+Layout}}. Calling a version of this function will return all the information required to allocate buffers that can be used to capture data for the specified settings.
+
+When allocating memory on the heap, the complete buffer size is needed which is calculated like this\+:
+
+{\bfseries size} + alignment
+
+\begin{DoxyNote}{注解}
+The address passed to the request object must be aligned already!
+
+A request that is in configuration mode can't be sent to the driver for acquisition until {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}} or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}} has been called again. By using {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}} this locking and unlocking is done internally thus the application does not need to worry about this.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+68
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!detach\+User\+Buffer@{detach\+User\+Buffer}}
+\index{detach\+User\+Buffer@{detach\+User\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{detach\+User\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::detach\+User\+Buffer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a154f54b267a1d9860d1206b2138ef8d0}
+
+
+Convenience function to detach a user supplied buffer from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. 
+
+This function just provides a nicer way to detach a user supplied buffer from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}.
+
+To find out more about capturing to user supplied buffers please refer to the example Capture\+To\+User\+Memory.\+cpp and have a look at the documentation of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acd8f58a136dafcb2bae251da383e2b18}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::attach\+User\+Buffer}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+68
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7282a37729fa0a4e02f0e77d9a39d27}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Counter\+Count@{get\+Chunk\+Counter\+Count}}
+\index{get\+Chunk\+Counter\+Count@{get\+Chunk\+Counter\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Counter\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Counter\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7282a37729fa0a4e02f0e77d9a39d27}
+
+
+Returns the number of counter values that can be returned as part of the additional data of the buffer containing the request data. 
+
+A device may support a large number of counters even though just a few of them or none is configured for counting. In such a case situation when switching on the transmission of the counter values at the time of the internal frame start event will allow to access the number of counters returned by this function but then the data in these counters of course will be meaningless.
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+0.\+15 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The number of counter values that can be returned as part of the additional data of the buffer containing the request data. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a07d7edad7cdae47d16de0356ebb2e42e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Counter\+Value@{get\+Chunk\+Counter\+Value}}
+\index{get\+Chunk\+Counter\+Value@{get\+Chunk\+Counter\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Counter\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Counter\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a07d7edad7cdae47d16de0356ebb2e42e}
+
+
+Returns a 64 bit integer property {\bfseries }(read-\/only) defining the selected counter value at the time of the internal frame start event for this request. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+0.\+15 
+\end{DoxySince}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the counter to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a89d55e162f431703c1dc495de6b34a08}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Gain@{get\+Chunk\+Gain}}
+\index{get\+Chunk\+Gain@{get\+Chunk\+Gain}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Gain (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a89d55e162f431703c1dc495de6b34a08}
+
+
+Returns a floating point property {\bfseries }(read-\/only) defining the selected gain value at the time of the internal frame start event for this request. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+17.\+3 
+\end{DoxySince}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the gain to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Gain@{get\+Chunk\+Gain}}
+\index{get\+Chunk\+Gain@{get\+Chunk\+Gain}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Gain (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98}
+
+
+Returns a floating point property {\bfseries }(read-\/only) defining the selected gain value at the time of the internal frame start event for this request. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+17.\+3 
+\end{DoxySince}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the gain to return (as selected by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_analog_control_a48fb299bea5b80eb2e113ba4f28fd489}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Analog\+Control\+::gain\+Selector}}) \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ae940fe94ee8091d89cf9f4d4e7808c81}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Gain\+Count@{get\+Chunk\+Gain\+Count}}
+\index{get\+Chunk\+Gain\+Count@{get\+Chunk\+Gain\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Gain\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Gain\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ae940fe94ee8091d89cf9f4d4e7808c81}
+
+
+Returns the number of gain values that can be returned as part of the additional data of the buffer containing the request data. 
+
+A device may support a large number of gains even though just a few of them or none is configured to run. In such a case situation when switching on the transmission of the gain values at the time of the internal frame start event will allow to access the number of gains returned by this function but then the data in these gains of course will be meaningless.
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+17.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad6458f69adbeb566126db8fbda2e84df}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Timer\+Count@{get\+Chunk\+Timer\+Count}}
+\index{get\+Chunk\+Timer\+Count@{get\+Chunk\+Timer\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Timer\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Timer\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad6458f69adbeb566126db8fbda2e84df}
+
+
+Returns the number of timer values that can be returned as part of the additional data of the buffer containing the request data. 
+
+A device may support a large number of timers even though just a few of them or none is configured to run. In such a case situation when switching on the transmission of the timer values at the time of the internal frame start event will allow to access the number of timers returned by this function but then the data in these timers of course will be meaningless.
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+0.\+15 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a459a1c5b4cdb00df81e73f66b5985557}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Chunk\+Timer\+Value@{get\+Chunk\+Timer\+Value}}
+\index{get\+Chunk\+Timer\+Value@{get\+Chunk\+Timer\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Chunk\+Timer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Chunk\+Timer\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a459a1c5b4cdb00df81e73f66b5985557}
+
+
+Returns a floating point property {\bfseries }(read-\/only) defining the selected timer value at the time of the internal frame start event for this request. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+0.\+15 
+\end{DoxySince}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the timer to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a2dc69f50a17c1319ddcbbef5fd3ab2bd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Component\+Locator@{get\+Component\+Locator}}
+\index{get\+Component\+Locator@{get\+Component\+Locator}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Component\+Locator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device\+Component\+Locator} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Component\+Locator (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a2dc69f50a17c1319ddcbbef5fd3ab2bd}
+
+
+Returns a component locator for this request. 
+
+This will allow to write custom feature bind operations.
+
+\begin{DoxySince}{自从}
+1.\+12.\+68 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+A component locator for this request. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Image\+Buffer\+Desc@{get\+Image\+Buffer\+Desc}}
+\index{get\+Image\+Buffer\+Desc@{get\+Image\+Buffer\+Desc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Image\+Buffer\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Image\+Buffer\+Desc}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Image\+Buffer\+Desc (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39}
+
+
+Returns a const reference to the image buffer descriptor of this request. 
+
+This function returns a const reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} associated with this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}.
+
+\begin{DoxyWarning}{警告}
+Please do {\bfseries N\+E\+V\+E\+R} work with old references to this structure. So do {\bfseries N\+O\+T} store this reference in some variable to use it for the evaluation of the next {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object as well, as this will not work. Whenever {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Image\+Buffer\+Desc}} is called the function will make sure that the data in the returned structure is up to date while when working with an old reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} structure the containing data might refer to a previous result. 
+\end{DoxyWarning}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3df38a3b0375cea7fed2826b62163264}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Image\+Processing\+Results\+Iterator@{get\+Image\+Processing\+Results\+Iterator}}
+\index{get\+Image\+Processing\+Results\+Iterator@{get\+Image\+Processing\+Results\+Iterator}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Image\+Processing\+Results\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component\+Iterator} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Image\+Processing\+Results\+Iterator (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3df38a3b0375cea7fed2826b62163264}
+
+
+Returns an iterator to for iterating inside the info/image\+Processing\+Results list of the request. 
+
+This can be useful when custom or device specific algorithms have been applied to the request object that weren't known at compile time.
+
+For a code example please refer to the documentation of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d82ad8332a4fd79db9bcb59970836f1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Info\+Iterator}} \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d82ad8332a4fd79db9bcb59970836f1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Info\+Iterator}} ~\newline
+ 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+14.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+An iterator to for iterating inside the info/image\+Processing\+Results list of the request. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d82ad8332a4fd79db9bcb59970836f1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!get\+Info\+Iterator@{get\+Info\+Iterator}}
+\index{get\+Info\+Iterator@{get\+Info\+Iterator}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{get\+Info\+Iterator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component\+Iterator} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::get\+Info\+Iterator (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d82ad8332a4fd79db9bcb59970836f1}
+
+
+Returns an iterator to for iterating inside the info list of the request. 
+
+This can be useful when custom or device specific information has been attached to the request object that wasn't known at compile time.
+
+\begin{DoxyReturn}{返回}
+An iterator to for iterating inside the info list of the request. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!has\+Processing\+Been\+Skipped@{has\+Processing\+Been\+Skipped}}
+\index{has\+Processing\+Been\+Skipped@{has\+Processing\+Been\+Skipped}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{has\+Processing\+Been\+Skipped}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::has\+Processing\+Been\+Skipped (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834}
+
+
+Checks if image processing that was set up for this request has been skipped for performance reasons. 
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::user\+Controlled\+Image\+Processing\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0e9c91668ae90fb631d5d69c32395fce}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::image\+Processing\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ipm\+Process\+Latest\+Only} this function can be used to check if at least one algorithm has been skipped because of a lack of processing time. \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::user\+Controlled\+Image\+Processing\+Enable}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0e9c91668ae90fb631d5d69c32395fce}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::image\+Processing\+Mode}} ~\newline
+ 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+14.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if at least one internal algorithm has been skipped.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7120b640d76a3f8ed3711a8a773ad4be}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!is\+O\+K@{is\+O\+K}}
+\index{is\+O\+K@{is\+O\+K}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{is\+O\+K}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::is\+O\+K (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7120b640d76a3f8ed3711a8a773ad4be}
+
+
+Convenience function to check if a request has been processed successfully. 
+
+This is just a nicer way of checking the value of the {\itshape request\+Result} property\+:
+
+\begin{DoxySince}{自从}
+1.\+12.\+63
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the request has been processed successfully.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!unlock@{unlock}}
+\index{unlock@{unlock}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{unlock}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}
+
+
+Unlocks the request for the driver again. 
+
+To ensure that no image data is overwritten by another image request while the user still deals with the image from a previous acquisition each image buffer will be locked by the driver when it is returned to the user by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}}. No new image will be captured into the same buffer until the user unlocks the buffer again by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3c30ced407d20caef49e3148257cd91e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::unlock}} or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a378a338217d5a681e880a0d9395f1a62}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Unlock}}.
+
+\begin{DoxyNote}{注解}
+After unlocking a request it is no longer guaranteed that the memory once referenced by the request and the image buffer belonging to it stays valid, so do {\bfseries N\+E\+V\+E\+R} try to access memory belonging to an unlocked request object. If you need to copy the image buffer or modify it in any other way, do everything you have to do {\bfseries B\+E\+F\+O\+R\+E} calling this function!
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a234b2c6e31f3e83629501da47095c54f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Reset}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}} ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+12.\+68
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a093f5ff03d40b74691acd10724f66885}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Dynamic\+Range\+Max@{chunk\+Dynamic\+Range\+Max}}
+\index{chunk\+Dynamic\+Range\+Max@{chunk\+Dynamic\+Range\+Max}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Dynamic\+Range\+Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Dynamic\+Range\+Max}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a093f5ff03d40b74691acd10724f66885}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the maximum value of dynamic range of the image as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ada6f72ff16650724cfd26d8048673081}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Dynamic\+Range\+Min@{chunk\+Dynamic\+Range\+Min}}
+\index{chunk\+Dynamic\+Range\+Min@{chunk\+Dynamic\+Range\+Min}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Dynamic\+Range\+Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Dynamic\+Range\+Min}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ada6f72ff16650724cfd26d8048673081}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the minimum value of dynamic range of the image as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3a511879bedfe4c8104b12e512144bed}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Exposure\+Time@{chunk\+Exposure\+Time}}
+\index{chunk\+Exposure\+Time@{chunk\+Exposure\+Time}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Exposure\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Exposure\+Time}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3a511879bedfe4c8104b12e512144bed}
+
+
+A floating point property {\bfseries }(read-\/only) containing the exposure time used to capture the image as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+5.\+16 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4e0047f0e5ea3bd83ebb77786a787f45}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Height@{chunk\+Height}}
+\index{chunk\+Height@{chunk\+Height}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4e0047f0e5ea3bd83ebb77786a787f45}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the height of the image in pixels as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a659b5850f2db44b715b3d17af425c263}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Line\+Status\+All@{chunk\+Line\+Status\+All}}
+\index{chunk\+Line\+Status\+All@{chunk\+Line\+Status\+All}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Line\+Status\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Line\+Status\+All}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a659b5850f2db44b715b3d17af425c263}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the status of all I/\+O lines at the time of the internal frame start signal of the image as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunkmv\+Custom\+Identifier@{chunkmv\+Custom\+Identifier}}
+\index{chunkmv\+Custom\+Identifier@{chunkmv\+Custom\+Identifier}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunkmv\+Custom\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the previously configured user defined identifier attached to the image. 
+
+This identifier can be specified by some other functions belonging to this S\+D\+K. If not specified this value will be 0.
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+17.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af0a8aaee59305ce3215db9bea6826958}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Offset\+X@{chunk\+Offset\+X}}
+\index{chunk\+Offset\+X@{chunk\+Offset\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Offset\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af0a8aaee59305ce3215db9bea6826958}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the X-\/offset of the image in pixels as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aadd30b0a6de334e3819621b37e0e2c63}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Offset\+Y@{chunk\+Offset\+Y}}
+\index{chunk\+Offset\+Y@{chunk\+Offset\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Offset\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aadd30b0a6de334e3819621b37e0e2c63}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the Y-\/offset of the image in pixels as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aff2e190d6cc5eed39686684febf2b633}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Pixel\+Format@{chunk\+Pixel\+Format}}
+\index{chunk\+Pixel\+Format@{chunk\+Pixel\+Format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Pixel\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Pixel\+Format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aff2e190d6cc5eed39686684febf2b633}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the pixel format of the image as returned in the chunk data attached to the image. 
+
+This will {\bfseries N\+O\+T} be a valid mv\+I\+M\+P\+A\+C\+T acquire pixel format but e.\+g. a Gig\+E\+Vision pixel format or somethins else. \begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aa66d08fd7e75d93657c403d6c697e656}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Sequencer\+Set\+Active@{chunk\+Sequencer\+Set\+Active}}
+\index{chunk\+Sequencer\+Set\+Active@{chunk\+Sequencer\+Set\+Active}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Sequencer\+Set\+Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Sequencer\+Set\+Active}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aa66d08fd7e75d93657c403d6c697e656}
+
+
+A 64-\/bit integer property {\bfseries }(read-\/only) containing the index of the active set of the running sequencer use during the creation of this block of data. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+12.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a72c1a18dd08d50deeb4117baf25225b2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Timestamp@{chunk\+Timestamp}}
+\index{chunk\+Timestamp@{chunk\+Timestamp}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Timestamp}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a72c1a18dd08d50deeb4117baf25225b2}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the timestamp value of the internal frame start signal of the image as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acda54bfbef3fcf4719dc68d16c2b5193}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!chunk\+Width@{chunk\+Width}}
+\index{chunk\+Width@{chunk\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{chunk\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunk\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acda54bfbef3fcf4719dc68d16c2b5193}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the width of the image in pixels as returned in the chunk data attached to the image. 
+
+\begin{DoxyNote}{注解}
+For additional information about the chunk data format please refer to Image\+Acquisition\+\_\+section\+\_\+chunk. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4db5758c23b9167a1af7da2f9829289a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Bayer\+Mosaic\+Parity@{image\+Bayer\+Mosaic\+Parity}}
+\index{image\+Bayer\+Mosaic\+Parity@{image\+Bayer\+Mosaic\+Parity}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Bayer\+Mosaic\+Parity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Bayer\+Mosaic\+Parity} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Bayer\+Mosaic\+Parity}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4db5758c23b9167a1af7da2f9829289a}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the bayer parity of this image if this buffer is part of a larger image. 
+
+If the current image does not contain bayer data, this value will be {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::bmp\+Undefined}.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aee32f6b6dabfd192119afa932045ecbe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Channel\+Bit\+Depth@{image\+Channel\+Bit\+Depth}}
+\index{image\+Channel\+Bit\+Depth@{image\+Channel\+Bit\+Depth}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Channel\+Bit\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Bit\+Depth}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aee32f6b6dabfd192119afa932045ecbe}
+
+
+An integer property {\bfseries }(read-\/only) containing the number of effective bits stored in each channel belonging to the current image. 
+
+\begin{DoxyNote}{注解}
+This property will store {\itshape image\+Channel\+Count} values. These can be queried one by one using the {\itshape index} parameter of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a6f88e97f646978391226aaf82cd5955d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::read()}} or in a single call by using the overloaded {\itshape read} function accepting a reference to a vector. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_abdd5f9eac58473f54725987c7fd1d9a7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Channel\+Count@{image\+Channel\+Count}}
+\index{image\+Channel\+Count@{image\+Channel\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Channel\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_abdd5f9eac58473f54725987c7fd1d9a7}
+
+
+An integer property {\bfseries }(read-\/only) containing the number of channels this image consists of. 
+
+For an R\+G\+B image this value e.\+g. would be 3. This value also defines how many parameters are stored by the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a00bdcb0cbf23ca71092474d93a80fb0c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Pixel\+Pitch}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac94ef78b0834deb1f291dacc97c600bc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Line\+Pitch}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_aee32f6b6dabfd192119afa932045ecbe}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Bit\+Depth}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac0e635d0a9be516925d40c5d1b77b1da}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Desc}} and ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a06a1b6f82fadab310b409434af963b36}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Offset}}.
+
+If e.\+g. the channel count is 3 a call like p\+Request-\/$>$image\+Channel\+Offset.\+read( 2 ) would return the channel offset of channel 3 (as calls to the read functions of properties are '0' based). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac0e635d0a9be516925d40c5d1b77b1da}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Channel\+Desc@{image\+Channel\+Desc}}
+\index{image\+Channel\+Desc@{image\+Channel\+Desc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Channel\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Desc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac0e635d0a9be516925d40c5d1b77b1da}
+
+
+A string property {\bfseries }(read-\/only) containing the string descriptors of each channel belonging to the current image. 
+
+\begin{DoxyNote}{注解}
+This property will store {\itshape image\+Channel\+Count} values. These can be queried one by one using the {\itshape index} parameter of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a6f88e97f646978391226aaf82cd5955d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::read()}} or in a single call by using the overloaded {\itshape read} function accepting a reference to a vector.
+\end{DoxyNote}
+For an R\+G\+B image this property e.\+g. might contain three values \char`\"{}\+R\char`\"{}, \char`\"{}\+G\char`\"{} and \char`\"{}\+B\char`\"{}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a06a1b6f82fadab310b409434af963b36}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Channel\+Offset@{image\+Channel\+Offset}}
+\index{image\+Channel\+Offset@{image\+Channel\+Offset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Channel\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Channel\+Offset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a06a1b6f82fadab310b409434af963b36}
+
+
+An integer property {\bfseries }(read-\/only) containing the offset (in bytes) to each channel belonging to the current image relative to the address. 
+
+contained in {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Data}}.
+
+\begin{DoxyNote}{注解}
+This property will store {\itshape image\+Channel\+Count} values. These can be queried one by one using the {\itshape index} parameter of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a6f88e97f646978391226aaf82cd5955d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::read()}} or in a single call by using the overloaded {\itshape read} function accepting a reference to a vector. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Data@{image\+Data}}
+\index{image\+Data@{image\+Data}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+Ptr} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Data}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}
+
+
+A pointer property {\bfseries }(read-\/only) containing the start address of the image data. 
+
+This address in connection with {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Size}} is sufficient to copy the complete image without having any additional information about it.
+
+\begin{DoxyNote}{注解}
+It's not always necessary to copy the image data! Each image buffer is an integral part of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object returned to the user by a call to the corresponding 'wait\+For' function offered by the interface. The data in this buffer remains valid until the user either unlocks the request buffer or closes the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} again.
+
+By unlocking the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}, the user informs the driver that this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} and the image buffer belonging to that {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} is no longer needed by the user. The driver then queues this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} for capturing image data into it once again. However, once a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} has been returned to the user, its image buffer can't be overwritten by the driver! Therefore the user can work with, modify, store or copy the data safely until he unlocks the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} again.
+
+This property will become writeable if this request is in configuration mode. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Size}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6d8df3daf87f05fefbad25b7591a2459}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Footer\+Size}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acb47966e7619eec1fa38befb388a2f39}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Footer@{image\+Footer}}
+\index{image\+Footer@{image\+Footer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Footer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+Ptr} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Footer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acb47966e7619eec1fa38befb388a2f39}
+
+
+A pointer property {\bfseries }(read-\/only) containing the start address of the footer associated with this image. 
+
+A footer may contain additional data like e.\+g. information about the image (e.\+g. the exposure time used for this image). If this property contains the value '0' no footer is attached to this image.
+
+\begin{DoxyNote}{注解}
+In general it is not necessary to access footer data. Sometime e.\+g. when the hardware already does some image pre-\/processing a footer containing additional information about the image data might be attached to the image. In this case some additional information about the structure of the footer might be needed as well. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6d8df3daf87f05fefbad25b7591a2459}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Footer\+Size@{image\+Footer\+Size}}
+\index{image\+Footer\+Size@{image\+Footer\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Footer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Footer\+Size}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6d8df3daf87f05fefbad25b7591a2459}
+
+
+An integer property {\bfseries }(read-\/only) containing the size (in bytes) of the footer associated with this image. 
+
+If this property contains the value '0' no footer is attached to this image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a84c5b14d9856295065bdd4efa2371484}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Height\+Total@{image\+Height\+Total}}
+\index{image\+Height\+Total@{image\+Height\+Total}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Height\+Total}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Height\+Total}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a84c5b14d9856295065bdd4efa2371484}
+
+
+An integer property {\bfseries }(read-\/only) containing the total height of the image in pixels. 
+
+\begin{DoxyNote}{注解}
+This feature will be supported by devices using a mv\+I\+M\+P\+A\+C\+T Acquire driver greater or equal version 1.\+11.\+50. Not every device driver will be capable of dealing with multiple buffers forming a single image. If a device driver can not deliver parts of a larger image, then this property will always contain the same value as returned by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_af7654539fb5277dec6f7b59fa428354f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Height}}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac94ef78b0834deb1f291dacc97c600bc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Line\+Pitch@{image\+Line\+Pitch}}
+\index{image\+Line\+Pitch@{image\+Line\+Pitch}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Line\+Pitch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Line\+Pitch}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac94ef78b0834deb1f291dacc97c600bc}
+
+
+An integer property {\bfseries }(read-\/only) containing the offset (in bytes) to the next line of each channel belonging to the current image. 
+
+\begin{DoxyNote}{注解}
+This property will store {\itshape image\+Channel\+Count} values. These can be queried one by one using the {\itshape index} parameter of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a6f88e97f646978391226aaf82cd5955d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::read()}} or in a single call by using the overloaded {\itshape read} function accepting a reference to a vector. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a05c7f2aad294449e1a9f6eb4a13597d4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Memory\+Mode@{image\+Memory\+Mode}}
+\index{image\+Memory\+Mode@{image\+Memory\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Memory\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Request\+Image\+Memory\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Memory\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a05c7f2aad294449e1a9f6eb4a13597d4}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the memory mode used for this request. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Request\+Image\+Memory\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will become writeable if this request is in configuration mode. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d51bca84206dbed070f85751dbdbb92}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Offset\+X@{image\+Offset\+X}}
+\index{image\+Offset\+X@{image\+Offset\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Offset\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a1d51bca84206dbed070f85751dbdbb92}
+
+
+An integer property {\bfseries }(read-\/only) containing the X-\/offset of the image in pixels. 
+
+\begin{DoxyNote}{注解}
+This feature will be supported by devices using a mv\+I\+M\+P\+A\+C\+T Acquire driver greater or equal version 1.\+10.\+92. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6f815967e03ba2d74ffbe66006a30ac1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Offset\+Y@{image\+Offset\+Y}}
+\index{image\+Offset\+Y@{image\+Offset\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Offset\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6f815967e03ba2d74ffbe66006a30ac1}
+
+
+An integer property {\bfseries }(read-\/only) containing the Y-\/offset of the image in pixels. 
+
+\begin{DoxyNote}{注解}
+This feature will be supported by devices using a mv\+I\+M\+P\+A\+C\+T Acquire driver greater or equal version 1.\+10.\+92. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4b904be99f464613adb54c09cf674ad9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Pixel\+Format@{image\+Pixel\+Format}}
+\index{image\+Pixel\+Format@{image\+Pixel\+Format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Pixel\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Buffer\+Pixel\+Format} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Pixel\+Format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a4b904be99f464613adb54c09cf674ad9}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the pixel format of this image. 
+
+This might be important, when the image data needs to be processed or stored in a file or maybe even if the image shall be displayed.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a00bdcb0cbf23ca71092474d93a80fb0c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Pixel\+Pitch@{image\+Pixel\+Pitch}}
+\index{image\+Pixel\+Pitch@{image\+Pixel\+Pitch}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Pixel\+Pitch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Pixel\+Pitch}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a00bdcb0cbf23ca71092474d93a80fb0c}
+
+
+An integer property {\bfseries }(read-\/only) containing the offset (in bytes) to the next pixel of the specified channel of this image. 
+
+\begin{DoxyNote}{注解}
+This property will store {\itshape image\+Channel\+Count} values. These can be queried one by one using the {\itshape index} parameter of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a6f88e97f646978391226aaf82cd5955d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::read()}} or in a single call by using the overloaded {\itshape read} function accepting a reference to a vector. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Size@{image\+Size}}
+\index{image\+Size@{image\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Size}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac568c457aa474e73066bcc369a26cca1}
+
+
+An integer property {\bfseries }(read-\/only) containing the size (in bytes) of the whole image. 
+
+This value in connection with {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Data}} is sufficient to copy the complete image without having any additional information about it.
+
+\begin{DoxyNote}{注解}
+This property will become writeable if this request is in configuration mode. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Configure}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a5ad02aed16acd60699f3d8757c63af43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::configure}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad676c45f908bb41df04b15a85bf1f6fd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Data}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6d8df3daf87f05fefbad25b7591a2459}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Footer\+Size}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7a509bd410685fe447196c821db0926e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!image\+Width\+Total@{image\+Width\+Total}}
+\index{image\+Width\+Total@{image\+Width\+Total}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{image\+Width\+Total}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Width\+Total}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a7a509bd410685fe447196c821db0926e}
+
+
+An integer property {\bfseries }(read-\/only) containing the total width of the image in pixels if this buffer is part of a larger image. 
+
+\begin{DoxyNote}{注解}
+This feature will be supported by devices using a mv\+I\+M\+P\+A\+C\+T Acquire driver greater or equal version 1.\+11.\+50. Not every device driver will be capable of dealing with multiple buffers forming a single image. If a device driver can not deliver parts of a larger image, then this property will always contain the same value as returned by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a3b55253e7d176517fd60ddae724f974c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::image\+Width}}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a531770aef701671337f6a75f6d08aa09}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Camera\+Output\+Used@{info\+Camera\+Output\+Used}}
+\index{info\+Camera\+Output\+Used@{info\+Camera\+Output\+Used}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Camera\+Output\+Used}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Output} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Camera\+Output\+Used}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a531770aef701671337f6a75f6d08aa09}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the camera output used to transmit the image to the capture device. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Output}.
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac54da8206db5d5175d1c4c25baf0b134}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Expose\+Start\+\_\+us@{info\+Expose\+Start\+\_\+us}}
+\index{info\+Expose\+Start\+\_\+us@{info\+Expose\+Start\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Expose\+Start\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Expose\+Start\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac54da8206db5d5175d1c4c25baf0b134}
+
+
+An integer property {\bfseries }(read-\/only) containing a timestamp (in us) defining the time the device started the exposure of the image associated with this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object. 
+
+This value will stay 0 if nothing is known about the time the exposure did start. In such a case the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac26005e19f53dc564e3c3763a1fccaee}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Time\+Stamp\+\_\+us}} property should be used instead. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a872084ae4d05e6276afb06a314d8af59}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Expose\+Time\+\_\+us@{info\+Expose\+Time\+\_\+us}}
+\index{info\+Expose\+Time\+\_\+us@{info\+Expose\+Time\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Expose\+Time\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Expose\+Time\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a872084ae4d05e6276afb06a314d8af59}
+
+
+An integer property {\bfseries }(read-\/only) containing the 'real' expose time (in us) used to generate this image. 
+
+This might differ slightly from the value selected by the user via the corresponding exposure property depending on the precision available for the device or the connected camera. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a08460d237bdcedcbfbca11aa528969e6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Frame\+I\+D@{info\+Frame\+I\+D}}
+\index{info\+Frame\+I\+D@{info\+Frame\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Frame\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Frame\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a08460d237bdcedcbfbca11aa528969e6}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing a frame identifier. 
+
+This parameter is returned as part of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}. It is used to associate a certain image with a unique identifier.
+
+When an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}} instruction of the type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Trigger\+Set} is executed, the {\itshape frame\+I\+D} is set to the value of the property {\itshape Frame\+I\+D} of a corresponding {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}} if the H\+R\+T\+C is used and any program step executes the setting of the I\+D.
+
+If a device (e.\+g. a digital camera) supports the transmission of a unique identifier for an image, this property will reflect the identifier as transmitted by the device.
+
+\begin{DoxyNote}{注解}
+{\bfseries mv\+Blue\+F\+O\+X}, {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+P}, {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} and {\bfseries mv\+H\+Y\+P\+E\+R\+I\+O\+N} specific\+: This property will only contain meaningful data if the device supports at least one {\bfseries H\+R\+T\+C} and a program is running and writing data to the property O\+R if a device supports the transmission of a unique identifier for an image. Currently H\+R\+T\+C programs are supported by {\bfseries mv\+Blue\+F\+O\+X}, {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+P}, {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} and {\bfseries mv\+H\+Y\+P\+E\+R\+I\+O\+N} devices while a unique identifier transmitted by the device is support by all Gig\+E Vision compliant devices. For Gig\+E Vision compliant devices, this will be a 16 bit counter that will be incremented with every data block(e.\+g. an image or chunk data) transmitted by the device where '0' is a reserved value, which will never be used, thus values like this will be transmitted in a round robin scheme\+: 1, 2, 3, ..., 65535, 1, 2, ... Please note that due to the nature of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::am\+Continuous} there might be gaps between the last image of a continuous stream and the first image of the next continuous stream if the device is stopped or re-\/programmed in between.
+
+{\bfseries Gig\+E} {\bfseries Vision} and {\bfseries U\+S\+B3} {\bfseries Vision} specific\+: This is the property where the so called block I\+D will be stored. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a39f42fe7bd18748985f3d0bca0c2ad01}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+I\+O\+States\+At\+Exposure\+End@{info\+I\+O\+States\+At\+Exposure\+End}}
+\index{info\+I\+O\+States\+At\+Exposure\+End@{info\+I\+O\+States\+At\+Exposure\+End}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+I\+O\+States\+At\+Exposure\+End}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+I\+O\+States\+At\+Exposure\+End}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a39f42fe7bd18748985f3d0bca0c2ad01}
+
+
+An integer property {\bfseries }(read-\/only) containing the state of all the I\+O lines at the end of the frame exposure as a device specific bit field. 
+
+See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a510ba758567a030145090f020fa9a732}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+I\+O\+States\+At\+Exposure\+Start}} for details on how to interpret the data.
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a510ba758567a030145090f020fa9a732}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+I\+O\+States\+At\+Exposure\+Start@{info\+I\+O\+States\+At\+Exposure\+Start}}
+\index{info\+I\+O\+States\+At\+Exposure\+Start@{info\+I\+O\+States\+At\+Exposure\+Start}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+I\+O\+States\+At\+Exposure\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+I\+O\+States\+At\+Exposure\+Start}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a510ba758567a030145090f020fa9a732}
+
+
+An integer property {\bfseries }(read-\/only) containing the state of all the I\+O lines at the beginning of the frame exposure as a device specific bit field. 
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} devices\+:
+
+\begin{TabularC}{2}
+\hline
+bit&I\+O \\\cline{1-2}
+0&out 0 \\\cline{1-2}
+1&out 1 \\\cline{1-2}
+2&in 0 \\\cline{1-2}
+3&in 1 \\\cline{1-2}
+4&out 2 \\\cline{1-2}
+5&out 3 \\\cline{1-2}
+6&in 2 \\\cline{1-2}
+7&in 3 \\\cline{1-2}
+8&in 4 \\\cline{1-2}
+9&out 4 \\\cline{1-2}
+10&out 5 \\\cline{1-2}
+\end{TabularC}
+
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+P} devices\+:
+
+\begin{TabularC}{2}
+\hline
+bit&I\+O \\\cline{1-2}
+0&out 0 \\\cline{1-2}
+1&out 1 \\\cline{1-2}
+2&in 0 \\\cline{1-2}
+3&in 1 \\\cline{1-2}
+4&out 2 \\\cline{1-2}
+5&out 3 \\\cline{1-2}
+\end{TabularC}
+
+
+The following table documents which bit in this property represents the state of which digital I/\+O for {\bfseries mv\+Blue\+F\+O\+X} devices\+:
+
+\begin{TabularC}{2}
+\hline
+bit&I\+O \\\cline{1-2}
+0&in 0 \\\cline{1-2}
+1&in 1 \\\cline{1-2}
+2&in 2(if available) \\\cline{1-2}
+3&in 3(if available) \\\cline{1-2}
+4&out 0 \\\cline{1-2}
+5&out 1 \\\cline{1-2}
+6&out 2(if available) \\\cline{1-2}
+7&out 3(if available) \\\cline{1-2}
+\end{TabularC}
+
+
+\begin{DoxyAttention}{注意}
+This feature is currently only available for {\bfseries mv\+Blue\+F\+O\+X-\/\+M\+L\+C} devices!
+\end{DoxyAttention}
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a22b3b014b6d006099e6bd2db72ca65fe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Line\+Counter@{info\+Line\+Counter}}
+\index{info\+Line\+Counter@{info\+Line\+Counter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Line\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Line\+Counter}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a22b3b014b6d006099e6bd2db72ca65fe}
+
+
+An integer property {\bfseries }(read-\/only) containing the number of lines since the last trigger event. 
+
+Will contain
+\begin{DoxyItemize}
+\item the number of lines since last trigger event of the first line of the snap if line counting is enabled
+\item -\/1 otherwise
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a91a5b9cb9445b7730686c02036c47274}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Missing\+Data\+\_\+pc@{info\+Missing\+Data\+\_\+pc}}
+\index{info\+Missing\+Data\+\_\+pc@{info\+Missing\+Data\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Missing\+Data\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Missing\+Data\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a91a5b9cb9445b7730686c02036c47274}
+
+
+A float property {\bfseries }(read-\/only) containing the amount of data missing in the current image. 
+
+The value of this property will be 0 almost always. However if a device can detect blocks of missing data and an image request has returned with {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rr\+Frame\+Incomplete} to indicate that not all the data has been captured, this property will contain the amount of data missing in percent. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6bed2d106f7443c329eb3afa9d658af0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Setting\+Used@{info\+Setting\+Used}}
+\index{info\+Setting\+Used@{info\+Setting\+Used}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Setting\+Used}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Setting\+Used}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6bed2d106f7443c329eb3afa9d658af0}
+
+
+A enumerated integer property {\bfseries }(read-\/only) containing the setting that was used for processing this request. 
+
+The string representation will be a valid setting name, the integer representation can be casted into a {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+O\+B\+J} type. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac26005e19f53dc564e3c3763a1fccaee}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Time\+Stamp\+\_\+us@{info\+Time\+Stamp\+\_\+us}}
+\index{info\+Time\+Stamp\+\_\+us@{info\+Time\+Stamp\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Time\+Stamp\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Time\+Stamp\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ac26005e19f53dc564e3c3763a1fccaee}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing a timestamp to define the exact time this image has been captured (stored after the integration). 
+
+{\bfseries mv\+Blue\+F\+O\+X} specific\+: The counter of the timestamp starts when the camera gets initialized. It is measured in us. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6e57b8102fcc2bed76459ed24c09f6cf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Transfer\+Delay\+\_\+us@{info\+Transfer\+Delay\+\_\+us}}
+\index{info\+Transfer\+Delay\+\_\+us@{info\+Transfer\+Delay\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Transfer\+Delay\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Transfer\+Delay\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a6e57b8102fcc2bed76459ed24c09f6cf}
+
+
+An integer property {\bfseries }(read-\/only) containing the time the transaction of this image has been delayed (in us) because either the bus was blocked or the C\+P\+U was busy. 
+
+Normally this value will be 0. A value larger than 0 indicates that the system can't manage the current load.
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a18a833becdf1c41fa70dac4824d5ea01}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!info\+Video\+Channel@{info\+Video\+Channel}}
+\index{info\+Video\+Channel@{info\+Video\+Channel}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{info\+Video\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::info\+Video\+Channel}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a18a833becdf1c41fa70dac4824d5ea01}
+
+
+An integer property {\bfseries }(read-\/only) containing the video input channel of the device this image has been acquired from. 
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device and will only be available if the device has more than one input channel. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a90b174d20b986b585b37c74791726012}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!request\+Result@{request\+Result}}
+\index{request\+Result@{request\+Result}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{request\+Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Request\+Result} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::request\+Result}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a90b174d20b986b585b37c74791726012}
+
+
+An enumerated integer property {\bfseries }(read-\/only) defining the result of this request. 
+
+This parameter indicates whether a previous image acquisition has been successful or not.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Request\+Result}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acf9adfbc13cad31da7c10741252ed1e1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}!request\+State@{request\+State}}
+\index{request\+State@{request\+State}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}
+\subsubsection[{request\+State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Request\+State} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::request\+State}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_acf9adfbc13cad31da7c10741252ed1e1}
+
+
+An enumerated integer property {\bfseries }(read-\/only) defining the current state of this request. 
+
+This parameter indicates the current state of this request. A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} e.\+g. can currently be idle. This would mean that it is currently not used for image acquisition. Also a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} can be in 'Capturing' state, which means it is currently processed by the driver.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Request\+State}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

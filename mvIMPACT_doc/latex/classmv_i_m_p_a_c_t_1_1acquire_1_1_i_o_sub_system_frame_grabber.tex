@@ -1,0 +1,165 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Frame\+Grabber类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}}
+}
+
+
+A class to handle the digital inputs and outputs for frame grabber devices({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Frame\+Grabber 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Frame\+Grabber 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a9a02c6ab9fa2ec7a170514dd9ac89002}{I\+O\+Sub\+System\+Frame\+Grabber} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} object. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_af693c1061444f7a44c86ebb8f518949b}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_af693c1061444f7a44c86ebb8f518949b}{get\+H\+D\+Output\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_af693c1061444f7a44c86ebb8f518949b}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of available H\+D output pins for the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} associated with this object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{Sync\+Output} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a281e839ea8d063a199c09ca51641eeaf}{H\+D\+Output} (unsigned int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output}} object that represents a H\+D output for this device. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_ac04032b336c489792fb1cc669bac3c27}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_ac04032b336c489792fb1cc669bac3c27}{get\+V\+D\+Output\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_ac04032b336c489792fb1cc669bac3c27}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of available V\+D output pins for the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} associated with this object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{Sync\+Output} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_aa68fc4dacd234e7a0ae41210b26baf4d}{V\+D\+Output} (unsigned int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output}} object that represents a V\+D output for this device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga482ce750b5e60bc66a44cd2640ae757e}{Property\+I\+Device\+Sync\+Out\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a0e54ebc0c4382de40b6367bd7ac30288}{sync\+Output\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the current mode for sync. signal creation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to handle the digital inputs and outputs for frame grabber devices({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides a convenient basic access to the digital inputs and outputs of a frame grabber device.
+
+\begin{DoxyNote}{注解}
+The number of digital inputs and outputs available will vary significantly from device to device. Some devices might not even have digital inputs and/or digital outputs. Therefore it's crucial to check for available pins before using them. The corresponding functions to do that can be found in the base class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}}.
+\end{DoxyNote}
+To create more complex digital output related signals the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Output\+Signal\+Generator\+Frame\+Grabber}} should be used.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a9a02c6ab9fa2ec7a170514dd9ac89002}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}!I\+O\+Sub\+System\+Frame\+Grabber@{I\+O\+Sub\+System\+Frame\+Grabber}}
+\index{I\+O\+Sub\+System\+Frame\+Grabber@{I\+O\+Sub\+System\+Frame\+Grabber}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}}
+\subsubsection[{I\+O\+Sub\+System\+Frame\+Grabber}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::\+I\+O\+Sub\+System\+Frame\+Grabber (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a9a02c6ab9fa2ec7a170514dd9ac89002}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}} object. 
+
+
+\begin{DoxyParams}{参数}
+{\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a9a02c6ab9fa2ec7a170514dd9ac89002_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a281e839ea8d063a199c09ca51641eeaf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}!H\+D\+Output@{H\+D\+Output}}
+\index{H\+D\+Output@{H\+D\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}}
+\subsubsection[{H\+D\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sync\+Output}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::\+H\+D\+Output (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a281e839ea8d063a199c09ca51641eeaf}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output}} object that represents a H\+D output for this device. 
+
+{\itshape nr} {\bfseries M\+U\+S\+T} be a valid number ( larger or equal than 0 and smaller than the value returned by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_af693c1061444f7a44c86ebb8f518949b}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::get\+H\+D\+Output\+Count}}.
+
+\begin{DoxyReturn}{返回}
+A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output}} object. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the H\+D output to return. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_aa68fc4dacd234e7a0ae41210b26baf4d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}!V\+D\+Output@{V\+D\+Output}}
+\index{V\+D\+Output@{V\+D\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}}
+\subsubsection[{V\+D\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sync\+Output}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::\+V\+D\+Output (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_aa68fc4dacd234e7a0ae41210b26baf4d}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output}} object that represents a V\+D output for this device. 
+
+{\itshape nr} {\bfseries M\+U\+S\+T} be a valid number ( larger or equal than 0 and smaller than the value returned by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_ac04032b336c489792fb1cc669bac3c27}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::get\+V\+D\+Output\+Count}}.
+
+\begin{DoxyReturn}{返回}
+A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output}} object. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the V\+D output to return. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a0e54ebc0c4382de40b6367bd7ac30288}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}!sync\+Output\+Mode@{sync\+Output\+Mode}}
+\index{sync\+Output\+Mode@{sync\+Output\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber}}
+\subsubsection[{sync\+Output\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Sync\+Out\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::sync\+Output\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a0e54ebc0c4382de40b6367bd7ac30288}
+
+
+An enumerated integer property defining the current mode for sync. signal creation. 
+
+Sometimes it's desired to create a signal to sync. cameras connected to a capture device. E.\+g. when capturing 3 monochrome cameras in parallel these should be synchronized. Therefore some devices can create H\+D and V\+D signals that synchronize the connected cameras.
+
+To create sync. signals this property must be set either to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsom\+Non\+Interlaced} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dsom\+Interlaced}.
+
+In interlaced mode only the frequency of the V\+D signals can be modified, while in non-\/interlaced mode the width (in percent) the signal stays low can be modified as well.
+
+Now e.\+g. to sync. two or more C\+C\+I\+R compliant cameras connected to a capture device that can create sync. signals, the H\+D signals must be generated with a C\+C\+I\+R compliant frequency. The function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_a281e839ea8d063a199c09ca51641eeaf}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::\+H\+D\+Output}} can be used to access the desired output pin. Then its property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output_af2b6f87408372fde91f190f8ef312e45}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output\+::frequency\+\_\+\+Hz}} is set to 15625 Hz (C\+C\+I\+R standard). The remaining values can be left untouched. The capture device will no generate H\+D signals with the desired frequency and V\+D outputs with the frequency stored by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output_af2b6f87408372fde91f190f8ef312e45}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Sync\+Output\+::frequency\+\_\+\+Hz}} belonging to the pointer to the object returned by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber_aa68fc4dacd234e7a0ae41210b26baf4d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Frame\+Grabber\+::\+V\+D\+Output}}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

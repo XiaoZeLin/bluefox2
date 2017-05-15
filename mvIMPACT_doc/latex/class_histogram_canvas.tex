@@ -1,0 +1,147 @@
+\hypertarget{class_histogram_canvas}{\section{Histogram\+Canvas类 参考}
+\label{class_histogram_canvas}\index{Histogram\+Canvas@{Histogram\+Canvas}}
+}
+
+
+类 Histogram\+Canvas 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_histogram_canvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Histogram\+Canvas 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_histogram_canvas__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_histogram_canvas_a00a1edc9ed490d20c329f1997ff42c3c}{{\bfseries Histogram\+Canvas} (wx\+Window $\ast$parent, const wx\+String \&config\+Name, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Histogram\char`\"{}), bool bo\+Active=false, bool bo\+Handle\+Standard\+Deviation=false)}\label{class_histogram_canvas_a00a1edc9ed490d20c329f1997ff42c3c}
+
+\item 
+\hypertarget{class_histogram_canvas_abd8e043031d61f66ed8e004b61fd4ec2}{void {\bfseries Set\+Draw\+Step\+Width} (int value)}\label{class_histogram_canvas_abd8e043031d61f66ed8e004b61fd4ec2}
+
+\item 
+\hypertarget{class_histogram_canvas_a81228502111e62f1d5df028b84ad95d4}{virtual wx\+String {\bfseries Get\+Grid\+Value} (int row, int col) const }\label{class_histogram_canvas_a81228502111e62f1d5df028b84ad95d4}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_histogram_canvas_a6b1f6be56e1006fea521d1b4c3792611}{static int {\bfseries Get\+Draw\+Step\+Width\+Max} (void)}\label{class_histogram_canvas_a6b1f6be56e1006fea521d1b4c3792611}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_histogram_canvas_a5f5fd72b98f5f933560ae349f181fec3}{void {\bfseries Calculate\+Max\+Value} (void)}\label{class_histogram_canvas_a5f5fd72b98f5f933560ae349f181fec3}
+
+\item 
+\hypertarget{class_histogram_canvas_ab953b8f150658759e9293d81f3725bc3}{void {\bfseries Calculate\+Spatial\+Noise\+Histogram} (const \hyperlink{struct_request_data}{Request\+Data} \&data)}\label{class_histogram_canvas_ab953b8f150658759e9293d81f3725bc3}
+
+\item 
+\hypertarget{class_histogram_canvas_ac2b3749563c0af872ce20cbd76a6f5fb}{void {\bfseries Calculate\+Spatial\+Noise\+Histogram\+\_\+8u\+\_\+\+C3\+Packed} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, int order\mbox{[}3\mbox{]})}\label{class_histogram_canvas_ac2b3749563c0af872ce20cbd76a6f5fb}
+
+\item 
+\hypertarget{class_histogram_canvas_a8aaea0e4488555a302d85813e441a439}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Spatial\+Noise\+Histogram\+U\+Y\+V422} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a8aaea0e4488555a302d85813e441a439}
+
+\item 
+\hypertarget{class_histogram_canvas_a7fa2fe1707992d26e183f41a64cddfa0}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Spatial\+Noise\+Histogram\+Y\+U\+V411\+\_\+\+U\+Y\+Y\+V\+Y\+Y} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a7fa2fe1707992d26e183f41a64cddfa0}
+
+\item 
+\hypertarget{class_histogram_canvas_a474c27c34e1173fdf6712be2077ffe04}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Spatial\+Noise\+Histogram\+Y\+U\+V422} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a474c27c34e1173fdf6712be2077ffe04}
+
+\item 
+\hypertarget{class_histogram_canvas_a25bcb799e163bcef889927c3b1180df5}{void {\bfseries Calculate\+Pixel\+Histogram} (const \hyperlink{struct_request_data}{Request\+Data} \&data)}\label{class_histogram_canvas_a25bcb799e163bcef889927c3b1180df5}
+
+\item 
+\hypertarget{class_histogram_canvas_a9b423e1220642f9effaee9dd3bce0608}{void {\bfseries Calculate\+Pixel\+Histogram\+\_\+8u\+\_\+\+R\+G\+B\+Packed} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, int order\mbox{[}3\mbox{]})}\label{class_histogram_canvas_a9b423e1220642f9effaee9dd3bce0608}
+
+\item 
+\hypertarget{class_histogram_canvas_ad0433782d28f6f60ca7b46b53e70dd31}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Spatial\+Noise\+Histogram\+\_\+\+Mono\+Packed} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, \+\_\+\+Ty pixel\+Access\+Fn)}\label{class_histogram_canvas_ad0433782d28f6f60ca7b46b53e70dd31}
+
+\item 
+\hypertarget{class_histogram_canvas_a6e1813492042a8d038b64dc3ef715523}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Pixel\+Histogram\+\_\+\+Mono\+Packed} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, \+\_\+\+Ty pixel\+Access\+Fn)}\label{class_histogram_canvas_a6e1813492042a8d038b64dc3ef715523}
+
+\item 
+\hypertarget{class_histogram_canvas_a41518f6ef92e33a0975d79094d800a29}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Pixel\+Histogram\+U\+Y\+V422} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a41518f6ef92e33a0975d79094d800a29}
+
+\item 
+\hypertarget{class_histogram_canvas_a558adcb945bbe08a4c4b13632ad6d34b}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Pixel\+Histogram\+Y\+U\+V411\+\_\+\+U\+Y\+Y\+V\+Y\+Y} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a558adcb945bbe08a4c4b13632ad6d34b}
+
+\item 
+\hypertarget{class_histogram_canvas_a47f5c6c78bfe51932b03e35a8fcd96a3}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Pixel\+Histogram\+Y\+U\+V422} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a47f5c6c78bfe51932b03e35a8fcd96a3}
+
+\item 
+\hypertarget{class_histogram_canvas_a116735f5a417eef7e2400a3811aaf516}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Calculate\+Pixel\+Histogram\+Y\+U\+V444} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B)}\label{class_histogram_canvas_a116735f5a417eef7e2400a3811aaf516}
+
+\item 
+\hypertarget{class_histogram_canvas_a65b7135f7246bd63670da4d75a151827}{virtual void {\bfseries Custom\+Alloc} (int)}\label{class_histogram_canvas_a65b7135f7246bd63670da4d75a151827}
+
+\item 
+\hypertarget{class_histogram_canvas_a9441fa0b0676f4b515a4c297b6a61df8}{virtual void {\bfseries Custom\+Dealloc} (void)}\label{class_histogram_canvas_a9441fa0b0676f4b515a4c297b6a61df8}
+
+\item 
+\hypertarget{class_histogram_canvas_ab918fa9e8fad86d78cefd6ebba35b2c5}{void {\bfseries Deallocate\+Histogram\+Buffer} (void)}\label{class_histogram_canvas_ab918fa9e8fad86d78cefd6ebba35b2c5}
+
+\item 
+\hypertarget{class_histogram_canvas_a5402fb0be7a8568ca046aaae9e9ff67d}{virtual void {\bfseries On\+Paint\+Custom} (wx\+Paint\+D\+C \&dc)}\label{class_histogram_canvas_a5402fb0be7a8568ca046aaae9e9ff67d}
+
+\item 
+\hypertarget{class_histogram_canvas_a1ab01d6e7c9ae4fb0fcad2307a81d716}{void {\bfseries Draw\+Histogram\+Line} (wx\+Paint\+D\+C \&dc, int h, double scale\+X, double scale\+Y, T\+Plane plane)}\label{class_histogram_canvas_a1ab01d6e7c9ae4fb0fcad2307a81d716}
+
+\item 
+\hypertarget{class_histogram_canvas_a4fbe52755fd75104d52d42829c8957fd}{virtual double {\bfseries Get\+Scale\+X} (wx\+Coord w) const }\label{class_histogram_canvas_a4fbe52755fd75104d52d42829c8957fd}
+
+\item 
+\hypertarget{class_histogram_canvas_a78c74ed8d78bb368262441698404aaf5}{virtual double {\bfseries Get\+Scale\+Y} (wx\+Coord h) const }\label{class_histogram_canvas_a78c74ed8d78bb368262441698404aaf5}
+
+\item 
+\hypertarget{class_histogram_canvas_ab39f6444732502e33830efaedb09c918}{virtual unsigned int {\bfseries Get\+X\+Marker\+Parameters} (unsigned int \&from, unsigned int \&to) const }\label{class_histogram_canvas_ab39f6444732502e33830efaedb09c918}
+
+\item 
+\hypertarget{class_histogram_canvas_abf75367ac99923e2d54223a88d5f0ab0}{bool {\bfseries Prepare\+Histogram\+Buffer} (bool bo\+Image\+Format\+Changed, int channel\+Count, \hyperlink{group___common_interface_ga456e8aa76e06bb761f27c52141475985}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format} pixel\+Format)}\label{class_histogram_canvas_abf75367ac99923e2d54223a88d5f0ab0}
+
+\item 
+\hypertarget{class_histogram_canvas_a0c919e956b18d4dbbfea41f46e853490}{virtual void {\bfseries Refresh\+Analysis\+Data} (void)}\label{class_histogram_canvas_a0c919e956b18d4dbbfea41f46e853490}
+
+\item 
+\hypertarget{class_histogram_canvas_af93f7d8f2455e5010579625eeb456306}{void {\bfseries Setup\+Numerical\+Display} (int channel\+Count, int row\+Count\+Needed)}\label{class_histogram_canvas_af93f7d8f2455e5010579625eeb456306}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_histogram_canvas_a75ef2d53bb9794463d3265b31cbd7c85}{int $\ast$$\ast$ {\bfseries m\+\_\+pp\+Histogram\+Buffer}}\label{class_histogram_canvas_a75ef2d53bb9794463d3265b31cbd7c85}
+
+\item 
+\hypertarget{class_histogram_canvas_a5935bffd3f4f4cb36f57508543b3a77b}{\hyperlink{struct_plot_point}{Plot\+Point} $\ast$ {\bfseries m\+\_\+p\+Histogram\+Max}}\label{class_histogram_canvas_a5935bffd3f4f4cb36f57508543b3a77b}
+
+\item 
+\hypertarget{class_histogram_canvas_a0ffed731172fe431255af532d390ab52}{double $\ast$ {\bfseries m\+\_\+p\+Histogram\+Average}}\label{class_histogram_canvas_a0ffed731172fe431255af532d390ab52}
+
+\item 
+\hypertarget{class_histogram_canvas_a69573a27f0ca4fee1dbad0fd2d931d40}{double $\ast$ {\bfseries m\+\_\+p\+Standard\+Deviation}}\label{class_histogram_canvas_a69573a27f0ca4fee1dbad0fd2d931d40}
+
+\item 
+\hypertarget{class_histogram_canvas_a4c85d7e883880a564ccb8b525859f501}{bool {\bfseries m\+\_\+bo\+Handle\+Standard\+Deviation}}\label{class_histogram_canvas_a4c85d7e883880a564ccb8b525859f501}
+
+\item 
+\hypertarget{class_histogram_canvas_abc4ed6de80f23401020f5ea48ce1cb65}{\hyperlink{struct_plot_point}{Plot\+Point} {\bfseries m\+\_\+\+Current\+Max}}\label{class_histogram_canvas_abc4ed6de80f23401020f5ea48ce1cb65}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Histogram\+Canvas.\+h\item 
+apps/mv\+Prop\+View/Histogram\+Canvas.\+cpp\end{DoxyCompactItemize}

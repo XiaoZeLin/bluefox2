@@ -1,0 +1,267 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component\+Locator\+Base类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+}
+
+
+A base class to locate components within the driver.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component\+Locator\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component\+Locator\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aacf80105a85ffd855ed86ff9264d32b9}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aacf80105a85ffd855ed86ff9264d32b9}{Component\+Locator\+Base} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aacf80105a85ffd855ed86ff9264d32b9}
+
+\begin{DoxyCompactList}\small\item\em Constructs a new unbound locator. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aaa11bc27e6ff9370eb572772067572de}{Component\+Locator\+Base} (H\+L\+I\+S\+T baselist)
+\begin{DoxyCompactList}\small\item\em Constructs a new bound to the specified base list locator. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb}{Component\+Locator\+Base} (H\+L\+I\+S\+T baselist, const std\+::string \&path\+To\+Search\+Base)
+\begin{DoxyCompactList}\small\item\em Constructs a new locator and searches the search base list. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318}{bind\+Component} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \&access, const std\+::string \&\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access_aee8b40bfc45b5752e03570afaadce217}{name}, int search\+Mode=0, int max\+Search\+Depth=I\+N\+T\+\_\+\+M\+A\+X) const 
+\begin{DoxyCompactList}\small\item\em Binds an access object to an internal driver object. \end{DoxyCompactList}\item 
+H\+L\+I\+S\+T \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90}{bind\+Search\+Base} (H\+L\+I\+S\+T baselist, const std\+::string \&path\+To\+Search\+Base=\char`\"{}\char`\"{})
+\begin{DoxyCompactList}\small\item\em Assign a new search base to the locator. \end{DoxyCompactList}\item 
+H\+O\+B\+J \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b}{find\+Component} (const std\+::string \&\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access_aee8b40bfc45b5752e03570afaadce217}{name}, int search\+Mode=0, int max\+Search\+Depth=I\+N\+T\+\_\+\+M\+A\+X) const 
+\begin{DoxyCompactList}\small\item\em Tries to locate a certain component in a hierarchy of components. \end{DoxyCompactList}\item 
+H\+L\+I\+S\+T \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a0380fa414baee7f123736f105ff1a378}{searchbase\+\_\+id} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the unique identifier of the base list from where to start searching for a component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to locate components within the driver. 
+
+Every driver will offer a set of properties, methods and component lists. {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} objects contain data such as the current gain in d\+B, the state of a digital input, etc.. {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Method}} objects can be executed like a normal function and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} objects are used to group certain objects together to form a logical unit.
+
+When it's necessary to locate one or more of these objects without knowing exactly where to look for them this locator class can be used to look for the component. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aaa11bc27e6ff9370eb572772067572de}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}!Component\+Locator\+Base@{Component\+Locator\+Base}}
+\index{Component\+Locator\+Base@{Component\+Locator\+Base}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+\subsubsection[{Component\+Locator\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base\+::\+Component\+Locator\+Base (
+\begin{DoxyParamCaption}
+\item[{H\+L\+I\+S\+T}]{baselist}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aaa11bc27e6ff9370eb572772067572de}
+
+
+Constructs a new bound to the specified base list locator. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em baselist} & A unique identifier to the base list from where to start to search for the search base. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}!Component\+Locator\+Base@{Component\+Locator\+Base}}
+\index{Component\+Locator\+Base@{Component\+Locator\+Base}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+\subsubsection[{Component\+Locator\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base\+::\+Component\+Locator\+Base (
+\begin{DoxyParamCaption}
+\item[{H\+L\+I\+S\+T}]{baselist, }
+\item[{const std\+::string \&}]{path\+To\+Search\+Base}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb}
+
+
+Constructs a new locator and searches the search base list. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em baselist} & A unique identifier to the base list from where to start to search for the search base. \\
+\hline
+\mbox{\tt in}  & {\em path\+To\+Search\+Base} & The name or path ('/' separated) to the search base. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}!bind\+Component@{bind\+Component}}
+\index{bind\+Component@{bind\+Component}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+\subsubsection[{bind\+Component}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base\+::bind\+Component (
+\begin{DoxyParamCaption}
+\item[{{\bf Component} \&}]{access, }
+\item[{const std\+::string \&}]{name, }
+\item[{int}]{search\+Mode = {\ttfamily 0}, }
+\item[{int}]{max\+Search\+Depth = {\ttfamily INT\+\_\+MAX}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318}
+
+
+Binds an access object to an internal driver object. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if successful
+\item false otherwise. In case false is returned by this function the component could not be bound, which means subsequent calls using {\itshape access} will fail or throw an exception. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in,out}  & {\em access} & The access object to bind to the driver object. \\
+\hline
+\mbox{\tt in}  & {\em name} & The path and/or name of the object to be located. \\
+\hline
+\mbox{\tt in}  & {\em search\+Mode} & Specifies how and what to search for. Valid flags(these flags can be combined using the '$\vert$' operator) for this parameter are\+:
+\begin{DoxyItemize}
+\item sm\+Ignore\+Lists
+\item sm\+Ignore\+Methods
+\item sm\+Ignore\+Properties 
+\end{DoxyItemize}\\
+\hline
+\mbox{\tt in}  & {\em max\+Search\+Depth} & The maximum depth (in lists) where to search for the component. By e.\+g. setting this value to 2, the current list and all its sub lists will be searched for the object, but no sublists of sub lists. -\/1 will search in A\+L\+L sub lists. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}!bind\+Search\+Base@{bind\+Search\+Base}}
+\index{bind\+Search\+Base@{bind\+Search\+Base}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+\subsubsection[{bind\+Search\+Base}]{\setlength{\rightskip}{0pt plus 5cm}H\+L\+I\+S\+T mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base\+::bind\+Search\+Base (
+\begin{DoxyParamCaption}
+\item[{H\+L\+I\+S\+T}]{baselist, }
+\item[{const std\+::string \&}]{path\+To\+Search\+Base = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90}
+
+
+Assign a new search base to the locator. 
+
+This new search base will be searched starting from the base list specified. \begin{DoxyReturn}{返回}
+The unique identifier of the new search base. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em baselist} & A unique identifier for the base list used to start searching the search base. \\
+\hline
+\mbox{\tt in}  & {\em path\+To\+Search\+Base} & The name or path to the search base. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}!find\+Component@{find\+Component}}
+\index{find\+Component@{find\+Component}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+\subsubsection[{find\+Component}]{\setlength{\rightskip}{0pt plus 5cm}H\+O\+B\+J mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base\+::find\+Component (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name, }
+\item[{int}]{search\+Mode = {\ttfamily 0}, }
+\item[{int}]{max\+Search\+Depth = {\ttfamily INT\+\_\+MAX}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b}
+
+
+Tries to locate a certain component in a hierarchy of components. 
+
+\begin{DoxyReturn}{返回}
+A unique identifier to the component if found or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+D} if the component couldn't be found. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The path and/or name of the object to be located. \\
+\hline
+\mbox{\tt in}  & {\em search\+Mode} & Specifies how and what to search for. Valid flags(these flags can be combined using the '$\vert$' operator) for this parameter are\+:
+\begin{DoxyItemize}
+\item sm\+Ignore\+Lists
+\item sm\+Ignore\+Methods
+\item sm\+Ignore\+Properties 
+\end{DoxyItemize}\\
+\hline
+\mbox{\tt in}  & {\em max\+Search\+Depth} & The maximum depth (in lists) where to search for the component. By e.\+g. setting this value to 2, the current list and all its sub lists will be searched for the object, but no sublists of sub lists. -\/1 will search in A\+L\+L sub lists. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a0380fa414baee7f123736f105ff1a378}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}!searchbase\+\_\+id@{searchbase\+\_\+id}}
+\index{searchbase\+\_\+id@{searchbase\+\_\+id}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base}}
+\subsubsection[{searchbase\+\_\+id}]{\setlength{\rightskip}{0pt plus 5cm}H\+L\+I\+S\+T mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator\+Base\+::searchbase\+\_\+id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a0380fa414baee7f123736f105ff1a378}
+
+
+Returns the unique identifier of the base list from where to start searching for a component. 
+
+\begin{DoxyReturn}{返回}
+The unique identifier of the base list from where searching for a component will start currently. 
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

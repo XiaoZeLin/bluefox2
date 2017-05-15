@@ -1,0 +1,936 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A class to create complex digital output signals(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceSignal\lOutputStartEvent \&gt;" alt="" coords="606,4,813,60"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,91,555,133"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDigitalOutput\lControlMode \&gt;" alt="" coords="607,84,812,140"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceImage\lTrigger \&gt;" alt="" coords="606,164,813,220"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,91,355,133"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,91,155,133"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a633df02b634f912222d7d40a37e1a46a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a633df02b634f912222d7d40a37e1a46a">OutputSignalGeneratorFrameGrabber</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="memdesc:a633df02b634f912222d7d40a37e1a46a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html" title="A class to create complex digital output signals(Device specific interface layout only)...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber</a></b> object.  <a href="#a633df02b634f912222d7d40a37e1a46a">更多...</a><br /></td></tr>
+<tr class="separator:a633df02b634f912222d7d40a37e1a46a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c9a7fe10cc42c34c82712caad48b147"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a9c9a7fe10cc42c34c82712caad48b147">OutputSignalGeneratorFrameGrabber</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html">OutputSignalGeneratorFrameGrabber</a> &amp;src)</td></tr>
+<tr class="memdesc:a9c9a7fe10cc42c34c82712caad48b147"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html" title="A class to create complex digital output signals(Device specific interface layout only)...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber</a></b> from and existing one.  <a href="#a9c9a7fe10cc42c34c82712caad48b147">更多...</a><br /></td></tr>
+<tr class="separator:a9c9a7fe10cc42c34c82712caad48b147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa833724f43161d0f9fe7f7764a761891"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa833724f43161d0f9fe7f7764a761891"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#aa833724f43161d0f9fe7f7764a761891">~OutputSignalGeneratorFrameGrabber</a> ()</td></tr>
+<tr class="memdesc:aa833724f43161d0f9fe7f7764a761891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:aa833724f43161d0f9fe7f7764a761891"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a558c69cbbce2745dac0c7020f4f963"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a558c69cbbce2745dac0c7020f4f963"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html">OutputSignalGeneratorFrameGrabber</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a7a558c69cbbce2745dac0c7020f4f963">operator=</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html">OutputSignalGeneratorFrameGrabber</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a7a558c69cbbce2745dac0c7020f4f963"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows assignments of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html" title="A class to create complex digital output signals(Device specific interface layout only)...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber</a></b> objects. <br /></td></tr>
+<tr class="separator:a7a558c69cbbce2745dac0c7020f4f963"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad184bc7320099f53b9859e42c30da858"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#ad184bc7320099f53b9859e42c30da858">definePulse</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, int polarity, int delay, int width, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a> *pPulseStartConfiguration=0)</td></tr>
+<tr class="memdesc:ad184bc7320099f53b9859e42c30da858"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a single pulse to a digital output.  <a href="#ad184bc7320099f53b9859e42c30da858">更多...</a><br /></td></tr>
+<tr class="separator:ad184bc7320099f53b9859e42c30da858"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10d99336c129dae39d28b1c53795f00e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a10d99336c129dae39d28b1c53795f00e">definePulseSequence</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, int startLevel, const std::vector&lt; int &gt; &amp;sequence, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a> *pPulseStartConfiguration=0)</td></tr>
+<tr class="memdesc:a10d99336c129dae39d28b1c53795f00e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a complex signal to a digital output.  <a href="#a10d99336c129dae39d28b1c53795f00e">更多...</a><br /></td></tr>
+<tr class="separator:a10d99336c129dae39d28b1c53795f00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae53d34b33acf4b256f3b0d27bdf2dd26"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#ae53d34b33acf4b256f3b0d27bdf2dd26">getValidSignalsForPassThroughModes</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, std::vector&lt; std::pair&lt; std::string, <a class="el" href="group___device_specific_interface.html#ga29840a466892bced617a5f3a6edb5218">TDigitalSignal</a> &gt; &gt; &amp;sequence) const </td></tr>
+<tr class="memdesc:ae53d34b33acf4b256f3b0d27bdf2dd26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a list of valid signals that can be passed directly to a certain digital output pin.  <a href="#ae53d34b33acf4b256f3b0d27bdf2dd26">更多...</a><br /></td></tr>
+<tr class="separator:ae53d34b33acf4b256f3b0d27bdf2dd26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80eb29acf966b1cf37a72e570bfaf77a"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a80eb29acf966b1cf37a72e570bfaf77a">getValidPassThroughSignalCount</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput) const </td></tr>
+<tr class="memdesc:a80eb29acf966b1cf37a72e570bfaf77a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of signals that can be used for pass through signal definitions for a certain digital output pin of this device.  <a href="#a80eb29acf966b1cf37a72e570bfaf77a">更多...</a><br /></td></tr>
+<tr class="separator:a80eb29acf966b1cf37a72e570bfaf77a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79f2053c88997435f48804ed0ec3598c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga29840a466892bced617a5f3a6edb5218">TDigitalSignal</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a79f2053c88997435f48804ed0ec3598c">getValidPassThroughSignalValue</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, int index=0) const </td></tr>
+<tr class="memdesc:a79f2053c88997435f48804ed0ec3598c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a valid signal that can be passed directly to a certain digital output pin.  <a href="#a79f2053c88997435f48804ed0ec3598c">更多...</a><br /></td></tr>
+<tr class="separator:a79f2053c88997435f48804ed0ec3598c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cebc24507b191a912c916a6b1d3b845"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a9cebc24507b191a912c916a6b1d3b845">getValidPassThroughSignalString</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, int index=0) const </td></tr>
+<tr class="memdesc:a9cebc24507b191a912c916a6b1d3b845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives a valid string representation of a signal that can be passed directly to a certain digital output pin.  <a href="#a9cebc24507b191a912c916a6b1d3b845">更多...</a><br /></td></tr>
+<tr class="separator:a9cebc24507b191a912c916a6b1d3b845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210e143a9bcd614d5bed0b104594f709"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a210e143a9bcd614d5bed0b104594f709">definePassThroughSignal</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, <a class="el" href="group___device_specific_interface.html#ga29840a466892bced617a5f3a6edb5218">TDigitalSignal</a> digitalSignal, bool boInverted=false)</td></tr>
+<tr class="memdesc:a210e143a9bcd614d5bed0b104594f709"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assing a certain signal to a digital output.  <a href="#a210e143a9bcd614d5bed0b104594f709">更多...</a><br /></td></tr>
+<tr class="separator:a210e143a9bcd614d5bed0b104594f709"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc196b3121a43ba476e2f8b2415c0c8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#abc196b3121a43ba476e2f8b2415c0c8a">definePassThroughSignal</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, const std::string &amp;digitalSignal, bool boInverted=false)</td></tr>
+<tr class="memdesc:abc196b3121a43ba476e2f8b2415c0c8a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assing a certain signal to a digital output.  <a href="#abc196b3121a43ba476e2f8b2415c0c8a">更多...</a><br /></td></tr>
+<tr class="separator:abc196b3121a43ba476e2f8b2415c0c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4311d27a250b52f733074778a31ac822"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a4311d27a250b52f733074778a31ac822">undefineSignal</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput)</td></tr>
+<tr class="memdesc:a4311d27a250b52f733074778a31ac822"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes the signal definition from the specified output pin.  <a href="#a4311d27a250b52f733074778a31ac822">更多...</a><br /></td></tr>
+<tr class="separator:a4311d27a250b52f733074778a31ac822"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb27162093ef2ed424036cb7a129da5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a1bb27162093ef2ed424036cb7a129da5">defineLineScanPulse</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *pOutput, <a class="el" href="group___device_specific_interface.html#ga83333b94d7a6a3f1ba96189b4e71fac0">TDeviceSignalOutputStartEvent</a> pulseStartEventValue, int softwareSignalPeriod_pclk, int width_pclk, int polarity, unsigned int divider)</td></tr>
+<tr class="memdesc:a1bb27162093ef2ed424036cb7a129da5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines a pulse to trigger line scan cameras.  <a href="#a1bb27162093ef2ed424036cb7a129da5">更多...</a><br /></td></tr>
+<tr class="separator:a1bb27162093ef2ed424036cb7a129da5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a16a2f8eea50086e015adb7e40088e765"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga00cd9778dbab384a83457d98ff8c3d97">PropertyIDigitalOutputControlMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a16a2f8eea50086e015adb7e40088e765">controlMode</a></td></tr>
+<tr class="memdesc:a16a2f8eea50086e015adb7e40088e765"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the general method used to create output signals.  <a href="#a16a2f8eea50086e015adb7e40088e765">更多...</a><br /></td></tr>
+<tr class="separator:a16a2f8eea50086e015adb7e40088e765"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2102a162653d84112dcebbd90086ad4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga63bede647f87c0203f196d9002ffac9e">PropertyIDeviceSignalOutputStartEvent</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#aa2102a162653d84112dcebbd90086ad4">pulseStartEvent</a></td></tr>
+<tr class="memdesc:aa2102a162653d84112dcebbd90086ad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the general behaviour of created output signals.  <a href="#aa2102a162653d84112dcebbd90086ad4">更多...</a><br /></td></tr>
+<tr class="separator:aa2102a162653d84112dcebbd90086ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b84a665907ea8d08f8dbf0be76f8388"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga0a157bd269e0e43d0d944d3f9615f770">PropertyIDeviceImageTrigger</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a7b84a665907ea8d08f8dbf0be76f8388">imageTrigger</a></td></tr>
+<tr class="memdesc:a7b84a665907ea8d08f8dbf0be76f8388"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the general behaviour of created output signals.  <a href="#a7b84a665907ea8d08f8dbf0be76f8388">更多...</a><br /></td></tr>
+<tr class="separator:a7b84a665907ea8d08f8dbf0be76f8388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A class to create complex digital output signals(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>Instances of this class can be used to create more complex digital output related signals like a single pulse or sequence of pulses on a certain pin as a reaction on a signal on one of the digital inputs of a device.</p>
+<p>The availability of the features provided by this class heavily depends on the used capture device. Therefore it's crucial to check if a desired feature is available at all. This class either provides the functions needed for these checks or its functions will return appropriate error codes.</p>
+<dl class="section note"><dt>注解</dt><dd>If the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a16a2f8eea50086e015adb7e40088e765" title="An enumerated integer property defining the general method used to create output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::controlMode</a></b> is not available <b>NO</b> feature of this class can be used.</dd>
+<dd>
+If the translation dictionary of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a16a2f8eea50086e015adb7e40088e765" title="An enumerated integer property defining the general method used to create output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::controlMode</a></b> does not contain <b>mvIMPACT::acquire::docmRTC</b> the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a1bb27162093ef2ed424036cb7a129da5" title="Defines a pulse to trigger line scan cameras. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::defineLineScanPulse</a></b> will <b>NOT</b> be available.</dd>
+<dd>
+Calling unsupported functions or accessing unsupported features will raise an exception.</dd></dl>
+<p>Pointers to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> objects <b>MUST</b> be obtained by an instance to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> object of the same device.</p>
+<p>Whenever a signal has been defined for a a certain digital output pin, this pin can no longer controlled using the corresponding functions in the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b>. In order to do that the pin in question must be released using the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a4311d27a250b52f733074778a31ac822" title="Removes the signal definition from the specified output pin. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::undefineSignal</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a633df02b634f912222d7d40a37e1a46a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::OutputSignalGeneratorFrameGrabber </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html" title="A class to create complex digital output signals(Device specific interface layout only)...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a633df02b634f912222d7d40a37e1a46a_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="299,56,461,112"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="299,136,461,192"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aaf5cfd9177e1d002b501a85df253096b" title="Moves to the first child of this component(moves down one level). " alt="" coords="305,215,455,257"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="511,5,673,61"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="517,85,667,126"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="748,13,916,54"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="723,143,941,185"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="1001,110,1151,151"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="989,175,1163,217"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1211,197,1439,253"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1488,205,1712,246"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac70865f299e03af1264d462a0e5fb724" title="Constructs a new unbound access object. " alt="" coords="510,253,674,294"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9c9a7fe10cc42c34c82712caad48b147"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::OutputSignalGeneratorFrameGrabber </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html">OutputSignalGeneratorFrameGrabber</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html" title="A class to create complex digital output signals(Device specific interface layout only)...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber</a></b> from and existing one. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>A constant reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html" title="A class to create complex digital output signals(Device specific interface layout only)...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber</a></b> object, this object shall be created from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a1bb27162093ef2ed424036cb7a129da5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::defineLineScanPulse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___device_specific_interface.html#ga83333b94d7a6a3f1ba96189b4e71fac0">TDeviceSignalOutputStartEvent</a>&#160;</td>
+          <td class="paramname"><em>pulseStartEventValue</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>softwareSignalPeriod_pclk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width_pclk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>polarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>divider</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Defines a pulse to trigger line scan cameras. </p>
+<p>Calling this function without setting <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a16a2f8eea50086e015adb7e40088e765" title="An enumerated integer property defining the general method used to create output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::controlMode</a></b> to <b>mvIMPACT::acquire::docmRTC</b> will have <b>NO</b> effect.</p>
+<dl class="section note"><dt>注解</dt><dd>Not every frame grabber will offer the <b>mvIMPACT::acquire::docmRTC</b> mode. Check is the mode is available by reading the properties translation dictionary with the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#af5ec5a9c3657af2917f4ead78ef067db" title="This function reads a single translation table string entry from a property. ">mvIMPACT::acquire::PropertyIDigitalOutputControlMode::getTranslationDictString</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0c50700ebff2806621c63d03b624f200" title="This function reads a single translation table value entry from a property. ">mvIMPACT::acquire::PropertyIDigitalOutputControlMode::getTranslationDictValue</a></b>. The detailed description of this class might contain source code examples for the language you are working with.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a4311d27a250b52f733074778a31ac822" title="Removes the signal definition from the specified output pin. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::undefineSignal</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pulseStartEventValue</td><td>Defines the start event for the signal generation. Valid values for this parameter are defined by <b>mvIMPACT::acquire::TDeviceSignalOutputStartEvent</b>. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">softwareSignalPeriod_pclk</td><td>Defines the frequency for a continuously generated signal if <em>pulseStartEventValue</em> is <b>mvIMPACT::acquire::dsoseSyncInRisingEdge</b> or <b>mvIMPACT::acquire::dsoseSyncInFallingEdge</b> and is ignored otherwise. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width_pclk</td><td>The width of the signal to generate if <em>pulseStartEventValue</em> is <b>mvIMPACT::acquire::dsoseSyncInRisingEdge</b>, <b>mvIMPACT::acquire::dsosePeriodically</b> or <b>mvIMPACT::acquire::dsoseSyncInFallingEdge</b> and is ignored otherwise. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>The polarity of the signal to generate if <em>pulseStartEventValue</em> is <b>mvIMPACT::acquire::dsoseSyncInRisingEdge</b>, <b>mvIMPACT::acquire::dsosePeriodically</b> or <b>mvIMPACT::acquire::dsoseSyncInFallingEdge</b> and is ignored otherwise.</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>0: The signal will be low for <em>width_pclk</em> and high otherwise</li>
+<li>1: The signal will be high for <em>width_pclk</em> and high otherwise <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">divider</td><td>Defines the divider value if <em>pulseStartEventValue</em> is <b>mvIMPACT::acquire::dsosePeriodically</b> </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a1bb27162093ef2ed424036cb7a129da5_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html#a7f77527bd1234158b833ceb49e639a87" title="Returns a description for this digital output. " alt="" coords="254,11,445,53"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a210e143a9bcd614d5bed0b104594f709"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePassThroughSignal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___device_specific_interface.html#ga29840a466892bced617a5f3a6edb5218">TDigitalSignal</a>&#160;</td>
+          <td class="paramname"><em>digitalSignal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>boInverted</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assing a certain signal to a digital output. </p>
+<p>Some digital input signals or even some internal signals can be passed directly to one or more digital outputs.</p>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSignal</td><td>The digital signal that shall be passed to the digital output. Valid values for this parameter will be obtained by a call to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#ae53d34b33acf4b256f3b0d27bdf2dd26" title="Receives a list of valid signals that can be passed directly to a certain digital output pin...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidSignalsForPassThroughModes</a></b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">boInverted</td><td>If set to <em>true</em>, the signal will be inverted internally before being passed to the output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="abc196b3121a43ba476e2f8b2415c0c8a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePassThroughSignal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>digitalSignal</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>boInverted</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assing a certain signal to a digital output. </p>
+<p>Some digital input signals or even some internal signals can be passed directly to one or more digital outputs.</p>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">digitalSignal</td><td>The string representation of the digital output that shall be passed to the digital output. Valid values for this parameter will be obtained by a call to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#ae53d34b33acf4b256f3b0d27bdf2dd26" title="Receives a list of valid signals that can be passed directly to a certain digital output pin...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidSignalsForPassThroughModes</a></b> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">boInverted</td><td>If set to <em>true</em>, the signal will be inverted internally before being passed to the output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad184bc7320099f53b9859e42c30da858"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePulse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>polarity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>delay</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>width</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a> *&#160;</td>
+          <td class="paramname"><em>pPulseStartConfiguration</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a single pulse to a digital output. </p>
+<p>Whenever a single pulse of a certain duration and polarity shall be generated on a digital output as a reaction on a trigger signal that was either generated by one of digital inputs of the device or software this is the right function to use.</p>
+<p>When the signal is generated can be defined by the properties <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#aa2102a162653d84112dcebbd90086ad4" title="An enumerated integer property defining the general behaviour of created output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::pulseStartEvent</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a7b84a665907ea8d08f8dbf0be76f8388" title="An enumerated integer property defining the general behaviour of created output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::imageTrigger</a></b>.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a4311d27a250b52f733074778a31ac822" title="Removes the signal definition from the specified output pin. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::undefineSignal</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">polarity</td><td>The polarity of the pulse to generate.</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>0: The pulse will be low for <em>width_pclk</em> and high otherwise</li>
+<li>1: The pulse will be high for <em>width_pclk</em> and high otherwise <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">delay</td><td>The delay after the trigger event before a signal generation starts </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">width</td><td>The width of the pulse to generate </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pPulseStartConfiguration</td><td>The pulse start configuration to be used for this pulse sequence. Not every device will support the use of pulse start configurations. Valid objects that can be passed to this function can be obtained from a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#af699c6e691ece416ec2242d08e35cb58" title="Returns a pointer to a mvIMPACT::acquire::PulseStartConfiguration associated with this device...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfiguration</a></b>, and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a6f33bc4f6613b7c8b268beba61a09661" title="Returns the number of mvIMPACT::acquire::PulseStartConfiguration objects available for the mvIMPACT::...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfigurationCount</a></b>. If objects of these type are not supported, pass 0 or ignore this parameter. In that case the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a7b84a665907ea8d08f8dbf0be76f8388" title="An enumerated integer property defining the general behaviour of created output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::imageTrigger</a></b> will define the start condition for the signal output. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a10d99336c129dae39d28b1c53795f00e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePulseSequence </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sequence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a> *&#160;</td>
+          <td class="paramname"><em>pPulseStartConfiguration</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a complex signal to a digital output. </p>
+<p>This function can be used when a complex signal shall be generated on a digital output as a reaction on a trigger signal that was either generated by one of digital inputs of the device or software.</p>
+<p>When the signal is generated can be defined by the properties <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#aa2102a162653d84112dcebbd90086ad4" title="An enumerated integer property defining the general behaviour of created output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::pulseStartEvent</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a7b84a665907ea8d08f8dbf0be76f8388" title="An enumerated integer property defining the general behaviour of created output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::imageTrigger</a></b>.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a4311d27a250b52f733074778a31ac822" title="Removes the signal definition from the specified output pin. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::undefineSignal</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startLevel</td><td>The start level of the generated signal.</td></tr>
+  </table>
+  </dd>
+</dl>
+<ul>
+<li>0: The signal will start with 'low'</li>
+<li>1: The signal will start with 'high' <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sequence</td><td>An array of integer values. Each values defines a switch in polarity of the signal after 'x' us. An array containing '1000', '2000' therefore will describe a signal starting with <em>startLevel</em>, switches polarity after 1000 us and then again switches polarity after 2000 us. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pPulseStartConfiguration</td><td>The pulse start configuration to be used for this pulse sequence. Not every device will support the use of pulse start configurations. Valid objects that can be passed to this function can be obtained from a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#af699c6e691ece416ec2242d08e35cb58" title="Returns a pointer to a mvIMPACT::acquire::PulseStartConfiguration associated with this device...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfiguration</a></b>, and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a6f33bc4f6613b7c8b268beba61a09661" title="Returns the number of mvIMPACT::acquire::PulseStartConfiguration objects available for the mvIMPACT::...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfigurationCount</a></b>. If objects of these type are not supported, pass 0 or ignore this parameter. In that case the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a7b84a665907ea8d08f8dbf0be76f8388" title="An enumerated integer property defining the general behaviour of created output signals. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::imageTrigger</a></b> will define the start condition for the signal output. </td></tr>
+  </table>
+  </dd>
+</dl>
+</li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a80eb29acf966b1cf37a72e570bfaf77a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalCount </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of signals that can be used for pass through signal definitions for a certain digital output pin of this device. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a9cebc24507b191a912c916a6b1d3b845"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalString </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Receives a valid string representation of a signal that can be passed directly to a certain digital output pin. </p>
+<p>Whenever it is necessary to output a certain signal (e.g. a digital input signal connected to the device or an internal digital signal like e.g. a frame valid signal) to a digital output of the device this can be done by a call to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a210e143a9bcd614d5bed0b104594f709" title="Assing a certain signal to a digital output. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePassThroughSignal</a></b> </p>
+<p>As the type of signals that a device can send to a digital output depends heavily on the device and even on the digital output as well, this function together with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a9cebc24507b191a912c916a6b1d3b845" title="Receives a valid string representation of a signal that can be passed directly to a certain digital o...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalString</a></b> can be used to query a list of strings and a numerical representation for each signal that can be sent to this digital output. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the entry to read from the property. The find out the last valid value for this parameter call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a80eb29acf966b1cf37a72e570bfaf77a" title="Returns the number of signals that can be used for pass through signal definitions for a certain digi...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalCount</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a9cebc24507b191a912c916a6b1d3b845_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="291,38,509,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="569,5,719,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="557,70,731,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="779,92,1007,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1056,99,1280,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a79f2053c88997435f48804ed0ec3598c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga29840a466892bced617a5f3a6edb5218">TDigitalSignal</a> mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalValue </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Receives a valid signal that can be passed directly to a certain digital output pin. </p>
+<p>Whenever it is necessary to output a certain signal (e.g. a digital input signal connected to the device or an internal digital signal like e.g. a frame valid signal) to a digital output of the device this can be done by a call to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a210e143a9bcd614d5bed0b104594f709" title="Assing a certain signal to a digital output. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePassThroughSignal</a></b> </p>
+<p>As the type of signals that a device can send to a digital output depends heavily on the device and even on the digital output as well, this function together with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a9cebc24507b191a912c916a6b1d3b845" title="Receives a valid string representation of a signal that can be passed directly to a certain digital o...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalString</a></b> can be used to query a list of strings and a numerical representation for each signal that can be sent to this digital output. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the entry to read from the property. The find out the last valid value for this parameter call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a80eb29acf966b1cf37a72e570bfaf77a" title="Returns the number of signals that can be used for pass through signal definitions for a certain digi...">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalCount</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber_a79f2053c88997435f48804ed0ec3598c_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="323,38,541,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="601,5,751,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="589,70,763,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="811,92,1039,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1088,99,1312,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae53d34b33acf4b256f3b0d27bdf2dd26"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::getValidSignalsForPassThroughModes </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; std::string, <a class="el" href="group___device_specific_interface.html#ga29840a466892bced617a5f3a6edb5218">TDigitalSignal</a> &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sequence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Receives a list of valid signals that can be passed directly to a certain digital output pin. </p>
+<p>Whenever it is necessary to output a certain signal (e.g. a digital input signal connected to the device or an internal digital signal like e.g. a frame valid signal) to a digital output of the device this can be done by a call to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a210e143a9bcd614d5bed0b104594f709" title="Assing a certain signal to a digital output. ">mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::definePassThroughSignal</a></b> </p>
+<p>As the type of signals that a device can send to a digital output depends heavily on the device and even on the digital output as well, this function will return a list of strings and a numerical representation for each signal that can be sent to this digital output.</p>
+<dl class="section note"><dt>注解</dt><dd>This function is much more efficient than calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a79f2053c88997435f48804ed0ec3598c" title="Receives a valid signal that can be passed directly to a certain digital output pin. ">OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalValue</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a9cebc24507b191a912c916a6b1d3b845" title="Receives a valid string representation of a signal that can be passed directly to a certain digital o...">OutputSignalGeneratorFrameGrabber::getValidPassThroughSignalString</a></b> and therefore this function should be called whenever all entries are required.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">sequence</td><td>A reference to a vector that will receive the list of allowed digital signals for this particular digital output pin. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4311d27a250b52f733074778a31ac822"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::undefineSignal </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td>
+          <td class="paramname"><em>pOutput</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes the signal definition from the specified output pin. </p>
+<p>Whenever a signal has been defined for a a certain digital output pin, this pin can no longer controlled using the corresponding functions in the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b>. This function removes the signal definition and hands back manual control of that digital output to the user. </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pOutput</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object obtained from an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ...">mvIMPACT::acquire::IOSubSystemFrameGrabber</a></b> for this device. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a16a2f8eea50086e015adb7e40088e765"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga00cd9778dbab384a83457d98ff8c3d97">PropertyIDigitalOutputControlMode</a> mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::controlMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the general method used to create output signals. </p>
+<p>This setting always applies to every signal defined. Modifying this property will also change the behaviour of signals already defined.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDigitalOutputControlMode</b>.</p>
+<p>When switching to <b>mvIMPACT::acquire::docmRTC</b> mode only one signal can be created currently.</p>
+<dl class="section note"><dt>注解</dt><dd>Not every frame grabber will offer the <b>mvIMPACT::acquire::docmRTC</b> mode. Check if the mode is available by reading the properties translation dictionary with the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#af5ec5a9c3657af2917f4ead78ef067db" title="This function reads a single translation table string entry from a property. ">mvIMPACT::acquire::PropertyIDigitalOutputControlMode::getTranslationDictString</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0c50700ebff2806621c63d03b624f200" title="This function reads a single translation table value entry from a property. ">mvIMPACT::acquire::PropertyIDigitalOutputControlMode::getTranslationDictValue</a></b>.</dd></dl>
+<p>Some devices will offer a more flexible way to define this behaviour. In this case, this property won't be available (a call to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> will return false). However then calls to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a6f33bc4f6613b7c8b268beba61a09661" title="Returns the number of mvIMPACT::acquire::PulseStartConfiguration objects available for the mvIMPACT::...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfigurationCount</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#af699c6e691ece416ec2242d08e35cb58" title="Returns a pointer to a mvIMPACT::acquire::PulseStartConfiguration associated with this device...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfiguration</a></b> will succeed and the objects returned by <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#af699c6e691ece416ec2242d08e35cb58" title="Returns a pointer to a mvIMPACT::acquire::PulseStartConfiguration associated with this device...">mvIMPACT::acquire::IOSubSystem::getPulseStartConfiguration</a></b> (<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html" title="A class to configure the creation of digital signals passed to one or more of the digital outputs of ...">mvIMPACT::acquire::PulseStartConfiguration</a></b>) will provide a more sofisticated way to define the signal output behaviour of a device. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b84a665907ea8d08f8dbf0be76f8388"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga0a157bd269e0e43d0d944d3f9615f770">PropertyIDeviceImageTrigger</a> mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::imageTrigger</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the general behaviour of created output signals. </p>
+<p>This setting always applies to every signal defined. Modifying this property will also change the behaviour of signals already defined.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceImageTrigger</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa2102a162653d84112dcebbd90086ad4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga63bede647f87c0203f196d9002ffac9e">PropertyIDeviceSignalOutputStartEvent</a> mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber::pulseStartEvent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the general behaviour of created output signals. </p>
+<p>This setting always applies to every signal defined. Modifying this property will also change the behaviour of signals already defined.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceSignalOutputStartEvent</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html">OutputSignalGeneratorFrameGrabber</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+var classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber =
+[
+    [ "CameraSettingsFrameGrabber", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a21e294f723493ea165c3cb2b414ba433", null ],
+    [ "~CameraSettingsFrameGrabber", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a5b762df9430f065d3d0abd4033eaf7c4", null ],
+    [ "getTriggerControlCount", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#ad3e291874c032126b28402539e949fb2", null ],
+    [ "triggerControl", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#ab121b261beaf4db1e31116f372cfa227", null ],
+    [ "triggerControl", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a49074adbc4794944fd3cda354cdeb599", null ],
+    [ "acquisitionField", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#ad60c4e0bf3ad80348a10061140dcb57c", null ],
+    [ "aoiMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a7832a8f28a3896b5aeda151c30cefe1a", null ],
+    [ "contrast_pc", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#ab7ab2179bcc174da9b31af1293842e49", null ],
+    [ "gain_dB", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a53d9afd1f0e37c6af77840ee59e71dc2", null ],
+    [ "hue_pc", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#ac6086e7d04fa208f43c0d146de499714", null ],
+    [ "interlacedMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a9ef986a0f1d1e13dec2f29c13bd4de5c", null ],
+    [ "lineCounter", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a91835afe55d029af84a48915ad5081da", null ],
+    [ "luminance_pc", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#aa00a4ef7269a28b048cdec911560600c", null ],
+    [ "offset_mV", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a276705f4a208d2956d6aeb94f56247c4", null ],
+    [ "saturation_pc", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a5dd508932fef6e7843991055e4af8a85", null ],
+    [ "scanClock", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a35d5ae8944b725349b617465e42a3b49", null ],
+    [ "scanRate_kHz", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#ad902ed2dd56b7d24fd03f9b27449dcf8", null ],
+    [ "scanRateMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#aa05a4927e747ee08384c74a348a63b6c", null ],
+    [ "serialPortBaudrate", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#afb3db5d1fec3c662154b4f57c03c58c2", null ],
+    [ "softwareTriggerPeriod_ms", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a91d1b7187120dee62c0daf60ec53dc41", null ],
+    [ "triggerMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a6bb960b80203a48a68ac20917ebd5e3f", null ],
+    [ "type", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a3cf5c97b03127b143d79619658e2edb9", null ]
+];

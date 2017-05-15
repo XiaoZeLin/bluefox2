@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::AutoControlParameters类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::AutoControlParameters类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A class to control the automatic control parameters of a device(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::AutoControlParameters 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="9,6,157,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::AutoControlParameters 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="631,5,780,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="631,197,780,238"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,311,555,353"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAoiMode \&gt;" alt="" coords="609,265,801,306"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="618,335,793,377"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAutoControl\lSpeed \&gt;" alt="" coords="606,401,805,457"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,311,355,353"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,311,155,353"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:ad08e53fcc7944fafd98e3e0bb2a38ac8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#ad08e53fcc7944fafd98e3e0bb2a38ac8">isAvailable</a> (void) const </td></tr>
+<tr class="memdesc:ad08e53fcc7944fafd98e3e0bb2a38ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called to check if this device offers auto control parameters.  <a href="#ad08e53fcc7944fafd98e3e0bb2a38ac8">更多...</a><br /></td></tr>
+<tr class="separator:ad08e53fcc7944fafd98e3e0bb2a38ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:ac1e243aa47ec29b152ede3cce7c41a9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1e243aa47ec29b152ede3cce7c41a9f"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#ac1e243aa47ec29b152ede3cce7c41a9f">aoiHeight</a></td></tr>
+<tr class="memdesc:ac1e243aa47ec29b152ede3cce7c41a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the height of the rectangle used for the parameter calculation. <br /></td></tr>
+<tr class="separator:ac1e243aa47ec29b152ede3cce7c41a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1149e8b2769f11e35c60a64112570706"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a1149e8b2769f11e35c60a64112570706">aoiStartX</a></td></tr>
+<tr class="memdesc:a1149e8b2769f11e35c60a64112570706"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the X-offset of the rectangle used for the parameter calculation.  <a href="#a1149e8b2769f11e35c60a64112570706">更多...</a><br /></td></tr>
+<tr class="separator:a1149e8b2769f11e35c60a64112570706"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58ded333b56e13a9924c20162556502c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a58ded333b56e13a9924c20162556502c">aoiStartY</a></td></tr>
+<tr class="memdesc:a58ded333b56e13a9924c20162556502c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the Y-offset of the rectangle used for the parameter calculation.  <a href="#a58ded333b56e13a9924c20162556502c">更多...</a><br /></td></tr>
+<tr class="separator:a58ded333b56e13a9924c20162556502c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac02ddc06be02284eb0f4361b2c5da019"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac02ddc06be02284eb0f4361b2c5da019"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#ac02ddc06be02284eb0f4361b2c5da019">aoiWidth</a></td></tr>
+<tr class="memdesc:ac02ddc06be02284eb0f4361b2c5da019"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the width of the rectangle. <br /></td></tr>
+<tr class="separator:ac02ddc06be02284eb0f4361b2c5da019"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1c292764fb42e9a4b84f94b14b9f677"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gac29dd0ca928e4e97eeb1a038ddb4f2af">PropertyIAoiMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#ae1c292764fb42e9a4b84f94b14b9f677">aoiMode</a></td></tr>
+<tr class="memdesc:ae1c292764fb42e9a4b84f94b14b9f677"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the which area of the image is used for the calculation of the parameters.  <a href="#ae1c292764fb42e9a4b84f94b14b9f677">更多...</a><br /></td></tr>
+<tr class="separator:ae1c292764fb42e9a4b84f94b14b9f677"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91ac507b9c8d022db1f05eda5b6c9404"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a91ac507b9c8d022db1f05eda5b6c9404">desiredAverageGreyValue</a></td></tr>
+<tr class="memdesc:a91ac507b9c8d022db1f05eda5b6c9404"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the average grey value to be reached within the <a class="el" href="struct_a_o_i.html">AOI</a> in the image by the control circuit.  <a href="#a91ac507b9c8d022db1f05eda5b6c9404">更多...</a><br /></td></tr>
+<tr class="separator:a91ac507b9c8d022db1f05eda5b6c9404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61db1186975bedfc4576a68fe7213521"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga8b56e568f48f677546ec6dc38012e108">PropertyIAutoControlSpeed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a61db1186975bedfc4576a68fe7213521">controllerSpeed</a></td></tr>
+<tr class="memdesc:a61db1186975bedfc4576a68fe7213521"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the speed the control circuit will be operated in.  <a href="#a61db1186975bedfc4576a68fe7213521">更多...</a><br /></td></tr>
+<tr class="separator:a61db1186975bedfc4576a68fe7213521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3971197feb0538d2c231bce97390603a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a3971197feb0538d2c231bce97390603a">controllerGain</a></td></tr>
+<tr class="memdesc:a3971197feb0538d2c231bce97390603a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>P</b> fraction of the controller.  <a href="#a3971197feb0538d2c231bce97390603a">更多...</a><br /></td></tr>
+<tr class="separator:a3971197feb0538d2c231bce97390603a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2f5bc53c0664de702b0c9e6a81d2f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a1c2f5bc53c0664de702b0c9e6a81d2f0">controllerIntegralTime_ms</a></td></tr>
+<tr class="memdesc:a1c2f5bc53c0664de702b0c9e6a81d2f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>I</b> fraction of the controller.  <a href="#a1c2f5bc53c0664de702b0c9e6a81d2f0">更多...</a><br /></td></tr>
+<tr class="separator:a1c2f5bc53c0664de702b0c9e6a81d2f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84e0732f989407f5895f0aa199ec508f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a84e0732f989407f5895f0aa199ec508f">controllerDerivativeTime_ms</a></td></tr>
+<tr class="memdesc:a84e0732f989407f5895f0aa199ec508f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <b>D</b> fraction of the controller.  <a href="#a84e0732f989407f5895f0aa199ec508f">更多...</a><br /></td></tr>
+<tr class="separator:a84e0732f989407f5895f0aa199ec508f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3407e03e305679114b266795ad777235"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a3407e03e305679114b266795ad777235">controllerDelay_Images</a></td></tr>
+<tr class="memdesc:a3407e03e305679114b266795ad777235"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property to influence the speed the AGC and/or AEC control circuit will react and adapt to changes.  <a href="#a3407e03e305679114b266795ad777235">更多...</a><br /></td></tr>
+<tr class="separator:a3407e03e305679114b266795ad777235"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2c4a40a7f4898a6ffda900066e1dd7b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#ad2c4a40a7f4898a6ffda900066e1dd7b">gainLowerLimit_dB</a></td></tr>
+<tr class="memdesc:ad2c4a40a7f4898a6ffda900066e1dd7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining the lower limit for the cameras gain(in dB).  <a href="#ad2c4a40a7f4898a6ffda900066e1dd7b">更多...</a><br /></td></tr>
+<tr class="separator:ad2c4a40a7f4898a6ffda900066e1dd7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876d25d570ecd186687d6a72aea34e54"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a876d25d570ecd186687d6a72aea34e54">gainUpperLimit_dB</a></td></tr>
+<tr class="memdesc:a876d25d570ecd186687d6a72aea34e54"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining the upper limit for the cameras gain(in dB).  <a href="#a876d25d570ecd186687d6a72aea34e54">更多...</a><br /></td></tr>
+<tr class="separator:a876d25d570ecd186687d6a72aea34e54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0735b2bc3ada211f34ff924e2b9123b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a0735b2bc3ada211f34ff924e2b9123b7">exposeLowerLimit_us</a></td></tr>
+<tr class="memdesc:a0735b2bc3ada211f34ff924e2b9123b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining the lower limit for the sensors expose time(in us).  <a href="#a0735b2bc3ada211f34ff924e2b9123b7">更多...</a><br /></td></tr>
+<tr class="separator:a0735b2bc3ada211f34ff924e2b9123b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31bdff657d33b72b9da836a2cdd61fea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a31bdff657d33b72b9da836a2cdd61fea">exposeUpperLimit_us</a></td></tr>
+<tr class="memdesc:a31bdff657d33b72b9da836a2cdd61fea"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the upper limit for the sensors expose time in us.  <a href="#a31bdff657d33b72b9da836a2cdd61fea">更多...</a><br /></td></tr>
+<tr class="separator:a31bdff657d33b72b9da836a2cdd61fea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:ab0b1cfcd287092b768c6b4206fb0ada0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0b1cfcd287092b768c6b4206fb0ada0"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>CameraSettingsBlueDevice</b></td></tr>
+<tr class="separator:ab0b1cfcd287092b768c6b4206fb0ada0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A class to control the automatic control parameters of a device(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>Currently this class provides access to the properties, which control the way the AGC(<b>A</b> utomatic <b>G</b> ain <b>C</b> ontrol) and the AEC (<b>A</b> utomatic <b>E</b> xpose <b>C</b> ontrol) operates.</p>
+<p>The values used to capture the image, which are directly influenced by this properties (e.g. the gain or the exposure time) will be returned as part of the result of the image request.</p>
+<dl class="section note"><dt>注解</dt><dd>Not every device will offer the features provided in this class. Before accessing any members and/or properties call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#ad08e53fcc7944fafd98e3e0bb2a38ac8" title="This function should be called to check if this device offers auto control parameters. ">mvIMPACT::acquire::AutoControlParameters::isAvailable</a></b>. If this function returns false, no other member or function call in this class will return valid results.</dd>
+<dd>
+Instances of these class can't be constructed directly. Its parameters can be accessed via an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html" title="A base class for camera related settings belonging to the mvBlueXXX-series (Device specific interface...">mvIMPACT::acquire::CameraSettingsBlueDevice</a></b>.</dd>
+<dd>
+This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad08e53fcc7944fafd98e3e0bb2a38ac8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::AutoControlParameters::isAvailable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function should be called to check if this device offers auto control parameters. </p>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the device offers the features defined by this object.</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ae1c292764fb42e9a4b84f94b14b9f677"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gac29dd0ca928e4e97eeb1a038ddb4f2af">PropertyIAoiMode</a> mvIMPACT::acquire::AutoControlParameters::aoiMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the which area of the image is used for the calculation of the parameters. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TAoiMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1149e8b2769f11e35c60a64112570706"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::AutoControlParameters::aoiStartX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the X-offset of the rectangle used for the parameter calculation. </p>
+<p>Example: When setting this property to 5 the first pixel in each line of the resulting rectangle used for the calculation will be pixel number 5 of each line transmitted by the camera. </p>
+
+</div>
+</div>
+<a class="anchor" id="a58ded333b56e13a9924c20162556502c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::AutoControlParameters::aoiStartY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the Y-offset of the rectangle used for the parameter calculation. </p>
+<p>Example: When setting this property to 5 the first line of the resulting rectangle used for the calculation will be line number 5 of the image transmitted by the camera. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3407e03e305679114b266795ad777235"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::AutoControlParameters::controllerDelay_Images</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property to influence the speed the AGC and/or AEC control circuit will react and adapt to changes. </p>
+<p>While <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a61db1186975bedfc4576a68fe7213521" title="An enumerated integer property defining the speed the control circuit will be operated in...">AutoControlParameters::controllerSpeed</a></b> influences the overall time needed to adjust the controller to a new situation, this property can be used to define a delay when the controller shall start to adapt to a changed situation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84e0732f989407f5895f0aa199ec508f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::AutoControlParameters::controllerDerivativeTime_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <b>D</b> fraction of the controller. </p>
+<p>This feature will only be visible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a61db1186975bedfc4576a68fe7213521" title="An enumerated integer property defining the speed the control circuit will be operated in...">mvIMPACT::acquire::AutoControlParameters::controllerSpeed</a></b> is set to <b>mvIMPACT::acquire::acsUserDefined</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3971197feb0538d2c231bce97390603a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::AutoControlParameters::controllerGain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <b>P</b> fraction of the controller. </p>
+<p>This feature will only be visible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a61db1186975bedfc4576a68fe7213521" title="An enumerated integer property defining the speed the control circuit will be operated in...">mvIMPACT::acquire::AutoControlParameters::controllerSpeed</a></b> is set to <b>mvIMPACT::acquire::acsUserDefined</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1c2f5bc53c0664de702b0c9e6a81d2f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::AutoControlParameters::controllerIntegralTime_ms</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The <b>I</b> fraction of the controller. </p>
+<p>This feature will only be visible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a61db1186975bedfc4576a68fe7213521" title="An enumerated integer property defining the speed the control circuit will be operated in...">mvIMPACT::acquire::AutoControlParameters::controllerSpeed</a></b> is set to <b>mvIMPACT::acquire::acsUserDefined</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a61db1186975bedfc4576a68fe7213521"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga8b56e568f48f677546ec6dc38012e108">PropertyIAutoControlSpeed</a> mvIMPACT::acquire::AutoControlParameters::controllerSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the speed the control circuit will be operated in. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TAutoControlSpeed</b>.</p>
+<p>Once the controller started to react and adapt itself to a new situation, this property will define how long this adaption will take, while <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html#a3407e03e305679114b266795ad777235" title="An integer property to influence the speed the AGC and/or AEC control circuit will react and adapt to...">AutoControlParameters::controllerDelay_Images</a></b> defines the number of images to wait from a detected change to the actual start of the adaption to this new situation. </p>
+
+</div>
+</div>
+<a class="anchor" id="a91ac507b9c8d022db1f05eda5b6c9404"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::AutoControlParameters::desiredAverageGreyValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the average grey value to be reached within the <a class="el" href="struct_a_o_i.html">AOI</a> in the image by the control circuit. </p>
+<p>For multi-byte pixel formats like e.g. <b>mvIMPACT::acquire::ibpfMono10</b> this value will refer to the 8 most significant bits of the pixel data, thus e.g a value of 128 for this property will result it the controller trying reach an average grey value of 512 (0x200). </p>
+
+</div>
+</div>
+<a class="anchor" id="a0735b2bc3ada211f34ff924e2b9123b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::AutoControlParameters::exposeLowerLimit_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property defining the lower limit for the sensors expose time(in us). </p>
+<p>When the AEC is active this value defines the minimum value for the sensors expose time(in us). Even if the controller can reach the desired average grey value, the expose time will never fall below this value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a31bdff657d33b72b9da836a2cdd61fea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::AutoControlParameters::exposeUpperLimit_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the upper limit for the sensors expose time in us. </p>
+<p>When the AEC is active this value defines the maximum value for the sensors expose time(in us). Even if the controller can reach the desired average grey value, the expose time will never exceed this value. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2c4a40a7f4898a6ffda900066e1dd7b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::AutoControlParameters::gainLowerLimit_dB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property defining the lower limit for the cameras gain(in dB). </p>
+<p>When the AGC is active this value defines the minimum value for the cameras gain. Even if the controller can reach the desired average grey value, the gain will never fall below this value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a876d25d570ecd186687d6a72aea34e54"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::AutoControlParameters::gainUpperLimit_dB</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property defining the upper limit for the cameras gain(in dB). </p>
+<p>When the AGC is active this value defines the maximum value for the cameras gain. Even if the controller can reach the desired average grey value, the gain will never exceed this value. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html">AutoControlParameters</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

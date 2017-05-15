@@ -1,0 +1,423 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Transfer\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+}
+
+
+Category for the data Transfer Control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Transfer\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_adad46463fabd024836f409e36c72ab46}{Transfer\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a5f03d183d1ae3ff09fa778c468fae095}{transfer\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which stream transfers are currently controlled by the selected Transfer features. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a32c443f8d4a281c17a6538b2e369839c}{transfer\+Control\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the control method for the transfers. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a5f60d36f9fab02b1519901c371f376ad}{transfer\+Operation\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the operation mode of the transfer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a67b449afd5b111ba4b2d6fe6c3e3abcd}{transfer\+Block\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Specifies the number of data Blocks that the device should stream before stopping. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a58f6ddf7cff063b677c1c6642f9b86c7}{transfer\+Burst\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Number of Block(s) to transfer for each Transfer\+Burst\+Start trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a048b7b40ca8cc72206f93a902b7206a8}{transfer\+Queue\+Max\+Block\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Controls the maximum number of data blocks that can be stored in the block queue of the selected stream. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ac2afe03dc422b31cc68480a9e843f11f}{transfer\+Queue\+Current\+Block\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the number of Block(s) currently in the transfer queue. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a813d1478f6f76edce556c41ffc2e4898}{transfer\+Queue\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the operation mode of the transfer queue. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a9300b81aca627165f0ff70b4fc0f6d3c}{transfer\+Start}
+\begin{DoxyCompactList}\small\item\em A method object. Starts the streaming of data blocks out of the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a3070e07a3a448603af012a8f2eef0bf0}{transfer\+Stop}
+\begin{DoxyCompactList}\small\item\em A method object. Stops the streaming of data Block(s). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a0ed5e49de005396a48a227df364ae216}{transfer\+Abort}
+\begin{DoxyCompactList}\small\item\em A method object. Aborts immediately the streaming of data block(s). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a963353ae0411e4e5ab0bd08b4dbf7eae}{transfer\+Pause}
+\begin{DoxyCompactList}\small\item\em A method object. Pauses the streaming of data Block(s). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a6077208508f7c213308cdfc89ddc9152}{transfer\+Resume}
+\begin{DoxyCompactList}\small\item\em A method object. Resumes a data Blocks streaming that was previously paused by a Transfer\+Pause command. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a7e49e86aa9d74e5a9b94b55f67e2d3dc}{transfer\+Trigger\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the type of transfer trigger to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ac2953e7216e702179e8277aa4355ba31}{transfer\+Trigger\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls if the selected trigger is active. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a9317af45736dd72396ed0ac87129201d}{transfer\+Trigger\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the signal to use as the trigger source for transfers. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a3ec905c1aff4292f8f973bcb77cf2f42}{transfer\+Trigger\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the activation mode of the transfer control trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ad0b5402cce56916cd955b9f441da2846}{transfer\+Status\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which status of the transfer module to read. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_af49f438e572556b1b4cedd02ffa97a82}{transfer\+Status}
+\begin{DoxyCompactList}\small\item\em A boolean property. Reads the status of the Transfer module signal selected by Transfer\+Status\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a4162691dbc0ef1d245d9af1943e3f8bf}{transfer\+Component\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the color component for the control of the Transfer\+Stream\+Channel feature. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a259c2a03c6badc8847ac855f2124f75e}{transfer\+Stream\+Channel}
+\begin{DoxyCompactList}\small\item\em An integer property. Selects the streaming channel that will be used to transfer the selected stream of data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category for the data Transfer Control features. 
+
+A category for the data Transfer Control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_adad46463fabd024836f409e36c72ab46}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!Transfer\+Control@{Transfer\+Control}}
+\index{Transfer\+Control@{Transfer\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{Transfer\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::\+Transfer\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_adad46463fabd024836f409e36c72ab46}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_adad46463fabd024836f409e36c72ab46_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a0ed5e49de005396a48a227df364ae216}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Abort@{transfer\+Abort}}
+\index{transfer\+Abort@{transfer\+Abort}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Abort}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Abort}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a0ed5e49de005396a48a227df364ae216}
+
+
+A method object. Aborts immediately the streaming of data block(s). 
+
+Aborts immediately the streaming of data block(s). Aborting the transfer will result in the lost of the data that is present or currently entering in the block queue. However, the next new block received will be stored in the queue and transferred to the host when the streaming is restarted. If implemented, this feature should be available when the Transfer\+Control\+Mode is set to 'User\+Controlled'. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a67b449afd5b111ba4b2d6fe6c3e3abcd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Block\+Count@{transfer\+Block\+Count}}
+\index{transfer\+Block\+Count@{transfer\+Block\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Block\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Block\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a67b449afd5b111ba4b2d6fe6c3e3abcd}
+
+
+An integer property. Specifies the number of data Blocks that the device should stream before stopping. 
+
+Specifies the number of data Blocks that the device should stream before stopping. This feature is only active if the Transfer\+Operation\+Mode is set to Multi\+Block. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a58f6ddf7cff063b677c1c6642f9b86c7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Burst\+Count@{transfer\+Burst\+Count}}
+\index{transfer\+Burst\+Count@{transfer\+Burst\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Burst\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Burst\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a58f6ddf7cff063b677c1c6642f9b86c7}
+
+
+An integer property. Number of Block(s) to transfer for each Transfer\+Burst\+Start trigger. 
+
+Number of Block(s) to transfer for each Transfer\+Burst\+Start trigger. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a4162691dbc0ef1d245d9af1943e3f8bf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Component\+Selector@{transfer\+Component\+Selector}}
+\index{transfer\+Component\+Selector@{transfer\+Component\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Component\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Component\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a4162691dbc0ef1d245d9af1943e3f8bf}
+
+
+An enumerated integer property. Selects the color component for the control of the Transfer\+Stream\+Channel feature. 
+
+Selects the color component for the control of the Transfer\+Stream\+Channel feature.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Red} (Display string\+: 'Red')\+: The Transfer\+Stream\+Channel feature controls the index of the stream channel for the streaming of the red plane of the planar pixel formats.
+\item {\bfseries Green} (Display string\+: 'Green')\+: The Transfer\+Stream\+Channel feature controls the index of the stream channel for the streaming of the green plane of the planar pixel formats.
+\item {\bfseries Blue} (Display string\+: 'Blue')\+: The Transfer\+Stream\+Channel feature controls the index of the stream channel for the streaming of blue plane of the planar pixel formats.
+\item {\bfseries All} (Display string\+: 'All')\+: The Transfer\+Stream\+Channel feature controls the index of the stream channel for the streaming of all the planes of the planar pixel formats simultaneously or non planar pixel formats.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a32c443f8d4a281c17a6538b2e369839c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Control\+Mode@{transfer\+Control\+Mode}}
+\index{transfer\+Control\+Mode@{transfer\+Control\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Control\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Control\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a32c443f8d4a281c17a6538b2e369839c}
+
+
+An enumerated integer property. Selects the control method for the transfers. 
+
+Selects the control method for the transfers.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Basic} (Display string\+: 'Basic')\+: Basic
+\item {\bfseries Automatic} (Display string\+: 'Automatic')\+: Automatic
+\item {\bfseries User\+Controlled} (Display string\+: 'User Controlled')\+: User Controlled
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a5f60d36f9fab02b1519901c371f376ad}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Operation\+Mode@{transfer\+Operation\+Mode}}
+\index{transfer\+Operation\+Mode@{transfer\+Operation\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Operation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Operation\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a5f60d36f9fab02b1519901c371f376ad}
+
+
+An enumerated integer property. Selects the operation mode of the transfer. 
+
+Selects the operation mode of the transfer.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Continuous} (Display string\+: 'Continuous')\+: Continuous
+\item {\bfseries Multi\+Block} (Display string\+: 'Multi Block')\+: Multi Block
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a963353ae0411e4e5ab0bd08b4dbf7eae}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Pause@{transfer\+Pause}}
+\index{transfer\+Pause@{transfer\+Pause}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Pause}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Pause}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a963353ae0411e4e5ab0bd08b4dbf7eae}
+
+
+A method object. Pauses the streaming of data Block(s). 
+
+Pauses the streaming of data Block(s). Pausing the streaming will immediately suspend the ongoing data transfer even if a block is partially transfered. The device will resume its transmission at the reception of a Transfer\+Resume command. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ac2afe03dc422b31cc68480a9e843f11f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Queue\+Current\+Block\+Count@{transfer\+Queue\+Current\+Block\+Count}}
+\index{transfer\+Queue\+Current\+Block\+Count@{transfer\+Queue\+Current\+Block\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Queue\+Current\+Block\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Queue\+Current\+Block\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ac2afe03dc422b31cc68480a9e843f11f}
+
+
+An integer property. Returns the number of Block(s) currently in the transfer queue. 
+
+Returns the number of Block(s) currently in the transfer queue. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a048b7b40ca8cc72206f93a902b7206a8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Queue\+Max\+Block\+Count@{transfer\+Queue\+Max\+Block\+Count}}
+\index{transfer\+Queue\+Max\+Block\+Count@{transfer\+Queue\+Max\+Block\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Queue\+Max\+Block\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Queue\+Max\+Block\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a048b7b40ca8cc72206f93a902b7206a8}
+
+
+An integer property. Controls the maximum number of data blocks that can be stored in the block queue of the selected stream. 
+
+Controls the maximum number of data blocks that can be stored in the block queue of the selected stream. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a813d1478f6f76edce556c41ffc2e4898}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Queue\+Mode@{transfer\+Queue\+Mode}}
+\index{transfer\+Queue\+Mode@{transfer\+Queue\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Queue\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Queue\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a813d1478f6f76edce556c41ffc2e4898}
+
+
+An enumerated integer property. Specifies the operation mode of the transfer queue. 
+
+Specifies the operation mode of the transfer queue.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries First\+In\+First\+Out} (Display string\+: 'First In First Out')\+: Blocks first In are transferred Out first.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a6077208508f7c213308cdfc89ddc9152}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Resume@{transfer\+Resume}}
+\index{transfer\+Resume@{transfer\+Resume}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Resume}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Resume}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a6077208508f7c213308cdfc89ddc9152}
+
+
+A method object. Resumes a data Blocks streaming that was previously paused by a Transfer\+Pause command. 
+
+Resumes a data Blocks streaming that was previously paused by a Transfer\+Pause command. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a5f03d183d1ae3ff09fa778c468fae095}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Selector@{transfer\+Selector}}
+\index{transfer\+Selector@{transfer\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a5f03d183d1ae3ff09fa778c468fae095}
+
+
+An enumerated integer property. Selects which stream transfers are currently controlled by the selected Transfer features. 
+
+Selects which stream transfers are currently controlled by the selected Transfer features.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Stream0} (Display string\+: 'Stream 0')\+: The transfer features control the data stream 0.
+\item {\bfseries Stream1} (Display string\+: 'Stream 1')\+: The transfer features control the data stream 1.
+\item {\bfseries Stream2} (Display string\+: 'Stream 2')\+: The transfer features control the data stream 2.
+\item {\bfseries Stream\#3\#} (Display string\+: 'Stream \#3\#')\+: The transfer features control the data stream \#3\#.
+\item {\bfseries All} (Display string\+: 'All')\+: The transfer features control all the data streams simulateneously.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a9300b81aca627165f0ff70b4fc0f6d3c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Start@{transfer\+Start}}
+\index{transfer\+Start@{transfer\+Start}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Start}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a9300b81aca627165f0ff70b4fc0f6d3c}
+
+
+A method object. Starts the streaming of data blocks out of the device. 
+
+Starts the streaming of data blocks out of the device. This feature must be available when the Transfer\+Control\+Mode is set to 'User\+Controled'. If the Transfer\+Start feature is not writable (locked), the application should not start the transfer and should avoid using the feature until it becomes writable again. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_af49f438e572556b1b4cedd02ffa97a82}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Status@{transfer\+Status}}
+\index{transfer\+Status@{transfer\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_af49f438e572556b1b4cedd02ffa97a82}
+
+
+A boolean property. Reads the status of the Transfer module signal selected by Transfer\+Status\+Selector. 
+
+Reads the status of the Transfer module signal selected by Transfer\+Status\+Selector. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ad0b5402cce56916cd955b9f441da2846}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Status\+Selector@{transfer\+Status\+Selector}}
+\index{transfer\+Status\+Selector@{transfer\+Status\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Status\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Status\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ad0b5402cce56916cd955b9f441da2846}
+
+
+An enumerated integer property. Selects which status of the transfer module to read. 
+
+Selects which status of the transfer module to read.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Streaming} (Display string\+: 'Streaming')\+: Data blocks are transmitted when enough data is available.
+\item {\bfseries Paused} (Display string\+: 'Paused')\+: Data blocks transmission is suspended immediately.
+\item {\bfseries Stopping} (Display string\+: 'Stopping')\+: Data blocks transmission is stopping. The current block transmission will be completed and the transfer state will stop.
+\item {\bfseries Stopped} (Display string\+: 'Stopped')\+: Data blocks transmission is stopped.
+\item {\bfseries Queue\+Overflow} (Display string\+: 'Queue Overflow')\+: Data blocks queue is in overflow state.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a3070e07a3a448603af012a8f2eef0bf0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Stop@{transfer\+Stop}}
+\index{transfer\+Stop@{transfer\+Stop}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Stop}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Stop}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a3070e07a3a448603af012a8f2eef0bf0}
+
+
+A method object. Stops the streaming of data Block(s). 
+
+Stops the streaming of data Block(s). The current block transmission will be completed. This feature must be available when the Transfer\+Control\+Mode is set to 'User\+Controlled'. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a259c2a03c6badc8847ac855f2124f75e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Stream\+Channel@{transfer\+Stream\+Channel}}
+\index{transfer\+Stream\+Channel@{transfer\+Stream\+Channel}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Stream\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Stream\+Channel}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a259c2a03c6badc8847ac855f2124f75e}
+
+
+An integer property. Selects the streaming channel that will be used to transfer the selected stream of data. 
+
+Selects the streaming channel that will be used to transfer the selected stream of data. In general, this feature can be omitted and the default streaming channel will be used. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a3ec905c1aff4292f8f973bcb77cf2f42}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Trigger\+Activation@{transfer\+Trigger\+Activation}}
+\index{transfer\+Trigger\+Activation@{transfer\+Trigger\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Trigger\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Trigger\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a3ec905c1aff4292f8f973bcb77cf2f42}
+
+
+An enumerated integer property. Specifies the activation mode of the transfer control trigger. 
+
+Specifies the activation mode of the transfer control trigger.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Specifies that the trigger is considered valid on the rising edge of the source signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Specifies that the trigger is considered valid on the falling edge of the source signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Specifies that the trigger is considered valid on the falling or rising edge of the source signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Specifies that the trigger is considered valid as long as the level of the source signal is high. This can apply to Transfer\+Active and Transfer\+Pause trigger.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Specifies that the trigger is considered valid as long as the level of the source signal is low. This can apply to Transfer\+Active and Transfer\+Pause trigger.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ac2953e7216e702179e8277aa4355ba31}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Trigger\+Mode@{transfer\+Trigger\+Mode}}
+\index{transfer\+Trigger\+Mode@{transfer\+Trigger\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Trigger\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Trigger\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_ac2953e7216e702179e8277aa4355ba31}
+
+
+An enumerated integer property. Controls if the selected trigger is active. 
+
+Controls if the selected trigger is active.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the selected trigger.
+\item {\bfseries On} (Display string\+: 'On')\+: Enable the selected trigger.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a7e49e86aa9d74e5a9b94b55f67e2d3dc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Trigger\+Selector@{transfer\+Trigger\+Selector}}
+\index{transfer\+Trigger\+Selector@{transfer\+Trigger\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Trigger\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Trigger\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a7e49e86aa9d74e5a9b94b55f67e2d3dc}
+
+
+An enumerated integer property. Selects the type of transfer trigger to configure. 
+
+Selects the type of transfer trigger to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Transfer\+Start} (Display string\+: 'Transfer Start')\+: Selects a trigger to start the transfers.
+\item {\bfseries Transfer\+Stop} (Display string\+: 'Transfer Stop')\+: Selects a trigger to stop the transfers.
+\item {\bfseries Transfer\+Abort} (Display string\+: 'Transfer Abort')\+: Selects a trigger to abort the transfers.
+\item {\bfseries Transfer\+Pause} (Display string\+: 'Transfer Pause')\+: Selects a trigger to pause the transfers.
+\item {\bfseries Transfer\+Resume} (Display string\+: 'Transfer Resume')\+: Selects a trigger to Resume the transfers.
+\item {\bfseries Transfer\+Active} (Display string\+: 'Transfer Active')\+: Selects a trigger to Activate the transfers. This trigger type is used when Trigger\+Activation is set Level\+High or level\+Low.
+\item {\bfseries Transfer\+Burst\+Start} (Display string\+: 'Transfer Burst Start')\+: Selects a trigger to start the transfer of a burst of frames specified by Transfer\+Burst\+Count.
+\item {\bfseries Transfer\+Burst\+Stop} (Display string\+: 'Transfer Burst Stop')\+: Selects a trigger to end the transfer of a burst of frames.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a9317af45736dd72396ed0ac87129201d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}!transfer\+Trigger\+Source@{transfer\+Trigger\+Source}}
+\index{transfer\+Trigger\+Source@{transfer\+Trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control}}
+\subsubsection[{transfer\+Trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Transfer\+Control\+::transfer\+Trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control_a9317af45736dd72396ed0ac87129201d}
+
+
+An enumerated integer property. Specifies the signal to use as the trigger source for transfers. 
+
+Specifies the signal to use as the trigger source for transfers.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the transfer control trigger signal.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the transfer control trigger signal.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the transfer control trigger signal.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the transfer control trigger signal.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Specifies which of the Counter signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Specifies which Timer signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Specifies which Logic Block to use as internal source for the transfer control trigger signal.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Specifies which Logic Block to use as internal source for the transfer control trigger signal.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Specifies which Logic Block to use as internal source for the transfer control trigger signal.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Specifies which Logic Block to use as internal source for the transfer control trigger signal.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Specifies which Software Signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Specifies which Software Signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Specifies which Software Signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Specifies which Software Signal to use as internal source for the transfer control trigger signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Specifies which Action command to use as internal source for the transfer control trigger signal.
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Specifies which Action command to use as internal source for the transfer control trigger signal.
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Specifies which Action command to use as internal source for the transfer control trigger signal.
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Specifies which Action command to use as internal source for the transfer control trigger signal.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

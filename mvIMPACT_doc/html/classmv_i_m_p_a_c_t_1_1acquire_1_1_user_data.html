@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::UserData类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::UserData类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A helper class to work with the device specific non-volatile memory(if available).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::UserData 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_user_data_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_user_data_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_user_data_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="655,5,804,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,51,555,93"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TUserDataReconnect\lBehaviour \&gt;" alt="" coords="605,69,853,125"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,51,355,93"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,51,155,93"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a693c8931c71b9911657636bd07ab1e09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html">UserDataEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a693c8931c71b9911657636bd07ab1e09">createEntry</a> (void)</td></tr>
+<tr class="memdesc:a693c8931c71b9911657636bd07ab1e09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates and returns a new entry to store user specific data.  <a href="#a693c8931c71b9911657636bd07ab1e09">更多...</a><br /></td></tr>
+<tr class="separator:a693c8931c71b9911657636bd07ab1e09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c3bcff4890369e8c8b446fa0344e7ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a5c3bcff4890369e8c8b446fa0344e7ed">deleteEntry</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html">UserDataEntry</a> &amp;userDataEntry)</td></tr>
+<tr class="memdesc:a5c3bcff4890369e8c8b446fa0344e7ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes an entry of user specific data.  <a href="#a5c3bcff4890369e8c8b446fa0344e7ed">更多...</a><br /></td></tr>
+<tr class="separator:a5c3bcff4890369e8c8b446fa0344e7ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1c2adb53dfe271c3ddeebf458a5a021"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ab1c2adb53dfe271c3ddeebf458a5a021">getFreeMemory</a> (void) const </td></tr>
+<tr class="memdesc:ab1c2adb53dfe271c3ddeebf458a5a021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of bytes of user accessible, non-volatile memory that is still available.  <a href="#ab1c2adb53dfe271c3ddeebf458a5a021">更多...</a><br /></td></tr>
+<tr class="separator:ab1c2adb53dfe271c3ddeebf458a5a021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45146a280d80c00c39b435bd9b63a612"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html">UserDataEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a45146a280d80c00c39b435bd9b63a612">getUserDataEntry</a> (int nr) const </td></tr>
+<tr class="memdesc:a45146a280d80c00c39b435bd9b63a612"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns An object to work with an existing entry of user specific data.  <a href="#a45146a280d80c00c39b435bd9b63a612">更多...</a><br /></td></tr>
+<tr class="separator:a45146a280d80c00c39b435bd9b63a612"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80922fd3f90b3d292fd87760c41337d5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a80922fd3f90b3d292fd87760c41337d5">validUserDataEntryIndexes</a> (std::vector&lt; int &gt; &amp;sequence) const </td></tr>
+<tr class="memdesc:a80922fd3f90b3d292fd87760c41337d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills an array with all currently valid user data entry indexes.  <a href="#a80922fd3f90b3d292fd87760c41337d5">更多...</a><br /></td></tr>
+<tr class="separator:a80922fd3f90b3d292fd87760c41337d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b86acbf21478b9eb2ea528d67cbfe09"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a1b86acbf21478b9eb2ea528d67cbfe09">isAvailable</a> (void) const </td></tr>
+<tr class="memdesc:a1b86acbf21478b9eb2ea528d67cbfe09"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function should be called to check if this device offers non-volatile memory that can be accessed.  <a href="#a1b86acbf21478b9eb2ea528d67cbfe09">更多...</a><br /></td></tr>
+<tr class="separator:a1b86acbf21478b9eb2ea528d67cbfe09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6e2e87a923281c6a821b0f221b968b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8">writeToHardware</a> (void) const </td></tr>
+<tr class="memdesc:ae6e2e87a923281c6a821b0f221b968b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes the current set of user data into the devices non-volatile memory.  <a href="#ae6e2e87a923281c6a821b0f221b968b8">更多...</a><br /></td></tr>
+<tr class="separator:ae6e2e87a923281c6a821b0f221b968b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a14b5d5322cb10f3d6ce9b67e613a4cb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga26a11fd50037db50142ec603904bcb8d">PropertyIUserDataReconnectBehaviour</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a14b5d5322cb10f3d6ce9b67e613a4cb4">reconnectBehaviour</a></td></tr>
+<tr class="memdesc:a14b5d5322cb10f3d6ce9b67e613a4cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property that can be used to configure how the user data should be treated in case of a device that has been unplugged is plugged back in again.  <a href="#a14b5d5322cb10f3d6ce9b67e613a4cb4">更多...</a><br /></td></tr>
+<tr class="separator:a14b5d5322cb10f3d6ce9b67e613a4cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d926fc65fbae2a8b78016744c20be8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73d926fc65fbae2a8b78016744c20be8"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a73d926fc65fbae2a8b78016744c20be8">memoryAvailable_bytes</a></td></tr>
+<tr class="memdesc:a73d926fc65fbae2a8b78016744c20be8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of bytes of user accessible, non-volatile memory this device has available. <br /></td></tr>
+<tr class="separator:a73d926fc65fbae2a8b78016744c20be8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ea40b43d2ffba2efb6c14bdd6583b59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a4ea40b43d2ffba2efb6c14bdd6583b59">memoryConsumed_bytes</a></td></tr>
+<tr class="memdesc:a4ea40b43d2ffba2efb6c14bdd6583b59"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of bytes of user accessible, non-volatile memory currently consumed by user data.  <a href="#a4ea40b43d2ffba2efb6c14bdd6583b59">更多...</a><br /></td></tr>
+<tr class="separator:a4ea40b43d2ffba2efb6c14bdd6583b59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a520fa05e0bf58785da428f7a0241eee2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a520fa05e0bf58785da428f7a0241eee2"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>Device</b></td></tr>
+<tr class="separator:a520fa05e0bf58785da428f7a0241eee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A helper class to work with the device specific non-volatile memory(if available). </p>
+<p>A device might have a certain amount of non-volatile memory which can be accessed and modified by the user. This data can e.g. be used to store certain parameters or custom data permanently into the device. Thus this property e.g. allows to store configuration data in the device before shipping it to the end user.</p>
+<p>In theory the number of entries that can be stored in the device is not limited. However no device will provide an unlimited amount of memory.</p>
+<p>Writing data to any property of a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html" title="A helper class that represents one entry in the devices non-volatile memory. ">mvIMPACT::acquire::UserDataEntry</a></b> as well as creating a new entry by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a693c8931c71b9911657636bd07ab1e09" title="Creates and returns a new entry to store user specific data. ">mvIMPACT::acquire::UserData::createEntry</a></b> or deleting an entry with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a5c3bcff4890369e8c8b446fa0344e7ed" title="Deletes an entry of user specific data. ">mvIMPACT::acquire::UserData::deleteEntry</a></b> will <b>NOT</b> automatically result in the complete data to be updated in the device specific memory. As writing to the device memory takes a long (in terms of ms) time depending on the device architecture the modifications will only become. permanent when calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8" title="Writes the current set of user data into the devices non-volatile memory. ">mvIMPACT::acquire::UserData::writeToHardware</a></b>.</p>
+<p>If data at the end of the list of entries doesn't fit in the memory it will be discarded and therefore will not be visible the next time the device is enumerated/accessed after the running process has terminated or the device has been disconnected.</p>
+<dl class="section note"><dt>注解</dt><dd>Entries that contain no data will not be stored in hardware. If e.g. 5 user data entries have been created, but only entry 0, 1, 2 and 4 contain data the write operation will pack the data in a way that when the user data is read from the device again (when the driver for that device is loaded the next time) the list of entries will contain elements at position 0, 1, 2 and 3 but <b>NOT</b> a index number 4. Deleting an entry from the middle of the list of user data however will <b>NOT</b> move all remaining entries one step towards the front of the list. Therefore during one session the entry indexes will <b>NOT</b> change. They can either become invalid (when the corresponding entry has been deleted), can get valid (newly created entries will always appear at the next free entry, thus deleting and entry and creating a new directly afterwards will create that entry at exactly the same index) or new entries can appear (when a new entry has been created and no free list position in the middle of the list of entries has been available).</dd>
+<dd>
+The device must be closed in order to write the user data. Check the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a8e6d960358632d3e55f2f20474a3aa26" title="An enumerated integer property (read-only) defining user executed hardware update results...">mvIMPACT::acquire::Device::HWUpdateResult</a></b> afterwards in order to make sure the data transfer was successful.</dd>
+<dd>
+If a device does not offer user accessible data <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html" title="A helper class that represents one entry in the devices non-volatile memory. ">mvIMPACT::acquire::UserDataEntry</a></b> objects will still be returned by certain functions. To check if this feature is available call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a1b86acbf21478b9eb2ea528d67cbfe09" title="This function should be called to check if this device offers non-volatile memory that can be accesse...">mvIMPACT::acquire::UserData::isAvailable</a></b>.</dd>
+<dd>
+If the user accessible data currently can't be modified an exception of type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_e_no_write_rights.html" title="An exception thrown in case of a mvIMPACT::acquire::PROPHANDLING_NO_WRITE_RIGHTS error. ">mvIMPACT::acquire::ENoWriteRights</a></b> will be thrown.</dd>
+<dd>
+Instances of this class cannot be constructed directly. To get access the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a08734e0c6fd862e3c6e7160c66b927ec" title="Returns a reference to a helper class to handle user specific data stored in the devices non-volatile...">mvIMPACT::acquire::Device::getUserData</a></b>. must be used. </dd></dl>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a693c8931c71b9911657636bd07ab1e09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html">UserDataEntry</a> mvIMPACT::acquire::UserData::createEntry </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates and returns a new entry to store user specific data. </p>
+<dl class="section note"><dt>注解</dt><dd>The data handled by this object will not be stored permanently in the devices non-volatile memory until <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8" title="Writes the current set of user data into the devices non-volatile memory. ">mvIMPACT::acquire::UserData::writeToHardware</a></b> has been called successfully.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a5c3bcff4890369e8c8b446fa0344e7ed" title="Deletes an entry of user specific data. ">mvIMPACT::acquire::UserData::deleteEntry</a></b>, <br />
+ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8" title="Writes the current set of user data into the devices non-volatile memory. ">mvIMPACT::acquire::UserData::writeToHardware</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html" title="A helper class that represents one entry in the devices non-volatile memory. ">mvIMPACT::acquire::UserDataEntry</a></b> instance that can be used to store user specific data in the devices non-volatile memory. </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="208,38,427,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="487,5,636,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="475,70,648,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="697,92,925,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="973,99,1197,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5c3bcff4890369e8c8b446fa0344e7ed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::UserData::deleteEntry </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html">UserDataEntry</a> &amp;&#160;</td>
+          <td class="paramname"><em>userDataEntry</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes an entry of user specific data. </p>
+<p>If the entry has been stored to the non-volatile memory already and has been assigned the <b>mvIMPACT::acquire::udarPassword</b> flag, this call will fail, when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html#aae1a558c633261b0d2c72ab043421e83" title="The password needed to modify this entry. ">mvIMPACT::acquire::UserDataEntry::password</a></b> does not contain the correct password. </p><dl class="section note"><dt>注解</dt><dd>The data handled by this object will not be removed permanently from the devices non-volatile memory until <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8" title="Writes the current set of user data into the devices non-volatile memory. ">mvIMPACT::acquire::UserData::writeToHardware( void ) const </a>has</b> been called successfully. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a693c8931c71b9911657636bd07ab1e09" title="Creates and returns a new entry to store user specific data. ">mvIMPACT::acquire::UserData::createEntry</a></b>, <br />
+ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8" title="Writes the current set of user data into the devices non-volatile memory. ">mvIMPACT::acquire::UserData::writeToHardware</a> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">userDataEntry</td><td>A reference to the entry to delete </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="205,38,424,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="484,5,633,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="472,70,645,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="694,92,922,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="971,99,1195,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab1c2adb53dfe271c3ddeebf458a5a021"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::UserData::getFreeMemory </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of bytes of user accessible, non-volatile memory that is still available. </p>
+<dl class="section since"><dt>自从</dt><dd>1.12.64 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45146a280d80c00c39b435bd9b63a612"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html">UserDataEntry</a> mvIMPACT::acquire::UserData::getUserDataEntry </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns An object to work with an existing entry of user specific data. </p>
+<dl class="section note"><dt>注解</dt><dd>If an invalid number has been passed as <em>nr</em> an object will be returned as well. Therefore always check if the entry is valid by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html#aad3a7a9bf3566193f2a367389c560e73" title="Call this function to check if this object references an existing entry. ">mvIMPACT::acquire::UserDataEntry::isValid</a></b> before working with the object.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>An object to work with an existing entry of user specific data. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the entry to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b86acbf21478b9eb2ea528d67cbfe09"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::UserData::isAvailable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>This function should be called to check if this device offers non-volatile memory that can be accessed. </p>
+<p>by the user. </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the device offers non-volatile memory that can be accessed by the user</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a80922fd3f90b3d292fd87760c41337d5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::UserData::validUserDataEntryIndexes </td>
+          <td>(</td>
+          <td class="paramtype">std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sequence</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fills an array with all currently valid user data entry indexes. </p>
+<p>This function can be used to obtain a list of valid parameters for calls to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a45146a280d80c00c39b435bd9b63a612" title="Returns An object to work with an existing entry of user specific data. ">mvIMPACT::acquire::UserData::getUserDataEntry</a></b>. Every value in the returned array will (when passed to the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a45146a280d80c00c39b435bd9b63a612" title="Returns An object to work with an existing entry of user specific data. ">mvIMPACT::acquire::UserData::getUserDataEntry</a></b>) result in a valid <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry.html" title="A helper class that represents one entry in the devices non-volatile memory. ">mvIMPACT::acquire::UserDataEntry</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[out]</td><td class="paramname">sequence</td><td>A reference to the array receiving the list of valid indexes </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aaf5cfd9177e1d002b501a85df253096b" title="Moves to the first child of this component(moves down one level). " alt="" coords="253,70,403,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="717,122,891,163"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="451,5,669,46"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac70865f299e03af1264d462a0e5fb724" title="Constructs a new unbound access object. " alt="" coords="478,70,642,111"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="729,5,879,46"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="939,85,1167,141"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1216,93,1440,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae6e2e87a923281c6a821b0f221b968b8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::UserData::writeToHardware </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes the current set of user data into the devices non-volatile memory. </p>
+<p>This function might take a while. Depending on the device architecture and the amount of memory up to some hundred ms. Therefore make sure this function is not called more often than necessary to let your application perform efficiently. </p><dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a693c8931c71b9911657636bd07ab1e09" title="Creates and returns a new entry to store user specific data. ">mvIMPACT::acquire::UserData::createEntry</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#a5c3bcff4890369e8c8b446fa0344e7ed" title="Deletes an entry of user specific data. ">mvIMPACT::acquire::UserData::deleteEntry</a></b> </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="240,38,459,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="519,5,668,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="507,70,680,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="729,92,957,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1005,99,1229,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a4ea40b43d2ffba2efb6c14bdd6583b59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::UserData::memoryConsumed_bytes</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the number of bytes of user accessible, non-volatile memory currently consumed by user data. </p>
+<p>This doesn't indicate that all the data has already been stored in the non-volatile memory, but is the number of bytes needed to store the current user data permanently. No check for overflows will be performed. If the user defined data exceeds the size of the available memory, this data will be lost when disconnecting or switching of the supply voltage for this device.</p>
+<p>To write data permanently into the device call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html#ae6e2e87a923281c6a821b0f221b968b8" title="Writes the current set of user data into the devices non-volatile memory. ">mvIMPACT::acquire::UserData::writeToHardware</a></b> But even after calling this function data that exceeds the available memory will be lost when the device looses supply voltage and/or the process terminates. </p>
+
+</div>
+</div>
+<a class="anchor" id="a14b5d5322cb10f3d6ce9b67e613a4cb4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga26a11fd50037db50142ec603904bcb8d">PropertyIUserDataReconnectBehaviour</a> mvIMPACT::acquire::UserData::reconnectBehaviour</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property that can be used to configure how the user data should be treated in case of a device that has been unplugged is plugged back in again. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TUserDataReconnectBehaviour</b>.</p>
+<p>If a device does not support hot-plugging, this property will be invisible (<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae9f95ac45440af06f7d36990ad633a73" title="Checks if the component is currently shadowed due to a settings made elsewhere or not...">mvIMPACT::acquire::Component::isVisible()</a></b>), </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data.html">UserData</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

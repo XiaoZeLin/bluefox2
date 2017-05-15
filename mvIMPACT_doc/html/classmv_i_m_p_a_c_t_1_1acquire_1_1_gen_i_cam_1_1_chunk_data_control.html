@@ -1,0 +1,1805 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::ChunkDataControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::ChunkDataControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category that contains the Chunk Data control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::ChunkDataControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="625,65,775,106"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,343,555,385"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="619,223,781,279"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="613,369,787,410"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="606,455,794,497"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,343,355,385"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,343,155,385"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aa4dbe6191aa44650f68e0a5c6bb3926c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aa4dbe6191aa44650f68e0a5c6bb3926c">ChunkDataControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:aa4dbe6191aa44650f68e0a5c6bb3926c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html" title="Category that contains the Chunk Data control features. ">mvIMPACT::acquire::GenICam::ChunkDataControl</a></b> object.  <a href="#aa4dbe6191aa44650f68e0a5c6bb3926c">更多...</a><br /></td></tr>
+<tr class="separator:aa4dbe6191aa44650f68e0a5c6bb3926c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aae91a9b1196e832dccef5e078a75c2ee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aae91a9b1196e832dccef5e078a75c2ee">chunkModeActive</a></td></tr>
+<tr class="memdesc:aae91a9b1196e832dccef5e078a75c2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Activates the inclusion of Chunk data in the payload of the image.  <a href="#aae91a9b1196e832dccef5e078a75c2ee">更多...</a><br /></td></tr>
+<tr class="separator:aae91a9b1196e832dccef5e078a75c2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa89c2551ad7b82a5a6ce641cc169523"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#afa89c2551ad7b82a5a6ce641cc169523">chunkSelector</a></td></tr>
+<tr class="memdesc:afa89c2551ad7b82a5a6ce641cc169523"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Chunk to enable or control.  <a href="#afa89c2551ad7b82a5a6ce641cc169523">更多...</a><br /></td></tr>
+<tr class="separator:afa89c2551ad7b82a5a6ce641cc169523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4448c564c23ae14648a81c74fdd2f6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#ae4448c564c23ae14648a81c74fdd2f6f">chunkEnable</a></td></tr>
+<tr class="memdesc:ae4448c564c23ae14648a81c74fdd2f6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Enables the inclusion of the selected Chunk data in the payload of the image.  <a href="#ae4448c564c23ae14648a81c74fdd2f6f">更多...</a><br /></td></tr>
+<tr class="separator:ae4448c564c23ae14648a81c74fdd2f6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1f17a1606e9ea9a5c660886422d5b7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5f1f17a1606e9ea9a5c660886422d5b7">chunkComponentSelector</a></td></tr>
+<tr class="memdesc:a5f1f17a1606e9ea9a5c660886422d5b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> from which to retreive data from.  <a href="#a5f1f17a1606e9ea9a5c660886422d5b7">更多...</a><br /></td></tr>
+<tr class="separator:a5f1f17a1606e9ea9a5c660886422d5b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a303eb2c02211269edcdc7c1899270c73"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a303eb2c02211269edcdc7c1899270c73">chunkComponentID</a></td></tr>
+<tr class="memdesc:a303eb2c02211269edcdc7c1899270c73"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> Identifier of the selected <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> image.  <a href="#a303eb2c02211269edcdc7c1899270c73">更多...</a><br /></td></tr>
+<tr class="separator:a303eb2c02211269edcdc7c1899270c73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ff4b23f4b20e7aa48c31fa742a7b8fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a9ff4b23f4b20e7aa48c31fa742a7b8fb">chunkComponentIDValue</a></td></tr>
+<tr class="memdesc:a9ff4b23f4b20e7aa48c31fa742a7b8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns a unique Identifier value that correspond to the selected chunk <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a>.  <a href="#a9ff4b23f4b20e7aa48c31fa742a7b8fb">更多...</a><br /></td></tr>
+<tr class="separator:a9ff4b23f4b20e7aa48c31fa742a7b8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0abd13d321577a5794abad963840cc6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a0abd13d321577a5794abad963840cc6c">chunkImageComponent</a></td></tr>
+<tr class="memdesc:a0abd13d321577a5794abad963840cc6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. This feature is deprecated (See ChunkComponentID).  <a href="#a0abd13d321577a5794abad963840cc6c">更多...</a><br /></td></tr>
+<tr class="separator:a0abd13d321577a5794abad963840cc6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af192e7c6c38acc638f7bdfc18bb7f96e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#af192e7c6c38acc638f7bdfc18bb7f96e">chunkPartSelector</a></td></tr>
+<tr class="memdesc:af192e7c6c38acc638f7bdfc18bb7f96e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated (See ChunkComponentSelector).  <a href="#af192e7c6c38acc638f7bdfc18bb7f96e">更多...</a><br /></td></tr>
+<tr class="separator:af192e7c6c38acc638f7bdfc18bb7f96e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac35c9adb7b18011c9dcae2b2e07fd728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#ac35c9adb7b18011c9dcae2b2e07fd728">chunkImage</a></td></tr>
+<tr class="memdesc:ac35c9adb7b18011c9dcae2b2e07fd728"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Returns the entire image data included in the payload.  <a href="#ac35c9adb7b18011c9dcae2b2e07fd728">更多...</a><br /></td></tr>
+<tr class="separator:ac35c9adb7b18011c9dcae2b2e07fd728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc2f89fbe1e30303592aa20d17323814"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#acc2f89fbe1e30303592aa20d17323814">chunkOffsetX</a></td></tr>
+<tr class="memdesc:acc2f89fbe1e30303592aa20d17323814"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the OffsetX of the image included in the payload.  <a href="#acc2f89fbe1e30303592aa20d17323814">更多...</a><br /></td></tr>
+<tr class="separator:acc2f89fbe1e30303592aa20d17323814"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02440e61ff51103cfbc224a31cee7898"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a02440e61ff51103cfbc224a31cee7898">chunkOffsetY</a></td></tr>
+<tr class="memdesc:a02440e61ff51103cfbc224a31cee7898"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the OffsetY of the image included in the payload.  <a href="#a02440e61ff51103cfbc224a31cee7898">更多...</a><br /></td></tr>
+<tr class="separator:a02440e61ff51103cfbc224a31cee7898"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6cf6b5feed11d6d46885ee126a7345f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a6cf6b5feed11d6d46885ee126a7345f4">chunkWidth</a></td></tr>
+<tr class="memdesc:a6cf6b5feed11d6d46885ee126a7345f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the Width of the image included in the payload.  <a href="#a6cf6b5feed11d6d46885ee126a7345f4">更多...</a><br /></td></tr>
+<tr class="separator:a6cf6b5feed11d6d46885ee126a7345f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a333f4b2dfbc993bfbd6dbfc6049ca36e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a333f4b2dfbc993bfbd6dbfc6049ca36e">chunkHeight</a></td></tr>
+<tr class="memdesc:a333f4b2dfbc993bfbd6dbfc6049ca36e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the Height of the image included in the payload.  <a href="#a333f4b2dfbc993bfbd6dbfc6049ca36e">更多...</a><br /></td></tr>
+<tr class="separator:a333f4b2dfbc993bfbd6dbfc6049ca36e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ece8017c9040ec2ffc9b180bd3c1abb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a9ece8017c9040ec2ffc9b180bd3c1abb">chunkPixelFormat</a></td></tr>
+<tr class="memdesc:a9ece8017c9040ec2ffc9b180bd3c1abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the PixelFormat of the image included in the payload.  <a href="#a9ece8017c9040ec2ffc9b180bd3c1abb">更多...</a><br /></td></tr>
+<tr class="separator:a9ece8017c9040ec2ffc9b180bd3c1abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a9b1a979bd09b5a47ad56f5b178cb38"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5a9b1a979bd09b5a47ad56f5b178cb38">chunkPixelDynamicRangeMin</a></td></tr>
+<tr class="memdesc:a5a9b1a979bd09b5a47ad56f5b178cb38"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the minimum value of dynamic range of the image included in the payload.  <a href="#a5a9b1a979bd09b5a47ad56f5b178cb38">更多...</a><br /></td></tr>
+<tr class="separator:a5a9b1a979bd09b5a47ad56f5b178cb38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64e63b9d3a7ec7e2a8011df6e4893f48"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a64e63b9d3a7ec7e2a8011df6e4893f48">chunkPixelDynamicRangeMax</a></td></tr>
+<tr class="memdesc:a64e63b9d3a7ec7e2a8011df6e4893f48"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the maximum value of dynamic range of the image included in the payload.  <a href="#a64e63b9d3a7ec7e2a8011df6e4893f48">更多...</a><br /></td></tr>
+<tr class="separator:a64e63b9d3a7ec7e2a8011df6e4893f48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6524fff11f2289aecb48e49f15a28710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a6524fff11f2289aecb48e49f15a28710">chunkTimestamp</a></td></tr>
+<tr class="memdesc:a6524fff11f2289aecb48e49f15a28710"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the Timestamp of the image included in the payload at the time of the FrameStart internal event.  <a href="#a6524fff11f2289aecb48e49f15a28710">更多...</a><br /></td></tr>
+<tr class="separator:a6524fff11f2289aecb48e49f15a28710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa113e713066193edd3549f5a6c0ab5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aaaa113e713066193edd3549f5a6c0ab5">chunkTimestampLatchValue</a></td></tr>
+<tr class="memdesc:aaaa113e713066193edd3549f5a6c0ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the last Timestamp latched with the TimestampLatch command.  <a href="#aaaa113e713066193edd3549f5a6c0ab5">更多...</a><br /></td></tr>
+<tr class="separator:aaaa113e713066193edd3549f5a6c0ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb276829f054332349de8fa7eb5125f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aefb276829f054332349de8fa7eb5125f">chunkLineStatusAll</a></td></tr>
+<tr class="memdesc:aefb276829f054332349de8fa7eb5125f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the status of all the I/O lines at the time of the FrameStart internal event.  <a href="#aefb276829f054332349de8fa7eb5125f">更多...</a><br /></td></tr>
+<tr class="separator:aefb276829f054332349de8fa7eb5125f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43d711538b1fb622260f8dc3c1cc4af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#ac43d711538b1fb622260f8dc3c1cc4af">chunkCounterSelector</a></td></tr>
+<tr class="memdesc:ac43d711538b1fb622260f8dc3c1cc4af"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which counter to retrieve data from.  <a href="#ac43d711538b1fb622260f8dc3c1cc4af">更多...</a><br /></td></tr>
+<tr class="separator:ac43d711538b1fb622260f8dc3c1cc4af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21793d389f9c7b12053027e6cef91520"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a21793d389f9c7b12053027e6cef91520">chunkCounterValue</a></td></tr>
+<tr class="memdesc:a21793d389f9c7b12053027e6cef91520"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the value of the selected Chunk counter at the time of the FrameStart event.  <a href="#a21793d389f9c7b12053027e6cef91520">更多...</a><br /></td></tr>
+<tr class="separator:a21793d389f9c7b12053027e6cef91520"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae64defa82d79e8cc3b38aa6ff2c5e31a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#ae64defa82d79e8cc3b38aa6ff2c5e31a">chunkTimerSelector</a></td></tr>
+<tr class="memdesc:ae64defa82d79e8cc3b38aa6ff2c5e31a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Timer to retrieve data from.  <a href="#ae64defa82d79e8cc3b38aa6ff2c5e31a">更多...</a><br /></td></tr>
+<tr class="separator:ae64defa82d79e8cc3b38aa6ff2c5e31a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6974218ada079b8968619a5e54ea8232"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a6974218ada079b8968619a5e54ea8232">chunkScanLineSelector</a></td></tr>
+<tr class="memdesc:a6974218ada079b8968619a5e54ea8232"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Index for vector representation of one chunk value per line in an image.  <a href="#a6974218ada079b8968619a5e54ea8232">更多...</a><br /></td></tr>
+<tr class="separator:a6974218ada079b8968619a5e54ea8232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a147570f20aaa1f8afa4b6da7d18a7b35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a147570f20aaa1f8afa4b6da7d18a7b35">chunkEncoderSelector</a></td></tr>
+<tr class="memdesc:a147570f20aaa1f8afa4b6da7d18a7b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Encoder to retrieve data from.  <a href="#a147570f20aaa1f8afa4b6da7d18a7b35">更多...</a><br /></td></tr>
+<tr class="separator:a147570f20aaa1f8afa4b6da7d18a7b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9483a862178c537ba676b62bd51a5711"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a9483a862178c537ba676b62bd51a5711">chunkEncoderValue</a></td></tr>
+<tr class="memdesc:a9483a862178c537ba676b62bd51a5711"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the counter's value of the selected Encoder at the time of the FrameStart in area scan mode or the counter's value at the time of the LineStart selected by ChunkScanLineSelector in Linescan mode.  <a href="#a9483a862178c537ba676b62bd51a5711">更多...</a><br /></td></tr>
+<tr class="separator:a9483a862178c537ba676b62bd51a5711"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e3efd94e47ad8ea76c4ad05a91fc208"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a1e3efd94e47ad8ea76c4ad05a91fc208">chunkEncoderStatus</a></td></tr>
+<tr class="memdesc:a1e3efd94e47ad8ea76c4ad05a91fc208"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the motion status of the selected encoder.  <a href="#a1e3efd94e47ad8ea76c4ad05a91fc208">更多...</a><br /></td></tr>
+<tr class="separator:a1e3efd94e47ad8ea76c4ad05a91fc208"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54579ccb17b4adfac634b977c5a97341"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a54579ccb17b4adfac634b977c5a97341">chunkExposureTimeSelector</a></td></tr>
+<tr class="memdesc:a54579ccb17b4adfac634b977c5a97341"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which exposure time is read by the ChunkExposureTime feature.  <a href="#a54579ccb17b4adfac634b977c5a97341">更多...</a><br /></td></tr>
+<tr class="separator:a54579ccb17b4adfac634b977c5a97341"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b634696877e47f3c773da528d1c8f90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5b634696877e47f3c773da528d1c8f90">chunkTimerValue</a></td></tr>
+<tr class="memdesc:a5b634696877e47f3c773da528d1c8f90"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the value of the selected Timer at the time of the FrameStart internal event.  <a href="#a5b634696877e47f3c773da528d1c8f90">更多...</a><br /></td></tr>
+<tr class="separator:a5b634696877e47f3c773da528d1c8f90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a111bfcd0b354e55b9a54ffbb1a9d5299"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a111bfcd0b354e55b9a54ffbb1a9d5299">chunkExposureTime</a></td></tr>
+<tr class="memdesc:a111bfcd0b354e55b9a54ffbb1a9d5299"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the exposure time used to capture the image.  <a href="#a111bfcd0b354e55b9a54ffbb1a9d5299">更多...</a><br /></td></tr>
+<tr class="separator:a111bfcd0b354e55b9a54ffbb1a9d5299"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f20487202b9100f118509754ecde4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a9d9f20487202b9100f118509754ecde4">chunkGainSelector</a></td></tr>
+<tr class="memdesc:a9d9f20487202b9100f118509754ecde4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Gain to return.  <a href="#a9d9f20487202b9100f118509754ecde4">更多...</a><br /></td></tr>
+<tr class="separator:a9d9f20487202b9100f118509754ecde4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8a83e2478ddaae9fc8b59d86cbe75a5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#ab8a83e2478ddaae9fc8b59d86cbe75a5">chunkGain</a></td></tr>
+<tr class="memdesc:ab8a83e2478ddaae9fc8b59d86cbe75a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the gain used to capture the image.  <a href="#ab8a83e2478ddaae9fc8b59d86cbe75a5">更多...</a><br /></td></tr>
+<tr class="separator:ab8a83e2478ddaae9fc8b59d86cbe75a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63720c40901053497a17d6e30e95070a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a63720c40901053497a17d6e30e95070a">chunkBlackLevelSelector</a></td></tr>
+<tr class="memdesc:a63720c40901053497a17d6e30e95070a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Black Level to return.  <a href="#a63720c40901053497a17d6e30e95070a">更多...</a><br /></td></tr>
+<tr class="separator:a63720c40901053497a17d6e30e95070a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d6b7d5f4bb92ae9f7d780d262ecd016"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a6d6b7d5f4bb92ae9f7d780d262ecd016">chunkBlackLevel</a></td></tr>
+<tr class="memdesc:a6d6b7d5f4bb92ae9f7d780d262ecd016"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the black level used to capture the image included in the payload.  <a href="#a6d6b7d5f4bb92ae9f7d780d262ecd016">更多...</a><br /></td></tr>
+<tr class="separator:a6d6b7d5f4bb92ae9f7d780d262ecd016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a058ff2d5680ac5df29d70b5c78542974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a058ff2d5680ac5df29d70b5c78542974">chunkLinePitch</a></td></tr>
+<tr class="memdesc:a058ff2d5680ac5df29d70b5c78542974"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the LinePitch of the image included in the payload.  <a href="#a058ff2d5680ac5df29d70b5c78542974">更多...</a><br /></td></tr>
+<tr class="separator:a058ff2d5680ac5df29d70b5c78542974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d3849e86e7ae821d2a3ca73d6b472fc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5d3849e86e7ae821d2a3ca73d6b472fc">chunkFrameID</a></td></tr>
+<tr class="memdesc:a5d3849e86e7ae821d2a3ca73d6b472fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the unique Identifier of the frame (or image) included in the payload.  <a href="#a5d3849e86e7ae821d2a3ca73d6b472fc">更多...</a><br /></td></tr>
+<tr class="separator:a5d3849e86e7ae821d2a3ca73d6b472fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab8906c60d43214bdbc540dafa7a62e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#acab8906c60d43214bdbc540dafa7a62e">chunkSourceSelector</a></td></tr>
+<tr class="memdesc:acab8906c60d43214bdbc540dafa7a62e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Source to retrieve data from.  <a href="#acab8906c60d43214bdbc540dafa7a62e">更多...</a><br /></td></tr>
+<tr class="separator:acab8906c60d43214bdbc540dafa7a62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a014b54e61bfa874ae1b64cf7de60a4cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a014b54e61bfa874ae1b64cf7de60a4cf">chunkSourceID</a></td></tr>
+<tr class="memdesc:a014b54e61bfa874ae1b64cf7de60a4cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the Identifier of Source that the image comes from.  <a href="#a014b54e61bfa874ae1b64cf7de60a4cf">更多...</a><br /></td></tr>
+<tr class="separator:a014b54e61bfa874ae1b64cf7de60a4cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc24abab055024927db1829bdbd17b74"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#adc24abab055024927db1829bdbd17b74">chunkSourceIDValue</a></td></tr>
+<tr class="memdesc:adc24abab055024927db1829bdbd17b74"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the unique integer Identifier value of the Source that the image comes from.  <a href="#adc24abab055024927db1829bdbd17b74">更多...</a><br /></td></tr>
+<tr class="separator:adc24abab055024927db1829bdbd17b74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44981b8369742dda80bf40a15190c93a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a44981b8369742dda80bf40a15190c93a">chunkRegionSelector</a></td></tr>
+<tr class="memdesc:a44981b8369742dda80bf40a15190c93a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Region to retrieve data from.  <a href="#a44981b8369742dda80bf40a15190c93a">更多...</a><br /></td></tr>
+<tr class="separator:a44981b8369742dda80bf40a15190c93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca35041bfcc573ab5d91adb8e386bfcb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aca35041bfcc573ab5d91adb8e386bfcb">chunkRegionID</a></td></tr>
+<tr class="memdesc:aca35041bfcc573ab5d91adb8e386bfcb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the Identifier of Region that the image comes from.  <a href="#aca35041bfcc573ab5d91adb8e386bfcb">更多...</a><br /></td></tr>
+<tr class="separator:aca35041bfcc573ab5d91adb8e386bfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bfe87b51e018b8e2b0b869950ffde7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a4bfe87b51e018b8e2b0b869950ffde7c">chunkRegionIDValue</a></td></tr>
+<tr class="memdesc:a4bfe87b51e018b8e2b0b869950ffde7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the unique integer Identifier value of the Region that the image comes from.  <a href="#a4bfe87b51e018b8e2b0b869950ffde7c">更多...</a><br /></td></tr>
+<tr class="separator:a4bfe87b51e018b8e2b0b869950ffde7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43f3d8e2284b6742b8b22186407dce52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a43f3d8e2284b6742b8b22186407dce52">chunkTransferBlockID</a></td></tr>
+<tr class="memdesc:a43f3d8e2284b6742b8b22186407dce52"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the unique identifier of the transfer block used to transport the payload.  <a href="#a43f3d8e2284b6742b8b22186407dce52">更多...</a><br /></td></tr>
+<tr class="separator:a43f3d8e2284b6742b8b22186407dce52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d99e230c1a36d0649c93d6d6de2a139"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5d99e230c1a36d0649c93d6d6de2a139">chunkTransferStreamID</a></td></tr>
+<tr class="memdesc:a5d99e230c1a36d0649c93d6d6de2a139"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns identifier of the stream that generated this block.  <a href="#a5d99e230c1a36d0649c93d6d6de2a139">更多...</a><br /></td></tr>
+<tr class="separator:a5d99e230c1a36d0649c93d6d6de2a139"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0eba9a22dc04bd1928c4807cb6dd45fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a0eba9a22dc04bd1928c4807cb6dd45fe">chunkTransferQueueCurrentBlockCount</a></td></tr>
+<tr class="memdesc:a0eba9a22dc04bd1928c4807cb6dd45fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns the current number of blocks in the transfer queue.  <a href="#a0eba9a22dc04bd1928c4807cb6dd45fe">更多...</a><br /></td></tr>
+<tr class="separator:a0eba9a22dc04bd1928c4807cb6dd45fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af31e8f39ddba15bdeb3c2199abbd3f32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#af31e8f39ddba15bdeb3c2199abbd3f32">chunkStreamChannelID</a></td></tr>
+<tr class="memdesc:af31e8f39ddba15bdeb3c2199abbd3f32"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Returns identifier of the stream channel used to carry the block.  <a href="#af31e8f39ddba15bdeb3c2199abbd3f32">更多...</a><br /></td></tr>
+<tr class="separator:af31e8f39ddba15bdeb3c2199abbd3f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5c83ad3228ab5d5bc74603f8848961c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5c83ad3228ab5d5bc74603f8848961c5">chunkSequencerSetActive</a></td></tr>
+<tr class="memdesc:a5c83ad3228ab5d5bc74603f8848961c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Return the index of the active set of the running sequencer included in the payload.  <a href="#a5c83ad3228ab5d5bc74603f8848961c5">更多...</a><br /></td></tr>
+<tr class="separator:a5c83ad3228ab5d5bc74603f8848961c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fb027191f957cc9e3884ba176e52562"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a4fb027191f957cc9e3884ba176e52562">chunkScan3dDistanceUnit</a></td></tr>
+<tr class="memdesc:a4fb027191f957cc9e3884ba176e52562"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the Distance Unit of the payload image.  <a href="#a4fb027191f957cc9e3884ba176e52562">更多...</a><br /></td></tr>
+<tr class="separator:a4fb027191f957cc9e3884ba176e52562"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b968c0335e50b8852709bc5d5cbcd93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a1b968c0335e50b8852709bc5d5cbcd93">chunkScan3dOutputMode</a></td></tr>
+<tr class="memdesc:a1b968c0335e50b8852709bc5d5cbcd93"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the Calibrated Mode of the payload image.  <a href="#a1b968c0335e50b8852709bc5d5cbcd93">更多...</a><br /></td></tr>
+<tr class="separator:a1b968c0335e50b8852709bc5d5cbcd93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2200e547f083391291827a35957d4b8d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a2200e547f083391291827a35957d4b8d">chunkScan3dCoordinateSystem</a></td></tr>
+<tr class="memdesc:a2200e547f083391291827a35957d4b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the Coordinate System of the image included in the payload.  <a href="#a2200e547f083391291827a35957d4b8d">更多...</a><br /></td></tr>
+<tr class="separator:a2200e547f083391291827a35957d4b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15827600dc5405f7893efdcf8dfa0569"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a15827600dc5405f7893efdcf8dfa0569">chunkScan3dCoordinateSystemReference</a></td></tr>
+<tr class="memdesc:a15827600dc5405f7893efdcf8dfa0569"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the Coordinate System Position of the image included in the payload.  <a href="#a15827600dc5405f7893efdcf8dfa0569">更多...</a><br /></td></tr>
+<tr class="separator:a15827600dc5405f7893efdcf8dfa0569"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcd836abcc68145bec18c5b45e189324"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#abcd836abcc68145bec18c5b45e189324">chunkScan3dCoordinateSelector</a></td></tr>
+<tr class="memdesc:abcd836abcc68145bec18c5b45e189324"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Coordinate to retrieve data from.  <a href="#abcd836abcc68145bec18c5b45e189324">更多...</a><br /></td></tr>
+<tr class="separator:abcd836abcc68145bec18c5b45e189324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a652394e0ffd066f97020683b5640c399"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a652394e0ffd066f97020683b5640c399">chunkScan3dCoordinateScale</a></td></tr>
+<tr class="memdesc:a652394e0ffd066f97020683b5640c399"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the Scale for the selected coordinate axis of the image included in the payload.  <a href="#a652394e0ffd066f97020683b5640c399">更多...</a><br /></td></tr>
+<tr class="separator:a652394e0ffd066f97020683b5640c399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a1e19081d8b40f6f297abf6b68fc5c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a18a1e19081d8b40f6f297abf6b68fc5c">chunkScan3dCoordinateOffset</a></td></tr>
+<tr class="memdesc:a18a1e19081d8b40f6f297abf6b68fc5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the Offset for the selected coordinate axis of the image included in the payload.  <a href="#a18a1e19081d8b40f6f297abf6b68fc5c">更多...</a><br /></td></tr>
+<tr class="separator:a18a1e19081d8b40f6f297abf6b68fc5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60ad92001a22ff71b3e9241272d650d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a60ad92001a22ff71b3e9241272d650d3">chunkScan3dInvalidDataFlag</a></td></tr>
+<tr class="memdesc:a60ad92001a22ff71b3e9241272d650d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Returns if a specific non-valid data flag is used in the data stream.  <a href="#a60ad92001a22ff71b3e9241272d650d3">更多...</a><br /></td></tr>
+<tr class="separator:a60ad92001a22ff71b3e9241272d650d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7006c4bc9dee316064885ebe3f6c0ae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a7006c4bc9dee316064885ebe3f6c0ae7">chunkScan3dInvalidDataValue</a></td></tr>
+<tr class="memdesc:a7006c4bc9dee316064885ebe3f6c0ae7"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the Invalid Data Value used for the image included in the payload.  <a href="#a7006c4bc9dee316064885ebe3f6c0ae7">更多...</a><br /></td></tr>
+<tr class="separator:a7006c4bc9dee316064885ebe3f6c0ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3e60dd32a90d506e0ae169d38f0215a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#ab3e60dd32a90d506e0ae169d38f0215a">chunkScan3dAxisMin</a></td></tr>
+<tr class="memdesc:ab3e60dd32a90d506e0ae169d38f0215a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload.  <a href="#ab3e60dd32a90d506e0ae169d38f0215a">更多...</a><br /></td></tr>
+<tr class="separator:ab3e60dd32a90d506e0ae169d38f0215a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5307f0f9c4b623fb7315af85f9f1624c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a5307f0f9c4b623fb7315af85f9f1624c">chunkScan3dAxisMax</a></td></tr>
+<tr class="memdesc:a5307f0f9c4b623fb7315af85f9f1624c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload.  <a href="#a5307f0f9c4b623fb7315af85f9f1624c">更多...</a><br /></td></tr>
+<tr class="separator:a5307f0f9c4b623fb7315af85f9f1624c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ab0a44c2daae75c839b3974a1c1cb6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a8ab0a44c2daae75c839b3974a1c1cb6b">chunkScan3dCoordinateTransformSelector</a></td></tr>
+<tr class="memdesc:a8ab0a44c2daae75c839b3974a1c1cb6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selector for transform values.  <a href="#a8ab0a44c2daae75c839b3974a1c1cb6b">更多...</a><br /></td></tr>
+<tr class="separator:a8ab0a44c2daae75c839b3974a1c1cb6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2236122637d64d832aa5ebfaef7c0f29"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a2236122637d64d832aa5ebfaef7c0f29">chunkScan3dTransformValue</a></td></tr>
+<tr class="memdesc:a2236122637d64d832aa5ebfaef7c0f29"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the transform value.  <a href="#a2236122637d64d832aa5ebfaef7c0f29">更多...</a><br /></td></tr>
+<tr class="separator:a2236122637d64d832aa5ebfaef7c0f29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1f8d5ac6f3f254800f33d0b57bddd18"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aa1f8d5ac6f3f254800f33d0b57bddd18">chunkScan3dCoordinateReferenceSelector</a></td></tr>
+<tr class="memdesc:aa1f8d5ac6f3f254800f33d0b57bddd18"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selector to read a coordinate system reference value defining the transform of a point from one system to the other.  <a href="#aa1f8d5ac6f3f254800f33d0b57bddd18">更多...</a><br /></td></tr>
+<tr class="separator:aa1f8d5ac6f3f254800f33d0b57bddd18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa45a547729c3dac4c8b8b0348c1c1bdd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#aa45a547729c3dac4c8b8b0348c1c1bdd">chunkScan3dCoordinateReferenceValue</a></td></tr>
+<tr class="memdesc:aa45a547729c3dac4c8b8b0348c1c1bdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Reads the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point.  <a href="#aa45a547729c3dac4c8b8b0348c1c1bdd">更多...</a><br /></td></tr>
+<tr class="separator:aa45a547729c3dac4c8b8b0348c1c1bdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78076131ba88ad24c78eb473d10ae3f6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a78076131ba88ad24c78eb473d10ae3f6">mvChunkJPEG</a></td></tr>
+<tr class="memdesc:a78076131ba88ad24c78eb473d10ae3f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Allows to access a JPEG image transmitted as part of the chunk data.  <a href="#a78076131ba88ad24c78eb473d10ae3f6">更多...</a><br /></td></tr>
+<tr class="separator:a78076131ba88ad24c78eb473d10ae3f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a504add88bb062ed69bf85424113cb2a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#a504add88bb062ed69bf85424113cb2a7">chunkmvCustomIdentifier</a></td></tr>
+<tr class="memdesc:a504add88bb062ed69bf85424113cb2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Contains a custom identifier previously specified by the user.  <a href="#a504add88bb062ed69bf85424113cb2a7">更多...</a><br /></td></tr>
+<tr class="separator:a504add88bb062ed69bf85424113cb2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category that contains the Chunk Data control features. </p>
+<p>A category that contains the Chunk Data control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aa4dbe6191aa44650f68e0a5c6bb3926c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::ChunkDataControl::ChunkDataControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html" title="Category that contains the Chunk Data control features. ">mvIMPACT::acquire::GenICam::ChunkDataControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="459,23,621,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="248,88,411,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="248,168,411,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="669,38,888,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="948,5,1097,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="936,70,1109,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1158,92,1386,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1435,99,1659,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="459,103,621,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="465,182,615,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="695,110,863,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a6d6b7d5f4bb92ae9f7d780d262ecd016"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkBlackLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the black level used to capture the image included in the payload. </p>
+<p>Returns the black level used to capture the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a63720c40901053497a17d6e30e95070a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkBlackLevelSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Black Level to return. </p>
+<p>Selects which Black Level to return. Possible values are:</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>All</b> (Display string: 'All'): Black Level will be applied to all channels or taps.</li>
+<li><b>Red</b> (Display string: 'Red'): Black Level will be applied to the red channel.</li>
+<li><b>Green</b> (Display string: 'Green'): Black Level will be applied to the green channel.</li>
+<li><b>Blue</b> (Display string: 'Blue'): Black Level will be applied to the blue channel.</li>
+<li><b>Y</b> (Display string: 'Y'): Black Level will be applied to Y channel.</li>
+<li><b>U</b> (Display string: 'U'): Black Level will be applied to U channel.</li>
+<li><b>V</b> (Display string: 'V'): Black Level will be applied to V channel.</li>
+<li><b>Tap1</b> (Display string: 'Tap 1'): Black Level will be applied to Tap 1.</li>
+<li><b>Tap2</b> (Display string: 'Tap 2'): Black Level will be applied to Tap 2.</li>
+<li><b>Tap#3#</b> (Display string: 'Tap #3#'): Black Level will be applied to Tap #3#.</li>
+<li><b>Tap3</b> (Display string: 'Tap 3'): Black Level will be applied to Tap 3.</li>
+<li><b>Tap4</b> (Display string: 'Tap 4'): Black Level will be applied to Tap 4.</li>
+<li><b>Tap5</b> (Display string: 'Tap 5'): Black Level will be applied to Tap 5.</li>
+<li><b>Tap6</b> (Display string: 'Tap 6'): Black Level will be applied to Tap 6.</li>
+<li><b>Tap7</b> (Display string: 'Tap 7'): Black Level will be applied to Tap 7.</li>
+<li><b>Tap8</b> (Display string: 'Tap 8'): Black Level will be applied to Tap 8.</li>
+<li><b>Tap9</b> (Display string: 'Tap 9'): Black Level will be applied to Tap 9.</li>
+<li><b>Tap10</b> (Display string: 'Tap 10'): Black Level will be applied to Tap 10.</li>
+<li><b>Tap11</b> (Display string: 'Tap 11'): Black Level will be applied to Tap 11.</li>
+<li><b>Tap12</b> (Display string: 'Tap 12'): Black Level will be applied to Tap 12.</li>
+<li><b>Tap13</b> (Display string: 'Tap 13'): Black Level will be applied to Tap 13.</li>
+<li><b>Tap14</b> (Display string: 'Tap 14'): Black Level will be applied to Tap 14.</li>
+<li><b>Tap15</b> (Display string: 'Tap 15'): Black Level will be applied to Tap 15.</li>
+<li><b>Tap16</b> (Display string: 'Chunk Black Level Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a303eb2c02211269edcdc7c1899270c73"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkComponentID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> Identifier of the selected <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> image. </p>
+<p>Returns the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> Identifier of the selected <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> image. This can be used to identify the image component type of a multi-component buffer.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Intensity</b> (Display string: 'Intensity'): The image data is the intensity component (visible).</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): The image data is the infrared component.</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): The image data is the ultraviolet component.</li>
+<li><b>Range</b> (Display string: 'Range'): The image data is the range component (distance or depth).</li>
+<li><b>Reflectance</b> (Display string: 'Reflectance'): The image data is the reflected intensity component (acquired with the Range).</li>
+<li><b>Disparity</b> (Display string: 'Disparity'): The image data is the disparity component.</li>
+<li><b>Confidence</b> (Display string: 'Confidence'): The image data is the confidence map component.</li>
+<li><b>Scatter</b> (Display string: 'Scatter'): The image data is the scatter component.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ff4b23f4b20e7aa48c31fa742a7b8fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkComponentIDValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns a unique Identifier value that correspond to the selected chunk <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a>. </p>
+<p>Returns a unique Identifier value that correspond to the selected chunk <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5f1f17a1606e9ea9a5c660886422d5b7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkComponentSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> from which to retreive data from. </p>
+<p>Selects the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> from which to retreive data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Intensity</b> (Display string: 'Intensity'): The image data is the intensity component (visible).</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): The image data is the infrared component.</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): The image data is the ultraviolet component.</li>
+<li><b>Range</b> (Display string: 'Range'): The image data is the range component (distance or depth).</li>
+<li><b>Reflectance</b> (Display string: 'Reflectance'): The image data is the reflected intensity component (acquired with the Range).</li>
+<li><b>Disparity</b> (Display string: 'Disparity'): The image data is the disparity component.</li>
+<li><b>Confidence</b> (Display string: 'Confidence'): The image data is the confidence map component.</li>
+<li><b>Scatter</b> (Display string: 'Scatter'): The image data is the scatter component.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac43d711538b1fb622260f8dc3c1cc4af"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkCounterSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which counter to retrieve data from. </p>
+<p>Selects which counter to retrieve data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Counter0</b> (Display string: 'Counter 0'): Selects the counter 0.</li>
+<li><b>Counter1</b> (Display string: 'Counter 1'): Selects the counter 1.</li>
+<li><b>Counter2</b> (Display string: 'Counter 2'): Selects the counter 2.</li>
+<li><b>Counter#3#</b> (Display string: 'Counter #3#'): Selects the counter #3#.</li>
+<li><b>Counter3</b> (Display string: 'Counter 3'): Selects the counter 3.</li>
+<li><b>Counter4</b> (Display string: 'Counter 4'): Selects the counter 4.</li>
+<li><b>Counter5</b> (Display string: 'Counter 5'): Selects the counter 5.</li>
+<li><b>Counter6</b> (Display string: 'Counter 6'): Selects the counter 6.</li>
+<li><b>Counter7</b> (Display string: 'Counter 7'): Selects the counter 7.</li>
+<li><b>Counter8</b> (Display string: 'Counter 8'): Selects the counter 8.</li>
+<li><b>Counter9</b> (Display string: 'Counter 9'): Selects the counter 9.</li>
+<li><b>Counter10</b> (Display string: 'Counter 10'): Selects the counter 10.</li>
+<li><b>Counter11</b> (Display string: 'Counter 11'): Selects the counter 11.</li>
+<li><b>Counter12</b> (Display string: 'Counter 12'): Selects the counter 12.</li>
+<li><b>Counter13</b> (Display string: 'Counter 13'): Selects the counter 13.</li>
+<li><b>Counter14</b> (Display string: 'Counter 14'): Selects the counter 14.</li>
+<li><b>Counter15</b> (Display string: 'Counter 15'): Selects the counter 15.</li>
+<li><b>Counter16</b> (Display string: 'Chunk Counter Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a21793d389f9c7b12053027e6cef91520"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkCounterValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the value of the selected Chunk counter at the time of the FrameStart event. </p>
+<p>Returns the value of the selected Chunk counter at the time of the FrameStart event. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae4448c564c23ae14648a81c74fdd2f6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Enables the inclusion of the selected Chunk data in the payload of the image. </p>
+<p>Enables the inclusion of the selected Chunk data in the payload of the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a147570f20aaa1f8afa4b6da7d18a7b35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkEncoderSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Encoder to retrieve data from. </p>
+<p>Selects which Encoder to retrieve data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Selects the first Encoder.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Selects the first Encoder.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Selects the second Encoder.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Selects the second Encoder.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1e3efd94e47ad8ea76c4ad05a91fc208"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkEncoderStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the motion status of the selected encoder. </p>
+<p>Returns the motion status of the selected encoder.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>EncoderUp</b> (Display string: 'Encoder Up'): The encoder counter last incremented.</li>
+<li><b>EncoderDown</b> (Display string: 'Encoder Down'): The encoder counter last decremented.</li>
+<li><b>EncoderIdle</b> (Display string: 'Encoder Idle'): The encoder is not active.</li>
+<li><b>EncoderStatic</b> (Display string: 'Encoder Static'): No motion within the EncoderTimeout time.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9483a862178c537ba676b62bd51a5711"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkEncoderValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the counter's value of the selected Encoder at the time of the FrameStart in area scan mode or the counter's value at the time of the LineStart selected by ChunkScanLineSelector in Linescan mode. </p>
+<p>Returns the counter's value of the selected Encoder at the time of the FrameStart in area scan mode or the counter's value at the time of the LineStart selected by ChunkScanLineSelector in Linescan mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a111bfcd0b354e55b9a54ffbb1a9d5299"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkExposureTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the exposure time used to capture the image. </p>
+<p>Returns the exposure time used to capture the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a54579ccb17b4adfac634b977c5a97341"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkExposureTimeSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which exposure time is read by the ChunkExposureTime feature. </p>
+<p>Selects which exposure time is read by the ChunkExposureTime feature.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Common</b> (Display string: 'Common'): Selects the common ExposureTime.</li>
+<li><b>Red</b> (Display string: 'Red'): Selects the red common ExposureTime.</li>
+<li><b>Green</b> (Display string: 'Green'): Selects the green ExposureTime.</li>
+<li><b>Blue</b> (Display string: 'Blue'): Selects the blue ExposureTime.</li>
+<li><b>Cyan</b> (Display string: 'Cyan'): Selects the cyan common ExposureTime..</li>
+<li><b>Magenta</b> (Display string: 'Magenta'): Selects the magenta ExposureTime..</li>
+<li><b>Yellow</b> (Display string: 'Yellow'): Selects the yellow ExposureTime..</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): Selects the infrared ExposureTime.</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): Selects the ultraviolet ExposureTime.</li>
+<li><b>Stage1</b> (Display string: 'Stage 1'): Selects the first stage ExposureTime.</li>
+<li><b>Stage2</b> (Display string: 'Stage 2'): Selects the second stage ExposureTime.</li>
+<li><b>Stage#3#</b> (Display string: 'Stage #3#'): Selects the second stage ExposureTime.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5d3849e86e7ae821d2a3ca73d6b472fc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkFrameID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the unique Identifier of the frame (or image) included in the payload. </p>
+<p>Returns the unique Identifier of the frame (or image) included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab8a83e2478ddaae9fc8b59d86cbe75a5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkGain</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the gain used to capture the image. </p>
+<p>Returns the gain used to capture the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9d9f20487202b9100f118509754ecde4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkGainSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Gain to return. </p>
+<p>Selects which Gain to return.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>All</b> (Display string: 'All'): Gain will be applied to all channels or taps.</li>
+<li><b>Red</b> (Display string: 'Red'): Gain will be applied to the red channel.</li>
+<li><b>Green</b> (Display string: 'Green'): Gain will be applied to the green channel.</li>
+<li><b>Blue</b> (Display string: 'Blue'): Gain will be applied to the blue channel.</li>
+<li><b>Y</b> (Display string: 'Y'): Gain will be applied to Y channel.</li>
+<li><b>U</b> (Display string: 'U'): Gain will be applied to U channel.</li>
+<li><b>V</b> (Display string: 'V'): Gain will be applied to V channel.</li>
+<li><b>Tap1</b> (Display string: 'Tap 1'): Gain will be applied to Tap 1.</li>
+<li><b>Tap2</b> (Display string: 'Tap 2'): Gain will be applied to Tap 2.</li>
+<li><b>Tap#3#</b> (Display string: 'Tap #3#'): Gain will be applied to Tap #3#.</li>
+<li><b>AnalogAll</b> (Display string: 'Analog All'): Gain will be applied to all analog channels or taps.</li>
+<li><b>AnalogRed</b> (Display string: 'Analog Red'): Gain will be applied to the red analog channel.</li>
+<li><b>AnalogGreen</b> (Display string: 'Analog Green'): Gain will be applied to the green analog channel.</li>
+<li><b>AnalogBlue</b> (Display string: 'Analog Blue'): Gain will be applied to the blue analog channel.</li>
+<li><b>AnalogY</b> (Display string: 'Analog Y'): Gain will be applied to Y analog channel.</li>
+<li><b>AnalogU</b> (Display string: 'Analog U'): Gain will be applied to U analog channel.</li>
+<li><b>AnalogV</b> (Display string: 'Analog V'): Gain will be applied to V analog channel.</li>
+<li><b>AnalogTap1</b> (Display string: 'Analog Tap 1'): Analog gain will be applied to Tap 1.</li>
+<li><b>AnalogTap2</b> (Display string: 'Analog Tap 2'): Analog gain will be applied to Tap 2.</li>
+<li><b>AnalogTap#3#</b> (Display string: 'Analog Tap #3#'): Analog gain will be applied to Tap #3#.</li>
+<li><b>DigitalAll</b> (Display string: 'Digital All'): Gain will be applied to all digital channels or taps.</li>
+<li><b>DigitalRed</b> (Display string: 'Digital Red'): Gain will be applied to the red digital channel.</li>
+<li><b>DigitalGreen</b> (Display string: 'Digital Green'): Gain will be applied to the green digital channel.</li>
+<li><b>DigitalBlue</b> (Display string: 'Digital Blue'): Gain will be applied to the blue digital channel.</li>
+<li><b>DigitalY</b> (Display string: 'Digital Y'): Gain will be applied to Y digital channel.</li>
+<li><b>DigitalU</b> (Display string: 'Digital U'): Gain will be applied to U digital channel.</li>
+<li><b>DigitalV</b> (Display string: 'Digital V'): Gain will be applied to V digital channel.</li>
+<li><b>DigitalTap1</b> (Display string: 'Digital Tap 1'): Digital gain will be applied to Tap 1.</li>
+<li><b>DigitalTap2</b> (Display string: 'Digital Tap 2'): Digital gain will be applied to Tap 2.</li>
+<li><b>DigitalTap#3#</b> (Display string: 'Digital Tap #3#'): Digital gain will be applied to Tap #3#.</li>
+<li><b>Tap3</b> (Display string: 'Tap 3'): Gain will be applied to Tap 3.</li>
+<li><b>Tap4</b> (Display string: 'Tap 4'): Gain will be applied to Tap 4.</li>
+<li><b>Tap5</b> (Display string: 'Tap 5'): Gain will be applied to Tap 5.</li>
+<li><b>Tap6</b> (Display string: 'Tap 6'): Gain will be applied to Tap 6.</li>
+<li><b>Tap7</b> (Display string: 'Tap 7'): Gain will be applied to Tap 7.</li>
+<li><b>Tap8</b> (Display string: 'Tap 8'): Gain will be applied to Tap 8.</li>
+<li><b>Tap9</b> (Display string: 'Tap 9'): Gain will be applied to Tap 9.</li>
+<li><b>Tap10</b> (Display string: 'Tap 10'): Gain will be applied to Tap 10.</li>
+<li><b>Tap11</b> (Display string: 'Tap 11'): Gain will be applied to Tap 11.</li>
+<li><b>Tap12</b> (Display string: 'Tap 12'): Gain will be applied to Tap 12.</li>
+<li><b>Tap13</b> (Display string: 'Tap 13'): Gain will be applied to Tap 13.</li>
+<li><b>Tap14</b> (Display string: 'Tap 14'): Gain will be applied to Tap 14.</li>
+<li><b>Tap15</b> (Display string: 'Tap 15'): Gain will be applied to Tap 15.</li>
+<li><b>Tap16</b> (Display string: 'Chunk Gain Selector')</li>
+<li><b>AnalogTap3</b> (Display string: 'Analog Tap 3'): Analog gain will be applied to Tap 3.</li>
+<li><b>AnalogTap4</b> (Display string: 'Analog Tap 4'): Analog gain will be applied to Tap 4.</li>
+<li><b>AnalogTap5</b> (Display string: 'Analog Tap 5'): Analog gain will be applied to Tap 5.</li>
+<li><b>AnalogTap6</b> (Display string: 'Analog Tap 6'): Analog gain will be applied to Tap 6.</li>
+<li><b>AnalogTap7</b> (Display string: 'Analog Tap 7'): Analog gain will be applied to Tap 7.</li>
+<li><b>AnalogTap8</b> (Display string: 'Analog Tap 8'): Analog gain will be applied to Tap 8.</li>
+<li><b>AnalogTap9</b> (Display string: 'Analog Tap 9'): Analog gain will be applied to Tap 9.</li>
+<li><b>AnalogTap10</b> (Display string: 'Analog Tap 10'): Analog gain will be applied to Tap 10.</li>
+<li><b>AnalogTap11</b> (Display string: 'Analog Tap 11'): Analog gain will be applied to Tap 11.</li>
+<li><b>AnalogTap12</b> (Display string: 'Analog Tap 12'): Analog gain will be applied to Tap 12.</li>
+<li><b>AnalogTap13</b> (Display string: 'Analog Tap 13'): Analog gain will be applied to Tap 13.</li>
+<li><b>AnalogTap14</b> (Display string: 'Analog Tap 14'): Analog gain will be applied to Tap 14.</li>
+<li><b>AnalogTap15</b> (Display string: 'Analog Tap 15'): Analog gain will be applied to Tap 15.</li>
+<li><b>AnalogTap16</b> (Display string: 'Chunk Gain Selector')</li>
+<li><b>DigitalTap3</b> (Display string: 'Digital Tap 3'): Digital gain will be applied to Tap 3.</li>
+<li><b>DigitalTap4</b> (Display string: 'Digital Tap 4'): Digital gain will be applied to Tap 4.</li>
+<li><b>DigitalTap5</b> (Display string: 'Digital Tap 5'): Digital gain will be applied to Tap 5.</li>
+<li><b>DigitalTap6</b> (Display string: 'Digital Tap 6'): Digital gain will be applied to Tap 6.</li>
+<li><b>DigitalTap7</b> (Display string: 'Digital Tap 7'): Digital gain will be applied to Tap 7.</li>
+<li><b>DigitalTap8</b> (Display string: 'Digital Tap 8'): Digital gain will be applied to Tap 8.</li>
+<li><b>DigitalTap9</b> (Display string: 'Digital Tap 9'): Digital gain will be applied to Tap 9.</li>
+<li><b>DigitalTap10</b> (Display string: 'Digital Tap 10'): Digital gain will be applied to Tap 10.</li>
+<li><b>DigitalTap11</b> (Display string: 'Digital Tap 11'): Digital gain will be applied to Tap 11.</li>
+<li><b>DigitalTap12</b> (Display string: 'Digital Tap 12'): Digital gain will be applied to Tap 12.</li>
+<li><b>DigitalTap13</b> (Display string: 'Digital Tap 13'): Digital gain will be applied to Tap 13.</li>
+<li><b>DigitalTap14</b> (Display string: 'Digital Tap 14'): Digital gain will be applied to Tap 14.</li>
+<li><b>DigitalTap15</b> (Display string: 'Digital Tap 15'): Digital gain will be applied to Tap 15.</li>
+<li><b>DigitalTap16</b> (Display string: 'Chunk Gain Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a333f4b2dfbc993bfbd6dbfc6049ca36e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the Height of the image included in the payload. </p>
+<p>Returns the Height of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac35c9adb7b18011c9dcae2b2e07fd728"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkImage</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Returns the entire image data included in the payload. </p>
+<p>Returns the entire image data included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0abd13d321577a5794abad963840cc6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkImageComponent</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. This feature is deprecated (See ChunkComponentID). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000055">弃用:</a></b></dt><dd>This feature is deprecated (See ChunkComponentID). It was representing the <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> of the payload image.</dd></dl>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Intensity</b> (Display string: 'Intensity'): Intensity</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): Infrared</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): Ultraviolet</li>
+<li><b>Range</b> (Display string: 'Range'): Range</li>
+<li><b>Reflectance</b> (Display string: 'Reflectance'): Reflectance</li>
+<li><b>Disparity</b> (Display string: 'Disparity'): Disparity</li>
+<li><b>Confidence</b> (Display string: 'Confidence'): Confidence</li>
+<li><b>Scatter</b> (Display string: 'Scatter'): Scatter</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a058ff2d5680ac5df29d70b5c78542974"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkLinePitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the LinePitch of the image included in the payload. </p>
+<p>Returns the LinePitch of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="aefb276829f054332349de8fa7eb5125f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkLineStatusAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the status of all the I/O lines at the time of the FrameStart internal event. </p>
+<p>Returns the status of all the I/O lines at the time of the FrameStart internal event. </p>
+
+</div>
+</div>
+<a class="anchor" id="aae91a9b1196e832dccef5e078a75c2ee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkModeActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Activates the inclusion of Chunk data in the payload of the image. </p>
+<p>Activates the inclusion of Chunk data in the payload of the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a504add88bb062ed69bf85424113cb2a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkmvCustomIdentifier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Contains a custom identifier previously specified by the user. </p>
+<p>Contains a custom identifier previously specified by the user. </p>
+
+</div>
+</div>
+<a class="anchor" id="acc2f89fbe1e30303592aa20d17323814"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the OffsetX of the image included in the payload. </p>
+<p>Returns the OffsetX of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a02440e61ff51103cfbc224a31cee7898"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the OffsetY of the image included in the payload. </p>
+<p>Returns the OffsetY of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="af192e7c6c38acc638f7bdfc18bb7f96e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkPartSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated (See ChunkComponentSelector). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000056">弃用:</a></b></dt><dd>This feature is deprecated (See ChunkComponentSelector). It was selecting the individual parts of a multi-component/multi-part buffer to access. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64e63b9d3a7ec7e2a8011df6e4893f48"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkPixelDynamicRangeMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the maximum value of dynamic range of the image included in the payload. </p>
+<p>Returns the maximum value of dynamic range of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5a9b1a979bd09b5a47ad56f5b178cb38"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkPixelDynamicRangeMin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the minimum value of dynamic range of the image included in the payload. </p>
+<p>Returns the minimum value of dynamic range of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ece8017c9040ec2ffc9b180bd3c1abb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkPixelFormat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the PixelFormat of the image included in the payload. </p>
+<p>Returns the PixelFormat of the image included in the payload.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Mono1p</b> (Display string: 'Mono1p'): Mono 1 bit packed.</li>
+<li><b>Mono2p</b> (Display string: 'Mono2p'): Mono 2 bit packed.</li>
+<li><b>Mono4p</b> (Display string: 'Mono4p'): Mono 4 bit packed.</li>
+<li><b>Mono8</b> (Display string: 'Mono8'): Mono 8 bit packed.</li>
+<li><b>Mono8s</b> (Display string: 'Mono8s'): Mono 1 bit signed.</li>
+<li><b>Mono10</b> (Display string: 'Mono10'): Mono 10 bit.</li>
+<li><b>Mono10p</b> (Display string: 'Mono10p'): Mono 10 bit packed.</li>
+<li><b>Mono12</b> (Display string: 'Mono12'): Mono 12 bit.</li>
+<li><b>Mono12p</b> (Display string: 'Mono12p'): Mono 12 bit packed.</li>
+<li><b>Mono14</b> (Display string: 'Mono14'): Mono 14 bit.</li>
+<li><b>Mono16</b> (Display string: 'Mono16'): Mono 16 bit.</li>
+<li><b>R8</b> (Display string: 'R8'): Red 8 bit.</li>
+<li><b>G8</b> (Display string: 'G8'): Green 8 bit.</li>
+<li><b>B8</b> (Display string: 'B8'): Blue 8 bit.</li>
+<li><b>RGB8</b> (Display string: 'RGB8'): Red, Green, Blue 8 bit</li>
+<li><b>RGB8_Planar</b> (Display string: 'RGB8_Planar'): Red, Green, Blue 8 bit planar.</li>
+<li><b>RGBa8</b> (Display string: 'RGBa8'): Red, Green, Blue 8 bit aligned on 8 bit</li>
+<li><b>RGB10</b> (Display string: 'RGB10'): Red, Green, Blue 10 bit.</li>
+<li><b>RGB10_Planar</b> (Display string: 'RGB10_Planar'): Red, Green, Blue 10 bit planar.</li>
+<li><b>RGB10p32</b> (Display string: 'RGB10p32'): Red, Green, Blue 10 bit packed in 32 bit pixel.</li>
+<li><b>RGB12</b> (Display string: 'RGB12'): Red, Green, Blue 12 bit.</li>
+<li><b>RGB12_Planar</b> (Display string: 'RGB12_Planar'): Red, Green, Blue 12 bit planar.</li>
+<li><b>RGB16</b> (Display string: 'RGB16'): Red, Green, Blue 16 bit.</li>
+<li><b>RGB16_Planar</b> (Display string: 'RGB16_Planar'): Red, Green, Blue 16 bit planar.</li>
+<li><b>RGB565p</b> (Display string: 'RGB565p'): Red, Green, Blue 16 bit packet in 5, 6, 5 bits.</li>
+<li><b>BGR10</b> (Display string: 'BGR10'): Blue, Green, Red, 10 bit.</li>
+<li><b>BGR12</b> (Display string: 'BGR12'): Blue, Green, Red, 12 bit.</li>
+<li><b>BGR16</b> (Display string: 'BGR16'): Blue, Green, Red, 16 bit.</li>
+<li><b>BGR565p</b> (Display string: 'BGR565p'): Blue, Green, Red, 16 bit packet in 5, 6, 5 bits.</li>
+<li><b>BGR8</b> (Display string: 'BGR8'): Blue, Green, Red, 8 bit.</li>
+<li><b>BGRa8</b> (Display string: 'BGRa8'): Blue, Green, Red, Alpha 8 bit.</li>
+<li><b>YUV422_8</b> (Display string: 'YUV422_8'): YUV 422 8 bit.</li>
+<li><b>YCbCr411_8</b> (Display string: 'YCbCr411_8'): YCrCb 411 8 bit.</li>
+<li><b>YCbCr422_8</b> (Display string: 'YCbCr422_8'): YCrCb 422 8 bit.</li>
+<li><b>YCbCr601_422_8</b> (Display string: 'YCbCr601_422_8'): YCrCb 601 422 8 bit.</li>
+<li><b>YCbCr709_422_8</b> (Display string: 'YCbCr709_422_8'): YCrCb 709 422 8 bit.</li>
+<li><b>YCbCr8</b> (Display string: 'YCbCr8'): YCbCr 8 bit.</li>
+<li><b>BayerBG8</b> (Display string: 'BayerBG8'): Bayer Blue Green 8 bit.</li>
+<li><b>BayerGB8</b> (Display string: 'BayerGB8'): Bayer Green Blue 8 bit.</li>
+<li><b>BayerGR8</b> (Display string: 'BayerGR8'): Bayer Green Red 8 bit.</li>
+<li><b>BayerRG8</b> (Display string: 'BayerRG8'): Bayer Red Green 8 bit.</li>
+<li><b>BayerBG10</b> (Display string: 'BayerBG10'): Bayer Blue Green 10 bit.</li>
+<li><b>BayerGB10</b> (Display string: 'BayerGB10'): Bayer Green Blue 10 bit.</li>
+<li><b>BayerGR10</b> (Display string: 'BayerGR10'): Bayer Green Red 10 bit.</li>
+<li><b>BayerRG10</b> (Display string: 'BayerRG10'): Bayer Red Green 10 bit.</li>
+<li><b>BayerBG12</b> (Display string: 'BayerBG12'): Bayer Blue Green 12 bit</li>
+<li><b>BayerGB12</b> (Display string: 'BayerGB12'): Bayer Green Blue 12 bit</li>
+<li><b>BayerGR12</b> (Display string: 'BayerGR12'): Bayer Green Red 12 bit.</li>
+<li><b>BayerRG12</b> (Display string: 'BayerRG12'): Bayer Red Green 12 bit.</li>
+<li><b>BayerBG16</b> (Display string: 'BayerBG16'): Bayer Blue Green 16 bit.</li>
+<li><b>BayerGB16</b> (Display string: 'BayerGB16'): Bayer Green Blue 16 bit.</li>
+<li><b>BayerGR16</b> (Display string: 'BayerGR16'): Bayer Green Red 16 bit.</li>
+<li><b>BayerRG16</b> (Display string: 'BayerRG16'): Bayer Red Green 16 bit.</li>
+<li><b>Coord3D_A8</b> (Display string: 'Coord3D_A8'): 3D coordinate, first component 8 bit.</li>
+<li><b>Coord3D_B8</b> (Display string: 'Coord3D_B8'): 3D coordinate, second component 8 bit.</li>
+<li><b>Coord3D_C8</b> (Display string: 'Coord3D_C8'): 3D coordinate, third component 8 bit.</li>
+<li><b>Coord3D_ABC8</b> (Display string: 'Coord3D_ABC8'): 3D coordinates, 3 components 8 bit.</li>
+<li><b>Coord3D_ABC8_Planar</b> (Display string: 'Coord3D_ABC8_Planar'): 3D coordinates, 3 components 8 bit planar.</li>
+<li><b>Coord3D_A16</b> (Display string: 'Coord3D_A16'): 3D coordinate, first component 16 bit.</li>
+<li><b>Coord3D_B16</b> (Display string: 'Coord3D_B16'): 3D coordinate, second component 16 bit.</li>
+<li><b>Coord3D_C16</b> (Display string: 'Coord3D_C16'): 3D coordinate, third component 16 bit.</li>
+<li><b>Coord3D_ABC16</b> (Display string: 'Coord3D_ABC16'): 3D coordinates, 3 components 16 bit.</li>
+<li><b>Coord3D_ABC16_Planar</b> (Display string: 'Coord3D_ABC16_Planar'): 3D coordinates, 3 components 16 bit planar.</li>
+<li><b>Coord3D_A32f</b> (Display string: 'Coord3D_A32f'): 3D coordinate, first component 32 bit float.</li>
+<li><b>Coord3D_B32f</b> (Display string: 'Coord3D_B32f'): 3D coordinate, second component 32 bit float.</li>
+<li><b>Coord3D_C32f</b> (Display string: 'Coord3D_C32f'): 3D coordinate, third component 32 bit float.</li>
+<li><b>Coord3D_ABC32f</b> (Display string: 'Coord3D_ABC32f'): 3D coordinates, 3 components 32 bit float.</li>
+<li><b>Coord3D_ABC32f_Planar</b> (Display string: 'Coord3D_ABC32f_Planar'): 3D coordinates, 3 components 32 bit float planar.</li>
+<li><b>Confidence1</b> (Display string: 'Confidence1'): Confidence data 1 bit.</li>
+<li><b>Confidence1p</b> (Display string: 'Confidence1p'): Confidence data 1 bit packed.</li>
+<li><b>Confidence8</b> (Display string: 'Confidence8'): Confidence data 8 bit.</li>
+<li><b>Confidence16</b> (Display string: 'Confidence16'): Confidence data 16 bit.</li>
+<li><b>Confidence32f</b> (Display string: 'Confidence32f'): Confidence data 32 bit float.</li>
+<li><b>Raw8</b> (Display string: 'Raw8'): Raw 8 bit.</li>
+<li><b>Raw16</b> (Display string: 'Raw16'): Raw 16 bit.</li>
+<li><b>Mono12Packed</b> (Display string: 'Mono12Packed'): Mono 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGR10Packed</b> (Display string: 'BayerGR10Packed'): Bayer GR 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerRG10Packed</b> (Display string: 'BayerRG10Packed'): Bayer RG 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGB10Packed</b> (Display string: 'BayerGB10Packed'): Bayer GB 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerBG10Packed</b> (Display string: 'BayerBG10Packed'): Bayer BG 10 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGR12Packed</b> (Display string: 'BayerGR12Packed'): Bayer GR 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerRG12Packed</b> (Display string: 'BayerRG12Packed'): Bayer RG 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerGB12Packed</b> (Display string: 'BayerGB12Packed'): Bayer GB 12 bit packed (GigE Vision Specific).</li>
+<li><b>BayerBG12Packed</b> (Display string: 'BayerBG12Packed'): Bayer BG 12 bit packed (GigE Vision Specific).</li>
+<li><b>RGB10V1Packed</b> (Display string: 'RGB10V1Packed'): RGB 10 bit packed (GigE Vision Specific).</li>
+<li><b>BGR10V1Packed</b> (Display string: 'BGR10V1Packed'): BGR 10 bit packed (GigE Vision Specific).</li>
+<li><b>RGB12V1Packed</b> (Display string: 'RGB12V1Packed'): RGB 12 bit packed (GigE Vision Specific).</li>
+<li><b>Mono8Signed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>Mono10Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB8Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>BGR8Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGBA8Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>BGRA8Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB10Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>BGR10Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB12Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>BGR12Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB16Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB10V2Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB565Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>BGR565Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>YUV411Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>YUV422Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>YUV444Packed</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>YUYVPacked</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB8Planar</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB10Planar</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB12Planar</b> (Display string: 'Chunk Pixel Format')</li>
+<li><b>RGB16Planar</b> (Display string: 'Chunk Pixel Format')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aca35041bfcc573ab5d91adb8e386bfcb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkRegionID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the Identifier of Region that the image comes from. </p>
+<p>Returns the Identifier of Region that the image comes from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Region0</b> (Display string: 'Region 0'): Image comes from the Region 0.</li>
+<li><b>Region1</b> (Display string: 'Region 1'): Image comes from the Region 1.</li>
+<li><b>Region2</b> (Display string: 'Region 2'): Image comes from the Region 2.</li>
+<li><b>Region#3#</b> (Display string: 'Region #3#'): Image comes from the Region #3#.</li>
+<li><b>Scan3dExtraction0</b> (Display string: 'Scan 3d Extraction 0'): Image comes from the Scan3dExtraction output Region 0.</li>
+<li><b>Scan3dExtraction1</b> (Display string: 'Scan 3d Extraction 1'): Image comes from the Scan3dExtraction output Region 1.</li>
+<li><b>Scan3dExtraction2</b> (Display string: 'Scan 3d Extraction 2'): Image comes from the Scan3dExtraction output Region 2.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4bfe87b51e018b8e2b0b869950ffde7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkRegionIDValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the unique integer Identifier value of the Region that the image comes from. </p>
+<p>Returns the unique integer Identifier value of the Region that the image comes from. </p>
+
+</div>
+</div>
+<a class="anchor" id="a44981b8369742dda80bf40a15190c93a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkRegionSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Region to retrieve data from. </p>
+<p>Selects which Region to retrieve data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Region0</b> (Display string: 'Region 0'): Image comes from the Region 0.</li>
+<li><b>Region1</b> (Display string: 'Region 1'): Image comes from the Region 1.</li>
+<li><b>Region2</b> (Display string: 'Region 2'): Image comes from the Region 2.</li>
+<li><b>Region#3#</b> (Display string: 'Region #3#'): Image comes from the Region #3#.</li>
+<li><b>Scan3dExtraction0</b> (Display string: 'Scan 3d Extraction 0'): Image comes from the Scan3dExtraction output Region 0.</li>
+<li><b>Scan3dExtraction1</b> (Display string: 'Scan 3d Extraction 1'): Image comes from the Scan3dExtraction output Region 1.</li>
+<li><b>Scan3dExtraction2</b> (Display string: 'Scan 3d Extraction 2'): Image comes from the Scan3dExtraction output Region 2.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5307f0f9c4b623fb7315af85f9f1624c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dAxisMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload. </p>
+<p>Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab3e60dd32a90d506e0ae169d38f0215a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dAxisMin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload. </p>
+<p>Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a18a1e19081d8b40f6f297abf6b68fc5c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the Offset for the selected coordinate axis of the image included in the payload. </p>
+<p>Returns the Offset for the selected coordinate axis of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa1f8d5ac6f3f254800f33d0b57bddd18"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateReferenceSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selector to read a coordinate system reference value defining the transform of a point from one system to the other. </p>
+<p>Selector to read a coordinate system reference value defining the transform of a point from one system to the other.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RotationX</b> (Display string: 'Rotation X'): Rotation around X axis.</li>
+<li><b>RotationY</b> (Display string: 'Rotation Y'): Rotation around Y axis.</li>
+<li><b>RotationZ</b> (Display string: 'Rotation Z'): Rotation around Z axis.</li>
+<li><b>TranslationX</b> (Display string: 'Translation X'): X axis translation.</li>
+<li><b>TranslationY</b> (Display string: 'Translation Y'): Y axis translation.</li>
+<li><b>TranslationZ</b> (Display string: 'Translation Z'): Z axis translation.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa45a547729c3dac4c8b8b0348c1c1bdd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateReferenceValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Reads the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point. </p>
+<p>Reads the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point. </p>
+
+</div>
+</div>
+<a class="anchor" id="a652394e0ffd066f97020683b5640c399"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateScale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the Scale for the selected coordinate axis of the image included in the payload. </p>
+<p>Returns the Scale for the selected coordinate axis of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="abcd836abcc68145bec18c5b45e189324"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Coordinate to retrieve data from. </p>
+<p>Selects which Coordinate to retrieve data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>CoordinateA</b> (Display string: 'Coordinate A'): The first (X or Theta) coordinate</li>
+<li><b>CoordinateB</b> (Display string: 'Coordinate B'): The second (Y or Phi) coordinate</li>
+<li><b>CoordinateC</b> (Display string: 'Coordinate C'): The third (Z or Rho) coordinate.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2200e547f083391291827a35957d4b8d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateSystem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the Coordinate System of the image included in the payload. </p>
+<p>Returns the Coordinate System of the image included in the payload.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Cartesian</b> (Display string: 'Cartesian'): Default value. 3-axis orthogonal, right-hand X-Y-Z.</li>
+<li><b>Spherical</b> (Display string: 'Spherical'): A Theta-Phi-Rho coordinate system.</li>
+<li><b>Cylindrical</b> (Display string: 'Cylindrical'): A Theta-Y-Rho coordinate system.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a15827600dc5405f7893efdcf8dfa0569"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateSystemReference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the Coordinate System Position of the image included in the payload. </p>
+<p>Returns the Coordinate System Position of the image included in the payload.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Anchor</b> (Display string: 'Anchor'): Default value. Original fixed reference. The coordinate system fixed relative the camera reference point marker is used.</li>
+<li><b>Transformed</b> (Display string: 'Transformed'): Transformed reference system. The transformed coordinate system is used according to the definition in the rotation and translation matrices.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8ab0a44c2daae75c839b3974a1c1cb6b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dCoordinateTransformSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selector for transform values. </p>
+<p>Selector for transform values.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RotationX</b> (Display string: 'Rotation X'): Rotation around X axis.</li>
+<li><b>RotationY</b> (Display string: 'Rotation Y'): Rotation around Y axis.</li>
+<li><b>RotationZ</b> (Display string: 'Rotation Z'): Rotation around Z axis.</li>
+<li><b>TranslationX</b> (Display string: 'Translation X'): Translation along X axis.</li>
+<li><b>TranslationY</b> (Display string: 'Translation Y'): Translation along Y axis.</li>
+<li><b>TranslationZ</b> (Display string: 'Translation Z'): Translation along Z axis.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4fb027191f957cc9e3884ba176e52562"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dDistanceUnit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the Distance Unit of the payload image. </p>
+<p>Returns the Distance Unit of the payload image.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Millimeter</b> (Display string: 'Millimeter'): Default value. Distance values are in millimeter units.</li>
+<li><b>Inch</b> (Display string: 'Inch'): Distance values are in inch units.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a60ad92001a22ff71b3e9241272d650d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dInvalidDataFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Returns if a specific non-valid data flag is used in the data stream. </p>
+<p>Returns if a specific non-valid data flag is used in the data stream. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7006c4bc9dee316064885ebe3f6c0ae7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dInvalidDataValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the Invalid Data Value used for the image included in the payload. </p>
+<p>Returns the Invalid Data Value used for the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1b968c0335e50b8852709bc5d5cbcd93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dOutputMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the Calibrated Mode of the payload image. </p>
+<p>Returns the Calibrated Mode of the payload image.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>UncalibratedC</b> (Display string: 'Uncalibrated C'): Uncalibrated 2.5D Depth map. The distance data does not represent a physical unit and may be non-linear. The data is a 2.5D range map only.</li>
+<li><b>CalibratedABC_Grid</b> (Display string: 'Calibrated ABC Grid'): 3 Coordinates in grid organization. The full 3 coordinate data with the grid array organization from the sensor kept.</li>
+<li><b>CalibratedABC_PointCloud</b> (Display string: 'Calibrated ABC Point Cloud'): 3 Coordinates without organization. The full 3 coordinate data without any organization of data points. Typically only valid points transmitted giving varying image size.</li>
+<li><b>CalibratedAC</b> (Display string: 'Calibrated AC'): 2 Coordinates with fixed B sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis uses the scale and offset parameters for the B axis.</li>
+<li><b>CalibratedAC_Linescan</b> (Display string: 'Calibrated AC Linescan'): 2 Coordinates with varying sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis comes from the encoder chunk value.</li>
+<li><b>CalibratedC</b> (Display string: 'Calibrated C'): Calibrated 2.5D Depth map. The distance data is expressed in the chosen distance unit. The data is a 2.5D range map. No information on X-Y axes available.</li>
+<li><b>CalibratedC_Linescan</b> (Display string: 'Calibrated C Linescan'): Depth Map with varying B sampling. The distance data is expressed in the chosen distance unit. The data is a 2.5D range map. The B (Y) axis comes from the encoder chunk value.</li>
+<li><b>RectifiedC</b> (Display string: 'Rectified C'): Rectified 2.5D Depth map. The distance data has been rectified to a uniform sampling pattern in the X and Y direction. The data is a 2.5D range map only. If a complete 3D point cloud is rectified but transmitted as explicit coordinates it should be transmitted as one of the 'CalibratedABC' formats.</li>
+<li><b>RectifiedC_Linescan</b> (Display string: 'Rectified C Linescan'): Rectified 2.5D Depth map with varying B sampling. The data is sent as rectified 1D profiles using Coord3D_C pixels. The B (Y) axis comes from the encoder chunk value.</li>
+<li><b>DisparityC</b> (Display string: 'Disparity C'): Disparity 2.5D Depth map. The distance is inversely proportional to the pixel (disparity) value.</li>
+<li><b>DisparityC_Linescan</b> (Display string: 'Disparity C Linescan'): Disparity 2.5D Depth map with varying B sampling. The distance is inversely proportional to the pixel (disparity) value. The B (Y) axis comes from the encoder chunk value.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2236122637d64d832aa5ebfaef7c0f29"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScan3dTransformValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the transform value. </p>
+<p>Returns the transform value. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6974218ada079b8968619a5e54ea8232"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkScanLineSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Index for vector representation of one chunk value per line in an image. </p>
+<p>Index for vector representation of one chunk value per line in an image. </p>
+
+</div>
+</div>
+<a class="anchor" id="afa89c2551ad7b82a5a6ce641cc169523"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Chunk to enable or control. </p>
+<p>Selects which Chunk to enable or control.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Image</b> (Display string: 'Image'): Image</li>
+<li><b>OffsetX</b> (Display string: 'Offset X'): Offset X</li>
+<li><b>OffsetY</b> (Display string: 'Offset Y'): Offset Y</li>
+<li><b>Width</b> (Display string: 'Width'): Width</li>
+<li><b>Height</b> (Display string: 'Height'): Height</li>
+<li><b>PixelFormat</b> (Display string: 'Pixel Format'): Pixel Format</li>
+<li><b>PixelDynamicRangeMax</b> (Display string: 'Pixel Dynamic Range Max'): Pixel Dynamic Range Max</li>
+<li><b>PixelDynamicRangeMin</b> (Display string: 'Pixel Dynamic Range Min'): Pixel Dynamic Range Min</li>
+<li><b>Timestamp</b> (Display string: 'Timestamp'): Timestamp</li>
+<li><b>LineStatusAll</b> (Display string: 'Line Status All'): Line Status All</li>
+<li><b>CounterValue</b> (Display string: 'Counter Value'): Counter Value</li>
+<li><b>TimerValue</b> (Display string: 'Timer Value'): Timer Value</li>
+<li><b>EncoderValue</b> (Display string: 'Encoder Value'): Encoder Value</li>
+<li><b>ExposureTime</b> (Display string: 'Exposure Time'): Exposure Time</li>
+<li><b>Gain</b> (Display string: 'Gain'): Gain</li>
+<li><b>BlackLevel</b> (Display string: 'Black Level'): Black Level</li>
+<li><b>LinePitch</b> (Display string: 'Line Pitch'): Line Pitch</li>
+<li><b>FrameID</b> (Display string: 'Frame ID'): Frame ID</li>
+<li><b>SourceID</b> (Display string: 'Source ID'): Source ID</li>
+<li><b>SourceIDValue</b> (Display string: 'Source ID Value'): Source ID Value</li>
+<li><b>RegionID</b> (Display string: 'Region ID'): Region ID</li>
+<li><b>RegionIDValue</b> (Display string: 'Region ID Value'): Region ID Value</li>
+<li><b>ComponentID</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> ID'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> ID</li>
+<li><b>ComponentIDValue</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> ID Value'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. ">Component</a> ID Value</li>
+<li><b>TransferBlockID</b> (Display string: 'Transfer Block ID'): Transfer Block ID</li>
+<li><b>TransferStreamID</b> (Display string: 'Transfer Stream ID'): Transfer Stream ID</li>
+<li><b>TransferQueueCurrentBlockCount</b> (Display string: 'Transfer Queue Current Block Count'): Transfer Queue Current Block Count</li>
+<li><b>StreamChannelID</b> (Display string: 'Stream Channel ID'): Stream Channel ID</li>
+<li><b>Scan3dDistanceUnit</b> (Display string: 'Scan 3d Distance Unit'): Scan 3d Distance Unit</li>
+<li><b>Scan3dOutputMode</b> (Display string: 'Scan 3d Output Mode'): Scan 3d Output Mode</li>
+<li><b>Scan3dCoordinateSystem</b> (Display string: 'Scan 3d Coordinate System'): Scan 3d Coordinate System</li>
+<li><b>Scan3dCoordinateSystemReference</b> (Display string: 'Scan 3d Coordinate System Reference'): Scan 3d Coordinate System Reference</li>
+<li><b>Scan3dCoordinateScale</b> (Display string: 'Scan 3d Coordinate Scale'): Scan 3d Coordinate Scale</li>
+<li><b>Scan3dCoordinateOffset</b> (Display string: 'Scan 3d Coordinate Offset'): Scan 3d Coordinate Offset</li>
+<li><b>Scan3dInvalidDataFlag</b> (Display string: 'Scan 3d Invalid Data Flag'): Scan 3d Invalid Data Flag</li>
+<li><b>Scan3dInvalidDataValue</b> (Display string: 'Scan 3d Invalid Data Value'): Scan 3d Invalid Data Value</li>
+<li><b>Scan3dAxisMin</b> (Display string: 'Scan 3d Axis Min'): Scan 3d Axis Min</li>
+<li><b>Scan3dAxisMax</b> (Display string: 'Scan 3d Axis Max'): Scan 3d Axis Max</li>
+<li><b>Scan3dCoordinateTransformValueScan3dCoordinateReferenceValue</b> (Display string: 'Scan 3d Coordinate Transform Value Scan 3d Coordinate Reference Value'): Scan 3d Coordinate Transform Value Scan 3d Coordinate Reference Value</li>
+<li><b>PixelDynamicRangeMinTimestamp</b> (Display string: 'Chunk Selector')</li>
+<li><b>AdditionalInfo</b> (Display string: 'Chunk Selector')</li>
+<li><b>JPEG</b> (Display string: 'Chunk Selector')</li>
+<li><b>mvCustomIdentifier</b> (Display string: 'Chunk Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5c83ad3228ab5d5bc74603f8848961c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkSequencerSetActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Return the index of the active set of the running sequencer included in the payload. </p>
+<p>Return the index of the active set of the running sequencer included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a014b54e61bfa874ae1b64cf7de60a4cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkSourceID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the Identifier of Source that the image comes from. </p>
+<p>Returns the Identifier of Source that the image comes from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Source0</b> (Display string: 'Source 0'): Image comes from the Source 0.</li>
+<li><b>Source1</b> (Display string: 'Source 1'): Image comes from the Source 1.</li>
+<li><b>Source2</b> (Display string: 'Source 2'): Image comes from the Source 2.</li>
+<li><b>Source#3#</b> (Display string: 'Source #3#'): Image comes from the Source #3#.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="adc24abab055024927db1829bdbd17b74"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkSourceIDValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the unique integer Identifier value of the Source that the image comes from. </p>
+<p>Returns the unique integer Identifier value of the Source that the image comes from. </p>
+
+</div>
+</div>
+<a class="anchor" id="acab8906c60d43214bdbc540dafa7a62e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkSourceSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Source to retrieve data from. </p>
+<p>Selects which Source to retrieve data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Source0</b> (Display string: 'Source 0'): Image comes from the Source 0.</li>
+<li><b>Source1</b> (Display string: 'Source 1'): Image comes from the Source 1.</li>
+<li><b>Source2</b> (Display string: 'Source 2'): Image comes from the Source 2.</li>
+<li><b>Source#3#</b> (Display string: 'Source #3#'): Image comes from the Source #3#.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af31e8f39ddba15bdeb3c2199abbd3f32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkStreamChannelID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns identifier of the stream channel used to carry the block. </p>
+<p>Returns identifier of the stream channel used to carry the block. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae64defa82d79e8cc3b38aa6ff2c5e31a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTimerSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Timer to retrieve data from. </p>
+<p>Selects which Timer to retrieve data from.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Timer0</b> (Display string: 'Timer 0'): Selects the first Timer.</li>
+<li><b>Timer1</b> (Display string: 'Timer 1'): Selects the first Timer.</li>
+<li><b>Timer2</b> (Display string: 'Timer 2'): Selects the second Timer.</li>
+<li><b>Timer#3#</b> (Display string: 'Timer #3#'): Selects the second Timer.</li>
+<li><b>Timer3</b> (Display string: 'Timer 3'): Selects the second Timer.</li>
+<li><b>Timer4</b> (Display string: 'Timer 4'): Selects the second Timer.</li>
+<li><b>Timer5</b> (Display string: 'Timer 5'): Selects the second Timer.</li>
+<li><b>Timer6</b> (Display string: 'Timer 6'): Selects the second Timer.</li>
+<li><b>Timer7</b> (Display string: 'Timer 7'): Selects the second Timer.</li>
+<li><b>Timer8</b> (Display string: 'Timer 8'): Selects the second Timer.</li>
+<li><b>Timer9</b> (Display string: 'Timer 9'): Selects the second Timer.</li>
+<li><b>Timer10</b> (Display string: 'Timer 10'): Selects the second Timer.</li>
+<li><b>Timer11</b> (Display string: 'Timer 11'): Selects the second Timer.</li>
+<li><b>Timer12</b> (Display string: 'Timer 12'): Selects the second Timer.</li>
+<li><b>Timer13</b> (Display string: 'Timer 13'): Selects the second Timer.</li>
+<li><b>Timer14</b> (Display string: 'Timer 14'): Selects the second Timer.</li>
+<li><b>Timer15</b> (Display string: 'Timer 15'): Selects the second Timer.</li>
+<li><b>Timer16</b> (Display string: 'Chunk Timer Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b634696877e47f3c773da528d1c8f90"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTimerValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the value of the selected Timer at the time of the FrameStart internal event. </p>
+<p>Returns the value of the selected Timer at the time of the FrameStart internal event. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6524fff11f2289aecb48e49f15a28710"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the Timestamp of the image included in the payload at the time of the FrameStart internal event. </p>
+<p>Returns the Timestamp of the image included in the payload at the time of the FrameStart internal event. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaaa113e713066193edd3549f5a6c0ab5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTimestampLatchValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the last Timestamp latched with the TimestampLatch command. </p>
+<p>Returns the last Timestamp latched with the TimestampLatch command. </p>
+
+</div>
+</div>
+<a class="anchor" id="a43f3d8e2284b6742b8b22186407dce52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTransferBlockID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the unique identifier of the transfer block used to transport the payload. </p>
+<p>Returns the unique identifier of the transfer block used to transport the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0eba9a22dc04bd1928c4807cb6dd45fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTransferQueueCurrentBlockCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the current number of blocks in the transfer queue. </p>
+<p>Returns the current number of blocks in the transfer queue. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5d99e230c1a36d0649c93d6d6de2a139"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkTransferStreamID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns identifier of the stream that generated this block. </p>
+<p>Returns identifier of the stream that generated this block.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Stream0</b> (Display string: 'Stream 0'): Data comes from Stream0.</li>
+<li><b>Stream1</b> (Display string: 'Stream 1'): Data comes from Stream1.</li>
+<li><b>Stream2</b> (Display string: 'Stream 2'): Data comes from Stream2.</li>
+<li><b>Stream3</b> (Display string: 'Stream 3'): Data comes from Stream3.</li>
+<li><b>Stream#4#</b> (Display string: 'Stream #4#'): Data comes from Stream#4#.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6cf6b5feed11d6d46885ee126a7345f4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::ChunkDataControl::chunkWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Returns the Width of the image included in the payload. </p>
+<p>Returns the Width of the image included in the payload. </p>
+
+</div>
+</div>
+<a class="anchor" id="a78076131ba88ad24c78eb473d10ae3f6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::ChunkDataControl::mvChunkJPEG</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Allows to access a JPEG image transmitted as part of the chunk data. </p>
+<p>Allows to access a JPEG image transmitted as part of the chunk data. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html">ChunkDataControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

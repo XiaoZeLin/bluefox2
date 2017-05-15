@@ -1,0 +1,139 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Connector类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}}
+}
+
+
+A class describing how a video signal source(e.\+g. a camera or image sensor) is connected to a video signal sink(e.\+g. a frame grabber)({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Connector 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Connector 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_ae857d0fefd53cf48038b011819e4fb9d}{Connector} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga48585b26ebc31ccee54f34c7d6bbdda3}{Property\+I\+Camera\+Output} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_aa9f92bb9609d1bfc1d0edd4c23cf7d2d}{camera\+Output\+Used}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the video signal output of the video signal source used for the connection to the video signal sink. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a22c033da953a263629c4dcf410cfab30}{video\+Channel}
+\begin{DoxyCompactList}\small\item\em An integer property containing the video channel the camera belonging to the current setting is connected to. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a820c1d3a103073ada11d790b7c63b428}{pin\+Description}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing a description for the video channel currently selected by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a22c033da953a263629c4dcf410cfab30}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::video\+Channel}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class describing how a video signal source(e.\+g. a camera or image sensor) is connected to a video signal sink(e.\+g. a frame grabber)({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+With an instance of this class the user can define on which input channels the video signal source used for this setting is connected to the video signal sink and how(in which format) the video signal source transmits its data.
+
+Video signal source and video signal sink can both belong to the same physical piece of hardware. This e.\+g. might apply to a digital camera that doesn't need a frame grabber (e.\+g. a Gig\+E Vision\texttrademark{} or U\+S\+B camera). In such a scenario certain properties belonging to this class might be read-\/only or may only allow a single enumeration value.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_ae857d0fefd53cf48038b011819e4fb9d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}!Connector@{Connector}}
+\index{Connector@{Connector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}}
+\subsubsection[{Connector}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::\+Connector (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_ae857d0fefd53cf48038b011819e4fb9d}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_ae857d0fefd53cf48038b011819e4fb9d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_aa9f92bb9609d1bfc1d0edd4c23cf7d2d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}!camera\+Output\+Used@{camera\+Output\+Used}}
+\index{camera\+Output\+Used@{camera\+Output\+Used}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}}
+\subsubsection[{camera\+Output\+Used}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Output} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::camera\+Output\+Used}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_aa9f92bb9609d1bfc1d0edd4c23cf7d2d}
+
+
+An enumerated integer property defining the video signal output of the video signal source used for the connection to the video signal sink. 
+
+\begin{DoxyNote}{注解}
+Not every video signal sink will support every possible value defined in the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Output}. For example a Camera\+Link\textregistered{} frame grabber will not offer to use a S\+Video connector. Therefore the translation dictionary of this property should be used to find out, which connector types are available.
+
+This property might not be supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a820c1d3a103073ada11d790b7c63b428}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}!pin\+Description@{pin\+Description}}
+\index{pin\+Description@{pin\+Description}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}}
+\subsubsection[{pin\+Description}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::pin\+Description}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a820c1d3a103073ada11d790b7c63b428}
+
+
+A string property {\bfseries }(read-\/only) containing a description for the video channel currently selected by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a22c033da953a263629c4dcf410cfab30}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::video\+Channel}}. 
+
+The description string contains information about the connector pins belonging to this video input of the video signal sink as well as the corresponding name of this video input.
+
+\begin{DoxyNote}{注解}
+This property might not be supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a22c033da953a263629c4dcf410cfab30}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}!video\+Channel@{video\+Channel}}
+\index{video\+Channel@{video\+Channel}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector}}
+\subsubsection[{video\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::video\+Channel}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_a22c033da953a263629c4dcf410cfab30}
+
+
+An integer property containing the video channel the camera belonging to the current setting is connected to. 
+
+The maximum possible video channel might change when the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_connector_aa9f92bb9609d1bfc1d0edd4c23cf7d2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Connector\+::camera\+Output\+Used}} is modified as the different ways to transmit a video signal require more or less video input channels. While e.\+g. a composite video signal can be transmitted via a single wire, an R\+G\+B signal requires either 3 or 4 wires (depending on whether the sync. signal is transmitted on a separate wire or not).
+
+The first channel will always have the number 0. The limits (max/min values) can be queried by calling the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a906741ebe9a9f23d56416af0bc788485}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::get\+Min\+Value}} or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_ad0697983e878d4195ef6414d837e3212}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+::get\+Max\+Value}}.
+
+\begin{DoxyNote}{注解}
+This property might not be supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

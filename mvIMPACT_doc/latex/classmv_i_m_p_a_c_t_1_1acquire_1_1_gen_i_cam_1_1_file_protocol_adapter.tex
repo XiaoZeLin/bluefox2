@@ -1,0 +1,344 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:File\+Protocol\+Adapter类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+}
+
+
+Adapter between the std\+::iostreambuf and the S\+F\+N\+C Features representing the device file system.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam\+\_\+\+File\+Stream.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a9fbeda8fcbc8e475f629159309d0344f}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a9fbeda8fcbc8e475f629159309d0344f}{File\+Protocol\+Adapter} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a9fbeda8fcbc8e475f629159309d0344f}
+
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac}{attach} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Attach file protocol adapter to the corresponding properties. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0}{open\+File} (const char $\ast$p\+File\+Name, std\+::ios\+\_\+base\+::openmode mode)
+\begin{DoxyCompactList}\small\item\em Open a file on the device. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804}{close\+File} (const char $\ast$p\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Close a file on the device. \end{DoxyCompactList}\item 
+std\+::streamsize \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9}{write} (const char $\ast$p\+Buf, int64\+\_\+type offs, int64\+\_\+type len, const char $\ast$p\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Writes data into a file. \end{DoxyCompactList}\item 
+std\+::streamsize \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5}{read} (char $\ast$p\+Buf, int64\+\_\+type offs, std\+::streamsize len, const char $\ast$p\+File\+Name)
+\begin{DoxyCompactList}\small\item\em Read data from the device into a buffer. \end{DoxyCompactList}\item 
+int64\+\_\+type \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418}{get\+Buf\+Size} (const char $\ast$p\+File\+Name, std\+::ios\+\_\+base\+::openmode mode)
+\begin{DoxyCompactList}\small\item\em Fetch max File\+Access\+Buffer length for a file. \end{DoxyCompactList}\item 
+std\+::streamsize \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427}{size} (void) const 
+\begin{DoxyCompactList}\small\item\em Fetch the size of the file currently selected on the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Adapter between the std\+::iostreambuf and the S\+F\+N\+C Features representing the device file system. 
+
+The adapter assumes, that the features provide stdio file access compatible semantic 
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!attach@{attach}}
+\index{attach@{attach}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{attach}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac}
+
+
+Attach file protocol adapter to the corresponding properties. 
+
+\begin{DoxyReturn}{返回}
+true if attach was successful, false if not 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+{\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!close\+File@{close\+File}}
+\index{close\+File@{close\+File}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{close\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::close\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804}
+
+
+Close a file on the device. 
+
+\begin{DoxyReturn}{返回}
+true on success, false on error 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em p\+File\+Name} & Name of the file to open. The file name must exist in the Enumeration File\+Selector \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!get\+Buf\+Size@{get\+Buf\+Size}}
+\index{get\+Buf\+Size@{get\+Buf\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{get\+Buf\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int64\+\_\+type mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::get\+Buf\+Size (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File\+Name, }
+\item[{std\+::ios\+\_\+base\+::openmode}]{mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418}
+
+
+Fetch max File\+Access\+Buffer length for a file. 
+
+\begin{DoxyReturn}{返回}
+Max length of File\+Access\+Buffer in the given mode on the given file 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em p\+File\+Name} & Name of the file to open. The file name must exist in the Enumeration File\+Selector \\
+\hline
+{\em mode} & mode to open the file. The mode must exist in the Enumeration File\+Open\+Mode \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!open\+File@{open\+File}}
+\index{open\+File@{open\+File}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{open\+File}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::open\+File (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+File\+Name, }
+\item[{std\+::ios\+\_\+base\+::openmode}]{mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0}
+
+
+Open a file on the device. 
+
+\begin{DoxyReturn}{返回}
+true on success, false on error 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em p\+File\+Name} & Name of the file to open. The file name must exist in the Enumeration File\+Selector \\
+\hline
+{\em mode} & mode to open the file. The mode must exist in the Enumeration File\+Open\+Mode \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!read@{read}}
+\index{read@{read}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}std\+::streamsize mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::read (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{p\+Buf, }
+\item[{int64\+\_\+type}]{offs, }
+\item[{std\+::streamsize}]{len, }
+\item[{const char $\ast$}]{p\+File\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5}
+
+
+Read data from the device into a buffer. 
+
+\begin{DoxyReturn}{返回}
+number of bytes successfully read 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em p\+Buf} & Target buffer \\
+\hline
+{\em offs} & Offset in the device file to read from \\
+\hline
+{\em len} & Number of bytes to read \\
+\hline
+{\em p\+File\+Name} & Name of the file to write into The file name must exist in the Enumeration File\+Selector \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!size@{size}}
+\index{size@{size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}std\+::streamsize mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427}
+
+
+Fetch the size of the file currently selected on the device. 
+
+\begin{DoxyReturn}{返回}
+The size(in bytes) of the file currently selected. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}!write@{write}}
+\index{write@{write}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter}}
+\subsubsection[{write}]{\setlength{\rightskip}{0pt plus 5cm}std\+::streamsize mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Protocol\+Adapter\+::write (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{p\+Buf, }
+\item[{int64\+\_\+type}]{offs, }
+\item[{int64\+\_\+type}]{len, }
+\item[{const char $\ast$}]{p\+File\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9}
+
+
+Writes data into a file. 
+
+\begin{DoxyReturn}{返回}
+Number of bytes written 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em p\+Buf} & Source buffer \\
+\hline
+{\em offs} & Offset into the device file \\
+\hline
+{\em len} & Number of bytes to write \\
+\hline
+{\em p\+File\+Name} & Name of the file to write into The file name must exist in the Enumeration File\+Selector \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam\+\_\+\+File\+Stream.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,159 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:R\+T\+Ctr\+Program\+Step类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+}
+
+
+A class to represent one step of a real time control({\bfseries R\+T\+Ctr}) program ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:R\+T\+Ctr\+Program\+Step 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:R\+T\+Ctr\+Program\+Step 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a2a9740df9ac629e37f87b67249858f4c}{address}
+\begin{DoxyCompactList}\small\item\em An integer property, which defines the absolute jump address within this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_acaad4a76b9a9805234c1a8a1a7aa0aa3}{frame\+I\+D}
+\begin{DoxyCompactList}\small\item\em An integer property, which defines the frame I\+D of the triggered image {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a3939901a39a4b5b95d3c1b1c5f176458}{clocks\+\_\+us}
+\begin{DoxyCompactList}\small\item\em An integer property, which defines the waiting time {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga26369d2e6b583ee092988de00a839413}{Property\+I\+Dig\+I\+O\+State} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a15975e93c4803355e9ce1bf5a33786ec}{digital\+Inputs}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property to define for which digital input state this program step waits for. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga26369d2e6b583ee092988de00a839413}{Property\+I\+Dig\+I\+O\+State} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a9ccd96117b14e3031c38a59f6cf6595c}{digital\+Outputs}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property to define how to set the digital outputs of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga26369d2e6b583ee092988de00a839413}{Property\+I\+Dig\+I\+O\+State} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a1bdc2bfbec5bd9680753a3aa3d6ed483}{sensor\+Heads}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property to define which sensor heads to trigger (for devices with more than one sensor head). \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaa22518faa79c768c8c1cbf763bc0dec7}{Property\+I\+R\+T\+Prog\+Op\+Codes} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{op\+Code}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the general purpose of this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}} object. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_af6109b0aa37200c31f2bbeecd5f2eec8}{controller\+Register}
+\begin{DoxyCompactList}\small\item\em An integer property, which defines the index of the controller register to refer in this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_aa4a8088b0cb951026c8a290b82bc6657}{register\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property, which defines the a value to associate with a register access in this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_aba6b541c1e0b106c36bd31585855a154}{class {\bfseries R\+T\+Ctr\+Program}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_aba6b541c1e0b106c36bd31585855a154}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to represent one step of a real time control({\bfseries R\+T\+Ctr}) program ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+An object of this class represents a single instruction in a program represented by an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}} object can't be constructed directly, but must be accessed via the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_ad15489b2d15c594dd44f01d4f515c97f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+::program\+Step}} of the program they belong to.
+
+The instruction this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}} will executed when the program is executed is defined by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}}. Depending on the value of this property certain other parameters will influence the behaviour of this instruction.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a2a9740df9ac629e37f87b67249858f4c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!address@{address}}
+\index{address@{address}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::address}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a2a9740df9ac629e37f87b67249858f4c}
+
+
+An integer property, which defines the absolute jump address within this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. 
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Jump\+Loc}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a3939901a39a4b5b95d3c1b1c5f176458}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!clocks\+\_\+us@{clocks\+\_\+us}}
+\index{clocks\+\_\+us@{clocks\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{clocks\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::clocks\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a3939901a39a4b5b95d3c1b1c5f176458}
+
+
+An integer property, which defines the waiting time {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. 
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Wait\+Clocks}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_af6109b0aa37200c31f2bbeecd5f2eec8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!controller\+Register@{controller\+Register}}
+\index{controller\+Register@{controller\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{controller\+Register}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::controller\+Register}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_af6109b0aa37200c31f2bbeecd5f2eec8}
+
+
+An integer property, which defines the index of the controller register to refer in this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}. 
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Set}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Add}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Sub}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Jump\+Loc\+On\+Zero} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Jump\+Loc\+On\+Not\+Zero}.
+
+\begin{DoxyNote}{注解}
+This feature will not be available for every device offering a H\+R\+T\+C. It will be available if the translation dictionary of the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} contains {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Set}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Add}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Sub}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Jump\+Loc\+On\+Zero} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Jump\+Loc\+On\+Not\+Zero}.
+\end{DoxyNote}
+Read the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Pulse\+Start\+Trigger\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Pulse\+Start\+Trigger\+::get\+Translation\+Dict\+Value}}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a15975e93c4803355e9ce1bf5a33786ec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!digital\+Inputs@{digital\+Inputs}}
+\index{digital\+Inputs@{digital\+Inputs}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{digital\+Inputs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Dig\+I\+O\+State} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::digital\+Inputs}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a15975e93c4803355e9ce1bf5a33786ec}
+
+
+An enumerated integer property to define for which digital input state this program step waits for. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Dig\+I\+O\+State}.
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Wait\+Digin}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a9ccd96117b14e3031c38a59f6cf6595c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!digital\+Outputs@{digital\+Outputs}}
+\index{digital\+Outputs@{digital\+Outputs}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{digital\+Outputs}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Dig\+I\+O\+State} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::digital\+Outputs}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a9ccd96117b14e3031c38a59f6cf6595c}
+
+
+An enumerated integer property to define how to set the digital outputs of this device. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Dig\+I\+O\+State}.
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Set\+Digout}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_acaad4a76b9a9805234c1a8a1a7aa0aa3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!frame\+I\+D@{frame\+I\+D}}
+\index{frame\+I\+D@{frame\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{frame\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::frame\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_acaad4a76b9a9805234c1a8a1a7aa0aa3}
+
+
+An integer property, which defines the frame I\+D of the triggered image {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}}. 
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Trigger\+Set}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!op\+Code@{op\+Code}}
+\index{op\+Code@{op\+Code}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{op\+Code}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+R\+T\+Prog\+Op\+Codes} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}
+
+
+An enumerated integer property defining the general purpose of this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}} object. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+R\+T\+Prog\+Op\+Codes}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_aa4a8088b0cb951026c8a290b82bc6657}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!register\+Value@{register\+Value}}
+\index{register\+Value@{register\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{register\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::register\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_aa4a8088b0cb951026c8a290b82bc6657}
+
+
+An integer property, which defines the a value to associate with a register access in this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}. 
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Set}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Add} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Sub}.
+
+\begin{DoxyNote}{注解}
+This feature will not be available for every device offering a H\+R\+T\+C. It will be available if the translation dictionary of the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} contains {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Set}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Add}, or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Register\+Sub}.
+\end{DoxyNote}
+Read the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Pulse\+Start\+Trigger\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Pulse\+Start\+Trigger\+::get\+Translation\+Dict\+Value}}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a1bdc2bfbec5bd9680753a3aa3d6ed483}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}!sensor\+Heads@{sensor\+Heads}}
+\index{sensor\+Heads@{sensor\+Heads}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step}}
+\subsubsection[{sensor\+Heads}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Dig\+I\+O\+State} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::sensor\+Heads}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a1bdc2bfbec5bd9680753a3aa3d6ed483}
+
+
+An enumerated integer property to define which sensor heads to trigger (for devices with more than one sensor head). 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Dig\+I\+O\+State}.
+
+This property only is taken into account, if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_a823c9cad26ad628155d68130ad1d6d5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program\+Step\+::op\+Code}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Trigger\+Set} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::rtctrl\+Prog\+Trigger\+Reset}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

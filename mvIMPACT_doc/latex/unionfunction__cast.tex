@@ -1,0 +1,72 @@
+\hypertarget{unionfunction__cast}{\section{function\+\_\+cast$<$ Output\+Ptr $>$ 模板联合体 参考}
+\label{unionfunction__cast}\index{function\+\_\+cast$<$ Output\+Ptr $>$@{function\+\_\+cast$<$ Output\+Ptr $>$}}
+}
+
+
+Allows casting void$\ast$ to a function pointer without gcc complaining.  
+
+
+
+
+{\ttfamily \#include $<$function\+\_\+cast.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{unionfunction__cast_a82d3e25e49fe39a76873688699f41420}{void $\ast$ {\bfseries p\+I}}\label{unionfunction__cast_a82d3e25e49fe39a76873688699f41420}
+
+\item 
+\hypertarget{unionfunction__cast_aff8ea61f61f2f5b90af9d08b763ef8c2}{Output\+Ptr {\bfseries p\+O}}\label{unionfunction__cast_aff8ea61f61f2f5b90af9d08b763ef8c2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename Output\+Ptr$>$union function\+\_\+cast$<$ Output\+Ptr $>$}
+
+Allows casting void$\ast$ to a function pointer without gcc complaining. 
+
+When e.\+g. compiling code with the {\itshape -\/pedantic} option, gcc will complain about the following piece of code
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} fn( \textcolor{keywordtype}{void} )
+\{
+  \textcolor{keywordtype}{void}* hMod = dlopen( \textcolor{stringliteral}{"mylib"}, RTLD\_LAZY );
+  \textcolor{keywordflow}{if}( hMod )
+  \{
+    \textcolor{keyword}{typedef} void (*myFnPtr)( void );
+    myFnPtr p = (myFnPtr)dlsym( hMod, \textcolor{stringliteral}{"foobar"} ); \textcolor{comment}{// this will give a warning}
+  \}
+\}
+\end{DoxyCode}
+
+
+The compiler will give you the following warning\+:
+
+\begin{DoxyVerb}/// ISO C++ forbids casting between pointer-to-function and pointer-to-object
+/// \end{DoxyVerb}
+ \begin{DoxyVerb}That is true, but there is not other way to extract symbols from shared libraries.
+By using this template instead, gcc will be happy and will you.
+\end{DoxyVerb}
+
+
+
+\begin{DoxyCode}
+\textcolor{keywordtype}{void} fn( \textcolor{keywordtype}{void} )
+\{
+  \textcolor{keywordtype}{void}* hMod = dlopen( \textcolor{stringliteral}{"mylib"}, RTLD\_LAZY );
+  \textcolor{keywordflow}{if}( hMod )
+  \{
+    \textcolor{keyword}{typedef} void (*myFnPtr)( void );
+    \hyperlink{unionfunction__cast}{function\_cast}<myFnPtr> pFunc;
+    pFunc.pI = dlsym( hMod, \textcolor{stringliteral}{"foobar"} );
+    myFnPtr p = pFunc.pO;
+  \}
+\}
+\end{DoxyCode}
+ 
+
+该联合体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+common/function\+\_\+cast.\+h\end{DoxyCompactItemize}

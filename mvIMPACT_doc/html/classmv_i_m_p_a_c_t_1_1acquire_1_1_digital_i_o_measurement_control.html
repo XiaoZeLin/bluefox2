@@ -1,0 +1,284 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::DigitalIOMeasurementControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::DigitalIOMeasurementControl类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Properties for configuring settings belonging to the digital I/O measurement(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::DigitalIOMeasurementControl 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="28,6,176,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::DigitalIOMeasurementControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="660,5,809,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDigitalIOMeasurement\lMode \&gt;" alt="" coords="605,69,864,125"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,157,555,198"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDigitalIOMeasurement\lSource \&gt;" alt="" coords="605,149,864,205"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="647,229,822,270"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,157,355,198"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,157,155,198"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3722c740967e1e233d636ac68cb2ab7b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html#a3722c740967e1e233d636ac68cb2ab7b">DigitalIOMeasurementControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="memdesc:a3722c740967e1e233d636ac68cb2ab7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html" title="Properties for configuring settings belonging to the digital I/O measurement(Device specific interfac...">mvIMPACT::acquire::DigitalIOMeasurementControl</a></b> object.  <a href="#a3722c740967e1e233d636ac68cb2ab7b">更多...</a><br /></td></tr>
+<tr class="separator:a3722c740967e1e233d636ac68cb2ab7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:adbebd679b5f5c97aef82aa9bea790285"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga6cece59259630b01f8e2854bcaa86337">PropertyIDigitalIOMeasurementMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html#adbebd679b5f5c97aef82aa9bea790285">digitalIOMeasurementMode</a></td></tr>
+<tr class="memdesc:adbebd679b5f5c97aef82aa9bea790285"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the type of measurement to perform.  <a href="#adbebd679b5f5c97aef82aa9bea790285">更多...</a><br /></td></tr>
+<tr class="separator:adbebd679b5f5c97aef82aa9bea790285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa50e2191075d8064026be33ce2d883dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gab3270cf1acd74b272fe15c80f8fadfc4">PropertyIDigitalIOMeasurementSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html#aa50e2191075d8064026be33ce2d883dc">digitalIOMeasurementSource</a></td></tr>
+<tr class="memdesc:aa50e2191075d8064026be33ce2d883dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining where the measurement shall be performed.  <a href="#aa50e2191075d8064026be33ce2d883dc">更多...</a><br /></td></tr>
+<tr class="separator:aa50e2191075d8064026be33ce2d883dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a366d4a9085aedbfb4c40d3b99df5401e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html#a366d4a9085aedbfb4c40d3b99df5401e">digitalIOMeasurementResult</a></td></tr>
+<tr class="memdesc:a366d4a9085aedbfb4c40d3b99df5401e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property <b></b>(read-only) that will contain the result of the measurement.  <a href="#a366d4a9085aedbfb4c40d3b99df5401e">更多...</a><br /></td></tr>
+<tr class="separator:a366d4a9085aedbfb4c40d3b99df5401e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Properties for configuring settings belonging to the digital I/O measurement(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>Properties in this class will only be available if a device offers digital I/O measurement features.</p>
+<dl class="section note"><dt>注解</dt><dd>This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a3722c740967e1e233d636ac68cb2ab7b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::DigitalIOMeasurementControl::DigitalIOMeasurementControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html" title="Properties for configuring settings belonging to the digital I/O measurement(Device specific interfac...">mvIMPACT::acquire::DigitalIOMeasurementControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_a3722c740967e1e233d636ac68cb2ab7b_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_a3722c740967e1e233d636ac68cb2ab7b_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_a3722c740967e1e233d636ac68cb2ab7b_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control_a3722c740967e1e233d636ac68cb2ab7b_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="467,103,629,159"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="467,23,629,79"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="256,139,419,195"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="256,219,419,275"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="703,110,871,151"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="677,38,896,79"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="956,5,1105,46"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="944,70,1117,111"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1166,92,1394,148"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1443,99,1667,141"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="473,226,623,267"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="adbebd679b5f5c97aef82aa9bea790285"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga6cece59259630b01f8e2854bcaa86337">PropertyIDigitalIOMeasurementMode</a> mvIMPACT::acquire::DigitalIOMeasurementControl::digitalIOMeasurementMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the type of measurement to perform. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDigitalIOMeasurementMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a366d4a9085aedbfb4c40d3b99df5401e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::DigitalIOMeasurementControl::digitalIOMeasurementResult</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property <b></b>(read-only) that will contain the result of the measurement. </p>
+<p>Reading this property will automatically perform a new measurement.</p>
+<dl class="section note"><dt>注解</dt><dd>Please note that the signal connected to the digital input must match the selected digital input threshold(see <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html#ab091e761b1045dbe668c16019cfe8292" title="An enumerated integer property defining the threshold for the digital inputs in Volt. ">mvIMPACT::acquire::IOSubSystemBlueFOX::digitalInputThreshold</a></b>) in order to obtain valid results. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa50e2191075d8064026be33ce2d883dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gab3270cf1acd74b272fe15c80f8fadfc4">PropertyIDigitalIOMeasurementSource</a> mvIMPACT::acquire::DigitalIOMeasurementControl::digitalIOMeasurementSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining where the measurement shall be performed. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDigitalIOMeasurementMode</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html">DigitalIOMeasurementControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

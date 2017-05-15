@@ -1,0 +1,132 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Request\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}
+}
+
+
+A helper class to control the way an image request will be processed.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Request\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Request\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a1a8e0e36c92556e626ec6a64c3f63965}{Image\+Request\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga2dbb98d2580189d140e11115331f0416}{Property\+I\+Image\+Request\+Control\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a4fb0601747fb8feca1eaaed923faab37}{mode}
+\begin{DoxyCompactList}\small\item\em The mode this object shall be operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a552b30507980db8ad253bc773cb83991}{image\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of images to capture with each request. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acf18030a40a4c3ea66a14097f81a2652}{setting}
+\begin{DoxyCompactList}\small\item\em An integer property defining which setting will be used for the acquisition. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a9a5ed0f41db0291bc13ebe37e09fb84d}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a9a5ed0f41db0291bc13ebe37e09fb84d}{result\+Queue}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a9a5ed0f41db0291bc13ebe37e09fb84d}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining to which result queue the resulting image will be sent after the acquisition. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}{request\+To\+Use}
+\begin{DoxyCompactList}\small\item\em An integer property defining which request object shall be used for the next image request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A helper class to control the way an image request will be processed. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a1a8e0e36c92556e626ec6a64c3f63965}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}!Image\+Request\+Control@{Image\+Request\+Control}}
+\index{Image\+Request\+Control@{Image\+Request\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}
+\subsubsection[{Image\+Request\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::\+Image\+Request\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a1a8e0e36c92556e626ec6a64c3f63965}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em name} & The name of the driver internal image request control to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a5e9a808de6c96158960cbdcc7dcf7734}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Image\+Request\+Controls}}, new image request controls can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a64b15537a09e6bb887075b15cba2c90b}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Image\+Request\+Control}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a1a8e0e36c92556e626ec6a64c3f63965_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a552b30507980db8ad253bc773cb83991}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}!image\+Count@{image\+Count}}
+\index{image\+Count@{image\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}
+\subsubsection[{image\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::image\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a552b30507980db8ad253bc773cb83991}
+
+
+An integer property defining the number of images to capture with each request. 
+
+\begin{DoxyNote}{注解}
+This property will currently have no effect. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a4fb0601747fb8feca1eaaed923faab37}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}!mode@{mode}}
+\index{mode@{mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Request\+Control\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a4fb0601747fb8feca1eaaed923faab37}
+
+
+The mode this object shall be operated in. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Request\+Control\+Mode}.
+
+This property can e.\+g. be used to prepare internal data structures without requesting a 'real' image from the hardware. This can be useful when the image dimensions must be known before the first image is captured. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}!request\+To\+Use@{request\+To\+Use}}
+\index{request\+To\+Use@{request\+To\+Use}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}
+\subsubsection[{request\+To\+Use}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::request\+To\+Use}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acb01d358421ecad7b28f3de692c4868d}
+
+
+An integer property defining which request object shall be used for the next image request. 
+
+This is an advanced feature that should only be used if needed. A value smaller than 0 will result in an automatic mode. This is the default behaviour and the driver will decide which buffer to use next then.
+
+A request can only be sent to the driver once. Until this request is returned to the user it can't be sent again thus this property must be changed for each request if multiple requests shall be sent to the capture queue. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acf18030a40a4c3ea66a14097f81a2652}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}!setting@{setting}}
+\index{setting@{setting}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control}}
+\subsubsection[{setting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::setting}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_acf18030a40a4c3ea66a14097f81a2652}
+
+
+An integer property defining which setting will be used for the acquisition. 
+
+This property defines a translation dictionary. It maps the name of the setting (the parameter passed to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}}) to the actual underlying handle of the request. Therefore either the name or the handle of the setting can be used to set this property to the desired value. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

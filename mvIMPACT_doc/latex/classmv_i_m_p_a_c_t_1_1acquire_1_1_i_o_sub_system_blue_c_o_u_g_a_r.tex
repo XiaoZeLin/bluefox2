@@ -1,0 +1,109 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}}
+}
+
+
+A class to handle the digital inputs and outputs of a {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R} of {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} device({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_adbc3e17f8f197947024f748d26f1a8b3}{I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_ac88f543939c57dd490abbeda9dab2a9c}{digital\+Input\+Threshold\+\_\+m\+V}
+\begin{DoxyCompactList}\small\item\em An integer property defining the threshold for the digital inputs in milli-\/\+Volt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to handle the digital inputs and outputs of a {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R} of {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} device({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides a convenient basic access to the digital inputs and outputs of a {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R} or {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} device.
+
+\begin{DoxyNote}{注解}
+The number of digital inputs and outputs available will vary significantly from device to device. Some devices might not even have digital inputs and/or digital outputs. Therefore it's crucial to check for available pins before using them. The corresponding functions to do that can be found in the base class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}}.
+\end{DoxyNote}
+Please also see the code sample in the base class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}}.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_adbc3e17f8f197947024f748d26f1a8b3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}!I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}}
+\index{I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_adbc3e17f8f197947024f748d26f1a8b3}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_adbc3e17f8f197947024f748d26f1a8b3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_ac88f543939c57dd490abbeda9dab2a9c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}!digital\+Input\+Threshold\+\_\+m\+V@{digital\+Input\+Threshold\+\_\+m\+V}}
+\index{digital\+Input\+Threshold\+\_\+m\+V@{digital\+Input\+Threshold\+\_\+m\+V}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{digital\+Input\+Threshold\+\_\+m\+V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+C\+O\+U\+G\+A\+R\+::digital\+Input\+Threshold\+\_\+m\+V}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r_ac88f543939c57dd490abbeda9dab2a9c}
+
+
+An integer property defining the threshold for the digital inputs in milli-\/\+Volt. 
+
+If a voltage applied to the digital input lies above the threshold this pin will be considered as 'logic 1' otherwise it will be considered as 'logic 0'.
+
+\begin{DoxyNote}{注解}
+This property is currently only available for {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} devices. Thus always call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if the device you are working it supports this feature. Not doing so and using the feature with a device not supporting it will raise an exception. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

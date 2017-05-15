@@ -1,0 +1,148 @@
+\hypertarget{class_capture_thread}{\section{Capture\+Thread类 参考}
+\label{class_capture_thread}\index{Capture\+Thread@{Capture\+Thread}}
+}
+
+
+类 Capture\+Thread 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_capture_thread__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Capture\+Thread 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=160pt]{class_capture_thread__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_capture_thread_a1e78fe40e3015c6f38cbbd79ff943c5a}{enum \{ {\bfseries M\+B} = 1024 $\ast$ 1024, 
+{\bfseries M\+A\+X\+\_\+\+M\+E\+M\+O\+R\+Y\+\_\+\+F\+O\+R\+\_\+\+R\+E\+C\+O\+R\+D\+I\+N\+G\+\_\+\+O\+N\+\_\+32\+\_\+\+B\+I\+T} = 768 $\ast$ M\+B
+ \}}\label{class_capture_thread_a1e78fe40e3015c6f38cbbd79ff943c5a}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_capture_thread_ad24259e69fbf7f648ff01c88d38bb683}{{\bfseries Capture\+Thread} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface} $\ast$p\+Func\+Interface, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, wx\+Window $\ast$p\+Parent\+Window, unsigned int pending\+Image\+Queue\+Depth)}\label{class_capture_thread_ad24259e69fbf7f648ff01c88d38bb683}
+
+\item 
+\hypertarget{class_capture_thread_a1237df9b006897557885e516405c74f0}{size\+\_\+t {\bfseries Display\+Sequence\+Request} (size\+\_\+t nr=0)}\label{class_capture_thread_a1237df9b006897557885e516405c74f0}
+
+\item 
+\hypertarget{class_capture_thread_a36d9be1a6b9cd170dacd00f49f3afc04}{size\+\_\+t {\bfseries Display\+Sequence\+Request\+Next} (void)}\label{class_capture_thread_a36d9be1a6b9cd170dacd00f49f3afc04}
+
+\item 
+\hypertarget{class_capture_thread_a089d340173f29f56e348bbed34ae2bb0}{size\+\_\+t {\bfseries Display\+Sequence\+Request\+Prev} (void)}\label{class_capture_thread_a089d340173f29f56e348bbed34ae2bb0}
+
+\item 
+\hypertarget{class_capture_thread_a2d04be266205c3032443a769ff60cbe2}{void {\bfseries Free\+Sequence} (int request\+Not\+To\+Unlock=I\+N\+V\+A\+L\+I\+D\+\_\+\+I\+D)}\label{class_capture_thread_a2d04be266205c3032443a769ff60cbe2}
+
+\item 
+\hypertarget{class_capture_thread_aeb33cb0eb5e8fd61aa13d13a77055b5b}{int {\bfseries Get\+Capture\+Queue\+Depth} (void) const }\label{class_capture_thread_aeb33cb0eb5e8fd61aa13d13a77055b5b}
+
+\item 
+\hypertarget{class_capture_thread_aff1d4b5a3a2a140ec332dace493479c1}{bool {\bfseries Get\+Continuous\+Recording} (void) const }\label{class_capture_thread_aff1d4b5a3a2a140ec332dace493479c1}
+
+\item 
+\hypertarget{class_capture_thread_ac3a0766d3c6edc355cf8690b29f420bb}{size\+\_\+t {\bfseries Get\+Current\+Sequence\+Index} (void) const }\label{class_capture_thread_ac3a0766d3c6edc355cf8690b29f420bb}
+
+\item 
+\hypertarget{class_capture_thread_a76e35f11ebeb4a63fe01f4b20dd107da}{void {\bfseries Get\+Image\+Data} (\hyperlink{struct_request_data}{Request\+Data} \&request\+Data, const bool bo\+From\+Recorded\+Stream) const }\label{class_capture_thread_a76e35f11ebeb4a63fe01f4b20dd107da}
+
+\item 
+\hypertarget{class_capture_thread_adfa2d88afa3a07e6db6b74adcedfc54d}{void {\bfseries Get\+Image\+Info} (std\+::vector$<$ wx\+String $>$ \&info\+Strings) const }\label{class_capture_thread_adfa2d88afa3a07e6db6b74adcedfc54d}
+
+\item 
+\hypertarget{class_capture_thread_a033f5278ba0358e00316fd5df325e294}{bool {\bfseries Get\+Live\+Mode} (void) const }\label{class_capture_thread_a033f5278ba0358e00316fd5df325e294}
+
+\item 
+\hypertarget{class_capture_thread_a1350950434dda89bc417eb9145fad76a}{size\+\_\+t {\bfseries Get\+Multi\+Frame\+Sequence\+Size} (void) const }\label{class_capture_thread_a1350950434dda89bc417eb9145fad76a}
+
+\item 
+\hypertarget{class_capture_thread_a370420c885ff8571abb6ce1495b1fcd1}{bool {\bfseries Get\+Record\+Mode} (void) const }\label{class_capture_thread_a370420c885ff8571abb6ce1495b1fcd1}
+
+\item 
+\hypertarget{class_capture_thread_ada397f67e741acfac452ff7233113960}{size\+\_\+t {\bfseries Get\+Record\+Sequence\+Size} (void) const }\label{class_capture_thread_ada397f67e741acfac452ff7233113960}
+
+\item 
+\hypertarget{class_capture_thread_a5e2fe7801261917e56a0f6b730c560aa}{Request\+Container\+::size\+\_\+type {\bfseries Get\+Recorded\+Sequence\+Size} (void) const }\label{class_capture_thread_a5e2fe7801261917e56a0f6b730c560aa}
+
+\item 
+\hypertarget{class_capture_thread_a59f3789a6fff136a4d9867e4e622e9f3}{size\+\_\+t {\bfseries Get\+Skipped\+Image\+Count} (void)}\label{class_capture_thread_a59f3789a6fff136a4d9867e4e622e9f3}
+
+\item 
+\hypertarget{class_capture_thread_ad1009a1bb42306a9c8f63813aa6f20c1}{double {\bfseries Get\+Percentage\+Of\+Images\+Sent\+To\+Display} (void) const }\label{class_capture_thread_ad1009a1bb42306a9c8f63813aa6f20c1}
+
+\item 
+\hypertarget{class_capture_thread_a73c2d904b53dfc97060e712cbe986cfd}{int {\bfseries Record\+Sequence} (void)}\label{class_capture_thread_a73c2d904b53dfc97060e712cbe986cfd}
+
+\item 
+\hypertarget{class_capture_thread_a26a787c952ba608057d81706282810e4}{int {\bfseries Request\+Single} (bool bo\+Inform\+User\+On\+Record\+Start)}\label{class_capture_thread_a26a787c952ba608057d81706282810e4}
+
+\item 
+\hypertarget{class_capture_thread_a5d2ea3644da05b8fc70ae4db4edaaa46}{void {\bfseries Set\+Active} (void)}\label{class_capture_thread_a5d2ea3644da05b8fc70ae4db4edaaa46}
+
+\item 
+\hypertarget{class_capture_thread_a63f88ba9bb3805502b4bf120cd6bfb29}{void {\bfseries Set\+Capture\+Mode} (bool bo\+Forward\+Incomplete\+Frames)}\label{class_capture_thread_a63f88ba9bb3805502b4bf120cd6bfb29}
+
+\item 
+\hypertarget{class_capture_thread_a4d46acc8493f77073abe6518c4a2c96c}{void {\bfseries Set\+Capture\+Queue\+Depth} (int queue\+Depth)}\label{class_capture_thread_a4d46acc8493f77073abe6518c4a2c96c}
+
+\item 
+\hypertarget{class_capture_thread_ad886773c55d2de26cd39e4acae723e2b}{void {\bfseries Set\+Capture\+Setting\+Usage\+Mode} (T\+Capture\+Setting\+Usage\+Mode mode)}\label{class_capture_thread_ad886773c55d2de26cd39e4acae723e2b}
+
+\item 
+\hypertarget{class_capture_thread_a9c9bdd94288f4c453c58460b19ab8b93}{void {\bfseries Set\+Continuous\+Recording} (bool bo\+Continuous)}\label{class_capture_thread_a9c9bdd94288f4c453c58460b19ab8b93}
+
+\item 
+\hypertarget{class_capture_thread_ac33ec0ae29f3334e31b16f20f715b0f8}{void {\bfseries Set\+Current\+Plot\+Info\+Path} (const std\+::string \&current\+Plot\+Info\+Path)}\label{class_capture_thread_ac33ec0ae29f3334e31b16f20f715b0f8}
+
+\item 
+\hypertarget{class_capture_thread_a47721b704497e30384749c32284e3543}{void {\bfseries Set\+Image\+Processing\+Mode} (\hyperlink{group___common_interface_gaee0074fce284fcdf9ead4ad607e85a06}{T\+Image\+Processing\+Mode} mode)}\label{class_capture_thread_a47721b704497e30384749c32284e3543}
+
+\item 
+\hypertarget{class_capture_thread_a7bf48c382e7851d568b44c0e7884b488}{bool {\bfseries Set\+Live\+Mode} (bool bo\+On, bool bo\+Inform\+User\+On\+Record\+Start=true)}\label{class_capture_thread_a7bf48c382e7851d568b44c0e7884b488}
+
+\item 
+\hypertarget{class_capture_thread_a861574b9268eb73c3697d6a7e0f2b65b}{void {\bfseries Set\+Multi\+Frame\+Sequence\+Size} (size\+\_\+t sequence\+Size)}\label{class_capture_thread_a861574b9268eb73c3697d6a7e0f2b65b}
+
+\item 
+\hypertarget{class_capture_thread_a6f662e20d2cc72fc5b01c64f000ede4c}{void {\bfseries Set\+Pending\+Image\+Queue\+Depth} (unsigned int value)}\label{class_capture_thread_a6f662e20d2cc72fc5b01c64f000ede4c}
+
+\item 
+\hypertarget{class_capture_thread_afd51d5a09d8ec4053dada37fc049512e}{bool {\bfseries Set\+Record\+Mode} (bool bo\+On)}\label{class_capture_thread_afd51d5a09d8ec4053dada37fc049512e}
+
+\item 
+\hypertarget{class_capture_thread_a2b0f6ebc9c7150a742dda6678ae3fbd7}{void {\bfseries Set\+Record\+Sequence\+Size} (size\+\_\+t sequence\+Size)}\label{class_capture_thread_a2b0f6ebc9c7150a742dda6678ae3fbd7}
+
+\item 
+\hypertarget{class_capture_thread_aa6eddace76e950ecdbef9132848b70a9}{void {\bfseries Unlock\+Request} (int nr, bool bo\+Force\+Unlock=false)}\label{class_capture_thread_aa6eddace76e950ecdbef9132848b70a9}
+
+\item 
+\hypertarget{class_capture_thread_a5e9511d7d715e971a35e327a955c424d}{void {\bfseries Update\+Setting\+Table} (void)}\label{class_capture_thread_a5e9511d7d715e971a35e327a955c424d}
+
+\item 
+\hypertarget{class_capture_thread_a9474b16f7c92216025a77842dcc5a4dc}{int {\bfseries Request\+Reset} (void)}\label{class_capture_thread_a9474b16f7c92216025a77842dcc5a4dc}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_capture_thread_a4dbbe4fe65412b8d04edbf47ffcdf968}{void $\ast$ {\bfseries Entry} (void)}\label{class_capture_thread_a4dbbe4fe65412b8d04edbf47ffcdf968}
+
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Capture\+Thread.\+h\item 
+apps/mv\+Prop\+View/Capture\+Thread.\+cpp\end{DoxyCompactItemize}

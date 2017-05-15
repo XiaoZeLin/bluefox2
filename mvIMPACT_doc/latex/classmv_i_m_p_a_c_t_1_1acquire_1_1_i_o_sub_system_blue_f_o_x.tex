@@ -1,0 +1,266 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Blue\+F\+O\+X类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+}
+
+
+A class to handle the digital inputs and outputs for {\bfseries mv\+Blue\+F\+O\+X} U\+S\+B cameras({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Blue\+F\+O\+X 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=198pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Blue\+F\+O\+X 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5ec444f1ca44491ea53969ba7690e736}{I\+O\+Sub\+System\+Blue\+F\+O\+X} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}} object. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5f72cdec1f31de3f4a277dbeef08ec3f}{read\+Input\+Register} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of the digital input register. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ac5eab2ad62eda386fd85b1302d34b19a}{read\+Input\+Register\+Atomic} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of the digital input register. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a966200aab95be5ab603bfeb79d7dbe69}{read\+Output\+Register} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of the digital output register. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a48b3fbb9d136f6ca665da43dbf837ecc}{read\+Output\+Register\+Atomic} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of the digital output register. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ace2cc014147d336748bd3529d7bae059}{write\+Output\+Register} (unsigned int value, unsigned int mask=U\+I\+N\+T\+\_\+\+M\+A\+X)
+\begin{DoxyCompactList}\small\item\em Alters the state of the digital output register. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a76a4bbf81a38ee82348cf08b7750835a}{write\+Output\+Register\+Atomic} (unsigned int value, unsigned int mask=U\+I\+N\+T\+\_\+\+M\+A\+X)
+\begin{DoxyCompactList}\small\item\em Alters the state of the digital output register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_gaa4592c9a62ecce3e3c51143034217bfd}{Property\+I\+Blue\+F\+O\+X\+Digital\+Input\+Threshold} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ab091e761b1045dbe668c16019cfe8292}{digital\+Input\+Threshold}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the threshold for the digital inputs in Volt. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to handle the digital inputs and outputs for {\bfseries mv\+Blue\+F\+O\+X} U\+S\+B cameras({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+\begin{DoxyNote}{注解}
+The {\bfseries mv\+Blue\+F\+O\+X} defines an additional property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_a5313c4dc12dd4b6bd30a2dbaef0f8436}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X\+::flash\+Mode}}. This might affect the state of the digital outputs as well.
+\end{DoxyNote}
+If a digital output is defined to be 'logic 0' but the flash mode is switched on for the same digital output, the output will be high during the expose time of the camera sensor. If a digital output is defined to be 'logic 1' the output will be high all the time.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5ec444f1ca44491ea53969ba7690e736}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!I\+O\+Sub\+System\+Blue\+F\+O\+X@{I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\index{I\+O\+Sub\+System\+Blue\+F\+O\+X@{I\+O\+Sub\+System\+Blue\+F\+O\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{I\+O\+Sub\+System\+Blue\+F\+O\+X}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5ec444f1ca44491ea53969ba7690e736}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5ec444f1ca44491ea53969ba7690e736_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5f72cdec1f31de3f4a277dbeef08ec3f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!read\+Input\+Register@{read\+Input\+Register}}
+\index{read\+Input\+Register@{read\+Input\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{read\+Input\+Register}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::read\+Input\+Register (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5f72cdec1f31de3f4a277dbeef08ec3f}
+
+
+Returns the current state of the digital input register. 
+
+This function can be used to read all digital inputs as a single value. Each bit represents the status of one digital output pin.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+A value of '3' returned by this function means that digital inputs 0 and 1 are currently have a voltage considered as logical '1' applied to them. 
+
+实现了 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a2370e52d2818ff78f977dc1112027e15}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}.
+
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a5f72cdec1f31de3f4a277dbeef08ec3f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ac5eab2ad62eda386fd85b1302d34b19a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!read\+Input\+Register\+Atomic@{read\+Input\+Register\+Atomic}}
+\index{read\+Input\+Register\+Atomic@{read\+Input\+Register\+Atomic}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{read\+Input\+Register\+Atomic}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::read\+Input\+Register\+Atomic (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ac5eab2ad62eda386fd85b1302d34b19a}
+
+
+Returns the current state of the digital input register. 
+
+This function can be used to read all digital inputs as a single value {\bfseries at} the same time. Each bit represents the status of one digital output pin.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+A value of '3' returned by this function means that digital inputs 0 and 1 are currently have a voltage considered as logical '1' applied to them. 
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ac5eab2ad62eda386fd85b1302d34b19a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a966200aab95be5ab603bfeb79d7dbe69}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!read\+Output\+Register@{read\+Output\+Register}}
+\index{read\+Output\+Register@{read\+Output\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{read\+Output\+Register}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::read\+Output\+Register (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a966200aab95be5ab603bfeb79d7dbe69}
+
+
+Returns the current state of the digital output register. 
+
+This function can be used to read all digital outputs as a single value. Each bit represents the status of one digital output pin.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+A value of '3' returned by this function means that digital output 0 and 1 are currently set to high. 
+
+实现了 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a8c39de7c726456fcb01b692cfff83e75}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}.
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a48b3fbb9d136f6ca665da43dbf837ecc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!read\+Output\+Register\+Atomic@{read\+Output\+Register\+Atomic}}
+\index{read\+Output\+Register\+Atomic@{read\+Output\+Register\+Atomic}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{read\+Output\+Register\+Atomic}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::read\+Output\+Register\+Atomic (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a48b3fbb9d136f6ca665da43dbf837ecc}
+
+
+Returns the current state of the digital output register. 
+
+This function can be used to read all digital outputs as a single value {\bfseries at} the same time. Each bit represents the status of one digital output pin.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+A value of '3' returned by this function means that digital output 0 and 1 are currently set to high. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ace2cc014147d336748bd3529d7bae059}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!write\+Output\+Register@{write\+Output\+Register}}
+\index{write\+Output\+Register@{write\+Output\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{write\+Output\+Register}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::write\+Output\+Register (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{value, }
+\item[{unsigned int}]{mask = {\ttfamily UINT\+\_\+MAX}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ace2cc014147d336748bd3529d7bae059}
+
+
+Alters the state of the digital output register. 
+
+This function can be used to alter the state of certain (or all) digital outputs with a single function call. By working with the parameter {\itshape mask} certain bits can remain unaffected.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+If the previous state of a digital output register was '5', which means that outputs 0 and 2 are set to high a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a196daf5a92ce713e5bd7a192aa1bef17}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::write\+Output\+Register}} with {\itshape value} set to 2 and {\itshape mask} set to 3 would result in '6' as the new value for the output register. Pin 2 will remain unaffected, as {\itshape mask} states just to modify pin 0 and 1 ( 3 = 00000011 binary ). 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em value} & The value to be applied to the output register \\
+\hline
+\mbox{\tt in}  & {\em mask} & The mask to specify which pins to modify. A bit set to '1' in this parameter means that the state of this output has to adopt its style according to the value in {\itshape value}. \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a196daf5a92ce713e5bd7a192aa1bef17}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}.
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a76a4bbf81a38ee82348cf08b7750835a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!write\+Output\+Register\+Atomic@{write\+Output\+Register\+Atomic}}
+\index{write\+Output\+Register\+Atomic@{write\+Output\+Register\+Atomic}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{write\+Output\+Register\+Atomic}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::write\+Output\+Register\+Atomic (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{value, }
+\item[{unsigned int}]{mask = {\ttfamily UINT\+\_\+MAX}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_a76a4bbf81a38ee82348cf08b7750835a}
+
+
+Alters the state of the digital output register. 
+
+This function can be used to alter the state of certain (or all) digital outputs with a single function call {\bfseries at} the same time. By working with the parameter {\itshape mask} certain bits can remain unaffected.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+If the previous state of a digital output register was '5', which means that outputs 0 and 2 are set to high a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a196daf5a92ce713e5bd7a192aa1bef17}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::write\+Output\+Register}} with {\itshape value} set to 2 and {\itshape mask} set to 3 would result in '6' as the new value for the output register. Pin 2 will remain unaffected, as {\itshape mask} states just to modify pin 0 and 1 ( 3 = 00000011 binary ). 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em value} & The value to be applied to the output register \\
+\hline
+\mbox{\tt in}  & {\em mask} & The mask to specify which pins to modify. A bit set to '1' in this parameter means that the state of this output has to adopt its style according to the value in {\itshape value}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ab091e761b1045dbe668c16019cfe8292}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}!digital\+Input\+Threshold@{digital\+Input\+Threshold}}
+\index{digital\+Input\+Threshold@{digital\+Input\+Threshold}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X}}
+\subsubsection[{digital\+Input\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Blue\+F\+O\+X\+Digital\+Input\+Threshold} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Blue\+F\+O\+X\+::digital\+Input\+Threshold}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x_ab091e761b1045dbe668c16019cfe8292}
+
+
+An enumerated integer property defining the threshold for the digital inputs in Volt. 
+
+If a voltage applied to the digital input lies above the threshold this pin will be considered as 'logic 1' otherwise it will be considered as 'logic 0'.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Blue\+F\+O\+X\+Digital\+Input\+Threshold}.
+
+\begin{DoxyNote}{注解}
+This property is {\bfseries read-\/only} for {\bfseries mv\+Blue\+F\+O\+X-\/\+M} devices and will always be 2\+V. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

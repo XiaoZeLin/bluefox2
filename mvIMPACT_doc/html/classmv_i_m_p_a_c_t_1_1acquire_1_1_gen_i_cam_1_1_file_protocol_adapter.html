@@ -1,0 +1,585 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::FileProtocolAdapter类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::FileProtocolAdapter类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface_file_stream.html">GenICam interface layout(file stream)</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Adapter between the std::iostreambuf and the SFNC Features representing the device file system.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam___file_stream_8h_source.html">mvIMPACT_acquire_GenICam_FileStream.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9fbeda8fcbc8e475f629159309d0344f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fbeda8fcbc8e475f629159309d0344f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a9fbeda8fcbc8e475f629159309d0344f">FileProtocolAdapter</a> ()</td></tr>
+<tr class="memdesc:a9fbeda8fcbc8e475f629159309d0344f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor. <br /></td></tr>
+<tr class="separator:a9fbeda8fcbc8e475f629159309d0344f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b697a1b2250aca9e7b118d83f7e12ac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6b697a1b2250aca9e7b118d83f7e12ac">attach</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a6b697a1b2250aca9e7b118d83f7e12ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attach file protocol adapter to the corresponding properties.  <a href="#a6b697a1b2250aca9e7b118d83f7e12ac">更多...</a><br /></td></tr>
+<tr class="separator:a6b697a1b2250aca9e7b118d83f7e12ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849322aeba6552b08ac0ef4c69c390b0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0">openFile</a> (const char *pFileName, std::ios_base::openmode mode)</td></tr>
+<tr class="memdesc:a849322aeba6552b08ac0ef4c69c390b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Open a file on the device.  <a href="#a849322aeba6552b08ac0ef4c69c390b0">更多...</a><br /></td></tr>
+<tr class="separator:a849322aeba6552b08ac0ef4c69c390b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89f55f99f0e20b79d2d7258f04fc5804"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804">closeFile</a> (const char *pFileName)</td></tr>
+<tr class="memdesc:a89f55f99f0e20b79d2d7258f04fc5804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Close a file on the device.  <a href="#a89f55f99f0e20b79d2d7258f04fc5804">更多...</a><br /></td></tr>
+<tr class="separator:a89f55f99f0e20b79d2d7258f04fc5804"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fb017f1185bb2d85069dd77d50654b9"><td class="memItemLeft" align="right" valign="top">std::streamsize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9">write</a> (const char *pBuf, int64_type offs, int64_type len, const char *pFileName)</td></tr>
+<tr class="memdesc:a6fb017f1185bb2d85069dd77d50654b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Writes data into a file.  <a href="#a6fb017f1185bb2d85069dd77d50654b9">更多...</a><br /></td></tr>
+<tr class="separator:a6fb017f1185bb2d85069dd77d50654b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d4353bb8aa6f0b2d41a14c52eb2ab5"><td class="memItemLeft" align="right" valign="top">std::streamsize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5">read</a> (char *pBuf, int64_type offs, std::streamsize len, const char *pFileName)</td></tr>
+<tr class="memdesc:a37d4353bb8aa6f0b2d41a14c52eb2ab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read data from the device into a buffer.  <a href="#a37d4353bb8aa6f0b2d41a14c52eb2ab5">更多...</a><br /></td></tr>
+<tr class="separator:a37d4353bb8aa6f0b2d41a14c52eb2ab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb66bce933bb96624a3e3ae9427ec418"><td class="memItemLeft" align="right" valign="top">int64_type&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418">getBufSize</a> (const char *pFileName, std::ios_base::openmode mode)</td></tr>
+<tr class="memdesc:acb66bce933bb96624a3e3ae9427ec418"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch max FileAccessBuffer length for a file.  <a href="#acb66bce933bb96624a3e3ae9427ec418">更多...</a><br /></td></tr>
+<tr class="separator:acb66bce933bb96624a3e3ae9427ec418"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c807ddd866348a2bcf9b8886640427"><td class="memItemLeft" align="right" valign="top">std::streamsize&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#ae0c807ddd866348a2bcf9b8886640427">size</a> (void) const </td></tr>
+<tr class="memdesc:ae0c807ddd866348a2bcf9b8886640427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fetch the size of the file currently selected on the device.  <a href="#ae0c807ddd866348a2bcf9b8886640427">更多...</a><br /></td></tr>
+<tr class="separator:ae0c807ddd866348a2bcf9b8886640427"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Adapter between the std::iostreambuf and the SFNC Features representing the device file system. </p>
+<p>The adapter assumes, that the features provide stdio file access compatible semantic </p>
+</div><h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a6b697a1b2250aca9e7b118d83f7e12ac"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::GenICam::FileProtocolAdapter::attach </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Attach file protocol adapter to the corresponding properties. </p>
+<dl class="section return"><dt>返回</dt><dd>true if attach was successful, false if not </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9" title="Returns the current initialisation status in this process. " alt="" coords="260,5,409,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. " alt="" coords="471,54,620,95"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="253,121,416,177"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="471,198,620,239"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="675,58,893,99"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="953,25,1103,66"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="941,90,1115,131"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1163,112,1391,168"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1440,119,1664,161"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="464,119,627,175"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="700,126,868,167"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6b697a1b2250aca9e7b118d83f7e12ac_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e" title="Opens a file on the device. " alt="" coords="257,5,490,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60" title="Opens a file on the device. " alt="" coords="254,70,493,111"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b" title="Opens a file on the device. " alt="" coords="545,5,788,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619" title="Open file on device in write mode. " alt="" coords="542,70,791,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a89f55f99f0e20b79d2d7258f04fc5804"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::GenICam::FileProtocolAdapter::closeFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pFileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Close a file on the device. </p>
+<dl class="section return"><dt>返回</dt><dd>true on success, false on error </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFileName</td><td>Name of the file to open. The file name must exist in the Enumeration FileSelector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="253,5,403,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="729,129,879,170"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0" title="Calls an underlying driver function. " alt="" coords="253,70,403,111"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="451,70,669,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="717,11,891,53"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="939,33,1167,89"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1216,41,1440,82"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a89f55f99f0e20b79d2d7258f04fc5804_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f" title="Closes a file on the device. " alt="" coords="256,85,453,141"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6" title="Closes a file on the device. " alt="" coords="253,165,456,221"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#aadb6c054750ff6390f13d5df7241ef8e" title="class destructor. " alt="" coords="512,5,709,61"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2c2982dc80de791f717eb33c400b56" title="Close the file on the device. " alt="" coords="507,85,714,141"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a96a881b88fe2df12b9a218dcebfd15c4" title="class destructor. " alt="" coords="509,165,712,221"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a18c100cf08c0f6d64230a569de872a40" title="Close the file on device. " alt="" coords="504,245,717,301"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="acb66bce933bb96624a3e3ae9427ec418"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_type mvIMPACT::acquire::GenICam::FileProtocolAdapter::getBufSize </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ios_base::openmode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fetch max FileAccessBuffer length for a file. </p>
+<dl class="section return"><dt>返回</dt><dd>Max length of FileAccessBuffer in the given mode on the given file </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFileName</td><td>Name of the file to open. The file name must exist in the Enumeration FileSelector </td></tr>
+    <tr><td class="paramname">mode</td><td>mode to open the file. The mode must exist in the Enumeration FileOpenMode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="272,5,421,46"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016" title="Reads the max size(in bytes) of binary data this property can store. " alt="" coords="253,69,440,125"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="488,41,707,82"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="767,7,916,49"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="755,73,928,114"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="977,95,1205,151"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1253,102,1477,143"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_acb66bce933bb96624a3e3ae9427ec418_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e" title="Opens a file on the device. " alt="" coords="257,5,490,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60" title="Opens a file on the device. " alt="" coords="254,70,493,111"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b" title="Opens a file on the device. " alt="" coords="545,5,788,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619" title="Open file on device in write mode. " alt="" coords="542,70,791,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a849322aeba6552b08ac0ef4c69c390b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::GenICam::FileProtocolAdapter::openFile </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::ios_base::openmode&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Open a file on the device. </p>
+<dl class="section return"><dt>返回</dt><dd>true on success, false on error </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pFileName</td><td>Name of the file to open. The file name must exist in the Enumeration FileSelector </td></tr>
+    <tr><td class="paramname">mode</td><td>mode to open the file. The mode must exist in the Enumeration FileOpenMode </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="253,5,403,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="253,70,403,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="729,194,879,235"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0" title="Calls an underlying driver function. " alt="" coords="253,135,403,177"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="451,135,669,177"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="717,77,891,118"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="939,99,1167,155"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1216,106,1440,147"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a849322aeba6552b08ac0ef4c69c390b0_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e" title="Opens a file on the device. " alt="" coords="257,5,490,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60" title="Opens a file on the device. " alt="" coords="254,70,493,111"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b" title="Opens a file on the device. " alt="" coords="545,5,788,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619" title="Open file on device in write mode. " alt="" coords="542,70,791,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a37d4353bb8aa6f0b2d41a14c52eb2ab5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::streamsize mvIMPACT::acquire::GenICam::FileProtocolAdapter::read </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>pBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_type&#160;</td>
+          <td class="paramname"><em>offs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::streamsize&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pFileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read data from the device into a buffer. </p>
+<dl class="section return"><dt>返回</dt><dd>number of bytes successfully read </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBuf</td><td>Target buffer </td></tr>
+    <tr><td class="paramname">offs</td><td>Offset in the device file to read from </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to read </td></tr>
+    <tr><td class="paramname">pFileName</td><td>Name of the file to write into The file name must exist in the Enumeration FileSelector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a37d4353bb8aa6f0b2d41a14c52eb2ab5_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="576,39,725,80"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="1084,88,1233,130"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016" title="Reads the max size(in bytes) of binary data this property can store. " alt="" coords="557,110,744,166"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aec8c49f90f853f085444f0167385b3b5" title="Reads the maximum value from a property. " alt="" coords="289,136,495,178"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13" title="Writes one value to the property. " alt="" coords="313,202,471,243"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0" title="Calls an underlying driver function. " alt="" coords="576,358,725,399"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3" title="Reads a value from a property. " alt="" coords="314,332,470,374"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a29342383600102e22fd6e235fcd63728" title="Reads a value stored in the property as binary data. " alt="" coords="317,267,467,308"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="805,154,1024,195"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="1072,154,1245,195"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1294,176,1522,232"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1571,183,1795,224"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8fe526b2493641d5bdc79e20429f73c8" title="Returns the size(in bytes) needed for the binary representation of the string buffer. " alt="" coords="545,204,757,246"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae0c807ddd866348a2bcf9b8886640427"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::streamsize mvIMPACT::acquire::GenICam::FileProtocolAdapter::size </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Fetch the size of the file currently selected on the device. </p>
+<dl class="section return"><dt>返回</dt><dd>The size(in bytes) of the file currently selected. </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3" title="Reads a value from a property. " alt="" coords="286,5,442,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_ae0c807ddd866348a2bcf9b8886640427_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a5994f4d449d11de4188201f74ffafd94" title="Fetch the size of the file currently selected on the device. " alt="" coords="285,5,515,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2968a48ee9754c0b8731298385beaa" title="Returns the size of the file on the device. " alt="" coords="563,5,802,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fb017f1185bb2d85069dd77d50654b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::streamsize mvIMPACT::acquire::GenICam::FileProtocolAdapter::write </td>
+          <td>(</td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_type&#160;</td>
+          <td class="paramname"><em>offs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int64_type&#160;</td>
+          <td class="paramname"><em>len</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>pFileName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Writes data into a file. </p>
+<dl class="section return"><dt>返回</dt><dd>Number of bytes written </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pBuf</td><td>Source buffer </td></tr>
+    <tr><td class="paramname">offs</td><td>Offset into the device file </td></tr>
+    <tr><td class="paramname">len</td><td>Number of bytes to write </td></tr>
+    <tr><td class="paramname">pFileName</td><td>Name of the file to write into The file name must exist in the Enumeration FileSelector </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter_a6fb017f1185bb2d85069dd77d50654b9_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="283,64,432,105"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="788,70,937,112"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a8d0247ac6a035407c0ba751bc23ac016" title="Reads the max size(in bytes) of binary data this property can store. " alt="" coords="264,128,451,184"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aec8c49f90f853f085444f0167385b3b5" title="Reads the maximum value from a property. " alt="" coords="254,208,461,249"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#af07a08bb44499e26f0886a4aca9c5e13" title="Writes one value to the property. " alt="" coords="278,273,437,314"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#ac08293bd5d249b57a66ea5d325c9a37a" title="Writes a block of binary data to one entry of the property. " alt="" coords="281,338,434,380"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0" title="Calls an underlying driver function. " alt="" coords="283,404,432,445"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html#aa9ee83a5b6b5243f05a85a769ef3d3f3" title="Reads a value from a property. " alt="" coords="279,469,435,510"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="509,136,728,177"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="776,136,949,177"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="998,158,1226,214"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1275,165,1499,206"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam___file_stream_8h_source.html">mvIMPACT_acquire_GenICam_FileStream.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html">FileProtocolAdapter</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

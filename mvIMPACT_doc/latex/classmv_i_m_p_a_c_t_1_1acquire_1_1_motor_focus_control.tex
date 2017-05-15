@@ -1,0 +1,129 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Motor\+Focus\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}}
+}
+
+
+Properties for configuring settings belonging to the motor focus control ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Motor\+Focus\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Motor\+Focus\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a0f790215b1eadcd259f7ada4257ab70c}{Motor\+Focus\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a4670bcf5c3ffe82afc04de1deaea292e}{motor\+Focus\+Send\+Buffer}
+\begin{DoxyCompactList}\small\item\em A string property storing a command to be sent to the motor focus. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae1318dcd821e35abdb35337352d1c5b6}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae1318dcd821e35abdb35337352d1c5b6}{motor\+Focus\+Receive\+Buffer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae1318dcd821e35abdb35337352d1c5b6}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) that will contain answers sent by the motor focus controller. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a52ccaf1b60154618b17112d50209cee3}{motor\+Focus\+Send}
+\begin{DoxyCompactList}\small\item\em Calling this function will send the value of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a4670bcf5c3ffe82afc04de1deaea292e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Send\+Buffer}} to the hardware. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ab7b8de1875dfaf3ee35e2e9edc5b4284}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ab7b8de1875dfaf3ee35e2e9edc5b4284}{motor\+Focus\+Increment}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ab7b8de1875dfaf3ee35e2e9edc5b4284}
+
+\begin{DoxyCompactList}\small\item\em An integer property storing an increment(in encoder counts) that will be used by subsequent calls to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a2e540b8e1e47709808be060d21ae20d6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Near}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a263ccaf6b3608365439c9feee08d36be}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Far}} commands. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a2e540b8e1e47709808be060d21ae20d6}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a2e540b8e1e47709808be060d21ae20d6}{motor\+Focus\+Near}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a2e540b8e1e47709808be060d21ae20d6}
+
+\begin{DoxyCompactList}\small\item\em Calling this function will cause the motor focus to move forward by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ab7b8de1875dfaf3ee35e2e9edc5b4284}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Increment}} encoder units. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a263ccaf6b3608365439c9feee08d36be}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a263ccaf6b3608365439c9feee08d36be}{motor\+Focus\+Far}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a263ccaf6b3608365439c9feee08d36be}
+
+\begin{DoxyCompactList}\small\item\em Calling this function will cause the motor focus to move backward by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ab7b8de1875dfaf3ee35e2e9edc5b4284}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Increment}} encoder units. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_abaaf6edab0175dc91920aa5a08ae842d}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_abaaf6edab0175dc91920aa5a08ae842d}{motor\+Focus\+Absolute\+Position\+Current}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_abaaf6edab0175dc91920aa5a08ae842d}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) storing the current absolute position(in encoder counts). \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae7aae69dc4b7f21dc301c8074d2da0c4}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae7aae69dc4b7f21dc301c8074d2da0c4}{motor\+Focus\+Absolute\+Position\+Desired}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae7aae69dc4b7f21dc301c8074d2da0c4}
+
+\begin{DoxyCompactList}\small\item\em An integer property storing an absolute position(in encoder counts) that will be used by subsequent calls to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a8c8d021c70aae020904a1cf3324ab6de}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Move\+To\+Absolute\+Position\+Desired}} command. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a8c8d021c70aae020904a1cf3324ab6de}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a8c8d021c70aae020904a1cf3324ab6de}{motor\+Focus\+Move\+To\+Absolute\+Position\+Desired}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a8c8d021c70aae020904a1cf3324ab6de}
+
+\begin{DoxyCompactList}\small\item\em Calling this function will cause the motor focus to move to the position defined by the value of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae7aae69dc4b7f21dc301c8074d2da0c4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Absolute\+Position\+Desired}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Properties for configuring settings belonging to the motor focus control ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+Properties in this class will only be available if a device is fitted with a focus motor.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a0f790215b1eadcd259f7ada4257ab70c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}!Motor\+Focus\+Control@{Motor\+Focus\+Control}}
+\index{Motor\+Focus\+Control@{Motor\+Focus\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}}
+\subsubsection[{Motor\+Focus\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::\+Motor\+Focus\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a0f790215b1eadcd259f7ada4257ab70c}
+
+
+brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a0f790215b1eadcd259f7ada4257ab70c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a52ccaf1b60154618b17112d50209cee3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}!motor\+Focus\+Send@{motor\+Focus\+Send}}
+\index{motor\+Focus\+Send@{motor\+Focus\+Send}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}}
+\subsubsection[{motor\+Focus\+Send}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Send}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a52ccaf1b60154618b17112d50209cee3}
+
+
+Calling this function will send the value of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a4670bcf5c3ffe82afc04de1deaea292e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Send\+Buffer}} to the hardware. 
+
+Afterwards {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_ae1318dcd821e35abdb35337352d1c5b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Receive\+Buffer}} will contain the hardwares answer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a4670bcf5c3ffe82afc04de1deaea292e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}!motor\+Focus\+Send\+Buffer@{motor\+Focus\+Send\+Buffer}}
+\index{motor\+Focus\+Send\+Buffer@{motor\+Focus\+Send\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control}}
+\subsubsection[{motor\+Focus\+Send\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Send\+Buffer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a4670bcf5c3ffe82afc04de1deaea292e}
+
+
+A string property storing a command to be sent to the motor focus. 
+
+To actually send the command, the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control_a52ccaf1b60154618b17112d50209cee3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Motor\+Focus\+Control\+::motor\+Focus\+Send}} must be executed. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

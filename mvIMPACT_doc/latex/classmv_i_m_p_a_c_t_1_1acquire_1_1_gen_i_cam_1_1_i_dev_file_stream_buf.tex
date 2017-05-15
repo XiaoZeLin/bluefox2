@@ -1,0 +1,232 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:I\+Dev\+File\+Stream\+Buf$<$ Char\+Type, Traits $>$ 模板类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf$<$ Char\+Type, Traits $>$@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf$<$ Char\+Type, Traits $>$}}
+}
+
+
+An input stream buffer derived from std\+::basic\+\_\+streambuf used to read from a file of a device.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam\+\_\+\+File\+Stream.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:I\+Dev\+File\+Stream\+Buf$<$ Char\+Type, Traits $>$ 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:I\+Dev\+File\+Stream\+Buf$<$ Char\+Type, Traits $>$ 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a17357fc5b1015fe5c851cdcf07ade0bf}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a17357fc5b1015fe5c851cdcf07ade0bf}{I\+Dev\+File\+Stream\+Buf} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a17357fc5b1015fe5c851cdcf07ade0bf}
+
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}} object. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_aadb6c054750ff6390f13d5df7241ef8e}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_aadb6c054750ff6390f13d5df7241ef8e}{$\sim$\+I\+Dev\+File\+Stream\+Buf} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_aadb6c054750ff6390f13d5df7241ef8e}
+
+\begin{DoxyCompactList}\small\item\em class destructor. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf}{filebuf\+\_\+type} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_abeac383d8920db202b6b9aa6d5ec557e}{open} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const char $\ast$p\+File\+Name, std\+::ios\+\_\+base\+::openmode mode=std\+::ios\+\_\+base\+::in)
+\begin{DoxyCompactList}\small\item\em Opens a file on the device. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a1582174c671638bd6faedac8e60890e6}{is\+\_\+open} (void) const 
+\begin{DoxyCompactList}\small\item\em Determines if a file is open. \end{DoxyCompactList}\item 
+std\+::streamsize \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a5994f4d449d11de4188201f74ffafd94}{size} (void) const 
+\begin{DoxyCompactList}\small\item\em Fetch the size of the file currently selected on the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf}{filebuf\+\_\+type} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a0bdb237270baa68431793dcf5de9c30f}{close} (void)
+\begin{DoxyCompactList}\small\item\em Closes a file on the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a3af0dc0fddaf00f4be5bfd585d49f01b}{int\+\_\+type {\bfseries underflow} (void)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a3af0dc0fddaf00f4be5bfd585d49f01b}
+
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a27aaa03e26dd58b103c46f369ef74589}{int\+\_\+type {\bfseries pbackfail} (int\+\_\+type c)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a27aaa03e26dd58b103c46f369ef74589}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$typename Char\+Type, typename Traits$>$class mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf$<$ Char\+Type, Traits $>$}
+
+An input stream buffer derived from std\+::basic\+\_\+streambuf used to read from a file of a device. 
+
+\begin{DoxyNote}{注解}
+See description of the std\+::basic\+\_\+streambuf in a S\+T\+L implementation of your choice to find out more about how to use this object. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a0bdb237270baa68431793dcf5de9c30f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}!close@{close}}
+\index{close@{close}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Char\+Type , typename Traits $>$ {\bf filebuf\+\_\+type}$\ast$ {\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}$<$ Char\+Type, Traits $>$\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a0bdb237270baa68431793dcf5de9c30f}
+
+
+Closes a file on the device. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to itself if successful
+\item 0 otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a0bdb237270baa68431793dcf5de9c30f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a0bdb237270baa68431793dcf5de9c30f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a1582174c671638bd6faedac8e60890e6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}!is\+\_\+open@{is\+\_\+open}}
+\index{is\+\_\+open@{is\+\_\+open}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}}
+\subsubsection[{is\+\_\+open}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Char\+Type , typename Traits $>$ bool {\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}$<$ Char\+Type, Traits $>$\+::is\+\_\+open (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a1582174c671638bd6faedac8e60890e6}
+
+
+Determines if a file is open. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the file is open
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a1582174c671638bd6faedac8e60890e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_abeac383d8920db202b6b9aa6d5ec557e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}!open@{open}}
+\index{open@{open}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Char\+Type , typename Traits $>$ {\bf filebuf\+\_\+type}$\ast$ {\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}$<$ Char\+Type, Traits $>$\+::open (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const char $\ast$}]{p\+File\+Name, }
+\item[{std\+::ios\+\_\+base\+::openmode}]{mode = {\ttfamily std\+:\+:ios\+\_\+base\+:\+:in}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_abeac383d8920db202b6b9aa6d5ec557e}
+
+
+Opens a file on the device. 
+
+The member function calls rdbuf -\/$>$ open(\+\_\+\+Filename, \+\_\+\+Mode $\vert$ ios\+\_\+base\+::in). If open fails, the function calls setstate(failbit), which may throw an ios\+\_\+base\+::failure exception. 
+\begin{DoxyParams}{参数}
+{\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+{\em p\+File\+Name} & Name of the file to open \\
+\hline
+{\em mode} & File open mode. One of the enumerations in ios\+\_\+base\+::openmode \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_abeac383d8920db202b6b9aa6d5ec557e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_abeac383d8920db202b6b9aa6d5ec557e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a5994f4d449d11de4188201f74ffafd94}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}!size@{size}}
+\index{size@{size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename Char\+Type , typename Traits $>$ std\+::streamsize {\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+I\+Dev\+File\+Stream\+Buf}$<$ Char\+Type, Traits $>$\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a5994f4d449d11de4188201f74ffafd94}
+
+
+Fetch the size of the file currently selected on the device. 
+
+\begin{DoxyReturn}{返回}
+The size(in bytes) of the file currently selected. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a5994f4d449d11de4188201f74ffafd94_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf_a5994f4d449d11de4188201f74ffafd94_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam\+\_\+\+File\+Stream.\+h\end{DoxyCompactItemize}

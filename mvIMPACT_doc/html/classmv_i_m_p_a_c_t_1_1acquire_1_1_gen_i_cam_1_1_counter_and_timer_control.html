@@ -1,0 +1,1252 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::CounterAndTimerControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::CounterAndTimerControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category that contains the Counter and Timer control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::CounterAndTimerControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="759,131,921,187"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,210,555,251"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="753,210,927,251"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,257,355,298"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,281,728,322"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,257,155,298"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9ca851d25166e401670195607f772ef4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a9ca851d25166e401670195607f772ef4">CounterAndTimerControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a9ca851d25166e401670195607f772ef4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html" title="Category that contains the Counter and Timer control features. ">mvIMPACT::acquire::GenICam::CounterAndTimerControl</a></b> object.  <a href="#a9ca851d25166e401670195607f772ef4">更多...</a><br /></td></tr>
+<tr class="separator:a9ca851d25166e401670195607f772ef4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2a8a3d52a70268d61a7f33ccedaa6c9c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a2a8a3d52a70268d61a7f33ccedaa6c9c">counterSelector</a></td></tr>
+<tr class="memdesc:a2a8a3d52a70268d61a7f33ccedaa6c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Counter to configure.  <a href="#a2a8a3d52a70268d61a7f33ccedaa6c9c">更多...</a><br /></td></tr>
+<tr class="separator:a2a8a3d52a70268d61a7f33ccedaa6c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a449221a170934fd17e3c3253f935074a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a449221a170934fd17e3c3253f935074a">counterEventSource</a></td></tr>
+<tr class="memdesc:a449221a170934fd17e3c3253f935074a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Select the events that will be the source to increment the Counter.  <a href="#a449221a170934fd17e3c3253f935074a">更多...</a><br /></td></tr>
+<tr class="separator:a449221a170934fd17e3c3253f935074a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab70baba2a6ef16bf43522414274b3740"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ab70baba2a6ef16bf43522414274b3740">counterEventActivation</a></td></tr>
+<tr class="memdesc:ab70baba2a6ef16bf43522414274b3740"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the Activation mode <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source signal.  <a href="#ab70baba2a6ef16bf43522414274b3740">更多...</a><br /></td></tr>
+<tr class="separator:ab70baba2a6ef16bf43522414274b3740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec76b87580e5aef5ef034d11b44f1428"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aec76b87580e5aef5ef034d11b44f1428">counterResetSource</a></td></tr>
+<tr class="memdesc:aec76b87580e5aef5ef034d11b44f1428"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the signals that will be the source to reset the Counter.  <a href="#aec76b87580e5aef5ef034d11b44f1428">更多...</a><br /></td></tr>
+<tr class="separator:aec76b87580e5aef5ef034d11b44f1428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94c6a18dd21c201e57240f0d7427958f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a94c6a18dd21c201e57240f0d7427958f">counterResetActivation</a></td></tr>
+<tr class="memdesc:a94c6a18dd21c201e57240f0d7427958f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the Activation mode of the Counter Reset Source signal.  <a href="#a94c6a18dd21c201e57240f0d7427958f">更多...</a><br /></td></tr>
+<tr class="separator:a94c6a18dd21c201e57240f0d7427958f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8bb2c2964ae66f7250a37348e5b37ec6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a8bb2c2964ae66f7250a37348e5b37ec6">counterReset</a></td></tr>
+<tr class="memdesc:a8bb2c2964ae66f7250a37348e5b37ec6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Does a software reset of the selected Counter and starts it.  <a href="#a8bb2c2964ae66f7250a37348e5b37ec6">更多...</a><br /></td></tr>
+<tr class="separator:a8bb2c2964ae66f7250a37348e5b37ec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20aa23c911bdf08578a68724c5d52c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aa20aa23c911bdf08578a68724c5d52c3">counterValue</a></td></tr>
+<tr class="memdesc:aa20aa23c911bdf08578a68724c5d52c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Reads or writes the current value of the selected Counter.  <a href="#aa20aa23c911bdf08578a68724c5d52c3">更多...</a><br /></td></tr>
+<tr class="separator:aa20aa23c911bdf08578a68724c5d52c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a545eb5fdfc9e07d616a39080813acfd1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a545eb5fdfc9e07d616a39080813acfd1">counterValueAtReset</a></td></tr>
+<tr class="memdesc:a545eb5fdfc9e07d616a39080813acfd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Reads the value of the selected Counter when it was reset by a trigger or by an explicit CounterReset command.  <a href="#a545eb5fdfc9e07d616a39080813acfd1">更多...</a><br /></td></tr>
+<tr class="separator:a545eb5fdfc9e07d616a39080813acfd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08e6a31eafa31c6217d3fec3de878c61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a08e6a31eafa31c6217d3fec3de878c61">counterDuration</a></td></tr>
+<tr class="memdesc:a08e6a31eafa31c6217d3fec3de878c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the duration (or number of events) before the CounterEnd event is generated.  <a href="#a08e6a31eafa31c6217d3fec3de878c61">更多...</a><br /></td></tr>
+<tr class="separator:a08e6a31eafa31c6217d3fec3de878c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45615d283c7dff07df8e05fc4679ad40"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a45615d283c7dff07df8e05fc4679ad40">counterStatus</a></td></tr>
+<tr class="memdesc:a45615d283c7dff07df8e05fc4679ad40"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the current status of the Counter.  <a href="#a45615d283c7dff07df8e05fc4679ad40">更多...</a><br /></td></tr>
+<tr class="separator:a45615d283c7dff07df8e05fc4679ad40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a794668b6daf40a909de1d84fa1408859"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a794668b6daf40a909de1d84fa1408859">counterTriggerSource</a></td></tr>
+<tr class="memdesc:a794668b6daf40a909de1d84fa1408859"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the source to start the Counter.  <a href="#a794668b6daf40a909de1d84fa1408859">更多...</a><br /></td></tr>
+<tr class="separator:a794668b6daf40a909de1d84fa1408859"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3e718076d7c1392e360281172930b4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ae3e718076d7c1392e360281172930b4c">counterTriggerActivation</a></td></tr>
+<tr class="memdesc:ae3e718076d7c1392e360281172930b4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the activation mode of the trigger to start the Counter.  <a href="#ae3e718076d7c1392e360281172930b4c">更多...</a><br /></td></tr>
+<tr class="separator:ae3e718076d7c1392e360281172930b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98aaeada13d3a3f9edc2abfeeba6077e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a98aaeada13d3a3f9edc2abfeeba6077e">timerSelector</a></td></tr>
+<tr class="memdesc:a98aaeada13d3a3f9edc2abfeeba6077e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which Timer to configure.  <a href="#a98aaeada13d3a3f9edc2abfeeba6077e">更多...</a><br /></td></tr>
+<tr class="separator:a98aaeada13d3a3f9edc2abfeeba6077e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1129d4390fb2db6fc43dea90a16ca32c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a1129d4390fb2db6fc43dea90a16ca32c">timerDuration</a></td></tr>
+<tr class="memdesc:a1129d4390fb2db6fc43dea90a16ca32c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Sets the duration (in microseconds) of the Timer pulse.  <a href="#a1129d4390fb2db6fc43dea90a16ca32c">更多...</a><br /></td></tr>
+<tr class="separator:a1129d4390fb2db6fc43dea90a16ca32c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8814d7bc9581dadc3411ceef2a4cb1e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ac8814d7bc9581dadc3411ceef2a4cb1e">timerDurationRaw</a></td></tr>
+<tr class="memdesc:ac8814d7bc9581dadc3411ceef2a4cb1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#ac8814d7bc9581dadc3411ceef2a4cb1e">更多...</a><br /></td></tr>
+<tr class="separator:ac8814d7bc9581dadc3411ceef2a4cb1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed0a836e1b087f5d8977334073e34788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aed0a836e1b087f5d8977334073e34788">timerDelay</a></td></tr>
+<tr class="memdesc:aed0a836e1b087f5d8977334073e34788"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer.  <a href="#aed0a836e1b087f5d8977334073e34788">更多...</a><br /></td></tr>
+<tr class="separator:aed0a836e1b087f5d8977334073e34788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a98a11b7a8ffd4379474d8d2118564"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ae2a98a11b7a8ffd4379474d8d2118564">timerDelayRaw</a></td></tr>
+<tr class="memdesc:ae2a98a11b7a8ffd4379474d8d2118564"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#ae2a98a11b7a8ffd4379474d8d2118564">更多...</a><br /></td></tr>
+<tr class="separator:ae2a98a11b7a8ffd4379474d8d2118564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b4a47b49eeeb512aa34c9a9118fd378"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a5b4a47b49eeeb512aa34c9a9118fd378">timerReset</a></td></tr>
+<tr class="memdesc:a5b4a47b49eeeb512aa34c9a9118fd378"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Does a software reset of the selected timer and starts it.  <a href="#a5b4a47b49eeeb512aa34c9a9118fd378">更多...</a><br /></td></tr>
+<tr class="separator:a5b4a47b49eeeb512aa34c9a9118fd378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21f6143f2f21f2d22394455a9df22a42"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a21f6143f2f21f2d22394455a9df22a42">timerValue</a></td></tr>
+<tr class="memdesc:a21f6143f2f21f2d22394455a9df22a42"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Reads or writes the current value (in microseconds) of the selected Timer.  <a href="#a21f6143f2f21f2d22394455a9df22a42">更多...</a><br /></td></tr>
+<tr class="separator:a21f6143f2f21f2d22394455a9df22a42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a550a983e7334e89b755076bcee3cf80d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a550a983e7334e89b755076bcee3cf80d">timerValueRaw</a></td></tr>
+<tr class="memdesc:a550a983e7334e89b755076bcee3cf80d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#a550a983e7334e89b755076bcee3cf80d">更多...</a><br /></td></tr>
+<tr class="separator:a550a983e7334e89b755076bcee3cf80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119e611c5ad880862fd3194de9f63c61"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a119e611c5ad880862fd3194de9f63c61">timerStatus</a></td></tr>
+<tr class="memdesc:a119e611c5ad880862fd3194de9f63c61"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Returns the current status of the Timer.  <a href="#a119e611c5ad880862fd3194de9f63c61">更多...</a><br /></td></tr>
+<tr class="separator:a119e611c5ad880862fd3194de9f63c61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2a27d5ef880f1590cca9313ec84684"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#ace2a27d5ef880f1590cca9313ec84684">timerTriggerSource</a></td></tr>
+<tr class="memdesc:ace2a27d5ef880f1590cca9313ec84684"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the source of the trigger to start the Timer.  <a href="#ace2a27d5ef880f1590cca9313ec84684">更多...</a><br /></td></tr>
+<tr class="separator:ace2a27d5ef880f1590cca9313ec84684"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafe9deefca2b00ca24218d2763082720"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#aafe9deefca2b00ca24218d2763082720">timerTriggerActivation</a></td></tr>
+<tr class="memdesc:aafe9deefca2b00ca24218d2763082720"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the activation mode of the trigger to start the Timer.  <a href="#aafe9deefca2b00ca24218d2763082720">更多...</a><br /></td></tr>
+<tr class="separator:aafe9deefca2b00ca24218d2763082720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category that contains the Counter and Timer control features. </p>
+<p>A category that contains the Counter and Timer control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a9ca851d25166e401670195607f772ef4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::CounterAndTimerControl::CounterAndTimerControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html" title="Category that contains the Counter and Timer control features. ">mvIMPACT::acquire::GenICam::CounterAndTimerControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control_a9ca851d25166e401670195607f772ef4_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="496,23,659,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="285,88,448,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="285,168,448,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="707,38,925,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="985,5,1135,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="973,70,1147,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1195,92,1423,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1472,99,1696,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="496,103,659,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="503,182,652,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="732,110,900,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a08e6a31eafa31c6217d3fec3de878c61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterDuration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the duration (or number of events) before the CounterEnd event is generated. </p>
+<p>Sets the duration (or number of events) before the CounterEnd event is generated. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab70baba2a6ef16bf43522414274b3740"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterEventActivation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the Activation mode <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source signal. </p>
+<p>Selects the Activation mode <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source signal.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RisingEdge</b> (Display string: 'Rising Edge'): Counts on the Rising Edge of the signal.</li>
+<li><b>FallingEdge</b> (Display string: 'Falling Edge'): Counts on the Falling Edge of the signal.</li>
+<li><b>AnyEdge</b> (Display string: 'Any Edge'): Counts on the Falling or rising Edge of the selected signal.</li>
+<li><b>LevelHigh</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Activation')</li>
+<li><b>LevelLow</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Activation')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a449221a170934fd17e3c3253f935074a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterEventSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Select the events that will be the source to increment the Counter. </p>
+<p>Select the events that will be the source to increment the Counter.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Counter is stopped.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): Counts the number of Acquisition Trigger.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): Counts the number of missed Acquisition Start Trigger.</li>
+<li><b>AcquisitionStart</b> (Display string: 'Acquisition Start'): Counts the number of Acquisition Start.</li>
+<li><b>AcquisitionEnd</b> (Display string: 'Acquisition End'): Counts the number of Acquisition End.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): Counts the number of Frame Start Trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): Counts the number of missed Frame Start Trigger.</li>
+<li><b>FrameStart</b> (Display string: 'Frame Start'): Counts the number of Frame Start.</li>
+<li><b>FrameEnd</b> (Display string: 'Frame End'): Counts the number of Frame End.</li>
+<li><b>FrameBurstStart</b> (Display string: 'Frame Burst Start'): Counts the number of Frame Burst Start.</li>
+<li><b>FrameBurstEnd</b> (Display string: 'Frame Burst End'): Counts the number of Frame Burst End.</li>
+<li><b>LineTrigger</b> (Display string: 'Line Trigger'): Counts the number of Line Start Trigger.</li>
+<li><b>LineTriggerMissed</b> (Display string: 'Line Trigger Missed'): Counts the number of missed Line Start Trigger.</li>
+<li><b>LineStart</b> (Display string: 'Line Start'): Counts the number of Line Start.</li>
+<li><b>LineEnd</b> (Display string: 'Line End'): Counts the number of Line End.</li>
+<li><b>ExposureStart</b> (Display string: 'Exposure Start'): Counts the number of Exposure Start.</li>
+<li><b>ExposureEnd</b> (Display string: 'Exposure End'): Counts the number of Exposure End.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Counter0Start</b> (Display string: 'Counter 0 Start'): Counts the number of Counter Start.</li>
+<li><b>Counter1Start</b> (Display string: 'Counter 1 Start'): Counts the number of Counter Start.</li>
+<li><b>Counter2Start</b> (Display string: 'Counter 2 Start'): Counts the number of Counter Start.</li>
+<li><b>Counter#3#Start</b> (Display string: 'Counter #3# Start'): Counts the number of Counter Start.</li>
+<li><b>Counter0End</b> (Display string: 'Counter 0 End'): Counts the number of Counter End.</li>
+<li><b>Counter1End</b> (Display string: 'Counter 1 End'): Counts the number of Counter End.</li>
+<li><b>Counter2End</b> (Display string: 'Counter 2 End'): Counts the number of Counter End.</li>
+<li><b>Counter#3#End</b> (Display string: 'Counter #3# End'): Counts the number of Counter End.</li>
+<li><b>Timer0Start</b> (Display string: 'Timer 0 Start'): Counts the number of Timer Start pulses generated.</li>
+<li><b>Timer1Start</b> (Display string: 'Timer 1 Start'): Counts the number of Timer Start pulses generated.</li>
+<li><b>Timer2Start</b> (Display string: 'Timer 2 Start'): Counts the number of Timer Start pulses generated.</li>
+<li><b>Timer#3#Start</b> (Display string: 'Timer #3# Start'): Counts the number of Timer Start pulses generated.</li>
+<li><b>Timer0End</b> (Display string: 'Timer 0 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer1End</b> (Display string: 'Timer 1 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer2End</b> (Display string: 'Timer 2 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer#3#End</b> (Display string: 'Timer #3# End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Counts the number of Encoder output pulses.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Counts the number of Encoder output pulses.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Counts the number of Encoder output pulses.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Counts the number of Encoder output pulses.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Counts the number of Logic Block output pulses.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Counts the number of Logic Block output pulses.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Counts the number of Logic Block output pulses.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Counts the number of Logic Block output pulses.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): Counts the number of Software Signal.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): Counts the number of Software Signal.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): Counts the number of Software Signal.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): Counts the number of Software Signal.</li>
+<li><b>Action0</b> (Display string: 'Action 0'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action1</b> (Display string: 'Action 1'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action2</b> (Display string: 'Action 2'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action#3#</b> (Display string: 'Action #3#'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Counts the number of Link Trigger.</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Counts the number of Link Trigger.</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Counts the number of Link Trigger.</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Counts the number of Link Trigger.</li>
+<li><b>TimestampTick</b> (Display string: 'Timestamp Tick'): Counts the number of clock ticks of the Timestamp clock. Can be used to create a programmable timer.</li>
+<li><b>Line3</b> (Display string: 'Line 3'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line4</b> (Display string: 'Line 4'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line5</b> (Display string: 'Line 5'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line6</b> (Display string: 'Line 6'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line7</b> (Display string: 'Line 7'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line8</b> (Display string: 'Line 8'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line9</b> (Display string: 'Line 9'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line10</b> (Display string: 'Line 10'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line11</b> (Display string: 'Line 11'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line12</b> (Display string: 'Line 12'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line13</b> (Display string: 'Line 13'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line14</b> (Display string: 'Line 14'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Line15</b> (Display string: 'Line 15'): Counts the number of transitions on the chosen I/O Line.</li>
+<li><b>Counter3End</b> (Display string: 'Counter 3 End'): Counts the number of Counter End.</li>
+<li><b>Counter4End</b> (Display string: 'Counter 4 End'): Counts the number of Counter End.</li>
+<li><b>Counter5End</b> (Display string: 'Counter 5 End'): Counts the number of Counter End.</li>
+<li><b>Counter6End</b> (Display string: 'Counter 6 End'): Counts the number of Counter End.</li>
+<li><b>Counter7End</b> (Display string: 'Counter 7 End'): Counts the number of Counter End.</li>
+<li><b>Counter8End</b> (Display string: 'Counter 8 End'): Counts the number of Counter End.</li>
+<li><b>Counter9End</b> (Display string: 'Counter 9 End'): Counts the number of Counter End.</li>
+<li><b>Counter10End</b> (Display string: 'Counter 10 End'): Counts the number of Counter End.</li>
+<li><b>Counter11End</b> (Display string: 'Counter 11 End'): Counts the number of Counter End.</li>
+<li><b>Counter12End</b> (Display string: 'Counter 12 End'): Counts the number of Counter End.</li>
+<li><b>Counter13End</b> (Display string: 'Counter 13 End'): Counts the number of Counter End.</li>
+<li><b>Counter14End</b> (Display string: 'Counter 14 End'): Counts the number of Counter End.</li>
+<li><b>Counter15End</b> (Display string: 'Counter 15 End'): Counts the number of Counter End.</li>
+<li><b>Counter16End</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Timer3End</b> (Display string: 'Timer 3 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer4End</b> (Display string: 'Timer 4 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer5End</b> (Display string: 'Timer 5 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer6End</b> (Display string: 'Timer 6 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer7End</b> (Display string: 'Timer 7 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer8End</b> (Display string: 'Timer 8 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer9End</b> (Display string: 'Timer 9 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer10End</b> (Display string: 'Timer 10 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer11End</b> (Display string: 'Timer 11 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer12End</b> (Display string: 'Timer 12 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer13End</b> (Display string: 'Timer 13 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer14End</b> (Display string: 'Timer 14 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer15End</b> (Display string: 'Timer 15 End'): Counts the number of Timer End pulses generated.</li>
+<li><b>Timer16End</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Action3</b> (Display string: 'Action 3'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action4</b> (Display string: 'Action 4'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action5</b> (Display string: 'Action 5'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action6</b> (Display string: 'Action 6'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action7</b> (Display string: 'Action 7'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action8</b> (Display string: 'Action 8'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action9</b> (Display string: 'Action 9'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action10</b> (Display string: 'Action 10'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action11</b> (Display string: 'Action 11'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action12</b> (Display string: 'Action 12'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action13</b> (Display string: 'Action 13'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action14</b> (Display string: 'Action 14'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action15</b> (Display string: 'Action 15'): Counts the number of assertions of the chosen action signal.</li>
+<li><b>Action16</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line0RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line1RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line2RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line3RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line4RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line5RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line6RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line7RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line8RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line9RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line10RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line11RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line12RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line13RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line14RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>Line15RisingEdge</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>mvTemperatureOutOfRange</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>mvLogicGateOR1Output</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>mvLogicGateOR2Output</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>mvLogicGateOR3Output</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+<li><b>mvLogicGateOR4Output</b> (Display string: 'Counter <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8bb2c2964ae66f7250a37348e5b37ec6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterReset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Does a software reset of the selected Counter and starts it. </p>
+<p>Does a software reset of the selected Counter and starts it. The counter starts counting events immediately after the reset unless a Counter trigger is active. CounterReset can be used to reset the Counter independently from the CounterResetSource. To disable the counter temporarily, set CounterEventSource to Off. </p>
+
+</div>
+</div>
+<a class="anchor" id="a94c6a18dd21c201e57240f0d7427958f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterResetActivation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the Activation mode of the Counter Reset Source signal. </p>
+<p>Selects the Activation mode of the Counter Reset Source signal.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RisingEdge</b> (Display string: 'Rising Edge'): Resets the counter on the Rising Edge of the signal.</li>
+<li><b>FallingEdge</b> (Display string: 'Falling Edge'): Resets the counter on the Falling Edge of the signal.</li>
+<li><b>AnyEdge</b> (Display string: 'Any Edge'): Resets the counter on the Falling or rising Edge of the selected signal.</li>
+<li><b>LevelHigh</b> (Display string: 'Level High'): Resets the counter as long as the selected signal level is High.</li>
+<li><b>LevelLow</b> (Display string: 'Level Low'): Resets the counter as long as the selected signal level is Low.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec76b87580e5aef5ef034d11b44f1428"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterResetSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the signals that will be the source to reset the Counter. </p>
+<p>Selects the signals that will be the source to reset the Counter.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disable the Counter Reset trigger.</li>
+<li><b>CounterTrigger</b> (Display string: 'Counter Trigger'): Resets with the reception of a trigger on the CounterTriggerSource.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): Resets with the reception of the Acquisition Trigger.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): Resets with the reception of the missed Acquisition start trigger.</li>
+<li><b>AcquisitionStart</b> (Display string: 'Acquisition Start'): Resets with the reception of the Acquisition Start.</li>
+<li><b>AcquisitionEnd</b> (Display string: 'Acquisition End'): Resets with the reception of the Acquisition End.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): Resets with the reception of the Frame Start Trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): Resets with the reception of the missed Frame start trigger.</li>
+<li><b>FrameStart</b> (Display string: 'Frame Start'): Resets with the reception of the Frame Start.</li>
+<li><b>FrameEnd</b> (Display string: 'Frame End'): Resets with the reception of the Frame End.</li>
+<li><b>LineTrigger</b> (Display string: 'Line Trigger'): Resets with the reception of the Line Start Trigger.</li>
+<li><b>LineTriggerMissed</b> (Display string: 'Line Trigger Missed'): Resets with the reception of the missed Line start trigger.</li>
+<li><b>LineStart</b> (Display string: 'Line Start'): Resets with the reception of the Line Start.</li>
+<li><b>LineEnd</b> (Display string: 'Line End'): Resets with the reception of the Line End.</li>
+<li><b>ExposureStart</b> (Display string: 'Exposure Start'): Resets with the reception of the Exposure Start.</li>
+<li><b>ExposureEnd</b> (Display string: 'Exposure End'): Resets with the reception of the Exposure End.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): Resets by the chosen I/O Line.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Resets by the chosen I/O Line.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Resets by the chosen I/O Line.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Resets by the chosen I/O Line.</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): Resets by the chosen User Output bit.</li>
+<li><b>Counter0Start</b> (Display string: 'Counter 0 Start'): Resets with the reception of the Counter Start.</li>
+<li><b>Counter1Start</b> (Display string: 'Counter 1 Start'): Resets with the reception of the Counter Start.</li>
+<li><b>Counter2Start</b> (Display string: 'Counter 2 Start'): Resets with the reception of the Counter Start.</li>
+<li><b>Counter#3#Start</b> (Display string: 'Counter #3# Start'): Resets with the reception of the Counter Start.</li>
+<li><b>Counter0End</b> (Display string: 'Counter 0 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter1End</b> (Display string: 'Counter 1 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter2End</b> (Display string: 'Counter 2 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter#3#End</b> (Display string: 'Counter #3# End'): Resets with the reception of the Counter End.</li>
+<li><b>Timer0Start</b> (Display string: 'Timer 0 Start'): Resets with the reception of the Timer Start.</li>
+<li><b>Timer1Start</b> (Display string: 'Timer 1 Start'): Resets with the reception of the Timer Start.</li>
+<li><b>Timer2Start</b> (Display string: 'Timer 2 Start'): Resets with the reception of the Timer Start.</li>
+<li><b>Timer#3#Start</b> (Display string: 'Timer #3# Start'): Resets with the reception of the Timer Start.</li>
+<li><b>Timer0End</b> (Display string: 'Timer 0 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer1End</b> (Display string: 'Timer 1 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer2End</b> (Display string: 'Timer 2 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer#3#End</b> (Display string: 'Timer #3# End'): Resets with the reception of the Timer End.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Resets with the reception of the Encoder output signal.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Resets with the reception of the Encoder output signal.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Resets with the reception of the Encoder output signal.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Resets with the reception of the Encoder output signal.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Resets with the reception of the LogicBlock output signal.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Resets with the reception of the LogicBlock output signal.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Resets with the reception of the LogicBlock output signal.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Resets with the reception of the LogicBlock output signal.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): Resets on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): Resets on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): Resets on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): Resets on the reception of the Software Signal.</li>
+<li><b>Action0</b> (Display string: 'Action 0'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action1</b> (Display string: 'Action 1'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action2</b> (Display string: 'Action 2'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action#3#</b> (Display string: 'Action #3#'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Resets on the reception of the chosen Link Trigger (received from the transport layer).</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Resets on the reception of the chosen Link Trigger (received from the transport layer).</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Resets on the reception of the chosen Link Trigger (received from the transport layer).</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Resets on the reception of the chosen Link Trigger (received from the transport layer).</li>
+<li><b>Line3</b> (Display string: 'Line 3'): Resets by the chosen I/O Line.</li>
+<li><b>Line4</b> (Display string: 'Line 4'): Resets by the chosen I/O Line.</li>
+<li><b>Line5</b> (Display string: 'Line 5'): Resets by the chosen I/O Line.</li>
+<li><b>Line6</b> (Display string: 'Line 6'): Resets by the chosen I/O Line.</li>
+<li><b>Line7</b> (Display string: 'Line 7'): Resets by the chosen I/O Line.</li>
+<li><b>Line8</b> (Display string: 'Line 8'): Resets by the chosen I/O Line.</li>
+<li><b>Line9</b> (Display string: 'Line 9'): Resets by the chosen I/O Line.</li>
+<li><b>Line10</b> (Display string: 'Line 10'): Resets by the chosen I/O Line.</li>
+<li><b>Line11</b> (Display string: 'Line 11'): Resets by the chosen I/O Line.</li>
+<li><b>Line12</b> (Display string: 'Line 12'): Resets by the chosen I/O Line.</li>
+<li><b>Line13</b> (Display string: 'Line 13'): Resets by the chosen I/O Line.</li>
+<li><b>Line14</b> (Display string: 'Line 14'): Resets by the chosen I/O Line.</li>
+<li><b>Line15</b> (Display string: 'Line 15'): Resets by the chosen I/O Line.</li>
+<li><b>Counter3End</b> (Display string: 'Counter 3 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter4End</b> (Display string: 'Counter 4 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter5End</b> (Display string: 'Counter 5 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter6End</b> (Display string: 'Counter 6 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter7End</b> (Display string: 'Counter 7 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter8End</b> (Display string: 'Counter 8 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter9End</b> (Display string: 'Counter 9 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter10End</b> (Display string: 'Counter 10 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter11End</b> (Display string: 'Counter 11 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter12End</b> (Display string: 'Counter 12 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter13End</b> (Display string: 'Counter 13 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter14End</b> (Display string: 'Counter 14 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter15End</b> (Display string: 'Counter 15 End'): Resets with the reception of the Counter End.</li>
+<li><b>Counter16End</b> (Display string: 'Counter Reset Source')</li>
+<li><b>Timer3End</b> (Display string: 'Timer 3 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer4End</b> (Display string: 'Timer 4 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer5End</b> (Display string: 'Timer 5 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer6End</b> (Display string: 'Timer 6 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer7End</b> (Display string: 'Timer 7 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer8End</b> (Display string: 'Timer 8 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer9End</b> (Display string: 'Timer 9 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer10End</b> (Display string: 'Timer 10 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer11End</b> (Display string: 'Timer 11 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer12End</b> (Display string: 'Timer 12 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer13End</b> (Display string: 'Timer 13 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer14End</b> (Display string: 'Timer 14 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer15End</b> (Display string: 'Timer 15 End'): Resets with the reception of the Timer End.</li>
+<li><b>Timer16End</b> (Display string: 'Counter Reset Source')</li>
+<li><b>UserOutput3</b> (Display string: 'User Output 3'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput4</b> (Display string: 'User Output 4'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput5</b> (Display string: 'User Output 5'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput6</b> (Display string: 'User Output 6'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput7</b> (Display string: 'User Output 7'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput8</b> (Display string: 'User Output 8'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput9</b> (Display string: 'User Output 9'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput10</b> (Display string: 'User Output 10'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput11</b> (Display string: 'User Output 11'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput12</b> (Display string: 'User Output 12'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput13</b> (Display string: 'User Output 13'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput14</b> (Display string: 'User Output 14'): Resets by the chosen User Output bit.</li>
+<li><b>UserOutput15</b> (Display string: 'User Output 15'): Resets by the chosen User Output bit.</li>
+<li><b>Action3</b> (Display string: 'Action 3'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action4</b> (Display string: 'Action 4'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action5</b> (Display string: 'Action 5'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action6</b> (Display string: 'Action 6'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action7</b> (Display string: 'Action 7'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action8</b> (Display string: 'Action 8'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action9</b> (Display string: 'Action 9'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action10</b> (Display string: 'Action 10'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action11</b> (Display string: 'Action 11'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action12</b> (Display string: 'Action 12'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action13</b> (Display string: 'Action 13'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action14</b> (Display string: 'Action 14'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action15</b> (Display string: 'Action 15'): Resets on assertions of the chosen action signal (Broadcasted signal on the transport layer).</li>
+<li><b>Action16</b> (Display string: 'Counter Reset Source')</li>
+<li><b>mvTemperatureOutOfRange</b> (Display string: 'Counter Reset Source')</li>
+<li><b>mvLogicGateOR1Output</b> (Display string: 'Counter Reset Source')</li>
+<li><b>mvLogicGateOR2Output</b> (Display string: 'Counter Reset Source')</li>
+<li><b>mvLogicGateOR3Output</b> (Display string: 'Counter Reset Source')</li>
+<li><b>mvLogicGateOR4Output</b> (Display string: 'Counter Reset Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a8a3d52a70268d61a7f33ccedaa6c9c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Counter to configure. </p>
+<p>Selects which Counter to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Counter0</b> (Display string: 'Counter 0'): Selects the counter 0.</li>
+<li><b>Counter1</b> (Display string: 'Counter 1'): Selects the counter 1.</li>
+<li><b>Counter2</b> (Display string: 'Counter 2'): Selects the counter 2.</li>
+<li><b>Counter#3#</b> (Display string: 'Counter #3#'): Selects the counter #3#.</li>
+<li><b>Counter3</b> (Display string: 'Counter 3'): Selects the counter 3.</li>
+<li><b>Counter4</b> (Display string: 'Counter 4'): Selects the counter 4.</li>
+<li><b>Counter5</b> (Display string: 'Counter 5'): Selects the counter 5.</li>
+<li><b>Counter6</b> (Display string: 'Counter 6'): Selects the counter 6.</li>
+<li><b>Counter7</b> (Display string: 'Counter 7'): Selects the counter 7.</li>
+<li><b>Counter8</b> (Display string: 'Counter 8'): Selects the counter 8.</li>
+<li><b>Counter9</b> (Display string: 'Counter 9'): Selects the counter 9.</li>
+<li><b>Counter10</b> (Display string: 'Counter 10'): Selects the counter 10.</li>
+<li><b>Counter11</b> (Display string: 'Counter 11'): Selects the counter 11.</li>
+<li><b>Counter12</b> (Display string: 'Counter 12'): Selects the counter 12.</li>
+<li><b>Counter13</b> (Display string: 'Counter 13'): Selects the counter 13.</li>
+<li><b>Counter14</b> (Display string: 'Counter 14'): Selects the counter 14.</li>
+<li><b>Counter15</b> (Display string: 'Counter 15'): Selects the counter 15.</li>
+<li><b>Counter16</b> (Display string: 'Counter Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45615d283c7dff07df8e05fc4679ad40"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the current status of the Counter. </p>
+<p>Returns the current status of the Counter.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>CounterIdle</b> (Display string: 'Counter Idle'): The counter is idle.</li>
+<li><b>CounterTriggerWait</b> (Display string: 'Counter Trigger Wait'): The counter is waiting for a start trigger.</li>
+<li><b>CounterActive</b> (Display string: 'Counter Active'): The counter is counting for the specified duration.</li>
+<li><b>CounterCompleted</b> (Display string: 'Counter Completed'): The counter reached the CounterDuration count.</li>
+<li><b>CounterOverflow</b> (Display string: 'Counter Overflow'): The counter reached its maximum possible count.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae3e718076d7c1392e360281172930b4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterTriggerActivation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the activation mode of the trigger to start the Counter. </p>
+<p>Selects the activation mode of the trigger to start the Counter.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RisingEdge</b> (Display string: 'Rising Edge'): Starts counting on the Rising Edge of the selected trigger signal.</li>
+<li><b>FallingEdge</b> (Display string: 'Falling Edge'): Starts counting on the Falling Edge of the selected trigger signal.</li>
+<li><b>AnyEdge</b> (Display string: 'Any Edge'): Starts counting on the Falling or rising Edge of the selected trigger signal.</li>
+<li><b>LevelHigh</b> (Display string: 'Level High'): Counts as long as the selected trigger signal level is High.</li>
+<li><b>LevelLow</b> (Display string: 'Level Low'): Counts as long as the selected trigger signal level is Low.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a794668b6daf40a909de1d84fa1408859"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterTriggerSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the source to start the Counter. </p>
+<p>Selects the source to start the Counter.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disables the Counter trigger.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): Starts with the reception of the Acquisition Trigger.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed an Acquisition start trigger.</li>
+<li><b>AcquisitionStart</b> (Display string: 'Acquisition Start'): Starts with the reception of the Acquisition Start.</li>
+<li><b>AcquisitionEnd</b> (Display string: 'Acquisition End'): Starts with the reception of the Acquisition End.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): Starts with the reception of the Frame Start Trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a Frame start trigger.</li>
+<li><b>FrameStart</b> (Display string: 'Frame Start'): Starts with the reception of the Frame Start.</li>
+<li><b>FrameEnd</b> (Display string: 'Frame End'): Starts with the reception of the Frame End.</li>
+<li><b>FrameBurstStart</b> (Display string: 'Frame Burst Start'): Starts with the reception of the Frame Burst Start.</li>
+<li><b>FrameBurstEnd</b> (Display string: 'Frame Burst End'): Starts with the reception of the Frame Burst End.</li>
+<li><b>LineTrigger</b> (Display string: 'Line Trigger'): Starts with the reception of the Line Start Trigger.</li>
+<li><b>LineTriggerMissed</b> (Display string: 'Line Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a Line start trigger.</li>
+<li><b>LineStart</b> (Display string: 'Line Start'): Starts with the reception of the Line Start.</li>
+<li><b>LineEnd</b> (Display string: 'Line End'): Starts with the reception of the Line End.</li>
+<li><b>ExposureStart</b> (Display string: 'Exposure Start'): Starts with the reception of the Exposure Start.</li>
+<li><b>ExposureEnd</b> (Display string: 'Exposure End'): Starts with the reception of the Exposure End.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Counter0Start</b> (Display string: 'Counter 0 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter1Start</b> (Display string: 'Counter 1 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter2Start</b> (Display string: 'Counter 2 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter#3#Start</b> (Display string: 'Counter #3# Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter0End</b> (Display string: 'Counter 0 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter1End</b> (Display string: 'Counter 1 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter2End</b> (Display string: 'Counter 2 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter#3#End</b> (Display string: 'Counter #3# End'): Starts with the reception of the Counter End.</li>
+<li><b>Timer0Start</b> (Display string: 'Timer 0 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer1Start</b> (Display string: 'Timer 1 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer2Start</b> (Display string: 'Timer 2 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer#3#Start</b> (Display string: 'Timer #3# Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer0End</b> (Display string: 'Timer 0 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer1End</b> (Display string: 'Timer 1 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer2End</b> (Display string: 'Timer 2 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer#3#End</b> (Display string: 'Timer #3# End'): Starts with the reception of the Timer End.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Starts with the reception of the Encoder output signal.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): Starts on the reception of the Software Signal.</li>
+<li><b>Action0</b> (Display string: 'Action 0'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action1</b> (Display string: 'Action 1'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action2</b> (Display string: 'Action 2'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action#3#</b> (Display string: 'Action #3#'): Starts with the assertion of the chosen action signal.</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Starts with the reception of the chosen Link Trigger signal.</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Starts with the reception of the chosen Link Trigger signal.</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Starts with the reception of the chosen Link Trigger signal.</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Starts with the reception of the chosen Link Trigger signal.</li>
+<li><b>Line3</b> (Display string: 'Line 3'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line4</b> (Display string: 'Line 4'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line5</b> (Display string: 'Line 5'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line6</b> (Display string: 'Line 6'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line7</b> (Display string: 'Line 7'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line8</b> (Display string: 'Line 8'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line9</b> (Display string: 'Line 9'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line10</b> (Display string: 'Line 10'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line11</b> (Display string: 'Line 11'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line12</b> (Display string: 'Line 12'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line13</b> (Display string: 'Line 13'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line14</b> (Display string: 'Line 14'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line15</b> (Display string: 'Line 15'): Starts when the specified CounterTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>UserOutput3</b> (Display string: 'User Output 3'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput4</b> (Display string: 'User Output 4'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput5</b> (Display string: 'User Output 5'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput6</b> (Display string: 'User Output 6'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput7</b> (Display string: 'User Output 7'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput8</b> (Display string: 'User Output 8'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput9</b> (Display string: 'User Output 9'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput10</b> (Display string: 'User Output 10'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput11</b> (Display string: 'User Output 11'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput12</b> (Display string: 'User Output 12'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput13</b> (Display string: 'User Output 13'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput14</b> (Display string: 'User Output 14'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput15</b> (Display string: 'User Output 15'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Counter3End</b> (Display string: 'Counter 3 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter4End</b> (Display string: 'Counter 4 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter5End</b> (Display string: 'Counter 5 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter6End</b> (Display string: 'Counter 6 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter7End</b> (Display string: 'Counter 7 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter8End</b> (Display string: 'Counter 8 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter9End</b> (Display string: 'Counter 9 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter10End</b> (Display string: 'Counter 10 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter11End</b> (Display string: 'Counter 11 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter12End</b> (Display string: 'Counter 12 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter13End</b> (Display string: 'Counter 13 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter14End</b> (Display string: 'Counter 14 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter15End</b> (Display string: 'Counter 15 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter16End</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>Timer3End</b> (Display string: 'Timer 3 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer4End</b> (Display string: 'Timer 4 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer5End</b> (Display string: 'Timer 5 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer6End</b> (Display string: 'Timer 6 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer7End</b> (Display string: 'Timer 7 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer8End</b> (Display string: 'Timer 8 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer9End</b> (Display string: 'Timer 9 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer10End</b> (Display string: 'Timer 10 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer11End</b> (Display string: 'Timer 11 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer12End</b> (Display string: 'Timer 12 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer13End</b> (Display string: 'Timer 13 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer14End</b> (Display string: 'Timer 14 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer15End</b> (Display string: 'Timer 15 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer16End</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>Action3</b> (Display string: 'Action 3'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action4</b> (Display string: 'Action 4'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action5</b> (Display string: 'Action 5'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action6</b> (Display string: 'Action 6'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action7</b> (Display string: 'Action 7'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action8</b> (Display string: 'Action 8'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action9</b> (Display string: 'Action 9'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action10</b> (Display string: 'Action 10'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action11</b> (Display string: 'Action 11'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action12</b> (Display string: 'Action 12'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action13</b> (Display string: 'Action 13'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action14</b> (Display string: 'Action 14'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action15</b> (Display string: 'Action 15'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action16</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>mvLogicGateOR1Output</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>mvLogicGateOR2Output</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>mvLogicGateOR3Output</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>mvLogicGateOR4Output</b> (Display string: 'Counter Trigger Source')</li>
+<li><b>mvReadOutActive</b> (Display string: 'Counter Trigger Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa20aa23c911bdf08578a68724c5d52c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Reads or writes the current value of the selected Counter. </p>
+<p>Reads or writes the current value of the selected Counter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a545eb5fdfc9e07d616a39080813acfd1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::counterValueAtReset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Reads the value of the selected Counter when it was reset by a trigger or by an explicit CounterReset command. </p>
+<p>Reads the value of the selected Counter when it was reset by a trigger or by an explicit CounterReset command. </p>
+
+</div>
+</div>
+<a class="anchor" id="aed0a836e1b087f5d8977334073e34788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerDelay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer. </p>
+<p>Sets the duration (in microseconds) of the delay to apply at the reception of a trigger before starting the Timer. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae2a98a11b7a8ffd4379474d8d2118564"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerDelayRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000052">弃用:</a></b></dt><dd>This feature is deprecated. It sets the duration in device-specific unit of the delay to apply after the reception of a trigger before starting the Timer. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1129d4390fb2db6fc43dea90a16ca32c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerDuration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Sets the duration (in microseconds) of the Timer pulse. </p>
+<p>Sets the duration (in microseconds) of the Timer pulse. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac8814d7bc9581dadc3411ceef2a4cb1e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerDurationRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000051">弃用:</a></b></dt><dd>This feature is deprecated. It sets the duration in device-specific unit of the Timer pulse. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5b4a47b49eeeb512aa34c9a9118fd378"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerReset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Does a software reset of the selected timer and starts it. </p>
+<p>Does a software reset of the selected timer and starts it. The timer starts immediately after the reset unless a timer trigger is active. </p>
+
+</div>
+</div>
+<a class="anchor" id="a98aaeada13d3a3f9edc2abfeeba6077e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which Timer to configure. </p>
+<p>Selects which Timer to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Timer0</b> (Display string: 'Timer 0'): Selects the Timer 0.</li>
+<li><b>Timer1</b> (Display string: 'Timer 1'): Selects the Timer 1.</li>
+<li><b>Timer2</b> (Display string: 'Timer 2'): Selects the Timer 2.</li>
+<li><b>Timer#3#</b> (Display string: 'Timer #3#'): Selects the Timer #3#.</li>
+<li><b>Timer3</b> (Display string: 'Timer 3'): Selects the Timer 3.</li>
+<li><b>Timer4</b> (Display string: 'Timer 4'): Selects the Timer 4.</li>
+<li><b>Timer5</b> (Display string: 'Timer 5'): Selects the Timer 5.</li>
+<li><b>Timer6</b> (Display string: 'Timer 6'): Selects the Timer 6.</li>
+<li><b>Timer7</b> (Display string: 'Timer 7'): Selects the Timer 7.</li>
+<li><b>Timer8</b> (Display string: 'Timer 8'): Selects the Timer 8.</li>
+<li><b>Timer9</b> (Display string: 'Timer 9'): Selects the Timer 9.</li>
+<li><b>Timer10</b> (Display string: 'Timer 10'): Selects the Timer 10.</li>
+<li><b>Timer11</b> (Display string: 'Timer 11'): Selects the Timer 11.</li>
+<li><b>Timer12</b> (Display string: 'Timer 12'): Selects the Timer 12.</li>
+<li><b>Timer13</b> (Display string: 'Timer 13'): Selects the Timer 13.</li>
+<li><b>Timer14</b> (Display string: 'Timer 14'): Selects the Timer 14.</li>
+<li><b>Timer15</b> (Display string: 'Timer 15'): Selects the Timer 15.</li>
+<li><b>Timer16</b> (Display string: 'Timer Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a119e611c5ad880862fd3194de9f63c61"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Returns the current status of the Timer. </p>
+<p>Returns the current status of the Timer.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>TimerIdle</b> (Display string: 'Timer Idle'): The Timer is idle.</li>
+<li><b>TimerTriggerWait</b> (Display string: 'Timer Trigger Wait'): The Timer is waiting for a start trigger.</li>
+<li><b>TimerActive</b> (Display string: 'Timer Active'): The Timer is counting for the specified duration.</li>
+<li><b>TimerCompleted</b> (Display string: 'Timer Completed'): The Timer reached the TimerDuration count.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aafe9deefca2b00ca24218d2763082720"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerTriggerActivation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the activation mode of the trigger to start the Timer. </p>
+<p>Selects the activation mode of the trigger to start the Timer.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RisingEdge</b> (Display string: 'Rising Edge'): Starts counting on the Rising Edge of the selected trigger signal.</li>
+<li><b>FallingEdge</b> (Display string: 'Falling Edge'): Starts counting on the Falling Edge of the selected trigger signal.</li>
+<li><b>AnyEdge</b> (Display string: 'Any Edge'): Starts counting on the Falling or Rising Edge of the selected trigger signal.</li>
+<li><b>LevelHigh</b> (Display string: 'Level High'): Counts as long as the selected trigger signal level is High.</li>
+<li><b>LevelLow</b> (Display string: 'Level Low'): Counts as long as the selected trigger signal level is Low.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ace2a27d5ef880f1590cca9313ec84684"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerTriggerSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the source of the trigger to start the Timer. </p>
+<p>Selects the source of the trigger to start the Timer.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disables the Timer trigger.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): Starts with the reception of the Acquisition Trigger.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): Starts with the reception of a missed Acquisition Trigger.</li>
+<li><b>AcquisitionStart</b> (Display string: 'Acquisition Start'): Starts with the reception of the Acquisition Start.</li>
+<li><b>AcquisitionEnd</b> (Display string: 'Acquisition End'): Starts with the reception of the Acquisition End.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): Starts with the reception of the Frame Start Trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): Starts with the reception of a missed Frame Trigger.</li>
+<li><b>FrameStart</b> (Display string: 'Frame Start'): Starts with the reception of the Frame Start.</li>
+<li><b>FrameEnd</b> (Display string: 'Frame End'): Starts with the reception of the Frame End.</li>
+<li><b>FrameBurstStart</b> (Display string: 'Frame Burst Start'): Starts with the reception of the Frame Burst Start.</li>
+<li><b>FrameBurstEnd</b> (Display string: 'Frame Burst End'): Starts with the reception of the Frame Burst End.</li>
+<li><b>LineTrigger</b> (Display string: 'Line Trigger'): Starts with the reception of the Line Start Trigger.</li>
+<li><b>LineTriggerMissed</b> (Display string: 'Line Trigger Missed'): Starts with the reception of a missed Line Trigger.</li>
+<li><b>LineStart</b> (Display string: 'Line Start'): Starts with the reception of the Line Start.</li>
+<li><b>LineEnd</b> (Display string: 'Line End'): Starts with the reception of the Line End.</li>
+<li><b>ExposureStart</b> (Display string: 'Exposure Start'): Starts with the reception of the Exposure Start.</li>
+<li><b>ExposureEnd</b> (Display string: 'Exposure End'): Starts with the reception of the Exposure End.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Counter0Start</b> (Display string: 'Counter 0 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter1Start</b> (Display string: 'Counter 1 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter2Start</b> (Display string: 'Counter 2 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter#3#Start</b> (Display string: 'Counter #3# Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter0End</b> (Display string: 'Counter 0 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter1End</b> (Display string: 'Counter 1 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter2End</b> (Display string: 'Counter 2 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter#3#End</b> (Display string: 'Counter #3# End'): Starts with the reception of the Counter End.</li>
+<li><b>Timer0Start</b> (Display string: 'Timer 0 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer1Start</b> (Display string: 'Timer 1 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer2Start</b> (Display string: 'Timer 2 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer#3#Start</b> (Display string: 'Timer #3# Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer0End</b> (Display string: 'Timer 0 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer1End</b> (Display string: 'Timer 1 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer2End</b> (Display string: 'Timer 2 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer#3#End</b> (Display string: 'Timer #3# End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Starts with the reception of the Encoder output signal.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Starts with the reception of the Logic Block output signal.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): Starts on the reception of the Software Signal.</li>
+<li><b>Action0</b> (Display string: 'Action 0'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action1</b> (Display string: 'Action 1'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action2</b> (Display string: 'Action 2'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action#3#</b> (Display string: 'Action #3#'): Starts with the assertion of the chosen action signal.</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>Line3</b> (Display string: 'Line 3'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line4</b> (Display string: 'Line 4'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line5</b> (Display string: 'Line 5'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line6</b> (Display string: 'Line 6'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line7</b> (Display string: 'Line 7'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line8</b> (Display string: 'Line 8'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line9</b> (Display string: 'Line 9'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line10</b> (Display string: 'Line 10'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line11</b> (Display string: 'Line 11'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line12</b> (Display string: 'Line 12'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line13</b> (Display string: 'Line 13'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line14</b> (Display string: 'Line 14'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line15</b> (Display string: 'Line 15'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>UserOutput3</b> (Display string: 'User Output 3'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput4</b> (Display string: 'User Output 4'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput5</b> (Display string: 'User Output 5'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput6</b> (Display string: 'User Output 6'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput7</b> (Display string: 'User Output 7'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Counter3End</b> (Display string: 'Counter 3 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter4End</b> (Display string: 'Counter 4 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter5End</b> (Display string: 'Counter 5 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter6End</b> (Display string: 'Counter 6 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter7End</b> (Display string: 'Counter 7 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter8End</b> (Display string: 'Counter 8 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter9End</b> (Display string: 'Counter 9 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter10End</b> (Display string: 'Counter 10 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter11End</b> (Display string: 'Counter 11 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter12End</b> (Display string: 'Counter 12 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter13End</b> (Display string: 'Counter 13 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter14End</b> (Display string: 'Counter 14 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter15End</b> (Display string: 'Counter 15 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter16End</b> (Display string: 'Timer Trigger Source')</li>
+<li><b>Timer3End</b> (Display string: 'Timer 3 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer4End</b> (Display string: 'Timer 4 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer5End</b> (Display string: 'Timer 5 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer6End</b> (Display string: 'Timer 6 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer7End</b> (Display string: 'Timer 7 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer8End</b> (Display string: 'Timer 8 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer9End</b> (Display string: 'Timer 9 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer10End</b> (Display string: 'Timer 10 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer11End</b> (Display string: 'Timer 11 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer12End</b> (Display string: 'Timer 12 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer13End</b> (Display string: 'Timer 13 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer14End</b> (Display string: 'Timer 14 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer15End</b> (Display string: 'Timer 15 End'): Starts with the reception of the Timer End. Note that a timer can retrigger itself to achieve a free running Timer.</li>
+<li><b>Timer16End</b> (Display string: 'Timer Trigger Source')</li>
+<li><b>Action3</b> (Display string: 'Action 3'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action4</b> (Display string: 'Action 4'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action5</b> (Display string: 'Action 5'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action6</b> (Display string: 'Action 6'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action7</b> (Display string: 'Action 7'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action8</b> (Display string: 'Action 8'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action9</b> (Display string: 'Action 9'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action10</b> (Display string: 'Action 10'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action11</b> (Display string: 'Action 11'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action12</b> (Display string: 'Action 12'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action13</b> (Display string: 'Action 13'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action14</b> (Display string: 'Action 14'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action15</b> (Display string: 'Action 15'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action16</b> (Display string: 'Timer Trigger Source')</li>
+<li><b>mvLogicGateOR1Output</b> (Display string: 'Timer Trigger Source')</li>
+<li><b>mvLogicGateOR2Output</b> (Display string: 'Timer Trigger Source')</li>
+<li><b>mvLogicGateOR3Output</b> (Display string: 'Timer Trigger Source')</li>
+<li><b>mvLogicGateOR4Output</b> (Display string: 'Timer Trigger Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a21f6143f2f21f2d22394455a9df22a42"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Reads or writes the current value (in microseconds) of the selected Timer. </p>
+<p>Reads or writes the current value (in microseconds) of the selected Timer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a550a983e7334e89b755076bcee3cf80d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::CounterAndTimerControl::timerValueRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000053">弃用:</a></b></dt><dd>This feature is deprecated. This feature is used to read the current value in device-specific unit of the selected Timer. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html">CounterAndTimerControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

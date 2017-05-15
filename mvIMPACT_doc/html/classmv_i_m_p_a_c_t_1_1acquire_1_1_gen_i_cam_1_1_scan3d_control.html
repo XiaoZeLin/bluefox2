@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::Scan3dControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::Scan3dControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category for control of 3D camera specific features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::Scan3dControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="619,179,781,235"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,286,555,327"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="613,286,787,327"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="606,351,794,393"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,286,355,327"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,286,155,327"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a9bb83fe01c85b71aa80fb359e74a0d46"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a9bb83fe01c85b71aa80fb359e74a0d46">Scan3dControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a9bb83fe01c85b71aa80fb359e74a0d46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html" title="Category for control of 3D camera specific features. ">mvIMPACT::acquire::GenICam::Scan3dControl</a></b> object.  <a href="#a9bb83fe01c85b71aa80fb359e74a0d46">更多...</a><br /></td></tr>
+<tr class="separator:a9bb83fe01c85b71aa80fb359e74a0d46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a025778e70e151c604f938a48dc962a0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a025778e70e151c604f938a48dc962a0c">scan3dExtractionSelector</a></td></tr>
+<tr class="memdesc:a025778e70e151c604f938a48dc962a0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the 3DExtraction processing module to control (if multiple ones are present).  <a href="#a025778e70e151c604f938a48dc962a0c">更多...</a><br /></td></tr>
+<tr class="separator:a025778e70e151c604f938a48dc962a0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ede1779a64fd607f9d30a8b789875f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a68ede1779a64fd607f9d30a8b789875f">scan3dExtractionSource</a></td></tr>
+<tr class="memdesc:a68ede1779a64fd607f9d30a8b789875f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the sensor's data source region for 3D Extraction module.  <a href="#a68ede1779a64fd607f9d30a8b789875f">更多...</a><br /></td></tr>
+<tr class="separator:a68ede1779a64fd607f9d30a8b789875f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81f9b35309a0ed35ba127f1fa9ef2788"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a81f9b35309a0ed35ba127f1fa9ef2788">scan3dExtractionMethod</a></td></tr>
+<tr class="memdesc:a81f9b35309a0ed35ba127f1fa9ef2788"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the method for extracting 3D from the input sensor data.  <a href="#a81f9b35309a0ed35ba127f1fa9ef2788">更多...</a><br /></td></tr>
+<tr class="separator:a81f9b35309a0ed35ba127f1fa9ef2788"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c28d5ecbb3763fa21b93814aab6cce1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a8c28d5ecbb3763fa21b93814aab6cce1">scan3dDistanceUnit</a></td></tr>
+<tr class="memdesc:a8c28d5ecbb3763fa21b93814aab6cce1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the unit used when delivering (calibrated) distance data.  <a href="#a8c28d5ecbb3763fa21b93814aab6cce1">更多...</a><br /></td></tr>
+<tr class="separator:a8c28d5ecbb3763fa21b93814aab6cce1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a7abf5a96c5142310d317c63c2c0b4f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a2a7abf5a96c5142310d317c63c2c0b4f">scan3dCoordinateSystem</a></td></tr>
+<tr class="memdesc:a2a7abf5a96c5142310d317c63c2c0b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the Coordinate system to use for the device.  <a href="#a2a7abf5a96c5142310d317c63c2c0b4f">更多...</a><br /></td></tr>
+<tr class="separator:a2a7abf5a96c5142310d317c63c2c0b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa900a32cb8627e184f93bc0fa8b4767"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#aaa900a32cb8627e184f93bc0fa8b4767">scan3dOutputMode</a></td></tr>
+<tr class="memdesc:aaa900a32cb8627e184f93bc0fa8b4767"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls the Calibration and data organization of the device and the coordinates transmitted.  <a href="#aaa900a32cb8627e184f93bc0fa8b4767">更多...</a><br /></td></tr>
+<tr class="separator:aaa900a32cb8627e184f93bc0fa8b4767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64896716a0dfaef9053d0643bc3e9196"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a64896716a0dfaef9053d0643bc3e9196">scan3dCoordinateSystemReference</a></td></tr>
+<tr class="memdesc:a64896716a0dfaef9053d0643bc3e9196"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Defines coordinate system reference location.  <a href="#a64896716a0dfaef9053d0643bc3e9196">更多...</a><br /></td></tr>
+<tr class="separator:a64896716a0dfaef9053d0643bc3e9196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5835e12ee49c81f5e8a45a71c9f3f307"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a5835e12ee49c81f5e8a45a71c9f3f307">scan3dCoordinateSelector</a></td></tr>
+<tr class="memdesc:a5835e12ee49c81f5e8a45a71c9f3f307"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the individual coordinates in the vectors for 3D information/transformation.  <a href="#a5835e12ee49c81f5e8a45a71c9f3f307">更多...</a><br /></td></tr>
+<tr class="separator:a5835e12ee49c81f5e8a45a71c9f3f307"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac68bf07316b5f192b6802f5969f9289b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#ac68bf07316b5f192b6802f5969f9289b">scan3dCoordinateScale</a></td></tr>
+<tr class="memdesc:ac68bf07316b5f192b6802f5969f9289b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Scale factor when transforming a pixel from relative coordinates to world coordinates.  <a href="#ac68bf07316b5f192b6802f5969f9289b">更多...</a><br /></td></tr>
+<tr class="separator:ac68bf07316b5f192b6802f5969f9289b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a530c80388f9a2aae965b15ee31f69300"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a530c80388f9a2aae965b15ee31f69300">scan3dCoordinateOffset</a></td></tr>
+<tr class="memdesc:a530c80388f9a2aae965b15ee31f69300"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Offset when transforming a pixel from relative coordinates to world coordinates.  <a href="#a530c80388f9a2aae965b15ee31f69300">更多...</a><br /></td></tr>
+<tr class="separator:a530c80388f9a2aae965b15ee31f69300"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7140afe110debf04ca3ef728123a93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a4f7140afe110debf04ca3ef728123a93">scan3dInvalidDataFlag</a></td></tr>
+<tr class="memdesc:a4f7140afe110debf04ca3ef728123a93"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Enables the definition of a non-valid flag value in the data stream.  <a href="#a4f7140afe110debf04ca3ef728123a93">更多...</a><br /></td></tr>
+<tr class="separator:a4f7140afe110debf04ca3ef728123a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5df5e46758c323e9c11aa39fb966cda4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a5df5e46758c323e9c11aa39fb966cda4">scan3dInvalidDataValue</a></td></tr>
+<tr class="memdesc:a5df5e46758c323e9c11aa39fb966cda4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Value which identifies a non-valid pixel if Scan3dInvalidDataFlag is enabled.  <a href="#a5df5e46758c323e9c11aa39fb966cda4">更多...</a><br /></td></tr>
+<tr class="separator:a5df5e46758c323e9c11aa39fb966cda4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabaa82663dc20332e2533f8b24f58549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#aabaa82663dc20332e2533f8b24f58549">scan3dAxisMin</a></td></tr>
+<tr class="memdesc:aabaa82663dc20332e2533f8b24f58549"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Minimum valid transmitted coordinate value of the selected Axis.  <a href="#aabaa82663dc20332e2533f8b24f58549">更多...</a><br /></td></tr>
+<tr class="separator:aabaa82663dc20332e2533f8b24f58549"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7052c2bf595e8e55ef796250715c207c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a7052c2bf595e8e55ef796250715c207c">scan3dAxisMax</a></td></tr>
+<tr class="memdesc:a7052c2bf595e8e55ef796250715c207c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Maximum valid transmitted coordinate value of the selected Axis.  <a href="#a7052c2bf595e8e55ef796250715c207c">更多...</a><br /></td></tr>
+<tr class="separator:a7052c2bf595e8e55ef796250715c207c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1747ee2575736760337915cafba819d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#ae1747ee2575736760337915cafba819d">scan3dCoordinateTransformSelector</a></td></tr>
+<tr class="memdesc:ae1747ee2575736760337915cafba819d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the index to read/write a coordinate transform value.  <a href="#ae1747ee2575736760337915cafba819d">更多...</a><br /></td></tr>
+<tr class="separator:ae1747ee2575736760337915cafba819d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71eef75f73a7f863b0c134a3a6a2bc24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a71eef75f73a7f863b0c134a3a6a2bc24">scan3dTransformValue</a></td></tr>
+<tr class="memdesc:a71eef75f73a7f863b0c134a3a6a2bc24"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Specifies the transform value selected.  <a href="#a71eef75f73a7f863b0c134a3a6a2bc24">更多...</a><br /></td></tr>
+<tr class="separator:a71eef75f73a7f863b0c134a3a6a2bc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a007f2b580137fc2c75a196dcc331607a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#a007f2b580137fc2c75a196dcc331607a">scan3dCoordinateReferenceSelector</a></td></tr>
+<tr class="memdesc:a007f2b580137fc2c75a196dcc331607a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the index to read a coordinate system reference value defining the transform of a point from the current (Anchor or Transformed) system to the reference system.  <a href="#a007f2b580137fc2c75a196dcc331607a">更多...</a><br /></td></tr>
+<tr class="separator:a007f2b580137fc2c75a196dcc331607a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70e808138fa8cc06015ca25aeff21c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#ae70e808138fa8cc06015ca25aeff21c5">scan3dCoordinateReferenceValue</a></td></tr>
+<tr class="memdesc:ae70e808138fa8cc06015ca25aeff21c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Returns the reference value selected.  <a href="#ae70e808138fa8cc06015ca25aeff21c5">更多...</a><br /></td></tr>
+<tr class="separator:ae70e808138fa8cc06015ca25aeff21c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category for control of 3D camera specific features. </p>
+<p>A category for control of 3D camera specific features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a9bb83fe01c85b71aa80fb359e74a0d46"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::Scan3dControl::Scan3dControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html" title="Category for control of 3D camera specific features. ">mvIMPACT::acquire::GenICam::Scan3dControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_a9bb83fe01c85b71aa80fb359e74a0d46_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_a9bb83fe01c85b71aa80fb359e74a0d46_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_a9bb83fe01c85b71aa80fb359e74a0d46_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control_a9bb83fe01c85b71aa80fb359e74a0d46_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="437,23,600,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="227,88,389,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="227,168,389,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="648,38,867,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="927,5,1076,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="915,70,1088,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1137,92,1365,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1413,99,1637,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="437,103,600,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="444,182,593,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="673,110,841,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a7052c2bf595e8e55ef796250715c207c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dAxisMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Maximum valid transmitted coordinate value of the selected Axis. </p>
+<p>Maximum valid transmitted coordinate value of the selected Axis. </p>
+
+</div>
+</div>
+<a class="anchor" id="aabaa82663dc20332e2533f8b24f58549"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dAxisMin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Minimum valid transmitted coordinate value of the selected Axis. </p>
+<p>Minimum valid transmitted coordinate value of the selected Axis. </p>
+
+</div>
+</div>
+<a class="anchor" id="a530c80388f9a2aae965b15ee31f69300"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Offset when transforming a pixel from relative coordinates to world coordinates. </p>
+<p>Offset when transforming a pixel from relative coordinates to world coordinates. </p>
+
+</div>
+</div>
+<a class="anchor" id="a007f2b580137fc2c75a196dcc331607a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateReferenceSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the index to read a coordinate system reference value defining the transform of a point from the current (Anchor or Transformed) system to the reference system. </p>
+<p>Sets the index to read a coordinate system reference value defining the transform of a point from the current (Anchor or Transformed) system to the reference system.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RotationX</b> (Display string: 'Rotation X'): Rotation around X axis.</li>
+<li><b>RotationY</b> (Display string: 'Rotation Y'): Rotation around Y axis.</li>
+<li><b>RotationZ</b> (Display string: 'Rotation Z'): Rotation around Z axis.</li>
+<li><b>TranslationX</b> (Display string: 'Translation X'): X axis translation.</li>
+<li><b>TranslationY</b> (Display string: 'Translation Y'): Y axis translation.</li>
+<li><b>TranslationZ</b> (Display string: 'Translation Z'): Z axis translation.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae70e808138fa8cc06015ca25aeff21c5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateReferenceValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Returns the reference value selected. </p>
+<p>Returns the reference value selected. Reads the value of a rotation or translation value for the current (Anchor or Transformed) coordinate system transformation to the Reference system. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac68bf07316b5f192b6802f5969f9289b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateScale</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Scale factor when transforming a pixel from relative coordinates to world coordinates. </p>
+<p>Scale factor when transforming a pixel from relative coordinates to world coordinates. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5835e12ee49c81f5e8a45a71c9f3f307"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the individual coordinates in the vectors for 3D information/transformation. </p>
+<p>Selects the individual coordinates in the vectors for 3D information/transformation.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>CoordinateA</b> (Display string: 'Coordinate A'): The first (X or Theta) coordinate</li>
+<li><b>CoordinateB</b> (Display string: 'Coordinate B'): The second (Y or Phi) coordinate</li>
+<li><b>CoordinateC</b> (Display string: 'Coordinate C'): The third (Z or Rho) coordinate.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2a7abf5a96c5142310d317c63c2c0b4f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateSystem</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the Coordinate system to use for the device. </p>
+<p>Specifies the Coordinate system to use for the device.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Cartesian</b> (Display string: 'Cartesian'): Default value. 3-axis orthogonal, right-hand X-Y-Z.</li>
+<li><b>Spherical</b> (Display string: 'Spherical'): A Theta-Phi-Rho coordinate system.</li>
+<li><b>Cylindrical</b> (Display string: 'Cylindrical'): A Theta-Y-Rho coordinate system.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64896716a0dfaef9053d0643bc3e9196"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateSystemReference</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Defines coordinate system reference location. </p>
+<p>Defines coordinate system reference location.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Anchor</b> (Display string: 'Anchor'): Default value. Original fixed reference. The coordinate system fixed relative the camera reference point marker is used.</li>
+<li><b>Transformed</b> (Display string: 'Transformed'): Transformed reference system. The transformed coordinate system is used according to the definition in the rotation and translation matrices.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae1747ee2575736760337915cafba819d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dCoordinateTransformSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the index to read/write a coordinate transform value. </p>
+<p>Sets the index to read/write a coordinate transform value.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RotationX</b> (Display string: 'Rotation X'): Rotation around X axis.</li>
+<li><b>RotationY</b> (Display string: 'Rotation Y'): Rotation around Y axis.</li>
+<li><b>RotationZ</b> (Display string: 'Rotation Z'): Rotation around Z axis.</li>
+<li><b>TranslationX</b> (Display string: 'Translation X'): Translation along X axis.</li>
+<li><b>TranslationY</b> (Display string: 'Translation Y'): Translation along Y axis.</li>
+<li><b>TranslationZ</b> (Display string: 'Translation Z'): Translation along Z axis.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a8c28d5ecbb3763fa21b93814aab6cce1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dDistanceUnit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the unit used when delivering (calibrated) distance data. </p>
+<p>Specifies the unit used when delivering (calibrated) distance data.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Millimeter</b> (Display string: 'Millimeter'): Distance values are in millimeter units (default).</li>
+<li><b>Inch</b> (Display string: 'Inch'): Distance values are in inch units.</li>
+<li><b>Pixel</b> (Display string: 'Pixel'): Distance values reflect pixel positions on the Sensor Array.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81f9b35309a0ed35ba127f1fa9ef2788"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dExtractionMethod</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the method for extracting 3D from the input sensor data. </p>
+<p>Selects the method for extracting 3D from the input sensor data.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Default</b> (Display string: 'Default'): Default range extraction method for the device.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a025778e70e151c604f938a48dc962a0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dExtractionSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the 3DExtraction processing module to control (if multiple ones are present). </p>
+<p>Selects the 3DExtraction processing module to control (if multiple ones are present).</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Scan3dExtraction0</b> (Display string: 'Scan 3d Extraction 0'): Selects Scan3d Extraction module 0.</li>
+<li><b>Scan3dExtraction1</b> (Display string: 'Scan 3d Extraction 1'): Selects Scan3d Extraction module 1.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a68ede1779a64fd607f9d30a8b789875f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dExtractionSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the sensor's data source region for 3D Extraction module. </p>
+<p>Selects the sensor's data source region for 3D Extraction module.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Region0</b> (Display string: 'Region 0'): Data come from Sensor's Region0.</li>
+<li><b>Region1</b> (Display string: 'Region 1'): Data come from Sensor's Region1.</li>
+<li><b>Region#2#</b> (Display string: 'Region #2#'): Data come from Sensor's Region#2#.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4f7140afe110debf04ca3ef728123a93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dInvalidDataFlag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Enables the definition of a non-valid flag value in the data stream. </p>
+<p>Enables the definition of a non-valid flag value in the data stream. Note that the confidence output is an alternate recommended way to identify non-valid pixels. Using an Scan3dInvalidDataValue may give processing penalties due to special handling. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5df5e46758c323e9c11aa39fb966cda4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dInvalidDataValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Value which identifies a non-valid pixel if Scan3dInvalidDataFlag is enabled. </p>
+<p>Value which identifies a non-valid pixel if Scan3dInvalidDataFlag is enabled. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaa900a32cb8627e184f93bc0fa8b4767"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dOutputMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls the Calibration and data organization of the device and the coordinates transmitted. </p>
+<p>Controls the Calibration and data organization of the device and the coordinates transmitted.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>UncalibratedC</b> (Display string: 'Uncalibrated C'): Uncalibrated 2.5D Depth map. The distance data does not represent a physical unit and may be non-linear. The data is a 2.5D range map only.</li>
+<li><b>CalibratedABC_Grid</b> (Display string: 'Calibrated ABC Grid'): 3 Coordinates in grid organization. The full 3 coordinate data with the grid array organization from the sensor kept.</li>
+<li><b>CalibratedABC_PointCloud</b> (Display string: 'Calibrated ABC Point Cloud'): 3 Coordinates without organization. The full 3 coordinate data without any organization of data points. Typically only valid points transmitted giving varying image size.</li>
+<li><b>CalibratedAC</b> (Display string: 'Calibrated AC'): 2 Coordinates with fixed B sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis uses the scale and offset parameters for the B axis.</li>
+<li><b>CalibratedAC_Linescan</b> (Display string: 'Calibrated AC Linescan'): 2 Coordinates with varying sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis comes from the encoder chunk value.</li>
+<li><b>CalibratedC</b> (Display string: 'Calibrated C'): Calibrated 2.5D Depth map. The distance data is expressed in the chosen distance unit. The data is a 2.5D range map. No information on X-Y axes available.</li>
+<li><b>CalibratedC_Linescan</b> (Display string: 'Calibrated C Linescan'): Depth Map with varying B sampling. The distance data is expressed in the chosen distance unit. The data is a 2.5D range map. The B (Y) axis comes from the encoder chunk value.</li>
+<li><b>RectifiedC</b> (Display string: 'Rectified C'): Rectified 2.5D Depth map. The distance data has been rectified to a uniform sampling pattern in the X and Y direction. The data is a 2.5D range map only. If a complete 3D point cloud is rectified but transmitted as explicit coordinates it should be transmitted as one of the 'CalibratedABC' formats.</li>
+<li><b>RectifiedC_Linescan</b> (Display string: 'Rectified C Linescan'): Rectified 2.5D Depth map with varying B sampling. The data is sent as rectified 1D profiles using Coord3D_C pixels. The B (Y) axis comes from the encoder chunk value.</li>
+<li><b>DisparityC</b> (Display string: 'Disparity C'): Disparity 2.5D Depth map. The distance is inversely proportional to the pixel (disparity) value.</li>
+<li><b>DisparityC_Linescan</b> (Display string: 'Disparity C Linescan'): Disparity 2.5D Depth map with varying B sampling. The distance is inversely proportional to the pixel (disparity) value. The B (Y) axis comes from the encoder chunk value.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a71eef75f73a7f863b0c134a3a6a2bc24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::Scan3dControl::scan3dTransformValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Specifies the transform value selected. </p>
+<p>Specifies the transform value selected. For translations (Scan3dCoordinateTransformSelector = TranslationX/Y/Z) it is expressed in the distance unit of the system, for rotations (Scan3dCoordinateTransformSelector =RotationX/Y/Z) in degrees. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html">Scan3dControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

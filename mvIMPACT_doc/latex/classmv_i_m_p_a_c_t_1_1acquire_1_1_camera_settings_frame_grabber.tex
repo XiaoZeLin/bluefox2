@@ -1,0 +1,416 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Frame\+Grabber类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+}
+
+
+A class to access frame grabber related camera settings({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Frame\+Grabber 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Frame\+Grabber 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a21e294f723493ea165c3cb2b414ba433}{Camera\+Settings\+Frame\+Grabber} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}} object. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad3e291874c032126b28402539e949fb2}{get\+Trigger\+Control\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Controls} available for this device. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{Trigger\+Control} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ab121b261beaf4db1e31116f372cfa227}{trigger\+Control} (unsigned int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{Trigger\+Control} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a49074adbc4794944fd3cda354cdeb599}{trigger\+Control} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object or N\+U\+L\+L if the name passed to the function does not specify a valid trigger control. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the camera description used for the image acquisition. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gac3481ade98270de3d8aa7ae47cbe5c4e}{Property\+I\+Camera\+Aoi\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a7832a8f28a3896b5aeda151c30cefe1a}{aoi\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the used \hyperlink{struct_a_o_i}{A\+O\+I} mode for the image capture. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a53d9afd1f0e37c6af77840ee59e71dc2}{gain\+\_\+d\+B}
+\begin{DoxyCompactList}\small\item\em A float property defining the gain in d\+B. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a276705f4a208d2956d6aeb94f56247c4}{offset\+\_\+m\+V}
+\begin{DoxyCompactList}\small\item\em An integer property defining the offset in milli-\/\+Volt. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga873cba8b9f282d5d983d2be1c8d3dcaa}{Property\+I\+Scan\+Clock} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a35d5ae8944b725349b617465e42a3b49}{scan\+Clock}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the scan clock mode used for the current acquisition. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaac7cb59349519ed98d73b8605c3dec64}{Property\+I\+Device\+Trigger\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a6bb960b80203a48a68ac20917ebd5e3f}{trigger\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the behaviour of the frame grabbers trigger input. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a91d1b7187120dee62c0daf60ec53dc41}{software\+Trigger\+Period\+\_\+ms}
+\begin{DoxyCompactList}\small\item\em An integer property defining the software simulated trigger period. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga74bf9929c27fa7d47798e130fa005e6a}{Property\+I\+Camera\+Serial\+Port\+Baud\+Rate} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_afb3db5d1fec3c662154b4f57c03c58c2}{serial\+Port\+Baudrate}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the baud rate of the serial communication port between frame grabber and camera. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gad01158960a8635ab8a2bd3199056045c}{Property\+I\+Interlaced\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a9ef986a0f1d1e13dec2f29c13bd4de5c}{interlaced\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining how the image from the camera shall be captured. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga01090436ef6969d1fedb45ce24f68d9b}{Property\+I\+Acquisition\+Field} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad60c4e0bf3ad80348a10061140dcb57c}{acquisition\+Field}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining which frame(s) of an interlaced video signal will be digitised or triggers the start of the acquisition. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaec7b599c0645e2ee61b6be26320ae04e}{Property\+I\+Device\+Scan\+Rate\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa05a4927e747ee08384c74a348a63b6c}{scan\+Rate\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the scan rate mode for this setting. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad902ed2dd56b7d24fd03f9b27449dcf8}{scan\+Rate\+\_\+k\+Hz}
+\begin{DoxyCompactList}\small\item\em An integer property defining the current scan frequency of the capture device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa00a4ef7269a28b048cdec911560600c}{luminance\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em An integer property defining the luminance value to be applied to the image data by the frame grabber in per cent. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a5dd508932fef6e7843991055e4af8a85}{saturation\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em An integer property defining the saturation value to be applied to the image data by the frame grabber in per cent. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ac6086e7d04fa208f43c0d146de499714}{hue\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em An integer property defining the hue value to be applied to the image data by the frame grabber in per cent. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ab7ab2179bcc174da9b31af1293842e49}{contrast\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em An integer property defining the contrast value to be applied to the image data by the frame grabber in per cent. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga104cc83eecc5f80f03154860ac2068ff}{Property\+I\+Line\+Counter} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a91835afe55d029af84a48915ad5081da}{line\+Counter}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the way line counter information is handled by the device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to access frame grabber related camera settings({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class contains properties to control the way the a frame grabber behaves in connection with the connected camera.
+
+\begin{DoxyNote}{注解}
+Not every frame grabber will support every property defined in this class. Please refer to the description of the individual properties and make heavy use of the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} in order to check whether a property is available for the device.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a21e294f723493ea165c3cb2b414ba433}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!Camera\+Settings\+Frame\+Grabber@{Camera\+Settings\+Frame\+Grabber}}
+\index{Camera\+Settings\+Frame\+Grabber@{Camera\+Settings\+Frame\+Grabber}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{Camera\+Settings\+Frame\+Grabber}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::\+Camera\+Settings\+Frame\+Grabber (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a21e294f723493ea165c3cb2b414ba433}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a21e294f723493ea165c3cb2b414ba433_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad3e291874c032126b28402539e949fb2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!get\+Trigger\+Control\+Count@{get\+Trigger\+Control\+Count}}
+\index{get\+Trigger\+Control\+Count@{get\+Trigger\+Control\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{get\+Trigger\+Control\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::get\+Trigger\+Control\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad3e291874c032126b28402539e949fb2}
+
+
+Returns the number of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Controls} available for this device. 
+
+This might be 0 if the device either does not support this feature. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ab121b261beaf4db1e31116f372cfa227}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!trigger\+Control@{trigger\+Control}}
+\index{trigger\+Control@{trigger\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{trigger\+Control}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Trigger\+Control}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::trigger\+Control (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ab121b261beaf4db1e31116f372cfa227}
+
+
+Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the trigger control \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a49074adbc4794944fd3cda354cdeb599}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!trigger\+Control@{trigger\+Control}}
+\index{trigger\+Control@{trigger\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{trigger\+Control}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Trigger\+Control}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::trigger\+Control (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a49074adbc4794944fd3cda354cdeb599}
+
+
+Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object or N\+U\+L\+L if the name passed to the function does not specify a valid trigger control. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the trigger control \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a49074adbc4794944fd3cda354cdeb599_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad60c4e0bf3ad80348a10061140dcb57c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!acquisition\+Field@{acquisition\+Field}}
+\index{acquisition\+Field@{acquisition\+Field}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{acquisition\+Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Acquisition\+Field} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::acquisition\+Field}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad60c4e0bf3ad80348a10061140dcb57c}
+
+
+An enumerated integer property defining which frame(s) of an interlaced video signal will be digitised or triggers the start of the acquisition. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Acquisition\+Field}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a7832a8f28a3896b5aeda151c30cefe1a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!aoi\+Mode@{aoi\+Mode}}
+\index{aoi\+Mode@{aoi\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{aoi\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Aoi\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::aoi\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a7832a8f28a3896b5aeda151c30cefe1a}
+
+
+An enumerated integer property defining the used \hyperlink{struct_a_o_i}{A\+O\+I} mode for the image capture. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Aoi\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ab7ab2179bcc174da9b31af1293842e49}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!contrast\+\_\+pc@{contrast\+\_\+pc}}
+\index{contrast\+\_\+pc@{contrast\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{contrast\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::contrast\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ab7ab2179bcc174da9b31af1293842e49}
+
+
+An integer property defining the contrast value to be applied to the image data by the frame grabber in per cent. 
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a53d9afd1f0e37c6af77840ee59e71dc2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!gain\+\_\+d\+B@{gain\+\_\+d\+B}}
+\index{gain\+\_\+d\+B@{gain\+\_\+d\+B}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{gain\+\_\+d\+B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::gain\+\_\+d\+B}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a53d9afd1f0e37c6af77840ee59e71dc2}
+
+
+A float property defining the gain in d\+B. 
+
+This is the gain applied during the analogue to digital conversion inside the frame grabber, not applied inside the camera.
+
+
+\begin{DoxyItemize}
+\item The formula for given {\ttfamily gain\+\_\+d\+B} is 
+\begin{DoxyCode}
+gain\_x= 10 ^ (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a53d9afd1f0e37c6af77840ee59e71dc2}{gain\_dB}/20)
+\end{DoxyCode}
+
+\end{DoxyItemize}
+
+{\bfseries Example\+:} 
+
+
+\begin{DoxyCode}
+gain\_x = 10 ^ (6/20) = 1.995
+\end{DoxyCode}
+
+
+I.\+e. increasing the gain setting by 6d\+B corresponds to factor of 2.
+
+The formula for given gain\+\_\+x is 
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a53d9afd1f0e37c6af77840ee59e71dc2}{gain\_dB} = 20*log(gain\_x) dB
+\end{DoxyCode}
+
+
+Where\+: ~\newline
+{\ttfamily gain\+\_\+d\+B\+:} M\+A\+T\+R\+I\+X V\+I\+S\+I\+O\+N gain value (logarithmic) ~\newline
+{\ttfamily gain\+\_\+x\+:} multiplicative gain ~\newline
+{\ttfamily $^\wedge$}\+: power function ~\newline
+ \begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ac6086e7d04fa208f43c0d146de499714}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!hue\+\_\+pc@{hue\+\_\+pc}}
+\index{hue\+\_\+pc@{hue\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{hue\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::hue\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ac6086e7d04fa208f43c0d146de499714}
+
+
+An integer property defining the hue value to be applied to the image data by the frame grabber in per cent. 
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a9ef986a0f1d1e13dec2f29c13bd4de5c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!interlaced\+Mode@{interlaced\+Mode}}
+\index{interlaced\+Mode@{interlaced\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{interlaced\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Interlaced\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::interlaced\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a9ef986a0f1d1e13dec2f29c13bd4de5c}
+
+
+An enumerated integer property defining how the image from the camera shall be captured. 
+
+If a video signal is transmitted to the capture device in an interlaced format, the device can either capture each individual frame, or merge two frames together into a complete image.
+
+This property will be invisible when the camera description selected by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}} does define it property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base_accd697662a91ec66a710677104ab1fe1}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base\+::interlaced\+Type}} to be {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cit\+None} as the decision whether an interlaced image shall be reconstructed from frames or left as individual frame is redundant if the video source transmits full frames only.
+
+The visibility of a property can be checked by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Visible}} 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Interlaced\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a91835afe55d029af84a48915ad5081da}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!line\+Counter@{line\+Counter}}
+\index{line\+Counter@{line\+Counter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{line\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Line\+Counter} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::line\+Counter}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a91835afe55d029af84a48915ad5081da}
+
+
+An enumerated integer property defining the way line counter information is handled by the device. 
+
+This is interesting for line scan camera applications. More information can be found a the documentation of the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Line\+Counter}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa00a4ef7269a28b048cdec911560600c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!luminance\+\_\+pc@{luminance\+\_\+pc}}
+\index{luminance\+\_\+pc@{luminance\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{luminance\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::luminance\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa00a4ef7269a28b048cdec911560600c}
+
+
+An integer property defining the luminance value to be applied to the image data by the frame grabber in per cent. 
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a276705f4a208d2956d6aeb94f56247c4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!offset\+\_\+m\+V@{offset\+\_\+m\+V}}
+\index{offset\+\_\+m\+V@{offset\+\_\+m\+V}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{offset\+\_\+m\+V}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::offset\+\_\+m\+V}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a276705f4a208d2956d6aeb94f56247c4}
+
+
+An integer property defining the offset in milli-\/\+Volt. 
+
+This is the analogue offset applied during the analogue to digital conversion inside the frame grabber, not applied inside the camera.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a5dd508932fef6e7843991055e4af8a85}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!saturation\+\_\+pc@{saturation\+\_\+pc}}
+\index{saturation\+\_\+pc@{saturation\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{saturation\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::saturation\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a5dd508932fef6e7843991055e4af8a85}
+
+
+An integer property defining the saturation value to be applied to the image data by the frame grabber in per cent. 
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a35d5ae8944b725349b617465e42a3b49}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!scan\+Clock@{scan\+Clock}}
+\index{scan\+Clock@{scan\+Clock}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{scan\+Clock}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Scan\+Clock} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::scan\+Clock}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a35d5ae8944b725349b617465e42a3b49}
+
+
+An enumerated integer property defining the scan clock mode used for the current acquisition. 
+
+Valid modes are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Scan\+Clock}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! Digital frame grabbers will however {\bfseries N\+O\+T} support this property. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad902ed2dd56b7d24fd03f9b27449dcf8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!scan\+Rate\+\_\+k\+Hz@{scan\+Rate\+\_\+k\+Hz}}
+\index{scan\+Rate\+\_\+k\+Hz@{scan\+Rate\+\_\+k\+Hz}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{scan\+Rate\+\_\+k\+Hz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::scan\+Rate\+\_\+k\+Hz}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_ad902ed2dd56b7d24fd03f9b27449dcf8}
+
+
+An integer property defining the current scan frequency of the capture device. 
+
+This property is only visible if the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa05a4927e747ee08384c74a348a63b6c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::scan\+Rate\+Mode}} property is {\bfseries N\+O\+T} in an auto mode. \begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa05a4927e747ee08384c74a348a63b6c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!scan\+Rate\+Mode@{scan\+Rate\+Mode}}
+\index{scan\+Rate\+Mode@{scan\+Rate\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{scan\+Rate\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Scan\+Rate\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::scan\+Rate\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_aa05a4927e747ee08384c74a348a63b6c}
+
+
+An enumerated integer property defining the scan rate mode for this setting. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Scan\+Rate\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_afb3db5d1fec3c662154b4f57c03c58c2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!serial\+Port\+Baudrate@{serial\+Port\+Baudrate}}
+\index{serial\+Port\+Baudrate@{serial\+Port\+Baudrate}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{serial\+Port\+Baudrate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Serial\+Port\+Baud\+Rate} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::serial\+Port\+Baudrate}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_afb3db5d1fec3c662154b4f57c03c58c2}
+
+
+An enumerated integer property defining the baud rate of the serial communication port between frame grabber and camera. 
+
+Currently this property is only available for Camera\+Link\textregistered{} frame grabbers.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Serial\+Port\+Baud\+Rate}.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a91d1b7187120dee62c0daf60ec53dc41}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!software\+Trigger\+Period\+\_\+ms@{software\+Trigger\+Period\+\_\+ms}}
+\index{software\+Trigger\+Period\+\_\+ms@{software\+Trigger\+Period\+\_\+ms}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{software\+Trigger\+Period\+\_\+ms}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::software\+Trigger\+Period\+\_\+ms}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a91d1b7187120dee62c0daf60ec53dc41}
+
+
+An integer property defining the software simulated trigger period. 
+
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a6bb960b80203a48a68ac20917ebd5e3f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::trigger\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dtm\+Periodically} this property defines the interval between two consecutive external trigger events simulated by the driver.
+
+Currently this property is only available for {\bfseries mv\+T\+I\+T\+A\+N} and {\bfseries mv\+G\+A\+M\+M\+A} frame grabbers.
+
+\begin{DoxyNote}{注解}
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a6bb960b80203a48a68ac20917ebd5e3f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!trigger\+Mode@{trigger\+Mode}}
+\index{trigger\+Mode@{trigger\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{trigger\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Trigger\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::trigger\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a6bb960b80203a48a68ac20917ebd5e3f}
+
+
+An enumerated integer property defining the behaviour of the frame grabbers trigger input. 
+
+\begin{DoxyNote}{注解}
+All trigger modes are defined by {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Trigger\+Mode}. However not every device will offer all these trigger modes but a subset of them. Valid trigger modes therefore can be found by reading the properties translation dictionary.
+
+This property will not be available for every frame grabber, so before using it, check if the property is available at all by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Accessing an invalid property will raise an exception! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}!type@{type}}
+\index{type@{type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}
+
+
+An enumerated integer property defining the camera description used for the image acquisition. 
+
+This property {\bfseries A\+L\+W\+A\+Y\+S} defines a translation dictionary containing a string representation and a numerical value for the camera descriptions available for the device. The string representation of the camera description will be build from the property name of the class this camera description belongs to (e.\+g. {\itshape 'Standard'}, {\itshape 'Non\+Standard'} or {\itshape 'Camera\+Link'}) and the name of the camera description itself. Assuming a the device can handle standard video cameras and a description for a camera named {\itshape 'My\+C\+C\+I\+R\+Camera'} will therefore add {\itshape 'Standard\+\_\+\+My\+C\+C\+I\+R\+Camera'} and a unique numerical representation to the properties translation dictionary. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

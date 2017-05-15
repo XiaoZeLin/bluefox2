@@ -1,0 +1,107 @@
+\hypertarget{class_device_handler}{\section{Device\+Handler类 参考}
+\label{class_device_handler}\index{Device\+Handler@{Device\+Handler}}
+}
+
+
+类 Device\+Handler 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_device_handler__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Device\+Handler 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_device_handler__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_handler_a670478ae2f09265bdff3ff12a10102c9}{enum {\bfseries T\+Update\+Result} \{ \\*
+{\bfseries ur\+Operation\+Successful} = 0, 
+{\bfseries ur\+Feature\+Unsupported} = 1, 
+{\bfseries ur\+Operation\+Canceled} = 2, 
+{\bfseries ur\+Invalid\+File\+Selection} = 3, 
+\\*
+{\bfseries ur\+File\+I\+O\+Error} = 4, 
+{\bfseries ur\+Device\+Access\+Error} = 5, 
+{\bfseries ur\+Invalid\+Parameter} = 6
+ \}}\label{class_device_handler_a670478ae2f09265bdff3ff12a10102c9}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_handler_a45710070c6b9145f888c07fd955c7eb6}{{\bfseries Device\+Handler} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, bool bo\+Set\+I\+D\+Supported=false)}\label{class_device_handler_a45710070c6b9145f888c07fd955c7eb6}
+
+\item 
+\hypertarget{class_device_handler_a9d5a6570a2d8eac72c9cc4c048959d79}{void {\bfseries Attach\+Parent} (\hyperlink{class_device_configure_frame}{Device\+Configure\+Frame} $\ast$p\+Parent)}\label{class_device_handler_a9d5a6570a2d8eac72c9cc4c048959d79}
+
+\item 
+\hypertarget{class_device_handler_a5289ea34aabf68d0b5ba3feb1744be2f}{virtual bool {\bfseries Supports\+Firmware\+Update} (void) const =0}\label{class_device_handler_a5289ea34aabf68d0b5ba3feb1744be2f}
+
+\item 
+\hypertarget{class_device_handler_a511f371a39972274961eb6ce392feb42}{virtual int {\bfseries Get\+Latest\+Firmware\+Version} (\hyperlink{struct_version}{Version} \&) const }\label{class_device_handler_a511f371a39972274961eb6ce392feb42}
+
+\item 
+\hypertarget{class_device_handler_a3c2c21792e6f4510cd0494860b756a3c}{virtual bool {\bfseries Supports\+Kernel\+Driver\+Update} (bool \&, std\+::string \&)}\label{class_device_handler_a3c2c21792e6f4510cd0494860b756a3c}
+
+\item 
+\hypertarget{class_device_handler_ab4326fb800b59848ce13aea6ffa1e556}{bool {\bfseries Supports\+Set\+I\+D} (void) const }\label{class_device_handler_ab4326fb800b59848ce13aea6ffa1e556}
+
+\item 
+\hypertarget{class_device_handler_aed3e75c5392a422d815e5a5b763e393c}{virtual bool {\bfseries Get\+I\+D\+From\+User} (long \&new\+I\+D, const long min\+Value, const long max\+Value)}\label{class_device_handler_aed3e75c5392a422d815e5a5b763e393c}
+
+\item 
+\hypertarget{class_device_handler_a8c66c91677c0ec13b12348736c23d37e}{virtual bool {\bfseries Supports\+D\+M\+A\+Buffer\+Size\+Update} (int $\ast$=0)}\label{class_device_handler_a8c66c91677c0ec13b12348736c23d37e}
+
+\item 
+\hypertarget{class_device_handler_a7ba31a512169f07c48c1ee1c61ce047b}{virtual int {\bfseries Update\+Firmware} (bool bo\+Silent\+Mode, bool bo\+Persistent\+User\+Sets)}\label{class_device_handler_a7ba31a512169f07c48c1ee1c61ce047b}
+
+\item 
+\hypertarget{class_device_handler_a38d4d0137847454fb5d7c40fa8819ea5}{virtual int {\bfseries Update\+Kernel\+Driver} (bool bo\+Silent\+Mode)}\label{class_device_handler_a38d4d0137847454fb5d7c40fa8819ea5}
+
+\item 
+\hypertarget{class_device_handler_a50bb7147d61c0c257d09bfa9b87907a1}{virtual int {\bfseries Update\+Permanent\+D\+M\+A\+Buffer\+Size} (bool)}\label{class_device_handler_a50bb7147d61c0c257d09bfa9b87907a1}
+
+\item 
+\hypertarget{class_device_handler_a420b658a16d783511a486705c01f9a40}{virtual void {\bfseries Set\+Custom\+Firmware\+File} (const wx\+String \&)}\label{class_device_handler_a420b658a16d783511a486705c01f9a40}
+
+\item 
+\hypertarget{class_device_handler_a28e778cb8ba79710801b475d0e15910b}{virtual void {\bfseries Set\+Custom\+Firmware\+Path} (const wx\+String \&)}\label{class_device_handler_a28e778cb8ba79710801b475d0e15910b}
+
+\item 
+\hypertarget{class_device_handler_a1199afcf5b1baa6c40c2c63407cf71bf}{virtual void {\bfseries Set\+Custom\+Gen\+I\+Cam\+File} (const wx\+String \&)}\label{class_device_handler_a1199afcf5b1baa6c40c2c63407cf71bf}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_handler_a51cbccd558c96f8f6a5e73a9f486952a}{bool {\bfseries Message\+To\+User} (const wx\+String \&caption, const wx\+String \&msg, bool bo\+Silent\+Mode, long style) const }\label{class_device_handler_a51cbccd558c96f8f6a5e73a9f486952a}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_device_handler_a6d3fd5f165ae830ce42369a0d489a1a6}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$ {\bfseries p\+Dev\+\_\+}}\label{class_device_handler_a6d3fd5f165ae830ce42369a0d489a1a6}
+
+\item 
+\hypertarget{class_device_handler_ab5a2b3e51f3e85d0cabc0d32370e3add}{\hyperlink{class_device_configure_frame}{Device\+Configure\+Frame} $\ast$ {\bfseries p\+Parent\+\_\+}}\label{class_device_handler_ab5a2b3e51f3e85d0cabc0d32370e3add}
+
+\item 
+\hypertarget{class_device_handler_ae70485ebefeeeca665b384dd5c47b3e6}{wx\+String {\bfseries custom\+Firmware\+Path\+\_\+}}\label{class_device_handler_ae70485ebefeeeca665b384dd5c47b3e6}
+
+\end{DoxyCompactItemize}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Device\+Configure/Device\+Handler.\+h\item 
+apps/mv\+Device\+Configure/Device\+Handler.\+cpp\end{DoxyCompactItemize}

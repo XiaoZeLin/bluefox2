@@ -1,0 +1,167 @@
+\hypertarget{class_image_canvas}{\section{Image\+Canvas类 参考}
+\label{class_image_canvas}\index{Image\+Canvas@{Image\+Canvas}}
+}
+
+
+类 Image\+Canvas 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_image_canvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Image\+Canvas 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_image_canvas__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_canvas_a0c2b3731815ac22f218b08d36df3bac9}{enum {\bfseries T\+Save\+Result} \{ {\bfseries sr\+O\+K}, 
+{\bfseries sr\+No\+Image}, 
+{\bfseries sr\+Failed\+To\+Save}
+ \}}\label{class_image_canvas_a0c2b3731815ac22f218b08d36df3bac9}
+
+\item 
+\hypertarget{class_image_canvas_a224d2497503b5fa611862e028a0c2ef3}{enum {\bfseries T\+Scaling\+Mode} \{ {\bfseries sm\+Nearest\+Neighbour}, 
+{\bfseries sm\+Linear}, 
+{\bfseries sm\+Cubic}
+ \}}\label{class_image_canvas_a224d2497503b5fa611862e028a0c2ef3}
+
+\end{DoxyCompactItemize}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_image_canvas_a63f276994b62c23a84fa81fe8197cef1}{{\bfseries Image\+Canvas} (wx\+Window $\ast$p\+App, wx\+Window $\ast$parent, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Image\+Canvas\char`\"{}), bool bo\+Active=true)}\label{class_image_canvas_a63f276994b62c23a84fa81fe8197cef1}
+
+\item 
+\hypertarget{class_image_canvas_a31d810eebd144ca876339ff81f04b08e}{wx\+String {\bfseries Get\+Current\+Pixel\+Data\+As\+String} (void) const }\label{class_image_canvas_a31d810eebd144ca876339ff81f04b08e}
+
+\item 
+\hypertarget{class_image_canvas_ab92c5d6aaa84a45aca8ecf5fb1971a64}{wx\+Rect {\bfseries Get\+Visible\+Part\+Of\+Image} (void)}\label{class_image_canvas_ab92c5d6aaa84a45aca8ecf5fb1971a64}
+
+\item 
+\hypertarget{class_image_canvas_af91056aae00eef8cf23f1eba6a9d6091}{bool {\bfseries Is\+Scaled} (void) const }\label{class_image_canvas_af91056aae00eef8cf23f1eba6a9d6091}
+
+\item 
+\hypertarget{class_image_canvas_a6b9d8a11981ec7344ec3ab13c0d02cc9}{bool {\bfseries Is\+Full\+Screen} (void) const }\label{class_image_canvas_a6b9d8a11981ec7344ec3ab13c0d02cc9}
+
+\item 
+\hypertarget{class_image_canvas_aba9e617c78a2e446a46c675f1d3583d8}{void \hyperlink{class_image_canvas_aba9e617c78a2e446a46c675f1d3583d8}{Set\+Full\+Screen\+Mode} (bool bo\+Active)}\label{class_image_canvas_aba9e617c78a2e446a46c675f1d3583d8}
+
+\begin{DoxyCompactList}\small\item\em Not supported without the mv\+Display library (which uses Direct\+X internally) \end{DoxyCompactList}\item 
+\hypertarget{class_image_canvas_a8b5f86f4c80fc73055acb709e54a45f4}{bool {\bfseries Info\+Overlay\+Active} (void) const }\label{class_image_canvas_a8b5f86f4c80fc73055acb709e54a45f4}
+
+\item 
+\hypertarget{class_image_canvas_a84b28cbff150eb048eb75246ad18b738}{void {\bfseries Refresh\+Scrollbars} (bool bo\+Move\+To\+Mouse\+Pos=false)}\label{class_image_canvas_a84b28cbff150eb048eb75246ad18b738}
+
+\item 
+\hypertarget{class_image_canvas_acbb4a3aeb64bb169d6d27e4e2e75e1c0}{\hyperlink{struct_a_o_i}{A\+O\+I} $\ast$ {\bfseries Register\+A\+O\+I} (const wx\+Rect \&, const wx\+Colour \&, const \hyperlink{class_drawing_canvas}{Drawing\+Canvas} $\ast$const p\+Owner)}\label{class_image_canvas_acbb4a3aeb64bb169d6d27e4e2e75e1c0}
+
+\item 
+\hypertarget{class_image_canvas_ad038feaa07968d026c52a6c82758366b}{bool {\bfseries Register\+Monitor\+Display} (\hyperlink{class_image_canvas}{Image\+Canvas} $\ast$p\+Monitor\+Display)}\label{class_image_canvas_ad038feaa07968d026c52a6c82758366b}
+
+\item 
+\hypertarget{class_image_canvas_a0a3e041467a4d2072cc8cac89ecbd434}{\hyperlink{class_image_canvas}{Image\+Canvas} $\ast$ {\bfseries Get\+Monitor\+Display} (void) const }\label{class_image_canvas_a0a3e041467a4d2072cc8cac89ecbd434}
+
+\item 
+\hypertarget{class_image_canvas_a22d7e4b90533d43e64b23e858b0d3f9f}{bool {\bfseries Remove\+A\+O\+I} (const \hyperlink{class_drawing_canvas}{Drawing\+Canvas} $\ast$const p\+Owner)}\label{class_image_canvas_a22d7e4b90533d43e64b23e858b0d3f9f}
+
+\item 
+\hypertarget{class_image_canvas_ae6ed8408d025c286fcc7cf235a118642}{void {\bfseries Increase\+Skipped\+Counter} (size\+\_\+t count)}\label{class_image_canvas_ae6ed8408d025c286fcc7cf235a118642}
+
+\item 
+\hypertarget{class_image_canvas_acd14199ee130f90bdac4f3e49e134a3f}{void {\bfseries Handle\+Mouse\+And\+Keyboard\+Events} (bool bo\+Handle)}\label{class_image_canvas_acd14199ee130f90bdac4f3e49e134a3f}
+
+\item 
+\hypertarget{class_image_canvas_aca737316c7de89a68b160f9250f4757f}{void {\bfseries Disable\+Double\+Click\+And\+Prune\+Popup\+Menu} (bool bo\+Disable)}\label{class_image_canvas_aca737316c7de89a68b160f9250f4757f}
+
+\item 
+\hypertarget{class_image_canvas_abccf29fde25b2c93bcd5d7bedeb50625}{T\+Save\+Result {\bfseries Save\+Current\+Image} (const wx\+String \&filename\+And\+Path, const wx\+String \&extension) const }\label{class_image_canvas_abccf29fde25b2c93bcd5d7bedeb50625}
+
+\item 
+\hypertarget{class_image_canvas_a75898cdd7e1789e110b798037d9a6a4a}{void {\bfseries Set\+Active\+Analysis\+Plot} (const \hyperlink{class_plot_canvas_image_analysis}{Plot\+Canvas\+Image\+Analysis} $\ast$p\+Plot)}\label{class_image_canvas_a75898cdd7e1789e110b798037d9a6a4a}
+
+\item 
+\hypertarget{class_image_canvas_a59ee0ca0138add4ad861610690f41c77}{const \hyperlink{class_plot_canvas_image_analysis}{Plot\+Canvas\+Image\+Analysis} $\ast$ {\bfseries Get\+Active\+Analysis\+Plot} (void) const }\label{class_image_canvas_a59ee0ca0138add4ad861610690f41c77}
+
+\item 
+\hypertarget{class_image_canvas_a1748491c45b30ae132c9c96d1910b00e}{bool {\bfseries Set\+A\+O\+I} (const \hyperlink{class_plot_canvas_image_analysis}{Plot\+Canvas\+Image\+Analysis} $\ast$p\+Plot, int x, int y, int w, int h)}\label{class_image_canvas_a1748491c45b30ae132c9c96d1910b00e}
+
+\item 
+bool \hyperlink{class_image_canvas_aba3902aa128ee939ee26665cf9742d5d}{Set\+Image} (const mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer $\ast$p\+I\+B, bool bo\+Must\+Refresh=true)
+\item 
+\hypertarget{class_image_canvas_aa84fb42497a28fd90c3e74b415138b37}{const \\*
+mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer $\ast$ {\bfseries Get\+Image} (void) const }\label{class_image_canvas_aa84fb42497a28fd90c3e74b415138b37}
+
+\item 
+\hypertarget{class_image_canvas_a88da52921ebe0a54de423c5fca25b5f9}{void {\bfseries Set\+Scaling} (bool bo\+On)}\label{class_image_canvas_a88da52921ebe0a54de423c5fca25b5f9}
+
+\item 
+\hypertarget{class_image_canvas_a2f8ed032c7cf09ef3948221e22c4ecc1}{void {\bfseries Set\+Info\+Overlay} (const std\+::vector$<$ wx\+String $>$ \&info\+Strings)}\label{class_image_canvas_a2f8ed032c7cf09ef3948221e22c4ecc1}
+
+\item 
+\hypertarget{class_image_canvas_a913ff75607832db40c3acac68da91b4d}{void {\bfseries Set\+Info\+Overlay\+Mode} (bool bo\+On)}\label{class_image_canvas_a913ff75607832db40c3acac68da91b4d}
+
+\item 
+\hypertarget{class_image_canvas_a972e7527243ac69732908dcd05d28142}{void {\bfseries Reset\+Request\+In\+Progress\+Flag} (void)}\label{class_image_canvas_a972e7527243ac69732908dcd05d28142}
+
+\item 
+\hypertarget{class_image_canvas_a4b1612e47706fcc45c0a92e26973ea2d}{void {\bfseries Reset\+Skipped\+Images\+Counter} (void)}\label{class_image_canvas_a4b1612e47706fcc45c0a92e26973ea2d}
+
+\item 
+\hypertarget{class_image_canvas_a9e286f82e991c2487531f0eedd3932a4}{void {\bfseries Set\+Image\+Modification\+Warning\+Output} (bool bo\+On)}\label{class_image_canvas_a9e286f82e991c2487531f0eedd3932a4}
+
+\item 
+\hypertarget{class_image_canvas_a4aaad632de88107fd92abd1550d1ce6d}{bool {\bfseries Get\+Image\+Modification\+Warning\+Output} (void) const }\label{class_image_canvas_a4aaad632de88107fd92abd1550d1ce6d}
+
+\item 
+\hypertarget{class_image_canvas_aeec1468b63dd42a264f45c7d622be010}{void {\bfseries Set\+Performance\+Warning\+Output} (bool bo\+On)}\label{class_image_canvas_aeec1468b63dd42a264f45c7d622be010}
+
+\item 
+\hypertarget{class_image_canvas_a57cf4003bf17c0fb344bbbcc779e2e27}{bool {\bfseries Get\+Performance\+Warning\+Output} (void) const }\label{class_image_canvas_a57cf4003bf17c0fb344bbbcc779e2e27}
+
+\item 
+\hypertarget{class_image_canvas_a5304e711bac31eef24bec975b327205f}{void {\bfseries Set\+User\+Data} (int user\+Data)}\label{class_image_canvas_a5304e711bac31eef24bec975b327205f}
+
+\item 
+\hypertarget{class_image_canvas_ad73adc33780dced2902efb8278aea01f}{int {\bfseries Get\+User\+Data} (void) const }\label{class_image_canvas_ad73adc33780dced2902efb8278aea01f}
+
+\item 
+\hypertarget{class_image_canvas_ac7f1d6d8ff6880c403e977d02f37c499}{void {\bfseries Set\+Scaling\+Mode} (T\+Scaling\+Mode mode)}\label{class_image_canvas_ac7f1d6d8ff6880c403e977d02f37c499}
+
+\item 
+\hypertarget{class_image_canvas_ac5892abe00d2638ff6651ea4c80100b1}{T\+Scaling\+Mode {\bfseries Get\+Scaling\+Mode} (void) const }\label{class_image_canvas_ac5892abe00d2638ff6651ea4c80100b1}
+
+\item 
+\hypertarget{class_image_canvas_af15b324e425a6ea86aeb177d02b43bb8}{bool {\bfseries Supports\+Different\+Scaling\+Modes} (void) const }\label{class_image_canvas_af15b324e425a6ea86aeb177d02b43bb8}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{成员函数说明}
+\hypertarget{class_image_canvas_aba3902aa128ee939ee26665cf9742d5d}{\index{Image\+Canvas@{Image\+Canvas}!Set\+Image@{Set\+Image}}
+\index{Set\+Image@{Set\+Image}!Image\+Canvas@{Image\+Canvas}}
+\subsubsection[{Set\+Image}]{\setlength{\rightskip}{0pt plus 5cm}bool Image\+Canvas\+::\+Set\+Image (
+\begin{DoxyParamCaption}
+\item[{const mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer $\ast$}]{p\+I\+B, }
+\item[{bool}]{bo\+Must\+Refresh = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}}\label{class_image_canvas_aba3902aa128ee939ee26665cf9742d5d}
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000001}{待办事项}]how can we deal with padding in x-\/direction here??? \end{DoxyRefDesc}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Image\+Canvas.\+h\item 
+apps/mv\+Prop\+View/Image\+Canvas.\+cpp\item 
+apps/mv\+Prop\+View/Image\+Canvas\+Common.\+cpp\end{DoxyCompactItemize}

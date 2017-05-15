@@ -1,0 +1,154 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:H\+D\+R\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}}
+}
+
+
+A class to control the H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) parameters of a device ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:H\+D\+R\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:H\+D\+R\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a40cde46ca5e317eefdbf83f350e123b3}{H\+D\+R\+Control} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{H\+D\+R\+Control} \&src)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_ad886104396a71e055993ada0b6a6040f}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{H\+D\+R\+Control} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_ad886104396a71e055993ada0b6a6040f}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{H\+D\+R\+Control} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_ad886104396a71e055993ada0b6a6040f}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}} objects. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_add08ec4170f8e6da3e75ce6939622c55}{is\+Available} (void) const 
+\begin{DoxyCompactList}\small\item\em This function should be called to check if this device offers auto control parameters. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point}{H\+D\+R\+Knee\+Point} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a1755ed0823de60ea0921efd4c2733b74}{get\+H\+D\+R\+Knee\+Point} (unsigned int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to a set of user definable parameters to configure a H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) knee point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_ac1258a5d35abaeff1e586c262c237cf5}{H\+D\+R\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) mode. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga9fcfc71faac692386a041097fd751d24}{Property\+I\+Camera\+H\+D\+R\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_af3ea6905ac186b59126fd22a2bdf3fa3}{H\+D\+R\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) mode to work with. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a010cba00a4f470594ce66b6742544709}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a010cba00a4f470594ce66b6742544709}{H\+D\+R\+Knee\+Point\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a010cba00a4f470594ce66b6742544709}
+
+\begin{DoxyCompactList}\small\item\em An integer property to define the number of knee points to work with when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_af3ea6905ac186b59126fd22a2bdf3fa3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::\+H\+D\+R\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::c\+H\+D\+Rm\+User}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_abb8b34d4826a4241462f6682dead7323}{class {\bfseries Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_abb8b34d4826a4241462f6682dead7323}
+
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a53bd4e941b7aa3f1b238d16446d838e7}{class {\bfseries Camera\+Settings\+Blue\+F\+O\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a53bd4e941b7aa3f1b238d16446d838e7}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to control the H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) parameters of a device ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+\begin{DoxyNote}{注解}
+Not every device will offer the features provided in this class. Before accessing properties call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Right now only the mv\+Blue\+F\+O\+X-\/x00wx, mv\+Blue\+F\+O\+X-\/x02dx and mv\+Blue\+C\+O\+U\+G\+A\+R-\/x00wx as well as mv\+Blue\+C\+O\+U\+G\+A\+R-\/x02dx types will support the features defined by this class.
+
+Instances of these class can't be constructed directly. Its parameters can be accessed via an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X}} or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a40cde46ca5e317eefdbf83f350e123b3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}!H\+D\+R\+Control@{H\+D\+R\+Control}}
+\index{H\+D\+R\+Control@{H\+D\+R\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}}
+\subsubsection[{H\+D\+R\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::\+H\+D\+R\+Control (
+\begin{DoxyParamCaption}
+\item[{const {\bf H\+D\+R\+Control} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a40cde46ca5e317eefdbf83f350e123b3}
+
+
+Copy constructor. 
+
+Creates a new object from an existing device object. Keep in mind that this new object will provide access to the very same hardware and therefore you might as well use the original reference. This constructor is only provided for internal reference counting to guarantee correct operation of the objects of this class under all platforms and languages. 
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a1755ed0823de60ea0921efd4c2733b74}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}!get\+H\+D\+R\+Knee\+Point@{get\+H\+D\+R\+Knee\+Point}}
+\index{get\+H\+D\+R\+Knee\+Point@{get\+H\+D\+R\+Knee\+Point}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}}
+\subsubsection[{get\+H\+D\+R\+Knee\+Point}]{\setlength{\rightskip}{0pt plus 5cm}{\bf H\+D\+R\+Knee\+Point}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::get\+H\+D\+R\+Knee\+Point (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a1755ed0823de60ea0921efd4c2733b74}
+
+
+Returns a reference to a set of user definable parameters to configure a H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) knee point. 
+
+Use the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_a010cba00a4f470594ce66b6742544709}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::\+H\+D\+R\+Knee\+Point\+Count}} to find out how many knee points are available or to change the number of knee points.
+
+\begin{DoxyReturn}{返回}
+A reference to a set of user definable parameters to configure a H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) knee point. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the knee point to be returned \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_add08ec4170f8e6da3e75ce6939622c55}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}!is\+Available@{is\+Available}}
+\index{is\+Available@{is\+Available}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}}
+\subsubsection[{is\+Available}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::is\+Available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_add08ec4170f8e6da3e75ce6939622c55}
+
+
+This function should be called to check if this device offers auto control parameters. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the device offers the features defined by this object.
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_ac1258a5d35abaeff1e586c262c237cf5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}!H\+D\+R\+Enable@{H\+D\+R\+Enable}}
+\index{H\+D\+R\+Enable@{H\+D\+R\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}}
+\subsubsection[{H\+D\+R\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::\+H\+D\+R\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_ac1258a5d35abaeff1e586c262c237cf5}
+
+
+An enumerated integer property which can be used to enable/disable H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) mode. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_af3ea6905ac186b59126fd22a2bdf3fa3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}!H\+D\+R\+Mode@{H\+D\+R\+Mode}}
+\index{H\+D\+R\+Mode@{H\+D\+R\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}}
+\subsubsection[{H\+D\+R\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+H\+D\+R\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control\+::\+H\+D\+R\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control_af3ea6905ac186b59126fd22a2bdf3fa3}
+
+
+An enumerated integer property which can be used to configure the H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) mode to work with. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+H\+D\+R\+Mode}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

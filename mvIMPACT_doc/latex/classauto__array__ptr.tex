@@ -1,0 +1,72 @@
+\hypertarget{classauto__array__ptr}{\section{auto\+\_\+array\+\_\+ptr$<$ T $>$ 模板类 参考}
+\label{classauto__array__ptr}\index{auto\+\_\+array\+\_\+ptr$<$ T $>$@{auto\+\_\+array\+\_\+ptr$<$ T $>$}}
+}
+
+
+A automatically managed buffer type to handle subscriptable data.  
+
+
+
+
+{\ttfamily \#include $<$auto\+\_\+array\+\_\+ptr.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classauto__array__ptr_a7ea518e74e02d19362965a74fce2b5f2}{{\bfseries auto\+\_\+array\+\_\+ptr} (size\+\_\+t initial\+Size=0)}\label{classauto__array__ptr_a7ea518e74e02d19362965a74fce2b5f2}
+
+\item 
+\hypertarget{classauto__array__ptr_a30d6debbcb1db493ef46919e6d6b37a1}{\hyperlink{classauto__array__ptr_a30d6debbcb1db493ef46919e6d6b37a1}{auto\+\_\+array\+\_\+ptr} (\hyperlink{classauto__array__ptr}{auto\+\_\+array\+\_\+ptr} \&rhs)}\label{classauto__array__ptr_a30d6debbcb1db493ef46919e6d6b37a1}
+
+\begin{DoxyCompactList}\small\item\em Pass ownership to the new object. \end{DoxyCompactList}\item 
+\hyperlink{classauto__array__ptr_ab75a4d7273eabb7180e07316043ad836}{auto\+\_\+array\+\_\+ptr} (T $\ast$p\+Buf, size\+\_\+t cnt)
+\begin{DoxyCompactList}\small\item\em Pass ownership to the new object. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_a1b183d6062ad338e05ad374738e4d65c}{{\bfseries operator T $\ast$} ()}\label{classauto__array__ptr_a1b183d6062ad338e05ad374738e4d65c}
+
+\item 
+\hypertarget{classauto__array__ptr_a764352bc820c5b67b36becfb6ead7233}{\hyperlink{classauto__array__ptr}{auto\+\_\+array\+\_\+ptr} \& \hyperlink{classauto__array__ptr_a764352bc820c5b67b36becfb6ead7233}{operator=} (\hyperlink{classauto__array__ptr}{auto\+\_\+array\+\_\+ptr} \&rhs)}\label{classauto__array__ptr_a764352bc820c5b67b36becfb6ead7233}
+
+\begin{DoxyCompactList}\small\item\em Pass ownership. Old buffer on the left hand side object is freed, the lhs object takes ownership of the buffer of the rhs object. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_a050d1e439d4a5f1085228b9a7ac3ad30}{void \hyperlink{classauto__array__ptr_a050d1e439d4a5f1085228b9a7ac3ad30}{realloc} (size\+\_\+t new\+Size)}\label{classauto__array__ptr_a050d1e439d4a5f1085228b9a7ac3ad30}
+
+\begin{DoxyCompactList}\small\item\em If the new size differs from the current one free old buffer, allocate new buffer. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_a45ebd42a6f063da7e1b7ec6a50de0809}{void \hyperlink{classauto__array__ptr_a45ebd42a6f063da7e1b7ec6a50de0809}{grow} (size\+\_\+t new\+Size)}\label{classauto__array__ptr_a45ebd42a6f063da7e1b7ec6a50de0809}
+
+\begin{DoxyCompactList}\small\item\em Increases the buffer size if necessary and keeps the old data. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_a839bd21e30adb228309c8389822c2ddb}{T $\ast$ \hyperlink{classauto__array__ptr_a839bd21e30adb228309c8389822c2ddb}{release} (void)}\label{classauto__array__ptr_a839bd21e30adb228309c8389822c2ddb}
+
+\begin{DoxyCompactList}\small\item\em Release ownership, return pointer to buffer. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_a89d539e5f0344897d201b5ffa808f905}{T $\ast$ \hyperlink{classauto__array__ptr_a89d539e5f0344897d201b5ffa808f905}{get} (void)}\label{classauto__array__ptr_a89d539e5f0344897d201b5ffa808f905}
+
+\begin{DoxyCompactList}\small\item\em Return pointer to buffer. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_adb64bcb6c67b17bead719ed67fb190c7}{const T $\ast$ \hyperlink{classauto__array__ptr_adb64bcb6c67b17bead719ed67fb190c7}{get} (void) const }\label{classauto__array__ptr_adb64bcb6c67b17bead719ed67fb190c7}
+
+\begin{DoxyCompactList}\small\item\em Return const pointer to buffer. \end{DoxyCompactList}\item 
+\hypertarget{classauto__array__ptr_ab766340070dac23d5735cc0101f5c86f}{size\+\_\+t \hyperlink{classauto__array__ptr_ab766340070dac23d5735cc0101f5c86f}{par\+Cnt} (void) const }\label{classauto__array__ptr_ab766340070dac23d5735cc0101f5c86f}
+
+\begin{DoxyCompactList}\small\item\em Return element count. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+\subsubsection*{template$<$class T$>$class auto\+\_\+array\+\_\+ptr$<$ T $>$}
+
+A automatically managed buffer type to handle subscriptable data. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classauto__array__ptr_ab75a4d7273eabb7180e07316043ad836}{\index{auto\+\_\+array\+\_\+ptr@{auto\+\_\+array\+\_\+ptr}!auto\+\_\+array\+\_\+ptr@{auto\+\_\+array\+\_\+ptr}}
+\index{auto\+\_\+array\+\_\+ptr@{auto\+\_\+array\+\_\+ptr}!auto\+\_\+array\+\_\+ptr@{auto\+\_\+array\+\_\+ptr}}
+\subsubsection[{auto\+\_\+array\+\_\+ptr}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf auto\+\_\+array\+\_\+ptr}$<$ T $>$\+::{\bf auto\+\_\+array\+\_\+ptr} (
+\begin{DoxyParamCaption}
+\item[{T $\ast$}]{p\+Buf, }
+\item[{size\+\_\+t}]{cnt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classauto__array__ptr_ab75a4d7273eabb7180e07316043ad836}
+
+
+Pass ownership to the new object. 
+
+Do N\+O\+T delete the original T$\ast$. This is done by this class now. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+common/auto\+\_\+array\+\_\+ptr.\+h\end{DoxyCompactItemize}

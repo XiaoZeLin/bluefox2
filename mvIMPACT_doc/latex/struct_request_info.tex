@@ -1,0 +1,143 @@
+\hypertarget{struct_request_info}{\section{Request\+Info结构体 参考}
+\label{struct_request_info}\index{Request\+Info@{Request\+Info}}
+}
+
+
+This structure contains information about the image currently associated with the request object.  
+
+
+
+
+{\ttfamily \#include $<$mv\+Device\+Manager.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{struct_request_info_a7df4309a78b37b5afd9dd3f942e7f09e}{frame\+I\+D}
+\begin{DoxyCompactList}\small\item\em A unique frame identifier. \end{DoxyCompactList}\item 
+\hypertarget{struct_request_info_a3164eff329433c24598e473dea05cfa8}{int \hyperlink{struct_request_info_a3164eff329433c24598e473dea05cfa8}{frame\+Nr}}\label{struct_request_info_a3164eff329433c24598e473dea05cfa8}
+
+\begin{DoxyCompactList}\small\item\em The number of images captured since the driver has been initialised including the current image. \end{DoxyCompactList}\item 
+int \hyperlink{struct_request_info_a448cb9b558f66a42a3f3231379d5750d}{expose\+Start\+\_\+us}
+\begin{DoxyCompactList}\small\item\em A timestamp (in us) defining the time the device started the exposure of the image associated with this request object. \end{DoxyCompactList}\item 
+int \hyperlink{struct_request_info_a7e79697a4d66237fce3ce7fd077b92e1}{expose\+Time\+\_\+us}
+\begin{DoxyCompactList}\small\item\em The 'real' expose time (in us) used to generate this image. \end{DoxyCompactList}\item 
+int \hyperlink{struct_request_info_afcc4a35d0065f27e5ab6d90a4499e354}{transfer\+Delay\+\_\+us}
+\begin{DoxyCompactList}\small\item\em The time the transaction of this image has been delayed (in us) because either the bus was blocked or the C\+P\+U was busy. \end{DoxyCompactList}\item 
+\hypertarget{struct_request_info_aa865467fea3f9c9246cab38ca1d2ac9e}{double \hyperlink{struct_request_info_aa865467fea3f9c9246cab38ca1d2ac9e}{gain\+\_\+d\+B}}\label{struct_request_info_aa865467fea3f9c9246cab38ca1d2ac9e}
+
+\begin{DoxyCompactList}\small\item\em The gain(in d\+B) this image has been taken with. \end{DoxyCompactList}\item 
+int \hyperlink{struct_request_info_a29fdb078f00559da9d860360b46d55de}{time\+Stamp\+\_\+us}
+\begin{DoxyCompactList}\small\item\em A timestamp to define the exact time this image has been captured (stored after the integration). \end{DoxyCompactList}\item 
+\hypertarget{struct_request_info_a7a134a73561651b8f5cc1f394e51acfa}{double \hyperlink{struct_request_info_a7a134a73561651b8f5cc1f394e51acfa}{image\+Average}}\label{struct_request_info_a7a134a73561651b8f5cc1f394e51acfa}
+
+\begin{DoxyCompactList}\small\item\em Currently unsupported. \end{DoxyCompactList}\item 
+int \hyperlink{struct_request_info_a47f673c91d2a9a31e5d38a6f33e297dd}{video\+Channel}
+\begin{DoxyCompactList}\small\item\em The video input channel of the device this image has been acquired from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gad85678f02bc0deb0eee9f7ce67644da7}{T\+Camera\+Output} \hyperlink{struct_request_info_aa31d1557a0a099f3707a318acad4e3be}{camera\+Output\+Used}
+\begin{DoxyCompactList}\small\item\em The camera output used to transmit the image to the capture device. \end{DoxyCompactList}\item 
+int \hyperlink{struct_request_info_a6c4a78c83c828ba242edca74ccf11d8d}{line\+Counter}
+\begin{DoxyCompactList}\small\item\em Line number since last trigger event. \end{DoxyCompactList}\item 
+double \hyperlink{struct_request_info_a6a23732e1a2914028770a213efbfe6ce}{missing\+Data\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em The amount of data missing in the current image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+This structure contains information about the image currently associated with the request object. 
+
+\subsection{类成员变量说明}
+\hypertarget{struct_request_info_aa31d1557a0a099f3707a318acad4e3be}{\index{Request\+Info@{Request\+Info}!camera\+Output\+Used@{camera\+Output\+Used}}
+\index{camera\+Output\+Used@{camera\+Output\+Used}!Request\+Info@{Request\+Info}}
+\subsubsection[{camera\+Output\+Used}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Camera\+Output} Request\+Info\+::camera\+Output\+Used}}\label{struct_request_info_aa31d1557a0a099f3707a318acad4e3be}
+
+
+The camera output used to transmit the image to the capture device. 
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. It will contain valid data for capture devices with at least one physical video input channel. 
+\end{DoxyNote}
+\hypertarget{struct_request_info_a448cb9b558f66a42a3f3231379d5750d}{\index{Request\+Info@{Request\+Info}!expose\+Start\+\_\+us@{expose\+Start\+\_\+us}}
+\index{expose\+Start\+\_\+us@{expose\+Start\+\_\+us}!Request\+Info@{Request\+Info}}
+\subsubsection[{expose\+Start\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::expose\+Start\+\_\+us}}\label{struct_request_info_a448cb9b558f66a42a3f3231379d5750d}
+
+
+A timestamp (in us) defining the time the device started the exposure of the image associated with this request object. 
+
+This value will stay 0 if nothing is known about the time the exposure did start. In such a case the time\+Stamp\+\_\+us parameter should be used instead. \hypertarget{struct_request_info_a7e79697a4d66237fce3ce7fd077b92e1}{\index{Request\+Info@{Request\+Info}!expose\+Time\+\_\+us@{expose\+Time\+\_\+us}}
+\index{expose\+Time\+\_\+us@{expose\+Time\+\_\+us}!Request\+Info@{Request\+Info}}
+\subsubsection[{expose\+Time\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::expose\+Time\+\_\+us}}\label{struct_request_info_a7e79697a4d66237fce3ce7fd077b92e1}
+
+
+The 'real' expose time (in us) used to generate this image. 
+
+This might differ slightly from the value selected by the user via the corresponding exposure property depending on the precision available for the device or the connected camera. \hypertarget{struct_request_info_a7df4309a78b37b5afd9dd3f942e7f09e}{\index{Request\+Info@{Request\+Info}!frame\+I\+D@{frame\+I\+D}}
+\index{frame\+I\+D@{frame\+I\+D}!Request\+Info@{Request\+Info}}
+\subsubsection[{frame\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::frame\+I\+D}}\label{struct_request_info_a7df4309a78b37b5afd9dd3f942e7f09e}
+
+
+A unique frame identifier. 
+
+This parameter is returned as part of the each request object. It can be used to associate a certain image with a unique identifier.
+
+\begin{DoxyNote}{注解}
+For some devices this property will only contain meaningful data if the device supports {\bfseries H\+R\+T\+C} and a program is running and writing data to the property. 
+\end{DoxyNote}
+\hypertarget{struct_request_info_a6c4a78c83c828ba242edca74ccf11d8d}{\index{Request\+Info@{Request\+Info}!line\+Counter@{line\+Counter}}
+\index{line\+Counter@{line\+Counter}!Request\+Info@{Request\+Info}}
+\subsubsection[{line\+Counter}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::line\+Counter}}\label{struct_request_info_a6c4a78c83c828ba242edca74ccf11d8d}
+
+
+Line number since last trigger event. 
+
+Will contain
+\begin{DoxyItemize}
+\item the line number since last trigger event of the first line of the snap if line counting is enabled
+\item -\/1 otherwise
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. 
+\end{DoxyNote}
+\hypertarget{struct_request_info_a6a23732e1a2914028770a213efbfe6ce}{\index{Request\+Info@{Request\+Info}!missing\+Data\+\_\+pc@{missing\+Data\+\_\+pc}}
+\index{missing\+Data\+\_\+pc@{missing\+Data\+\_\+pc}!Request\+Info@{Request\+Info}}
+\subsubsection[{missing\+Data\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}double Request\+Info\+::missing\+Data\+\_\+pc}}\label{struct_request_info_a6a23732e1a2914028770a213efbfe6ce}
+
+
+The amount of data missing in the current image. 
+
+The value of this property will be 0 almost always. However if a device can detect blocks of missing data and an image request has returned with \hyperlink{group___common_interface_ggab6148762ea638f8eabbabfc9468b0d4ca10d87665792fb666a20eda9b076c3164}{rr\+Frame\+Incomplete} to indicate that not all the data has been captured, this property will contain the amount of data missing in percent. \hypertarget{struct_request_info_a29fdb078f00559da9d860360b46d55de}{\index{Request\+Info@{Request\+Info}!time\+Stamp\+\_\+us@{time\+Stamp\+\_\+us}}
+\index{time\+Stamp\+\_\+us@{time\+Stamp\+\_\+us}!Request\+Info@{Request\+Info}}
+\subsubsection[{time\+Stamp\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::time\+Stamp\+\_\+us}}\label{struct_request_info_a29fdb078f00559da9d860360b46d55de}
+
+
+A timestamp to define the exact time this image has been captured (stored after the integration). 
+
+The timestamp is independent from the F\+P\+G\+A and has a resolution of 1 us.
+
+{\bfseries mv\+Blue\+F\+O\+X} {\bfseries specific\+:} The counter of the timestamp starts when the camera gets initialized. It is measured in us. \hypertarget{struct_request_info_afcc4a35d0065f27e5ab6d90a4499e354}{\index{Request\+Info@{Request\+Info}!transfer\+Delay\+\_\+us@{transfer\+Delay\+\_\+us}}
+\index{transfer\+Delay\+\_\+us@{transfer\+Delay\+\_\+us}!Request\+Info@{Request\+Info}}
+\subsubsection[{transfer\+Delay\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::transfer\+Delay\+\_\+us}}\label{struct_request_info_afcc4a35d0065f27e5ab6d90a4499e354}
+
+
+The time the transaction of this image has been delayed (in us) because either the bus was blocked or the C\+P\+U was busy. 
+
+Normally this value will be 0. A value larger than 0 indicates that the system can't manage the current load.
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. 
+\end{DoxyNote}
+\hypertarget{struct_request_info_a47f673c91d2a9a31e5d38a6f33e297dd}{\index{Request\+Info@{Request\+Info}!video\+Channel@{video\+Channel}}
+\index{video\+Channel@{video\+Channel}!Request\+Info@{Request\+Info}}
+\subsubsection[{video\+Channel}]{\setlength{\rightskip}{0pt plus 5cm}int Request\+Info\+::video\+Channel}}\label{struct_request_info_a47f673c91d2a9a31e5d38a6f33e297dd}
+
+
+The video input channel of the device this image has been acquired from. 
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Devices with only a single video channel will always leave this value at 0. 
+\end{DoxyNote}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+Device\+Manager/\+Include/mv\+Device\+Manager.\+h\end{DoxyCompactItemize}

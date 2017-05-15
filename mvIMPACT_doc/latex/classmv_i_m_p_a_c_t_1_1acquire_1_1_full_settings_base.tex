@@ -1,0 +1,98 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Full\+Settings\+Base类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base}}
+}
+
+
+A base class that provides access to the most common settings for a device({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Full\+Settings\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Full\+Settings\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a6f8eadfe847b03c9ed8b21dc9f7e6db9}{Full\+Settings\+Base} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a66b80bc6dc7da3d77c8177dc888e0727}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{Image\+Processing} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a66b80bc6dc7da3d77c8177dc888e0727}{image\+Processing}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a66b80bc6dc7da3d77c8177dc888e0727}
+
+\begin{DoxyCompactList}\small\item\em Image processing related properties. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a25c3befd98b23e80b2e60f255815ce69}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination}{Image\+Destination} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a25c3befd98b23e80b2e60f255815ce69}{image\+Destination}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a25c3befd98b23e80b2e60f255815ce69}
+
+\begin{DoxyCompactList}\small\item\em Properties to define the result images format. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_ac11de604078ffa2b18cca4441db2f196}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_ac11de604078ffa2b18cca4441db2f196}{based\+On}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_ac11de604078ffa2b18cca4441db2f196}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the name of the setting this setting is based on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A base class that provides access to the most common settings for a device({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+Use one of the class derived from this class to get access to all the available settings.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a6f8eadfe847b03c9ed8b21dc9f7e6db9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base}!Full\+Settings\+Base@{Full\+Settings\+Base}}
+\index{Full\+Settings\+Base@{Full\+Settings\+Base}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base}}
+\subsubsection[{Full\+Settings\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base\+::\+Full\+Settings\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a6f8eadfe847b03c9ed8b21dc9f7e6db9}
+
+
+brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Full\+Settings\+Base}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base_a6f8eadfe847b03c9ed8b21dc9f7e6db9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

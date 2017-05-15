@@ -1,0 +1,921 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Processing类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+}
+
+
+Base class for image processing related properties.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Processing 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Processing 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a}{Image\+Processing} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9476f886daf74017358ba91efed60a83}{Image\+Processing} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{Image\+Processing} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}} from and existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a41bd628190fbbc91e76a3f81d73b2758}{virtual \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a41bd628190fbbc91e76a3f81d73b2758}{$\sim$\+Image\+Processing} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a41bd628190fbbc91e76a3f81d73b2758}
+
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7ac759ddd44515fd4bf400ae77eb1faf}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{Image\+Processing} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7ac759ddd44515fd4bf400ae77eb1faf}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{Image\+Processing} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7ac759ddd44515fd4bf400ae77eb1faf}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}} objects. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aaaba17f2f9aadb9a1e93f3e21a3536fc}{set\+Saturation} (double K)
+\begin{DoxyCompactList}\small\item\em Sets the saturation by using the color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters}{Gain\+Offset\+Knee\+Channel\+Parameters} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a93e811b5063a027b43599643abc3f132}{get\+Gain\+Offset\+Knee\+Parameter} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to a set of user definable parameters to configure a certain channel of the Gain\+Offset\+Knee filter. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab288b4ffa5cb84731471181b26eab240}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab288b4ffa5cb84731471181b26eab240}{get\+Gain\+Offset\+Knee\+Parameter\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab288b4ffa5cb84731471181b26eab240}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of available user definable parameter sets for the Gain\+Offset\+Knee filter. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_mirror_parameters}{Mirror\+Parameters} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aa77f9e7eea7274c5cc1259c59a6f6b1f}{get\+Mirror\+Parameter} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to a set of user definable parameters to configure mirror filter related features. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a84acdd3171cf4d638105ffd982c68f7f}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a84acdd3171cf4d638105ffd982c68f7f}{get\+Mirror\+Parameter\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a84acdd3171cf4d638105ffd982c68f7f}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of available user definable parameter sets mirror filter related operations. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_l_u_t_parameters}{L\+U\+T\+Parameters} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a07f02208dbb6e3c36409c513874212b9}{get\+L\+U\+T\+Parameter} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to a set of user definable parameters to configure L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) operations. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afac0f2260a5aaa4268377fc959713699}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afac0f2260a5aaa4268377fc959713699}{get\+L\+U\+T\+Parameter\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afac0f2260a5aaa4268377fc959713699}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of available user definable parameter sets for L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) operations. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_white_balance_settings}{White\+Balance\+Settings} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a1ebc9e7e21a15bee6d2fa867bb453d75}{get\+W\+B\+User\+Setting} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to a set of user definable parameters to perform a white balance correction. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aac11633f1c2cba7a8f8bf7bc58978e6e}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aac11633f1c2cba7a8f8bf7bc58978e6e}{get\+W\+B\+User\+Settings\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aac11633f1c2cba7a8f8bf7bc58978e6e}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of available user definable parameter sets for white balance correction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_gafa56b00b5309b5cb40e10b9eb07e1cf9}{Property\+I\+Color\+Processing\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_af8773a44e43169a2bdb68b402f4eafd0}{color\+Processing}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining what kind of color processing shall be applied to the raw image data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga0420d9b31df0caf0bc62286439e80366}{Property\+I\+Bayer\+Conversion\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a33f1980b7ef1e3acbe3e0dd67f0ce6d3}{bayer\+Conversion\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining what kind of algorithm shall be used during Bayer to R\+G\+B conversion. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gabdf739a9f4db49c6642a3bf50540a1b4}{Property\+I\+White\+Balance\+Parameter} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afc417e7cc989db27966d9b267d337e0f}{white\+Balance}
+\begin{DoxyCompactList}\small\item\em An integer property defining the parameter set to be used to perform the white balance correction. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gab129f1b9a01f41a701fd35fd1fddc4d2}{Property\+I\+White\+Balance\+Calibration\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6b158bb26649b95f98f9efef72eddc33}{white\+Balance\+Calibration}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the mode used for white balance calibration. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga32f5b5edac93671f54854b4a76f0057e}{Property\+I\+Image\+Processing\+Filter} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a5ccbcb292285fef63f625b25239c4164}{filter}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the filter to be applied to the image before it is transferred to the user. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaeb7e2fadc87b5bf53e5ba09c3255a276}{Property\+I\+Mirror\+Operation\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afe70a375bdb82e907a6d420c9f40b246}{mirror\+Operation\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the general mode the mirror filter will work in. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga6adf15b90e84144e36bdfa8e26fb38de}{Property\+I\+Mirror\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a00449c128b1916f1a00e1f368e0f363c}{mirror\+Mode\+Global}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the mirror mode to be applied to A\+L\+L channels of the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga1833e6534b35ce9f81fdc3a80cc332d3}{Property\+I\+Defective\+Pixels\+Filter\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{defective\+Pixels\+Filter\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the operation mode of the defective pixels filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a57e5c8cf92c06a12d27036387978b36d}{defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit}
+\begin{DoxyCompactList}\small\item\em An integer property defining the max. allowed offset from the average grey value for a pixel during calibration. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae49f3046e9f407c2e3ef7c7e85d204cb}{defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em An integer property defining the max. allowed deviation for a pixel in per cent from the average grey value. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_adcd6475ebbec9d0d3f0968a0e383449d}{defective\+Pixels\+Found}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of pixels considered as being defective with respect to the last calibration run. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a0a5a32575a86e5f69eea1b5a0e1bb728}{defective\+Pixel\+Offset\+X}
+\begin{DoxyCompactList}\small\item\em An integer property defining a list of X-\/offsets of all pixels currently treated as defective. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6339b18435a6c6e16b3e2a8faba9f7f1}{defective\+Pixel\+Offset\+Y}
+\begin{DoxyCompactList}\small\item\em An integer property defining a list of Y-\/offsets of all pixels currently treated as defective. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aebd10f27aaab9228b4d3d207a6b27aca}{defective\+Pixel\+Read\+From\+Device}
+\begin{DoxyCompactList}\small\item\em Calling this method will download defective pixels from the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7fc7e71de3b649a80d02ae944471eb1b}{defective\+Pixel\+Write\+To\+Device}
+\begin{DoxyCompactList}\small\item\em Calling this method will upload defective pixels from the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gae5e0a9f8a06ccd71118818818a717a8c}{Property\+I\+Flat\+Field\+Filter\+Correction\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae6922326134aec43993be0e07d4c5f76}{flat\+Field\+Filter\+Correction\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the correction mode of the flat field correction filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga135f01ac2dcf8ddcf43ae998eccb394e}{Property\+I\+Flat\+Field\+Filter\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a228a7aa520bafcdadc2e30718b6052cf}{flat\+Field\+Filter\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the operation mode of the flat field correction filter. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ac3eefa02a678739fea5280519ab398f8}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ac3eefa02a678739fea5280519ab398f8}{flat\+Field\+Filter\+Calibration\+Image\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ac3eefa02a678739fea5280519ab398f8}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of consecutive images to take into account during the calibration of the flat field filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gade29cf3422c28d48e5d6c20cd9f47f1e}{Property\+I\+Dark\+Current\+Filter\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a86a24af86e5db2dd3efc249ef1db69eb}{dark\+Current\+Filter\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the operation mode of the dark current filter. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad26adb6841d7a08858b824b3a846bbcf}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad26adb6841d7a08858b824b3a846bbcf}{dark\+Current\+Filter\+Calibration\+Image\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad26adb6841d7a08858b824b3a846bbcf}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of consecutive images to take into account during calibration of the dark current filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_abe7ed4cb142288de179ce4e86b314ad6}{gain\+Offset\+Knee\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable the Gain, Offset, Knee filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad5b601b18f53f6b93f8f058225fae0ec}{gain\+Offset\+Knee\+Master\+Offset\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em A float property that contains master offset(in percent). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{L\+U\+T\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) transformations. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga64e784bb1c97e3a3eed6ff572935e5d2}{Property\+I\+L\+U\+T\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae2f3059a3574e6a08a2d4348f1d5a152}{L\+U\+T\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) transformation mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga2b9fd1a0f1dcf0867c527f11a1a1da65}{Property\+I\+L\+U\+T\+Interpolation\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a5ce44c89f01342416d0c3d37c16056cb}{L\+U\+T\+Interpolation\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) interpolation mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga1188a6c6d64010982c28d3bb7b60b2f7}{Property\+I\+L\+U\+T\+Implementation} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab63796c1475d375fc872f0b11a102777}{L\+U\+T\+Implementation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) implementation. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga2641eda4be7328bd1e2af06cc136fb4b}{Property\+I\+L\+U\+T\+Mapping} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ac6ef8a5f6168be4ebcdfe5c0d3e2d311}{L\+U\+T\+Mapping\+Hardware}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) mapping mode for L\+U\+T transformations done by the hardware. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga2641eda4be7328bd1e2af06cc136fb4b}{Property\+I\+L\+U\+T\+Mapping} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aec5f5970518b9ad4f8659fc5dba93416}{L\+U\+T\+Mapping\+Software}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) mapping mode for L\+U\+T transformations done optimized software algorithms. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6baedffb8af8bbd02452226028af8ce7}{tap\+Sort\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable automatic data re-\/ordering from image sources delivering data from multiple taps that require re-\/ordering to reconstruct the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a180de0eae56f31ec62fba059da8345ef}{channel\+Split\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable automatic data re-\/ordering or extraction from multi-\/channel images. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga10dc070afa8c2d87bc6316c6a8507e82}{Property\+I\+Channel\+Split\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a29e6579bdae98ea9fe26b5f982b8cf24}{channel\+Split\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to define how data from multi-\/channel images shall be re-\/ordered. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aefbc72fe4b938214fa4e8b1f7b709aca}{channel\+Split\+Channel\+Index}
+\begin{DoxyCompactList}\small\item\em An integer property which can be used to define which channel of the image shall be extracted. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_addba5c4a6e43745b7e4445cb60c89287}{channel\+Split\+Deinterlace\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable data re-\/ordering for interlaced images. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a1059eb40d65d1ec9c66f5f0002b350c6}{color\+Twist\+Input\+Correction\+Matrix\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable the color twist input correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gad8aa01209e3623c8739f5e1ded1b187d}{Property\+I\+Color\+Twist\+Input\+Correction\+Matrix\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{color\+Twist\+Input\+Correction\+Matrix\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to select an input color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a697c4174ae80d29018b6595882ee8fed}{color\+Twist\+Input\+Correction\+Matrix\+Row0}
+\begin{DoxyCompactList}\small\item\em The first row of the input color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a95c6b003d27034b536a15106c79f2c16}{color\+Twist\+Input\+Correction\+Matrix\+Row1}
+\begin{DoxyCompactList}\small\item\em The second row of the input color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afb2992733955b923314845678c335e77}{color\+Twist\+Input\+Correction\+Matrix\+Row2}
+\begin{DoxyCompactList}\small\item\em The third row of the input color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a070473c70f0ee8047c89db923747b8f2}{color\+Twist\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable the color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a45ac933511a34f20785f092d0758f6b1}{color\+Twist\+Row0}
+\begin{DoxyCompactList}\small\item\em The first row of the color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a95f908912cfd2d3f82978070dacc8dac}{color\+Twist\+Row1}
+\begin{DoxyCompactList}\small\item\em The second row of the color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a05e9180a634ee3c5da6e41e51a3db47f}{color\+Twist\+Row2}
+\begin{DoxyCompactList}\small\item\em The third row of the color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aa30358eeb33f8d1b26cbafc37e829c08}{color\+Twist\+Output\+Correction\+Matrix\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable the color twist output correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gacf5323a7be006494492dd5f8c11c730e}{Property\+I\+Color\+Twist\+Output\+Correction\+Matrix\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{color\+Twist\+Output\+Correction\+Matrix\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to select an output color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab21f7d6e8ab3598c45411a1d66a3a71a}{color\+Twist\+Output\+Correction\+Matrix\+Row0}
+\begin{DoxyCompactList}\small\item\em The first row of the output color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a75cccfd023c20569ff5ff6e3e522595a}{color\+Twist\+Output\+Correction\+Matrix\+Row1}
+\begin{DoxyCompactList}\small\item\em The second row of the output color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_abe3fe5344ec8268ad6936c0401c8231b}{color\+Twist\+Output\+Correction\+Matrix\+Row2}
+\begin{DoxyCompactList}\small\item\em The third row of the output color correction matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad95d05e048058217b600eec09753435f}{color\+Twist\+Resulting\+Matrix\+Row0}
+\begin{DoxyCompactList}\small\item\em The first row of the resulting color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a90cacc49731a478754e9c973a08e8a91}{color\+Twist\+Resulting\+Matrix\+Row1}
+\begin{DoxyCompactList}\small\item\em The second row of the resulting color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a357603532ef84699c0515474c3384dca}{color\+Twist\+Resulting\+Matrix\+Row2}
+\begin{DoxyCompactList}\small\item\em The third row of the resulting color twist matrix. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a15907d13fa374891738730e7addee017}{format\+Reinterpreter\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable the format reinterpreter filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga7fd91208d37ae9034d9639d64e0e0e25}{Property\+I\+Image\+Buffer\+Format\+Reinterpreter\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9077d1d9e51681a0ae60e9265f5129a8}{format\+Reinterpreter\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to configure the format reinterpreter filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_af56131c2b74e45d953aa6aa16d0959f8}{rotation\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to enable/disable the rotation filter. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a92070a7aa140d8f1e202df70c4b3fb7c}{rotation\+Angle}
+\begin{DoxyCompactList}\small\item\em The counterclockwise angle at which the image will be rotated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Base class for image processing related properties. 
+
+This class provides access to properties, which define how the image shall be processed after it has been captured but before it will be handed back to the user. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!Image\+Processing@{Image\+Processing}}
+\index{Image\+Processing@{Image\+Processing}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{Image\+Processing}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+Image\+Processing (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a}
+
+
+brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9476f886daf74017358ba91efed60a83}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!Image\+Processing@{Image\+Processing}}
+\index{Image\+Processing@{Image\+Processing}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{Image\+Processing}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+Image\+Processing (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Processing} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9476f886daf74017358ba91efed60a83}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}} from and existing one. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em src} & A constant reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}} object, this object shall be created from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a93e811b5063a027b43599643abc3f132}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!get\+Gain\+Offset\+Knee\+Parameter@{get\+Gain\+Offset\+Knee\+Parameter}}
+\index{get\+Gain\+Offset\+Knee\+Parameter@{get\+Gain\+Offset\+Knee\+Parameter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{get\+Gain\+Offset\+Knee\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Gain\+Offset\+Knee\+Channel\+Parameters}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::get\+Gain\+Offset\+Knee\+Parameter (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a93e811b5063a027b43599643abc3f132}
+
+
+Returns a reference to a set of user definable parameters to configure a certain channel of the Gain\+Offset\+Knee filter. 
+
+\begin{DoxyReturn}{返回}
+A reference to one of the parameter sets for the Gain\+Offset\+Knee filter that can be altered by the user. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the gain, offset, knee parameter set to be returned \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a07f02208dbb6e3c36409c513874212b9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!get\+L\+U\+T\+Parameter@{get\+L\+U\+T\+Parameter}}
+\index{get\+L\+U\+T\+Parameter@{get\+L\+U\+T\+Parameter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{get\+L\+U\+T\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+U\+T\+Parameters}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::get\+L\+U\+T\+Parameter (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a07f02208dbb6e3c36409c513874212b9}
+
+
+Returns a reference to a set of user definable parameters to configure L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) operations. 
+
+\begin{DoxyReturn}{返回}
+A reference to one of the parameter sets for L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) operations that can be altered by the user. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the L\+U\+T parameter set to be returned \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aa77f9e7eea7274c5cc1259c59a6f6b1f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!get\+Mirror\+Parameter@{get\+Mirror\+Parameter}}
+\index{get\+Mirror\+Parameter@{get\+Mirror\+Parameter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{get\+Mirror\+Parameter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Mirror\+Parameters}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::get\+Mirror\+Parameter (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aa77f9e7eea7274c5cc1259c59a6f6b1f}
+
+
+Returns a reference to a set of user definable parameters to configure mirror filter related features. 
+
+\begin{DoxyReturn}{返回}
+A reference to one of the parameter sets for mirror filter related features that can be altered by the user. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the mirror parameter set to be returned \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a1ebc9e7e21a15bee6d2fa867bb453d75}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!get\+W\+B\+User\+Setting@{get\+W\+B\+User\+Setting}}
+\index{get\+W\+B\+User\+Setting@{get\+W\+B\+User\+Setting}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{get\+W\+B\+User\+Setting}]{\setlength{\rightskip}{0pt plus 5cm}{\bf White\+Balance\+Settings}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::get\+W\+B\+User\+Setting (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a1ebc9e7e21a15bee6d2fa867bb453d75}
+
+
+Returns a reference to a set of user definable parameters to perform a white balance correction. 
+
+Pass '0' for the setting that is activated by setting the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afc417e7cc989db27966d9b267d337e0f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::white\+Balance}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::wbp\+User1}, '1' for {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::wbp\+User2} and so on.
+
+\begin{DoxyReturn}{返回}
+A reference to one of the parameter sets for white balance correction that can be altered by the user. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the white balance parameter set to be returned \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aaaba17f2f9aadb9a1e93f3e21a3536fc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!set\+Saturation@{set\+Saturation}}
+\index{set\+Saturation@{set\+Saturation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{set\+Saturation}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::set\+Saturation (
+\begin{DoxyParamCaption}
+\item[{double}]{K}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aaaba17f2f9aadb9a1e93f3e21a3536fc}
+
+
+Sets the saturation by using the color twist matrix. 
+
+The following saturation formula is used\+:
+
+
+\begin{DoxyCode}
+[0.299 + 0.701*K       , 0.587*(1-K) , 0.114*(1-K)     ]
+[0.299*(1-K) + 0.701*K , 0.587       , 0.114*(1-K)     ]
+[0.299*(1-K) + 0.701*K , 0.587*(1-K) , 0.114 + 0.886*K ]
+\end{DoxyCode}
+
+
+K is the saturation factor K $>$ 1 increases saturation K = 1 means no change 0 $<$ K $<$ 1 decreases saturation K = 0 produces B\&W K $<$ 0 inverts color
+
+\begin{DoxyNote}{注解}
+To enable/disable the saturation the application must write to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a070473c70f0ee8047c89db923747b8f2}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Enable}}. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em K} & The saturation value. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a33f1980b7ef1e3acbe3e0dd67f0ce6d3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!bayer\+Conversion\+Mode@{bayer\+Conversion\+Mode}}
+\index{bayer\+Conversion\+Mode@{bayer\+Conversion\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{bayer\+Conversion\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Bayer\+Conversion\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::bayer\+Conversion\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a33f1980b7ef1e3acbe3e0dd67f0ce6d3}
+
+
+An enumerated integer property defining what kind of algorithm shall be used during Bayer to R\+G\+B conversion. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Conversion\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aefbc72fe4b938214fa4e8b1f7b709aca}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!channel\+Split\+Channel\+Index@{channel\+Split\+Channel\+Index}}
+\index{channel\+Split\+Channel\+Index@{channel\+Split\+Channel\+Index}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{channel\+Split\+Channel\+Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::channel\+Split\+Channel\+Index}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aefbc72fe4b938214fa4e8b1f7b709aca}
+
+
+An integer property which can be used to define which channel of the image shall be extracted. 
+
+This property will only be visible if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a29e6579bdae98ea9fe26b5f982b8cf24}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::channel\+Split\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::csm\+Extract\+Single}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_addba5c4a6e43745b7e4445cb60c89287}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!channel\+Split\+Deinterlace\+Enable@{channel\+Split\+Deinterlace\+Enable}}
+\index{channel\+Split\+Deinterlace\+Enable@{channel\+Split\+Deinterlace\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{channel\+Split\+Deinterlace\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::channel\+Split\+Deinterlace\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_addba5c4a6e43745b7e4445cb60c89287}
+
+
+An enumerated integer property which can be used to enable/disable data re-\/ordering for interlaced images. 
+
+Enabling this feature will cause interlaced images in a way that the 2 fields will be display next to each other. This will modify the original image in an image with twice the width but half the height.
+
+\begin{DoxyNote}{注解}
+Right now this property will only result in correct results for images, that are line wise interlaced, thus some special sensors that e.\+g. transfer Bayer interlaced data (2 lines field 0, 2 lines field even, etc.) can not be re-\/arranged in a meaningful way.
+\end{DoxyNote}
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a180de0eae56f31ec62fba059da8345ef}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!channel\+Split\+Enable@{channel\+Split\+Enable}}
+\index{channel\+Split\+Enable@{channel\+Split\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{channel\+Split\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::channel\+Split\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a180de0eae56f31ec62fba059da8345ef}
+
+
+An enumerated integer property which can be used to enable/disable automatic data re-\/ordering or extraction from multi-\/channel images. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a29e6579bdae98ea9fe26b5f982b8cf24}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!channel\+Split\+Mode@{channel\+Split\+Mode}}
+\index{channel\+Split\+Mode@{channel\+Split\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{channel\+Split\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Channel\+Split\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::channel\+Split\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a29e6579bdae98ea9fe26b5f982b8cf24}
+
+
+An enumerated integer property which can be used to define how data from multi-\/channel images shall be re-\/ordered. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Channel\+Split\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_af8773a44e43169a2bdb68b402f4eafd0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Processing@{color\+Processing}}
+\index{color\+Processing@{color\+Processing}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Processing}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Color\+Processing\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Processing}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_af8773a44e43169a2bdb68b402f4eafd0}
+
+
+An enumerated integer property defining what kind of color processing shall be applied to the raw image data. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Color\+Processing\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a070473c70f0ee8047c89db923747b8f2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Enable@{color\+Twist\+Enable}}
+\index{color\+Twist\+Enable@{color\+Twist\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a070473c70f0ee8047c89db923747b8f2}
+
+
+An enumerated integer property which can be used to enable/disable the color twist matrix. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+The color twist filter can be used to apply a linear transformation to a 3 channel image. Each pixel will first be multiplied by a 3x3 matrix and can then be added to an offset triplet.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a1059eb40d65d1ec9c66f5f0002b350c6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Input\+Correction\+Matrix\+Enable@{color\+Twist\+Input\+Correction\+Matrix\+Enable}}
+\index{color\+Twist\+Input\+Correction\+Matrix\+Enable@{color\+Twist\+Input\+Correction\+Matrix\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Input\+Correction\+Matrix\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a1059eb40d65d1ec9c66f5f0002b350c6}
+
+
+An enumerated integer property which can be used to enable/disable the color twist input correction matrix. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Input\+Correction\+Matrix\+Mode@{color\+Twist\+Input\+Correction\+Matrix\+Mode}}
+\index{color\+Twist\+Input\+Correction\+Matrix\+Mode@{color\+Twist\+Input\+Correction\+Matrix\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Input\+Correction\+Matrix\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Color\+Twist\+Input\+Correction\+Matrix\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}
+
+
+An enumerated integer property which can be used to select an input color correction matrix. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Color\+Twist\+Input\+Correction\+Matrix\+Mode}.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a697c4174ae80d29018b6595882ee8fed}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Input\+Correction\+Matrix\+Row0@{color\+Twist\+Input\+Correction\+Matrix\+Row0}}
+\index{color\+Twist\+Input\+Correction\+Matrix\+Row0@{color\+Twist\+Input\+Correction\+Matrix\+Row0}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Input\+Correction\+Matrix\+Row0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Row0}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a697c4174ae80d29018b6595882ee8fed}
+
+
+The first row of the input color correction matrix. 
+
+This property will store the first row of a user defined 3x3 input color correction matrix if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cticmm\+User}. For other values of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}} modifying this property will have no effect.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a95c6b003d27034b536a15106c79f2c16}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Input\+Correction\+Matrix\+Row1@{color\+Twist\+Input\+Correction\+Matrix\+Row1}}
+\index{color\+Twist\+Input\+Correction\+Matrix\+Row1@{color\+Twist\+Input\+Correction\+Matrix\+Row1}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Input\+Correction\+Matrix\+Row1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Row1}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a95c6b003d27034b536a15106c79f2c16}
+
+
+The second row of the input color correction matrix. 
+
+This property will store the second row of a user defined 3x3 input color correction matrix if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cticmm\+User}. For other values of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}} modifying this property will have no effect.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afb2992733955b923314845678c335e77}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Input\+Correction\+Matrix\+Row2@{color\+Twist\+Input\+Correction\+Matrix\+Row2}}
+\index{color\+Twist\+Input\+Correction\+Matrix\+Row2@{color\+Twist\+Input\+Correction\+Matrix\+Row2}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Input\+Correction\+Matrix\+Row2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Row2}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afb2992733955b923314845678c335e77}
+
+
+The third row of the input color correction matrix. 
+
+This property will store the third row of a user defined 3x3 input color correction matrix if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cticmm\+User}. For other values of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7af8df48fdaec0dd1a1dd6edff1a13cd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Input\+Correction\+Matrix\+Mode}} modifying this property will have no effect.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aa30358eeb33f8d1b26cbafc37e829c08}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Output\+Correction\+Matrix\+Enable@{color\+Twist\+Output\+Correction\+Matrix\+Enable}}
+\index{color\+Twist\+Output\+Correction\+Matrix\+Enable@{color\+Twist\+Output\+Correction\+Matrix\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Output\+Correction\+Matrix\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aa30358eeb33f8d1b26cbafc37e829c08}
+
+
+An enumerated integer property which can be used to enable/disable the color twist output correction matrix. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Output\+Correction\+Matrix\+Mode@{color\+Twist\+Output\+Correction\+Matrix\+Mode}}
+\index{color\+Twist\+Output\+Correction\+Matrix\+Mode@{color\+Twist\+Output\+Correction\+Matrix\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Output\+Correction\+Matrix\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Color\+Twist\+Output\+Correction\+Matrix\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}
+
+
+An enumerated integer property which can be used to select an output color correction matrix. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Color\+Twist\+Output\+Correction\+Matrix\+Mode}.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab21f7d6e8ab3598c45411a1d66a3a71a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Output\+Correction\+Matrix\+Row0@{color\+Twist\+Output\+Correction\+Matrix\+Row0}}
+\index{color\+Twist\+Output\+Correction\+Matrix\+Row0@{color\+Twist\+Output\+Correction\+Matrix\+Row0}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Output\+Correction\+Matrix\+Row0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Row0}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab21f7d6e8ab3598c45411a1d66a3a71a}
+
+
+The first row of the output color correction matrix. 
+
+This property will store the first row of a user defined 3x3 output color correction matrix if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ctocmm\+User}. For other values of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}} modifying this property will have no effect.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a75cccfd023c20569ff5ff6e3e522595a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Output\+Correction\+Matrix\+Row1@{color\+Twist\+Output\+Correction\+Matrix\+Row1}}
+\index{color\+Twist\+Output\+Correction\+Matrix\+Row1@{color\+Twist\+Output\+Correction\+Matrix\+Row1}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Output\+Correction\+Matrix\+Row1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Row1}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a75cccfd023c20569ff5ff6e3e522595a}
+
+
+The second row of the output color correction matrix. 
+
+This property will store the second row of a user defined 3x3 output color correction matrix if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ctocmm\+User}. For other values of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}} modifying this property will have no effect.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_abe3fe5344ec8268ad6936c0401c8231b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Output\+Correction\+Matrix\+Row2@{color\+Twist\+Output\+Correction\+Matrix\+Row2}}
+\index{color\+Twist\+Output\+Correction\+Matrix\+Row2@{color\+Twist\+Output\+Correction\+Matrix\+Row2}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Output\+Correction\+Matrix\+Row2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Row2}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_abe3fe5344ec8268ad6936c0401c8231b}
+
+
+The third row of the output color correction matrix. 
+
+This property will store the third row of a user defined 3x3 output color correction matrix if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ctocmm\+User}. For other values of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9c592b9bee390d8f918b0ef837604fae}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Output\+Correction\+Matrix\+Mode}} modifying this property will have no effect.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad95d05e048058217b600eec09753435f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Resulting\+Matrix\+Row0@{color\+Twist\+Resulting\+Matrix\+Row0}}
+\index{color\+Twist\+Resulting\+Matrix\+Row0@{color\+Twist\+Resulting\+Matrix\+Row0}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Resulting\+Matrix\+Row0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Resulting\+Matrix\+Row0}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad95d05e048058217b600eec09753435f}
+
+
+The first row of the resulting color twist matrix. 
+
+This property will store the first row of the 3x4 resulting color twist matrix. This matrix is created by multiplying the input correction matrix by the color twist matrix by the output correction matrix. Only active matrices will be used to calculate the resulting matrix.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a90cacc49731a478754e9c973a08e8a91}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Resulting\+Matrix\+Row1@{color\+Twist\+Resulting\+Matrix\+Row1}}
+\index{color\+Twist\+Resulting\+Matrix\+Row1@{color\+Twist\+Resulting\+Matrix\+Row1}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Resulting\+Matrix\+Row1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Resulting\+Matrix\+Row1}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a90cacc49731a478754e9c973a08e8a91}
+
+
+The second row of the resulting color twist matrix. 
+
+This property will store the second row of the 3x4 resulting color twist matrix. This matrix is created by multiplying the input correction matrix by the color twist matrix by the output correction matrix. Only active matrices will be used to calculate the resulting matrix.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a357603532ef84699c0515474c3384dca}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Resulting\+Matrix\+Row2@{color\+Twist\+Resulting\+Matrix\+Row2}}
+\index{color\+Twist\+Resulting\+Matrix\+Row2@{color\+Twist\+Resulting\+Matrix\+Row2}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Resulting\+Matrix\+Row2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Resulting\+Matrix\+Row2}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a357603532ef84699c0515474c3384dca}
+
+
+The third row of the resulting color twist matrix. 
+
+This property will store the third row of the 3x4 resulting color twist matrix. This matrix is created by multiplying the input correction matrix by the color twist matrix by the output correction matrix. Only active matrices will be used to calculate the resulting matrix.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a45ac933511a34f20785f092d0758f6b1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Row0@{color\+Twist\+Row0}}
+\index{color\+Twist\+Row0@{color\+Twist\+Row0}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Row0}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Row0}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a45ac933511a34f20785f092d0758f6b1}
+
+
+The first row of the color twist matrix. 
+
+This property will store 4 values. The first 3 components for the first row of the 3x4 matrix, the last component is the offset of this row.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a95f908912cfd2d3f82978070dacc8dac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Row1@{color\+Twist\+Row1}}
+\index{color\+Twist\+Row1@{color\+Twist\+Row1}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Row1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Row1}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a95f908912cfd2d3f82978070dacc8dac}
+
+
+The second row of the color twist matrix. 
+
+This property will store 4 values. The first 3 components for the second row of the 3x4 matrix, the last component is the offset of this row.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a05e9180a634ee3c5da6e41e51a3db47f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!color\+Twist\+Row2@{color\+Twist\+Row2}}
+\index{color\+Twist\+Row2@{color\+Twist\+Row2}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{color\+Twist\+Row2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::color\+Twist\+Row2}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a05e9180a634ee3c5da6e41e51a3db47f}
+
+
+The third row of the color twist matrix. 
+
+This property will store 4 values. The first 3 components for the third row of the 3x4 matrix, the last component is the offset of this row.
+
+\begin{DoxySince}{自从}
+2.\+2.\+2. 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a86a24af86e5db2dd3efc249ef1db69eb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!dark\+Current\+Filter\+Mode@{dark\+Current\+Filter\+Mode}}
+\index{dark\+Current\+Filter\+Mode@{dark\+Current\+Filter\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{dark\+Current\+Filter\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Dark\+Current\+Filter\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::dark\+Current\+Filter\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a86a24af86e5db2dd3efc249ef1db69eb}
+
+
+An enumerated integer property defining the operation mode of the dark current filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Dark\+Current\+Filter\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a0a5a32575a86e5f69eea1b5a0e1bb728}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixel\+Offset\+X@{defective\+Pixel\+Offset\+X}}
+\index{defective\+Pixel\+Offset\+X@{defective\+Pixel\+Offset\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixel\+Offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixel\+Offset\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a0a5a32575a86e5f69eea1b5a0e1bb728}
+
+
+An integer property defining a list of X-\/offsets of all pixels currently treated as defective. 
+
+All these pixels will be replaced depending on the selected algorithm in {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}}.
+
+\begin{DoxyNote}{注解}
+In order to collect {\bfseries A\+L\+L} defective pixels the list of detected pixels is not emptied each time a new calibration is started. In order to get rid of currently detected pixels an application must set the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dpfm\+Reset\+Calibration} and then capture a fresh image. Only then all currently detected pixels will be discarded.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+17.\+1 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6339b18435a6c6e16b3e2a8faba9f7f1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixel\+Offset\+Y@{defective\+Pixel\+Offset\+Y}}
+\index{defective\+Pixel\+Offset\+Y@{defective\+Pixel\+Offset\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixel\+Offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixel\+Offset\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6339b18435a6c6e16b3e2a8faba9f7f1}
+
+
+An integer property defining a list of Y-\/offsets of all pixels currently treated as defective. 
+
+All these pixels will be replaced depending on the selected algorithm in {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}}.
+
+\begin{DoxyNote}{注解}
+In order to collect {\bfseries A\+L\+L} defective pixels the list of detected pixels is not emptied each time a new calibration is started. In order to get rid of currently detected pixels an application must set the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dpfm\+Reset\+Calibration} and then capture a fresh image. Only then all currently detected pixels will be discarded.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+17.\+1 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aebd10f27aaab9228b4d3d207a6b27aca}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixel\+Read\+From\+Device@{defective\+Pixel\+Read\+From\+Device}}
+\index{defective\+Pixel\+Read\+From\+Device@{defective\+Pixel\+Read\+From\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixel\+Read\+From\+Device}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixel\+Read\+From\+Device}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aebd10f27aaab9228b4d3d207a6b27aca}
+
+
+Calling this method will download defective pixels from the device. 
+
+\begin{DoxyNote}{注解}
+In order to collect {\bfseries A\+L\+L} defective pixels the list of detected pixels is not emptied each time a download from the device is executed. In order to get rid of currently detected pixels an application must set the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dpfm\+Reset\+Calibration} and then capture a fresh image. Only then all currently detected pixels will be discarded.
+\end{DoxyNote}
+\begin{DoxyAttention}{注意}
+This feature will only be supported by some devices providing a special interface inside their firmware.
+\end{DoxyAttention}
+\begin{DoxySince}{自从}
+2.\+17.\+1
+\end{DoxySince}
+Calling this method will return ~\newline
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. Most likely mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E if the device does not support this feature. 
+\end{DoxyItemize}\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae49f3046e9f407c2e3ef7c7e85d204cb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc@{defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc}}
+\index{defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc@{defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Cold\+Pixel\+Deviation\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae49f3046e9f407c2e3ef7c7e85d204cb}
+
+
+An integer property defining the max. allowed deviation for a pixel in per cent from the average grey value. 
+
+If this filter is active every pixel that during the calibration produces a grey value which is lower than the average grey value of the image minus the allowed deviation in per cent will be considered as a cold pixel and therefore will be replaced by a value depending on the operation mode of the filter. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a57e5c8cf92c06a12d27036387978b36d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit@{defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit}}
+\index{defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit@{defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Leaky\+Pixel\+Deviation\+\_\+\+A\+D\+C\+Limit}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a57e5c8cf92c06a12d27036387978b36d}
+
+
+An integer property defining the max. allowed offset from the average grey value for a pixel during calibration. 
+
+When this filter is calibrated each pixel producing a grey value higher than the average grey value plus the value of this property will be considered as a leaky pixel and therefore will be replaced by a value depending on the operation mode of the filter. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixels\+Filter\+Mode@{defective\+Pixels\+Filter\+Mode}}
+\index{defective\+Pixels\+Filter\+Mode@{defective\+Pixels\+Filter\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixels\+Filter\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Defective\+Pixels\+Filter\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}
+
+
+An enumerated integer property defining the operation mode of the defective pixels filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Defective\+Pixels\+Filter\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_adcd6475ebbec9d0d3f0968a0e383449d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixels\+Found@{defective\+Pixels\+Found}}
+\index{defective\+Pixels\+Found@{defective\+Pixels\+Found}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixels\+Found}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Found}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_adcd6475ebbec9d0d3f0968a0e383449d}
+
+
+An integer property {\bfseries }(read-\/only) containing the number of pixels considered as being defective with respect to the last calibration run. 
+
+\begin{DoxyNote}{注解}
+In order to collect {\bfseries A\+L\+L} defective pixels the list of detected pixels is not emptied each time a new calibration is started. In order to get rid of currently detected pixels an application must set the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae1e060a70ed836297ef3886db0bf8a95}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixels\+Filter\+Mode}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dpfm\+Reset\+Calibration} and then capture a fresh image. Only then all currently detected pixels will be discarded.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+5.\+9 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7fc7e71de3b649a80d02ae944471eb1b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!defective\+Pixel\+Write\+To\+Device@{defective\+Pixel\+Write\+To\+Device}}
+\index{defective\+Pixel\+Write\+To\+Device@{defective\+Pixel\+Write\+To\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{defective\+Pixel\+Write\+To\+Device}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::defective\+Pixel\+Write\+To\+Device}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7fc7e71de3b649a80d02ae944471eb1b}
+
+
+Calling this method will upload defective pixels from the device. 
+
+\begin{DoxyNote}{注解}
+This will {\bfseries N\+O\+T} automatically store this data in non-\/volatile memory on the device! A call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4acdf44b93d160f06022d1e52f5b1e42}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Data\+Save}} might be needed!
+\end{DoxyNote}
+\begin{DoxyAttention}{注意}
+This feature will only be supported by some devices providing a special interface inside their firmware.
+\end{DoxyAttention}
+\begin{DoxySince}{自从}
+2.\+17.\+1
+\end{DoxySince}
+Calling this method will return ~\newline
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. Most likely mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E if the device does not support this feature. 
+\end{DoxyItemize}\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a5ccbcb292285fef63f625b25239c4164}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!filter@{filter}}
+\index{filter@{filter}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{filter}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Processing\+Filter} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::filter}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a5ccbcb292285fef63f625b25239c4164}
+
+
+An enumerated integer property defining the filter to be applied to the image before it is transferred to the user. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Processing\+Filter}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae6922326134aec43993be0e07d4c5f76}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!flat\+Field\+Filter\+Correction\+Mode@{flat\+Field\+Filter\+Correction\+Mode}}
+\index{flat\+Field\+Filter\+Correction\+Mode@{flat\+Field\+Filter\+Correction\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{flat\+Field\+Filter\+Correction\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Flat\+Field\+Filter\+Correction\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::flat\+Field\+Filter\+Correction\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae6922326134aec43993be0e07d4c5f76}
+
+
+An enumerated integer property defining the correction mode of the flat field correction filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Flat\+Field\+Filter\+Correction\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a228a7aa520bafcdadc2e30718b6052cf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!flat\+Field\+Filter\+Mode@{flat\+Field\+Filter\+Mode}}
+\index{flat\+Field\+Filter\+Mode@{flat\+Field\+Filter\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{flat\+Field\+Filter\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Flat\+Field\+Filter\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::flat\+Field\+Filter\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a228a7aa520bafcdadc2e30718b6052cf}
+
+
+An enumerated integer property defining the operation mode of the flat field correction filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Flat\+Field\+Filter\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a15907d13fa374891738730e7addee017}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!format\+Reinterpreter\+Enable@{format\+Reinterpreter\+Enable}}
+\index{format\+Reinterpreter\+Enable@{format\+Reinterpreter\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{format\+Reinterpreter\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::format\+Reinterpreter\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a15907d13fa374891738730e7addee017}
+
+
+An enumerated integer property which can be used to enable/disable the format reinterpreter filter. 
+
+This filter can be used if a device transmits data in a non-\/compliant or incorrect format. Using this filter the incoming data will simply be treated as a different pixel format then. This will {\bfseries N\+O\+T} copy or modify the pixel data but will only adjust some of the elements describing the buffer (e.\+g. the pixel format and width). When e.\+g. setting this filter to treat mono data as R\+G\+B data, this will result in buffers with a width divided by 3 but R\+G\+B pixels instead of mono pixel afterwards.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+\begin{DoxySince}{自从}
+2.\+10.\+1 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9077d1d9e51681a0ae60e9265f5129a8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!format\+Reinterpreter\+Mode@{format\+Reinterpreter\+Mode}}
+\index{format\+Reinterpreter\+Mode@{format\+Reinterpreter\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{format\+Reinterpreter\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Buffer\+Format\+Reinterpreter\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::format\+Reinterpreter\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a9077d1d9e51681a0ae60e9265f5129a8}
+
+
+An enumerated integer property which can be used to configure the format reinterpreter filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Format\+Reinterpreter\+Mode}.
+
+\begin{DoxySince}{自从}
+2.\+10.\+1 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_abe7ed4cb142288de179ce4e86b314ad6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!gain\+Offset\+Knee\+Enable@{gain\+Offset\+Knee\+Enable}}
+\index{gain\+Offset\+Knee\+Enable@{gain\+Offset\+Knee\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{gain\+Offset\+Knee\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::gain\+Offset\+Knee\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_abe7ed4cb142288de179ce4e86b314ad6}
+
+
+An enumerated integer property which can be used to enable the Gain, Offset, Knee filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad5b601b18f53f6b93f8f058225fae0ec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!gain\+Offset\+Knee\+Master\+Offset\+\_\+pc@{gain\+Offset\+Knee\+Master\+Offset\+\_\+pc}}
+\index{gain\+Offset\+Knee\+Master\+Offset\+\_\+pc@{gain\+Offset\+Knee\+Master\+Offset\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{gain\+Offset\+Knee\+Master\+Offset\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::gain\+Offset\+Knee\+Master\+Offset\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ad5b601b18f53f6b93f8f058225fae0ec}
+
+
+A float property that contains master offset(in percent). 
+
+This offset will be applied before the channel specific gain. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!L\+U\+T\+Enable@{L\+U\+T\+Enable}}
+\index{L\+U\+T\+Enable@{L\+U\+T\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{L\+U\+T\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}
+
+
+An enumerated integer property which can be used to enable L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) transformations. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab63796c1475d375fc872f0b11a102777}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!L\+U\+T\+Implementation@{L\+U\+T\+Implementation}}
+\index{L\+U\+T\+Implementation@{L\+U\+T\+Implementation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{L\+U\+T\+Implementation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+L\+U\+T\+Implementation} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Implementation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab63796c1475d375fc872f0b11a102777}
+
+
+An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) implementation. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+L\+U\+T\+Implementation}.
+
+\begin{DoxyNote}{注解}
+This property will be invisible when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+False}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a5ce44c89f01342416d0c3d37c16056cb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!L\+U\+T\+Interpolation\+Mode@{L\+U\+T\+Interpolation\+Mode}}
+\index{L\+U\+T\+Interpolation\+Mode@{L\+U\+T\+Interpolation\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{L\+U\+T\+Interpolation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+L\+U\+T\+Interpolation\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Interpolation\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a5ce44c89f01342416d0c3d37c16056cb}
+
+
+An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) interpolation mode. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+L\+U\+T\+Interpolation\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will be invisible when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+False} or if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae2f3059a3574e6a08a2d4348f1d5a152}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Mode}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+L\+U\+Tm\+Interpolated}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ac6ef8a5f6168be4ebcdfe5c0d3e2d311}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!L\+U\+T\+Mapping\+Hardware@{L\+U\+T\+Mapping\+Hardware}}
+\index{L\+U\+T\+Mapping\+Hardware@{L\+U\+T\+Mapping\+Hardware}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{L\+U\+T\+Mapping\+Hardware}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+L\+U\+T\+Mapping} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Mapping\+Hardware}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ac6ef8a5f6168be4ebcdfe5c0d3e2d311}
+
+
+An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) mapping mode for L\+U\+T transformations done by the hardware. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+L\+U\+T\+Mapping}.
+
+\begin{DoxyNote}{注解}
+This property will be invisible when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+False} or if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab63796c1475d375fc872f0b11a102777}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Implementation}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+L\+U\+Ti\+Hardware}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aec5f5970518b9ad4f8659fc5dba93416}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!L\+U\+T\+Mapping\+Software@{L\+U\+T\+Mapping\+Software}}
+\index{L\+U\+T\+Mapping\+Software@{L\+U\+T\+Mapping\+Software}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{L\+U\+T\+Mapping\+Software}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+L\+U\+T\+Mapping} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Mapping\+Software}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_aec5f5970518b9ad4f8659fc5dba93416}
+
+
+An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) mapping mode for L\+U\+T transformations done optimized software algorithms. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+L\+U\+T\+Mapping}.
+
+\begin{DoxyNote}{注解}
+This property will be invisible when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+False} or if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ab63796c1475d375fc872f0b11a102777}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Implementation}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+L\+U\+Ti\+Software}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae2f3059a3574e6a08a2d4348f1d5a152}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!L\+U\+T\+Mode@{L\+U\+T\+Mode}}
+\index{L\+U\+T\+Mode@{L\+U\+T\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{L\+U\+T\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+L\+U\+T\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_ae2f3059a3574e6a08a2d4348f1d5a152}
+
+
+An enumerated integer property which can be used to configure the L\+U\+T ({\bfseries L}ook {\bfseries U}p {\bfseries T}able) transformation mode. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+L\+U\+T\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will be invisible when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a7f8eb83578d97fde3405e6ae5d09e5c3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::\+L\+U\+T\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+False}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a00449c128b1916f1a00e1f368e0f363c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!mirror\+Mode\+Global@{mirror\+Mode\+Global}}
+\index{mirror\+Mode\+Global@{mirror\+Mode\+Global}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{mirror\+Mode\+Global}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Mirror\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::mirror\+Mode\+Global}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a00449c128b1916f1a00e1f368e0f363c}
+
+
+An enumerated integer property defining the mirror mode to be applied to A\+L\+L channels of the image. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Mirror\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will only be visible, when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afe70a375bdb82e907a6d420c9f40b246}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::mirror\+Operation\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::mom\+Global}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afe70a375bdb82e907a6d420c9f40b246}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!mirror\+Operation\+Mode@{mirror\+Operation\+Mode}}
+\index{mirror\+Operation\+Mode@{mirror\+Operation\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{mirror\+Operation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Mirror\+Operation\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::mirror\+Operation\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afe70a375bdb82e907a6d420c9f40b246}
+
+
+An enumerated integer property defining the general mode the mirror filter will work in. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Mirror\+Operation\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a92070a7aa140d8f1e202df70c4b3fb7c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!rotation\+Angle@{rotation\+Angle}}
+\index{rotation\+Angle@{rotation\+Angle}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{rotation\+Angle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::rotation\+Angle}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a92070a7aa140d8f1e202df70c4b3fb7c}
+
+
+The counterclockwise angle at which the image will be rotated. 
+
+This property will store the counterclockwise angle at which the image will be rotated.
+
+\begin{DoxySince}{自从}
+2.\+13.\+2 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_af56131c2b74e45d953aa6aa16d0959f8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!rotation\+Enable@{rotation\+Enable}}
+\index{rotation\+Enable@{rotation\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{rotation\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::rotation\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_af56131c2b74e45d953aa6aa16d0959f8}
+
+
+An enumerated integer property which can be used to enable/disable the rotation filter. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+\begin{DoxySince}{自从}
+2.\+13.\+2 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6baedffb8af8bbd02452226028af8ce7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!tap\+Sort\+Enable@{tap\+Sort\+Enable}}
+\index{tap\+Sort\+Enable@{tap\+Sort\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{tap\+Sort\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::tap\+Sort\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6baedffb8af8bbd02452226028af8ce7}
+
+
+An enumerated integer property which can be used to enable/disable automatic data re-\/ordering from image sources delivering data from multiple taps that require re-\/ordering to reconstruct the image. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afc417e7cc989db27966d9b267d337e0f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!white\+Balance@{white\+Balance}}
+\index{white\+Balance@{white\+Balance}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{white\+Balance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+White\+Balance\+Parameter} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::white\+Balance}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afc417e7cc989db27966d9b267d337e0f}
+
+
+An integer property defining the parameter set to be used to perform the white balance correction. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+White\+Balance\+Parameter}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6b158bb26649b95f98f9efef72eddc33}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}!white\+Balance\+Calibration@{white\+Balance\+Calibration}}
+\index{white\+Balance\+Calibration@{white\+Balance\+Calibration}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}
+\subsubsection[{white\+Balance\+Calibration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+White\+Balance\+Calibration\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::white\+Balance\+Calibration}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a6b158bb26649b95f98f9efef72eddc33}
+
+
+An enumerated integer property defining the mode used for white balance calibration. 
+
+This property can be used to define the way a white balance calibration shall be performed. Currently only the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::wbcm\+Next\+Frame} mode is supported, but new modes might appear in later revisions of the interface.
+
+When this property is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::wbcm\+Next\+Frame} the next image captured will be used as a reference to calculate the gain factors for the {\itshape red}, {\itshape green} and {\itshape blue} channel. So make sure when the next image is captured the camera looks on a plain white or slightly grey surface in order to obtain correct results. After the calibration has been done, the property will be reset to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::wbcm\+Off} again.
+
+\begin{DoxyNote}{注解}
+Performing this kind of white balance calibration will only affect Bayer color sensors and will only have any visual effect on the image if one of the user definable parameter sets has been selected before. This can be done by modifying the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_afc417e7cc989db27966d9b267d337e0f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing\+::white\+Balance}}. Afterwards the calculated factors will be stored in the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_white_balance_settings}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+White\+Balance\+Settings}} selected.
+\end{DoxyNote}
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+White\+Balance\+Calibration\+Mode}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,65 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:H\+D\+R\+Knee\+Point类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Knee\+Point@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Knee\+Point}}
+}
+
+
+A class to configure a H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) knee point ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:H\+D\+R\+Knee\+Point 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:H\+D\+R\+Knee\+Point 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a52a344ecda4a61825d086cf74a8572c7}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a52a344ecda4a61825d086cf74a8572c7}{H\+D\+R\+Control\+Voltage\+\_\+m\+V}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a52a344ecda4a61825d086cf74a8572c7}
+
+\begin{DoxyCompactList}\small\item\em An enumerated integer property that can be used to define the control voltage in m\+V for this knee point. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a43eae41d4e461d62ce4b78f0ccb45181}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a43eae41d4e461d62ce4b78f0ccb45181}{H\+D\+R\+Exposure\+\_\+ppm}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a43eae41d4e461d62ce4b78f0ccb45181}
+
+\begin{DoxyCompactList}\small\item\em An enumerated integer property that can be used to define the exposure time in ppm of the overall exposure time for this knee point. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a3f6df76ce2fc95c8c932c68db98385c8}{class {\bfseries H\+D\+R\+Control}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_knee_point_a3f6df76ce2fc95c8c932c68db98385c8}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to configure a H\+D\+R ({\bfseries H}igh {\bfseries D}ynamic {\bfseries R}ange) knee point ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+\begin{DoxyNote}{注解}
+Not every device will offer the features provided in this class. Before accessing properties call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}. Right now only the mv\+Blue\+F\+O\+X-\/x00wx types will support the features defined by this class.
+
+Instances of these class can't be constructed directly. Its parameters can be accessed via an instance of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X}} or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

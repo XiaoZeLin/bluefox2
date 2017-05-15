@@ -1,0 +1,151 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Destination类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+}
+
+
+Properties to define the format of resulting images.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Destination 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Destination 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a1ccdf12b3e0069dccabc017bb9d0c34e}{Image\+Destination} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga4b749ac6f5a0ae8744177180cfa1c955}{Property\+I\+Image\+Destination\+Pixel\+Format} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_abfd0d30346d66251d5941a5e57efb784}{pixel\+Format}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the pixel format of the resulting image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga0adb8ca6f3c1ff4cc9813bcee143580f}{Property\+I\+Scaler\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{scaler\+Mode}
+\begin{DoxyCompactList}\small\item\em An integer property defining whether the image is scaled or not. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga935c38ccadc072128888280fa7a78e0e}{Property\+I\+Scaler\+Interpolation\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_afea899675c351778785fe0e0d4f4d29c}{scaler\+Interpolation\+Mode}
+\begin{DoxyCompactList}\small\item\em An integer property defining the interpolation method used when the scaler is active. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a4bbc153c68625e5e4a662d2334044df2}{image\+Width}
+\begin{DoxyCompactList}\small\item\em An integer property defining the width of the scaled image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a44d0d15b998bbc624d809e604cc1ae65}{image\+Height}
+\begin{DoxyCompactList}\small\item\em An integer property defining the height of the scaled image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Properties to define the format of resulting images. 
+
+This class provides properties allowing the user to define how the resulting image should be created. Things like the width and height of the captured image can be defined here for example. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a1ccdf12b3e0069dccabc017bb9d0c34e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}!Image\+Destination@{Image\+Destination}}
+\index{Image\+Destination@{Image\+Destination}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+\subsubsection[{Image\+Destination}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::\+Image\+Destination (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a1ccdf12b3e0069dccabc017bb9d0c34e}
+
+
+brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a1ccdf12b3e0069dccabc017bb9d0c34e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a44d0d15b998bbc624d809e604cc1ae65}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}!image\+Height@{image\+Height}}
+\index{image\+Height@{image\+Height}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+\subsubsection[{image\+Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::image\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a44d0d15b998bbc624d809e604cc1ae65}
+
+
+An integer property defining the height of the scaled image. 
+
+\begin{DoxyNote}{注解}
+Whenever the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sm\+Off} modifying or reading this property will have no effect. Call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{Component\+::is\+Visible}} to find out whether this property is currently active or not.
+
+Please see remarks under {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a4bbc153c68625e5e4a662d2334044df2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}!image\+Width@{image\+Width}}
+\index{image\+Width@{image\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+\subsubsection[{image\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::image\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a4bbc153c68625e5e4a662d2334044df2}
+
+
+An integer property defining the width of the scaled image. 
+
+\begin{DoxyNote}{注解}
+Whenever the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sm\+Off} modifying or reading this property will have no effect. Call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{Component\+::is\+Visible}} to find out whether this property is currently active or not.
+
+Please see remarks under {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_abfd0d30346d66251d5941a5e57efb784}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}!pixel\+Format@{pixel\+Format}}
+\index{pixel\+Format@{pixel\+Format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+\subsubsection[{pixel\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Destination\+Pixel\+Format} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::pixel\+Format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_abfd0d30346d66251d5941a5e57efb784}
+
+
+An enumerated integer property defining the pixel format of the resulting image. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Destination\+Pixel\+Format}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_afea899675c351778785fe0e0d4f4d29c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}!scaler\+Interpolation\+Mode@{scaler\+Interpolation\+Mode}}
+\index{scaler\+Interpolation\+Mode@{scaler\+Interpolation\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+\subsubsection[{scaler\+Interpolation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Scaler\+Interpolation\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Interpolation\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_afea899675c351778785fe0e0d4f4d29c}
+
+
+An integer property defining the interpolation method used when the scaler is active. 
+
+\begin{DoxyNote}{注解}
+Whenever the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::sm\+Off} modifying or reading this property will have no effect. Call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{Component\+::is\+Visible}} to find out whether this property is currently active or not.
+
+Please see remarks under {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}}. The interpolation mode currently will only be used when scaling is {\bfseries N\+O\+T} done by the hardware. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}!scaler\+Mode@{scaler\+Mode}}
+\index{scaler\+Mode@{scaler\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination}}
+\subsubsection[{scaler\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Scaler\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::scaler\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_a0e85ee4b320d7b84f664d00d02965c73}
+
+
+An integer property defining whether the image is scaled or not. 
+
+\begin{DoxyNote}{注解}
+This feature is available for every device! However currently only {\bfseries mv\+D\+E\+L\+T\+A} / {\bfseries mv\+S\+I\+G\+M\+A} devices provide hardware support for {\bfseries R\+E\+D\+U\+C\+I\+N\+G} the image size. In this case the scaled width and height must be divisible by 4. For every other device this will be done by a software filter and therefore will introduce additional C\+P\+U load. Increasing the image size will always be done in software. When using the scaler the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ac65c579e00cb51b5c841b6730631fe7e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::image\+Proc\+Time\+\_\+s}} can be used to observe the additional C\+P\+U time needed for the image processing. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

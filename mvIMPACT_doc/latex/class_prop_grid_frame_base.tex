@@ -1,0 +1,231 @@
+\hypertarget{class_prop_grid_frame_base}{\section{Prop\+Grid\+Frame\+Base类 参考}
+\label{class_prop_grid_frame_base}\index{Prop\+Grid\+Frame\+Base@{Prop\+Grid\+Frame\+Base}}
+}
+
+
+类 Prop\+Grid\+Frame\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_prop_grid_frame_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Prop\+Grid\+Frame\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{class_prop_grid_frame_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prop_grid_frame_base_a47771957d6017132515598a4a3e781c0}{{\bfseries Prop\+Grid\+Frame\+Base} (wx\+Window\+I\+D id, const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size)}\label{class_prop_grid_frame_base_a47771957d6017132515598a4a3e781c0}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_aa094c258bb30b5e597dd9c3086bd92e2}{bool {\bfseries Select\+Property\+In\+Property\+Grid} (\hyperlink{class_prop_data}{Prop\+Data} $\ast$p\+Prop\+Data)}\label{class_prop_grid_frame_base_aa094c258bb30b5e597dd9c3086bd92e2}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a0da41a079fd1ecd8f54bec245e6b2720}{void {\bfseries Start\+Property\+Grid\+Update\+Timer} (void)}\label{class_prop_grid_frame_base_a0da41a079fd1ecd8f54bec245e6b2720}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a6043d2b9aafb4fff7209d35d3e875686}{void {\bfseries Stop\+Property\+Grid\+Update\+Timer} (void)}\label{class_prop_grid_frame_base_a6043d2b9aafb4fff7209d35d3e875686}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ad8e80f9fb570d3d7d6c32d6c731f8028}{virtual void {\bfseries Write\+Error\+Message} (const wx\+String \&msg)=0}\label{class_prop_grid_frame_base_ad8e80f9fb570d3d7d6c32d6c731f8028}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a7b9f09ce348d87031093c6a17a0c500f}{virtual void {\bfseries Write\+Log\+Message} (const wx\+String \&msg, const wx\+Text\+Attr \&style=wx\+Text\+Attr($\ast$wx\+B\+L\+A\+C\+K))=0}\label{class_prop_grid_frame_base_a7b9f09ce348d87031093c6a17a0c500f}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prop_grid_frame_base_abf93ba6a2caf761a755c4a869f982f5b}{enum {\bfseries T\+Timer\+Event} \{ {\bfseries te\+List\+Update}, 
+{\bfseries te\+C\+U\+S\+T\+O\+M\+\_\+\+I\+D}
+ \}}\label{class_prop_grid_frame_base_abf93ba6a2caf761a755c4a869f982f5b}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a65687054c3cdb55081be11710833210a}{enum {\bfseries T\+Menu\+Item\+Base} \{ \\*
+{\bfseries wid\+Property\+Grid\+Manager} = 1, 
+{\bfseries mi\+Pop\+Up\+Meth\+Exec}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Force\+Refresh}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Copy\+To\+Clipboard}, 
+\\*
+{\bfseries mi\+Pop\+Up\+Prop\+Set\+From\+Clipboard}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Restore\+Default}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Read\+From\+File}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Write\+To\+File}, 
+\\*
+{\bfseries mi\+Pop\+Up\+Prop\+Attach\+Callback}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Detach\+Callback}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Plot\+In\+Feature\+Value\+Vs\+Time\+Plot}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Append\+Value}, 
+\\*
+{\bfseries mi\+Pop\+Up\+Prop\+Delete\+Value}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Set\+Multiple}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Set\+Multiple\+\_\+\+Fixed\+Value}, 
+{\bfseries mi\+Pop\+Up\+Prop\+Set\+Multiple\+\_\+\+From\+To\+Range}, 
+\\*
+{\bfseries mi\+Pop\+Up\+Detailed\+Feature\+Info}, 
+{\bfseries mib\+L\+A\+S\+T}
+ \}}\label{class_prop_grid_frame_base_a65687054c3cdb55081be11710833210a}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_afc2ebbef6e9fad54aefe03a6900fc3d2}{enum \{ {\bfseries D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+R\+O\+P\+\_\+\+G\+R\+I\+D\+\_\+\+U\+P\+D\+A\+T\+E\+\_\+\+P\+E\+R\+I\+O\+D} = 750
+ \}}\label{class_prop_grid_frame_base_afc2ebbef6e9fad54aefe03a6900fc3d2}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prop_grid_frame_base_a9b5bf0e5c31e064c87a653d030d3e021}{virtual void {\bfseries Append\+Custom\+Prop\+Grid\+Execution\+Error\+Message} (wx\+String \&) const }\label{class_prop_grid_frame_base_a9b5bf0e5c31e064c87a653d030d3e021}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ae594c1b6714229567d52ca4349fbc805}{void {\bfseries Configure\+Tool\+Tips\+For\+Property\+Grids} (const bool bo\+Enable)}\label{class_prop_grid_frame_base_ae594c1b6714229567d52ca4349fbc805}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a57db974b23c338c37b16c08b63cbfd07}{void {\bfseries Expand\+Property\+Recursively} (wx\+P\+G\+Property $\ast$id)}\label{class_prop_grid_frame_base_a57db974b23c338c37b16c08b63cbfd07}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_af4cb34e1cb6bd12f518889e507906b29}{void {\bfseries Expand\+Property\+Tree\+To\+Device\+Settings} (void)}\label{class_prop_grid_frame_base_af4cb34e1cb6bd12f518889e507906b29}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a98b84b0161f8b0a68612c924b2ac6ea8}{virtual bool {\bfseries Feature\+Changed\+Callbacks\+Supported} (void) const }\label{class_prop_grid_frame_base_a98b84b0161f8b0a68612c924b2ac6ea8}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a0b0149fe9dcc6c3725f9f6037543d607}{virtual bool {\bfseries Feature\+Has\+Changed\+Callback} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}) const }\label{class_prop_grid_frame_base_a0b0149fe9dcc6c3725f9f6037543d607}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a5f1342755ca6de1ef9588c8f13f134a2}{wx\+Property\+Grid $\ast$ {\bfseries Get\+Property\+Grid} (void)}\label{class_prop_grid_frame_base_a5f1342755ca6de1ef9588c8f13f134a2}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a49596726a654017a03afae5796d2051d}{wx\+Property\+Grid\+Page $\ast$ {\bfseries Get\+Selected\+Property\+Grid\+Page} (void)}\label{class_prop_grid_frame_base_a49596726a654017a03afae5796d2051d}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a931715d5cd6200e96b1623ef5610444d}{virtual E\+Display\+Flags {\bfseries Get\+Display\+Flags} (void) const }\label{class_prop_grid_frame_base_a931715d5cd6200e96b1623ef5610444d}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ae3cd5ee5a62997b9867b007c13afb399}{void {\bfseries On\+Execute\+Prop\+Grid\+Method} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_ae3cd5ee5a62997b9867b007c13afb399}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a4add68ed57186fde59fec3fd38a691bc}{void {\bfseries On\+Pop\+Up\+Detailed\+Feature\+Info} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_a4add68ed57186fde59fec3fd38a691bc}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_abd696bcead9ffb7d5464495841cbf208}{void {\bfseries On\+Pop\+Up\+Prop\+Force\+Refresh} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_abd696bcead9ffb7d5464495841cbf208}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a2192393f6639c1ae27b34e1cd1435669}{void {\bfseries On\+Pop\+Up\+Prop\+Copy\+To\+Clipboard} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_a2192393f6639c1ae27b34e1cd1435669}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ade214d0abe64eb87b758845d1d05b7ec}{void {\bfseries On\+Pop\+Up\+Prop\+Set\+From\+Clipboard} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_ade214d0abe64eb87b758845d1d05b7ec}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ad9b211e84bb0266476d236ce35269c16}{void {\bfseries On\+Pop\+Up\+Prop\+Restore\+Default} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_ad9b211e84bb0266476d236ce35269c16}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a8e94cc89e436667008f65adb111a81ce}{virtual void {\bfseries On\+Pop\+Up\+Prop\+Read\+From\+File} (wx\+Command\+Event \&)}\label{class_prop_grid_frame_base_a8e94cc89e436667008f65adb111a81ce}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a5f7df0b1ff31f8b61fcd88fb1734b533}{virtual void {\bfseries On\+Pop\+Up\+Prop\+Write\+To\+File} (wx\+Command\+Event \&)}\label{class_prop_grid_frame_base_a5f7df0b1ff31f8b61fcd88fb1734b533}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a439af29613de38963c3b0be15a8e9f3f}{virtual void {\bfseries On\+Pop\+Up\+Prop\+Attach\+Callback} (wx\+Command\+Event \&)}\label{class_prop_grid_frame_base_a439af29613de38963c3b0be15a8e9f3f}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a23b7db2c2ae6a0996eb05eaaa953934b}{virtual void {\bfseries On\+Pop\+Up\+Prop\+Detach\+Callback} (wx\+Command\+Event \&)}\label{class_prop_grid_frame_base_a23b7db2c2ae6a0996eb05eaaa953934b}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a0733fb0319de6742b6c99ca31d58a0d0}{virtual void {\bfseries On\+Pop\+Up\+Prop\+Plot\+In\+Feature\+Value\+Vs\+Time\+Plot} (wx\+Command\+Event \&)}\label{class_prop_grid_frame_base_a0733fb0319de6742b6c99ca31d58a0d0}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ad62082c3983ece46f9cd14d8bf19734b}{void {\bfseries On\+Pop\+Up\+Prop\+Append\+Value} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_ad62082c3983ece46f9cd14d8bf19734b}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ab75b22a172b3f8e7bbbadb19b7a81a55}{void {\bfseries On\+Pop\+Up\+Prop\+Delete\+Value} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_ab75b22a172b3f8e7bbbadb19b7a81a55}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_af1146653c8eb4a5fc2571b1046bdaa15}{void {\bfseries On\+Pop\+Up\+Prop\+Set\+Multiple\+\_\+\+Fixed\+Value} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_af1146653c8eb4a5fc2571b1046bdaa15}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a5a46bc09d8654fe2b8c24c2eba681357}{void {\bfseries On\+Pop\+Up\+Prop\+Set\+Multiple\+\_\+\+From\+To\+Range} (wx\+Command\+Event \&e)}\label{class_prop_grid_frame_base_a5a46bc09d8654fe2b8c24c2eba681357}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a2b2d55519765b6b1de4fc681f9a12ee0}{void {\bfseries On\+Property\+Changed} (wx\+Property\+Grid\+Event \&e)}\label{class_prop_grid_frame_base_a2b2d55519765b6b1de4fc681f9a12ee0}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a75a25f8dff54ab6ca4d3bb00e286cabf}{virtual void {\bfseries On\+Property\+Changed\+Custom} (wx\+Property\+Grid\+Event \&)}\label{class_prop_grid_frame_base_a75a25f8dff54ab6ca4d3bb00e286cabf}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_adc06bb8757171b10d9a84b3b3c8b33ea}{virtual void {\bfseries On\+Property\+Grid\+Timer} (void)=0}\label{class_prop_grid_frame_base_adc06bb8757171b10d9a84b3b3c8b33ea}
+
+\item 
+void \hyperlink{class_prop_grid_frame_base_a0afb2cdd3da1a2844d2c3a89ef6be719}{On\+Property\+Right\+Clicked} (wx\+Property\+Grid\+Event \&e)
+\item 
+\hypertarget{class_prop_grid_frame_base_a7dbb6bf7e62cd77814efdcd327fd57ef}{virtual void {\bfseries On\+Property\+Right\+Clicked\+Custom} (wx\+Property\+Grid\+Event \&)}\label{class_prop_grid_frame_base_a7dbb6bf7e62cd77814efdcd327fd57ef}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a58e5c4a2684721fe11ebc1f7802aa850}{void {\bfseries On\+Property\+Grid\+Item\+Expanded\+Or\+Collapsed} (wx\+Property\+Grid\+Event \&)}\label{class_prop_grid_frame_base_a58e5c4a2684721fe11ebc1f7802aa850}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_ac01aa2a2348a0bfb1bf99a42700b38bb}{void {\bfseries On\+Property\+Selected} (wx\+Property\+Grid\+Event \&e)}\label{class_prop_grid_frame_base_ac01aa2a2348a0bfb1bf99a42700b38bb}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a45df272ce484b18160a7089070925077}{virtual void {\bfseries On\+Property\+Selected\+Custom} (wx\+Property\+Grid\+Event \&)}\label{class_prop_grid_frame_base_a45df272ce484b18160a7089070925077}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a5fafdb9b7eeb935faadaed67dd334086}{void {\bfseries On\+Timer} (wx\+Timer\+Event \&e)}\label{class_prop_grid_frame_base_a5fafdb9b7eeb935faadaed67dd334086}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_aecef3e9b2ee2848c35c5c0a6f2ea2ac4}{virtual void {\bfseries On\+Timer\+Custom} (wx\+Timer\+Event \&)}\label{class_prop_grid_frame_base_aecef3e9b2ee2848c35c5c0a6f2ea2ac4}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a58f217246deae675e325674fae8876ab}{virtual bool {\bfseries Show\+Feature\+Change\+Time\+Consumption} (void) const }\label{class_prop_grid_frame_base_a58f217246deae675e325674fae8876ab}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a22ebb4aba08f7831e649ac5629d2026c}{virtual bool {\bfseries Show\+Prop\+Grid\+Method\+Execution\+Errors} (void) const }\label{class_prop_grid_frame_base_a22ebb4aba08f7831e649ac5629d2026c}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prop_grid_frame_base_a7e4faba40d756a69d1561418543856e0}{wx\+Property\+Grid\+Manager $\ast$ {\bfseries m\+\_\+p\+Prop\+Grid\+Manager}}\label{class_prop_grid_frame_base_a7e4faba40d756a69d1561418543856e0}
+
+\item 
+\hypertarget{class_prop_grid_frame_base_a348afa385359fe4b0317eb792e4ee7fb}{wx\+Stop\+Watch {\bfseries m\+\_\+stop\+Watch}}\label{class_prop_grid_frame_base_a348afa385359fe4b0317eb792e4ee7fb}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\hypertarget{class_prop_grid_frame_base_a0afb2cdd3da1a2844d2c3a89ef6be719}{\index{Prop\+Grid\+Frame\+Base@{Prop\+Grid\+Frame\+Base}!On\+Property\+Right\+Clicked@{On\+Property\+Right\+Clicked}}
+\index{On\+Property\+Right\+Clicked@{On\+Property\+Right\+Clicked}!Prop\+Grid\+Frame\+Base@{Prop\+Grid\+Frame\+Base}}
+\subsubsection[{On\+Property\+Right\+Clicked}]{\setlength{\rightskip}{0pt plus 5cm}void Prop\+Grid\+Frame\+Base\+::\+On\+Property\+Right\+Clicked (
+\begin{DoxyParamCaption}
+\item[{wx\+Property\+Grid\+Event \&}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_prop_grid_frame_base_a0afb2cdd3da1a2844d2c3a89ef6be719}
+\begin{DoxyRefDesc}{待办事项}
+\item[\hyperlink{todo__todo000004}{待办事项}]disable read-\/only methods later? \end{DoxyRefDesc}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prop_grid_frame_base_a0afb2cdd3da1a2844d2c3a89ef6be719_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Prop\+Grid\+Frame\+Base.\+h\item 
+apps/mv\+Prop\+View/Prop\+Grid\+Frame\+Base.\+cpp\end{DoxyCompactItemize}

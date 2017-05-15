@@ -1,0 +1,225 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+}
+
+
+{\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R} and {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} related camera settings ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2955cf571183873bf9da11046cc6d6e1}{Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}} object. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_aff8899f2fbf1f123497b0e9521acb87f}{get\+Trigger\+Control\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Controls} available for this device. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{Trigger\+Control} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2eb408af4cba5226fa5d08e2fe7eeea7}{trigger\+Control} (unsigned int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{Trigger\+Control} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a048c0ffe1e1508fe7b185052dd9d1d7e}{trigger\+Control} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object or N\+U\+L\+L if the name passed to the function does not specify a valid trigger control. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a8aceeb3fef3b32e5f770a83fc85b49c4}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{H\+D\+R\+Control} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a8aceeb3fef3b32e5f770a83fc85b49c4}{get\+H\+D\+R\+Control} (void)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a8aceeb3fef3b32e5f770a83fc85b49c4}
+
+\begin{DoxyCompactList}\small\item\em Returns the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+H\+D\+R\+Control}} object associated with this setting. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a56f237d32d0634054baf9f760c9d4c87}{frame\+Rate\+\_\+\+Hz}
+\begin{DoxyCompactList}\small\item\em A float property defining the frame rate (in Hz) this device shall use to transfer images. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_af8680084295e56406aa41e2162204d79}{partial\+Scan\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining whether partial scan mode shall be used or not. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gabc51afc4a0e6c169f166ee32bbe45b78}{Property\+I\+Device\+Trigger\+Interface} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a75591b5a8fc64719066e621a3b9adf47}{trigger\+Interface}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining which view of the trigger interface to use. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga40354af1fd85b454ec1b4e5ca007755d}{Property\+I\+Camera\+Trigger\+Source} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_adee3dae10aa14fd0f808d94133c847b4}{trigger\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining where the trigger signal is expected to occur. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a7c28e067bd7ce1304cc681ac1f176c24}{acquisition\+Burst\+Frame\+Count}
+\begin{DoxyCompactList}\small\item\em A 64-\/bit integer property defining the number of frames to acquire for each Frame\+Burst\+Start trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+{\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R} and {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} related camera settings ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class contains properties to control the way the image sensor(s) of the {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R} or {\bfseries mv\+Blue\+L\+Y\+N\+X-\/\+M7} behaves.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2955cf571183873bf9da11046cc6d6e1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\index{Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2955cf571183873bf9da11046cc6d6e1}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2955cf571183873bf9da11046cc6d6e1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_aff8899f2fbf1f123497b0e9521acb87f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!get\+Trigger\+Control\+Count@{get\+Trigger\+Control\+Count}}
+\index{get\+Trigger\+Control\+Count@{get\+Trigger\+Control\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{get\+Trigger\+Control\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::get\+Trigger\+Control\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_aff8899f2fbf1f123497b0e9521acb87f}
+
+
+Returns the number of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Controls} available for this device. 
+
+This might be 0 if the device either does not support this feature. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2eb408af4cba5226fa5d08e2fe7eeea7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!trigger\+Control@{trigger\+Control}}
+\index{trigger\+Control@{trigger\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{trigger\+Control}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Trigger\+Control}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::trigger\+Control (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a2eb408af4cba5226fa5d08e2fe7eeea7}
+
+
+Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object. 
+
+\begin{DoxyNote}{注解}
+The features of each {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} will only be visible and thus available, when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a75591b5a8fc64719066e621a3b9adf47}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::trigger\+Interface}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dti\+Advanced}. 
+\end{DoxyNote}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the trigger control \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a048c0ffe1e1508fe7b185052dd9d1d7e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!trigger\+Control@{trigger\+Control}}
+\index{trigger\+Control@{trigger\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{trigger\+Control}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Trigger\+Control}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::trigger\+Control (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a048c0ffe1e1508fe7b185052dd9d1d7e}
+
+
+Returns a const pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}} object or N\+U\+L\+L if the name passed to the function does not specify a valid trigger control. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the trigger control \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a048c0ffe1e1508fe7b185052dd9d1d7e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a7c28e067bd7ce1304cc681ac1f176c24}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!acquisition\+Burst\+Frame\+Count@{acquisition\+Burst\+Frame\+Count}}
+\index{acquisition\+Burst\+Frame\+Count@{acquisition\+Burst\+Frame\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{acquisition\+Burst\+Frame\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::acquisition\+Burst\+Frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a7c28e067bd7ce1304cc681ac1f176c24}
+
+
+A 64-\/bit integer property defining the number of frames to acquire for each Frame\+Burst\+Start trigger. 
+
+\begin{DoxyNote}{注解}
+This feature will only be taken into account if the {\ttfamily Frame\+Burst\+Start} trigger is active when {\bfseries mv.\+impact.\+acquire.\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R.\+trigger\+Interface} is set to {\bfseries mv.\+impact.\+acquire.\+dti\+Advanced}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a56f237d32d0634054baf9f760c9d4c87}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!frame\+Rate\+\_\+\+Hz@{frame\+Rate\+\_\+\+Hz}}
+\index{frame\+Rate\+\_\+\+Hz@{frame\+Rate\+\_\+\+Hz}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{frame\+Rate\+\_\+\+Hz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::frame\+Rate\+\_\+\+Hz}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a56f237d32d0634054baf9f760c9d4c87}
+
+
+A float property defining the frame rate (in Hz) this device shall use to transfer images. 
+
+Depending on other parameters the desired frame rate might not be achievable (e.\+g. if the exposure time is higher than the frame period. In that case the device will automatically reduce the frame rate. \begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_af8680084295e56406aa41e2162204d79}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!partial\+Scan\+Mode@{partial\+Scan\+Mode}}
+\index{partial\+Scan\+Mode@{partial\+Scan\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{partial\+Scan\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::partial\+Scan\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_af8680084295e56406aa41e2162204d79}
+
+
+An enumerated integer property defining whether partial scan mode shall be used or not. 
+
+This property currently is only available for {\bfseries mv\+Blue\+C\+O\+U\+G\+A\+R-\/\+S} devices. When partial scan mode is active, the frame rate can no longer be controlled be the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a56f237d32d0634054baf9f760c9d4c87}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::frame\+Rate\+\_\+\+Hz}}. The device will always transmit frames as fast as possible instead.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a75591b5a8fc64719066e621a3b9adf47}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!trigger\+Interface@{trigger\+Interface}}
+\index{trigger\+Interface@{trigger\+Interface}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{trigger\+Interface}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Trigger\+Interface} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::trigger\+Interface}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a75591b5a8fc64719066e621a3b9adf47}
+
+
+An enumerated integer property defining which view of the trigger interface to use. 
+
+This property mainly switches the visibility of trigger the different trigger interfaces. After applying changes to this property all trigger related features might have a different visibility. However the documentation will state what features are available in which mode.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Trigger\+Interface}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_adee3dae10aa14fd0f808d94133c847b4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}!trigger\+Source@{trigger\+Source}}
+\index{trigger\+Source@{trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}
+\subsubsection[{trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Trigger\+Source} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_adee3dae10aa14fd0f808d94133c847b4}
+
+
+An enumerated integer property defining where the trigger signal is expected to occur. 
+
+When working with hardware generated signals via {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+R\+T\+Ctr\+Program}} objects this property should be set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cts\+R\+T\+Ctrl} as otherwise the program will not affect the behaviour of the camera.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Trigger\+Source}.
+
+\begin{DoxyNote}{注解}
+This feature will only be visible and thus available, when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r_a75591b5a8fc64719066e621a3b9adf47}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R\+::trigger\+Interface}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dti\+Standard}. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

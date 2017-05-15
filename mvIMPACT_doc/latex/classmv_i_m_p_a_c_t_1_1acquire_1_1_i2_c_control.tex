@@ -1,0 +1,235 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I2\+C\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+}
+
+
+Properties for accessing features belonging to the I2\+C control({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I2\+C\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I2\+C\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099}{I2\+C\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}} object. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ad1024608c37ae9b43cc2bf6b7e73b105}{I2\+C\+Read} (int device\+Address, int device\+Sub\+Address, int device\+Sub\+Address\+Width, int byte\+Cnt)
+\begin{DoxyCompactList}\small\item\em Read data from an I2\+C device. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ae251dc9025461c7096e0cf54919c8ed8}{I2\+C\+Write} (int device\+Address, int device\+Sub\+Address, int device\+Sub\+Address\+Width, const std\+::string \&data)
+\begin{DoxyCompactList}\small\item\em Write data to a I2\+C device. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga605f7a21a4a20a008acbd59d6f18f3e9}{Property\+I\+I2\+C\+Operation\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a748f6467d536445c1cfef03dbe74104c}{I2\+C\+Operation\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property to select the I2\+C operation. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a8da9d7067602fe987ac12cbf3c007d84}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a8da9d7067602fe987ac12cbf3c007d84}{I2\+C\+Operation\+Execute}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a8da9d7067602fe987ac12cbf3c007d84}
+
+\begin{DoxyCompactList}\small\item\em Calling this function will execute the operation selected by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a748f6467d536445c1cfef03dbe74104c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Operation\+Mode}}. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga4e0a176291dd65f15a0fddf3c1d552a1}{Property\+I\+I2\+C\+Operation\+Status} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a36782988f085b21b07f05b496af21b80}{I2\+C\+Operation\+Status}
+\begin{DoxyCompactList}\small\item\em Represents the I2\+C operation execution status. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a1e0c719578f2e4a4acb7e952ac12e8d6}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a1e0c719578f2e4a4acb7e952ac12e8d6}{I2\+C\+Device\+Address}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a1e0c719578f2e4a4acb7e952ac12e8d6}
+
+\begin{DoxyCompactList}\small\item\em An integer property storing the address of the I2\+C device to communicate with. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a7e555a00afae7ba4008c20ef23586cd3}{I2\+C\+Device\+Sub\+Address\+Width}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property storing the sub-\/address width(in bits) of the I2\+C device to communicate with. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a9a319eb3849d69e8e19bbe606934eedf}{I2\+C\+Device\+Sub\+Address}
+\begin{DoxyCompactList}\small\item\em An integer property storing the sub-\/address of the I2\+C device to communicate with. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ab9693f8fbf9f3e22af775d7756d27a6c}{I2\+C\+Buffer}
+\begin{DoxyCompactList}\small\item\em Defines the intermediate access buffer that allows the exchange of data between the I2\+C device and the application. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_aa7b76f5aa0deae04e8ba5b2f74bff98a}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_aa7b76f5aa0deae04e8ba5b2f74bff98a}{I2\+C\+Buffer\+Length}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_aa7b76f5aa0deae04e8ba5b2f74bff98a}
+
+\begin{DoxyCompactList}\small\item\em An integer property controlling the length of the mapping between the I2\+C device and the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ab9693f8fbf9f3e22af775d7756d27a6c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Buffer}} property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Properties for accessing features belonging to the I2\+C control({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+Properties in this class will only be available if a device has a local I2\+C bus and this is configured for access from an application. Right now this is only the case for mv\+Blue\+F\+O\+X-\/\+M\+L\+C devices.
+
+{\bfseries mv\+Blue\+F\+O\+X} {\bfseries specific\+:} 
+
+For mv\+Blue\+F\+O\+X devices
+\begin{DoxyItemize}
+\item clock stretching is supported
+\item bus master is supported
+\end{DoxyItemize}
+
+The following I2\+C addresses will be blocked for access from an application\+: \begin{TabularC}{2}
+\hline
+i2c address&remark \\\cline{1-2}
+0x20-\/0x3\+F&-\/ \\\cline{1-2}
+0x66-\/0x67&-\/ \\\cline{1-2}
+0x90-\/0x91&mv\+Blue\+F\+O\+X-\/200w only \\\cline{1-2}
+0x\+A0-\/0x\+A3&-\/ \\\cline{1-2}
+0x\+A6-\/0x\+A7&-\/ \\\cline{1-2}
+0x\+B\+A-\/0x\+B\+B&mv\+Blue\+F\+O\+X-\/202a and mv\+Blue\+F\+O\+X-\/205 only \\\cline{1-2}
+\end{TabularC}
+
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Control@{I2\+C\+Control}}
+\index{I2\+C\+Control@{I2\+C\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099}
+
+
+brief Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a0caccb546bad1ad3fa85e5ab7f908099_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ad1024608c37ae9b43cc2bf6b7e73b105}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Read@{I2\+C\+Read}}
+\index{I2\+C\+Read@{I2\+C\+Read}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Read}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Read (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+Address, }
+\item[{int}]{device\+Sub\+Address, }
+\item[{int}]{device\+Sub\+Address\+Width, }
+\item[{int}]{byte\+Cnt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ad1024608c37ae9b43cc2bf6b7e73b105}
+
+
+Read data from an I2\+C device. 
+
+This is a convenience function that wraps the property access a little. In order to find out if the command has been executed successfully {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a36782988f085b21b07f05b496af21b80}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Operation\+Status}} should be checked afterwards. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em device\+Address} & The address of the I2\+C device to communicate with. \\
+\hline
+\mbox{\tt in}  & {\em device\+Sub\+Address} & The sub-\/address of the I2\+C device to communicate with. \\
+\hline
+\mbox{\tt in}  & {\em device\+Sub\+Address\+Width} & The sub-\/address width(in bits) of the I2\+C device to communicate with. \\
+\hline
+\mbox{\tt in}  & {\em byte\+Cnt} & The amount of bytes to read. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ae251dc9025461c7096e0cf54919c8ed8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Write@{I2\+C\+Write}}
+\index{I2\+C\+Write@{I2\+C\+Write}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Write}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Write (
+\begin{DoxyParamCaption}
+\item[{int}]{device\+Address, }
+\item[{int}]{device\+Sub\+Address, }
+\item[{int}]{device\+Sub\+Address\+Width, }
+\item[{const std\+::string \&}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ae251dc9025461c7096e0cf54919c8ed8}
+
+
+Write data to a I2\+C device. 
+
+This is a convenience function that wraps the property access a little. In order to find out if the command has been executed successfully {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a36782988f085b21b07f05b496af21b80}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Operation\+Status}} should be checked afterwards. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em device\+Address} & The address of the I2\+C device to communicate with. \\
+\hline
+\mbox{\tt in}  & {\em device\+Sub\+Address} & The sub-\/address of the I2\+C device to communicate with. \\
+\hline
+\mbox{\tt in}  & {\em device\+Sub\+Address\+Width} & The sub-\/address width(in bits) of the I2\+C device to communicate with. \\
+\hline
+\mbox{\tt in}  & {\em data} & The data to write to the I2\+C device. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ab9693f8fbf9f3e22af775d7756d27a6c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Buffer@{I2\+C\+Buffer}}
+\index{I2\+C\+Buffer@{I2\+C\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Buffer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_ab9693f8fbf9f3e22af775d7756d27a6c}
+
+
+Defines the intermediate access buffer that allows the exchange of data between the I2\+C device and the application. 
+
+This property can store binary data. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a9a319eb3849d69e8e19bbe606934eedf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Device\+Sub\+Address@{I2\+C\+Device\+Sub\+Address}}
+\index{I2\+C\+Device\+Sub\+Address@{I2\+C\+Device\+Sub\+Address}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Device\+Sub\+Address}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Device\+Sub\+Address}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a9a319eb3849d69e8e19bbe606934eedf}
+
+
+An integer property storing the sub-\/address of the I2\+C device to communicate with. 
+
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a7e555a00afae7ba4008c20ef23586cd3}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Device\+Sub\+Address\+Width}} is set to 0, this property will be ignored. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a7e555a00afae7ba4008c20ef23586cd3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Device\+Sub\+Address\+Width@{I2\+C\+Device\+Sub\+Address\+Width}}
+\index{I2\+C\+Device\+Sub\+Address\+Width@{I2\+C\+Device\+Sub\+Address\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Device\+Sub\+Address\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Device\+Sub\+Address\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a7e555a00afae7ba4008c20ef23586cd3}
+
+
+An enumerated integer property storing the sub-\/address width(in bits) of the I2\+C device to communicate with. 
+
+Valid values for this property are\+:
+
+
+\begin{DoxyItemize}
+\item 0
+\item 8
+\item 16
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+This property must be set to 0 for devices not supporting a sub-\/address. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a748f6467d536445c1cfef03dbe74104c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Operation\+Mode@{I2\+C\+Operation\+Mode}}
+\index{I2\+C\+Operation\+Mode@{I2\+C\+Operation\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Operation\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+I2\+C\+Operation\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Operation\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a748f6467d536445c1cfef03dbe74104c}
+
+
+An enumerated integer property to select the I2\+C operation. 
+
+The selected operation is executed when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a8da9d7067602fe987ac12cbf3c007d84}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Operation\+Execute}} is called.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+I2\+C\+Operation\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a36782988f085b21b07f05b496af21b80}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}!I2\+C\+Operation\+Status@{I2\+C\+Operation\+Status}}
+\index{I2\+C\+Operation\+Status@{I2\+C\+Operation\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control}}
+\subsubsection[{I2\+C\+Operation\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+I2\+C\+Operation\+Status} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I2\+C\+Control\+::\+I2\+C\+Operation\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control_a36782988f085b21b07f05b496af21b80}
+
+
+Represents the I2\+C operation execution status. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+I2\+C\+Operation\+Status}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

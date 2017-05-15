@@ -1,0 +1,72 @@
+\hypertarget{class_line_profile_canvas}{\section{Line\+Profile\+Canvas类 参考}
+\label{class_line_profile_canvas}\index{Line\+Profile\+Canvas@{Line\+Profile\+Canvas}}
+}
+
+
+类 Line\+Profile\+Canvas 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_profile_canvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Line\+Profile\+Canvas 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_line_profile_canvas__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_line_profile_canvas_a2a5cf98d2c2cad1f2bac5ec9e917a28d}{{\bfseries Line\+Profile\+Canvas} (wx\+Window $\ast$parent, const wx\+String \&config\+Name, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Line Profile\char`\"{}), bool bo\+Active=false)}\label{class_line_profile_canvas_a2a5cf98d2c2cad1f2bac5ec9e917a28d}
+
+\item 
+\hypertarget{class_line_profile_canvas_a7520ae5663ed28834ebe92e62c36c61c}{virtual wx\+String {\bfseries Get\+Grid\+Value} (int row, int col) const }\label{class_line_profile_canvas_a7520ae5663ed28834ebe92e62c36c61c}
+
+\item 
+\hypertarget{class_line_profile_canvas_a7d2fa6f0bf9ccbe20227ab6d9329b858}{virtual void {\bfseries Refresh\+Data} (const \hyperlink{struct_request_data}{Request\+Data} \&data, int x=-\/1, int y=-\/1, int w=-\/1, int h=-\/1, bool bo\+Force\+Refresh=false)}\label{class_line_profile_canvas_a7d2fa6f0bf9ccbe20227ab6d9329b858}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_line_profile_canvas_ae247b81501a381b9a7617bfe923db30a}{virtual void {\bfseries Calculate\+Data} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, const \hyperlink{group___common_interface_ga9e2a1b46f3ed21b46b867c6d88d25598}{T\+Bayer\+Mosaic\+Parity} bayer\+Parity)=0}\label{class_line_profile_canvas_ae247b81501a381b9a7617bfe923db30a}
+
+\item 
+\hypertarget{class_line_profile_canvas_a85d80306f42caf5126122d2b0b963ad8}{void {\bfseries Deallocate\+Profile\+Buffer} (void)}\label{class_line_profile_canvas_a85d80306f42caf5126122d2b0b963ad8}
+
+\item 
+\hypertarget{class_line_profile_canvas_ae8d7280f444e30dc175b6f30962a29d8}{virtual int {\bfseries Get\+Data\+Count} (void) const =0}\label{class_line_profile_canvas_ae8d7280f444e30dc175b6f30962a29d8}
+
+\item 
+\hypertarget{class_line_profile_canvas_a334e213f608e6d32288c916e0a2d2927}{virtual double {\bfseries Get\+Scale\+Y} (wx\+Coord h) const }\label{class_line_profile_canvas_a334e213f608e6d32288c916e0a2d2927}
+
+\item 
+\hypertarget{class_line_profile_canvas_addf36475adb367f5787cd4b0c40f4ac5}{virtual void {\bfseries On\+Paint\+Custom} (wx\+Paint\+D\+C \&dc)}\label{class_line_profile_canvas_addf36475adb367f5787cd4b0c40f4ac5}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_line_profile_canvas_ad6e2adc66f683ca6ac18855d90b8ca91}{int $\ast$$\ast$ {\bfseries m\+\_\+pp\+Data}}\label{class_line_profile_canvas_ad6e2adc66f683ca6ac18855d90b8ca91}
+
+\item 
+\hypertarget{class_line_profile_canvas_af462171e7b87565ed03c4785b3e4fba7}{int {\bfseries m\+\_\+hor\+Data\+Count}}\label{class_line_profile_canvas_af462171e7b87565ed03c4785b3e4fba7}
+
+\item 
+\hypertarget{class_line_profile_canvas_ac7dc76447b5e041f5bc27cc16ba9376d}{int {\bfseries m\+\_\+ver\+Data\+Count}}\label{class_line_profile_canvas_ac7dc76447b5e041f5bc27cc16ba9376d}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Line\+Profile\+Canvas.\+h\item 
+apps/mv\+Prop\+View/Line\+Profile\+Canvas.\+cpp\end{DoxyCompactItemize}

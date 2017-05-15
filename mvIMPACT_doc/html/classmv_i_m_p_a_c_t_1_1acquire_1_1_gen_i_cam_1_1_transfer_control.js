@@ -1,0 +1,25 @@
+var classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control =
+[
+    [ "TransferControl", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#adad46463fabd024836f409e36c72ab46", null ],
+    [ "transferAbort", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a0ed5e49de005396a48a227df364ae216", null ],
+    [ "transferBlockCount", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a67b449afd5b111ba4b2d6fe6c3e3abcd", null ],
+    [ "transferBurstCount", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a58f6ddf7cff063b677c1c6642f9b86c7", null ],
+    [ "transferComponentSelector", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a4162691dbc0ef1d245d9af1943e3f8bf", null ],
+    [ "transferControlMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a32c443f8d4a281c17a6538b2e369839c", null ],
+    [ "transferOperationMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a5f60d36f9fab02b1519901c371f376ad", null ],
+    [ "transferPause", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a963353ae0411e4e5ab0bd08b4dbf7eae", null ],
+    [ "transferQueueCurrentBlockCount", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#ac2afe03dc422b31cc68480a9e843f11f", null ],
+    [ "transferQueueMaxBlockCount", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a048b7b40ca8cc72206f93a902b7206a8", null ],
+    [ "transferQueueMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a813d1478f6f76edce556c41ffc2e4898", null ],
+    [ "transferResume", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a6077208508f7c213308cdfc89ddc9152", null ],
+    [ "transferSelector", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a5f03d183d1ae3ff09fa778c468fae095", null ],
+    [ "transferStart", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a9300b81aca627165f0ff70b4fc0f6d3c", null ],
+    [ "transferStatus", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#af49f438e572556b1b4cedd02ffa97a82", null ],
+    [ "transferStatusSelector", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#ad0b5402cce56916cd955b9f441da2846", null ],
+    [ "transferStop", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a3070e07a3a448603af012a8f2eef0bf0", null ],
+    [ "transferStreamChannel", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a259c2a03c6badc8847ac855f2124f75e", null ],
+    [ "transferTriggerActivation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a3ec905c1aff4292f8f973bcb77cf2f42", null ],
+    [ "transferTriggerMode", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#ac2953e7216e702179e8277aa4355ba31", null ],
+    [ "transferTriggerSelector", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a7e49e86aa9d74e5a9b94b55f67e2d3dc", null ],
+    [ "transferTriggerSource", "classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#a9317af45736dd72396ed0ac87129201d", null ]
+];

@@ -1,0 +1,80 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gain\+Offset\+Knee\+Channel\+Parameters类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters}}
+}
+
+
+Properties for configuring settings belonging to a certain channel of the Gain\+Offset\+Knee filter.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gain\+Offset\+Knee\+Channel\+Parameters 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gain\+Offset\+Knee\+Channel\+Parameters 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_a90582e8fee2c3e3bffce3b3132573993}{gain}
+\begin{DoxyCompactList}\small\item\em A float property that contains the channel specific gain to be applied to the selected channel of the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_a6f4020ed712536bb048f7126944e47d1}{offset\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em A float property that contains the channel specific offset (in percent) to be applied to the selected channel of the image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_aed8a20fb12bb653b1bcd24b250b8e64f}{class {\bfseries Image\+Processing}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_aed8a20fb12bb653b1bcd24b250b8e64f}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Properties for configuring settings belonging to a certain channel of the Gain\+Offset\+Knee filter. 
+
+First the master offset will be added to all channels of the image, then each channels individual gain factor will be applied to the pixel of each channel and finally the channel specific offset will be added.
+
+
+
+\begin{DoxyNote}{注解}
+Objects of this class can't be constructed directly. Its parameters can be accessed via an instance of a class derived from {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Processing}}. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_a90582e8fee2c3e3bffce3b3132573993}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters}!gain@{gain}}
+\index{gain@{gain}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters}}
+\subsubsection[{gain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters\+::gain}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_a90582e8fee2c3e3bffce3b3132573993}
+
+
+A float property that contains the channel specific gain to be applied to the selected channel of the image. 
+
+This gain will be applied after the master offset but before the channel specific offset. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_a6f4020ed712536bb048f7126944e47d1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters}!offset\+\_\+pc@{offset\+\_\+pc}}
+\index{offset\+\_\+pc@{offset\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters}}
+\subsubsection[{offset\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gain\+Offset\+Knee\+Channel\+Parameters\+::offset\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters_a6f4020ed712536bb048f7126944e47d1}
+
+
+A float property that contains the channel specific offset (in percent) to be applied to the selected channel of the image. 
+
+This offset will be applied after the channel specific gain. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

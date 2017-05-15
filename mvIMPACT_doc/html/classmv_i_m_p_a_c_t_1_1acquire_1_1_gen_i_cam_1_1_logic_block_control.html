@@ -1,0 +1,471 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::LogicBlockControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::LogicBlockControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category that contains the Logic Block control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::LogicBlockControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="619,83,781,139"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,137,555,178"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="606,162,794,203"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,137,355,178"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,137,155,178"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a49c914f981187804f292d7d71133a31d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a49c914f981187804f292d7d71133a31d">LogicBlockControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a49c914f981187804f292d7d71133a31d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html" title="Category that contains the Logic Block control features. ">mvIMPACT::acquire::GenICam::LogicBlockControl</a></b> object.  <a href="#a49c914f981187804f292d7d71133a31d">更多...</a><br /></td></tr>
+<tr class="separator:a49c914f981187804f292d7d71133a31d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9868d7f6639f3e51774871a571e0dfe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a9868d7f6639f3e51774871a571e0dfe7">logicBlockSelector</a></td></tr>
+<tr class="memdesc:a9868d7f6639f3e51774871a571e0dfe7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the Logic Block to configure.  <a href="#a9868d7f6639f3e51774871a571e0dfe7">更多...</a><br /></td></tr>
+<tr class="separator:a9868d7f6639f3e51774871a571e0dfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d207d6726eb9779295e3edf5216f55"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a21d207d6726eb9779295e3edf5216f55">logicBlockFunction</a></td></tr>
+<tr class="memdesc:a21d207d6726eb9779295e3edf5216f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the combinational logic Function of the Logic Block to configure.  <a href="#a21d207d6726eb9779295e3edf5216f55">更多...</a><br /></td></tr>
+<tr class="separator:a21d207d6726eb9779295e3edf5216f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf6dce626150725cd30dd0174a515abb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#aaf6dce626150725cd30dd0174a515abb">logicBlockInputNumber</a></td></tr>
+<tr class="memdesc:aaf6dce626150725cd30dd0174a515abb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Specifies the number of active signal inputs of the Logic Block.  <a href="#aaf6dce626150725cd30dd0174a515abb">更多...</a><br /></td></tr>
+<tr class="separator:aaf6dce626150725cd30dd0174a515abb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ead89ee91cbaf6afcd068ba5f96caa5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a0ead89ee91cbaf6afcd068ba5f96caa5">logicBlockInputSelector</a></td></tr>
+<tr class="memdesc:a0ead89ee91cbaf6afcd068ba5f96caa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects the Logic Block's input to configure.  <a href="#a0ead89ee91cbaf6afcd068ba5f96caa5">更多...</a><br /></td></tr>
+<tr class="separator:a0ead89ee91cbaf6afcd068ba5f96caa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3217fe86aec15819297079c277a0c7b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a3217fe86aec15819297079c277a0c7b0">logicBlockInputSource</a></td></tr>
+<tr class="memdesc:a3217fe86aec15819297079c277a0c7b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the source signal for the input into the Logic Block.  <a href="#a3217fe86aec15819297079c277a0c7b0">更多...</a><br /></td></tr>
+<tr class="separator:a3217fe86aec15819297079c277a0c7b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a251dfbb312a12faa9b8f628b97f46f45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a251dfbb312a12faa9b8f628b97f46f45">logicBlockInputInverter</a></td></tr>
+<tr class="memdesc:a251dfbb312a12faa9b8f628b97f46f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Selects if the selected Logic Block Input source signal is inverted.  <a href="#a251dfbb312a12faa9b8f628b97f46f45">更多...</a><br /></td></tr>
+<tr class="separator:a251dfbb312a12faa9b8f628b97f46f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2c324debca392820962c6094443d1eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#aa2c324debca392820962c6094443d1eb">logicBlockLUTIndex</a></td></tr>
+<tr class="memdesc:aa2c324debca392820962c6094443d1eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Controls the index of the truth table to access in the selected LUT.  <a href="#aa2c324debca392820962c6094443d1eb">更多...</a><br /></td></tr>
+<tr class="separator:aa2c324debca392820962c6094443d1eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa15ad3405272a9eef1d70be5d3594b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#aa15ad3405272a9eef1d70be5d3594b93">logicBlockLUTValue</a></td></tr>
+<tr class="memdesc:aa15ad3405272a9eef1d70be5d3594b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Read or Write the Value associated with the entry at index LogicBlockLUTIndex of the selected LUT.  <a href="#aa15ad3405272a9eef1d70be5d3594b93">更多...</a><br /></td></tr>
+<tr class="separator:aa15ad3405272a9eef1d70be5d3594b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79832d6cadbc750ef8c6a0293e2a30ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a79832d6cadbc750ef8c6a0293e2a30ba">logicBlockLUTValueAll</a></td></tr>
+<tr class="memdesc:a79832d6cadbc750ef8c6a0293e2a30ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the values of all the output bits of the selected LUT in one access ignoring LogicBlockLUTIndex.  <a href="#a79832d6cadbc750ef8c6a0293e2a30ba">更多...</a><br /></td></tr>
+<tr class="separator:a79832d6cadbc750ef8c6a0293e2a30ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21158971017be39ba75a86ac4ebe8d52"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a21158971017be39ba75a86ac4ebe8d52">logicBlockLUTSelector</a></td></tr>
+<tr class="memdesc:a21158971017be39ba75a86ac4ebe8d52"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which of the two LUTs to configure when the selected Logic Block is a Latched dual LUTs (i.e: LogicalBlockFunction = LatchedLUT).  <a href="#a21158971017be39ba75a86ac4ebe8d52">更多...</a><br /></td></tr>
+<tr class="separator:a21158971017be39ba75a86ac4ebe8d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category that contains the Logic Block control features. </p>
+<p>A category that contains the Logic Block control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a49c914f981187804f292d7d71133a31d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::LogicBlockControl::LogicBlockControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html" title="Category that contains the Logic Block control features. ">mvIMPACT::acquire::GenICam::LogicBlockControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_a49c914f981187804f292d7d71133a31d_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_a49c914f981187804f292d7d71133a31d_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_a49c914f981187804f292d7d71133a31d_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control_a49c914f981187804f292d7d71133a31d_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="456,23,619,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="245,88,408,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="245,168,408,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="667,38,885,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="945,5,1095,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="933,70,1107,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1155,92,1383,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1432,99,1656,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="456,103,619,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="463,182,612,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="692,110,860,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a21d207d6726eb9779295e3edf5216f55"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockFunction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the combinational logic Function of the Logic Block to configure. </p>
+<p>Selects the combinational logic Function of the Logic Block to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>AND</b> (Display string: 'AND'): Selects a Logic Block that does the logical AND of all the inputs.</li>
+<li><b>OR</b> (Display string: 'OR'): Selects a Logic Block that does the logical OR of all the inputs.</li>
+<li><b>LUT</b> (Display string: 'LUT'): Selects a Logic Block that does a Look Up Table Transformation on all the inputs.</li>
+<li><b>LatchedLUT</b> (Display string: 'Latched LUT'): Selects a Logic Block with 2 LUTs as inputs to a Flip-Flop.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a251dfbb312a12faa9b8f628b97f46f45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockInputInverter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Selects if the selected Logic Block Input source signal is inverted. </p>
+<p>Selects if the selected Logic Block Input source signal is inverted. This feature is not available when the LogicBlockInputSource is set to True or False. </p>
+
+</div>
+</div>
+<a class="anchor" id="aaf6dce626150725cd30dd0174a515abb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockInputNumber</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Specifies the number of active signal inputs of the Logic Block. </p>
+<p>Specifies the number of active signal inputs of the Logic Block. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0ead89ee91cbaf6afcd068ba5f96caa5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockInputSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects the Logic Block's input to configure. </p>
+<p>Selects the Logic Block's input to configure. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3217fe86aec15819297079c277a0c7b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockInputSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the source signal for the input into the Logic Block. </p>
+<p>Selects the source signal for the input into the Logic Block. True or False indicates the input is forced constant.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>True</b> (Display string: 'True'): Logic Block input is forced to One.</li>
+<li><b>False</b> (Display string: 'False'): Logic Block input is forced to Zero.</li>
+<li><b>AcquisitionTriggerWait</b> (Display string: 'Acquisition Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a trigger for the capture of one or many Frames.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a trigger for the capture of one or many Frames.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a trigger for the capture of one or many Frames.</li>
+<li><b>AcquisitionActive</b> (Display string: 'Acquisition Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is acquiring one or many Frames.</li>
+<li><b>FrameTriggerWait</b> (Display string: 'Frame Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Frame start trigger.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Frame start trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a Frame start trigger.</li>
+<li><b>FrameActive</b> (Display string: 'Frame Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing the capture of a Frame.</li>
+<li><b>ExposureActive</b> (Display string: 'Exposure Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is doing the exposure of a Frame (or Line).</li>
+<li><b>LineTriggerWait</b> (Display string: 'Line Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Line start trigger.</li>
+<li><b>LineTrigger</b> (Display string: 'Line Trigger'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a Line start trigger.</li>
+<li><b>LineTriggerMissed</b> (Display string: 'Line Trigger Missed'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> has missed a Line start trigger.</li>
+<li><b>LineActive</b> (Display string: 'Line Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing the capture of a Line.</li>
+<li><b>Counter0Active</b> (Display string: 'Counter 0 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter1Active</b> (Display string: 'Counter 1 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter2Active</b> (Display string: 'Counter 2 Active'): The chosen counter is in active state (counting).</li>
+<li><b>Counter#3#Active</b> (Display string: 'Counter #3# Active'): The chosen counter is in active state (counting).</li>
+<li><b>Timer0Active</b> (Display string: 'Timer 0 Active'): The chosen Timer is in active state.</li>
+<li><b>Timer1Active</b> (Display string: 'Timer 1 Active'): The chosen Timer is in active state.</li>
+<li><b>Timer2Active</b> (Display string: 'Timer 2 Active'): The chosen Timer is in active state.</li>
+<li><b>Timer#3#Active</b> (Display string: 'Timer #3# Active'): The chosen Timer is in active state.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): The chosen Encoder Output state.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): The chosen Encoder Output state.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): The chosen Encoder Output state.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): The chosen Encoder Output state.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): The choosen Logic Block output state.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): The choosen Logic Block output state.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): The choosen Logic Block output state.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): The choosen Logic Block output state.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): The choosen Software Signal output state.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): The choosen Software Signal output state.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): The choosen Software Signal output state.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): The choosen Software Signal output state.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): The chosen I/OLine state.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): The chosen I/OLine state.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): The chosen I/OLine state.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): The chosen I/OLine state.</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): The chosen User Output bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): The chosen User Output bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): The chosen User Output bit state as defined by its current UserOutputValue.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): The chosen User Output bit state as defined by its current UserOutputValue.</li>
+<li><b>Stream0TransferActive</b> (Display string: 'Stream 0 Transfer Active'): Transfer on the stream is active.</li>
+<li><b>Stream1TransferActive</b> (Display string: 'Stream 1 Transfer Active'): Transfer on the stream is active.</li>
+<li><b>Stream#2#TransferActive</b> (Display string: 'Stream #2# Transfer Active'): Transfer on the stream is active.</li>
+<li><b>Stream0TransferPaused</b> (Display string: 'Stream 0 Transfer Paused'): Transfer on the stream is paused.</li>
+<li><b>Stream1TransferPaused</b> (Display string: 'Stream 1 Transfer Paused'): Transfer on the stream is paused.</li>
+<li><b>Stream#2#TransferPaused</b> (Display string: 'Stream #2# Transfer Paused'): Transfer on the stream is paused.</li>
+<li><b>Stream0TransferStopping</b> (Display string: 'Stream 0 Transfer Stopping'): Transfer on the stream is stopping.</li>
+<li><b>Stream1TransferStopping</b> (Display string: 'Stream 1 Transfer Stopping'): Transfer on the stream is stopping.</li>
+<li><b>Stream#2#TransferStopping</b> (Display string: 'Stream #2# Transfer Stopping'): Transfer on the stream is stopping.</li>
+<li><b>Stream0TransferStopped</b> (Display string: 'Stream 0 Transfer Stopped'): Transfer on the stream is stopped.</li>
+<li><b>Stream1TransferStopped</b> (Display string: 'Stream 1 Transfer Stopped'): Transfer on the stream is stopped.</li>
+<li><b>Stream#2#TransferStopped</b> (Display string: 'Stream #2# Transfer Stopped'): Transfer on the stream is stopped.</li>
+<li><b>Stream0TransferOverflow</b> (Display string: 'Stream 0 Transfer Overflow'): Transfer on the stream is in overflow.</li>
+<li><b>Stream1TransferOverflow</b> (Display string: 'Stream 1 Transfer Overflow'): Transfer on the stream is in overflow.</li>
+<li><b>Stream#2#TransferOverflow</b> (Display string: 'Stream #2# Transfer Overflow'): Transfer on the stream is in overflow.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa2c324debca392820962c6094443d1eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockLUTIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Controls the index of the truth table to access in the selected LUT. </p>
+<p>Controls the index of the truth table to access in the selected LUT. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21158971017be39ba75a86ac4ebe8d52"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockLUTSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which of the two LUTs to configure when the selected Logic Block is a Latched dual LUTs (i.e: LogicalBlockFunction = LatchedLUT). </p>
+<p>Selects which of the two LUTs to configure when the selected Logic Block is a Latched dual LUTs (i.e: LogicalBlockFunction = LatchedLUT).</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Value</b> (Display string: 'Value'): Selects the LUT controlling the data input of the flip-flop.</li>
+<li><b>Enable</b> (Display string: 'Enable'): Selects the LUT controlling the enable input of the flip-flop.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa15ad3405272a9eef1d70be5d3594b93"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockLUTValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Read or Write the Value associated with the entry at index LogicBlockLUTIndex of the selected LUT. </p>
+<p>Read or Write the Value associated with the entry at index LogicBlockLUTIndex of the selected LUT. </p>
+
+</div>
+</div>
+<a class="anchor" id="a79832d6cadbc750ef8c6a0293e2a30ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockLUTValueAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the values of all the output bits of the selected LUT in one access ignoring LogicBlockLUTIndex. </p>
+<p>Sets the values of all the output bits of the selected LUT in one access ignoring LogicBlockLUTIndex. LogicBlockLUTValueAll value can be any binary number and each bit correspond to the output value for the corresponding index (i.e. Bit 0 = LUT Index 0 output binary value). </p>
+
+</div>
+</div>
+<a class="anchor" id="a9868d7f6639f3e51774871a571e0dfe7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::LogicBlockControl::logicBlockSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the Logic Block to configure. </p>
+<p>Specifies the Logic Block to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Logic Block 0 is selected.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Logic Block 1 is selected.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Logic Block 2 is selected.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Logic Block #3# is selected.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html">LogicBlockControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:24 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

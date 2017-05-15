@@ -1,0 +1,907 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Custom\+Command\+Generator类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+}
+
+
+Contains convenience functions to control features understood by a devices custom command interpreter.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam\+\_\+\+Custom\+Commands.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a1c085e44992c2cd2b0fe2c21682d8124}{Custom\+Command\+Generator} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}} object. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a315a0086cb96245fc4d481c0c7c65125}{discard\+Command\+Buffer} ()
+\begin{DoxyCompactList}\small\item\em Discards all pending custom commands to the device. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250}{queue\+Transmission\+Request} (int64\+\_\+type timestamp\+\_\+us, int offset\+X, int offset\+Y, int width, int height, \hyperlink{group___gen_i_cam_interface_ga5817a4e9c4ac30a320103ae1cec95cb9}{T\+Request\+Transmission\+Mode} mode=\hyperlink{group___gen_i_cam_interface_gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366}{rtm\+Full\+Resolution}, unsigned int identifier=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image with a certain timestamp in a different mode/\+R\+O\+I. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_af6e0f250f4bb08bfd83a3d4ec4f30776}{queue\+Transmission\+Request} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$p\+Request, int offset\+X, int offset\+Y, int width, int height, \hyperlink{group___gen_i_cam_interface_ga5817a4e9c4ac30a320103ae1cec95cb9}{T\+Request\+Transmission\+Mode} mode=\hyperlink{group___gen_i_cam_interface_gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366}{rtm\+Full\+Resolution}, unsigned int identifier=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in a different mode/\+R\+O\+I. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a4adb1d8d864e7aa9647ef646d1f43074}{queue\+Transmission\+Request} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$p\+Request, unsigned int identifier=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in full resolution. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046}{request\+Transmission} (int64\+\_\+type timestamp\+\_\+us, int offset\+X, int offset\+Y, int width, int height, \hyperlink{group___gen_i_cam_interface_ga5817a4e9c4ac30a320103ae1cec95cb9}{T\+Request\+Transmission\+Mode} mode=\hyperlink{group___gen_i_cam_interface_gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366}{rtm\+Full\+Resolution}, unsigned int identifier=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image with a certain timestamp in a different mode/\+R\+O\+I. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a9458021595d92ab729fa99dcdf4a50cc}{request\+Transmission} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$p\+Request, int offset\+X, int offset\+Y, int width, int height, \hyperlink{group___gen_i_cam_interface_ga5817a4e9c4ac30a320103ae1cec95cb9}{T\+Request\+Transmission\+Mode} mode=\hyperlink{group___gen_i_cam_interface_gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366}{rtm\+Full\+Resolution}, unsigned int identifier=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in a different mode/\+R\+O\+I. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a6674d9728120c72c12c24dbce05218d5}{request\+Transmission} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$p\+Request, unsigned int identifier=0)
+\begin{DoxyCompactList}\small\item\em \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in full resolution. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770}{modify\+Sequencer\+Set\+Value} (const int64\+\_\+type sequencer\+Set, const \hyperlink{group___gen_i_cam_interface_ga458c2281fb19ba32fa6a49b02e0a976d}{T\+Sequencer\+Set\+Parameter} parameter, const int64\+\_\+type value)
+\begin{DoxyCompactList}\small\item\em Modifies a value of a certain sequencer set at runtime. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ab96ac3a869cf35d312aeae089f04bc5c}{modify\+Sequencer\+Set\+Value} (const int64\+\_\+type sequencer\+Set, const \hyperlink{group___gen_i_cam_interface_ga458c2281fb19ba32fa6a49b02e0a976d}{T\+Sequencer\+Set\+Parameter} parameter, const double value)
+\begin{DoxyCompactList}\small\item\em Modifies a value of a certain sequencer set at runtime. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{queue\+Sequencer\+Set\+Value\+Modification} (const int64\+\_\+type sequencer\+Set, const \hyperlink{group___gen_i_cam_interface_ga458c2281fb19ba32fa6a49b02e0a976d}{T\+Sequencer\+Set\+Parameter} parameter, const int64\+\_\+type value)
+\begin{DoxyCompactList}\small\item\em Queues the modification of a value of a certain sequencer set at runtime. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a8ef48e0bf3d3c9a7dcce38f635142d87}{queue\+Sequencer\+Set\+Value\+Modification} (const int64\+\_\+type sequencer\+Set, const \hyperlink{group___gen_i_cam_interface_ga458c2281fb19ba32fa6a49b02e0a976d}{T\+Sequencer\+Set\+Parameter} parameter, const double value)
+\begin{DoxyCompactList}\small\item\em Queues the modification of a value of a certain sequencer set at runtime. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_afcaaa076529735eb7fd4eb476776f18d}{send\+Command\+Buffer} (void)
+\begin{DoxyCompactList}\small\item\em Applies all pending custom commands to the device. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a54e96fde36fbe4ee7ff9f85a52edec90}{command\+Buffer\+Size} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the size of the command buffer for this device in bytes. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a25934409fe9fe3abc5200225f8fad6fe}{command\+Buffer\+Size\+Used} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the amount of bytes of the command buffer currently used(thus the amount of bytes that await sending) for this device in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Contains convenience functions to control features understood by a devices custom command interpreter. 
+
+Contains convenience functions to control features understood by a devices custom command interpreter. \begin{DoxyNote}{注解}
+Creating an instance of this class will only succeed when the device associated with this object supports the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_custom_data_a9cff7474eda237a796fb506f10ba775b}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Custom\+Data.\+mv\+Custom\+Command\+Buffer}} feature. If the feature is not supported an exception will be raised!
+\end{DoxyNote}
+This class will allow to create various special commands understood by {\bfseries M\+A\+T\+R\+I\+X V\+I\+S\+I\+O\+N Gmb\+H} devices. For example an application can modify parameters in a running sequencer program without stopping the acquisition engine and/or the sequencer program (see {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}} and the corresponding use cases for details). This allows changes to be applied much faster than with a conventional approach which would work like this\+: 
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}{mvIMPACT::acquire::GenICam::AcquisitionControl} ac( 
+      getDevicePointerFromSomewhere() );
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control}{mvIMPACT::acquire::GenICam::SequencerControl} sc( 
+      getDevicePointerFromSomewhere() );
+sc.sequencerMode.writeS( \textcolor{stringliteral}{"Off"} );
+sc.sequencerConfigurationMode.writeS( \textcolor{stringliteral}{"On"} );
+sc.sequencerSetSelector.write( 2 );
+sc.sequencerSetLoad.call(); \textcolor{comment}{// needed as otherwise other parameters in the set might get changed as well.}
+ac.exposureTime.write( 20000 );
+sc.sequencerSetSave.call();
+sc.sequencerConfigurationMode.writeS( \textcolor{stringliteral}{"Off"} );
+sc.sequencerMode.writeS( \textcolor{stringliteral}{"On"} );
+\end{DoxyCode}
+
+
+A single parameter in a defined sequencer set can be modified much faster at runtime like this\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mvIMPACT::acquire::GenICam::CustomCommandGenerator} ccg( 
+      getDevicePointerFromSomewhere() );
+\textcolor{comment}{// change the exposure time in sequencer set 2 to 30000 us.}
+ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770}{modifySequencerSetValue}( 2, \hyperlink{group___gen_i_cam_interface_gga458c2281fb19ba32fa6a49b02e0a976da23cbccf7c89a18488ab68d5c16fe7519}{sspExposureTime}, 30000 );
+\end{DoxyCode}
+
+
+\begin{DoxyAttention}{注意}
+In a real world application the instance of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}} should be a member of a class or stored elsewhere as constructing objects from the {\bfseries \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam}} namespace is taking time so this shouldn't be done for each command that shall be send!
+\end{DoxyAttention}
+This class uses an internal command buffer which allows an application to send multiple change commands in a single packet. This can be achieved like this\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mvIMPACT::acquire::GenICam::CustomCommandGenerator} ccg( 
+      getDevicePointerFromSomewhere() );
+\textcolor{comment}{// queue 2 parameter change requests}
+\textcolor{comment}{// change the \(\backslash\)c AnalogAll gain in sequencer set 0 to 3.14 dB.}
+ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{queueSequencerSetValueModification}( 0, 
+      \hyperlink{group___gen_i_cam_interface_gga458c2281fb19ba32fa6a49b02e0a976da12982df75ec50ed03752228f5b9a5086}{sspGain\_AnalogAll}, 3.14 );
+\textcolor{comment}{// change the exposure time in sequencer set 1 to 20000 us.}
+ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{queueSequencerSetValueModification}( 1, 
+      \hyperlink{group___gen_i_cam_interface_gga458c2281fb19ba32fa6a49b02e0a976da23cbccf7c89a18488ab68d5c16fe7519}{sspExposureTime}, 20000 );
+\textcolor{comment}{// send the 2 modifications in a single package}
+ccg.sendCommandBuffer();
+\end{DoxyCode}
+
+
+The command queue N\+E\+V\+E\+R overflows. When no more data can be stored in the queue before queuing the next parameter change all the pending changes will be transmitted to the device. Calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator.\+queue\+Sequencer\+Set\+Value\+Modification}} and {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator.\+send\+Command\+Buffer} directly afterwards is equivalent to call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator.\+modify\+Sequencer\+Set\+Value}}. So the previous example can also be rewritten like this\+:
+
+
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mvIMPACT::acquire::GenICam::CustomCommandGenerator} ccg = \textcolor{keyword}{
+      new} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mvIMPACT::acquire::GenICam::CustomCommandGenerator}( 
+      getDevicePointerFromSomewhere() );
+\textcolor{comment}{// queue 2 parameter change requests}
+\textcolor{comment}{// change the \(\backslash\)c AnalogAll gain in sequencer set 0 to 3.14 dB.}
+ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{queueSequencerSetValueModification}( 0, 
+      \hyperlink{group___gen_i_cam_interface_gga458c2281fb19ba32fa6a49b02e0a976da12982df75ec50ed03752228f5b9a5086}{sspGain\_AnalogAll}, 3.14 );
+\textcolor{comment}{// change the exposure time in sequencer set 1 to 20000 us and send both requests to the device in a single
+       packet.}
+ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770}{modifySequencerSetValue}( 1, \hyperlink{group___gen_i_cam_interface_gga458c2281fb19ba32fa6a49b02e0a976da23cbccf7c89a18488ab68d5c16fe7519}{sspExposureTime}, 20000 );
+\end{DoxyCode}
+
+
+Because there can never be an overflow of the command queue even this code is valid\+: 
+\begin{DoxyCode}
+ \textcolor{keywordflow}{for}( \textcolor{keywordtype}{int} i = 0; i < 100; i += 2 )
+ \{
+   \textcolor{comment}{// if the command buffer is full everything should be sent to the device thus no error should be
+       returned here}
+   ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{queueSequencerSetValueModification}( i % 5, GenICam.
+      sspCounterDuration\_Counter1, i * 100 );
+   ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{queueSequencerSetValueModification}( i % 5, GenICam.sspExposureTime
+      , ac.exposureTime.minValue + static\_cast<double>( i * 10 ) );
+\}
+\end{DoxyCode}
+
+
+Apart from modifying sequencer sets at runtime some {\bfseries M\+A\+T\+R\+I\+X V\+I\+S\+I\+O\+N Gmb\+H} devices support the so called {\ttfamily Smart Frame Recall} feature. For more information about the feature itself please refer to the corresponding use case in the product documentation. There is also a C++ example called {\bfseries Gen\+I\+Cam\+Smart\+Frame\+Recall\+Usage.\+cpp} which can be read to get a first glimpse. The source code and the documentation of this example can be found in the C++ version of this documentation. The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}} provides functions to request a full resolution version of an image based on a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object containing an image with reduced resolution passed to it (internally the relevant piece of information is the timestamp of the image to request). To request an image an application can call one of the various versions of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator.\+request\+Transmission}} functions.
+
+
+\begin{DoxyCode}
+int64\_type getNextRandomValue( Random r, int64\_type min, int64\_type max )
+\{
+  int64\_type value = min + \textcolor{keyword}{static\_cast<}int64\_type\textcolor{keyword}{>}( ( max - min + 1 ) * r.NextDouble() );
+  \textcolor{keywordflow}{return} value < min ? min : value > max ? max : value;
+\}
+\textcolor{comment}{// switch on the smart frame recall feature}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}{mvIMPACT::acquire::GenICam::AcquisitionControl} ac( pDev );
+ac.mvSmartFrameRecallEnable.write( \hyperlink{group___common_interface_gga43c995be18b0dde1eeb4a16849c58968ac2ee8a1ca7dc97f0c2792a56f94c563b}{bTrue} );
+\textcolor{comment}{// more code}
+\hyperlink{struct___request}{Request}* pRequest = getRequestFromSomewhere();
+\textcolor{comment}{// request the transmission of an arbitrary ROI of this image in full resolution}
+\textcolor{keywordtype}{int} w = getNextRandomValue( r, 1, pRequest->imageWidth.read() );
+\textcolor{keywordtype}{int} h = getNextRandomValue( r, 1, pRequest->imageHeight.read() );
+\textcolor{keywordtype}{int} x = getNextRandomValue( r, 0, pRequest->imageWidth.read() - w );
+\textcolor{keywordtype}{int} y = getNextRandomValue( r, 0, pRequest->imageHeight.read() - h );
+ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046}{requestTransmission}( pRequest, x, y, w, h, 
+      \hyperlink{group___gen_i_cam_interface_gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366}{rtmFullResolution} );
+\end{DoxyCode}
+
+
+To allow the application to distinguish easily between images belonging to the reduced data stream and the ones that have been explicitly requested by the application the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request.\+chunkmv\+Custom\+Identifier}} can be used. When requesting a full resolution R\+O\+I the application can tag the requested images with a custom identifier. This identifier is later returned in the chunk data of the image. The following example demonstrates how to use this feature\+:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// switch on the smart frame recall feature}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}{mvIMPACT::acquire::GenICam::AcquisitionControl} ac( pDev );
+ac.mvSmartFrameRecallEnable.write( \hyperlink{group___common_interface_gga43c995be18b0dde1eeb4a16849c58968ac2ee8a1ca7dc97f0c2792a56f94c563b}{bTrue} );
+\textcolor{comment}{// the chunk mode must be switched on to use chunk data for processing:}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mvIMPACT::acquire::GenICam::ChunkDataControl} cdc( 
+      getDevicePointerFromSomewhere() );
+cdc.chunkModeActive.write( \hyperlink{group___common_interface_gga43c995be18b0dde1eeb4a16849c58968ac2ee8a1ca7dc97f0c2792a56f94c563b}{bTrue} );
+cdc.chunkSelector.writeS(\textcolor{stringliteral}{"Image"});
+cdc.chunkEnable.write( \hyperlink{group___common_interface_gga43c995be18b0dde1eeb4a16849c58968ac2ee8a1ca7dc97f0c2792a56f94c563b}{bTrue} );
+\textcolor{comment}{// enable the 'mvCustomIdentifier' chunk}
+cdc.chunkSelector.writeS(\textcolor{stringliteral}{"mvCustomIdentifier"});
+cdc.chunkEnable.write( \hyperlink{group___common_interface_gga43c995be18b0dde1eeb4a16849c58968ac2ee8a1ca7dc97f0c2792a56f94c563b}{bTrue} );
+\textcolor{comment}{// more code ...}
+\hyperlink{struct___request}{Request}* pRequest = getRequestFromSomewhere();
+uint customID = 42;
+\hyperlink{struct___request}{Request} pRequest = getRequestFromSomewhere();
+\textcolor{keywordflow}{if}( pRequest->chunkmvCustomIdentifier.read() == 0 )
+\{
+  \textcolor{comment}{// As the 'mvCustomIdentifier' is 0 this is a frame from the normal stream}
+  Rect r;
+  \textcolor{keywordflow}{if}( doesImageContainInteresstingData( r ) )
+  \{
+    \textcolor{comment}{// request the transmission of the interesting ROI this image in full resolution}
+    ccg.\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046}{requestTransmission}( pRequest, r.x, r.y, r.w, r.h, 
+      \hyperlink{group___gen_i_cam_interface_gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366}{rtmFullResolution}, customID );
+  \}
+\}
+\textcolor{keywordflow}{else} \textcolor{keywordflow}{if}( pRequest->chunkmvCustomIdentifier.read() == \textcolor{keyword}{static\_cast<}int64\_type\textcolor{keyword}{>}( customID ) )
+\{
+  \textcolor{comment}{// As the 'mvCustomIdentifier' is 'customID' this is a frame explicitly requested by the application}
+  processImage( pRequest );
+\}
+\textcolor{keywordflow}{else}
+\{
+  \textcolor{comment}{// some other ID (this however must have been set by the application as well)}
+\}
+\textcolor{comment}{// normal 'unlocking' code for requests should reside here!!}
+\textcolor{comment}{// more code...}
+\end{DoxyCode}
+
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a1c085e44992c2cd2b0fe2c21682d8124}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!Custom\+Command\+Generator@{Custom\+Command\+Generator}}
+\index{Custom\+Command\+Generator@{Custom\+Command\+Generator}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{Custom\+Command\+Generator}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::\+Custom\+Command\+Generator (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a1c085e44992c2cd2b0fe2c21682d8124}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a54e96fde36fbe4ee7ff9f85a52edec90}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!command\+Buffer\+Size@{command\+Buffer\+Size}}
+\index{command\+Buffer\+Size@{command\+Buffer\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{command\+Buffer\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::command\+Buffer\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a54e96fde36fbe4ee7ff9f85a52edec90}
+
+
+Returns the size of the command buffer for this device in bytes. 
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a54e96fde36fbe4ee7ff9f85a52edec90_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a25934409fe9fe3abc5200225f8fad6fe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!command\+Buffer\+Size\+Used@{command\+Buffer\+Size\+Used}}
+\index{command\+Buffer\+Size\+Used@{command\+Buffer\+Size\+Used}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{command\+Buffer\+Size\+Used}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::command\+Buffer\+Size\+Used (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a25934409fe9fe3abc5200225f8fad6fe}
+
+
+Returns the amount of bytes of the command buffer currently used(thus the amount of bytes that await sending) for this device in bytes. 
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a315a0086cb96245fc4d481c0c7c65125}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!discard\+Command\+Buffer@{discard\+Command\+Buffer}}
+\index{discard\+Command\+Buffer@{discard\+Command\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{discard\+Command\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::discard\+Command\+Buffer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a315a0086cb96245fc4d481c0c7c65125}
+
+
+Discards all pending custom commands to the device. 
+
+This function will discard all pending custom commands. After calling this function the pending command queue will be empty an can be filled with new commands.
+
+\begin{DoxySince}{自从}
+2.\+18.\+0
+\end{DoxySince}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a315a0086cb96245fc4d481c0c7c65125_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a315a0086cb96245fc4d481c0c7c65125_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!modify\+Sequencer\+Set\+Value@{modify\+Sequencer\+Set\+Value}}
+\index{modify\+Sequencer\+Set\+Value@{modify\+Sequencer\+Set\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{modify\+Sequencer\+Set\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::modify\+Sequencer\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const int64\+\_\+type}]{sequencer\+Set, }
+\item[{const {\bf T\+Sequencer\+Set\+Parameter}}]{parameter, }
+\item[{const int64\+\_\+type}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770}
+
+
+Modifies a value of a certain sequencer set at runtime. 
+
+This is a convenience function combining a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Sequencer\+Set\+Value\+Modification}} directly followed by a call to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer}. Commands which have been queued before and have not yet been sent will be sent as well when calling this function.
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em sequencer\+Set} & The index of the sequencer set to modify. \\
+\hline
+{\em parameter} & The parameter within the selected sequencer set to modify. \\
+\hline
+{\em value} & The new value the selected parameter within the selected sequencer set shall be set to. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ad692d5d184f37b146f3da67faf1da770_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ab96ac3a869cf35d312aeae089f04bc5c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!modify\+Sequencer\+Set\+Value@{modify\+Sequencer\+Set\+Value}}
+\index{modify\+Sequencer\+Set\+Value@{modify\+Sequencer\+Set\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{modify\+Sequencer\+Set\+Value}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::modify\+Sequencer\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const int64\+\_\+type}]{sequencer\+Set, }
+\item[{const {\bf T\+Sequencer\+Set\+Parameter}}]{parameter, }
+\item[{const double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ab96ac3a869cf35d312aeae089f04bc5c}
+
+
+Modifies a value of a certain sequencer set at runtime. 
+
+This is a convenience function combining a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Sequencer\+Set\+Value\+Modification}} directly followed by a call to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer}. Commands which have been queued before and have not yet been sent will be sent as well when calling this function.
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}{参数}
+{\em sequencer\+Set} & The index of the sequencer set to modify. \\
+\hline
+{\em parameter} & The parameter within the selected sequencer set to modify. \\
+\hline
+{\em value} & The new value the selected parameter within the selected sequencer set shall be set to. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ab96ac3a869cf35d312aeae089f04bc5c_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!queue\+Sequencer\+Set\+Value\+Modification@{queue\+Sequencer\+Set\+Value\+Modification}}
+\index{queue\+Sequencer\+Set\+Value\+Modification@{queue\+Sequencer\+Set\+Value\+Modification}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{queue\+Sequencer\+Set\+Value\+Modification}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Sequencer\+Set\+Value\+Modification (
+\begin{DoxyParamCaption}
+\item[{const int64\+\_\+type}]{sequencer\+Set, }
+\item[{const {\bf T\+Sequencer\+Set\+Parameter}}]{parameter, }
+\item[{const int64\+\_\+type}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60}
+
+
+Queues the modification of a value of a certain sequencer set at runtime. 
+
+This function queues a single parameter modification of a selected sequencer set. The actual modification will not become effective until {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer} is called. Using this function allows to send multiple modifications at once to a device. When the new command does not fit inside the internal command queue any more all pending commands will be sent to the device before the new one is put into the queue.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+
+\begin{DoxyParams}{参数}
+{\em sequencer\+Set} & The index of the sequencer set to modify. \\
+\hline
+{\em parameter} & The parameter within the selected sequencer set to modify. \\
+\hline
+{\em value} & The new value the selected parameter within the selected sequencer set shall be set to. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_ae18cd9ce7775ddb997e2a7c1414ded60_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a8ef48e0bf3d3c9a7dcce38f635142d87}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!queue\+Sequencer\+Set\+Value\+Modification@{queue\+Sequencer\+Set\+Value\+Modification}}
+\index{queue\+Sequencer\+Set\+Value\+Modification@{queue\+Sequencer\+Set\+Value\+Modification}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{queue\+Sequencer\+Set\+Value\+Modification}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Sequencer\+Set\+Value\+Modification (
+\begin{DoxyParamCaption}
+\item[{const int64\+\_\+type}]{sequencer\+Set, }
+\item[{const {\bf T\+Sequencer\+Set\+Parameter}}]{parameter, }
+\item[{const double}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a8ef48e0bf3d3c9a7dcce38f635142d87}
+
+
+Queues the modification of a value of a certain sequencer set at runtime. 
+
+This function queues a single parameter modification of a selected sequencer set. The actual modification will not become effective until {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer} is called. Using this function allows to send multiple modifications at once to a device. When the new command does not fit inside the internal command queue any more all pending commands will be sent to the device before the new one is put into the queue.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+
+\begin{DoxyParams}{参数}
+{\em sequencer\+Set} & The index of the sequencer set to modify. \\
+\hline
+{\em parameter} & The parameter within the selected sequencer set to modify. \\
+\hline
+{\em value} & The new value the selected parameter within the selected sequencer set shall be set to. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a8ef48e0bf3d3c9a7dcce38f635142d87_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!queue\+Transmission\+Request@{queue\+Transmission\+Request}}
+\index{queue\+Transmission\+Request@{queue\+Transmission\+Request}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{queue\+Transmission\+Request}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Transmission\+Request (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+type}]{timestamp\+\_\+us, }
+\item[{int}]{offset\+X, }
+\item[{int}]{offset\+Y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf T\+Request\+Transmission\+Mode}}]{mode = {\ttfamily {\bf rtm\+Full\+Resolution}}, }
+\item[{unsigned int}]{identifier = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250}
+
+
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image with a certain timestamp in a different mode/\+R\+O\+I. 
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} this function can be used to request the transmission of the image currently associated with {\ttfamily p\+Request} in a different mode/resolution. One use case would be to transmit every image taken by the sensor with a very coarse resolution e.\+g. by setting the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_af3c2ae5e5f9aaea7a762f3cd10ce1ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Horizontal}} and/or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_aee18567f6502e019607cab86903a68af}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Vertical}} to values greater than 1. When then an algorithm finds something interesting within an image this function can be used to request the transmission of the very same image in full resolution for detailed processing.
+
+\begin{DoxySince}{自从}
+2.\+18.\+1 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em timestamp\+\_\+us} & The timestamp of the {\bfseries mv.\+impact.\+acquire.\+Request} object shall be transmitted again. \\
+\hline
+\mbox{\tt in}  & {\em offset\+X} & The X-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em offset\+Y} & The Y-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em width} & The width of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em mode} & The mode in which this image shall be transmitted. \\
+\hline
+\mbox{\tt in}  & {\em identifier} & A user defined identifier that shall be attached to the image that will be sent as a result of calling this function. This value will be written into the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}} property so in order to actually benefit from this parameter the corresponding chunk must be enabled. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} for details. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_af6e0f250f4bb08bfd83a3d4ec4f30776}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!queue\+Transmission\+Request@{queue\+Transmission\+Request}}
+\index{queue\+Transmission\+Request@{queue\+Transmission\+Request}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{queue\+Transmission\+Request}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Transmission\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} $\ast$}]{p\+Request, }
+\item[{int}]{offset\+X, }
+\item[{int}]{offset\+Y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf T\+Request\+Transmission\+Mode}}]{mode = {\ttfamily {\bf rtm\+Full\+Resolution}}, }
+\item[{unsigned int}]{identifier = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_af6e0f250f4bb08bfd83a3d4ec4f30776}
+
+
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in a different mode/\+R\+O\+I. 
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} this function can be used to request the transmission of the image currently associated with {\ttfamily p\+Request} in a different mode/resolution. One use case would be to transmit every image taken by the sensor with a very coarse resolution e.\+g. by setting the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_af3c2ae5e5f9aaea7a762f3cd10ce1ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Horizontal}} and/or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_aee18567f6502e019607cab86903a68af}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Vertical}} to values greater than 1. When then an algorithm finds something interesting within an image this function can be used to request the transmission of the very same image in full resolution for detailed processing.
+
+\begin{DoxySince}{自从}
+2.\+18.\+1 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Request} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object currently associated with the image that shall be transmitted again. \\
+\hline
+\mbox{\tt in}  & {\em offset\+X} & The X-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em offset\+Y} & The Y-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em width} & The width of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em mode} & The mode in which this image shall be transmitted. \\
+\hline
+\mbox{\tt in}  & {\em identifier} & A user defined identifier that shall be attached to the image that will be sent as a result of calling this function. This value will be written into the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}} property so in order to actually benefit from this parameter the corresponding chunk must be enabled. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} for details. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_af6e0f250f4bb08bfd83a3d4ec4f30776_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a4adb1d8d864e7aa9647ef646d1f43074}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!queue\+Transmission\+Request@{queue\+Transmission\+Request}}
+\index{queue\+Transmission\+Request@{queue\+Transmission\+Request}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{queue\+Transmission\+Request}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Transmission\+Request (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} $\ast$}]{p\+Request, }
+\item[{unsigned int}]{identifier = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a4adb1d8d864e7aa9647ef646d1f43074}
+
+
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in full resolution. 
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} this function can be used to queue the transmission request of the image currently associated with {\ttfamily p\+Request} in full resolution. One use case would be to transmit every image taken by the sensor with a very coarse resolution e.\+g. by setting the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_af3c2ae5e5f9aaea7a762f3cd10ce1ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Horizontal}} and/or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_aee18567f6502e019607cab86903a68af}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Vertical}} to values greater than 1. When then an algorithm finds something interesting within an image this function can be used to request the transmission of the very same image in full resolution for detailed processing.
+
+The actual transmission request will not be sent to the device until {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer} is called. Using this function allows to send multiple commands at once to a device. When the new command does not fit inside the internal command queue any more all pending commands will be sent to the device before the new one is put into the queue.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+18.\+1 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Request} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object currently associated with the image that shall be transmitted again. \\
+\hline
+\mbox{\tt in}  & {\em identifier} & A user defined identifier that shall be attached to the image that will be sent as a result of calling this function. This value will be written into the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}} property so in order to actually benefit from this parameter the corresponding chunk must be enabled. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} for details. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a4adb1d8d864e7aa9647ef646d1f43074_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!request\+Transmission@{request\+Transmission}}
+\index{request\+Transmission@{request\+Transmission}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{request\+Transmission}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::request\+Transmission (
+\begin{DoxyParamCaption}
+\item[{int64\+\_\+type}]{timestamp\+\_\+us, }
+\item[{int}]{offset\+X, }
+\item[{int}]{offset\+Y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf T\+Request\+Transmission\+Mode}}]{mode = {\ttfamily {\bf rtm\+Full\+Resolution}}, }
+\item[{unsigned int}]{identifier = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046}
+
+
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image with a certain timestamp in a different mode/\+R\+O\+I. 
+
+This is a convenience function combining a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Transmission\+Request}} directly followed by a call to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer}. Commands which have been queued before and have not yet been sent will be sent as well when calling this function.
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} this function can be used to request the transmission of the image currently associated with {\ttfamily p\+Request} in a different mode/resolution. One use case would be to transmit every image taken by the sensor with a very coarse resolution e.\+g. by setting the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_af3c2ae5e5f9aaea7a762f3cd10ce1ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Horizontal}} and/or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_aee18567f6502e019607cab86903a68af}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Vertical}} to values greater than 1. When then an algorithm finds something interesting within an image this function can be used to request the transmission of the very same image in full resolution for detailed processing.
+
+\begin{DoxySince}{自从}
+2.\+18.\+1 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em timestamp\+\_\+us} & The timestamp of the {\bfseries mv.\+impact.\+acquire.\+Request} object shall be transmitted again. \\
+\hline
+\mbox{\tt in}  & {\em offset\+X} & The X-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em offset\+Y} & The Y-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em width} & The width of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em mode} & The mode in which this image shall be transmitted. \\
+\hline
+\mbox{\tt in}  & {\em identifier} & A user defined identifier that shall be attached to the image that will be sent as a result of calling this function. This value will be written into the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}} property so in order to actually benefit from this parameter the corresponding chunk must be enabled. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} for details. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a12316a89a5d4925deea45c067bb7d046_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a9458021595d92ab729fa99dcdf4a50cc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!request\+Transmission@{request\+Transmission}}
+\index{request\+Transmission@{request\+Transmission}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{request\+Transmission}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::request\+Transmission (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} $\ast$}]{p\+Request, }
+\item[{int}]{offset\+X, }
+\item[{int}]{offset\+Y, }
+\item[{int}]{width, }
+\item[{int}]{height, }
+\item[{{\bf T\+Request\+Transmission\+Mode}}]{mode = {\ttfamily {\bf rtm\+Full\+Resolution}}, }
+\item[{unsigned int}]{identifier = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a9458021595d92ab729fa99dcdf4a50cc}
+
+
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in a different mode/\+R\+O\+I. 
+
+This is a convenience function combining a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Transmission\+Request}} directly followed by a call to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer}. Commands which have been queued before and have not yet been sent will be sent as well when calling this function.
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} this function can be used to request the transmission of the image currently associated with {\ttfamily p\+Request} in a different mode/resolution. One use case would be to transmit every image taken by the sensor with a very coarse resolution e.\+g. by setting the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_af3c2ae5e5f9aaea7a762f3cd10ce1ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Horizontal}} and/or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_aee18567f6502e019607cab86903a68af}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Vertical}} to values greater than 1. When then an algorithm finds something interesting within an image this function can be used to request the transmission of the very same image in full resolution for detailed processing.
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Request} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object currently associated with the image that shall be transmitted again. \\
+\hline
+\mbox{\tt in}  & {\em offset\+X} & The X-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em offset\+Y} & The Y-\/offset of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em width} & The width of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height of the R\+O\+I of the image that shall be transmitted within the current image. \\
+\hline
+\mbox{\tt in}  & {\em mode} & The mode in which this image shall be transmitted. \\
+\hline
+\mbox{\tt in}  & {\em identifier} & A user defined identifier that shall be attached to the image that will be sent as a result of calling this function. This value will be written into the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}} property so in order to actually benefit from this parameter the corresponding chunk must be enabled. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} for details. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a9458021595d92ab729fa99dcdf4a50cc_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a6674d9728120c72c12c24dbce05218d5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!request\+Transmission@{request\+Transmission}}
+\index{request\+Transmission@{request\+Transmission}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{request\+Transmission}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::request\+Transmission (
+\begin{DoxyParamCaption}
+\item[{const {\bf Request} $\ast$}]{p\+Request, }
+\item[{unsigned int}]{identifier = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a6674d9728120c72c12c24dbce05218d5}
+
+
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} the transmission of an image currently associated with the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} object in full resolution. 
+
+This is a convenience function combining a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a807c3f7b8eb9b6392035e97967116250}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::queue\+Transmission\+Request}} directly followed by a call to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer}. Commands which have been queued before and have not yet been sent will be sent as well when calling this function.
+
+If {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} this function can be used to request the transmission of the image currently associated with {\ttfamily p\+Request} in full resolution. One use case would be to transmit every image taken by the sensor with a very coarse resolution e.\+g. by setting the properties {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_af3c2ae5e5f9aaea7a762f3cd10ce1ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Horizontal}} and/or {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control_aee18567f6502e019607cab86903a68af}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Image\+Format\+Control\+::decimation\+Vertical}} to values greater than 1. When then an algorithm finds something interesting within an image this function can be used to request the transmission of the very same image in full resolution for detailed processing.
+
+\begin{DoxySince}{自从}
+2.\+18.\+0 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Request} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object currently associated with the image that shall be transmitted again. \\
+\hline
+\mbox{\tt in}  & {\em identifier} & A user defined identifier that shall be attached to the image that will be sent as a result of calling this function. This value will be written into the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a9d9f523d03a4ef82a5340f74ffc45934}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::chunkmv\+Custom\+Identifier}} property so in order to actually benefit from this parameter the corresponding chunk must be enabled. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} for details. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_a6674d9728120c72c12c24dbce05218d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_afcaaa076529735eb7fd4eb476776f18d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}!send\+Command\+Buffer@{send\+Command\+Buffer}}
+\index{send\+Command\+Buffer@{send\+Command\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator}}
+\subsubsection[{send\+Command\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Custom\+Command\+Generator\+::send\+Command\+Buffer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_afcaaa076529735eb7fd4eb476776f18d}
+
+
+Applies all pending custom commands to the device. 
+
+This function will send all pending custom commands to a device. After calling this function the pending command queue will be empty an can be filled with new commands. Calling this function multiple times without queuing new commands after each send will have no effect!
+
+\begin{DoxySince}{自从}
+2.\+18.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_afcaaa076529735eb7fd4eb476776f18d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator_afcaaa076529735eb7fd4eb476776f18d_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam\+\_\+\+Custom\+Commands.\+h\end{DoxyCompactItemize}

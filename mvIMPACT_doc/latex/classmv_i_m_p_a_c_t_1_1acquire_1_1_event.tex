@@ -1,0 +1,129 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Event类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}
+}
+
+
+An interface class to model a internal driver event that the user can wait for({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only)({\bfseries deprecated}).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Event 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_event__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_ad0fc0c13e687365fddcf972d9b2f9daa}{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P} (const \hyperlink{struct_event_data}{Event\+Data} \&get\+Data(void) const )
+\begin{DoxyCompactList}\small\item\em Returns a const reference to the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Data} structure of this event({\bfseries deprecated}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga703f3c4af8606165b832097144354c75}{Property\+I\+Device\+Event\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_af129965537dfc66b9661538619872fd0}{mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) defining the mode this event is currently operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a1317c421236a92fc1aab555c53a40906}{queue\+Depth}
+\begin{DoxyCompactList}\small\item\em Currently unsupported. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga015a49062ba10316202f202c53d32993}{Property\+I\+Device\+Event\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a0747b4aa5d3d5f0adcfedbc635aa5def}{type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the type of this event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a4ef9fd83fedb038f6f0e423f575fd787}{class {\bfseries Event\+Sub\+System}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a4ef9fd83fedb038f6f0e423f575fd787}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+An interface class to model a internal driver event that the user can wait for({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only)({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000011}{弃用}]This class has been declared {\bfseries deprecated} and will be removed in future versions of this interface. A more flexible way of getting informed about changes in driver features has been added to the interface and should be used instead. An example for this new method can be found here\+: Callback.\+cpp\end{DoxyRefDesc}
+
+
+An event can be anything that occurs at a certain time within the driver or something that can be reported by the hardware. Typical examples might be the detection of an external trigger signal, a change at one of the digital inputs of a device or the start of a V\+D pulse send from a camera and detected by a capture device.
+
+Sometimes one or more of these events might be important for an application. E.\+g. the user might want to get a notification each time the state of one of the digital inputs of a device changes in order to read the current state from the device.
+
+Events will return a timestamp that can be used to synchronize the event with a certain chronology of other events.
+
+\begin{DoxyNote}{注解}
+Instances of this class can't be constructed directly. Valid objects must be obtained via the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_ad0fc0c13e687365fddcf972d9b2f9daa}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}!M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}}
+\index{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}
+\subsubsection[{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+::\+M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event\+Data} \&get\+Data(void)}]{const}
+\end{DoxyParamCaption}
+)}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_ad0fc0c13e687365fddcf972d9b2f9daa}
+
+
+Returns a const reference to the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Data} structure of this event({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000020}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}.\end{DoxyRefDesc}
+
+
+The referenced {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Data} structure contains additional information about the image, e.\+g. a timestamp that defines the time this event has been reported by the device.
+
+\begin{DoxyNote}{注解}
+Please do {\bfseries N\+O\+T} store this reference in some variable to use it for the evaluation of the next notification you get for this event as well, as this will {\bfseries N\+O\+T} update the referenced data. Whenever {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+::get\+Data} is called the function will make sure that the data in the returned structure is up to date while when working with an old reference to the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Data} structure the data in the structure will refer to the previous result. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_af129965537dfc66b9661538619872fd0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}!mode@{mode}}
+\index{mode@{mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}
+\subsubsection[{mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Event\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+::mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_af129965537dfc66b9661538619872fd0}
+
+
+An enumerated integer property {\bfseries }(read-\/only) defining the mode this event is currently operated in. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000021}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}.\end{DoxyRefDesc}
+
+
+This property must be used whenever the user wants to receive notification from this event Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Event\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a1317c421236a92fc1aab555c53a40906}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}!queue\+Depth@{queue\+Depth}}
+\index{queue\+Depth@{queue\+Depth}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}
+\subsubsection[{queue\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+::queue\+Depth}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a1317c421236a92fc1aab555c53a40906}
+
+
+Currently unsupported. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000022}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}.\end{DoxyRefDesc}
+
+
+\begin{DoxyNote}{注解}
+This feature is subject to change! Don't use it! 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a0747b4aa5d3d5f0adcfedbc635aa5def}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}!type@{type}}
+\index{type@{type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Event\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+::type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_a0747b4aa5d3d5f0adcfedbc635aa5def}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the type of this event. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000023}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}}.\end{DoxyRefDesc}
+
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Event\+Type}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

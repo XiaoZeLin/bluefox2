@@ -1,0 +1,291 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: apps/Common/FirmwareUpdate_mvHYPERION/Epcs.h 源文件</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li class="current"><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>文件列表</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('_epcs_8h_source.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Epcs.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#ifndef EpcsH</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define EpcsH EpcsH</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Enhanced Programming Configuration Serial</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &lt;mvIMPACT_CPP/mvIMPACT_acquire.h&gt;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//Operation codes for serial configuration devices</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define EpcsWrite_ENA       0x06    </span><span class="comment">/* Write enable */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define EpcsWrite_DIS       0x04    </span><span class="comment">/* Write disable */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define EpcsRead_STAT       0x05    </span><span class="comment">/* Read status */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#define EpcsRead_BYTES      0x03    </span><span class="comment">/* Read bytes */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#define EpcsFastRead_BYTES  0x0b    </span><span class="comment">/* Fast Read bytes */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#define EpcsRead_ID         0xab    </span><span class="comment">/* Read silicon id */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#define EpcsWrite_STAT      0x01    </span><span class="comment">/* Write status */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define EpcsWrite_BYTES     0x02    </span><span class="comment">/* Write bytes */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#define EpcsErase_BULK      0xc7    </span><span class="comment">/* Erase entire device */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#define EpcsErase_SECT      0xd8    </span><span class="comment">/* Erase sector */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">//Device status register bits</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define EPCS_STATUS_WIP     (1&lt;&lt;0)  </span><span class="comment">/* Write in progress */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define EPCS_STATUS_WEL     (1&lt;&lt;1)  </span><span class="comment">/* Write enable latch */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#define EPCS_TIMEOUT        100 </span><span class="comment">/* 100 msec timeout */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="struct_s_epcs_dev_info.html">   31</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct_s_epcs_dev_info.html">SEpcsDevInfo</a></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">const</span> <span class="keywordtype">char</span>*  name;      <span class="comment">/* Device name */</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   id;     <span class="comment">/* Device silicon id */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   size;       <span class="comment">/* Total size log2(bytes)*/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   num_sects;  <span class="comment">/* Number of sectors */</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   sz_sect;    <span class="comment">/* Sector size log2(bytes) */</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   sz_page;    <span class="comment">/* Page size log2(bytes) */</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>   prot_mask;  <span class="comment">/* Protection mask */</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;} <a class="code" href="struct_s_epcs_dev_info.html">TEpcsDevInfo</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="struct_s_nios_spi.html">   42</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">volatile</span> <span class="keyword">struct </span><a class="code" href="struct_s_nios_spi.html">SNiosSpi</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">unsigned</span>    rxdata;     <span class="comment">/* Rx data reg */</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">unsigned</span>    txdata;     <span class="comment">/* Tx data reg */</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">unsigned</span>    status;     <span class="comment">/* Status reg */</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">unsigned</span>    control;    <span class="comment">/* Control reg */</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">unsigned</span>    reserved;   <span class="comment">/* (master only) */</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordtype">unsigned</span>    slaveselect;    <span class="comment">/* SPI slave select mask (master only) */</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;} TNiosSpi;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define REG_OFF_SPI_RXDATA  0</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#define REG_OFF_SPI_TXDATA  0x4</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define REG_OFF_SPI_STATUS  0x8</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#define REG_OFF_SPI_CONTROL 0xC</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* status register */</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define NIOS_SPI_ROE        (1 &lt;&lt; 3)    </span><span class="comment">/* rx overrun */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define NIOS_SPI_TOE        (1 &lt;&lt; 4)    </span><span class="comment">/* tx overrun */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define NIOS_SPI_TMT        (1 &lt;&lt; 5)    </span><span class="comment">/* tx empty */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define NIOS_SPI_TRDY       (1 &lt;&lt; 6)    </span><span class="comment">/* tx ready */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define NIOS_SPI_RRDY       (1 &lt;&lt; 7)    </span><span class="comment">/* rx ready */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define NIOS_SPI_E          (1 &lt;&lt; 8)    </span><span class="comment">/* exception */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/* control register */</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#define NIOS_SPI_IROE       (1 &lt;&lt; 3)    </span><span class="comment">/* rx overrun int ena */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#define NIOS_SPI_ITOE       (1 &lt;&lt; 4)    </span><span class="comment">/* tx overrun int ena */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define NIOS_SPI_ITRDY      (1 &lt;&lt; 6)    </span><span class="comment">/* tx ready int ena */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#define NIOS_SPI_IRRDY      (1 &lt;&lt; 7)    </span><span class="comment">/* rx ready int ena */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="preprocessor">#define NIOS_SPI_IE         (1 &lt;&lt; 8)    </span><span class="comment">/* exception int ena */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define NIOS_SPI_SSO        (1 &lt;&lt; 10)   </span><span class="comment">/* override SS_n output */</span><span class="preprocessor"></span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="struct___register_access.html">   74</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code" href="struct___register_access.html">_RegisterAccess</a></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;{</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> Offset;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> Data;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;} <a class="code" href="struct___register_access.html">TRegisterAccess</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="class_c_epcs.html">   82</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_c_epcs.html">CEpcs</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;{</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">explicit</span>    <a class="code" href="class_c_epcs.html">CEpcs</a>( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a>* pDev );</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    ~<a class="code" href="class_c_epcs.html">CEpcs</a>();</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">int</span> WriteDataToFlash( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">int</span> bytes );</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> DeviceConfigure( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_info.html">Info</a>( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> Erase( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> start, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> end );</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> BulkErase( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        EpcsBulkErase();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    }</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">void</span> Protect( <span class="keywordtype">bool</span> boProtect );</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">void</span> Read( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cnt );</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">int</span> Write( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cnt, <span class="keywordtype">bool</span> verify );</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> Verify( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cnt );</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="keywordtype">bool</span> GetSPIDeviceInfo( <a class="code" href="struct_s_epcs_dev_info.html">TEpcsDevInfo</a>&amp; deviceInfo );</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> IsProtected( <span class="keywordtype">void</span> )</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    {</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keywordflow">return</span> boProtected_;</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">void</span> SectorInfo( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">void</span> DbOutput( <span class="keyword">const</span> <span class="keywordtype">char</span>* format, ... );</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">int</span> EpcsCS( <span class="keywordtype">int</span> assert );</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">int</span> EpcsTX( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c );</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">int</span> EpcsRX( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> EpcsBitRev( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> c );</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">void</span> EpcsRcv( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pDst, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">void</span> EpcsRRcv( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pDst, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordtype">void</span> EpcsSnd( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pSrc, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="keywordtype">void</span> EpcsRSnd( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pSrc, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="keywordtype">void</span> EpcsRSndEx( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pSrc, <span class="keywordtype">int</span> len );</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;    <span class="keywordtype">void</span> EpcsWrEnable( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> EpcsStatusRD( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordtype">void</span> EpcsStatusWR( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span> status );</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_s_epcs_dev_info.html">TEpcsDevInfo</a>* EpcsDevFind( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">int</span> EpcsCfgsz( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">int</span> EpcsErase( <span class="keywordtype">unsigned</span> start, <span class="keywordtype">unsigned</span> end );</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    <span class="keywordtype">int</span> EpcsRead( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cnt );</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">int</span> EpcsWrite( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cnt );</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">int</span> EpcsBulkErase( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">int</span> EpcsVerify( <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> cnt, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span>* pErr );</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    <span class="keywordtype">int</span> EpcsSectErased( <span class="keywordtype">int</span> sect, <span class="keywordtype">unsigned</span>* pOffset );</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    <span class="keywordtype">int</span> EpcsReset( <span class="keywordtype">void</span> );</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;    <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> ReadSPI( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off );</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> WriteSPI( <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> off, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> data );</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    TNiosSpi* pEpcs_;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keyword">const</span> <a class="code" href="struct_s_epcs_dev_info.html">TEpcsDevInfo</a>* pDeviceInfo_;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> boProtected_;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a>* pDev_;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> SPIConfig_;</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> SPIRead_;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> SPIWrite_;</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">PropertyI</a> SPIOffset_;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">PropertyI</a> SPIData_;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <span class="keywordtype">int</span> TXError_;</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">int</span> RXError_;</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    <span class="keywordtype">int</span> CSError_;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;};</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;<span class="keyword">enum</span> eFlashSelect</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="comment">//-----------------------------------------------------------------------------</span></div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;{</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    eFSSetI2CSwitchToDefaultFlash = 0,</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    eFSSetI2CSwitchToUserFlash,</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    eFSSetI2CSwitchOn,</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    eFSSetI2CSwitchOffAndForceUserFlashSelect</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;};</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keywordtype">void</span> SelectFlashAccess_mvHYPERION( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a>* pDev, eFlashSelect access );</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="keywordtype">bool</span> FlashUpdate_mvHYPERION( <a class="code" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a>* pDev, <span class="keywordtype">unsigned</span> <span class="keywordtype">char</span>* pFlashData, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> flashDataSize, std::ostream&amp; logger );</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="preprocessor">#endif //EpcsH</span></div>
+<div class="ttc" id="class_c_epcs_html"><div class="ttname"><a href="class_c_epcs.html">CEpcs</a></div><div class="ttdef"><b>Definition:</b> Epcs.h:82</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; int &gt;</a></div></div>
+<div class="ttc" id="struct___register_access_html"><div class="ttname"><a href="struct___register_access.html">_RegisterAccess</a></div><div class="ttdef"><b>Definition:</b> Epcs.h:74</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_info_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_info.html">mvIMPACT::acquire::Info</a></div><div class="ttdoc">A base class to access various general information about the device and its driver. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:9518</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a></div><div class="ttdoc">This class and its functions represent an actual device detected by this interface in the current sys...</div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:5161</div></div>
+<div class="ttc" id="struct_s_nios_spi_html"><div class="ttname"><a href="struct_s_nios_spi.html">SNiosSpi</a></div><div class="ttdef"><b>Definition:</b> Epcs.h:42</div></div>
+<div class="ttc" id="struct_s_epcs_dev_info_html"><div class="ttname"><a href="struct_s_epcs_dev_info.html">SEpcsDevInfo</a></div><div class="ttdef"><b>Definition:</b> Epcs.h:31</div></div>
+<div class="ttc" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_method_html"><div class="ttname"><a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">mvIMPACT::acquire::Method</a></div><div class="ttdoc">A class to call arbitrary driver functions. </div><div class="ttdef"><b>Definition:</b> mvIMPACT_acquire.h:2157</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="dir_9654b8d08f4bba4e84b362c5fd320bee.html">apps</a></li><li class="navelem"><a class="el" href="dir_72cb55842e763ced7a8eb226ae2c9fb5.html">Common</a></li><li class="navelem"><a class="el" href="dir_5b8e84ba1a8cfb35f0cb25c81d14bd59.html">FirmwareUpdate_mvHYPERION</a></li><li class="navelem"><b>Epcs.h</b></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:17 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

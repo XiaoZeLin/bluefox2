@@ -1,0 +1,151 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Image\+Buffer\+Desc类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+}
+
+
+A wrapper class to handle {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} structures.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_ac787318a248622e7098d0a1aa2b6f8c9}{Image\+Buffer\+Desc} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{Image\+Buffer\+Desc} \&source)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} from an existing one. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_ad695e4b628361c2f0359ab74bf7e25df}{Image\+Buffer\+Desc} (int channel\+Count)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} object with {\itshape channel\+Count} channel specific data elements. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a20cf3861c8a10a80a662b5f027045ef6}{Image\+Buffer\+Desc} (\hyperlink{group___common_interface_ga456e8aa76e06bb761f27c52141475985}{T\+Image\+Buffer\+Pixel\+Format} pixel\+Format, int width, int height)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} object and allocates all memory needed. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a441a7b88519e69bdac03a1417c70e45d}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a441a7b88519e69bdac03a1417c70e45d}{$\sim$\+Image\+Buffer\+Desc} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a441a7b88519e69bdac03a1417c70e45d}
+
+\begin{DoxyCompactList}\small\item\em De-\/allocates all managed memory again when this is the last object referencing the image. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{Image\+Buffer\+Desc} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a6a46b9a7dd0af67cff75ef11e062942d}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{Image\+Buffer\+Desc} \&rhs)
+\begin{DoxyCompactList}\small\item\em Allows assignments of two different {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{Image\+Buffer\+Desc} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a5a4f72beeb3980f97d6c49a85862fde8}{clone} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a deep copy of the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object referenced by this descriptor. \end{DoxyCompactList}\item 
+\hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a35278f732a39a7e0b18f99e5768dcd71}{get\+Buffer} (void) const 
+\begin{DoxyCompactList}\small\item\em Grants access to the underlying {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} structure managed by this object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a5719d6ff12298e668b17796c87450d5b}{class {\bfseries Request}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a5719d6ff12298e668b17796c87450d5b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A wrapper class to handle {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} structures. 
+
+This class acts as a simple wrapper to handle {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} structures. When using this class the user is no longer responsible for the memory management of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} structures.
+
+Instances of this class are reference counted. Memory is freed once the last instance to it is destroyed. For details read the corresponding sections in the documentation of the various constructors and function belonging to this class. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_ac787318a248622e7098d0a1aa2b6f8c9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}!Image\+Buffer\+Desc@{Image\+Buffer\+Desc}}
+\index{Image\+Buffer\+Desc@{Image\+Buffer\+Desc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+\subsubsection[{Image\+Buffer\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc\+::\+Image\+Buffer\+Desc (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Buffer\+Desc} \&}]{source}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_ac787318a248622e7098d0a1aa2b6f8c9}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} from an existing one. 
+
+The image buffer associated with this descriptor will not be copied! The internal data will be reference counted and changing this new object will also affect the original one. The internal data is freed when the last descriptor referencing the image is destroyed. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em source} & The source buffer descriptor. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_ad695e4b628361c2f0359ab74bf7e25df}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}!Image\+Buffer\+Desc@{Image\+Buffer\+Desc}}
+\index{Image\+Buffer\+Desc@{Image\+Buffer\+Desc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+\subsubsection[{Image\+Buffer\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc\+::\+Image\+Buffer\+Desc (
+\begin{DoxyParamCaption}
+\item[{int}]{channel\+Count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_ad695e4b628361c2f0359ab74bf7e25df}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} object with {\itshape channel\+Count} channel specific data elements. 
+
+This constructor does {\bfseries N\+O\+T} allocate memory for the actual pixel data but only for the a structure describing an image. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em channel\+Count} & The number of channel specific data elements to allocate memory for. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a20cf3861c8a10a80a662b5f027045ef6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}!Image\+Buffer\+Desc@{Image\+Buffer\+Desc}}
+\index{Image\+Buffer\+Desc@{Image\+Buffer\+Desc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+\subsubsection[{Image\+Buffer\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc\+::\+Image\+Buffer\+Desc (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Image\+Buffer\+Pixel\+Format}}]{pixel\+Format, }
+\item[{int}]{width, }
+\item[{int}]{height}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a20cf3861c8a10a80a662b5f027045ef6}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}} object and allocates all memory needed. 
+
+This constructor will allocate and handle a new and complete {\bfseries \hyperlink{struct_image_buffer}{Image\+Buffer}} object including memory for the pixel data for the given pixel format.
+
+The size(in bytes) of allocated pixel memory will depend on the {\itshape pixel\+Format} as well as on the parameters {\itshape width} and {\itshape height}. {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+::i\+Size} will return the amount of memory allocated for the buffer. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em pixel\+Format} & The desired pixel format for the new {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object handled by this descriptor. \\
+\hline
+\mbox{\tt in}  & {\em width} & The width of the new {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object handled by this descriptor. \\
+\hline
+\mbox{\tt in}  & {\em height} & The height of the new {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object handled by this descriptor. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a5a4f72beeb3980f97d6c49a85862fde8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}!clone@{clone}}
+\index{clone@{clone}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+\subsubsection[{clone}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image\+Buffer\+Desc} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc\+::clone (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a5a4f72beeb3980f97d6c49a85862fde8}
+
+
+Returns a deep copy of the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object referenced by this descriptor. 
+
+This function will create a deep copy of the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object referenced by this descriptor. Afterwards modifying one of the images will {\bfseries N\+O\+T} influence the other one.
+
+\begin{DoxyReturn}{返回}
+A deep copy of the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object referenced by this descriptor. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a35278f732a39a7e0b18f99e5768dcd71}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}!get\+Buffer@{get\+Buffer}}
+\index{get\+Buffer@{get\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+\subsubsection[{get\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image\+Buffer}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc\+::get\+Buffer (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a35278f732a39a7e0b18f99e5768dcd71}
+
+
+Grants access to the underlying {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} structure managed by this object. 
+
+\begin{DoxyReturn}{返回}
+A pointer to the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} object referenced by this descriptor. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a6a46b9a7dd0af67cff75ef11e062942d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}!operator=@{operator=}}
+\index{operator=@{operator=}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Image\+Buffer\+Desc}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Image\+Buffer\+Desc} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc_a6a46b9a7dd0af67cff75ef11e062942d}
+
+
+Allows assignments of two different {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+Desc}}. 
+
+The image buffer associated with this descriptor will not be copied! The internal data will be reference counted and changing this new object will also affect the original one. The internal data is freed when the last descriptor referencing the image is destroyed. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

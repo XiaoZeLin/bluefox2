@@ -1,0 +1,251 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component\+Callback类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+}
+
+
+A simple helper class to wrap the creation of a callback object.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component\+Callback 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=263pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_ac556b7ac1a6517f30734cbdae4f6ed6e}{Component\+Callback} (void $\ast$p\+User\+Data=0)
+\begin{DoxyCompactList}\small\item\em Creates a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}} instance. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_af5c336a5c4d3b33e34160a06bcf8ef11}{Component\+Callback} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{Component\+Callback} \&src)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+virtual \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a78709794813d94114c2855a5d32ffdb0}{$\sim$\+Component\+Callback} ()
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a0d76e0477975779dea9d6a32d9e13bf8}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{Component\+Callback} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a0d76e0477975779dea9d6a32d9e13bf8}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{Component\+Callback} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a0d76e0477975779dea9d6a32d9e13bf8}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}} objects. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a4d29b431f59c28f815655c604c4e473e}{is\+Component\+Registered} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} c) const 
+\begin{DoxyCompactList}\small\item\em Checks if a component is currently registered for this callback or not. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a9d6ac41d7885c16d1545fe7ceb0516dd}{register\+Component} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} c)
+\begin{DoxyCompactList}\small\item\em Registers a component for this callback. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a8e4afb1f424f70e9dea237fb1c5c0a3d}{unregister\+Component} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} c)
+\begin{DoxyCompactList}\small\item\em Unregisters a component for this callback. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a043e5e1faaa00a954dcb1eb9b765988d}{execute} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \&, void $\ast$)
+\begin{DoxyCompactList}\small\item\em The callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A simple helper class to wrap the creation of a callback object. 
+
+Applications need to derive from this class and must re-\/implement the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a043e5e1faaa00a954dcb1eb9b765988d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::execute}}.
+
+\begin{DoxySince}{自从}
+1.\+12.\+18 
+\end{DoxySince}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_ac556b7ac1a6517f30734cbdae4f6ed6e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!Component\+Callback@{Component\+Callback}}
+\index{Component\+Callback@{Component\+Callback}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{Component\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::\+Component\+Callback (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{p\+User\+Data = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_ac556b7ac1a6517f30734cbdae4f6ed6e}
+
+
+Creates a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}} instance. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+User\+Data} & A pointer to user specific data bound to this callback. This data will be passed back to the user whenever the callback function gets executed and can be used to attach custom data to the callback function. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_ac556b7ac1a6517f30734cbdae4f6ed6e_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_af5c336a5c4d3b33e34160a06bcf8ef11}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!Component\+Callback@{Component\+Callback}}
+\index{Component\+Callback@{Component\+Callback}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{Component\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::\+Component\+Callback (
+\begin{DoxyParamCaption}
+\item[{const {\bf Component\+Callback} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_af5c336a5c4d3b33e34160a06bcf8ef11}
+
+
+Copy constructor. 
+
+Creates a new object from an existing device object. Keep in mind that this new object will provide access to the very same objects. This constructor is only provided for internal reference counting to guarantee correct operation of the objects of this class under all platforms and languages. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a78709794813d94114c2855a5d32ffdb0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!````~Component\+Callback@{$\sim$\+Component\+Callback}}
+\index{````~Component\+Callback@{$\sim$\+Component\+Callback}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{$\sim$\+Component\+Callback}]{\setlength{\rightskip}{0pt plus 5cm}virtual mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::$\sim$\+Component\+Callback (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a78709794813d94114c2855a5d32ffdb0}
+
+
+Class destructor. 
+
+This will automatically unregister all components still referencing this callback and will free all internal resources. 
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a043e5e1faaa00a954dcb1eb9b765988d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!execute@{execute}}
+\index{execute@{execute}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::execute (
+\begin{DoxyParamCaption}
+\item[{{\bf Component} \&}]{, }
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a043e5e1faaa00a954dcb1eb9b765988d}
+
+
+The callback function. 
+
+Re-\/implement this function in a derived class in order to get the desired behaviour.
+
+\begin{DoxyNote}{注解}
+Please note that this function might be executed from {\bfseries A\+N\+Y} thread context, which is most likely not the same as used by the application thus appropriate mechanisms to ensure correct execution must be implemented by an application(e.\+g. G\+U\+I applications might send an event to the main thread instead of directly accessing G\+U\+I elements). 
+\end{DoxyNote}
+
+
+被 \hyperlink{class_my_callback_abca435945a6153c057be2a98bf57a9d1}{My\+Callback} , 以及 \hyperlink{class_prop_view_callback_a1e8b3138bb1074e64b86715f269e59c1}{Prop\+View\+Callback} 重载.
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a4d29b431f59c28f815655c604c4e473e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!is\+Component\+Registered@{is\+Component\+Registered}}
+\index{is\+Component\+Registered@{is\+Component\+Registered}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{is\+Component\+Registered}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::is\+Component\+Registered (
+\begin{DoxyParamCaption}
+\item[{{\bf Component}}]{c}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a4d29b431f59c28f815655c604c4e473e}
+
+
+Checks if a component is currently registered for this callback or not. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component currently is registered for this callback
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em c} & The component that shall be tested against this callback \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a4d29b431f59c28f815655c604c4e473e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a4d29b431f59c28f815655c604c4e473e_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a9d6ac41d7885c16d1545fe7ceb0516dd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!register\+Component@{register\+Component}}
+\index{register\+Component@{register\+Component}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{register\+Component}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::register\+Component (
+\begin{DoxyParamCaption}
+\item[{{\bf Component}}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a9d6ac41d7885c16d1545fe7ceb0516dd}
+
+
+Registers a component for this callback. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component could be registered successfully for this callback.
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em c} & The component to register for this callback \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a9d6ac41d7885c16d1545fe7ceb0516dd_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a8e4afb1f424f70e9dea237fb1c5c0a3d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}!unregister\+Component@{unregister\+Component}}
+\index{unregister\+Component@{unregister\+Component}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback}}
+\subsubsection[{unregister\+Component}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback\+::unregister\+Component (
+\begin{DoxyParamCaption}
+\item[{{\bf Component}}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a8e4afb1f424f70e9dea237fb1c5c0a3d}
+
+
+Unregisters a component for this callback. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component could be unregistered successfully for this callback.
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em c} & The component to unregister from this callback \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a8e4afb1f424f70e9dea237fb1c5c0a3d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

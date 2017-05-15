@@ -1,0 +1,78 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital\+Base2类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2}}
+}
+
+
+A base class to describe an arbitrary digital camera signal({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital\+Base2 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital\+Base2 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_aeb16b4df160c9f47b833e4264ff09602}{pixels\+Per\+Cycle}
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of pixels per clock cycle transmitted by this camera. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga762c072be6a70ec34c79682ae145f677}{Property\+I\+Camera\+Scan\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_a4b1e7be4e83a56bfaf23a298f47029de}{scan\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property providing information about the sensor of this camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_ad8a96f1c7443cdc81d3ddb1d3e6335f6}{{\bfseries Camera\+Description\+Digital\+Base2} (H\+D\+R\+V h\+Drv, H\+L\+I\+S\+T h\+List)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_ad8a96f1c7443cdc81d3ddb1d3e6335f6}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to describe an arbitrary digital camera signal({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides access to all settings specific for digital video signals.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_aeb16b4df160c9f47b833e4264ff09602}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2}!pixels\+Per\+Cycle@{pixels\+Per\+Cycle}}
+\index{pixels\+Per\+Cycle@{pixels\+Per\+Cycle}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2}}
+\subsubsection[{pixels\+Per\+Cycle}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2\+::pixels\+Per\+Cycle}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_aeb16b4df160c9f47b833e4264ff09602}
+
+
+An integer property defining the number of pixels per clock cycle transmitted by this camera. 
+
+This corresponds the number of taps used by the camera in the described configuration. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_a4b1e7be4e83a56bfaf23a298f47029de}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2}!scan\+Mode@{scan\+Mode}}
+\index{scan\+Mode@{scan\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2}}
+\subsubsection[{scan\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Scan\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base2\+::scan\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base2_a4b1e7be4e83a56bfaf23a298f47029de}
+
+
+An enumerated integer property providing information about the sensor of this camera. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Scan\+Mode}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

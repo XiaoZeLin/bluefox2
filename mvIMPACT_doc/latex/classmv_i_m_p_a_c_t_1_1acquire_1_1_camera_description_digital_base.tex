@@ -1,0 +1,81 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital\+Base类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base}}
+}
+
+
+A base class to describe an arbitrary digital camera signal({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Digital\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a271cad4ec696beae5e22b607c4509f9c}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a271cad4ec696beae5e22b607c4509f9c}{bits\+Per\+Pixel}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a271cad4ec696beae5e22b607c4509f9c}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of bits per pixel currently transmitted by this camera. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaca0c18e83412eef14a2be9fdc89066b6}{Property\+I\+Camera\+Data\+Format} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a06cbe37a9a07831b908c66df54026fc5}{format}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the data format the camera is sending image data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gafaa3668c30761b139d7ff110ac2c83e4}{Property\+I\+Bayer\+Mosaic\+Parity} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a3559cea18f8846eb4618a762aa615b25}{bayer\+Parity}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the start pixel for a camera delivering an unconverted bayer image. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_ad8070846779e0062a17e436eb60951dc}{{\bfseries Camera\+Description\+Digital\+Base} (H\+D\+R\+V h\+Drv, H\+L\+I\+S\+T h\+List)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_ad8070846779e0062a17e436eb60951dc}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to describe an arbitrary digital camera signal({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides access to all settings specific for digital video signals.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a3559cea18f8846eb4618a762aa615b25}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base}!bayer\+Parity@{bayer\+Parity}}
+\index{bayer\+Parity@{bayer\+Parity}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base}}
+\subsubsection[{bayer\+Parity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Bayer\+Mosaic\+Parity} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base\+::bayer\+Parity}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a3559cea18f8846eb4618a762aa615b25}
+
+
+An enumerated integer property defining the start pixel for a camera delivering an unconverted bayer image. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a06cbe37a9a07831b908c66df54026fc5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base}!format@{format}}
+\index{format@{format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base}}
+\subsubsection[{format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Data\+Format} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital\+Base\+::format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital_base_a06cbe37a9a07831b908c66df54026fc5}
+
+
+An enumerated integer property defining the data format the camera is sending image data. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Data\+Format}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,245 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:User\+Set\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+}
+
+
+Category that contains the User Set control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:User\+Set\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a1a339e0bc4f721897a7e832c87695810}{User\+Set\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a60a24c73faea457a19659ef0e5e41e6c}{user\+Set\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the feature User Set to load, save or configure. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a2adba0f27db53c0d63d7b772a41c7219}{user\+Set\+Load}
+\begin{DoxyCompactList}\small\item\em A method object. Loads the User Set specified by User\+Set\+Selector to the device and makes it active. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a6adfbcf1f208d5ea9940073587642dfe}{user\+Set\+Save}
+\begin{DoxyCompactList}\small\item\em A method object. Save the User Set specified by User\+Set\+Selector to the non-\/volatile memory of the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a976dc234c6b9d625d574c137fe732948}{user\+Set\+Default}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the feature User Set to load and make active by default when the device is reset. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a08d0aaa8f50249724bf888794adf1713}{user\+Set\+Default\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. This feature is deprecated (See User\+Set\+Default). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a0f8cbd4264279a3a748cd18a92a3efa8}{user\+Set\+Feature\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which individual User\+Set feature to control. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_ab653f7510582633a32def34eafa21eab}{user\+Set\+Feature\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. Enables the selected feature and make it active in all the User\+Sets. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a61f312cf670c4a3415f5f57d1b9e160d}{mv\+User\+Data}
+\begin{DoxyCompactList}\small\item\em A string property. A register to store arbitrary user data into the devices non-\/volatile memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category that contains the User Set control features. 
+
+A category that contains the User Set control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a1a339e0bc4f721897a7e832c87695810}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!User\+Set\+Control@{User\+Set\+Control}}
+\index{User\+Set\+Control@{User\+Set\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{User\+Set\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::\+User\+Set\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a1a339e0bc4f721897a7e832c87695810}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a1a339e0bc4f721897a7e832c87695810_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a61f312cf670c4a3415f5f57d1b9e160d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!mv\+User\+Data@{mv\+User\+Data}}
+\index{mv\+User\+Data@{mv\+User\+Data}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{mv\+User\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::mv\+User\+Data}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a61f312cf670c4a3415f5f57d1b9e160d}
+
+
+A string property. A register to store arbitrary user data into the devices non-\/volatile memory. 
+
+A register to store arbitrary user data into the devices non-\/volatile memory \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a976dc234c6b9d625d574c137fe732948}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Default@{user\+Set\+Default}}
+\index{user\+Set\+Default@{user\+Set\+Default}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Default}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Default}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a976dc234c6b9d625d574c137fe732948}
+
+
+An enumerated integer property. Selects the feature User Set to load and make active by default when the device is reset. 
+
+Selects the feature User Set to load and make active by default when the device is reset.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Default} (Display string\+: 'Default')\+: Select the factory setting user set.
+\item {\bfseries User\+Set0} (Display string\+: 'User Set 0')\+: Select the user set 0.
+\item {\bfseries User\+Set1} (Display string\+: 'User Set 1')\+: Select the user set 1.
+\item {\bfseries User\+Set\#2\#} (Display string\+: 'User Set \#2\#')\+: Select the user set \#2\#.
+\item {\bfseries User\+Set2} (Display string\+: 'User Set 2')\+: Select the user set 2.
+\item {\bfseries User\+Set3} (Display string\+: 'User Set 3')\+: Select the user set 3.
+\item {\bfseries User\+Set4} (Display string\+: 'User Set 4')\+: Select the user set 4.
+\item {\bfseries User\+Set5} (Display string\+: 'User Set 5')\+: Select the user set 5.
+\item {\bfseries User\+Set6} (Display string\+: 'User Set 6')\+: Select the user set 6.
+\item {\bfseries User\+Set7} (Display string\+: 'User Set 7')\+: Select the user set 7.
+\item {\bfseries User\+Set8} (Display string\+: 'User Set 8')\+: Select the user set 8.
+\item {\bfseries User\+Set9} (Display string\+: 'User Set 9')\+: Select the user set 9.
+\item {\bfseries User\+Set10} (Display string\+: 'User Set 10')\+: Select the user set 10.
+\item {\bfseries User\+Set11} (Display string\+: 'User Set 11')\+: Select the user set 11.
+\item {\bfseries User\+Set12} (Display string\+: 'User Set 12')\+: Select the user set 12.
+\item {\bfseries User\+Set13} (Display string\+: 'User Set 13')\+: Select the user set 13.
+\item {\bfseries User\+Set14} (Display string\+: 'User Set 14')\+: Select the user set 14.
+\item {\bfseries User\+Set15} (Display string\+: 'User Set 15')\+: Select the user set 15.
+\item {\bfseries User\+Set16} (Display string\+: 'User Set Default')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a08d0aaa8f50249724bf888794adf1713}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Default\+Selector@{user\+Set\+Default\+Selector}}
+\index{user\+Set\+Default\+Selector@{user\+Set\+Default\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Default\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Default\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a08d0aaa8f50249724bf888794adf1713}
+
+
+An enumerated integer property. This feature is deprecated (See User\+Set\+Default). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000054}{弃用}]This feature is deprecated (See User\+Set\+Default). Selects the feature User Set to load and make active when the device is reset.\end{DoxyRefDesc}
+
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Default} (Display string\+: 'Default')\+: Select the factory setting user set.
+\item {\bfseries User\+Set0} (Display string\+: 'User Set 0')\+: Select the user set 0.
+\item {\bfseries User\+Set1} (Display string\+: 'User Set 1')\+: Select the user set 1.
+\item {\bfseries User\+Set\#2\#} (Display string\+: 'User Set \#2\#')\+: Select the user set \#2\#.
+\item {\bfseries User\+Set2} (Display string\+: 'User Set 2')\+: Select the user set 2.
+\item {\bfseries User\+Set3} (Display string\+: 'User Set 3')\+: Select the user set 3.
+\item {\bfseries User\+Set4} (Display string\+: 'User Set 4')\+: Select the user set 4.
+\item {\bfseries User\+Set5} (Display string\+: 'User Set 5')\+: Select the user set 5.
+\item {\bfseries User\+Set6} (Display string\+: 'User Set 6')\+: Select the user set 6.
+\item {\bfseries User\+Set7} (Display string\+: 'User Set 7')\+: Select the user set 7.
+\item {\bfseries User\+Set8} (Display string\+: 'User Set 8')\+: Select the user set 8.
+\item {\bfseries User\+Set9} (Display string\+: 'User Set 9')\+: Select the user set 9.
+\item {\bfseries User\+Set10} (Display string\+: 'User Set 10')\+: Select the user set 10.
+\item {\bfseries User\+Set11} (Display string\+: 'User Set 11')\+: Select the user set 11.
+\item {\bfseries User\+Set12} (Display string\+: 'User Set 12')\+: Select the user set 12.
+\item {\bfseries User\+Set13} (Display string\+: 'User Set 13')\+: Select the user set 13.
+\item {\bfseries User\+Set14} (Display string\+: 'User Set 14')\+: Select the user set 14.
+\item {\bfseries User\+Set15} (Display string\+: 'User Set 15')\+: Select the user set 15.
+\item {\bfseries User\+Set16} (Display string\+: 'User Set Default Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_ab653f7510582633a32def34eafa21eab}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Feature\+Enable@{user\+Set\+Feature\+Enable}}
+\index{user\+Set\+Feature\+Enable@{user\+Set\+Feature\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Feature\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Feature\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_ab653f7510582633a32def34eafa21eab}
+
+
+A boolean property. Enables the selected feature and make it active in all the User\+Sets. 
+
+Enables the selected feature and make it active in all the User\+Sets. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a0f8cbd4264279a3a748cd18a92a3efa8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Feature\+Selector@{user\+Set\+Feature\+Selector}}
+\index{user\+Set\+Feature\+Selector@{user\+Set\+Feature\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Feature\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Feature\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a0f8cbd4264279a3a748cd18a92a3efa8}
+
+
+An enumerated integer property. Selects which individual User\+Set feature to control. 
+
+Selects which individual User\+Set feature to control.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Device-\/\+Specific} (Display string\+: '\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} -\/ Specific')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} -\/ Specific
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a2adba0f27db53c0d63d7b772a41c7219}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Load@{user\+Set\+Load}}
+\index{user\+Set\+Load@{user\+Set\+Load}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Load}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a2adba0f27db53c0d63d7b772a41c7219}
+
+
+A method object. Loads the User Set specified by User\+Set\+Selector to the device and makes it active. 
+
+Loads the User Set specified by User\+Set\+Selector to the device and makes it active. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a6adfbcf1f208d5ea9940073587642dfe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Save@{user\+Set\+Save}}
+\index{user\+Set\+Save@{user\+Set\+Save}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Save}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Save}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a6adfbcf1f208d5ea9940073587642dfe}
+
+
+A method object. Save the User Set specified by User\+Set\+Selector to the non-\/volatile memory of the device. 
+
+Save the User Set specified by User\+Set\+Selector to the non-\/volatile memory of the device. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a60a24c73faea457a19659ef0e5e41e6c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}!user\+Set\+Selector@{user\+Set\+Selector}}
+\index{user\+Set\+Selector@{user\+Set\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control}}
+\subsubsection[{user\+Set\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+User\+Set\+Control\+::user\+Set\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control_a60a24c73faea457a19659ef0e5e41e6c}
+
+
+An enumerated integer property. Selects the feature User Set to load, save or configure. 
+
+Selects the feature User Set to load, save or configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Default} (Display string\+: 'Default')\+: Selects the factory setting user set.
+\item {\bfseries User\+Set0} (Display string\+: 'User Set 0')\+: Selects the user set 0.
+\item {\bfseries User\+Set1} (Display string\+: 'User Set 1')\+: Selects the user set 1.
+\item {\bfseries User\+Set\#2\#} (Display string\+: 'User Set \#2\#')\+: Selects the user set \#2\#.
+\item {\bfseries User\+Set2} (Display string\+: 'User Set 2')\+: Selects the user set 2.
+\item {\bfseries User\+Set3} (Display string\+: 'User Set 3')\+: Selects the user set 3.
+\item {\bfseries User\+Set4} (Display string\+: 'User Set 4')\+: Selects the user set 4.
+\item {\bfseries User\+Set5} (Display string\+: 'User Set 5')\+: Selects the user set 5.
+\item {\bfseries User\+Set6} (Display string\+: 'User Set 6')\+: Selects the user set 6.
+\item {\bfseries User\+Set7} (Display string\+: 'User Set 7')\+: Selects the user set 7.
+\item {\bfseries User\+Set8} (Display string\+: 'User Set 8')\+: Selects the user set 8.
+\item {\bfseries User\+Set9} (Display string\+: 'User Set 9')\+: Selects the user set 9.
+\item {\bfseries User\+Set10} (Display string\+: 'User Set 10')\+: Selects the user set 10.
+\item {\bfseries User\+Set11} (Display string\+: 'User Set 11')\+: Selects the user set 11.
+\item {\bfseries User\+Set12} (Display string\+: 'User Set 12')\+: Selects the user set 12.
+\item {\bfseries User\+Set13} (Display string\+: 'User Set 13')\+: Selects the user set 13.
+\item {\bfseries User\+Set14} (Display string\+: 'User Set 14')\+: Selects the user set 14.
+\item {\bfseries User\+Set15} (Display string\+: 'User Set 15')\+: Selects the user set 15.
+\item {\bfseries User\+Set16} (Display string\+: 'User Set Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,1628 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::AcquisitionControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::AcquisitionControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category for the acquisition and trigger control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::AcquisitionControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="765,203,928,259"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,379,555,421"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="759,338,934,379"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="753,403,941,445"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,438,355,479"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,462,728,503"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,438,155,479"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a66a96d4ef8ec636ed0830bb8e5c94ca8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a66a96d4ef8ec636ed0830bb8e5c94ca8">AcquisitionControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a66a96d4ef8ec636ed0830bb8e5c94ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html" title="Category for the acquisition and trigger control features. ">mvIMPACT::acquire::GenICam::AcquisitionControl</a></b> object.  <a href="#a66a96d4ef8ec636ed0830bb8e5c94ca8">更多...</a><br /></td></tr>
+<tr class="separator:a66a96d4ef8ec636ed0830bb8e5c94ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:aa07380cf251a40c38a2c7f9abbf3c0f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aa07380cf251a40c38a2c7f9abbf3c0f1">acquisitionMode</a></td></tr>
+<tr class="memdesc:aa07380cf251a40c38a2c7f9abbf3c0f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the acquisition mode of the device.  <a href="#aa07380cf251a40c38a2c7f9abbf3c0f1">更多...</a><br /></td></tr>
+<tr class="separator:aa07380cf251a40c38a2c7f9abbf3c0f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05def6315f448a15576cb0746f791b26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a05def6315f448a15576cb0746f791b26">acquisitionArm</a></td></tr>
+<tr class="memdesc:a05def6315f448a15576cb0746f791b26"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Arms the device before an AcquisitionStart command.  <a href="#a05def6315f448a15576cb0746f791b26">更多...</a><br /></td></tr>
+<tr class="separator:a05def6315f448a15576cb0746f791b26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30953769d4d702d7a24cabd86d608bee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a30953769d4d702d7a24cabd86d608bee">acquisitionFrameCount</a></td></tr>
+<tr class="memdesc:a30953769d4d702d7a24cabd86d608bee"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Number of frames to acquire in MultiFrame Acquisition mode.  <a href="#a30953769d4d702d7a24cabd86d608bee">更多...</a><br /></td></tr>
+<tr class="separator:a30953769d4d702d7a24cabd86d608bee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae206f145121c4fd3adfb0f47a9a917ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ae206f145121c4fd3adfb0f47a9a917ea">acquisitionBurstFrameCount</a></td></tr>
+<tr class="memdesc:ae206f145121c4fd3adfb0f47a9a917ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Number of frames to acquire for each FrameBurstStart trigger.  <a href="#ae206f145121c4fd3adfb0f47a9a917ea">更多...</a><br /></td></tr>
+<tr class="separator:ae206f145121c4fd3adfb0f47a9a917ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a985987bd6fa29ef835556c49a20e133d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a985987bd6fa29ef835556c49a20e133d">mvSensorRegister</a></td></tr>
+<tr class="memdesc:a985987bd6fa29ef835556c49a20e133d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Number of sensor register to access.  <a href="#a985987bd6fa29ef835556c49a20e133d">更多...</a><br /></td></tr>
+<tr class="separator:a985987bd6fa29ef835556c49a20e133d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ef065f9dd3a514f02f32b5c146919b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a8ef065f9dd3a514f02f32b5c146919b4">mvSensorRegisterValue</a></td></tr>
+<tr class="memdesc:a8ef065f9dd3a514f02f32b5c146919b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Value of sensor register.  <a href="#a8ef065f9dd3a514f02f32b5c146919b4">更多...</a><br /></td></tr>
+<tr class="separator:a8ef065f9dd3a514f02f32b5c146919b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6439ee2ea1b4b18f4387922ad18aa9c2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a6439ee2ea1b4b18f4387922ad18aa9c2">acquisitionFrameRate</a></td></tr>
+<tr class="memdesc:a6439ee2ea1b4b18f4387922ad18aa9c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Controls the acquisition rate (in Hertz) at which the frames are captured.  <a href="#a6439ee2ea1b4b18f4387922ad18aa9c2">更多...</a><br /></td></tr>
+<tr class="separator:a6439ee2ea1b4b18f4387922ad18aa9c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87e6ccd44f43111f4e1969175e04db0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a87e6ccd44f43111f4e1969175e04db0e">acquisitionFrameRateEnable</a></td></tr>
+<tr class="memdesc:a87e6ccd44f43111f4e1969175e04db0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Controls if the AcquisitionFrameRate feature is writable and used to control the acquisition rate.  <a href="#a87e6ccd44f43111f4e1969175e04db0e">更多...</a><br /></td></tr>
+<tr class="separator:a87e6ccd44f43111f4e1969175e04db0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae005cee593783684117beca6ec37c183"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ae005cee593783684117beca6ec37c183">acquisitionFrameRateRaw</a></td></tr>
+<tr class="memdesc:ae005cee593783684117beca6ec37c183"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#ae005cee593783684117beca6ec37c183">更多...</a><br /></td></tr>
+<tr class="separator:ae005cee593783684117beca6ec37c183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb38e835c99a65cb205cfe160b03ccd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aebb38e835c99a65cb205cfe160b03ccd">acquisitionLineRate</a></td></tr>
+<tr class="memdesc:aebb38e835c99a65cb205cfe160b03ccd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Controls the rate (in Hertz) at which the Lines in a Frame are captured.  <a href="#aebb38e835c99a65cb205cfe160b03ccd">更多...</a><br /></td></tr>
+<tr class="separator:aebb38e835c99a65cb205cfe160b03ccd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a474bf5cf15c9b733b1c1e73cc520885a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a474bf5cf15c9b733b1c1e73cc520885a">acquisitionLineRateEnable</a></td></tr>
+<tr class="memdesc:a474bf5cf15c9b733b1c1e73cc520885a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Controls if the AcquisitionLineRate feature is writable and used to control the acquisition rate.  <a href="#a474bf5cf15c9b733b1c1e73cc520885a">更多...</a><br /></td></tr>
+<tr class="separator:a474bf5cf15c9b733b1c1e73cc520885a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc83f72810dfec15d0ef47c258ca8a53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#abc83f72810dfec15d0ef47c258ca8a53">acquisitionLineRateRaw</a></td></tr>
+<tr class="memdesc:abc83f72810dfec15d0ef47c258ca8a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#abc83f72810dfec15d0ef47c258ca8a53">更多...</a><br /></td></tr>
+<tr class="separator:abc83f72810dfec15d0ef47c258ca8a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadb492cee15f403d411a927ccdc6195f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aadb492cee15f403d411a927ccdc6195f">acquisitionStatusSelector</a></td></tr>
+<tr class="memdesc:aadb492cee15f403d411a927ccdc6195f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the internal acquisition signal to read using AcquisitionStatus.  <a href="#aadb492cee15f403d411a927ccdc6195f">更多...</a><br /></td></tr>
+<tr class="separator:aadb492cee15f403d411a927ccdc6195f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44d19fa3bc046ac368cf2a6b5a3d2205"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a44d19fa3bc046ac368cf2a6b5a3d2205">acquisitionStatus</a></td></tr>
+<tr class="memdesc:a44d19fa3bc046ac368cf2a6b5a3d2205"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Reads the state of the internal acquisition signal selected using AcquisitionStatusSelector.  <a href="#a44d19fa3bc046ac368cf2a6b5a3d2205">更多...</a><br /></td></tr>
+<tr class="separator:a44d19fa3bc046ac368cf2a6b5a3d2205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e4b4d2d7da4b24d3686be94cc0a886"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a38e4b4d2d7da4b24d3686be94cc0a886">triggerSelector</a></td></tr>
+<tr class="memdesc:a38e4b4d2d7da4b24d3686be94cc0a886"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the type of trigger to configure.  <a href="#a38e4b4d2d7da4b24d3686be94cc0a886">更多...</a><br /></td></tr>
+<tr class="separator:a38e4b4d2d7da4b24d3686be94cc0a886"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42ea8092a767cd62a5b59119d348701b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a42ea8092a767cd62a5b59119d348701b">triggerMode</a></td></tr>
+<tr class="memdesc:a42ea8092a767cd62a5b59119d348701b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls if the selected trigger is active.  <a href="#a42ea8092a767cd62a5b59119d348701b">更多...</a><br /></td></tr>
+<tr class="separator:a42ea8092a767cd62a5b59119d348701b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41d20326d5f933501731f9c9ecbde1f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a41d20326d5f933501731f9c9ecbde1f0">triggerSoftware</a></td></tr>
+<tr class="memdesc:a41d20326d5f933501731f9c9ecbde1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Generates an internal trigger.  <a href="#a41d20326d5f933501731f9c9ecbde1f0">更多...</a><br /></td></tr>
+<tr class="separator:a41d20326d5f933501731f9c9ecbde1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a194c05945e0e60054d7e427c08aba4fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a194c05945e0e60054d7e427c08aba4fe">triggerSource</a></td></tr>
+<tr class="memdesc:a194c05945e0e60054d7e427c08aba4fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the internal signal or physical input Line to use as the trigger source.  <a href="#a194c05945e0e60054d7e427c08aba4fe">更多...</a><br /></td></tr>
+<tr class="separator:a194c05945e0e60054d7e427c08aba4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa99ab36c7369a029d2a7f05c59c3516b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aa99ab36c7369a029d2a7f05c59c3516b">triggerActivation</a></td></tr>
+<tr class="memdesc:aa99ab36c7369a029d2a7f05c59c3516b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the activation mode of the trigger.  <a href="#aa99ab36c7369a029d2a7f05c59c3516b">更多...</a><br /></td></tr>
+<tr class="separator:aa99ab36c7369a029d2a7f05c59c3516b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad24c28a7ee11b61889ba6371c6023231"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ad24c28a7ee11b61889ba6371c6023231">triggerOverlap</a></td></tr>
+<tr class="memdesc:ad24c28a7ee11b61889ba6371c6023231"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the type trigger overlap permitted with the previous frame or line.  <a href="#ad24c28a7ee11b61889ba6371c6023231">更多...</a><br /></td></tr>
+<tr class="separator:ad24c28a7ee11b61889ba6371c6023231"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c0123d1c00bac1adba870bc11368080"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a0c0123d1c00bac1adba870bc11368080">triggerDelay</a></td></tr>
+<tr class="memdesc:a0c0123d1c00bac1adba870bc11368080"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Specifies the delay in microseconds (us) to apply after the trigger reception before activating it.  <a href="#a0c0123d1c00bac1adba870bc11368080">更多...</a><br /></td></tr>
+<tr class="separator:a0c0123d1c00bac1adba870bc11368080"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad96d0a854c6dcc41256849ea89d706d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ad96d0a854c6dcc41256849ea89d706d3">triggerDelayRaw</a></td></tr>
+<tr class="memdesc:ad96d0a854c6dcc41256849ea89d706d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#ad96d0a854c6dcc41256849ea89d706d3">更多...</a><br /></td></tr>
+<tr class="separator:ad96d0a854c6dcc41256849ea89d706d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd3efded5da820a4dbe8510bf3e40471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#afd3efded5da820a4dbe8510bf3e40471">triggerDivider</a></td></tr>
+<tr class="memdesc:afd3efded5da820a4dbe8510bf3e40471"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Specifies a division factor for the incoming trigger pulses.  <a href="#afd3efded5da820a4dbe8510bf3e40471">更多...</a><br /></td></tr>
+<tr class="separator:afd3efded5da820a4dbe8510bf3e40471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb5fac0df36681f7800f45f2068707b0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aeb5fac0df36681f7800f45f2068707b0">triggerMultiplier</a></td></tr>
+<tr class="memdesc:aeb5fac0df36681f7800f45f2068707b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Specifies a multiplication factor for the incoming trigger pulses.  <a href="#aeb5fac0df36681f7800f45f2068707b0">更多...</a><br /></td></tr>
+<tr class="separator:aeb5fac0df36681f7800f45f2068707b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0dfebf2075d401828a7eac11fac790d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a0dfebf2075d401828a7eac11fac790d0">exposureMode</a></td></tr>
+<tr class="memdesc:a0dfebf2075d401828a7eac11fac790d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the operation mode of the Exposure.  <a href="#a0dfebf2075d401828a7eac11fac790d0">更多...</a><br /></td></tr>
+<tr class="separator:a0dfebf2075d401828a7eac11fac790d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98235de35e157788e0ca8618f2cf06e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a98235de35e157788e0ca8618f2cf06e5">exposureTimeMode</a></td></tr>
+<tr class="memdesc:a98235de35e157788e0ca8618f2cf06e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the configuration mode of the ExposureTime feature.  <a href="#a98235de35e157788e0ca8618f2cf06e5">更多...</a><br /></td></tr>
+<tr class="separator:a98235de35e157788e0ca8618f2cf06e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c75217c0225d5c95c88c1dcea7ed2a4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a2c75217c0225d5c95c88c1dcea7ed2a4">exposureTimeSelector</a></td></tr>
+<tr class="memdesc:a2c75217c0225d5c95c88c1dcea7ed2a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which exposure time is controlled by the ExposureTime feature.  <a href="#a2c75217c0225d5c95c88c1dcea7ed2a4">更多...</a><br /></td></tr>
+<tr class="separator:a2c75217c0225d5c95c88c1dcea7ed2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c77b0606062196e0bdd0e1a526e9d27"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a3c77b0606062196e0bdd0e1a526e9d27">exposureTime</a></td></tr>
+<tr class="memdesc:a3c77b0606062196e0bdd0e1a526e9d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Sets the Exposure time when ExposureMode is Timed and ExposureAuto is Off.  <a href="#a3c77b0606062196e0bdd0e1a526e9d27">更多...</a><br /></td></tr>
+<tr class="separator:a3c77b0606062196e0bdd0e1a526e9d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec552f1617c6891948e38f9aab39b760"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aec552f1617c6891948e38f9aab39b760">exposureTimeRaw</a></td></tr>
+<tr class="memdesc:aec552f1617c6891948e38f9aab39b760"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated.  <a href="#aec552f1617c6891948e38f9aab39b760">更多...</a><br /></td></tr>
+<tr class="separator:aec552f1617c6891948e38f9aab39b760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c702e88d0591dbebff925de205138b4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a4c702e88d0591dbebff925de205138b4">exposureAuto</a></td></tr>
+<tr class="memdesc:a4c702e88d0591dbebff925de205138b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Sets the automatic exposure mode when ExposureMode is Timed.  <a href="#a4c702e88d0591dbebff925de205138b4">更多...</a><br /></td></tr>
+<tr class="separator:a4c702e88d0591dbebff925de205138b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b9b632e3144d6dd2976c55e87528a53"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a4b9b632e3144d6dd2976c55e87528a53">multiSlopeMode</a></td></tr>
+<tr class="memdesc:a4b9b632e3144d6dd2976c55e87528a53"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls multi-slope exposure state.  <a href="#a4b9b632e3144d6dd2976c55e87528a53">更多...</a><br /></td></tr>
+<tr class="separator:a4b9b632e3144d6dd2976c55e87528a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc16354b0a7a9477a9dc50b3c0a50275"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#afc16354b0a7a9477a9dc50b3c0a50275">multiSlopeKneePointCount</a></td></tr>
+<tr class="memdesc:afc16354b0a7a9477a9dc50b3c0a50275"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. The number of knee-points as well as the number of additional exposure slopes used for multi-slope exposure.  <a href="#afc16354b0a7a9477a9dc50b3c0a50275">更多...</a><br /></td></tr>
+<tr class="separator:afc16354b0a7a9477a9dc50b3c0a50275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab127490b47734b9979d17ffec2c803e0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ab127490b47734b9979d17ffec2c803e0">multiSlopeKneePointSelector</a></td></tr>
+<tr class="memdesc:ab127490b47734b9979d17ffec2c803e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects the parameters for controlling an additional slope in multi-slope exposure.  <a href="#ab127490b47734b9979d17ffec2c803e0">更多...</a><br /></td></tr>
+<tr class="separator:ab127490b47734b9979d17ffec2c803e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdf0b3638aaaa29315dfe1a7ff9cce35"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#acdf0b3638aaaa29315dfe1a7ff9cce35">multiSlopeExposureLimit</a></td></tr>
+<tr class="memdesc:acdf0b3638aaaa29315dfe1a7ff9cce35"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Percent of the ExposureTime at a certain knee-point of multi-slope exposure.  <a href="#acdf0b3638aaaa29315dfe1a7ff9cce35">更多...</a><br /></td></tr>
+<tr class="separator:acdf0b3638aaaa29315dfe1a7ff9cce35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e6415c2be2fd0e16314ed053bdae6bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a6e6415c2be2fd0e16314ed053bdae6bd">multiSlopeSaturationThreshold</a></td></tr>
+<tr class="memdesc:a6e6415c2be2fd0e16314ed053bdae6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. The percentage of the full saturation that is applied at a certain knee-point of a multi-slope exposure.  <a href="#a6e6415c2be2fd0e16314ed053bdae6bd">更多...</a><br /></td></tr>
+<tr class="separator:a6e6415c2be2fd0e16314ed053bdae6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb90c1e8ccca748148f9542b91eb3d3f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#acb90c1e8ccca748148f9542b91eb3d3f">multiSlopeIntensityLimit</a></td></tr>
+<tr class="memdesc:acb90c1e8ccca748148f9542b91eb3d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. The relative intensity which divides intensities influenced by different exposure slopes.  <a href="#acb90c1e8ccca748148f9542b91eb3d3f">更多...</a><br /></td></tr>
+<tr class="separator:acb90c1e8ccca748148f9542b91eb3d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a81561b228b3d765db02eeedef2bedbdf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a81561b228b3d765db02eeedef2bedbdf">multiSlopeExposureGradient</a></td></tr>
+<tr class="memdesc:a81561b228b3d765db02eeedef2bedbdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. The gradient of the additional slope that is defined by this knee-point.  <a href="#a81561b228b3d765db02eeedef2bedbdf">更多...</a><br /></td></tr>
+<tr class="separator:a81561b228b3d765db02eeedef2bedbdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a746647afd1fec502036cb9f6633f030a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a746647afd1fec502036cb9f6633f030a">mvAcquisitionFrameRateLimitMode</a></td></tr>
+<tr class="memdesc:a746647afd1fec502036cb9f6633f030a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls the calculation of the maximum frame rate.  <a href="#a746647afd1fec502036cb9f6633f030a">更多...</a><br /></td></tr>
+<tr class="separator:a746647afd1fec502036cb9f6633f030a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e010a85b016530779b5eed1a95bfa7f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a9e010a85b016530779b5eed1a95bfa7f">mvAcquisitionFrameRateEnable</a></td></tr>
+<tr class="memdesc:a9e010a85b016530779b5eed1a95bfa7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Enables the use of the 'AcquisitionFrameRate' feature.  <a href="#a9e010a85b016530779b5eed1a95bfa7f">更多...</a><br /></td></tr>
+<tr class="separator:a9e010a85b016530779b5eed1a95bfa7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da1e66aa1cd3ee5ae9ec1751950040a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a0da1e66aa1cd3ee5ae9ec1751950040a">mvResultingFrameRate</a></td></tr>
+<tr class="memdesc:a0da1e66aa1cd3ee5ae9ec1751950040a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. Shows the resulting frame rate.  <a href="#a0da1e66aa1cd3ee5ae9ec1751950040a">更多...</a><br /></td></tr>
+<tr class="separator:a0da1e66aa1cd3ee5ae9ec1751950040a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1899fb978fe8419e74499c8cb58e1ca8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a1899fb978fe8419e74499c8cb58e1ca8">mvShutterMode</a></td></tr>
+<tr class="memdesc:a1899fb978fe8419e74499c8cb58e1ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the shutter mode of the sensor.  <a href="#a1899fb978fe8419e74499c8cb58e1ca8">更多...</a><br /></td></tr>
+<tr class="separator:a1899fb978fe8419e74499c8cb58e1ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a288bcc77a513f89597531c170e1c88b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a288bcc77a513f89597531c170e1c88b6">mvCompressionKneepoint</a></td></tr>
+<tr class="memdesc:a288bcc77a513f89597531c170e1c88b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Knee point of 10 to 8 bit compression.  <a href="#a288bcc77a513f89597531c170e1c88b6">更多...</a><br /></td></tr>
+<tr class="separator:a288bcc77a513f89597531c170e1c88b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20bae36efd152247f4c1c6766a6a681e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a20bae36efd152247f4c1c6766a6a681e">mvExposureAutoLowerLimit</a></td></tr>
+<tr class="memdesc:a20bae36efd152247f4c1c6766a6a681e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. The lower limit of the exposure time in auto exposure mode.  <a href="#a20bae36efd152247f4c1c6766a6a681e">更多...</a><br /></td></tr>
+<tr class="separator:a20bae36efd152247f4c1c6766a6a681e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48663b8c79f8184cb8c8f18fbf3a0e32"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a48663b8c79f8184cb8c8f18fbf3a0e32">mvExposureAutoUpperLimit</a></td></tr>
+<tr class="memdesc:a48663b8c79f8184cb8c8f18fbf3a0e32"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property. The upper limit of the exposure time in auto exposure mode.  <a href="#a48663b8c79f8184cb8c8f18fbf3a0e32">更多...</a><br /></td></tr>
+<tr class="separator:a48663b8c79f8184cb8c8f18fbf3a0e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20d51c921f1bb1f1f13d012fd80a1968"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a20d51c921f1bb1f1f13d012fd80a1968">mvExposureAutoSpeed</a></td></tr>
+<tr class="memdesc:a20d51c921f1bb1f1f13d012fd80a1968"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Determines the increment or decrement size of exposure value from frame to frame.  <a href="#a20d51c921f1bb1f1f13d012fd80a1968">更多...</a><br /></td></tr>
+<tr class="separator:a20d51c921f1bb1f1f13d012fd80a1968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e1471f52a0be9d3d97ef955846577b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a5e1471f52a0be9d3d97ef955846577b2">mvExposureAutoDelayImages</a></td></tr>
+<tr class="memdesc:a5e1471f52a0be9d3d97ef955846577b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. The number of frames that the AEC must skip before updating the exposure register.  <a href="#a5e1471f52a0be9d3d97ef955846577b2">更多...</a><br /></td></tr>
+<tr class="separator:a5e1471f52a0be9d3d97ef955846577b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abfe22d85a47e70a4735bf7c496757f6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#abfe22d85a47e70a4735bf7c496757f6c">mvExposureAutoAverageGrey</a></td></tr>
+<tr class="memdesc:abfe22d85a47e70a4735bf7c496757f6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Common desired average grey value (in percent) used for Auto Gain Control(AGC) and Auto Exposure Control(AEC).  <a href="#abfe22d85a47e70a4735bf7c496757f6c">更多...</a><br /></td></tr>
+<tr class="separator:abfe22d85a47e70a4735bf7c496757f6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac9696f4ac67e8d763e65018ba2853e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aac9696f4ac67e8d763e65018ba2853e3">mvExposureAutoHighlightAOI</a></td></tr>
+<tr class="memdesc:aac9696f4ac67e8d763e65018ba2853e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Highlight auto control <a class="el" href="struct_a_o_i.html">AOI</a> to check <a class="el" href="struct_a_o_i.html">AOI</a> settings. Switch off for normal operation.  <a href="#aac9696f4ac67e8d763e65018ba2853e3">更多...</a><br /></td></tr>
+<tr class="separator:aac9696f4ac67e8d763e65018ba2853e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3121267e92f554eb04e266b80032ca66"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a3121267e92f554eb04e266b80032ca66">mvExposureAutoAOIMode</a></td></tr>
+<tr class="memdesc:a3121267e92f554eb04e266b80032ca66"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Common AutoControl <a class="el" href="struct_a_o_i.html">AOI</a> used for Auto Gain Control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB).  <a href="#a3121267e92f554eb04e266b80032ca66">更多...</a><br /></td></tr>
+<tr class="separator:a3121267e92f554eb04e266b80032ca66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7efb253397a6338ecc8ccdf91d518e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#abe7efb253397a6338ecc8ccdf91d518e">mvExposureAutoOffsetX</a></td></tr>
+<tr class="memdesc:abe7efb253397a6338ecc8ccdf91d518e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> XOffset used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB).  <a href="#abe7efb253397a6338ecc8ccdf91d518e">更多...</a><br /></td></tr>
+<tr class="separator:abe7efb253397a6338ecc8ccdf91d518e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed46caaafedd6a8089cd33fe5c5fb7df"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aed46caaafedd6a8089cd33fe5c5fb7df">mvExposureAutoOffsetY</a></td></tr>
+<tr class="memdesc:aed46caaafedd6a8089cd33fe5c5fb7df"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> YOffset used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB).  <a href="#aed46caaafedd6a8089cd33fe5c5fb7df">更多...</a><br /></td></tr>
+<tr class="separator:aed46caaafedd6a8089cd33fe5c5fb7df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06d1fcc8caea1f2e40d74865c48b39d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a06d1fcc8caea1f2e40d74865c48b39d2">mvExposureAutoWidth</a></td></tr>
+<tr class="memdesc:a06d1fcc8caea1f2e40d74865c48b39d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> Width used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB).  <a href="#a06d1fcc8caea1f2e40d74865c48b39d2">更多...</a><br /></td></tr>
+<tr class="separator:a06d1fcc8caea1f2e40d74865c48b39d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e32fc9dbfc9ca6dae425bfe40aa228"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ac5e32fc9dbfc9ca6dae425bfe40aa228">mvExposureAutoHeight</a></td></tr>
+<tr class="memdesc:ac5e32fc9dbfc9ca6dae425bfe40aa228"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> Height used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB).  <a href="#ac5e32fc9dbfc9ca6dae425bfe40aa228">更多...</a><br /></td></tr>
+<tr class="separator:ac5e32fc9dbfc9ca6dae425bfe40aa228"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac30d4c1772562361d0ed6a2e5c113aa4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#ac30d4c1772562361d0ed6a2e5c113aa4">mvExposureAutoMode</a></td></tr>
+<tr class="memdesc:ac30d4c1772562361d0ed6a2e5c113aa4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects the common auto mode for gain and exposure.  <a href="#ac30d4c1772562361d0ed6a2e5c113aa4">更多...</a><br /></td></tr>
+<tr class="separator:ac30d4c1772562361d0ed6a2e5c113aa4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af60f090cba8f031a11e0b9ebbfba0c6f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#af60f090cba8f031a11e0b9ebbfba0c6f">mvSmearReduction</a></td></tr>
+<tr class="memdesc:af60f090cba8f031a11e0b9ebbfba0c6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Smear reduction in triggered and non-overlapped mode.  <a href="#af60f090cba8f031a11e0b9ebbfba0c6f">更多...</a><br /></td></tr>
+<tr class="separator:af60f090cba8f031a11e0b9ebbfba0c6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39dd9c3cc5099fe271ca00fb96faf949"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a39dd9c3cc5099fe271ca00fb96faf949">mvAcquisitionMemoryMode</a></td></tr>
+<tr class="memdesc:a39dd9c3cc5099fe271ca00fb96faf949"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. mvRecord is used to store frames in memory. mvPlayback transfers stored frames. mvPretrigger stores frames in memory to be transferred after trigger.  <a href="#a39dd9c3cc5099fe271ca00fb96faf949">更多...</a><br /></td></tr>
+<tr class="separator:a39dd9c3cc5099fe271ca00fb96faf949"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e6def5d7d1abf571164b4b154a36a49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a9e6def5d7d1abf571164b4b154a36a49">mvPretriggerFrameCount</a></td></tr>
+<tr class="memdesc:a9e6def5d7d1abf571164b4b154a36a49"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Number of frames to acquire before the occurrence of an AcquisitionStart or AcquisitionActive trigger.  <a href="#a9e6def5d7d1abf571164b4b154a36a49">更多...</a><br /></td></tr>
+<tr class="separator:a9e6def5d7d1abf571164b4b154a36a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a364974f28a1daca359f60d451609adc8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a364974f28a1daca359f60d451609adc8">mvAcquisitionMemoryMaxFrameCount</a></td></tr>
+<tr class="memdesc:a364974f28a1daca359f60d451609adc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Maximum number of frames that can be recorded in the current configuration(deprecated, use the maximum value of 'mvAcquisitionMemoryFrameCount' instead).  <a href="#a364974f28a1daca359f60d451609adc8">更多...</a><br /></td></tr>
+<tr class="separator:a364974f28a1daca359f60d451609adc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6260d5499a91791d8eb9db5cc246c485"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a6260d5499a91791d8eb9db5cc246c485">mvAcquisitionMemoryFrameCount</a></td></tr>
+<tr class="memdesc:a6260d5499a91791d8eb9db5cc246c485"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. The number of frames currently stored in the frame buffer.  <a href="#a6260d5499a91791d8eb9db5cc246c485">更多...</a><br /></td></tr>
+<tr class="separator:a6260d5499a91791d8eb9db5cc246c485"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56de2ea0f33f1de69f8a3594c57d8c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aa56de2ea0f33f1de69f8a3594c57d8c0">mvAcquisitionMemoryAOIParameterChanged</a></td></tr>
+<tr class="memdesc:aa56de2ea0f33f1de69f8a3594c57d8c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. <a class="el" href="struct_a_o_i.html">AOI</a> and/or binning parameter changed after last Acquisition.  <a href="#aa56de2ea0f33f1de69f8a3594c57d8c0">更多...</a><br /></td></tr>
+<tr class="separator:aa56de2ea0f33f1de69f8a3594c57d8c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb86056e3eb76d5c80c4048ac9ba10d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#aeb86056e3eb76d5c80c4048ac9ba10d5">mvSmartFrameRecallEnable</a></td></tr>
+<tr class="memdesc:aeb86056e3eb76d5c80c4048ac9ba10d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. When active in addition to the processed image data also the unprocessed image is stored inside the devices RAM.  <a href="#aeb86056e3eb76d5c80c4048ac9ba10d5">更多...</a><br /></td></tr>
+<tr class="separator:aeb86056e3eb76d5c80c4048ac9ba10d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category for the acquisition and trigger control features. </p>
+<p>A category for the acquisition and trigger control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a66a96d4ef8ec636ed0830bb8e5c94ca8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::AcquisitionControl::AcquisitionControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html" title="Category for the acquisition and trigger control features. ">mvIMPACT::acquire::GenICam::AcquisitionControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="456,23,619,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="245,88,408,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="245,168,408,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="667,38,885,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="945,5,1095,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="933,70,1107,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1155,92,1383,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1432,99,1656,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="456,103,619,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="463,182,612,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="692,110,860,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a05def6315f448a15576cb0746f791b26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionArm</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Arms the device before an AcquisitionStart command. </p>
+<p>Arms the device before an AcquisitionStart command. This optional command validates all the current features for consistency and prepares the device for a fast start of the Acquisition. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae206f145121c4fd3adfb0f47a9a917ea"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionBurstFrameCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Number of frames to acquire for each FrameBurstStart trigger. </p>
+<p>Number of frames to acquire for each FrameBurstStart trigger. </p>
+
+</div>
+</div>
+<a class="anchor" id="a30953769d4d702d7a24cabd86d608bee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionFrameCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Number of frames to acquire in MultiFrame Acquisition mode. </p>
+<p>Number of frames to acquire in MultiFrame Acquisition mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6439ee2ea1b4b18f4387922ad18aa9c2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionFrameRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Controls the acquisition rate (in Hertz) at which the frames are captured. </p>
+<p>Controls the acquisition rate (in Hertz) at which the frames are captured. </p>
+
+</div>
+</div>
+<a class="anchor" id="a87e6ccd44f43111f4e1969175e04db0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionFrameRateEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Controls if the AcquisitionFrameRate feature is writable and used to control the acquisition rate. </p>
+<p>Controls if the AcquisitionFrameRate feature is writable and used to control the acquisition rate. Otherwise, the acquisition rate is implicitly controlled by the combination of other features like ExposureTime, etc... </p>
+
+</div>
+</div>
+<a class="anchor" id="ae005cee593783684117beca6ec37c183"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionFrameRateRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000043">弃用:</a></b></dt><dd>This feature is deprecated. It controls the rate (in device specific unit) at which the Frames are captured when TriggerMode is Off for the Frame trigger. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebb38e835c99a65cb205cfe160b03ccd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionLineRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Controls the rate (in Hertz) at which the Lines in a Frame are captured. </p>
+<p>Controls the rate (in Hertz) at which the Lines in a Frame are captured. </p>
+
+</div>
+</div>
+<a class="anchor" id="a474bf5cf15c9b733b1c1e73cc520885a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionLineRateEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Controls if the AcquisitionLineRate feature is writable and used to control the acquisition rate. </p>
+<p>Controls if the AcquisitionLineRate feature is writable and used to control the acquisition rate. Otherwise, the acquisition rate is implicitly controlled by the combination of other features like ExposureTime, etc... </p>
+
+</div>
+</div>
+<a class="anchor" id="abc83f72810dfec15d0ef47c258ca8a53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionLineRateRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000044">弃用:</a></b></dt><dd>This feature is deprecated. It controls the rate (in device specific unit) at which the Lines in a Frame are captured when TriggerMode is Off for the Line trigger. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa07380cf251a40c38a2c7f9abbf3c0f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the acquisition mode of the device. </p>
+<p>Sets the acquisition mode of the device. It defines mainly the number of frames to capture during an acquisition and the way the acquisition stops.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>SingleFrame</b> (Display string: 'Single Frame'): One frame is captured.</li>
+<li><b>MultiFrame</b> (Display string: 'Multi Frame'): The number of frames specified by AcquisitionFrameCount is captured.</li>
+<li><b>Continuous</b> (Display string: 'Continuous'): Frames are captured continuously until stopped with the AcquisitionStop command.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a44d19fa3bc046ac368cf2a6b5a3d2205"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionStatus</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Reads the state of the internal acquisition signal selected using AcquisitionStatusSelector. </p>
+<p>Reads the state of the internal acquisition signal selected using AcquisitionStatusSelector. </p>
+
+</div>
+</div>
+<a class="anchor" id="aadb492cee15f403d411a927ccdc6195f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::acquisitionStatusSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the internal acquisition signal to read using AcquisitionStatus. </p>
+<p>Selects the internal acquisition signal to read using AcquisitionStatus.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>AcquisitionTriggerWait</b> (Display string: 'Acquisition Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a trigger for the capture of one or many frames.</li>
+<li><b>AcquisitionActive</b> (Display string: 'Acquisition Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing an acquisition of one or many frames.</li>
+<li><b>AcquisitionTransfer</b> (Display string: 'Acquisition Transfer'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently transferring an acquisition of one or many frames.</li>
+<li><b>FrameTriggerWait</b> (Display string: 'Frame Trigger Wait'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently waiting for a frame start trigger.</li>
+<li><b>FrameActive</b> (Display string: 'Frame Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is currently doing the capture of a frame.</li>
+<li><b>ExposureActive</b> (Display string: 'Exposure Active'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> is doing the exposure of a frame.</li>
+<li><b>FrameTransfer</b> (Display string: 'Frame Transfer'): See TransferStatus.</li>
+<li><b>FrameTransfer</b> (Display string: 'Frame Transfer'): See TransferStatus.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4c702e88d0591dbebff925de205138b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::exposureAuto</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the automatic exposure mode when ExposureMode is Timed. </p>
+<p>Sets the automatic exposure mode when ExposureMode is Timed. The exact algorithm used to implement this control is device-specific.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Exposure duration is user controlled using ExposureTime.</li>
+<li><b>Once</b> (Display string: 'Once'): Exposure duration is adapted once by the device. Once it has converged, it returns to the Off state.</li>
+<li><b>Continuous</b> (Display string: 'Continuous'): Exposure duration is constantly adapted by the device to maximize the dynamic range.</li>
+<li><b>mvSequenced</b> (Display string: 'Exposure Auto')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0dfebf2075d401828a7eac11fac790d0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::exposureMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the operation mode of the Exposure. </p>
+<p>Sets the operation mode of the Exposure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disables the Exposure and let the shutter open.</li>
+<li><b>Timed</b> (Display string: 'Timed'): Timed exposure. The exposure duration time is set using the ExposureTime or ExposureAuto features and the exposure starts with the FrameStart or LineStart.</li>
+<li><b>TriggerWidth</b> (Display string: 'Trigger Width'): Uses the width of the current Frame or Line trigger signal(s) pulse to control the exposure duration. Note that if the Frame or Line TriggerActivation is RisingEdge or LevelHigh, the exposure duration will be the time the trigger stays High. If TriggerActivation is FallingEdge or LevelLow, the exposure time will last as long as the trigger stays Low.</li>
+<li><b>TriggerControlled</b> (Display string: 'Trigger Controlled'): Uses one or more trigger signal(s) to control the exposure duration independently from the current Frame or Line triggers. See ExposureStart, ExposureEnd and ExposureActive of the TriggerSelector feature.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c77b0606062196e0bdd0e1a526e9d27"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::exposureTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Sets the Exposure time when ExposureMode is Timed and ExposureAuto is Off. </p>
+<p>Sets the Exposure time when ExposureMode is Timed and ExposureAuto is Off. This controls the duration where the photosensitive cells are exposed to light. </p>
+
+</div>
+</div>
+<a class="anchor" id="a98235de35e157788e0ca8618f2cf06e5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::exposureTimeMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Sets the configuration mode of the ExposureTime feature. </p>
+<p>Sets the configuration mode of the ExposureTime feature.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Common</b> (Display string: 'Common'): The exposure time is common to all the color components. The common ExposureTime value to use can be set selecting it with ExposureTimeSelector[Common].</li>
+<li><b>Individual</b> (Display string: 'Individual'): The exposure time is individual for each color component. Each individual ExposureTime values to use can be set by selecting them with ExposureTimeSelector.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec552f1617c6891948e38f9aab39b760"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::exposureTimeRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000046">弃用:</a></b></dt><dd>This feature is deprecated. It can used to set the Exposure time in device-specific unit when ExposureMode is Timed. This controls the duration where the photosensitive cells are exposed to light. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2c75217c0225d5c95c88c1dcea7ed2a4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::exposureTimeSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which exposure time is controlled by the ExposureTime feature. </p>
+<p>Selects which exposure time is controlled by the ExposureTime feature. This allows for independent control over the exposure components.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Common</b> (Display string: 'Common'): Selects the common ExposureTime.</li>
+<li><b>Red</b> (Display string: 'Red'): Selects the red common ExposureTime.</li>
+<li><b>Green</b> (Display string: 'Green'): Selects the green ExposureTime.</li>
+<li><b>Blue</b> (Display string: 'Blue'): Selects the blue ExposureTime.</li>
+<li><b>Cyan</b> (Display string: 'Cyan'): Selects the cyan common ExposureTime.</li>
+<li><b>Magenta</b> (Display string: 'Magenta'): Selects the magenta ExposureTime.</li>
+<li><b>Yellow</b> (Display string: 'Yellow'): Selects the yellow ExposureTime.</li>
+<li><b>Infrared</b> (Display string: 'Infrared'): Selects the infrared ExposureTime.</li>
+<li><b>Ultraviolet</b> (Display string: 'Ultraviolet'): Selects the ultraviolet ExposureTime.</li>
+<li><b>Stage1</b> (Display string: 'Stage 1'): Selects the first stage ExposureTime.</li>
+<li><b>Stage2</b> (Display string: 'Stage 2'): Selects the second stage ExposureTime.</li>
+<li><b>Stage#3#</b> (Display string: 'Stage #3#'): Selects the second stage ExposureTime.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a81561b228b3d765db02eeedef2bedbdf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeExposureGradient</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. The gradient of the additional slope that is defined by this knee-point. </p>
+<p>The gradient of the additional slope that is defined by this knee-point. </p>
+
+</div>
+</div>
+<a class="anchor" id="acdf0b3638aaaa29315dfe1a7ff9cce35"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeExposureLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Percent of the ExposureTime at a certain knee-point of multi-slope exposure. </p>
+<p>Percent of the ExposureTime at a certain knee-point of multi-slope exposure. </p>
+
+</div>
+</div>
+<a class="anchor" id="acb90c1e8ccca748148f9542b91eb3d3f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeIntensityLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. The relative intensity which divides intensities influenced by different exposure slopes. </p>
+<p>The relative intensity which divides intensities influenced by different exposure slopes. </p>
+
+</div>
+</div>
+<a class="anchor" id="afc16354b0a7a9477a9dc50b3c0a50275"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeKneePointCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. The number of knee-points as well as the number of additional exposure slopes used for multi-slope exposure. </p>
+<p>The number of knee-points as well as the number of additional exposure slopes used for multi-slope exposure. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab127490b47734b9979d17ffec2c803e0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeKneePointSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects the parameters for controlling an additional slope in multi-slope exposure. </p>
+<p>Selects the parameters for controlling an additional slope in multi-slope exposure. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4b9b632e3144d6dd2976c55e87528a53"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls multi-slope exposure state. </p>
+<p>Controls multi-slope exposure state.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Off</li>
+<li><b>Manual</b> (Display string: 'Manual'): Manual</li>
+<li><b>PresetSoft</b> (Display string: 'Preset Soft'): Preset Soft</li>
+<li><b>PresetMedium</b> (Display string: 'Preset Medium'): Preset Medium</li>
+<li><b>PresetAggressive</b> (Display string: 'Preset Aggressive'): Preset Aggressive</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6e6415c2be2fd0e16314ed053bdae6bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::multiSlopeSaturationThreshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. The percentage of the full saturation that is applied at a certain knee-point of a multi-slope exposure. </p>
+<p>The percentage of the full saturation that is applied at a certain knee-point of a multi-slope exposure. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e010a85b016530779b5eed1a95bfa7f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvAcquisitionFrameRateEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Enables the use of the 'AcquisitionFrameRate' feature. </p>
+<p>Enables the use of the 'AcquisitionFrameRate' feature.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Acquisition Frame Rate Enable'): The acquisition frame rate is set automatically to the limit, calculated according to 'mvAcquisitionFrameRateLimitMode' feature.</li>
+<li><b>On</b> (Display string: 'mv Acquisition Frame Rate Enable'): The acquisition frame rate is set by the 'AcquisitionFrameRate' feature.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a746647afd1fec502036cb9f6633f030a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvAcquisitionFrameRateLimitMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls the calculation of the maximum frame rate. </p>
+<p>Controls the calculation of the maximum frame rate.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvDeviceLinkThroughput</b> (Display string: 'mv Acquisition Frame Rate Limit Mode'): Uses the highest possible frame rate depending on bandwidth and sensor settings.</li>
+<li><b>mvDeviceMaxSensorThroughput</b> (Display string: 'mv Acquisition Frame Rate Limit Mode'): Maximum frame rate the sensor can provide depending on <a class="el" href="struct_a_o_i.html">AOI</a> and pixel clock. Note: Images might be buffered in the cameras memory. This can result in delayed images.</li>
+<li><b>mvLegacy</b> (Display string: 'mv Acquisition Frame Rate Limit Mode'): Compatibility mode, not recommended.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa56de2ea0f33f1de69f8a3594c57d8c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvAcquisitionMemoryAOIParameterChanged</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. <a class="el" href="struct_a_o_i.html">AOI</a> and/or binning parameter changed after last Acquisition. </p>
+<p><a class="el" href="struct_a_o_i.html">AOI</a> and/or binning parameter changed after last Acquisition. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6260d5499a91791d8eb9db5cc246c485"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvAcquisitionMemoryFrameCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. The number of frames currently stored in the frame buffer. </p>
+<p>The number of frames currently stored in the frame buffer. If this value keeps increasing this can indicate a bandwidth/transmission problem. </p>
+
+</div>
+</div>
+<a class="anchor" id="a364974f28a1daca359f60d451609adc8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvAcquisitionMemoryMaxFrameCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Maximum number of frames that can be recorded in the current configuration(deprecated, use the maximum value of 'mvAcquisitionMemoryFrameCount' instead). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000047">弃用:</a></b></dt><dd>Maximum number of frames that can be recorded in the current configuration(deprecated, use the maximum value of 'mvAcquisitionMemoryFrameCount' instead). </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a39dd9c3cc5099fe271ca00fb96faf949"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvAcquisitionMemoryMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. mvRecord is used to store frames in memory. mvPlayback transfers stored frames. mvPretrigger stores frames in memory to be transferred after trigger. </p>
+<p>mvRecord is used to store frames in memory. mvPlayback transfers stored frames. mvPretrigger stores frames in memory to be transferred after trigger.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Default</b> (Display string: 'mv Acquisition Memory Mode'): Default memory mode.</li>
+<li><b>mvRecord</b> (Display string: 'mv Acquisition Memory Mode'): Stores frames in memory.</li>
+<li><b>mvPlayback</b> (Display string: 'mv Acquisition Memory Mode'): Transfers stored frames.</li>
+<li><b>mvPretrigger</b> (Display string: 'mv Acquisition Memory Mode'): Stores frames in memory to be transferred after trigger.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a288bcc77a513f89597531c170e1c88b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvCompressionKneepoint</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Knee point of 10 to 8 bit compression. </p>
+<p>Knee point of 10 to 8 bit compression. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3121267e92f554eb04e266b80032ca66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoAOIMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Common AutoControl <a class="el" href="struct_a_o_i.html">AOI</a> used for Auto Gain Control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+<p>Common AutoControl <a class="el" href="struct_a_o_i.html">AOI</a> used for Auto Gain Control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB).</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvFull</b> (Display string: 'mv Exposure Auto <a class="el" href="struct_a_o_i.html">AOI</a> Mode')</li>
+<li><b>mvCenter</b> (Display string: 'mv Exposure Auto <a class="el" href="struct_a_o_i.html">AOI</a> Mode')</li>
+<li><b>mvUser</b> (Display string: 'mv Exposure Auto <a class="el" href="struct_a_o_i.html">AOI</a> Mode')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abfe22d85a47e70a4735bf7c496757f6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoAverageGrey</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Common desired average grey value (in percent) used for Auto Gain Control(AGC) and Auto Exposure Control(AEC). </p>
+<p>Common desired average grey value (in percent) used for auto gain control(AGC) and auto exposure control (AEC). </p>
+
+</div>
+</div>
+<a class="anchor" id="a5e1471f52a0be9d3d97ef955846577b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoDelayImages</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. The number of frames that the AEC must skip before updating the exposure register. </p>
+<p>The number of frames that the AEC must skip before updating the exposure register. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac5e32fc9dbfc9ca6dae425bfe40aa228"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> Height used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+<p>Common <a class="el" href="struct_a_o_i.html">AOI</a> Height used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+
+</div>
+</div>
+<a class="anchor" id="aac9696f4ac67e8d763e65018ba2853e3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoHighlightAOI</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Highlight auto control <a class="el" href="struct_a_o_i.html">AOI</a> to check <a class="el" href="struct_a_o_i.html">AOI</a> settings. Switch off for normal operation. </p>
+<p>Highlight auto control <a class="el" href="struct_a_o_i.html">AOI</a> to check <a class="el" href="struct_a_o_i.html">AOI</a> settings. Switch off for normal operation.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'mv Exposure Auto Highlight <a class="el" href="struct_a_o_i.html">AOI</a>')</li>
+<li><b>On</b> (Display string: 'mv Exposure Auto Highlight <a class="el" href="struct_a_o_i.html">AOI</a>')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a20bae36efd152247f4c1c6766a6a681e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoLowerLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. The lower limit of the exposure time in auto exposure mode. </p>
+<p>The lower limit of the exposure time in auto exposure mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac30d4c1772562361d0ed6a2e5c113aa4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the common auto mode for gain and exposure. </p>
+<p>Selects the common auto mode for gain and exposure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvSensor</b> (Display string: 'mv Exposure Auto Mode'): The sensor itself will do the auto control.</li>
+<li><b>mvDevice</b> (Display string: 'mv Exposure Auto Mode'): The device(firmware) will do the auto control.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe7efb253397a6338ecc8ccdf91d518e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> XOffset used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+<p>Common <a class="el" href="struct_a_o_i.html">AOI</a> XOffset used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+
+</div>
+</div>
+<a class="anchor" id="aed46caaafedd6a8089cd33fe5c5fb7df"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> YOffset used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+<p>Common <a class="el" href="struct_a_o_i.html">AOI</a> YOffset used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+
+</div>
+</div>
+<a class="anchor" id="a20d51c921f1bb1f1f13d012fd80a1968"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Determines the increment or decrement size of exposure value from frame to frame. </p>
+<p>Determines the increment or decrement size of exposure value from frame to frame.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Slow</b> (Display string: 'mv Exposure Auto Speed')</li>
+<li><b>Medium</b> (Display string: 'mv Exposure Auto Speed')</li>
+<li><b>Fast</b> (Display string: 'mv Exposure Auto Speed')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a48663b8c79f8184cb8c8f18fbf3a0e32"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoUpperLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. The upper limit of the exposure time in auto exposure mode. </p>
+<p>The upper limit of the exposure time in auto exposure mode. </p>
+
+</div>
+</div>
+<a class="anchor" id="a06d1fcc8caea1f2e40d74865c48b39d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvExposureAutoWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Common <a class="el" href="struct_a_o_i.html">AOI</a> Width used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+<p>Common <a class="el" href="struct_a_o_i.html">AOI</a> Width used for auto gain control(AGC), Auto Exposure Control(AEC) and Auto White Balance(AWB). </p>
+
+</div>
+</div>
+<a class="anchor" id="a9e6def5d7d1abf571164b4b154a36a49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvPretriggerFrameCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Number of frames to acquire before the occurrence of an AcquisitionStart or AcquisitionActive trigger. </p>
+<p>Number of frames to acquire before the occurrence of an AcquisitionStart or AcquisitionActive trigger. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0da1e66aa1cd3ee5ae9ec1751950040a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvResultingFrameRate</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Shows the resulting frame rate. </p>
+<p>Shows the resulting frame rate. </p>
+
+</div>
+</div>
+<a class="anchor" id="a985987bd6fa29ef835556c49a20e133d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvSensorRegister</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Number of sensor register to access. </p>
+<p>Number of sensor register to access. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8ef065f9dd3a514f02f32b5c146919b4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvSensorRegisterValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Value of sensor register. </p>
+<p>Value of sensor register. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1899fb978fe8419e74499c8cb58e1ca8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvShutterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the shutter mode of the sensor. </p>
+<p>Selects the shutter mode of the sensor.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvRollingShutter</b> (Display string: 'mv Shutter Mode')</li>
+<li><b>mvGlobalReset</b> (Display string: 'mv Shutter Mode')</li>
+<li><b>mvGlobalShutter</b> (Display string: 'mv Shutter Mode')</li>
+<li><b>mvGlobalShutterWithoutReset</b> (Display string: 'mv Shutter Mode')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb86056e3eb76d5c80c4048ac9ba10d5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvSmartFrameRecallEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. When active in addition to the processed image data also the unprocessed image is stored inside the devices RAM. </p>
+<p>When active in addition to the processed image data (e.g. after binning, decimation, de-Bayering, LUT etc. applied inside the device) also the unprocessed image is stored inside the devices RAM allowing to request the transmission of these images by an application as well. This will effectively reduce the number of images that can be stored inside the frame buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="af60f090cba8f031a11e0b9ebbfba0c6f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::mvSmearReduction</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Smear reduction in triggered and non-overlapped mode. </p>
+<p>Smear reduction in triggered and non-overlapped mode.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>mvStandard</b> (Display string: 'mv Smear Reduction'): Standard smear reduction.</li>
+<li><b>mvMedium</b> (Display string: 'mv Smear Reduction'): Medium smear reduction.</li>
+<li><b>mvHighest</b> (Display string: 'mv Smear Reduction'): Highest smear but more power consumption.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa99ab36c7369a029d2a7f05c59c3516b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerActivation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the activation mode of the trigger. </p>
+<p>Specifies the activation mode of the trigger.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RisingEdge</b> (Display string: 'Rising Edge'): Specifies that the trigger is considered valid on the rising edge of the source signal.</li>
+<li><b>FallingEdge</b> (Display string: 'Falling Edge'): Specifies that the trigger is considered valid on the falling edge of the source signal.</li>
+<li><b>AnyEdge</b> (Display string: 'Any Edge'): Specifies that the trigger is considered valid on the falling or rising edge of the source signal.</li>
+<li><b>LevelHigh</b> (Display string: 'Level High'): Specifies that the trigger is considered valid as long as the level of the source signal is high.</li>
+<li><b>LevelLow</b> (Display string: 'Level Low'): Specifies that the trigger is considered valid as long as the level of the source signal is low.</li>
+<li><b>mvNone</b> (Display string: 'Trigger Activation')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a0c0123d1c00bac1adba870bc11368080"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerDelay</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property. Specifies the delay in microseconds (us) to apply after the trigger reception before activating it. </p>
+<p>Specifies the delay in microseconds (us) to apply after the trigger reception before activating it. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad96d0a854c6dcc41256849ea89d706d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerDelayRaw</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated. </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">弃用:</a></b></dt><dd>This feature is deprecated. TriggerDelayRaw specifies the delay in device-specific unit to apply after the trigger reception before effectively activating it. TriggerDelayAbs must reflect the state of TriggerDelayRaw when they are both supported. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afd3efded5da820a4dbe8510bf3e40471"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerDivider</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Specifies a division factor for the incoming trigger pulses. </p>
+<p>Specifies a division factor for the incoming trigger pulses. </p>
+
+</div>
+</div>
+<a class="anchor" id="a42ea8092a767cd62a5b59119d348701b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls if the selected trigger is active. </p>
+<p>Controls if the selected trigger is active.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disables the selected trigger.</li>
+<li><b>On</b> (Display string: 'On'): Enable the selected trigger.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aeb5fac0df36681f7800f45f2068707b0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerMultiplier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Specifies a multiplication factor for the incoming trigger pulses. </p>
+<p>Specifies a multiplication factor for the incoming trigger pulses. It is used generally used in conjunction with TriggerDivider to control the ratio of triggers that are accepted. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad24c28a7ee11b61889ba6371c6023231"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerOverlap</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the type trigger overlap permitted with the previous frame or line. </p>
+<p>Specifies the type trigger overlap permitted with the previous frame or line. This defines when a valid trigger will be accepted (or latched) for a new frame or a new line.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): No trigger overlap is permitted.</li>
+<li><b>ReadOut</b> (Display string: 'Read Out'): Trigger is accepted immediately after the exposure period.</li>
+<li><b>PreviousFrame</b> (Display string: 'Previous Frame'): Trigger is accepted (latched) at any time during the capture of the previous frame.</li>
+<li><b>PreviousLine</b> (Display string: 'Previous Line'): Trigger is accepted (latched) at any time during the capture of the previous line.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a38e4b4d2d7da4b24d3686be94cc0a886"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects the type of trigger to configure. </p>
+<p>Selects the type of trigger to configure.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>AcquisitionStart</b> (Display string: 'Acquisition Start'): Selects a trigger that starts the Acquisition of one or many frames according to AcquisitionMode.</li>
+<li><b>AcquisitionEnd</b> (Display string: 'Acquisition End'): Selects a trigger that ends the Acquisition of one or many frames according to AcquisitionMode.</li>
+<li><b>AcquisitionActive</b> (Display string: 'Acquisition Active'): Selects a trigger that controls the duration of the Acquisition of one or many frames. The Acquisition is activated when the trigger signal becomes active and terminated when it goes back to the inactive state.</li>
+<li><b>FrameStart</b> (Display string: 'Frame Start'): Selects a trigger starting the capture of one frame.</li>
+<li><b>FrameEnd</b> (Display string: 'Frame End'): Selects a trigger ending the capture of one frame (mainly used in linescan mode).</li>
+<li><b>FrameActive</b> (Display string: 'Frame Active'): Selects a trigger controlling the duration of one frame (mainly used in linescan mode).</li>
+<li><b>FrameBurstStart</b> (Display string: 'Frame Burst Start'): Selects a trigger starting the capture of the bursts of frames in an acquisition. AcquisitionBurstFrameCount controls the length of each burst unless a FrameBurstEnd trigger is active. The total number of frames captured is also conditioned by AcquisitionFrameCount if AcquisitionMode is MultiFrame.</li>
+<li><b>FrameBurstEnd</b> (Display string: 'Frame Burst End'): Selects a trigger ending the capture of the bursts of frames in an acquisition.</li>
+<li><b>FrameBurstActive</b> (Display string: 'Frame Burst Active'): Selects a trigger controlling the duration of the capture of the bursts of frames in an acquisition.</li>
+<li><b>LineStart</b> (Display string: 'Line Start'): Selects a trigger starting the capture of one Line of a Frame (mainly used in linescan mode).</li>
+<li><b>ExposureStart</b> (Display string: 'Exposure Start'): Selects a trigger controlling the start of the exposure of one Frame (or Line).</li>
+<li><b>ExposureEnd</b> (Display string: 'Exposure End'): Selects a trigger controlling the end of the exposure of one Frame (or Line).</li>
+<li><b>ExposureActive</b> (Display string: 'Exposure Active'): Selects a trigger controlling the duration of the exposure of one frame (or Line).</li>
+<li><b>MultiSlopeExposureLimit1</b> (Display string: 'Multi Slope Exposure Limit 1'): Selects a trigger controlling the first duration of a multi-slope exposure. Exposure is continued according to the pre-defined multi-slope settings.</li>
+<li><b>mvTimestampReset</b> (Display string: 'Trigger Selector')</li>
+<li><b>mvLoopRecordEnd</b> (Display string: 'Trigger Selector')</li>
+<li><b>mvFrameStartSensor2</b> (Display string: 'Trigger Selector')</li>
+<li><b>mvInvalidTriggerSelector</b> (Display string: 'Trigger Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41d20326d5f933501731f9c9ecbde1f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerSoftware</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Generates an internal trigger. </p>
+<p>Generates an internal trigger. TriggerSource must be set to Software. </p>
+
+</div>
+</div>
+<a class="anchor" id="a194c05945e0e60054d7e427c08aba4fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::AcquisitionControl::triggerSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the internal signal or physical input Line to use as the trigger source. </p>
+<p>Specifies the internal signal or physical input Line to use as the trigger source. The selected trigger must have its TriggerMode set to On.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Software</b> (Display string: 'Software'): Specifies that the trigger source will be generated by software using the TriggerSoftware command.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): Specifies that the trigger source will be a signal generated by software using the SoftwareSignalPulse command.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): Specifies that the trigger source will be a signal generated by software using the SoftwareSignalPulse command.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): Specifies that the trigger source will be a signal generated by software using the SoftwareSignalPulse command.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): Specifies that the trigger source will be a signal generated by software using the SoftwareSignalPulse command.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Counter0Start</b> (Display string: 'Counter 0 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter1Start</b> (Display string: 'Counter 1 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter2Start</b> (Display string: 'Counter 2 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter#3#Start</b> (Display string: 'Counter #3# Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter0End</b> (Display string: 'Counter 0 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter1End</b> (Display string: 'Counter 1 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter2End</b> (Display string: 'Counter 2 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter#3#End</b> (Display string: 'Counter #3# End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Timer0Start</b> (Display string: 'Timer 0 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer1Start</b> (Display string: 'Timer 1 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer2Start</b> (Display string: 'Timer 2 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer#3#Start</b> (Display string: 'Timer #3# Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer0End</b> (Display string: 'Timer 0 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer1End</b> (Display string: 'Timer 1 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer2End</b> (Display string: 'Timer 2 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer#3#End</b> (Display string: 'Timer #3# End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Specifies which Encoder signal to use as internal source for the trigger.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Specifies which Encoder signal to use as internal source for the trigger.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Specifies which Encoder signal to use as internal source for the trigger.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Specifies which Encoder signal to use as internal source for the trigger.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Specifies which Logic Block signal to use as internal source for the trigger.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Specifies which Logic Block signal to use as internal source for the trigger.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Specifies which Logic Block signal to use as internal source for the trigger.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Specifies which Logic Block signal to use as internal source for the trigger.</li>
+<li><b>Action0</b> (Display string: 'Action 0'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action1</b> (Display string: 'Action 1'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action2</b> (Display string: 'Action 2'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action#3#</b> (Display string: 'Action #3#'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Specifies which Link Trigger to use as source for the trigger (received from the transport layer).</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Specifies which Link Trigger to use as source for the trigger (received from the transport layer).</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Specifies which Link Trigger to use as source for the trigger (received from the transport layer).</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Specifies which Link Trigger to use as source for the trigger (received from the transport layer).</li>
+<li><b>CC1</b> (Display string: 'CC 1'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC2</b> (Display string: 'CC 2'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC3</b> (Display string: 'CC 3'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC4</b> (Display string: 'CC 4'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC#5#</b> (Display string: 'CC #5#'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>Line3</b> (Display string: 'Line 3'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line4</b> (Display string: 'Line 4'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line5</b> (Display string: 'Line 5'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line6</b> (Display string: 'Line 6'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line7</b> (Display string: 'Line 7'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line8</b> (Display string: 'Line 8'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line9</b> (Display string: 'Line 9'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line10</b> (Display string: 'Line 10'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line11</b> (Display string: 'Line 11'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line12</b> (Display string: 'Line 12'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line13</b> (Display string: 'Line 13'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line14</b> (Display string: 'Line 14'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Line15</b> (Display string: 'Line 15'): Specifies which physical line (or pin) and associated I/O control block to use as external source for the trigger signal.</li>
+<li><b>Timer3Start</b> (Display string: 'Timer 3 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer4Start</b> (Display string: 'Timer 4 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer5Start</b> (Display string: 'Timer 5 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer6Start</b> (Display string: 'Timer 6 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer7Start</b> (Display string: 'Timer 7 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer8Start</b> (Display string: 'Timer 8 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer9Start</b> (Display string: 'Timer 9 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer10Start</b> (Display string: 'Timer 10 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer11Start</b> (Display string: 'Timer 11 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer12Start</b> (Display string: 'Timer 12 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer13Start</b> (Display string: 'Timer 13 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer14Start</b> (Display string: 'Timer 14 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer15Start</b> (Display string: 'Timer 15 Start'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer16Start</b> (Display string: 'Trigger Source')</li>
+<li><b>Timer3End</b> (Display string: 'Timer 3 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer4End</b> (Display string: 'Timer 4 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer5End</b> (Display string: 'Timer 5 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer6End</b> (Display string: 'Timer 6 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer7End</b> (Display string: 'Timer 7 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer8End</b> (Display string: 'Timer 8 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer9End</b> (Display string: 'Timer 9 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer10End</b> (Display string: 'Timer 10 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer11End</b> (Display string: 'Timer 11 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer12End</b> (Display string: 'Timer 12 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer13End</b> (Display string: 'Timer 13 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer14End</b> (Display string: 'Timer 14 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer15End</b> (Display string: 'Timer 15 End'): Specifies which Timer signal to use as internal source for the trigger.</li>
+<li><b>Timer16End</b> (Display string: 'Trigger Source')</li>
+<li><b>Counter3Start</b> (Display string: 'Counter 3 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter4Start</b> (Display string: 'Counter 4 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter5Start</b> (Display string: 'Counter 5 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter6Start</b> (Display string: 'Counter 6 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter7Start</b> (Display string: 'Counter 7 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter8Start</b> (Display string: 'Counter 8 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter9Start</b> (Display string: 'Counter 9 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter10Start</b> (Display string: 'Counter 10 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter11Start</b> (Display string: 'Counter 11 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter12Start</b> (Display string: 'Counter 12 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter13Start</b> (Display string: 'Counter 13 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter14Start</b> (Display string: 'Counter 14 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter15Start</b> (Display string: 'Counter 15 Start'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter16Start</b> (Display string: 'Trigger Source')</li>
+<li><b>Counter3End</b> (Display string: 'Counter 3 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter4End</b> (Display string: 'Counter 4 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter5End</b> (Display string: 'Counter 5 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter6End</b> (Display string: 'Counter 6 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter7End</b> (Display string: 'Counter 7 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter8End</b> (Display string: 'Counter 8 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter9End</b> (Display string: 'Counter 9 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter10End</b> (Display string: 'Counter 10 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter11End</b> (Display string: 'Counter 11 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter12End</b> (Display string: 'Counter 12 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter13End</b> (Display string: 'Counter 13 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter14End</b> (Display string: 'Counter 14 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter15End</b> (Display string: 'Counter 15 End'): Specifies which of the Counter signal to use as internal source for the trigger.</li>
+<li><b>Counter16End</b> (Display string: 'Trigger Source')</li>
+<li><b>mvLogicGateOR1Output</b> (Display string: 'Trigger Source')</li>
+<li><b>mvLogicGateOR2Output</b> (Display string: 'Trigger Source')</li>
+<li><b>mvLogicGateOR3Output</b> (Display string: 'Trigger Source')</li>
+<li><b>mvLogicGateOR4Output</b> (Display string: 'Trigger Source')</li>
+<li><b>UserOutput3</b> (Display string: 'User Output 3'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput4</b> (Display string: 'User Output 4'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput5</b> (Display string: 'User Output 5'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput6</b> (Display string: 'User Output 6'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput7</b> (Display string: 'User Output 7'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput8</b> (Display string: 'User Output 8'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput9</b> (Display string: 'User Output 9'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput10</b> (Display string: 'User Output 10'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput11</b> (Display string: 'User Output 11'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput12</b> (Display string: 'User Output 12'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput13</b> (Display string: 'User Output 13'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput14</b> (Display string: 'User Output 14'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput15</b> (Display string: 'User Output 15'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Action3</b> (Display string: 'Action 3'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action4</b> (Display string: 'Action 4'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action5</b> (Display string: 'Action 5'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action6</b> (Display string: 'Action 6'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action7</b> (Display string: 'Action 7'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action8</b> (Display string: 'Action 8'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action9</b> (Display string: 'Action 9'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action10</b> (Display string: 'Action 10'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action11</b> (Display string: 'Action 11'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action12</b> (Display string: 'Action 12'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action13</b> (Display string: 'Action 13'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action14</b> (Display string: 'Action 14'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action15</b> (Display string: 'Action 15'): Specifies which Action command to use as internal source for the trigger.</li>
+<li><b>Action16</b> (Display string: 'Trigger Source')</li>
+<li><b>CC5</b> (Display string: 'CC 5'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC6</b> (Display string: 'CC 6'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC7</b> (Display string: 'CC 7'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC8</b> (Display string: 'CC 8'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC9</b> (Display string: 'CC 9'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC10</b> (Display string: 'CC 10'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC11</b> (Display string: 'CC 11'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC12</b> (Display string: 'CC 12'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC13</b> (Display string: 'CC 13'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC14</b> (Display string: 'CC 14'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC15</b> (Display string: 'CC 15'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC16</b> (Display string: 'Trigger Source')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html">AcquisitionControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

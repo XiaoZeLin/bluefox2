@@ -1,0 +1,1081 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Acquisition\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+}
+
+
+Category for the acquisition and trigger control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Acquisition\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8}{Acquisition\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa07380cf251a40c38a2c7f9abbf3c0f1}{acquisition\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Sets the acquisition mode of the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a05def6315f448a15576cb0746f791b26}{acquisition\+Arm}
+\begin{DoxyCompactList}\small\item\em A method object. Arms the device before an Acquisition\+Start command. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a30953769d4d702d7a24cabd86d608bee}{acquisition\+Frame\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Number of frames to acquire in Multi\+Frame Acquisition mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ae206f145121c4fd3adfb0f47a9a917ea}{acquisition\+Burst\+Frame\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Number of frames to acquire for each Frame\+Burst\+Start trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a985987bd6fa29ef835556c49a20e133d}{mv\+Sensor\+Register}
+\begin{DoxyCompactList}\small\item\em An integer property. Number of sensor register to access. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a8ef065f9dd3a514f02f32b5c146919b4}{mv\+Sensor\+Register\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Value of sensor register. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6439ee2ea1b4b18f4387922ad18aa9c2}{acquisition\+Frame\+Rate}
+\begin{DoxyCompactList}\small\item\em A floating point property. Controls the acquisition rate (in Hertz) at which the frames are captured. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a87e6ccd44f43111f4e1969175e04db0e}{acquisition\+Frame\+Rate\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. Controls if the Acquisition\+Frame\+Rate feature is writable and used to control the acquisition rate. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ae005cee593783684117beca6ec37c183}{acquisition\+Frame\+Rate\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aebb38e835c99a65cb205cfe160b03ccd}{acquisition\+Line\+Rate}
+\begin{DoxyCompactList}\small\item\em A floating point property. Controls the rate (in Hertz) at which the Lines in a Frame are captured. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a474bf5cf15c9b733b1c1e73cc520885a}{acquisition\+Line\+Rate\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. Controls if the Acquisition\+Line\+Rate feature is writable and used to control the acquisition rate. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abc83f72810dfec15d0ef47c258ca8a53}{acquisition\+Line\+Rate\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aadb492cee15f403d411a927ccdc6195f}{acquisition\+Status\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the internal acquisition signal to read using Acquisition\+Status. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a44d19fa3bc046ac368cf2a6b5a3d2205}{acquisition\+Status}
+\begin{DoxyCompactList}\small\item\em A boolean property. Reads the state of the internal acquisition signal selected using Acquisition\+Status\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a38e4b4d2d7da4b24d3686be94cc0a886}{trigger\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the type of trigger to configure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a42ea8092a767cd62a5b59119d348701b}{trigger\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls if the selected trigger is active. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a41d20326d5f933501731f9c9ecbde1f0}{trigger\+Software}
+\begin{DoxyCompactList}\small\item\em A method object. Generates an internal trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a194c05945e0e60054d7e427c08aba4fe}{trigger\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the internal signal or physical input Line to use as the trigger source. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa99ab36c7369a029d2a7f05c59c3516b}{trigger\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the activation mode of the trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ad24c28a7ee11b61889ba6371c6023231}{trigger\+Overlap}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the type trigger overlap permitted with the previous frame or line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0c0123d1c00bac1adba870bc11368080}{trigger\+Delay}
+\begin{DoxyCompactList}\small\item\em A floating point property. Specifies the delay in microseconds (us) to apply after the trigger reception before activating it. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ad96d0a854c6dcc41256849ea89d706d3}{trigger\+Delay\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_afd3efded5da820a4dbe8510bf3e40471}{trigger\+Divider}
+\begin{DoxyCompactList}\small\item\em An integer property. Specifies a division factor for the incoming trigger pulses. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb5fac0df36681f7800f45f2068707b0}{trigger\+Multiplier}
+\begin{DoxyCompactList}\small\item\em An integer property. Specifies a multiplication factor for the incoming trigger pulses. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0dfebf2075d401828a7eac11fac790d0}{exposure\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Sets the operation mode of the Exposure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a98235de35e157788e0ca8618f2cf06e5}{exposure\+Time\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Sets the configuration mode of the Exposure\+Time feature. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a2c75217c0225d5c95c88c1dcea7ed2a4}{exposure\+Time\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which exposure time is controlled by the Exposure\+Time feature. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a3c77b0606062196e0bdd0e1a526e9d27}{exposure\+Time}
+\begin{DoxyCompactList}\small\item\em A floating point property. Sets the Exposure time when Exposure\+Mode is Timed and Exposure\+Auto is Off. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aec552f1617c6891948e38f9aab39b760}{exposure\+Time\+Raw}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a4c702e88d0591dbebff925de205138b4}{exposure\+Auto}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Sets the automatic exposure mode when Exposure\+Mode is Timed. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a4b9b632e3144d6dd2976c55e87528a53}{multi\+Slope\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls multi-\/slope exposure state. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_afc16354b0a7a9477a9dc50b3c0a50275}{multi\+Slope\+Knee\+Point\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. The number of knee-\/points as well as the number of additional exposure slopes used for multi-\/slope exposure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ab127490b47734b9979d17ffec2c803e0}{multi\+Slope\+Knee\+Point\+Selector}
+\begin{DoxyCompactList}\small\item\em An integer property. Selects the parameters for controlling an additional slope in multi-\/slope exposure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_acdf0b3638aaaa29315dfe1a7ff9cce35}{multi\+Slope\+Exposure\+Limit}
+\begin{DoxyCompactList}\small\item\em A floating point property. Percent of the Exposure\+Time at a certain knee-\/point of multi-\/slope exposure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6e6415c2be2fd0e16314ed053bdae6bd}{multi\+Slope\+Saturation\+Threshold}
+\begin{DoxyCompactList}\small\item\em A floating point property. The percentage of the full saturation that is applied at a certain knee-\/point of a multi-\/slope exposure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_acb90c1e8ccca748148f9542b91eb3d3f}{multi\+Slope\+Intensity\+Limit}
+\begin{DoxyCompactList}\small\item\em A floating point property. The relative intensity which divides intensities influenced by different exposure slopes. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a81561b228b3d765db02eeedef2bedbdf}{multi\+Slope\+Exposure\+Gradient}
+\begin{DoxyCompactList}\small\item\em A floating point property. The gradient of the additional slope that is defined by this knee-\/point. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a746647afd1fec502036cb9f6633f030a}{mv\+Acquisition\+Frame\+Rate\+Limit\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls the calculation of the maximum frame rate. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a9e010a85b016530779b5eed1a95bfa7f}{mv\+Acquisition\+Frame\+Rate\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Enables the use of the 'Acquisition\+Frame\+Rate' feature. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0da1e66aa1cd3ee5ae9ec1751950040a}{mv\+Resulting\+Frame\+Rate}
+\begin{DoxyCompactList}\small\item\em A floating point property. Shows the resulting frame rate. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a1899fb978fe8419e74499c8cb58e1ca8}{mv\+Shutter\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the shutter mode of the sensor. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a288bcc77a513f89597531c170e1c88b6}{mv\+Compression\+Kneepoint}
+\begin{DoxyCompactList}\small\item\em An integer property. Knee point of 10 to 8 bit compression. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a20bae36efd152247f4c1c6766a6a681e}{mv\+Exposure\+Auto\+Lower\+Limit}
+\begin{DoxyCompactList}\small\item\em A floating point property. The lower limit of the exposure time in auto exposure mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a48663b8c79f8184cb8c8f18fbf3a0e32}{mv\+Exposure\+Auto\+Upper\+Limit}
+\begin{DoxyCompactList}\small\item\em A floating point property. The upper limit of the exposure time in auto exposure mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a20d51c921f1bb1f1f13d012fd80a1968}{mv\+Exposure\+Auto\+Speed}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Determines the increment or decrement size of exposure value from frame to frame. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a5e1471f52a0be9d3d97ef955846577b2}{mv\+Exposure\+Auto\+Delay\+Images}
+\begin{DoxyCompactList}\small\item\em An integer property. The number of frames that the A\+E\+C must skip before updating the exposure register. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abfe22d85a47e70a4735bf7c496757f6c}{mv\+Exposure\+Auto\+Average\+Grey}
+\begin{DoxyCompactList}\small\item\em An integer property. Common desired average grey value (in percent) used for Auto Gain Control(\+A\+G\+C) and Auto Exposure Control(\+A\+E\+C). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aac9696f4ac67e8d763e65018ba2853e3}{mv\+Exposure\+Auto\+Highlight\+A\+O\+I}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Highlight auto control \hyperlink{struct_a_o_i}{A\+O\+I} to check \hyperlink{struct_a_o_i}{A\+O\+I} settings. Switch off for normal operation. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a3121267e92f554eb04e266b80032ca66}{mv\+Exposure\+Auto\+A\+O\+I\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Common Auto\+Control \hyperlink{struct_a_o_i}{A\+O\+I} used for Auto Gain Control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abe7efb253397a6338ecc8ccdf91d518e}{mv\+Exposure\+Auto\+Offset\+X}
+\begin{DoxyCompactList}\small\item\em An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} X\+Offset used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aed46caaafedd6a8089cd33fe5c5fb7df}{mv\+Exposure\+Auto\+Offset\+Y}
+\begin{DoxyCompactList}\small\item\em An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} Y\+Offset used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a06d1fcc8caea1f2e40d74865c48b39d2}{mv\+Exposure\+Auto\+Width}
+\begin{DoxyCompactList}\small\item\em An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} Width used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ac5e32fc9dbfc9ca6dae425bfe40aa228}{mv\+Exposure\+Auto\+Height}
+\begin{DoxyCompactList}\small\item\em An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} Height used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ac30d4c1772562361d0ed6a2e5c113aa4}{mv\+Exposure\+Auto\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the common auto mode for gain and exposure. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_af60f090cba8f031a11e0b9ebbfba0c6f}{mv\+Smear\+Reduction}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Smear reduction in triggered and non-\/overlapped mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a39dd9c3cc5099fe271ca00fb96faf949}{mv\+Acquisition\+Memory\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. mv\+Record is used to store frames in memory. mv\+Playback transfers stored frames. mv\+Pretrigger stores frames in memory to be transferred after trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a9e6def5d7d1abf571164b4b154a36a49}{mv\+Pretrigger\+Frame\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Number of frames to acquire before the occurrence of an Acquisition\+Start or Acquisition\+Active trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a364974f28a1daca359f60d451609adc8}{mv\+Acquisition\+Memory\+Max\+Frame\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Maximum number of frames that can be recorded in the current configuration(deprecated, use the maximum value of 'mv\+Acquisition\+Memory\+Frame\+Count' instead). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6260d5499a91791d8eb9db5cc246c485}{mv\+Acquisition\+Memory\+Frame\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. The number of frames currently stored in the frame buffer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa56de2ea0f33f1de69f8a3594c57d8c0}{mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed}
+\begin{DoxyCompactList}\small\item\em An integer property. \hyperlink{struct_a_o_i}{A\+O\+I} and/or binning parameter changed after last Acquisition. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{mv\+Smart\+Frame\+Recall\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. When active in addition to the processed image data also the unprocessed image is stored inside the devices R\+A\+M. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category for the acquisition and trigger control features. 
+
+A category for the acquisition and trigger control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!Acquisition\+Control@{Acquisition\+Control}}
+\index{Acquisition\+Control@{Acquisition\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{Acquisition\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::\+Acquisition\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a66a96d4ef8ec636ed0830bb8e5c94ca8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a05def6315f448a15576cb0746f791b26}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Arm@{acquisition\+Arm}}
+\index{acquisition\+Arm@{acquisition\+Arm}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Arm}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Arm}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a05def6315f448a15576cb0746f791b26}
+
+
+A method object. Arms the device before an Acquisition\+Start command. 
+
+Arms the device before an Acquisition\+Start command. This optional command validates all the current features for consistency and prepares the device for a fast start of the Acquisition. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ae206f145121c4fd3adfb0f47a9a917ea}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Burst\+Frame\+Count@{acquisition\+Burst\+Frame\+Count}}
+\index{acquisition\+Burst\+Frame\+Count@{acquisition\+Burst\+Frame\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Burst\+Frame\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Burst\+Frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ae206f145121c4fd3adfb0f47a9a917ea}
+
+
+An integer property. Number of frames to acquire for each Frame\+Burst\+Start trigger. 
+
+Number of frames to acquire for each Frame\+Burst\+Start trigger. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a30953769d4d702d7a24cabd86d608bee}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Frame\+Count@{acquisition\+Frame\+Count}}
+\index{acquisition\+Frame\+Count@{acquisition\+Frame\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Frame\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a30953769d4d702d7a24cabd86d608bee}
+
+
+An integer property. Number of frames to acquire in Multi\+Frame Acquisition mode. 
+
+Number of frames to acquire in Multi\+Frame Acquisition mode. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6439ee2ea1b4b18f4387922ad18aa9c2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Frame\+Rate@{acquisition\+Frame\+Rate}}
+\index{acquisition\+Frame\+Rate@{acquisition\+Frame\+Rate}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Frame\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Frame\+Rate}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6439ee2ea1b4b18f4387922ad18aa9c2}
+
+
+A floating point property. Controls the acquisition rate (in Hertz) at which the frames are captured. 
+
+Controls the acquisition rate (in Hertz) at which the frames are captured. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a87e6ccd44f43111f4e1969175e04db0e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Frame\+Rate\+Enable@{acquisition\+Frame\+Rate\+Enable}}
+\index{acquisition\+Frame\+Rate\+Enable@{acquisition\+Frame\+Rate\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Frame\+Rate\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Frame\+Rate\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a87e6ccd44f43111f4e1969175e04db0e}
+
+
+A boolean property. Controls if the Acquisition\+Frame\+Rate feature is writable and used to control the acquisition rate. 
+
+Controls if the Acquisition\+Frame\+Rate feature is writable and used to control the acquisition rate. Otherwise, the acquisition rate is implicitly controlled by the combination of other features like Exposure\+Time, etc... \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ae005cee593783684117beca6ec37c183}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Frame\+Rate\+Raw@{acquisition\+Frame\+Rate\+Raw}}
+\index{acquisition\+Frame\+Rate\+Raw@{acquisition\+Frame\+Rate\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Frame\+Rate\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Frame\+Rate\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ae005cee593783684117beca6ec37c183}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000043}{弃用}]This feature is deprecated. It controls the rate (in device specific unit) at which the Frames are captured when Trigger\+Mode is Off for the Frame trigger. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aebb38e835c99a65cb205cfe160b03ccd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Line\+Rate@{acquisition\+Line\+Rate}}
+\index{acquisition\+Line\+Rate@{acquisition\+Line\+Rate}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Line\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Line\+Rate}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aebb38e835c99a65cb205cfe160b03ccd}
+
+
+A floating point property. Controls the rate (in Hertz) at which the Lines in a Frame are captured. 
+
+Controls the rate (in Hertz) at which the Lines in a Frame are captured. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a474bf5cf15c9b733b1c1e73cc520885a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Line\+Rate\+Enable@{acquisition\+Line\+Rate\+Enable}}
+\index{acquisition\+Line\+Rate\+Enable@{acquisition\+Line\+Rate\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Line\+Rate\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Line\+Rate\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a474bf5cf15c9b733b1c1e73cc520885a}
+
+
+A boolean property. Controls if the Acquisition\+Line\+Rate feature is writable and used to control the acquisition rate. 
+
+Controls if the Acquisition\+Line\+Rate feature is writable and used to control the acquisition rate. Otherwise, the acquisition rate is implicitly controlled by the combination of other features like Exposure\+Time, etc... \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abc83f72810dfec15d0ef47c258ca8a53}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Line\+Rate\+Raw@{acquisition\+Line\+Rate\+Raw}}
+\index{acquisition\+Line\+Rate\+Raw@{acquisition\+Line\+Rate\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Line\+Rate\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Line\+Rate\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abc83f72810dfec15d0ef47c258ca8a53}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000044}{弃用}]This feature is deprecated. It controls the rate (in device specific unit) at which the Lines in a Frame are captured when Trigger\+Mode is Off for the Line trigger. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa07380cf251a40c38a2c7f9abbf3c0f1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Mode@{acquisition\+Mode}}
+\index{acquisition\+Mode@{acquisition\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa07380cf251a40c38a2c7f9abbf3c0f1}
+
+
+An enumerated integer property. Sets the acquisition mode of the device. 
+
+Sets the acquisition mode of the device. It defines mainly the number of frames to capture during an acquisition and the way the acquisition stops.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Single\+Frame} (Display string\+: 'Single Frame')\+: One frame is captured.
+\item {\bfseries Multi\+Frame} (Display string\+: 'Multi Frame')\+: The number of frames specified by Acquisition\+Frame\+Count is captured.
+\item {\bfseries Continuous} (Display string\+: 'Continuous')\+: Frames are captured continuously until stopped with the Acquisition\+Stop command.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a44d19fa3bc046ac368cf2a6b5a3d2205}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Status@{acquisition\+Status}}
+\index{acquisition\+Status@{acquisition\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a44d19fa3bc046ac368cf2a6b5a3d2205}
+
+
+A boolean property. Reads the state of the internal acquisition signal selected using Acquisition\+Status\+Selector. 
+
+Reads the state of the internal acquisition signal selected using Acquisition\+Status\+Selector. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aadb492cee15f403d411a927ccdc6195f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!acquisition\+Status\+Selector@{acquisition\+Status\+Selector}}
+\index{acquisition\+Status\+Selector@{acquisition\+Status\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{acquisition\+Status\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::acquisition\+Status\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aadb492cee15f403d411a927ccdc6195f}
+
+
+An enumerated integer property. Selects the internal acquisition signal to read using Acquisition\+Status. 
+
+Selects the internal acquisition signal to read using Acquisition\+Status.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Acquisition\+Trigger\+Wait} (Display string\+: 'Acquisition Trigger Wait')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a trigger for the capture of one or many frames.
+\item {\bfseries Acquisition\+Active} (Display string\+: 'Acquisition Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently doing an acquisition of one or many frames.
+\item {\bfseries Acquisition\+Transfer} (Display string\+: 'Acquisition Transfer')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently transferring an acquisition of one or many frames.
+\item {\bfseries Frame\+Trigger\+Wait} (Display string\+: 'Frame Trigger Wait')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently waiting for a frame start trigger.
+\item {\bfseries Frame\+Active} (Display string\+: 'Frame Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is currently doing the capture of a frame.
+\item {\bfseries Exposure\+Active} (Display string\+: 'Exposure Active')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} is doing the exposure of a frame.
+\item {\bfseries Frame\+Transfer} (Display string\+: 'Frame Transfer')\+: See Transfer\+Status.
+\item {\bfseries Frame\+Transfer} (Display string\+: 'Frame Transfer')\+: See Transfer\+Status.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a4c702e88d0591dbebff925de205138b4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!exposure\+Auto@{exposure\+Auto}}
+\index{exposure\+Auto@{exposure\+Auto}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{exposure\+Auto}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::exposure\+Auto}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a4c702e88d0591dbebff925de205138b4}
+
+
+An enumerated integer property. Sets the automatic exposure mode when Exposure\+Mode is Timed. 
+
+Sets the automatic exposure mode when Exposure\+Mode is Timed. The exact algorithm used to implement this control is device-\/specific.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Exposure duration is user controlled using Exposure\+Time.
+\item {\bfseries Once} (Display string\+: 'Once')\+: Exposure duration is adapted once by the device. Once it has converged, it returns to the Off state.
+\item {\bfseries Continuous} (Display string\+: 'Continuous')\+: Exposure duration is constantly adapted by the device to maximize the dynamic range.
+\item {\bfseries mv\+Sequenced} (Display string\+: 'Exposure Auto')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0dfebf2075d401828a7eac11fac790d0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!exposure\+Mode@{exposure\+Mode}}
+\index{exposure\+Mode@{exposure\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{exposure\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::exposure\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0dfebf2075d401828a7eac11fac790d0}
+
+
+An enumerated integer property. Sets the operation mode of the Exposure. 
+
+Sets the operation mode of the Exposure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the Exposure and let the shutter open.
+\item {\bfseries Timed} (Display string\+: 'Timed')\+: Timed exposure. The exposure duration time is set using the Exposure\+Time or Exposure\+Auto features and the exposure starts with the Frame\+Start or Line\+Start.
+\item {\bfseries Trigger\+Width} (Display string\+: 'Trigger Width')\+: Uses the width of the current Frame or Line trigger signal(s) pulse to control the exposure duration. Note that if the Frame or Line Trigger\+Activation is Rising\+Edge or Level\+High, the exposure duration will be the time the trigger stays High. If Trigger\+Activation is Falling\+Edge or Level\+Low, the exposure time will last as long as the trigger stays Low.
+\item {\bfseries Trigger\+Controlled} (Display string\+: 'Trigger Controlled')\+: Uses one or more trigger signal(s) to control the exposure duration independently from the current Frame or Line triggers. See Exposure\+Start, Exposure\+End and Exposure\+Active of the Trigger\+Selector feature.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a3c77b0606062196e0bdd0e1a526e9d27}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!exposure\+Time@{exposure\+Time}}
+\index{exposure\+Time@{exposure\+Time}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{exposure\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::exposure\+Time}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a3c77b0606062196e0bdd0e1a526e9d27}
+
+
+A floating point property. Sets the Exposure time when Exposure\+Mode is Timed and Exposure\+Auto is Off. 
+
+Sets the Exposure time when Exposure\+Mode is Timed and Exposure\+Auto is Off. This controls the duration where the photosensitive cells are exposed to light. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a98235de35e157788e0ca8618f2cf06e5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!exposure\+Time\+Mode@{exposure\+Time\+Mode}}
+\index{exposure\+Time\+Mode@{exposure\+Time\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{exposure\+Time\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::exposure\+Time\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a98235de35e157788e0ca8618f2cf06e5}
+
+
+An enumerated integer property. Sets the configuration mode of the Exposure\+Time feature. 
+
+Sets the configuration mode of the Exposure\+Time feature.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Common} (Display string\+: 'Common')\+: The exposure time is common to all the color components. The common Exposure\+Time value to use can be set selecting it with Exposure\+Time\+Selector\mbox{[}Common\mbox{]}.
+\item {\bfseries Individual} (Display string\+: 'Individual')\+: The exposure time is individual for each color component. Each individual Exposure\+Time values to use can be set by selecting them with Exposure\+Time\+Selector.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aec552f1617c6891948e38f9aab39b760}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!exposure\+Time\+Raw@{exposure\+Time\+Raw}}
+\index{exposure\+Time\+Raw@{exposure\+Time\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{exposure\+Time\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::exposure\+Time\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aec552f1617c6891948e38f9aab39b760}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000046}{弃用}]This feature is deprecated. It can used to set the Exposure time in device-\/specific unit when Exposure\+Mode is Timed. This controls the duration where the photosensitive cells are exposed to light. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a2c75217c0225d5c95c88c1dcea7ed2a4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!exposure\+Time\+Selector@{exposure\+Time\+Selector}}
+\index{exposure\+Time\+Selector@{exposure\+Time\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{exposure\+Time\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::exposure\+Time\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a2c75217c0225d5c95c88c1dcea7ed2a4}
+
+
+An enumerated integer property. Selects which exposure time is controlled by the Exposure\+Time feature. 
+
+Selects which exposure time is controlled by the Exposure\+Time feature. This allows for independent control over the exposure components.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Common} (Display string\+: 'Common')\+: Selects the common Exposure\+Time.
+\item {\bfseries Red} (Display string\+: 'Red')\+: Selects the red common Exposure\+Time.
+\item {\bfseries Green} (Display string\+: 'Green')\+: Selects the green Exposure\+Time.
+\item {\bfseries Blue} (Display string\+: 'Blue')\+: Selects the blue Exposure\+Time.
+\item {\bfseries Cyan} (Display string\+: 'Cyan')\+: Selects the cyan common Exposure\+Time.
+\item {\bfseries Magenta} (Display string\+: 'Magenta')\+: Selects the magenta Exposure\+Time.
+\item {\bfseries Yellow} (Display string\+: 'Yellow')\+: Selects the yellow Exposure\+Time.
+\item {\bfseries Infrared} (Display string\+: 'Infrared')\+: Selects the infrared Exposure\+Time.
+\item {\bfseries Ultraviolet} (Display string\+: 'Ultraviolet')\+: Selects the ultraviolet Exposure\+Time.
+\item {\bfseries Stage1} (Display string\+: 'Stage 1')\+: Selects the first stage Exposure\+Time.
+\item {\bfseries Stage2} (Display string\+: 'Stage 2')\+: Selects the second stage Exposure\+Time.
+\item {\bfseries Stage\#3\#} (Display string\+: 'Stage \#3\#')\+: Selects the second stage Exposure\+Time.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a81561b228b3d765db02eeedef2bedbdf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Exposure\+Gradient@{multi\+Slope\+Exposure\+Gradient}}
+\index{multi\+Slope\+Exposure\+Gradient@{multi\+Slope\+Exposure\+Gradient}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Exposure\+Gradient}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Exposure\+Gradient}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a81561b228b3d765db02eeedef2bedbdf}
+
+
+A floating point property. The gradient of the additional slope that is defined by this knee-\/point. 
+
+The gradient of the additional slope that is defined by this knee-\/point. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_acdf0b3638aaaa29315dfe1a7ff9cce35}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Exposure\+Limit@{multi\+Slope\+Exposure\+Limit}}
+\index{multi\+Slope\+Exposure\+Limit@{multi\+Slope\+Exposure\+Limit}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Exposure\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Exposure\+Limit}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_acdf0b3638aaaa29315dfe1a7ff9cce35}
+
+
+A floating point property. Percent of the Exposure\+Time at a certain knee-\/point of multi-\/slope exposure. 
+
+Percent of the Exposure\+Time at a certain knee-\/point of multi-\/slope exposure. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_acb90c1e8ccca748148f9542b91eb3d3f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Intensity\+Limit@{multi\+Slope\+Intensity\+Limit}}
+\index{multi\+Slope\+Intensity\+Limit@{multi\+Slope\+Intensity\+Limit}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Intensity\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Intensity\+Limit}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_acb90c1e8ccca748148f9542b91eb3d3f}
+
+
+A floating point property. The relative intensity which divides intensities influenced by different exposure slopes. 
+
+The relative intensity which divides intensities influenced by different exposure slopes. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_afc16354b0a7a9477a9dc50b3c0a50275}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Knee\+Point\+Count@{multi\+Slope\+Knee\+Point\+Count}}
+\index{multi\+Slope\+Knee\+Point\+Count@{multi\+Slope\+Knee\+Point\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Knee\+Point\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Knee\+Point\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_afc16354b0a7a9477a9dc50b3c0a50275}
+
+
+An integer property. The number of knee-\/points as well as the number of additional exposure slopes used for multi-\/slope exposure. 
+
+The number of knee-\/points as well as the number of additional exposure slopes used for multi-\/slope exposure. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ab127490b47734b9979d17ffec2c803e0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Knee\+Point\+Selector@{multi\+Slope\+Knee\+Point\+Selector}}
+\index{multi\+Slope\+Knee\+Point\+Selector@{multi\+Slope\+Knee\+Point\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Knee\+Point\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Knee\+Point\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ab127490b47734b9979d17ffec2c803e0}
+
+
+An integer property. Selects the parameters for controlling an additional slope in multi-\/slope exposure. 
+
+Selects the parameters for controlling an additional slope in multi-\/slope exposure. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a4b9b632e3144d6dd2976c55e87528a53}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Mode@{multi\+Slope\+Mode}}
+\index{multi\+Slope\+Mode@{multi\+Slope\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a4b9b632e3144d6dd2976c55e87528a53}
+
+
+An enumerated integer property. Controls multi-\/slope exposure state. 
+
+Controls multi-\/slope exposure state.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Off
+\item {\bfseries Manual} (Display string\+: 'Manual')\+: Manual
+\item {\bfseries Preset\+Soft} (Display string\+: 'Preset Soft')\+: Preset Soft
+\item {\bfseries Preset\+Medium} (Display string\+: 'Preset Medium')\+: Preset Medium
+\item {\bfseries Preset\+Aggressive} (Display string\+: 'Preset Aggressive')\+: Preset Aggressive
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6e6415c2be2fd0e16314ed053bdae6bd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!multi\+Slope\+Saturation\+Threshold@{multi\+Slope\+Saturation\+Threshold}}
+\index{multi\+Slope\+Saturation\+Threshold@{multi\+Slope\+Saturation\+Threshold}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{multi\+Slope\+Saturation\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::multi\+Slope\+Saturation\+Threshold}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6e6415c2be2fd0e16314ed053bdae6bd}
+
+
+A floating point property. The percentage of the full saturation that is applied at a certain knee-\/point of a multi-\/slope exposure. 
+
+The percentage of the full saturation that is applied at a certain knee-\/point of a multi-\/slope exposure. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a9e010a85b016530779b5eed1a95bfa7f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Acquisition\+Frame\+Rate\+Enable@{mv\+Acquisition\+Frame\+Rate\+Enable}}
+\index{mv\+Acquisition\+Frame\+Rate\+Enable@{mv\+Acquisition\+Frame\+Rate\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Acquisition\+Frame\+Rate\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Acquisition\+Frame\+Rate\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a9e010a85b016530779b5eed1a95bfa7f}
+
+
+An enumerated integer property. Enables the use of the 'Acquisition\+Frame\+Rate' feature. 
+
+Enables the use of the 'Acquisition\+Frame\+Rate' feature.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'mv Acquisition Frame Rate Enable')\+: The acquisition frame rate is set automatically to the limit, calculated according to 'mv\+Acquisition\+Frame\+Rate\+Limit\+Mode' feature.
+\item {\bfseries On} (Display string\+: 'mv Acquisition Frame Rate Enable')\+: The acquisition frame rate is set by the 'Acquisition\+Frame\+Rate' feature.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a746647afd1fec502036cb9f6633f030a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Acquisition\+Frame\+Rate\+Limit\+Mode@{mv\+Acquisition\+Frame\+Rate\+Limit\+Mode}}
+\index{mv\+Acquisition\+Frame\+Rate\+Limit\+Mode@{mv\+Acquisition\+Frame\+Rate\+Limit\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Acquisition\+Frame\+Rate\+Limit\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Acquisition\+Frame\+Rate\+Limit\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a746647afd1fec502036cb9f6633f030a}
+
+
+An enumerated integer property. Controls the calculation of the maximum frame rate. 
+
+Controls the calculation of the maximum frame rate.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Device\+Link\+Throughput} (Display string\+: 'mv Acquisition Frame Rate Limit Mode')\+: Uses the highest possible frame rate depending on bandwidth and sensor settings.
+\item {\bfseries mv\+Device\+Max\+Sensor\+Throughput} (Display string\+: 'mv Acquisition Frame Rate Limit Mode')\+: Maximum frame rate the sensor can provide depending on \hyperlink{struct_a_o_i}{A\+O\+I} and pixel clock. Note\+: Images might be buffered in the cameras memory. This can result in delayed images.
+\item {\bfseries mv\+Legacy} (Display string\+: 'mv Acquisition Frame Rate Limit Mode')\+: Compatibility mode, not recommended.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa56de2ea0f33f1de69f8a3594c57d8c0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed@{mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed}}
+\index{mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed@{mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Acquisition\+Memory\+A\+O\+I\+Parameter\+Changed}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa56de2ea0f33f1de69f8a3594c57d8c0}
+
+
+An integer property. \hyperlink{struct_a_o_i}{A\+O\+I} and/or binning parameter changed after last Acquisition. 
+
+\hyperlink{struct_a_o_i}{A\+O\+I} and/or binning parameter changed after last Acquisition. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6260d5499a91791d8eb9db5cc246c485}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Acquisition\+Memory\+Frame\+Count@{mv\+Acquisition\+Memory\+Frame\+Count}}
+\index{mv\+Acquisition\+Memory\+Frame\+Count@{mv\+Acquisition\+Memory\+Frame\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Acquisition\+Memory\+Frame\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Acquisition\+Memory\+Frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a6260d5499a91791d8eb9db5cc246c485}
+
+
+An integer property. The number of frames currently stored in the frame buffer. 
+
+The number of frames currently stored in the frame buffer. If this value keeps increasing this can indicate a bandwidth/transmission problem. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a364974f28a1daca359f60d451609adc8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Acquisition\+Memory\+Max\+Frame\+Count@{mv\+Acquisition\+Memory\+Max\+Frame\+Count}}
+\index{mv\+Acquisition\+Memory\+Max\+Frame\+Count@{mv\+Acquisition\+Memory\+Max\+Frame\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Acquisition\+Memory\+Max\+Frame\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Acquisition\+Memory\+Max\+Frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a364974f28a1daca359f60d451609adc8}
+
+
+An integer property. Maximum number of frames that can be recorded in the current configuration(deprecated, use the maximum value of 'mv\+Acquisition\+Memory\+Frame\+Count' instead). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000047}{弃用}]Maximum number of frames that can be recorded in the current configuration(deprecated, use the maximum value of 'mv\+Acquisition\+Memory\+Frame\+Count' instead). \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a39dd9c3cc5099fe271ca00fb96faf949}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Acquisition\+Memory\+Mode@{mv\+Acquisition\+Memory\+Mode}}
+\index{mv\+Acquisition\+Memory\+Mode@{mv\+Acquisition\+Memory\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Acquisition\+Memory\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Acquisition\+Memory\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a39dd9c3cc5099fe271ca00fb96faf949}
+
+
+An enumerated integer property. mv\+Record is used to store frames in memory. mv\+Playback transfers stored frames. mv\+Pretrigger stores frames in memory to be transferred after trigger. 
+
+mv\+Record is used to store frames in memory. mv\+Playback transfers stored frames. mv\+Pretrigger stores frames in memory to be transferred after trigger.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Default} (Display string\+: 'mv Acquisition Memory Mode')\+: Default memory mode.
+\item {\bfseries mv\+Record} (Display string\+: 'mv Acquisition Memory Mode')\+: Stores frames in memory.
+\item {\bfseries mv\+Playback} (Display string\+: 'mv Acquisition Memory Mode')\+: Transfers stored frames.
+\item {\bfseries mv\+Pretrigger} (Display string\+: 'mv Acquisition Memory Mode')\+: Stores frames in memory to be transferred after trigger.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a288bcc77a513f89597531c170e1c88b6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Compression\+Kneepoint@{mv\+Compression\+Kneepoint}}
+\index{mv\+Compression\+Kneepoint@{mv\+Compression\+Kneepoint}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Compression\+Kneepoint}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Compression\+Kneepoint}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a288bcc77a513f89597531c170e1c88b6}
+
+
+An integer property. Knee point of 10 to 8 bit compression. 
+
+Knee point of 10 to 8 bit compression. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a3121267e92f554eb04e266b80032ca66}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+A\+O\+I\+Mode@{mv\+Exposure\+Auto\+A\+O\+I\+Mode}}
+\index{mv\+Exposure\+Auto\+A\+O\+I\+Mode@{mv\+Exposure\+Auto\+A\+O\+I\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+A\+O\+I\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+A\+O\+I\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a3121267e92f554eb04e266b80032ca66}
+
+
+An enumerated integer property. Common Auto\+Control \hyperlink{struct_a_o_i}{A\+O\+I} used for Auto Gain Control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). 
+
+Common Auto\+Control \hyperlink{struct_a_o_i}{A\+O\+I} used for Auto Gain Control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B).
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Full} (Display string\+: 'mv Exposure Auto \hyperlink{struct_a_o_i}{A\+O\+I} Mode')
+\item {\bfseries mv\+Center} (Display string\+: 'mv Exposure Auto \hyperlink{struct_a_o_i}{A\+O\+I} Mode')
+\item {\bfseries mv\+User} (Display string\+: 'mv Exposure Auto \hyperlink{struct_a_o_i}{A\+O\+I} Mode')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abfe22d85a47e70a4735bf7c496757f6c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Average\+Grey@{mv\+Exposure\+Auto\+Average\+Grey}}
+\index{mv\+Exposure\+Auto\+Average\+Grey@{mv\+Exposure\+Auto\+Average\+Grey}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Average\+Grey}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Average\+Grey}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abfe22d85a47e70a4735bf7c496757f6c}
+
+
+An integer property. Common desired average grey value (in percent) used for Auto Gain Control(\+A\+G\+C) and Auto Exposure Control(\+A\+E\+C). 
+
+Common desired average grey value (in percent) used for auto gain control(\+A\+G\+C) and auto exposure control (A\+E\+C). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a5e1471f52a0be9d3d97ef955846577b2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Delay\+Images@{mv\+Exposure\+Auto\+Delay\+Images}}
+\index{mv\+Exposure\+Auto\+Delay\+Images@{mv\+Exposure\+Auto\+Delay\+Images}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Delay\+Images}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Delay\+Images}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a5e1471f52a0be9d3d97ef955846577b2}
+
+
+An integer property. The number of frames that the A\+E\+C must skip before updating the exposure register. 
+
+The number of frames that the A\+E\+C must skip before updating the exposure register. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ac5e32fc9dbfc9ca6dae425bfe40aa228}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Height@{mv\+Exposure\+Auto\+Height}}
+\index{mv\+Exposure\+Auto\+Height@{mv\+Exposure\+Auto\+Height}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ac5e32fc9dbfc9ca6dae425bfe40aa228}
+
+
+An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} Height used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). 
+
+Common \hyperlink{struct_a_o_i}{A\+O\+I} Height used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aac9696f4ac67e8d763e65018ba2853e3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Highlight\+A\+O\+I@{mv\+Exposure\+Auto\+Highlight\+A\+O\+I}}
+\index{mv\+Exposure\+Auto\+Highlight\+A\+O\+I@{mv\+Exposure\+Auto\+Highlight\+A\+O\+I}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Highlight\+A\+O\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Highlight\+A\+O\+I}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aac9696f4ac67e8d763e65018ba2853e3}
+
+
+An enumerated integer property. Highlight auto control \hyperlink{struct_a_o_i}{A\+O\+I} to check \hyperlink{struct_a_o_i}{A\+O\+I} settings. Switch off for normal operation. 
+
+Highlight auto control \hyperlink{struct_a_o_i}{A\+O\+I} to check \hyperlink{struct_a_o_i}{A\+O\+I} settings. Switch off for normal operation.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'mv Exposure Auto Highlight \hyperlink{struct_a_o_i}{A\+O\+I}')
+\item {\bfseries On} (Display string\+: 'mv Exposure Auto Highlight \hyperlink{struct_a_o_i}{A\+O\+I}')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a20bae36efd152247f4c1c6766a6a681e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Lower\+Limit@{mv\+Exposure\+Auto\+Lower\+Limit}}
+\index{mv\+Exposure\+Auto\+Lower\+Limit@{mv\+Exposure\+Auto\+Lower\+Limit}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Lower\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Lower\+Limit}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a20bae36efd152247f4c1c6766a6a681e}
+
+
+A floating point property. The lower limit of the exposure time in auto exposure mode. 
+
+The lower limit of the exposure time in auto exposure mode. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ac30d4c1772562361d0ed6a2e5c113aa4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Mode@{mv\+Exposure\+Auto\+Mode}}
+\index{mv\+Exposure\+Auto\+Mode@{mv\+Exposure\+Auto\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ac30d4c1772562361d0ed6a2e5c113aa4}
+
+
+An enumerated integer property. Selects the common auto mode for gain and exposure. 
+
+Selects the common auto mode for gain and exposure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Sensor} (Display string\+: 'mv Exposure Auto Mode')\+: The sensor itself will do the auto control.
+\item {\bfseries mv\+Device} (Display string\+: 'mv Exposure Auto Mode')\+: The device(firmware) will do the auto control.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abe7efb253397a6338ecc8ccdf91d518e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Offset\+X@{mv\+Exposure\+Auto\+Offset\+X}}
+\index{mv\+Exposure\+Auto\+Offset\+X@{mv\+Exposure\+Auto\+Offset\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Offset\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_abe7efb253397a6338ecc8ccdf91d518e}
+
+
+An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} X\+Offset used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). 
+
+Common \hyperlink{struct_a_o_i}{A\+O\+I} X\+Offset used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aed46caaafedd6a8089cd33fe5c5fb7df}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Offset\+Y@{mv\+Exposure\+Auto\+Offset\+Y}}
+\index{mv\+Exposure\+Auto\+Offset\+Y@{mv\+Exposure\+Auto\+Offset\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Offset\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aed46caaafedd6a8089cd33fe5c5fb7df}
+
+
+An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} Y\+Offset used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). 
+
+Common \hyperlink{struct_a_o_i}{A\+O\+I} Y\+Offset used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a20d51c921f1bb1f1f13d012fd80a1968}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Speed@{mv\+Exposure\+Auto\+Speed}}
+\index{mv\+Exposure\+Auto\+Speed@{mv\+Exposure\+Auto\+Speed}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Speed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Speed}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a20d51c921f1bb1f1f13d012fd80a1968}
+
+
+An enumerated integer property. Determines the increment or decrement size of exposure value from frame to frame. 
+
+Determines the increment or decrement size of exposure value from frame to frame.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Slow} (Display string\+: 'mv Exposure Auto Speed')
+\item {\bfseries Medium} (Display string\+: 'mv Exposure Auto Speed')
+\item {\bfseries Fast} (Display string\+: 'mv Exposure Auto Speed')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a48663b8c79f8184cb8c8f18fbf3a0e32}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Upper\+Limit@{mv\+Exposure\+Auto\+Upper\+Limit}}
+\index{mv\+Exposure\+Auto\+Upper\+Limit@{mv\+Exposure\+Auto\+Upper\+Limit}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Upper\+Limit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Upper\+Limit}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a48663b8c79f8184cb8c8f18fbf3a0e32}
+
+
+A floating point property. The upper limit of the exposure time in auto exposure mode. 
+
+The upper limit of the exposure time in auto exposure mode. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a06d1fcc8caea1f2e40d74865c48b39d2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Exposure\+Auto\+Width@{mv\+Exposure\+Auto\+Width}}
+\index{mv\+Exposure\+Auto\+Width@{mv\+Exposure\+Auto\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Exposure\+Auto\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Exposure\+Auto\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a06d1fcc8caea1f2e40d74865c48b39d2}
+
+
+An integer property. Common \hyperlink{struct_a_o_i}{A\+O\+I} Width used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). 
+
+Common \hyperlink{struct_a_o_i}{A\+O\+I} Width used for auto gain control(\+A\+G\+C), Auto Exposure Control(\+A\+E\+C) and Auto White Balance(\+A\+W\+B). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a9e6def5d7d1abf571164b4b154a36a49}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Pretrigger\+Frame\+Count@{mv\+Pretrigger\+Frame\+Count}}
+\index{mv\+Pretrigger\+Frame\+Count@{mv\+Pretrigger\+Frame\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Pretrigger\+Frame\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Pretrigger\+Frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a9e6def5d7d1abf571164b4b154a36a49}
+
+
+An integer property. Number of frames to acquire before the occurrence of an Acquisition\+Start or Acquisition\+Active trigger. 
+
+Number of frames to acquire before the occurrence of an Acquisition\+Start or Acquisition\+Active trigger. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0da1e66aa1cd3ee5ae9ec1751950040a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Resulting\+Frame\+Rate@{mv\+Resulting\+Frame\+Rate}}
+\index{mv\+Resulting\+Frame\+Rate@{mv\+Resulting\+Frame\+Rate}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Resulting\+Frame\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Resulting\+Frame\+Rate}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0da1e66aa1cd3ee5ae9ec1751950040a}
+
+
+A floating point property. Shows the resulting frame rate. 
+
+Shows the resulting frame rate. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a985987bd6fa29ef835556c49a20e133d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Sensor\+Register@{mv\+Sensor\+Register}}
+\index{mv\+Sensor\+Register@{mv\+Sensor\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Sensor\+Register}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Sensor\+Register}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a985987bd6fa29ef835556c49a20e133d}
+
+
+An integer property. Number of sensor register to access. 
+
+Number of sensor register to access. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a8ef065f9dd3a514f02f32b5c146919b4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Sensor\+Register\+Value@{mv\+Sensor\+Register\+Value}}
+\index{mv\+Sensor\+Register\+Value@{mv\+Sensor\+Register\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Sensor\+Register\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Sensor\+Register\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a8ef065f9dd3a514f02f32b5c146919b4}
+
+
+An integer property. Value of sensor register. 
+
+Value of sensor register. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a1899fb978fe8419e74499c8cb58e1ca8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Shutter\+Mode@{mv\+Shutter\+Mode}}
+\index{mv\+Shutter\+Mode@{mv\+Shutter\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Shutter\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Shutter\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a1899fb978fe8419e74499c8cb58e1ca8}
+
+
+An enumerated integer property. Selects the shutter mode of the sensor. 
+
+Selects the shutter mode of the sensor.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Rolling\+Shutter} (Display string\+: 'mv Shutter Mode')
+\item {\bfseries mv\+Global\+Reset} (Display string\+: 'mv Shutter Mode')
+\item {\bfseries mv\+Global\+Shutter} (Display string\+: 'mv Shutter Mode')
+\item {\bfseries mv\+Global\+Shutter\+Without\+Reset} (Display string\+: 'mv Shutter Mode')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Smart\+Frame\+Recall\+Enable@{mv\+Smart\+Frame\+Recall\+Enable}}
+\index{mv\+Smart\+Frame\+Recall\+Enable@{mv\+Smart\+Frame\+Recall\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Smart\+Frame\+Recall\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smart\+Frame\+Recall\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb86056e3eb76d5c80c4048ac9ba10d5}
+
+
+A boolean property. When active in addition to the processed image data also the unprocessed image is stored inside the devices R\+A\+M. 
+
+When active in addition to the processed image data (e.\+g. after binning, decimation, de-\/\+Bayering, L\+U\+T etc. applied inside the device) also the unprocessed image is stored inside the devices R\+A\+M allowing to request the transmission of these images by an application as well. This will effectively reduce the number of images that can be stored inside the frame buffer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_af60f090cba8f031a11e0b9ebbfba0c6f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!mv\+Smear\+Reduction@{mv\+Smear\+Reduction}}
+\index{mv\+Smear\+Reduction@{mv\+Smear\+Reduction}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{mv\+Smear\+Reduction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::mv\+Smear\+Reduction}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_af60f090cba8f031a11e0b9ebbfba0c6f}
+
+
+An enumerated integer property. Smear reduction in triggered and non-\/overlapped mode. 
+
+Smear reduction in triggered and non-\/overlapped mode.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Standard} (Display string\+: 'mv Smear Reduction')\+: Standard smear reduction.
+\item {\bfseries mv\+Medium} (Display string\+: 'mv Smear Reduction')\+: Medium smear reduction.
+\item {\bfseries mv\+Highest} (Display string\+: 'mv Smear Reduction')\+: Highest smear but more power consumption.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa99ab36c7369a029d2a7f05c59c3516b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Activation@{trigger\+Activation}}
+\index{trigger\+Activation@{trigger\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aa99ab36c7369a029d2a7f05c59c3516b}
+
+
+An enumerated integer property. Specifies the activation mode of the trigger. 
+
+Specifies the activation mode of the trigger.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Specifies that the trigger is considered valid on the rising edge of the source signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Specifies that the trigger is considered valid on the falling edge of the source signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Specifies that the trigger is considered valid on the falling or rising edge of the source signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Specifies that the trigger is considered valid as long as the level of the source signal is high.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Specifies that the trigger is considered valid as long as the level of the source signal is low.
+\item {\bfseries mv\+None} (Display string\+: 'Trigger Activation')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0c0123d1c00bac1adba870bc11368080}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Delay@{trigger\+Delay}}
+\index{trigger\+Delay@{trigger\+Delay}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Delay}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Delay}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a0c0123d1c00bac1adba870bc11368080}
+
+
+A floating point property. Specifies the delay in microseconds (us) to apply after the trigger reception before activating it. 
+
+Specifies the delay in microseconds (us) to apply after the trigger reception before activating it. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ad96d0a854c6dcc41256849ea89d706d3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Delay\+Raw@{trigger\+Delay\+Raw}}
+\index{trigger\+Delay\+Raw@{trigger\+Delay\+Raw}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Delay\+Raw}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Delay\+Raw}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ad96d0a854c6dcc41256849ea89d706d3}
+
+
+An integer property. This feature is deprecated. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000045}{弃用}]This feature is deprecated. Trigger\+Delay\+Raw specifies the delay in device-\/specific unit to apply after the trigger reception before effectively activating it. Trigger\+Delay\+Abs must reflect the state of Trigger\+Delay\+Raw when they are both supported. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_afd3efded5da820a4dbe8510bf3e40471}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Divider@{trigger\+Divider}}
+\index{trigger\+Divider@{trigger\+Divider}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Divider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Divider}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_afd3efded5da820a4dbe8510bf3e40471}
+
+
+An integer property. Specifies a division factor for the incoming trigger pulses. 
+
+Specifies a division factor for the incoming trigger pulses. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a42ea8092a767cd62a5b59119d348701b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Mode@{trigger\+Mode}}
+\index{trigger\+Mode@{trigger\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a42ea8092a767cd62a5b59119d348701b}
+
+
+An enumerated integer property. Controls if the selected trigger is active. 
+
+Controls if the selected trigger is active.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the selected trigger.
+\item {\bfseries On} (Display string\+: 'On')\+: Enable the selected trigger.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb5fac0df36681f7800f45f2068707b0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Multiplier@{trigger\+Multiplier}}
+\index{trigger\+Multiplier@{trigger\+Multiplier}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Multiplier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Multiplier}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_aeb5fac0df36681f7800f45f2068707b0}
+
+
+An integer property. Specifies a multiplication factor for the incoming trigger pulses. 
+
+Specifies a multiplication factor for the incoming trigger pulses. It is used generally used in conjunction with Trigger\+Divider to control the ratio of triggers that are accepted. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ad24c28a7ee11b61889ba6371c6023231}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Overlap@{trigger\+Overlap}}
+\index{trigger\+Overlap@{trigger\+Overlap}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Overlap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Overlap}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_ad24c28a7ee11b61889ba6371c6023231}
+
+
+An enumerated integer property. Specifies the type trigger overlap permitted with the previous frame or line. 
+
+Specifies the type trigger overlap permitted with the previous frame or line. This defines when a valid trigger will be accepted (or latched) for a new frame or a new line.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: No trigger overlap is permitted.
+\item {\bfseries Read\+Out} (Display string\+: 'Read Out')\+: Trigger is accepted immediately after the exposure period.
+\item {\bfseries Previous\+Frame} (Display string\+: 'Previous Frame')\+: Trigger is accepted (latched) at any time during the capture of the previous frame.
+\item {\bfseries Previous\+Line} (Display string\+: 'Previous Line')\+: Trigger is accepted (latched) at any time during the capture of the previous line.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a38e4b4d2d7da4b24d3686be94cc0a886}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Selector@{trigger\+Selector}}
+\index{trigger\+Selector@{trigger\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a38e4b4d2d7da4b24d3686be94cc0a886}
+
+
+An enumerated integer property. Selects the type of trigger to configure. 
+
+Selects the type of trigger to configure.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Selects a trigger that starts the Acquisition of one or many frames according to Acquisition\+Mode.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Selects a trigger that ends the Acquisition of one or many frames according to Acquisition\+Mode.
+\item {\bfseries Acquisition\+Active} (Display string\+: 'Acquisition Active')\+: Selects a trigger that controls the duration of the Acquisition of one or many frames. The Acquisition is activated when the trigger signal becomes active and terminated when it goes back to the inactive state.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Selects a trigger starting the capture of one frame.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Selects a trigger ending the capture of one frame (mainly used in linescan mode).
+\item {\bfseries Frame\+Active} (Display string\+: 'Frame Active')\+: Selects a trigger controlling the duration of one frame (mainly used in linescan mode).
+\item {\bfseries Frame\+Burst\+Start} (Display string\+: 'Frame Burst Start')\+: Selects a trigger starting the capture of the bursts of frames in an acquisition. Acquisition\+Burst\+Frame\+Count controls the length of each burst unless a Frame\+Burst\+End trigger is active. The total number of frames captured is also conditioned by Acquisition\+Frame\+Count if Acquisition\+Mode is Multi\+Frame.
+\item {\bfseries Frame\+Burst\+End} (Display string\+: 'Frame Burst End')\+: Selects a trigger ending the capture of the bursts of frames in an acquisition.
+\item {\bfseries Frame\+Burst\+Active} (Display string\+: 'Frame Burst Active')\+: Selects a trigger controlling the duration of the capture of the bursts of frames in an acquisition.
+\item {\bfseries Line\+Start} (Display string\+: 'Line Start')\+: Selects a trigger starting the capture of one Line of a Frame (mainly used in linescan mode).
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Selects a trigger controlling the start of the exposure of one Frame (or Line).
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Selects a trigger controlling the end of the exposure of one Frame (or Line).
+\item {\bfseries Exposure\+Active} (Display string\+: 'Exposure Active')\+: Selects a trigger controlling the duration of the exposure of one frame (or Line).
+\item {\bfseries Multi\+Slope\+Exposure\+Limit1} (Display string\+: 'Multi Slope Exposure Limit 1')\+: Selects a trigger controlling the first duration of a multi-\/slope exposure. Exposure is continued according to the pre-\/defined multi-\/slope settings.
+\item {\bfseries mv\+Timestamp\+Reset} (Display string\+: 'Trigger Selector')
+\item {\bfseries mv\+Loop\+Record\+End} (Display string\+: 'Trigger Selector')
+\item {\bfseries mv\+Frame\+Start\+Sensor2} (Display string\+: 'Trigger Selector')
+\item {\bfseries mv\+Invalid\+Trigger\+Selector} (Display string\+: 'Trigger Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a41d20326d5f933501731f9c9ecbde1f0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Software@{trigger\+Software}}
+\index{trigger\+Software@{trigger\+Software}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Software}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Software}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a41d20326d5f933501731f9c9ecbde1f0}
+
+
+A method object. Generates an internal trigger. 
+
+Generates an internal trigger. Trigger\+Source must be set to Software. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a194c05945e0e60054d7e427c08aba4fe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}!trigger\+Source@{trigger\+Source}}
+\index{trigger\+Source@{trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control}}
+\subsubsection[{trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Acquisition\+Control\+::trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control_a194c05945e0e60054d7e427c08aba4fe}
+
+
+An enumerated integer property. Specifies the internal signal or physical input Line to use as the trigger source. 
+
+Specifies the internal signal or physical input Line to use as the trigger source. The selected trigger must have its Trigger\+Mode set to On.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Software} (Display string\+: 'Software')\+: Specifies that the trigger source will be generated by software using the Trigger\+Software command.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Specifies that the trigger source will be a signal generated by software using the Software\+Signal\+Pulse command.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Specifies that the trigger source will be a signal generated by software using the Software\+Signal\+Pulse command.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Specifies that the trigger source will be a signal generated by software using the Software\+Signal\+Pulse command.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Specifies that the trigger source will be a signal generated by software using the Software\+Signal\+Pulse command.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Specifies which Encoder signal to use as internal source for the trigger.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Specifies which Encoder signal to use as internal source for the trigger.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Specifies which Encoder signal to use as internal source for the trigger.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Specifies which Encoder signal to use as internal source for the trigger.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Specifies which Logic Block signal to use as internal source for the trigger.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Specifies which Logic Block signal to use as internal source for the trigger.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Specifies which Logic Block signal to use as internal source for the trigger.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Specifies which Logic Block signal to use as internal source for the trigger.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Specifies which Link Trigger to use as source for the trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Specifies which Link Trigger to use as source for the trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Specifies which Link Trigger to use as source for the trigger (received from the transport layer).
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Specifies which Link Trigger to use as source for the trigger (received from the transport layer).
+\item {\bfseries C\+C1} (Display string\+: 'C\+C 1')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C2} (Display string\+: 'C\+C 2')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C3} (Display string\+: 'C\+C 3')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C4} (Display string\+: 'C\+C 4')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C\#5\#} (Display string\+: 'C\+C \#5\#')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries Line3} (Display string\+: 'Line 3')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line4} (Display string\+: 'Line 4')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line5} (Display string\+: 'Line 5')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line6} (Display string\+: 'Line 6')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line7} (Display string\+: 'Line 7')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line8} (Display string\+: 'Line 8')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line9} (Display string\+: 'Line 9')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line10} (Display string\+: 'Line 10')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line11} (Display string\+: 'Line 11')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line12} (Display string\+: 'Line 12')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line13} (Display string\+: 'Line 13')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line14} (Display string\+: 'Line 14')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Line15} (Display string\+: 'Line 15')\+: Specifies which physical line (or pin) and associated I/\+O control block to use as external source for the trigger signal.
+\item {\bfseries Timer3\+Start} (Display string\+: 'Timer 3 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer4\+Start} (Display string\+: 'Timer 4 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer5\+Start} (Display string\+: 'Timer 5 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer6\+Start} (Display string\+: 'Timer 6 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer7\+Start} (Display string\+: 'Timer 7 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer8\+Start} (Display string\+: 'Timer 8 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer9\+Start} (Display string\+: 'Timer 9 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer10\+Start} (Display string\+: 'Timer 10 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer11\+Start} (Display string\+: 'Timer 11 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer12\+Start} (Display string\+: 'Timer 12 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer13\+Start} (Display string\+: 'Timer 13 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer14\+Start} (Display string\+: 'Timer 14 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer15\+Start} (Display string\+: 'Timer 15 Start')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer16\+Start} (Display string\+: 'Trigger Source')
+\item {\bfseries Timer3\+End} (Display string\+: 'Timer 3 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer4\+End} (Display string\+: 'Timer 4 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer5\+End} (Display string\+: 'Timer 5 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer6\+End} (Display string\+: 'Timer 6 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer7\+End} (Display string\+: 'Timer 7 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer8\+End} (Display string\+: 'Timer 8 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer9\+End} (Display string\+: 'Timer 9 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer10\+End} (Display string\+: 'Timer 10 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer11\+End} (Display string\+: 'Timer 11 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer12\+End} (Display string\+: 'Timer 12 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer13\+End} (Display string\+: 'Timer 13 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer14\+End} (Display string\+: 'Timer 14 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer15\+End} (Display string\+: 'Timer 15 End')\+: Specifies which Timer signal to use as internal source for the trigger.
+\item {\bfseries Timer16\+End} (Display string\+: 'Trigger Source')
+\item {\bfseries Counter3\+Start} (Display string\+: 'Counter 3 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter4\+Start} (Display string\+: 'Counter 4 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter5\+Start} (Display string\+: 'Counter 5 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter6\+Start} (Display string\+: 'Counter 6 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter7\+Start} (Display string\+: 'Counter 7 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter8\+Start} (Display string\+: 'Counter 8 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter9\+Start} (Display string\+: 'Counter 9 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter10\+Start} (Display string\+: 'Counter 10 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter11\+Start} (Display string\+: 'Counter 11 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter12\+Start} (Display string\+: 'Counter 12 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter13\+Start} (Display string\+: 'Counter 13 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter14\+Start} (Display string\+: 'Counter 14 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter15\+Start} (Display string\+: 'Counter 15 Start')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter16\+Start} (Display string\+: 'Trigger Source')
+\item {\bfseries Counter3\+End} (Display string\+: 'Counter 3 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter4\+End} (Display string\+: 'Counter 4 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter5\+End} (Display string\+: 'Counter 5 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter6\+End} (Display string\+: 'Counter 6 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter7\+End} (Display string\+: 'Counter 7 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter8\+End} (Display string\+: 'Counter 8 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter9\+End} (Display string\+: 'Counter 9 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter10\+End} (Display string\+: 'Counter 10 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter11\+End} (Display string\+: 'Counter 11 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter12\+End} (Display string\+: 'Counter 12 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter13\+End} (Display string\+: 'Counter 13 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter14\+End} (Display string\+: 'Counter 14 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter15\+End} (Display string\+: 'Counter 15 End')\+: Specifies which of the Counter signal to use as internal source for the trigger.
+\item {\bfseries Counter16\+End} (Display string\+: 'Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R1\+Output} (Display string\+: 'Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R2\+Output} (Display string\+: 'Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R3\+Output} (Display string\+: 'Trigger Source')
+\item {\bfseries mv\+Logic\+Gate\+O\+R4\+Output} (Display string\+: 'Trigger Source')
+\item {\bfseries User\+Output3} (Display string\+: 'User Output 3')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output4} (Display string\+: 'User Output 4')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output5} (Display string\+: 'User Output 5')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output6} (Display string\+: 'User Output 6')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output7} (Display string\+: 'User Output 7')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output8} (Display string\+: 'User Output 8')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output9} (Display string\+: 'User Output 9')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output10} (Display string\+: 'User Output 10')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output11} (Display string\+: 'User Output 11')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output12} (Display string\+: 'User Output 12')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output13} (Display string\+: 'User Output 13')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output14} (Display string\+: 'User Output 14')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output15} (Display string\+: 'User Output 15')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Action3} (Display string\+: 'Action 3')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action4} (Display string\+: 'Action 4')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action5} (Display string\+: 'Action 5')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action6} (Display string\+: 'Action 6')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action7} (Display string\+: 'Action 7')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action8} (Display string\+: 'Action 8')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action9} (Display string\+: 'Action 9')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action10} (Display string\+: 'Action 10')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action11} (Display string\+: 'Action 11')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action12} (Display string\+: 'Action 12')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action13} (Display string\+: 'Action 13')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action14} (Display string\+: 'Action 14')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action15} (Display string\+: 'Action 15')\+: Specifies which Action command to use as internal source for the trigger.
+\item {\bfseries Action16} (Display string\+: 'Trigger Source')
+\item {\bfseries C\+C5} (Display string\+: 'C\+C 5')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C6} (Display string\+: 'C\+C 6')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C7} (Display string\+: 'C\+C 7')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C8} (Display string\+: 'C\+C 8')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C9} (Display string\+: 'C\+C 9')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C10} (Display string\+: 'C\+C 10')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C11} (Display string\+: 'C\+C 11')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C12} (Display string\+: 'C\+C 12')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C13} (Display string\+: 'C\+C 13')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C14} (Display string\+: 'C\+C 14')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C15} (Display string\+: 'C\+C 15')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C16} (Display string\+: 'Trigger Source')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,76 @@
+\hypertarget{class_prop_view_callback}{\section{Prop\+View\+Callback类 参考}
+\label{class_prop_view_callback}\index{Prop\+View\+Callback@{Prop\+View\+Callback}}
+}
+
+
+类 Prop\+View\+Callback 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_prop_view_callback__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Prop\+View\+Callback 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_prop_view_callback__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_prop_view_callback_a56171c49a0ad437796917cccfd147f00}{{\bfseries Prop\+View\+Callback} (void $\ast$p\+User\+Data=0)}\label{class_prop_view_callback_a56171c49a0ad437796917cccfd147f00}
+
+\item 
+\hypertarget{class_prop_view_callback_a0f4f98c978049b4ac7137d25e4660b9d}{void {\bfseries attach\+Application} (\hyperlink{class_prop_view_frame}{Prop\+View\+Frame} $\ast$p\+App)}\label{class_prop_view_callback_a0f4f98c978049b4ac7137d25e4660b9d}
+
+\item 
+virtual void \hyperlink{class_prop_view_callback_a1e8b3138bb1074e64b86715f269e59c1}{execute} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component} \&c, void $\ast$p\+User\+Data)
+\begin{DoxyCompactList}\small\item\em The callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\hypertarget{class_prop_view_callback_a1e8b3138bb1074e64b86715f269e59c1}{\index{Prop\+View\+Callback@{Prop\+View\+Callback}!execute@{execute}}
+\index{execute@{execute}!Prop\+View\+Callback@{Prop\+View\+Callback}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}void Prop\+View\+Callback\+::execute (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component} \&}]{, }
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_prop_view_callback_a1e8b3138bb1074e64b86715f269e59c1}
+
+
+The callback function. 
+
+Re-\/implement this function in a derived class in order to get the desired behaviour.
+
+\begin{DoxyNote}{注解}
+Please note that this function might be executed from {\bfseries A\+N\+Y} thread context, which is most likely not the same as used by the application thus appropriate mechanisms to ensure correct execution must be implemented by an application(e.\+g. G\+U\+I applications might send an event to the main thread instead of directly accessing G\+U\+I elements). 
+\end{DoxyNote}
+
+
+重载 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a043e5e1faaa00a954dcb1eb9b765988d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback} .
+
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_prop_view_callback_a1e8b3138bb1074e64b86715f269e59c1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Prop\+View\+Callback.\+h\item 
+apps/mv\+Prop\+View/Prop\+View\+Callback.\+cpp\end{DoxyCompactItemize}

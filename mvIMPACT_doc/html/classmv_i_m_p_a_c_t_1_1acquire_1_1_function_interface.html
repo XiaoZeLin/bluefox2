@@ -1,0 +1,1432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::FunctionInterface类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::FunctionInterface类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>The function interface to devices supported by this interface.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aeb3e2612fd93d61ac176da74f235a0eb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#aeb3e2612fd93d61ac176da74f235a0eb">FunctionInterface</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory.html">RequestFactory</a> *pRequestFactory=0)</td></tr>
+<tr class="memdesc:aeb3e2612fd93d61ac176da74f235a0eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new function interface for the device pointed to by <em>pDev</em>.  <a href="#aeb3e2612fd93d61ac176da74f235a0eb">更多...</a><br /></td></tr>
+<tr class="separator:aeb3e2612fd93d61ac176da74f235a0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a875c9c5693422ca7b7a3d284b029134e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a875c9c5693422ca7b7a3d284b029134e">FunctionInterface</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">FunctionInterface</a> &amp;src)</td></tr>
+<tr class="memdesc:a875c9c5693422ca7b7a3d284b029134e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> from and existing one.  <a href="#a875c9c5693422ca7b7a3d284b029134e">更多...</a><br /></td></tr>
+<tr class="separator:a875c9c5693422ca7b7a3d284b029134e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5050198e319bb23b3f4db71dbddf8fb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5050198e319bb23b3f4db71dbddf8fb"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ad5050198e319bb23b3f4db71dbddf8fb">~FunctionInterface</a> (void)</td></tr>
+<tr class="memdesc:ad5050198e319bb23b3f4db71dbddf8fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:ad5050198e319bb23b3f4db71dbddf8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697ea6ae2fce0f864fff73aa8e0fc056"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a697ea6ae2fce0f864fff73aa8e0fc056"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">FunctionInterface</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a697ea6ae2fce0f864fff73aa8e0fc056">operator=</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">FunctionInterface</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a697ea6ae2fce0f864fff73aa8e0fc056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows assignments of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> objects. <br /></td></tr>
+<tr class="separator:a697ea6ae2fce0f864fff73aa8e0fc056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91750ec88416ca6557b1bbb10ebc5039"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a91750ec88416ca6557b1bbb10ebc5039">acquisitionStart</a> (void) const </td></tr>
+<tr class="memdesc:a91750ec88416ca6557b1bbb10ebc5039"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually starts the acquisition engine of this device driver instance.  <a href="#a91750ec88416ca6557b1bbb10ebc5039">更多...</a><br /></td></tr>
+<tr class="separator:a91750ec88416ca6557b1bbb10ebc5039"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab52b63727aa33cb4cc2bdd0856c0f237"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab52b63727aa33cb4cc2bdd0856c0f237">acquisitionStop</a> (void) const </td></tr>
+<tr class="memdesc:ab52b63727aa33cb4cc2bdd0856c0f237"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manually stops the acquisition engine of this device driver instance.  <a href="#ab52b63727aa33cb4cc2bdd0856c0f237">更多...</a><br /></td></tr>
+<tr class="separator:ab52b63727aa33cb4cc2bdd0856c0f237"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64b15537a09e6bb887075b15cba2c90b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a64b15537a09e6bb887075b15cba2c90b">createImageRequestControl</a> (const std::string &amp;name, const std::string &amp;parent=&quot;Base&quot;, ComponentList *pNewRequestControl=0)</td></tr>
+<tr class="memdesc:a64b15537a09e6bb887075b15cba2c90b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> object.  <a href="#a64b15537a09e6bb887075b15cba2c90b">更多...</a><br /></td></tr>
+<tr class="separator:a64b15537a09e6bb887075b15cba2c90b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17e85331ed0965a52cff8b62279ef40c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c">createSetting</a> (const std::string &amp;name, const std::string &amp;parent=&quot;Base&quot;, ComponentList *pNewSetting=0)</td></tr>
+<tr class="memdesc:a17e85331ed0965a52cff8b62279ef40c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a new setting.  <a href="#a17e85331ed0965a52cff8b62279ef40c">更多...</a><br /></td></tr>
+<tr class="separator:a17e85331ed0965a52cff8b62279ef40c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a272042e5f2ac48dbce329b736e576aad"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad">getAvailableSettings</a> (void) const </td></tr>
+<tr class="memdesc:a272042e5f2ac48dbce329b736e576aad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of the settings available for this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>.  <a href="#a272042e5f2ac48dbce329b736e576aad">更多...</a><br /></td></tr>
+<tr class="separator:a272042e5f2ac48dbce329b736e576aad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9a808de6c96158960cbdcc7dcf7734"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; std::string &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a5e9a808de6c96158960cbdcc7dcf7734">getAvailableImageRequestControls</a> (void) const </td></tr>
+<tr class="memdesc:a5e9a808de6c96158960cbdcc7dcf7734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the names of the image request controls available for this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>.  <a href="#a5e9a808de6c96158960cbdcc7dcf7734">更多...</a><br /></td></tr>
+<tr class="separator:a5e9a808de6c96158960cbdcc7dcf7734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea62dee2bda1b47c24821f9121c5505"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#afea62dee2bda1b47c24821f9121c5505">getRequest</a> (int nr) const </td></tr>
+<tr class="memdesc:afea62dee2bda1b47c24821f9121c5505"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to the desired <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>.  <a href="#afea62dee2bda1b47c24821f9121c5505">更多...</a><br /></td></tr>
+<tr class="separator:afea62dee2bda1b47c24821f9121c5505"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa34c97fc5e13bd6c5e4bd0f81d614fa2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html">ComponentList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#aa34c97fc5e13bd6c5e4bd0f81d614fa2">getSetting</a> (const std::string &amp;name) const </td></tr>
+<tr class="memdesc:aa34c97fc5e13bd6c5e4bd0f81d614fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> object to a setting with a specified name.  <a href="#aa34c97fc5e13bd6c5e4bd0f81d614fa2">更多...</a><br /></td></tr>
+<tr class="separator:aa34c97fc5e13bd6c5e4bd0f81d614fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05594ac5b54679152d27ac0e73b3908e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e">imageRequestConfigure</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> *pRequest) const </td></tr>
+<tr class="memdesc:a05594ac5b54679152d27ac0e73b3908e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to set a request into configuration mode.  <a href="#a05594ac5b54679152d27ac0e73b3908e">更多...</a><br /></td></tr>
+<tr class="separator:a05594ac5b54679152d27ac0e73b3908e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e608625f2db03327c3fe9964967d0bc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a7e608625f2db03327c3fe9964967d0bc">imageRequestResultQueueElementCount</a> (int queueNr=0) const </td></tr>
+<tr class="memdesc:a7e608625f2db03327c3fe9964967d0bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects in the result queue .  <a href="#a7e608625f2db03327c3fe9964967d0bc">更多...</a><br /></td></tr>
+<tr class="separator:a7e608625f2db03327c3fe9964967d0bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a234b2c6e31f3e83629501da47095c54f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f">imageRequestReset</a> (int requestCtrlNr, int mode) const </td></tr>
+<tr class="memdesc:a234b2c6e31f3e83629501da47095c54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes all requests currently queued for the specified <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b>.  <a href="#a234b2c6e31f3e83629501da47095c54f">更多...</a><br /></td></tr>
+<tr class="separator:a234b2c6e31f3e83629501da47095c54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59571120b5e81c3af596ea5da5dc63ba"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba">imageRequestSingle</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html">ImageRequestControl</a> *pImageRequestControl=0, int *pRequestUsed=0) const </td></tr>
+<tr class="memdesc:a59571120b5e81c3af596ea5da5dc63ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends an image request to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> driver.  <a href="#a59571120b5e81c3af596ea5da5dc63ba">更多...</a><br /></td></tr>
+<tr class="separator:a59571120b5e81c3af596ea5da5dc63ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a378a338217d5a681e880a0d9395f1a62"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62">imageRequestUnlock</a> (int nr) const </td></tr>
+<tr class="memdesc:a378a338217d5a681e880a0d9395f1a62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the request for the driver again.  <a href="#a378a338217d5a681e880a0d9395f1a62">更多...</a><br /></td></tr>
+<tr class="separator:a378a338217d5a681e880a0d9395f1a62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cefdfda8e8940736ae9a4c97b6de8c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9">imageRequestWaitFor</a> (int timeout_ms, int queueNr=0) const </td></tr>
+<tr class="memdesc:a4cefdfda8e8940736ae9a4c97b6de8c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Waits for an image request to become ready.  <a href="#a4cefdfda8e8940736ae9a4c97b6de8c9">更多...</a><br /></td></tr>
+<tr class="separator:a4cefdfda8e8940736ae9a4c97b6de8c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45d71bedd05998dd9839e1fddc219d5a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a45d71bedd05998dd9839e1fddc219d5a">getCurrentCaptureBufferLayout</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html">ImageRequestControl</a> &amp;imageRequestControl, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> **ppRequest=0, int *pAlignment=0) const </td></tr>
+<tr class="memdesc:a45d71bedd05998dd9839e1fddc219d5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the current capture buffer requirements.  <a href="#a45d71bedd05998dd9839e1fddc219d5a">更多...</a><br /></td></tr>
+<tr class="separator:a45d71bedd05998dd9839e1fddc219d5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7b571a1f0d1cbaebfb7d117799edcd0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ae7b571a1f0d1cbaebfb7d117799edcd0">getCurrentCaptureBufferLayout</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html">ImageRequestControl</a> &amp;imageRequestControl, int &amp;size, int &amp;alignment) const </td></tr>
+<tr class="memdesc:ae7b571a1f0d1cbaebfb7d117799edcd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns information about the current capture buffer requirements.  <a href="#ae7b571a1f0d1cbaebfb7d117799edcd0">更多...</a><br /></td></tr>
+<tr class="separator:ae7b571a1f0d1cbaebfb7d117799edcd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44e5c0d39914e25243bc61c18cc5d954"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a44e5c0d39914e25243bc61c18cc5d954">isRequestNrValid</a> (int nr) const </td></tr>
+<tr class="memdesc:a44e5c0d39914e25243bc61c18cc5d954"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if <em>nr</em> specifies a valid <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>.  <a href="#a44e5c0d39914e25243bc61c18cc5d954">更多...</a><br /></td></tr>
+<tr class="separator:a44e5c0d39914e25243bc61c18cc5d954"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae494724c1e29e38f0e83e8a5f5793772"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ae494724c1e29e38f0e83e8a5f5793772">MVIMPACT_DEPRECATED_CPP</a> (bool isRequestOK(const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> *p) const )</td></tr>
+<tr class="memdesc:ae494724c1e29e38f0e83e8a5f5793772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a request has been processed successfully(<b>deprecated</b>).  <a href="#ae494724c1e29e38f0e83e8a5f5793772">更多...</a><br /></td></tr>
+<tr class="separator:ae494724c1e29e38f0e83e8a5f5793772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab670f49c3a55f7e90d52935a9194bdb0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab670f49c3a55f7e90d52935a9194bdb0">loadSetting</a> (const std::string &amp;name, <a class="el" href="group___common_interface.html#ga9390ccf3b2ebe68eee998798d59dc823">TStorageFlag</a> storageFlags=<a class="el" href="group___common_interface.html#gga9390ccf3b2ebe68eee998798d59dc823a7558412f9b613d098c692dbd1dab68b2">sfNative</a>, <a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a> scope=<a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a54b8661877c9fef76d20cc2b83722c60">sGlobal</a>) const </td></tr>
+<tr class="memdesc:ab670f49c3a55f7e90d52935a9194bdb0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a previously stored setting.  <a href="#ab670f49c3a55f7e90d52935a9194bdb0">更多...</a><br /></td></tr>
+<tr class="separator:ab670f49c3a55f7e90d52935a9194bdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a113132465f900b0d60b44ecc71640270"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a113132465f900b0d60b44ecc71640270">loadSettingFromDefault</a> (<a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a> scope=<a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79">sUser</a>) const </td></tr>
+<tr class="memdesc:a113132465f900b0d60b44ecc71640270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads the default settings.  <a href="#a113132465f900b0d60b44ecc71640270">更多...</a><br /></td></tr>
+<tr class="separator:a113132465f900b0d60b44ecc71640270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af013eddce4d0a33e580079969d1ce3c0"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#af013eddce4d0a33e580079969d1ce3c0">requestCount</a> (void) const </td></tr>
+<tr class="memdesc:af013eddce4d0a33e580079969d1ce3c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available request objects.  <a href="#af013eddce4d0a33e580079969d1ce3c0">更多...</a><br /></td></tr>
+<tr class="separator:af013eddce4d0a33e580079969d1ce3c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af58882e7db1d92551f83ca39f4d6516d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#af58882e7db1d92551f83ca39f4d6516d">saveSetting</a> (const std::string &amp;name, <a class="el" href="group___common_interface.html#ga9390ccf3b2ebe68eee998798d59dc823">TStorageFlag</a> storageFlags=<a class="el" href="group___common_interface.html#gga9390ccf3b2ebe68eee998798d59dc823a7558412f9b613d098c692dbd1dab68b2">sfNative</a>, <a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a> scope=<a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a54b8661877c9fef76d20cc2b83722c60">sGlobal</a>) const </td></tr>
+<tr class="memdesc:af58882e7db1d92551f83ca39f4d6516d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the current settings.  <a href="#af58882e7db1d92551f83ca39f4d6516d">更多...</a><br /></td></tr>
+<tr class="separator:af58882e7db1d92551f83ca39f4d6516d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68667a298b96ed10a0d8cecebbd9b9a6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a68667a298b96ed10a0d8cecebbd9b9a6">saveSettingToDefault</a> (<a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a> scope=<a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79">sUser</a>) const </td></tr>
+<tr class="memdesc:a68667a298b96ed10a0d8cecebbd9b9a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the current settings under a default location.  <a href="#a68667a298b96ed10a0d8cecebbd9b9a6">更多...</a><br /></td></tr>
+<tr class="separator:a68667a298b96ed10a0d8cecebbd9b9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0f9f7f436a40980ce6d346ecc0e3030"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ae0f9f7f436a40980ce6d346ecc0e3030">MVIMPACT_DEPRECATED_CPP</a> (int saveSystemToDefault(<a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a> scope=<a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79">sUser</a>) const )</td></tr>
+<tr class="memdesc:ae0f9f7f436a40980ce6d346ecc0e3030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores the current system settings under a default location (<b>deprecated</b>).  <a href="#ae0f9f7f436a40980ce6d346ecc0e3030">更多...</a><br /></td></tr>
+<tr class="separator:ae0f9f7f436a40980ce6d346ecc0e3030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>The function interface to devices supported by this interface. </p>
+<p>This class contains all the basic functions needed when working with a device. There are not too many functions as most data will be represented by 'properties' in other classes of this module, keeping the set of functions to remember rather small. To construct a new function interface, a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object must be passed to the constructor of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b>. In order to work with the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> object the device needs to be initialized, so if the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object pointed to by <em>pDev</em> in the constructors parameter list hasn't been opened already the constructor will try to do that. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aeb3e2612fd93d61ac176da74f235a0eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::FunctionInterface::FunctionInterface </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory.html">RequestFactory</a> *&#160;</td>
+          <td class="paramname"><em>pRequestFactory</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new function interface for the device pointed to by <em>pDev</em>. </p>
+<p>In order to work with the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> object the device needs to be initialized, so if the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object pointed to by <em>pDev</em> in the constructors parameter list hasn't been opened already the constructor will try to do that. Thus internally a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">mvIMPACT::acquire::Device::open</a></b> might be preformed with all consequences following from this call.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. ">Device::open</a></b> </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRequestFactory</td><td>A pointer to a request factory. By supplying a custom request factory the user can control the type of request objects that will be created by the function interface. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.56 </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aeb3e2612fd93d61ac176da74f235a0eb_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a1c8ba8de5814f1034487245ae57840f9" title="Returns the current initialisation status in this process. " alt="" coords="463,5,612,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#adf4cb4c232b202a51c7161caf9b36165" title="Opens a device. " alt="" coords="463,70,612,111"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="240,332,403,388"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html#af77f54da12e74ce5100afbb8cd8b12c7" title="Assign a new search base to the locator. " alt="" coords="235,121,408,177"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="240,252,403,308"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="456,252,619,308"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="667,129,885,170"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="945,99,1095,141"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="933,217,1107,258"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1155,180,1383,236"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1432,187,1656,229"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a826a7861a74496152b8b56d917ae1dbe" title="A unique identifier for the functionality offered by this device. " alt="" coords="463,187,612,229"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="463,331,612,373"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="692,259,860,301"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a875c9c5693422ca7b7a3d284b029134e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::FunctionInterface::FunctionInterface </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">FunctionInterface</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> from and existing one. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>A constant reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> object, this object shall be created from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a91750ec88416ca6557b1bbb10ebc5039"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::acquisitionStart </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Manually starts the acquisition engine of this device driver instance. </p>
+<p>Calling this function will manually start this device driver's acquisition engine. This will only have an effect on the overall behaviour if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5cdb4615de973bbf1c24f2fd5a3d1b5" title="An enumerated integer property defining the start/stop behaviour during acquisition of this driver in...">mvIMPACT::acquire::Device::acquisitionStartStopBehaviour</a></b> is set to <b>mvIMPACT::acquire::assbUser</b>.</p>
+<p>If supported by the device driver, starting and stopping the acquisition engine manually can sometimes help to overcome capture queue underruns or certain restrictions in the underlying device driver technology.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab52b63727aa33cb4cc2bdd0856c0f237" title="Manually stops the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStop</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.11</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li><b>mvIMPACT::acquire::DMR_FEATURE_NOT_AVAILABLE</b> if this device/driver combination does not support manual control over the acquisition engine. This will also happen if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5cdb4615de973bbf1c24f2fd5a3d1b5" title="An enumerated integer property defining the start/stop behaviour during acquisition of this driver in...">mvIMPACT::acquire::Device::acquisitionStartStopBehaviour</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::assbUser</b>.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab52b63727aa33cb4cc2bdd0856c0f237"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::acquisitionStop </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Manually stops the acquisition engine of this device driver instance. </p>
+<p>Calling this function will manually stop this device drivers acquisition engine. This will only have effect on the overall behaviour, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5cdb4615de973bbf1c24f2fd5a3d1b5" title="An enumerated integer property defining the start/stop behaviour during acquisition of this driver in...">mvIMPACT::acquire::Device::acquisitionStartStopBehaviour</a></b> is set to <b>mvIMPACT::acquire::assbUser</b>.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a91750ec88416ca6557b1bbb10ebc5039" title="Manually starts the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStart</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.11</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li><b>mvIMPACT::acquire::DMR_FEATURE_NOT_AVAILABLE</b> if this device/driver combination does not support manual control over the acquisition engine. This will also happen if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5cdb4615de973bbf1c24f2fd5a3d1b5" title="An enumerated integer property defining the start/stop behaviour during acquisition of this driver in...">mvIMPACT::acquire::Device::acquisitionStartStopBehaviour</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::assbUser</b>.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a64b15537a09e6bb887075b15cba2c90b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::createImageRequestControl </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>&quot;Base&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html">ComponentList</a> *&#160;</td>
+          <td class="paramname"><em>pNewRequestControl</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> object. </p>
+<p>This function creates a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> based on an existing one. New <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> instances can only be derived from <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> instances that already exist. When the driver has been initialized there will at least be one base <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> called 'Base', which acts as the base for all other request controls.</p>
+<p>All <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> constructed by the application must be derived either from this base or any of its children using this function.</p>
+<p>When this function succeeds, the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> constructor can be called with the <em>name</em> parameter passed to this function to get access to this newly registered <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>See all comments made under <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> for understanding the relationship between base and derived <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> objects. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>The name of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> the new object shall be derived from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pNewRequestControl</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> object that will receive the ID of the newly created request control. This parameter can be 0 if the application is not interested in that parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a17e85331ed0965a52cff8b62279ef40c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::createSetting </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>&quot;Base&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html">ComponentList</a> *&#160;</td>
+          <td class="paramname"><em>pNewSetting</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a new setting. </p>
+<p>This function creates a new setting base on an existing one. New settings can only be derived from settings that already exist. When the driver has been initialized there will at least be one base setting called 'Base', which acts as the base for all other settings.</p>
+<p>When a new setting is created it derives all the properties from the parent setting. That means initially the new setting will contain the very same data as the parent setting. As long as a component hasn't been modified in the new setting it will depend on the parent settings data. That means if e.g. a property in the parent list is modified, the newly created setting will also benefit from the updated value.</p>
+<p>To release a certain component from this dependency it must be assigned a new value. The function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae5ea06015da01ed640f4a357d90326f9" title="Checks if this component is currently referencing the default for this component. ...">mvIMPACT::acquire::Component::isDefault</a></b> will return false afterwards indicating that the component no longer depends on the parent.</p>
+<p>To restore this parent &lt;-&gt; child dependency the user can call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aa13d62964b8282fd66f6d4fae48f85b2" title="Restores the default for the referenced component. ">mvIMPACT::acquire::Component::restoreDefault</a></b>. Afterwards settings applied to the parent component will also be visible in the child component again.</p>
+<p>When a new setting has been created successfully the name used to create the setting can be passed to any of the constructors of the setting related classes (<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b>, ...) to access the new components. </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the setting to be created. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">parent</td><td>The name of the setting to derive the new setting from. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pNewSetting</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> object that will receive the ID of the newly created setting. This parameter can be 0 if the application is not interested in that parameter. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5e9a808de6c96158960cbdcc7dcf7734"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;std::string&gt;&amp; mvIMPACT::acquire::FunctionInterface::getAvailableImageRequestControls </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the names of the image request controls available for this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>. </p>
+<p>This function returns a const reference to a string array containing the names of all image request controls available for the current <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>. These names are valid constructor parameters for objects of the type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b>.</p>
+<p>New image request controls can be created by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a64b15537a09e6bb887075b15cba2c90b" title="Creates a new mvIMPACT::acquire::ImageRequestControl object. ">mvIMPACT::acquire::FunctionInterface::createImageRequestControl</a></b>. </p><dl class="section return"><dt>返回</dt><dd>A const reference to an array containing the names of all settings available. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a272042e5f2ac48dbce329b736e576aad"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::vector&lt;std::string&gt;&amp; mvIMPACT::acquire::FunctionInterface::getAvailableSettings </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the names of the settings available for this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>. </p>
+<p>This function returns a const reference to a string array containing the names of all settings available for the current <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b>. These names are valid constructor parameters for objects like <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination.html" title="Properties to define the format of resulting images. ">mvIMPACT::acquire::ImageDestination</a></b> or classes derived from these types.</p>
+<p>New settings can be created by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </p><dl class="section return"><dt>返回</dt><dd>A const reference to an array containing the names of all request controls available. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45d71bedd05998dd9839e1fddc219d5a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::getCurrentCaptureBufferLayout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html">ImageRequestControl</a> &amp;&#160;</td>
+          <td class="paramname"><em>imageRequestControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> **&#160;</td>
+          <td class="paramname"><em>ppRequest</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pAlignment</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns information about the current capture buffer requirements. </p>
+<p>When an application wants to provide capture buffers, this function will be needed in order to get information on how the capture buffers must be constructed. The most important parameters will probably be <em>alignment</em> and <em>size</em>, thus for most application calling the other overload of this function will probably be enough.</p>
+<p>To find out more about capturing to user memory please refer to the application</p>
+<dl class="section see"><dt>参见</dt><dd><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.68</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imageRequestControl</td><td>A reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> object containing the setting for which the current capture buffer layout shall be queried. The setting can be defined via the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acf18030a40a4c3ea66a14097f81a2652" title="An integer property defining which setting will be used for the acquisition. ">mvIMPACT::acquire::ImageRequestControl::setting</a></b>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">ppRequest</td><td>On a successful call this variable will receive a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object reflecting the current capture buffer layout. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pAlignment</td><td>On a successful call this variable will receive the alignment needed for capturing into user supplied buffers that use the current settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a45d71bedd05998dd9839e1fddc219d5a_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a6f88e97f646978391226aaf82cd5955d" title="Reads a value from a property. " alt="" coords="245,5,395,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a5f8110041cdd79bc953d9933737f5812" title="Writes one value to the property. " alt="" coords="245,70,395,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae7b571a1f0d1cbaebfb7d117799edcd0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::getCurrentCaptureBufferLayout </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html">ImageRequestControl</a> &amp;&#160;</td>
+          <td class="paramname"><em>imageRequestControl</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>alignment</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns information about the current capture buffer requirements. </p>
+<p>When an application wants to provide capture buffers, this function will be needed in order to get information on how the capture buffers must be constructed.</p>
+<p>To find out more about capturing to user memory please refer to the application CaptureToUserMemory.cpp</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.68</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">imageRequestControl</td><td>A reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> object containing the setting for which the current capture buffer layout shall be queried. The setting can be defined via the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acf18030a40a4c3ea66a14097f81a2652" title="An integer property defining which setting will be used for the acquisition. ">mvIMPACT::acquire::ImageRequestControl::setting</a></b>. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">size</td><td>On a successful call this variable will receive the size needed for capturing into user supplied buffers that use the current settings. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">alignment</td><td>On a successful call this variable will receive the alignment needed for capturing into user supplied buffers that use the current settings. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="afea62dee2bda1b47c24821f9121c5505"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a>* mvIMPACT::acquire::FunctionInterface::getRequest </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to the desired <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>. </p>
+<p>This function returns a pointer to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> stored at <em>nr</em> in the internal array of requests. </p><dl class="section return"><dt>返回</dt><dd>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the request to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa34c97fc5e13bd6c5e4bd0f81d614fa2"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html">ComponentList</a> mvIMPACT::acquire::FunctionInterface::getSetting </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> object to a setting with a specified name. </p>
+<p>This function returns a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> object to a setting with a specified name or will raise an exception if no such setting exists.</p>
+<dl class="section since"><dt>自从</dt><dd>1.12.58</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> object to a setting with a specified name </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the setting to locate </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_aa34c97fc5e13bd6c5e4bd0f81d614fa2_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aaf5cfd9177e1d002b501a85df253096b" title="Moves to the first child of this component(moves down one level). " alt="" coords="245,70,395,111"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="443,5,661,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="709,122,883,163"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="245,187,395,229"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac70865f299e03af1264d462a0e5fb724" title="Constructs a new unbound access object. " alt="" coords="470,70,634,111"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="721,5,871,46"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="931,85,1159,141"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1208,93,1432,134"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a05594ac5b54679152d27ac0e73b3908e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::imageRequestConfigure </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> *&#160;</td>
+          <td class="paramname"><em>pRequest</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows to set a request into configuration mode. </p>
+<dl class="section note"><dt>注解</dt><dd>Another version of this function is available that might be nicer to use depending on personal preferences and use case: <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>.</dd></dl>
+<p>In configuration mode certain properties like <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad676c45f908bb41df04b15a85bf1f6fd" title="A pointer property (read-only) containing the start address of the image data. ">mvIMPACT::acquire::Request::imageData</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac568c457aa474e73066bcc369a26cca1" title="An integer property (read-only) containing the size (in bytes) of the whole image. ">mvIMPACT::acquire::Request::imageSize</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a05c7f2aad294449e1a9f6eb4a13597d4" title="An enumerated integer property (read-only) containing the memory mode used for this request...">mvIMPACT::acquire::Request::imageMemoryMode</a></b> of a request object can be modified. This can be used to configure one or more requests to use a user supplied memory. To use only a subset of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects available the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acb01d358421ecad7b28f3de692c4868d" title="An integer property defining which request object shall be used for the next image request...">mvIMPACT::acquire::ImageRequestControl::requestToUse</a></b> feature can be used.</p>
+<p>Only requests that are currently not used by the driver and are not locked because they contain image data that hasn't been processed can be set into configuration mode.</p>
+<dl class="section note"><dt>注解</dt><dd>Instead of calling this function directly for most cases it is much more convenient to use the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b> instead.</dd></dl>
+<p>User supplied buffers must follow the alignment and size requirements reported by versions of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a45d71bedd05998dd9839e1fddc219d5a" title="Returns information about the current capture buffer requirements. ">mvIMPACT::acquire::FunctionInterface::getCurrentCaptureBufferLayout</a></b>. Calling a version of this function will return all the information required to allocate buffers that can be used to capture data for the specified settings.</p>
+<p>When allocating memory on the heap, the complete buffer size is needed which is calculated like this:</p>
+<p><b>size</b> + alignment</p>
+<dl class="section note"><dt>注解</dt><dd>The address passed to the request object must be aligned already!</dd>
+<dd>
+A request that is in configuration mode can't be sent to the driver for acquisition until <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b> or <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b> has been called again. By using <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b> this locking and unlocking is done internally thus the application does not need to worry about this.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f" title="Deletes all requests currently queued for the specified mvIMPACT::acquire::ImageRequestControl. ">mvIMPACT::acquire::FunctionInterface::imageRequestReset</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.10.31</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pRequest</td><td>A const pointer to the request object to configure </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a05594ac5b54679152d27ac0e73b3908e_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a57688f576163674a855a07854fa9e7a3" title="Returns the number associated with this request. " alt="" coords="269,11,419,53"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a234b2c6e31f3e83629501da47095c54f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::imageRequestReset </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>requestCtrlNr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Deletes all requests currently queued for the specified <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b>. </p>
+<p>This function will terminate all running image acquisitions associated with the queue bound to the specified image request control and in addition to that will empty the queue of pending image requests for that queue. </p><dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">requestCtrlNr</td><td>The <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> for which all the requests shall be cancelled. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Currently unsupported. MUST be set 0. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a7e608625f2db03327c3fe9964967d0bc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::imageRequestResultQueueElementCount </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>queueNr</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects in the result queue . </p>
+<p>This functions queries the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects currently in the result queue</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a91750ec88416ca6557b1bbb10ebc5039" title="Manually starts the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStart</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab52b63727aa33cb4cc2bdd0856c0f237" title="Manually stops the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStop</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f" title="Deletes all requests currently queued for the specified mvIMPACT::acquire::ImageRequestControl. ">mvIMPACT::acquire::FunctionInterface::imageRequestReset</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a7e608625f2db03327c3fe9964967d0bc" title="Returns the number of mvIMPACT::acquire::Request objects in the result queue . ">mvIMPACT::acquire::FunctionInterface::imageRequestResultQueueElementCount</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b> <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.9.0</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>The number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects in the result queue if successful.</li>
+<li><b>mvIMPACT::acquire::DMR_INVALID_QUEUE_SELECTION</b> if the selected result queue does not exist.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">queueNr</td><td>The result queue to be queried. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a59571120b5e81c3af596ea5da5dc63ba"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::imageRequestSingle </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html">ImageRequestControl</a> *&#160;</td>
+          <td class="paramname"><em>pImageRequestControl</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>pRequestUsed</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sends an image request to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> driver. </p>
+<p>This functions sends a single image request to the capture device. To wait for the image to become ready call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>.</p>
+<dl class="section attention"><dt>注意</dt><dd>In order to make sure that no image data is lost, it is important to understand how the request mechanism works. The driver works with a fixed number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects. The number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects available to the driver can be set by modifying the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html#aebae5e452b01f037b681faca41fb70ac" title="An integer property defining the number of requests allocated by the driver. ">mvIMPACT::acquire::SystemSettings::requestCount</a></b>. Each <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> will consume a certain amount of memory. Once an image has been captured by the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>, this amount will be slightly more than the image itself needs in memory, so modify this parameter gently. On the other hand, it's necessary to have more than a single request in order to ensure a lossless acquisition. E.g. when working with free running cameras an image might be lost because while an image has been captured and is being processed, the next vertical sync. pulse is already missed before the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> is unlocked again.</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>When <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#aa5cdb4615de973bbf1c24f2fd5a3d1b5" title="An enumerated integer property defining the start/stop behaviour during acquisition of this driver in...">mvIMPACT::acquire::Device::acquisitionStartStopBehaviour</a></b> is set to <b>mvIMPACT::acquire::assbUser</b> several calls to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b> will <b>NOT</b> start the data acquisition! After requests have been send down to the driver, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a91750ec88416ca6557b1bbb10ebc5039" title="Manually starts the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStart</a></b> must be called. For performance reasons some device drivers will <b>NOT</b> allow to request data into buffers which have not been known to the driver when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a91750ec88416ca6557b1bbb10ebc5039" title="Manually starts the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStart</a></b> was called, thus before starting the acquisition, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b> should be called as many times as there are request objects. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a91750ec88416ca6557b1bbb10ebc5039" title="Manually starts the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStart</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab52b63727aa33cb4cc2bdd0856c0f237" title="Manually stops the acquisition engine of this device driver instance. ">mvIMPACT::acquire::FunctionInterface::acquisitionStop</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f" title="Deletes all requests currently queued for the specified mvIMPACT::acquire::ImageRequestControl. ">mvIMPACT::acquire::FunctionInterface::imageRequestReset</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a7e608625f2db03327c3fe9964967d0bc" title="Returns the number of mvIMPACT::acquire::Request objects in the result queue . ">mvIMPACT::acquire::FunctionInterface::imageRequestResultQueueElementCount</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li><b>mvIMPACT::acquire::DEV_NO_FREE_REQUEST_AVAILABLE</b> if all <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a> objects are currently in use (either owned by the user or queued for acquisition).</li>
+<li><b>mvIMPACT::acquire::DEV_INVALID_REQUEST_NUMBER</b> if the request number defined by the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acb01d358421ecad7b28f3de692c4868d" title="An integer property defining which request object shall be used for the next image request...">ImageRequestControl::requestToUse</a></b> is invalid (out of bounds).</li>
+<li><b>mvIMPACT::acquire::DEV_REQUEST_ALREADY_IN_USE</b> if the request number defined by the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acb01d358421ecad7b28f3de692c4868d" title="An integer property defining which request object shall be used for the next image request...">ImageRequestControl::requestToUse</a></b> is already in use (either owned by the user or queued for acquisition).</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pImageRequestControl</td><td>A pointer to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> object to be used for this request. <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html" title="A helper class to control the way an image request will be processed. ">mvIMPACT::acquire::ImageRequestControl</a></b> objects define (among other things), which setting will be used for this image acquisition (via the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acf18030a40a4c3ea66a14097f81a2652" title="An integer property defining which setting will be used for the acquisition. ">mvIMPACT::acquire::ImageRequestControl::setting</a></b>). </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">pRequestUsed</td><td>If a valid pointer to an integer is passed here, this variable receives the number of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> which will be used to process this request. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a378a338217d5a681e880a0d9395f1a62"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::imageRequestUnlock </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unlocks the request for the driver again. </p>
+<dl class="section note"><dt>注解</dt><dd>Another version of this function is available that might be nicer to use depending on personal preferences and use case: <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>. Unlocking a certain request might be nicer by using this function, e.g. unlocking <b>ALL</b> requests in a loop is probably easier done by writing</dd></dl>
+<p>To ensure that no image data is overwritten by another image request while the user still deals with the image from a previous acquisition each image buffer will be locked by the driver when it is returned to the user by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>. No new image will be captured into the same buffer until the user unlocks the buffer again by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>After unlocking a request it is no longer guaranteed that the memory once referenced by the request and the image buffer belonging to it stays valid, so do <b>NEVER</b> try to access memory belonging to an unlocked request object. If you need to copy the image buffer or modify it in any other way, do everything you have to do <b>BEFORE</b> calling this function!</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f" title="Deletes all requests currently queued for the specified mvIMPACT::acquire::ImageRequestControl. ">mvIMPACT::acquire::FunctionInterface::imageRequestReset</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a7e608625f2db03327c3fe9964967d0bc" title="Returns the number of mvIMPACT::acquire::Request objects in the result queue . ">mvIMPACT::acquire::FunctionInterface::imageRequestResultQueueElementCount</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li><b>mvIMPACT::acquire::DEV_REQUEST_CANT_BE_UNLOCKED</b> if the request number defined by <em>nr</em> is currently not owned by the application (either already unlocked or queued for acquisition).</li>
+<li><b>mvIMPACT::acquire::DMR_INPUT_BUFFER_TOO_SMALL</b> if the request number defined by <em>nr</em> has been configured to capture into a user supplied buffer but the buffer is too small to acquire data into.</li>
+<li><b>mvIMPACT::acquire::DEV_REQUEST_BUFFER_MISALIGNED</b> if the request number defined by <em>nr</em> has been configured to capture into a user supplied buffer but this buffer is not aligned in order to the alignment restrictions reported by this driver/device combination.</li>
+<li><b>mvIMPACT::acquire::DEV_REQUEST_BUFFER_INVALID</b> if the request number defined by <em>nr</em> has been configured to capture into a user supplied buffer but an invalid (NULL) pointer has been attached to the request.</li>
+<li><b>mvIMPACT::acquire::DEV_INVALID_REQUEST_NUMBER</b> if the request number defined by <em>nr</em> is invalid (out of bounds).</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the request to unlock. This is typically a value returned from a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4cefdfda8e8940736ae9a4c97b6de8c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>timeout_ms</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>queueNr</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Waits for an image request to become ready. </p>
+<p>This function waits for an image request previously sent to the capture device by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>Whenever a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> is returned to the user the image data described by the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> remains valid until the user unlocks the image buffer again or the driver is closed.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a7e608625f2db03327c3fe9964967d0bc" title="Returns the number of mvIMPACT::acquire::Request objects in the result queue . ">mvIMPACT::acquire::FunctionInterface::imageRequestResultQueueElementCount</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#afea62dee2bda1b47c24821f9121c5505" title="Returns a pointer to the desired mvIMPACT::acquire::Request. ">mvIMPACT::acquire::FunctionInterface::getRequest</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>If the return value is positive, the return value is the request number of the image request in the interface's internal array of image requests. In this case the user can call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#afea62dee2bda1b47c24821f9121c5505" title="Returns a pointer to the desired mvIMPACT::acquire::Request. ">mvIMPACT::acquire::FunctionInterface::getRequest</a></b> to get access to the results. <br />
+ <br />
+ If the result is negative, the return value is an error code. The error code that is returned in most cases will be <b>mvIMPACT::acquire::DEV_WAIT_FOR_REQUEST_FAILED</b>. To find out possible reasons for this error, look at the corresponding explanation. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">timeout_ms</td><td>The maximum wait time in milliseconds (ms) for this request to become ready. If <em>timeout_ms</em> is '-1', the function's time-out interval never elapses. Please note that each request has its own timeout that is independent from this wait timeout, thus this function will return with a valid request after the timeout for this request has elapsed even if e.g. a trigger has not been detected. For detailed information on the interaction of the timeout of this function and the timeout of a request please refer to the chapter ImageAcquisition_section_capture in the C++ section. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">queueNr</td><td>The queue where to wait for the request. The number of request queues available depends on the number of video channels offered by the device. The queue a processed request ends up in can be defined using the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#a9a5ed0f41db0291bc13ebe37e09fb84d" title="An integer property defining to which result queue the resulting image will be sent after the acquisi...">mvIMPACT::acquire::ImageRequestControl::resultQueue</a></b>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a44e5c0d39914e25243bc61c18cc5d954"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::FunctionInterface::isRequestNrValid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Check if <em>nr</em> specifies a valid <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>. </p>
+<dl class="section return"><dt>返回</dt><dd><br />
+<ul>
+<li>true if <em>nr</em> specifies a valid request.</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab670f49c3a55f7e90d52935a9194bdb0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::loadSetting </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#ga9390ccf3b2ebe68eee998798d59dc823">TStorageFlag</a>&#160;</td>
+          <td class="paramname"><em>storageFlags</em> = <code><a class="el" href="group___common_interface.html#gga9390ccf3b2ebe68eee998798d59dc823a7558412f9b613d098c692dbd1dab68b2">sfNative</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a>&#160;</td>
+          <td class="paramname"><em>scope</em> = <code><a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a54b8661877c9fef76d20cc2b83722c60">sGlobal</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads a previously stored setting. </p>
+<p>This function can be used to restore a previously stored setting again.</p>
+<p>To load a setting from a file the <b>mvIMPACT::acquire::sfFile</b> should be specified as part of <em>storageFlags</em>. To load a setting from a platform specific location such as the Registry under Windows&copy; <b>mvIMPACT::acquire::sfNative</b> should be specified. It's not allowed to combine <b>mvIMPACT::acquire::sfFile</b> and <b>mvIMPACT::acquire::sfNative</b> for this operation.</p>
+<dl class="section warning"><dt>警告</dt><dd>Since mvIMPACT Acquire 2.9.0 <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> devices will be able to save their properties in a XML File, only if the properties have the <b>streamable</b> attribute set (for more information refer to the <a href="http://www.emva.org/standards-technology/genicam/genicam-downloads/">GenICam standard specification</a>). Properties with no <b>streamable</b> attribute set, will be silently ignored when saving, which means they will <b>not</b> be saved in the XML file. For MATRIX VISION <a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a> cameras, starting with firmware version 1.6.414 the <b>streamable</b> attribute is set for all the necessary properties.</dd></dl>
+<p><br />
+</p>
+<dl class="section warning"><dt>警告</dt><dd>Since mvIMPACT Acquire 2.9.0 and again in version 2.11.0 storing and loading of camera settings in a XML file for the <b>mvIMPACT::acquire::dilGenICam</b> interface layout has been updated. As a result XML files created with newer versions of mvIMPACT Acquire might <b>not</b> be readable on systems with older version of mvIMPACT Acquire installed. XML files created on systems with earlier versions of mvIMPACT Acquire will always be readable this or newer versions. See the following table for details. <table class="doxtable">
+<tr>
+<th>mvIMPACT Acquire <a class="el" href="struct_version.html">Version</a></th><th>Loading a XML settings file created with mvIMPACT Acquire version &lt; 2.9.0</th><th>Loading a XML settings file created with mvIMPACT Acquire version 2.9.0 - 2.10.1</th><th>Loading a XML settings file created with mvIMPACT Acquire version 2.11.0 or later </th></tr>
+<tr>
+<th>&lt; 2.9.0 </th><td>YES </td><td>NO </td><td>NO </td></tr>
+<tr>
+<th>2.9.0 - 2.10.1 </th><td>YES </td><td>YES </td><td>NO </td></tr>
+<tr>
+<th>&gt;= 2.11.0 </th><td>YES </td><td>YES </td><td>YES </td></tr>
+</table>
+</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>For devices operated in the <b>mvIMPACT::acquire::dilGenICam</b> interface layout further restriction apply: Settings created with a certain product type can only be used with other devices belonging to the exact same type as defined by the property <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#af37787e344732926a99103df8faf05be" title="A string property (read-only) containing the product name of this device. ">mvIMPACT::acquire::Device::product</a> inside the device list (the one device specific property list that is accessible without initialising the device before). Even if a setting can be used with various firmware versions it is recommended to use one setting for multiple devices all updated to the very same firmware version to avoid compatibility problems.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#af58882e7db1d92551f83ca39f4d6516d" title="Stores the current settings. ">mvIMPACT::acquire::FunctionInterface::saveSetting</a></b>. </dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name or the full path under where the setting is located </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">storageFlags</td><td>The flags which define which information shall be read from the location and how this information shall be interpreted. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scope</td><td>Specifies where the information is located. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a113132465f900b0d60b44ecc71640270"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::loadSettingFromDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a>&#160;</td>
+          <td class="paramname"><em>scope</em> = <code><a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79">sUser</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads the default settings. </p>
+<p>This function will try to load the settings from a default location. This function can only succeed if a setting has been stored previously by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a68667a298b96ed10a0d8cecebbd9b9a6" title="Stores the current settings under a default location. ">mvIMPACT::acquire::FunctionInterface::saveSettingToDefault</a></b>.</p>
+<dl class="section warning"><dt>警告</dt><dd>There has been an incompatible change when loading settings in version 2.9.0 and 2.11.0 of mvIMPACT Acquire. See <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab670f49c3a55f7e90d52935a9194bdb0" title="Loads a previously stored setting. ">mvIMPACT::acquire::FunctionInterface::loadSetting</a></b> for details.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scope</td><td>Specifies where the information is located. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae494724c1e29e38f0e83e8a5f5793772"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::FunctionInterface::MVIMPACT_DEPRECATED_CPP </td>
+          <td>(</td>
+          <td class="paramtype">bool isRequestOK(const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> *p)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a request has been processed successfully(<b>deprecated</b>). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">弃用:</a></b></dt><dd>This function has been declared deprecated and will be removed in future versions of this interface. Use <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a7120b640d76a3f8ed3711a8a773ad4be" title="Convenience function to check if a request has been processed successfully. ">mvIMPACT::acquire::Request::isOK()</a></b> instead and see the corresponding 'Porting existing code' section in the documentation. <dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the request has been processed successfully.</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae0f9f7f436a40980ce6d346ecc0e3030"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::FunctionInterface::MVIMPACT_DEPRECATED_CPP </td>
+          <td>(</td>
+          <td class="paramtype">int saveSystemToDefault(<a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a> scope=<a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79">sUser</a>)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores the current system settings under a default location (<b>deprecated</b>). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">弃用:</a></b></dt><dd></dd></dl>
+<dl class="section note"><dt>注解</dt><dd>This function has been declared deprecated and will be removed in version 2.0.0 of this interface. All features that have been stored using this method will now also be handled by the functions that load and save settings. Please see the corresponding 'Porting existing code' section in the documentation.</dd></dl>
+<p>These are the settings which can be altered by creating an instance of the class <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html" title="A base class for accessing settings that control the overall behaviour of a device driver...">mvIMPACT::acquire::SystemSettings</a></b>. Under Windows&copy; this function will store the current settings in the Registry.</p>
+<p>Modifying data in this section of properties will affect every device belonging to the same family (e.g. every USB 2.0 camera device) when the data is saved. When the modified data is stored it will be restored by each device belonging to the same family during the next initialisation. So at runtime changing and saving the settings of one device will not affect the behaviour of another until the data has been stored and the other device has been closed and reopened again. </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af013eddce4d0a33e580079969d1ce3c0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::FunctionInterface::requestCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of available request objects. </p>
+<dl class="section return"><dt>返回</dt><dd>Returns the number of available request objects. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af58882e7db1d92551f83ca39f4d6516d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::saveSetting </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#ga9390ccf3b2ebe68eee998798d59dc823">TStorageFlag</a>&#160;</td>
+          <td class="paramname"><em>storageFlags</em> = <code><a class="el" href="group___common_interface.html#gga9390ccf3b2ebe68eee998798d59dc823a7558412f9b613d098c692dbd1dab68b2">sfNative</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a>&#160;</td>
+          <td class="paramname"><em>scope</em> = <code><a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a54b8661877c9fef76d20cc2b83722c60">sGlobal</a></code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the current settings. </p>
+<p>This function can be used to store the current settings either in a XML-file or (under Windows&copy;) into the Registry. A setting contains all the values set for properties that control the overall way an image is acquired( e.g. the exposure time, etc.).</p>
+<p>To store a setting in a file the <b>mvIMPACT::acquire::sfFile</b> should be specified as part of <em>storageFlags</em>. To store a setting in a platform specific location such as the Registry under Windows&copy; <b>mvIMPACT::acquire::sfNative</b> should be specified. Both flags can be combined. In that case the same setting will be stored in a file <b>AND</b> in a platform specific location if these location differ (platform dependent!).</p>
+<dl class="section warning"><dt>警告</dt><dd>There has been an incompatible change when loading settings in version 2.9.0 and 2.11.0 of mvIMPACT Acquire. See <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab670f49c3a55f7e90d52935a9194bdb0" title="Loads a previously stored setting. ">mvIMPACT::acquire::FunctionInterface::loadSetting</a></b> for details.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name or the full path under which this setting shall be stored </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">storageFlags</td><td>The flags which define which information shall be stored and how this information shall be stored. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">scope</td><td>Specifies where the information shall be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a68667a298b96ed10a0d8cecebbd9b9a6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::FunctionInterface::saveSettingToDefault </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="group___common_interface.html#gae6cc8fec0123f239690564ecdeba4350">TScope</a>&#160;</td>
+          <td class="paramname"><em>scope</em> = <code><a class="el" href="group___common_interface.html#ggae6cc8fec0123f239690564ecdeba4350a333304553cd48305e063dcda379bde79">sUser</a></code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Stores the current settings under a default location. </p>
+<p>Under Windows&copy; this will be in the Registry. A setting contains all the values set for properties that control the overall way an image is acquired( e.g. the exposure time, etc.).</p>
+<dl class="section warning"><dt>警告</dt><dd>There has been an incompatible change when loading settings in version 2.9.0 and 2.11.0 of mvIMPACT Acquire. See <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#ab670f49c3a55f7e90d52935a9194bdb0" title="Loads a previously stored setting. ">mvIMPACT::acquire::FunctionInterface::loadSetting</a></b> for details.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> or <b>mvIMPACT::acquire::TPROPHANDLING_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">scope</td><td>Specifies where the information shall be stored. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html">FunctionInterface</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

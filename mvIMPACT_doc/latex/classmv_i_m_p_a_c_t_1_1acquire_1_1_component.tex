@@ -1,0 +1,1180 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+}
+
+
+A base class to implement access to internal driver components.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Component 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a392b380b6a537cdfa5d49fc8335326af}{Component} (H\+O\+B\+J \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access_a071d08bf770f55552998b86580e979de}{h\+Obj})
+\begin{DoxyCompactList}\small\item\em Constructs a new access object to a driver object. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac70865f299e03af1264d462a0e5fb724}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac70865f299e03af1264d462a0e5fb724}{Component} (void)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac70865f299e03af1264d462a0e5fb724}
+
+\begin{DoxyCompactList}\small\item\em Constructs a new unbound access object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa0ce09671eb0bfd13bc9c41a62a4c2a0}{operator++} (void)
+\begin{DoxyCompactList}\small\item\em Moves to the next sibling(the next feature in the current list of features). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3c0e62e36aa38069b8f9d2fa7a242b1e}{operator++} (int)
+\begin{DoxyCompactList}\small\item\em Moves to the next sibling(the next feature in the current list of features). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3ff9ff4adf233c79c621a81c45f6e3ea}{first\+Sibling} (void) const 
+\begin{DoxyCompactList}\small\item\em Moves to the first sibling(the first feature in the current list of features). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae7ecdaafa8fc95c761d4e913c199c53d}{last\+Sibling} (void) const 
+\begin{DoxyCompactList}\small\item\em Moves to the last sibling(the last feature in the current list of features). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aeccbdbf047d18e8ac0d20fc874c185a7}{next\+Sibling} (void)
+\begin{DoxyCompactList}\small\item\em Moves to the next sibling(the next feature in the current list of features). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aaf5cfd9177e1d002b501a85df253096b}{first\+Child} (void) const 
+\begin{DoxyCompactList}\small\item\em Moves to the first child of this component(moves down one level). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a07b183818aad835e54066780413de330}{parent} (void) const 
+\begin{DoxyCompactList}\small\item\em Moves to the parent of this component(moves up one level). \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a322ecaa2c5c86e07a31d0771f2c31683}{doc\+String} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a string containing general information about the component referenced by this object. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga4ef1be7cf1ca9dd256fd3060dd0787bb}{T\+Component\+Flag} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f}{flags} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the flags associated with this component. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a4d650124bdad64f378a7b71a647d8e9b}{flags\+As\+String} (const std\+::string \&separator=\char`\"{} $\vert$ \char`\"{}) const 
+\begin{DoxyCompactList}\small\item\em Returns the flags associated with this component as a string. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae5ea06015da01ed640f4a357d90326f9}{is\+Default} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if this component is currently referencing the default for this component. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38268d1606ad93359a7f5fa3304da8bd}{is\+List} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if this component is of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}}. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a2281da2df8cf67acc9f26b68aa0718cd}{is\+Meth} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if this component is of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Method}}. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aed95ea2f827d0fd457d03857516e0b68}{is\+Prop} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if this component is of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} or a derived type. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{is\+Valid} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if the internal component referenced by this object is still valid. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{is\+Visible} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if the component is currently shadowed due to a settings made elsewhere or not. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6}{is\+Writeable} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if the caller has write/modify access to the component. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa13d62964b8282fd66f6d4fae48f85b2}{restore\+Default} (void) const 
+\begin{DoxyCompactList}\small\item\em Restores the default for the referenced component. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga7dbe9709a3bdae0b29581ff4f6fca3ff}{T\+Component\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a57b0745fbaeca5fb4cf3e35fd3143002}{type} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the type of the referenced component. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a9e5b5315cc8649d5dbed13c8810e7649}{type\+As\+String} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the type of the referenced component as a string. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga75b333e3ba771df98bde9ee1e12f57a0}{T\+Component\+Visibility} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a986c68167207123176b6ffe03f974cf3}{visibility} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the recommended visibility for this component. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aae8c83e09af9886109e2c68533bdd7ec}{visibility\+As\+String} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the recommended visibility of the referenced component as a string. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga1e2d7ac6b3bb3ff1fe4bb53c4aa808ea}{T\+Component\+Representation} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a877be25f91d98b261ace18060126c0e6}{representation} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the recommended representation for this component. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad4a9da484b7cb0bde08ed77c8d6221fe}{representation\+As\+String} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the recommended representation of the referenced component as a string. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a17a328102430e483790a06769f85ea47}{selected\+Feature\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of features selected by the current one. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_abca6187054b1eefdabd8822c5d889320}{selecting\+Feature\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of features selecting the current one. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a8be119dbf4cc277280df78b2570a8b80}{selected\+Features} (std\+::vector$<$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Retrieves the list of components that are selected by the current one. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad57072c7362fdf4e714cab1f06f2574c}{selecting\+Features} (std\+::vector$<$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} $>$ \&v) const 
+\begin{DoxyCompactList}\small\item\em Retrieves the list of components that are selecting the current one. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38e5f6370991cf77ca8cdd3ecc99e64a}{selected\+Feature} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Retrieves a component that is selected by the current one. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad8a74647397e051683b301cb92d86e9f}{selecting\+Feature} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Retrieves a component that is selecting the current one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{group___common_interface_ga7dbe9709a3bdae0b29581ff4f6fca3ff}{T\+Component\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_adfb37f760b51b804473d180a83ef0fb6}{type} (H\+O\+B\+J \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access_a071d08bf770f55552998b86580e979de}{h\+Obj})
+\begin{DoxyCompactList}\small\item\em Returns the type of the component referenced by {\itshape h\+Obj}. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ab01e229848b62fccd552230fdc3124be}{visibility\+As\+String} (\hyperlink{group___common_interface_ga75b333e3ba771df98bde9ee1e12f57a0}{T\+Component\+Visibility} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a986c68167207123176b6ffe03f974cf3}{visibility})
+\begin{DoxyCompactList}\small\item\em Returns the recommended visibility converted to a string. \end{DoxyCompactList}\item 
+static std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a7a9991665fc79069ec04644735832959}{representation\+As\+String} (\hyperlink{group___common_interface_ga1e2d7ac6b3bb3ff1fe4bb53c4aa808ea}{T\+Component\+Representation} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a877be25f91d98b261ace18060126c0e6}{representation})
+\begin{DoxyCompactList}\small\item\em Returns the recommended representation converted to a string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to implement access to internal driver components. 
+
+Objects of this class can be constructed directly even if nothing is known about the type of driver object we are referring to. This class acts as a base class to provide access to internal properties, methods and component lists offered by the driver.
+
+This object can be used to navigate through component lists of unknown content.
+
+Consider the following structure\+:
+
+
+\begin{DoxyCode}
+LA
+|-LB
+|-LC
+|  |-PE
+|  |-PF
+|  |-PG
+|-PD
+\end{DoxyCode}
+
+
+Where the prefix 'L' means this is a list, 'P' that this is a property. Assuming that we have and iterator referencing list 'C', calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aaf5cfd9177e1d002b501a85df253096b}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Iterator\+::first\+Child}} e.\+g. would return a new iterator referencing object 'P\+E', while calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aeccbdbf047d18e8ac0d20fc874c185a7}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Iterator\+::next\+Sibling}} would have returned a reference to 'P\+D' and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a07b183818aad835e54066780413de330}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Iterator\+::parent}} would have returned a reference to object 'L\+A'. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a392b380b6a537cdfa5d49fc8335326af}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!Component@{Component}}
+\index{Component@{Component}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{Component}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::\+Component (
+\begin{DoxyParamCaption}
+\item[{H\+O\+B\+J}]{h\+Obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a392b380b6a537cdfa5d49fc8335326af}
+
+
+Constructs a new access object to a driver object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em h\+Obj} & A valid handle to a component object \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a322ecaa2c5c86e07a31d0771f2c31683}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!doc\+String@{doc\+String}}
+\index{doc\+String@{doc\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{doc\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::doc\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a322ecaa2c5c86e07a31d0771f2c31683}
+
+
+Returns a string containing general information about the component referenced by this object. 
+
+\begin{DoxyReturn}{返回}
+A string containing general information about the component referenced by this object. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a322ecaa2c5c86e07a31d0771f2c31683_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aaf5cfd9177e1d002b501a85df253096b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!first\+Child@{first\+Child}}
+\index{first\+Child@{first\+Child}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{first\+Child}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::first\+Child (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aaf5cfd9177e1d002b501a85df253096b}
+
+
+Moves to the first child of this component(moves down one level). 
+
+Calling this function will only succeed, if the current {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} references a list.
+
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aaf5cfd9177e1d002b501a85df253096b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aaf5cfd9177e1d002b501a85df253096b_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3ff9ff4adf233c79c621a81c45f6e3ea}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!first\+Sibling@{first\+Sibling}}
+\index{first\+Sibling@{first\+Sibling}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{first\+Sibling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::first\+Sibling (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3ff9ff4adf233c79c621a81c45f6e3ea}
+
+
+Moves to the first sibling(the first feature in the current list of features). 
+
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3ff9ff4adf233c79c621a81c45f6e3ea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3ff9ff4adf233c79c621a81c45f6e3ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!flags@{flags}}
+\index{flags@{flags}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{flags}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Component\+Flag} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::flags (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f}
+
+
+Returns the flags associated with this component. 
+
+\begin{DoxyReturn}{返回}
+The flags associated with this component. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a4d650124bdad64f378a7b71a647d8e9b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!flags\+As\+String@{flags\+As\+String}}
+\index{flags\+As\+String@{flags\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{flags\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::flags\+As\+String (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{separator = {\ttfamily \char`\"{}~$\vert$~\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a4d650124bdad64f378a7b71a647d8e9b}
+
+
+Returns the flags associated with this component as a string. 
+
+\begin{DoxyReturn}{返回}
+The flags associated with this component as a string. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em separator} & A user definable string to separate the individual flags.\\
+\hline
+\end{DoxyParams}
+The default value is ' $\vert$ ' resulting in the string to look e.\+g. like this\+: {\bfseries 'cf\+Write\+Access $\vert$ cf\+Read\+Access'} 
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a4d650124bdad64f378a7b71a647d8e9b_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae5ea06015da01ed640f4a357d90326f9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+Default@{is\+Default}}
+\index{is\+Default@{is\+Default}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+Default}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Default (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae5ea06015da01ed640f4a357d90326f9}
+
+
+Checks if this component is currently referencing the default for this component. 
+
+This function will return true only for derived components that have not been modified. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component is currently set to its default value
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae5ea06015da01ed640f4a357d90326f9_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38268d1606ad93359a7f5fa3304da8bd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+List@{is\+List}}
+\index{is\+List@{is\+List}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+List}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+List (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38268d1606ad93359a7f5fa3304da8bd}
+
+
+Checks if this component is of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}}. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component references a list
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38268d1606ad93359a7f5fa3304da8bd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38268d1606ad93359a7f5fa3304da8bd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a2281da2df8cf67acc9f26b68aa0718cd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+Meth@{is\+Meth}}
+\index{is\+Meth@{is\+Meth}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+Meth}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Meth (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a2281da2df8cf67acc9f26b68aa0718cd}
+
+
+Checks if this component is of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Method}}. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component references a method
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a2281da2df8cf67acc9f26b68aa0718cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a2281da2df8cf67acc9f26b68aa0718cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aed95ea2f827d0fd457d03857516e0b68}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+Prop@{is\+Prop}}
+\index{is\+Prop@{is\+Prop}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+Prop}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Prop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aed95ea2f827d0fd457d03857516e0b68}
+
+
+Checks if this component is of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} or a derived type. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the component references a property
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aed95ea2f827d0fd457d03857516e0b68_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aed95ea2f827d0fd457d03857516e0b68_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}
+
+
+Checks if the internal component referenced by this object is still valid. 
+
+This function can be used to verify whether a referenced component is still valid or not. When e.\+g. referencing a driver property after {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::close}} has been called this function would return false. Calling any other function that tries to access the referenced component in that case would raise an exception. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this object currently references a valid component
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+Visible@{is\+Visible}}
+\index{is\+Visible@{is\+Visible}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+Visible}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Visible (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}
+
+
+Checks if the component is currently shadowed due to a settings made elsewhere or not. 
+
+Settings applied to certain components might affect the behaviour of others. For example an activated automatic gain control might shadow the value written to the gain property by the user as the gain is calculated internally. In order to check if modifying the actual component will affect the behaviour of the system this function may be used. When it returns {\itshape true}, the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} will have an impact on the system, if {\itshape false} is returned, the feature might be modified, but this will currently N\+O\+T influence the acquisition process or the overall behaviour of the device or driver.
+
+This is what is called visibility. The user still might modify or read the current {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} when it's not visible however the actual data will be used only if the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component}} is visible ({\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Invisible} must {\bfseries N\+O\+T} be set).
+
+The visibility of a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object will change only if other {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} objects are modified and {\bfseries N\+E\+V\+E\+R} when a program runs but does not change any {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}. 
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!is\+Writeable@{is\+Writeable}}
+\index{is\+Writeable@{is\+Writeable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{is\+Writeable}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Writeable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6}
+
+
+Checks if the caller has write/modify access to the component. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the caller is allowed to call write/modify operation for this component.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae7ecdaafa8fc95c761d4e913c199c53d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!last\+Sibling@{last\+Sibling}}
+\index{last\+Sibling@{last\+Sibling}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{last\+Sibling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::last\+Sibling (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae7ecdaafa8fc95c761d4e913c199c53d}
+
+
+Moves to the last sibling(the last feature in the current list of features). 
+
+\begin{DoxySince}{自从}
+1.\+10.\+64
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae7ecdaafa8fc95c761d4e913c199c53d_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aeccbdbf047d18e8ac0d20fc874c185a7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!next\+Sibling@{next\+Sibling}}
+\index{next\+Sibling@{next\+Sibling}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{next\+Sibling}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::next\+Sibling (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aeccbdbf047d18e8ac0d20fc874c185a7}
+
+
+Moves to the next sibling(the next feature in the current list of features). 
+
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object 
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aeccbdbf047d18e8ac0d20fc874c185a7_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa0ce09671eb0bfd13bc9c41a62a4c2a0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!operator++@{operator++}}
+\index{operator++@{operator++}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa0ce09671eb0bfd13bc9c41a62a4c2a0}
+
+
+Moves to the next sibling(the next feature in the current list of features). 
+
+\begin{DoxyReturn}{返回}
+A self reference 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa0ce09671eb0bfd13bc9c41a62a4c2a0_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3c0e62e36aa38069b8f9d2fa7a242b1e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!operator++@{operator++}}
+\index{operator++@{operator++}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{operator++}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a3c0e62e36aa38069b8f9d2fa7a242b1e}
+
+
+Moves to the next sibling(the next feature in the current list of features). 
+
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a07b183818aad835e54066780413de330}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!parent@{parent}}
+\index{parent@{parent}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::parent (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a07b183818aad835e54066780413de330}
+
+
+Moves to the parent of this component(moves up one level). 
+
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} object 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a07b183818aad835e54066780413de330_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a877be25f91d98b261ace18060126c0e6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!representation@{representation}}
+\index{representation@{representation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{representation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Component\+Representation} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::representation (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a877be25f91d98b261ace18060126c0e6}
+
+
+Returns the recommended representation for this component. 
+
+The representation can be used e.\+g. to develop a G\+U\+I that creates convenient controls for certain features.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Component\+Representation}.
+
+\begin{DoxySince}{自从}
+2.\+14.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The recommended representation for this component. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a877be25f91d98b261ace18060126c0e6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a877be25f91d98b261ace18060126c0e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad4a9da484b7cb0bde08ed77c8d6221fe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!representation\+As\+String@{representation\+As\+String}}
+\index{representation\+As\+String@{representation\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{representation\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::representation\+As\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad4a9da484b7cb0bde08ed77c8d6221fe}
+
+
+Returns the recommended representation of the referenced component as a string. 
+
+\begin{DoxySince}{自从}
+2.\+14.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The recommended representation of the referenced component as a string. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a7a9991665fc79069ec04644735832959}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!representation\+As\+String@{representation\+As\+String}}
+\index{representation\+As\+String@{representation\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{representation\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::representation\+As\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Component\+Representation}}]{representation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a7a9991665fc79069ec04644735832959}
+
+
+Returns the recommended representation converted to a string. 
+
+\begin{DoxySince}{自从}
+2.\+14.\+0
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The recommended representation converted to a string. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em representation} & The representation to query the string representation for \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a7a9991665fc79069ec04644735832959_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa13d62964b8282fd66f6d4fae48f85b2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!restore\+Default@{restore\+Default}}
+\index{restore\+Default@{restore\+Default}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{restore\+Default}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Component}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::restore\+Default (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa13d62964b8282fd66f6d4fae48f85b2}
+
+
+Restores the default for the referenced component. 
+
+Calling this function will restore the default value for the component referenced by this object.
+
+If this function is called for an object of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+List}} every component in that list is restored to the default value.
+
+\begin{DoxyNote}{注解}
+The caller must have the right to modify the component. Otherwise an exception will be thrown.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+A const reference to the component. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aa13d62964b8282fd66f6d4fae48f85b2_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38e5f6370991cf77ca8cdd3ecc99e64a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!selected\+Feature@{selected\+Feature}}
+\index{selected\+Feature@{selected\+Feature}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{selected\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38e5f6370991cf77ca8cdd3ecc99e64a}
+
+
+Retrieves a component that is selected by the current one. 
+
+This function retrieves a component that is selected by the current one. This information is mainly useful for G\+U\+I applications that want to arrange features in a way that dependencies between features can easily been spotted.
+
+When a component 'selects' other components, this indicates that selected components may change whenever the selecting component changes. An example for a selector might be a property defining the index within a L\+U\+T while the value of a particular L\+U\+T entry could be a selected feature. Assuming 2 properties {\itshape L\+U\+T\+Index} and {\itshape L\+U\+T\+Value} then changing {\itshape L\+U\+T\+Index} will invalidate and possibly change {\itshape L\+U\+T\+Value}.
+
+To find out how many {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} objects are selected by the current one call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a17a328102430e483790a06769f85ea47}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature\+Count}}. This value minus 1 will also be the max. value for {\itshape index}. \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a17a328102430e483790a06769f85ea47}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a8be119dbf4cc277280df78b2570a8b80}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Features}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+11.\+20
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} that is selected by the current one. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index for the component to query. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38e5f6370991cf77ca8cdd3ecc99e64a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a17a328102430e483790a06769f85ea47}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!selected\+Feature\+Count@{selected\+Feature\+Count}}
+\index{selected\+Feature\+Count@{selected\+Feature\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{selected\+Feature\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a17a328102430e483790a06769f85ea47}
+
+
+Returns the number of features selected by the current one. 
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a8be119dbf4cc277280df78b2570a8b80}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Features}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38e5f6370991cf77ca8cdd3ecc99e64a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+11.\+20
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The number of features selected by the current one. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a8be119dbf4cc277280df78b2570a8b80}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!selected\+Features@{selected\+Features}}
+\index{selected\+Features@{selected\+Features}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{selected\+Features}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Features (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Component} $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a8be119dbf4cc277280df78b2570a8b80}
+
+
+Retrieves the list of components that are selected by the current one. 
+
+This function retrieves the list of components that are selected by the current one. This information is mainly useful for G\+U\+I applications that want to arrange features in a way that dependencies between features can easily been spotted.
+
+When a component 'selects' other components, this indicates that selected components may change whenever the selecting component changes. An example for a selector might be a property defining the index within a L\+U\+T while the value of a particular L\+U\+T entry could be a selected feature. Assuming 2 properties {\itshape L\+U\+T\+Index} and {\itshape L\+U\+T\+Value} then changing {\itshape L\+U\+T\+Index} will invalidate and possibly change {\itshape L\+U\+T\+Value}.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a17a328102430e483790a06769f85ea47}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a38e5f6370991cf77ca8cdd3ecc99e64a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selected\+Feature}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+11.\+20
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The number of features selected by the current one. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt out}  & {\em v} & An array that will retrieve the list of components that are selected by the current one. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad8a74647397e051683b301cb92d86e9f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!selecting\+Feature@{selecting\+Feature}}
+\index{selecting\+Feature@{selecting\+Feature}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{selecting\+Feature}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad8a74647397e051683b301cb92d86e9f}
+
+
+Retrieves a component that is selecting the current one. 
+
+This function retrieves a component that is selecting the current one. This information is mainly useful for G\+U\+I applications that want to arrange features in a way that dependencies between features can easily been spotted.
+
+When a component 'selects' other components, this indicates that selected components may change whenever the selecting component changes. An example for a selector might be a property defining the index within a L\+U\+T while the value of a particular L\+U\+T entry could be a selected feature. Assuming 2 properties {\itshape L\+U\+T\+Index} and {\itshape L\+U\+T\+Value} then changing {\itshape L\+U\+T\+Index} will invalidate and possibly change {\itshape L\+U\+T\+Value}.
+
+To find out how many {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} objects are selecting the current one call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_abca6187054b1eefdabd8822c5d889320}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature\+Count}}. This value minus 1 will also be the max. value for {\itshape index}. \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_abca6187054b1eefdabd8822c5d889320}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad57072c7362fdf4e714cab1f06f2574c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Features}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+11.\+20
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}} that is selecting the current one. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index for the component to query. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad8a74647397e051683b301cb92d86e9f_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_abca6187054b1eefdabd8822c5d889320}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!selecting\+Feature\+Count@{selecting\+Feature\+Count}}
+\index{selecting\+Feature\+Count@{selecting\+Feature\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{selecting\+Feature\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_abca6187054b1eefdabd8822c5d889320}
+
+
+Returns the number of features selecting the current one. 
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad57072c7362fdf4e714cab1f06f2574c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Features}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad8a74647397e051683b301cb92d86e9f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+11.\+20
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The number of features selecting the current one. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad57072c7362fdf4e714cab1f06f2574c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!selecting\+Features@{selecting\+Features}}
+\index{selecting\+Features@{selecting\+Features}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{selecting\+Features}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Features (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ {\bf Component} $>$ \&}]{v}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad57072c7362fdf4e714cab1f06f2574c}
+
+
+Retrieves the list of components that are selecting the current one. 
+
+This function retrieves the list of components that are selecting the current one. This information is mainly useful for G\+U\+I applications that want to arrange features in a way that dependencies between features can easily been spotted.
+
+When a component 'selects' other components, this indicates that selected components may change whenever the selecting component changes. An example for a selector might be a property defining the index within a L\+U\+T while the value of a particular L\+U\+T entry could be a selected feature. Assuming 2 properties {\itshape L\+U\+T\+Index} and {\itshape L\+U\+T\+Value} then changing {\itshape L\+U\+T\+Index} will invalidate and possibly change {\itshape L\+U\+T\+Value}.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_abca6187054b1eefdabd8822c5d889320}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ad8a74647397e051683b301cb92d86e9f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::selecting\+Feature}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+1.\+11.\+20
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+The number of features selecting the current one. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt out}  & {\em v} & An array that will retrieve the list of components that are selecting the current one. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a57b0745fbaeca5fb4cf3e35fd3143002}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!type@{type}}
+\index{type@{type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Component\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::type (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a57b0745fbaeca5fb4cf3e35fd3143002}
+
+
+Returns the type of the referenced component. 
+
+\begin{DoxyReturn}{返回}
+The type of the referenced component. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a57b0745fbaeca5fb4cf3e35fd3143002_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a57b0745fbaeca5fb4cf3e35fd3143002_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_adfb37f760b51b804473d180a83ef0fb6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!type@{type}}
+\index{type@{type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{type}]{\setlength{\rightskip}{0pt plus 5cm}static {\bf T\+Component\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::type (
+\begin{DoxyParamCaption}
+\item[{H\+O\+B\+J}]{h\+Obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_adfb37f760b51b804473d180a83ef0fb6}
+
+
+Returns the type of the component referenced by {\itshape h\+Obj}. 
+
+\begin{DoxyReturn}{返回}
+The type of the component referenced by {\itshape h\+Obj}. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em h\+Obj} & The component the type shall be retrieved for \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_adfb37f760b51b804473d180a83ef0fb6_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a9e5b5315cc8649d5dbed13c8810e7649}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!type\+As\+String@{type\+As\+String}}
+\index{type\+As\+String@{type\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{type\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::type\+As\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a9e5b5315cc8649d5dbed13c8810e7649}
+
+
+Returns the type of the referenced component as a string. 
+
+\begin{DoxyReturn}{返回}
+The type of the referenced component as a string. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a986c68167207123176b6ffe03f974cf3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!visibility@{visibility}}
+\index{visibility@{visibility}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{visibility}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Component\+Visibility} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::visibility (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a986c68167207123176b6ffe03f974cf3}
+
+
+Returns the recommended visibility for this component. 
+
+The visibility can be used e.\+g. to develop a G\+U\+I that allows to display the crucial subset of features only.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Component\+Visibility}. \begin{DoxyReturn}{返回}
+The recommended visibility for this component. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a986c68167207123176b6ffe03f974cf3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aae8c83e09af9886109e2c68533bdd7ec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!visibility\+As\+String@{visibility\+As\+String}}
+\index{visibility\+As\+String@{visibility\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{visibility\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::visibility\+As\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_aae8c83e09af9886109e2c68533bdd7ec}
+
+
+Returns the recommended visibility of the referenced component as a string. 
+
+\begin{DoxyReturn}{返回}
+The recommended visibility of the referenced component as a string. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ab01e229848b62fccd552230fdc3124be}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}!visibility\+As\+String@{visibility\+As\+String}}
+\index{visibility\+As\+String@{visibility\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component}}
+\subsubsection[{visibility\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::visibility\+As\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Component\+Visibility}}]{visibility}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ab01e229848b62fccd552230fdc3124be}
+
+
+Returns the recommended visibility converted to a string. 
+
+\begin{DoxyReturn}{返回}
+The recommended visibility converted to a string. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em visibility} & The visibility to query the string representation for \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ab01e229848b62fccd552230fdc3124be_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,28 @@
+var classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device =
+[
+    [ "CameraSettingsV4L2Device", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#aa8462fef321b1ddfd69166fbedcb136f", null ],
+    [ "getCustomFeatureIterator", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a5e756f77e22f90646cf9bad95fbad451", null ],
+    [ "autoGain", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a27d47ba5c43a2c52451d16e66aa65f42", null ],
+    [ "autoWhiteBalance", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#ab83e95778d35ed8705faf39ba0e5f29b", null ],
+    [ "backlightCompensation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#ae3a03df1b438f1cf58bb601f5514c689", null ],
+    [ "blackLevel", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a5b72046d92aa57699fd3cd6be2cfcba3", null ],
+    [ "blueBalance", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a45a31558e0487169e66763231ed41434", null ],
+    [ "brightness", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a6d51dc2a6441671cc8c5c4ba0cded763", null ],
+    [ "contrast", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#aaee19b888e84b7037f73cf87113a331e", null ],
+    [ "exposure", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a35d158bd71d3210bb08f828a8a3f8295", null ],
+    [ "gain", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a3264adc428c3d0c9c8987ce06b3adfdb", null ],
+    [ "gamma", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#ac5c2d70d509d427ceba37d2d179736e3", null ],
+    [ "HFlip", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#aae2c24949f727feab82dd57e216445b3", null ],
+    [ "hue", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#aecfc16d0f66ee27384d56c99316bd84e", null ],
+    [ "hueAuto", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a39eef7f0246494e961bcb521f509a874", null ],
+    [ "imageHeight", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a863f0a0d412f2934371d20fe4008f025", null ],
+    [ "imageWidth", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a27fa220018e3020479e1f376e6f8d881", null ],
+    [ "pixelFormat", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a86735fd2b340192e2a69242d0cfb7b2f", null ],
+    [ "powerLineFrequency", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a01aacc2f5d328cbef927d6734f44b784", null ],
+    [ "redBalance", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a62eac63a7ff0b0756797e3c7c75c03cf", null ],
+    [ "saturation", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a9d333663c3d74234ce3e5fadb8aec691", null ],
+    [ "sharpness", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a419f22340e59abd6212131fde87ae98f", null ],
+    [ "VFlip", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#ac01abfd8789e38a90823409c4908fdc0", null ],
+    [ "videoStandard", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#aeb57b67f5eac2c20462ce1d2cc33e3b3", null ],
+    [ "whiteBalanceTemperature", "classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#a61292095dc6ec3982c235d053f1b6a92", null ]
+];

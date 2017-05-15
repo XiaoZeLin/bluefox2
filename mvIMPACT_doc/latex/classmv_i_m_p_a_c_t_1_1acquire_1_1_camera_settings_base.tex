@@ -1,0 +1,133 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Base类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}
+}
+
+
+A base class for camera related settings({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a48c2eadebe65f845c04cf014703e725a}{Camera\+Settings\+Base} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a0058890a1b217348bc9d74276d136cd0}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a0058890a1b217348bc9d74276d136cd0}{aoi\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a0058890a1b217348bc9d74276d136cd0}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of lines to capture. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_adbfbd65eb718a5a57084b7fc8f594ace}{aoi\+Start\+X}
+\begin{DoxyCompactList}\small\item\em An integer property defining the X-\/offset for each capture line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a848ee514681ffe6bf617cf6de0bf5a48}{aoi\+Start\+Y}
+\begin{DoxyCompactList}\small\item\em An integer property defining the Y-\/offset. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_ac1d058292017a9d17046e5ab3ba38933}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_ac1d058292017a9d17046e5ab3ba38933}{aoi\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_ac1d058292017a9d17046e5ab3ba38933}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the number of pixels to capture per line. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga4f53082cdae4edfc1f87e928a0ab4184}{Property\+I\+Image\+Buffer\+Pixel\+Format} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_af295aa670e45c6cbdb6e5d8517922371}{pixel\+Format}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the pixel format used to transfer the image data into the target systems host memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class for camera related settings({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class acts as a base class for camera related settings. It only contains settings that are available for every device!
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a48c2eadebe65f845c04cf014703e725a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}!Camera\+Settings\+Base@{Camera\+Settings\+Base}}
+\index{Camera\+Settings\+Base@{Camera\+Settings\+Base}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}
+\subsubsection[{Camera\+Settings\+Base}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::\+Camera\+Settings\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a48c2eadebe65f845c04cf014703e725a}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a48c2eadebe65f845c04cf014703e725a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_adbfbd65eb718a5a57084b7fc8f594ace}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}!aoi\+Start\+X@{aoi\+Start\+X}}
+\index{aoi\+Start\+X@{aoi\+Start\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}
+\subsubsection[{aoi\+Start\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::aoi\+Start\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_adbfbd65eb718a5a57084b7fc8f594ace}
+
+
+An integer property defining the X-\/offset for each capture line. 
+
+Example\+: When setting this property to 5 the first pixel in each line of the resulting image will be pixel number 5 of each line transmitted by the camera. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a848ee514681ffe6bf617cf6de0bf5a48}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}!aoi\+Start\+Y@{aoi\+Start\+Y}}
+\index{aoi\+Start\+Y@{aoi\+Start\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}
+\subsubsection[{aoi\+Start\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::aoi\+Start\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_a848ee514681ffe6bf617cf6de0bf5a48}
+
+
+An integer property defining the Y-\/offset. 
+
+Example\+: When setting this property to 5 the first line of the resulting image will be line number 5 of the image transmitted by the camera. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_af295aa670e45c6cbdb6e5d8517922371}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}!pixel\+Format@{pixel\+Format}}
+\index{pixel\+Format@{pixel\+Format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}}
+\subsubsection[{pixel\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Image\+Buffer\+Pixel\+Format} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::pixel\+Format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_af295aa670e45c6cbdb6e5d8517922371}
+
+
+An enumerated integer property defining the pixel format used to transfer the image data into the target systems host memory. 
+
+Support for this property has been added in version 1.\+11.\+0 of mv\+I\+M\+P\+A\+C\+T Acquire thus old driver versions will raise an exception if an application accesses the property without checking if the property is present.
+
+By default this property will be set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ibpf\+Auto}. This will result in the previous driver behaviour where depending on the various post processing steps that are enabled or disabled the driver will decide which transfer format will be used. However sometimes this could result in a transfer format, which is not ideal for the application (e.\+g. when a post processing step of the application needs R\+G\+Bx888\+Packed but the systems bandwidth is limited the application might want to transfer the data in Y\+U\+V422 packed and then use the fast format conversion algorithm in the driver). This can be achieved by explicitly setting {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_af295aa670e45c6cbdb6e5d8517922371}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::pixel\+Format}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ibpf\+Y\+U\+V422\+Packed} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_abfd0d30346d66251d5941a5e57efb784}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::pixel\+Format}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ibpf\+R\+G\+Bx888\+Packed}.
+
+\begin{DoxyNote}{注解}
+Selecting a defined transfer format can in some cases result in certain filters (e.\+g. dark current, ...) to be switched of as then the filters themself can no longer influence the trnasfer format, which is sometimes necessary as not every filter does support every input format. Also this property will contain only pixel formats, which are actually supported by the capture device, thus in most of the cases this will be a subset of the pixel formats defined by {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format} 
+\end{DoxyNote}
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Image\+Buffer\+Pixel\+Format}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

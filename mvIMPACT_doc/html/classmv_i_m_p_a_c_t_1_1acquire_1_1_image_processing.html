@@ -1,0 +1,1483 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::ImageProcessing类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::ImageProcessing类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Base class for image processing related properties.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::ImageProcessing 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="4,6,152,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::ImageProcessing 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="805,22,955,64"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TLUTMode \&gt;" alt="" coords="781,98,979,140"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,952,555,993"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="805,176,955,217"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDefectivePixels\lFilterMode \&gt;" alt="" coords="769,240,991,296"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TMirrorOperation\lMode \&gt;" alt="" coords="771,320,989,376"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TWhiteBalance\lParameter \&gt;" alt="" coords="775,400,985,456"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TFlatFieldFilter\lCorrectionMode \&gt;" alt="" coords="776,480,984,536"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TImageBuffer\lFormatReinterpreterMode \&gt;" alt="" coords="780,560,980,616"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TChannelSplit\lMode \&gt;" alt="" coords="779,640,981,696"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TColorProcessing\lMode \&gt;" alt="" coords="767,720,993,776"/><area shape="rect" id="node16" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TFlatFieldFilter\lMode \&gt;" alt="" coords="776,800,984,856"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="793,880,967,921"/><area shape="rect" id="node18" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TImageProcessing\lFilter \&gt;" alt="" coords="765,944,995,1000"/><area shape="rect" id="node19" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TLUTMapping \&gt;" alt="" coords="773,1024,987,1065"/><area shape="rect" id="node20" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="786,1089,974,1130"/><area shape="rect" id="node21" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDarkCurrent\lFilterMode \&gt;" alt="" coords="780,1154,980,1210"/><area shape="rect" id="node22" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TWhiteBalance\lCalibrationMode \&gt;" alt="" coords="775,1234,985,1290"/><area shape="rect" id="node23" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBayerConversion\lMode \&gt;" alt="" coords="765,1314,995,1370"/><area shape="rect" id="node24" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TColorTwist\lOutputCorrectionMatrixMode \&gt;" alt="" coords="779,1394,981,1450"/><area shape="rect" id="node25" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TLUTImplementation \&gt;" alt="" coords="753,1473,1007,1514"/><area shape="rect" id="node26" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TColorTwist\lInputCorrectionMatrixMode \&gt;" alt="" coords="784,1538,976,1594"/><area shape="rect" id="node27" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TMirrorMode \&gt;" alt="" coords="777,1617,983,1658"/><area shape="rect" id="node28" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TLUTInterpolation\lMode \&gt;" alt="" coords="767,1682,993,1738"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,1509,355,1550"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,1712,728,1753"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,1509,155,1550"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a81a81cdfd896ef8ceaead6f93b88038a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a81a81cdfd896ef8ceaead6f93b88038a">ImageProcessing</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a81a81cdfd896ef8ceaead6f93b88038a"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b> object.  <a href="#a81a81cdfd896ef8ceaead6f93b88038a">更多...</a><br /></td></tr>
+<tr class="separator:a81a81cdfd896ef8ceaead6f93b88038a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9476f886daf74017358ba91efed60a83"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9476f886daf74017358ba91efed60a83">ImageProcessing</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html">ImageProcessing</a> &amp;src)</td></tr>
+<tr class="memdesc:a9476f886daf74017358ba91efed60a83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b> from and existing one.  <a href="#a9476f886daf74017358ba91efed60a83">更多...</a><br /></td></tr>
+<tr class="separator:a9476f886daf74017358ba91efed60a83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41bd628190fbbc91e76a3f81d73b2758"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41bd628190fbbc91e76a3f81d73b2758"></a>
+virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a41bd628190fbbc91e76a3f81d73b2758">~ImageProcessing</a> ()</td></tr>
+<tr class="memdesc:a41bd628190fbbc91e76a3f81d73b2758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class destructor. <br /></td></tr>
+<tr class="separator:a41bd628190fbbc91e76a3f81d73b2758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ac759ddd44515fd4bf400ae77eb1faf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ac759ddd44515fd4bf400ae77eb1faf"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html">ImageProcessing</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7ac759ddd44515fd4bf400ae77eb1faf">operator=</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html">ImageProcessing</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a7ac759ddd44515fd4bf400ae77eb1faf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows assignments of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b> objects. <br /></td></tr>
+<tr class="separator:a7ac759ddd44515fd4bf400ae77eb1faf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaba17f2f9aadb9a1e93f3e21a3536fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aaaba17f2f9aadb9a1e93f3e21a3536fc">setSaturation</a> (double K)</td></tr>
+<tr class="memdesc:aaaba17f2f9aadb9a1e93f3e21a3536fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the saturation by using the color twist matrix.  <a href="#aaaba17f2f9aadb9a1e93f3e21a3536fc">更多...</a><br /></td></tr>
+<tr class="separator:aaaba17f2f9aadb9a1e93f3e21a3536fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e811b5063a027b43599643abc3f132"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters.html">GainOffsetKneeChannelParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a93e811b5063a027b43599643abc3f132">getGainOffsetKneeParameter</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a93e811b5063a027b43599643abc3f132"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a set of user definable parameters to configure a certain channel of the GainOffsetKnee filter.  <a href="#a93e811b5063a027b43599643abc3f132">更多...</a><br /></td></tr>
+<tr class="separator:a93e811b5063a027b43599643abc3f132"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab288b4ffa5cb84731471181b26eab240"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab288b4ffa5cb84731471181b26eab240"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ab288b4ffa5cb84731471181b26eab240">getGainOffsetKneeParameterCount</a> (void) const </td></tr>
+<tr class="memdesc:ab288b4ffa5cb84731471181b26eab240"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available user definable parameter sets for the GainOffsetKnee filter. <br /></td></tr>
+<tr class="separator:ab288b4ffa5cb84731471181b26eab240"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa77f9e7eea7274c5cc1259c59a6f6b1f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_mirror_parameters.html">MirrorParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aa77f9e7eea7274c5cc1259c59a6f6b1f">getMirrorParameter</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:aa77f9e7eea7274c5cc1259c59a6f6b1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a set of user definable parameters to configure mirror filter related features.  <a href="#aa77f9e7eea7274c5cc1259c59a6f6b1f">更多...</a><br /></td></tr>
+<tr class="separator:aa77f9e7eea7274c5cc1259c59a6f6b1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84acdd3171cf4d638105ffd982c68f7f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84acdd3171cf4d638105ffd982c68f7f"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a84acdd3171cf4d638105ffd982c68f7f">getMirrorParameterCount</a> (void) const </td></tr>
+<tr class="memdesc:a84acdd3171cf4d638105ffd982c68f7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available user definable parameter sets mirror filter related operations. <br /></td></tr>
+<tr class="separator:a84acdd3171cf4d638105ffd982c68f7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07f02208dbb6e3c36409c513874212b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_l_u_t_parameters.html">LUTParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a07f02208dbb6e3c36409c513874212b9">getLUTParameter</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a07f02208dbb6e3c36409c513874212b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a set of user definable parameters to configure LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) operations.  <a href="#a07f02208dbb6e3c36409c513874212b9">更多...</a><br /></td></tr>
+<tr class="separator:a07f02208dbb6e3c36409c513874212b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afac0f2260a5aaa4268377fc959713699"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afac0f2260a5aaa4268377fc959713699"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afac0f2260a5aaa4268377fc959713699">getLUTParameterCount</a> (void) const </td></tr>
+<tr class="memdesc:afac0f2260a5aaa4268377fc959713699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available user definable parameter sets for LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) operations. <br /></td></tr>
+<tr class="separator:afac0f2260a5aaa4268377fc959713699"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebc9e7e21a15bee6d2fa867bb453d75"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_white_balance_settings.html">WhiteBalanceSettings</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a1ebc9e7e21a15bee6d2fa867bb453d75">getWBUserSetting</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a1ebc9e7e21a15bee6d2fa867bb453d75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to a set of user definable parameters to perform a white balance correction.  <a href="#a1ebc9e7e21a15bee6d2fa867bb453d75">更多...</a><br /></td></tr>
+<tr class="separator:a1ebc9e7e21a15bee6d2fa867bb453d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac11633f1c2cba7a8f8bf7bc58978e6e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aac11633f1c2cba7a8f8bf7bc58978e6e"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aac11633f1c2cba7a8f8bf7bc58978e6e">getWBUserSettingsCount</a> (void) const </td></tr>
+<tr class="memdesc:aac11633f1c2cba7a8f8bf7bc58978e6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of available user definable parameter sets for white balance correction. <br /></td></tr>
+<tr class="separator:aac11633f1c2cba7a8f8bf7bc58978e6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:af8773a44e43169a2bdb68b402f4eafd0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gafa56b00b5309b5cb40e10b9eb07e1cf9">PropertyIColorProcessingMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#af8773a44e43169a2bdb68b402f4eafd0">colorProcessing</a></td></tr>
+<tr class="memdesc:af8773a44e43169a2bdb68b402f4eafd0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining what kind of color processing shall be applied to the raw image data.  <a href="#af8773a44e43169a2bdb68b402f4eafd0">更多...</a><br /></td></tr>
+<tr class="separator:af8773a44e43169a2bdb68b402f4eafd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33f1980b7ef1e3acbe3e0dd67f0ce6d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga0420d9b31df0caf0bc62286439e80366">PropertyIBayerConversionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a33f1980b7ef1e3acbe3e0dd67f0ce6d3">bayerConversionMode</a></td></tr>
+<tr class="memdesc:a33f1980b7ef1e3acbe3e0dd67f0ce6d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining what kind of algorithm shall be used during Bayer to RGB conversion.  <a href="#a33f1980b7ef1e3acbe3e0dd67f0ce6d3">更多...</a><br /></td></tr>
+<tr class="separator:a33f1980b7ef1e3acbe3e0dd67f0ce6d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc417e7cc989db27966d9b267d337e0f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gabdf739a9f4db49c6642a3bf50540a1b4">PropertyIWhiteBalanceParameter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afc417e7cc989db27966d9b267d337e0f">whiteBalance</a></td></tr>
+<tr class="memdesc:afc417e7cc989db27966d9b267d337e0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the parameter set to be used to perform the white balance correction.  <a href="#afc417e7cc989db27966d9b267d337e0f">更多...</a><br /></td></tr>
+<tr class="separator:afc417e7cc989db27966d9b267d337e0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b158bb26649b95f98f9efef72eddc33"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gab129f1b9a01f41a701fd35fd1fddc4d2">PropertyIWhiteBalanceCalibrationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a6b158bb26649b95f98f9efef72eddc33">whiteBalanceCalibration</a></td></tr>
+<tr class="memdesc:a6b158bb26649b95f98f9efef72eddc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the mode used for white balance calibration.  <a href="#a6b158bb26649b95f98f9efef72eddc33">更多...</a><br /></td></tr>
+<tr class="separator:a6b158bb26649b95f98f9efef72eddc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ccbcb292285fef63f625b25239c4164"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga32f5b5edac93671f54854b4a76f0057e">PropertyIImageProcessingFilter</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a5ccbcb292285fef63f625b25239c4164">filter</a></td></tr>
+<tr class="memdesc:a5ccbcb292285fef63f625b25239c4164"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the filter to be applied to the image before it is transferred to the user.  <a href="#a5ccbcb292285fef63f625b25239c4164">更多...</a><br /></td></tr>
+<tr class="separator:a5ccbcb292285fef63f625b25239c4164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe70a375bdb82e907a6d420c9f40b246"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaeb7e2fadc87b5bf53e5ba09c3255a276">PropertyIMirrorOperationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afe70a375bdb82e907a6d420c9f40b246">mirrorOperationMode</a></td></tr>
+<tr class="memdesc:afe70a375bdb82e907a6d420c9f40b246"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the general mode the mirror filter will work in.  <a href="#afe70a375bdb82e907a6d420c9f40b246">更多...</a><br /></td></tr>
+<tr class="separator:afe70a375bdb82e907a6d420c9f40b246"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00449c128b1916f1a00e1f368e0f363c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga6adf15b90e84144e36bdfa8e26fb38de">PropertyIMirrorMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a00449c128b1916f1a00e1f368e0f363c">mirrorModeGlobal</a></td></tr>
+<tr class="memdesc:a00449c128b1916f1a00e1f368e0f363c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the mirror mode to be applied to ALL channels of the image.  <a href="#a00449c128b1916f1a00e1f368e0f363c">更多...</a><br /></td></tr>
+<tr class="separator:a00449c128b1916f1a00e1f368e0f363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1e060a70ed836297ef3886db0bf8a95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga1833e6534b35ce9f81fdc3a80cc332d3">PropertyIDefectivePixelsFilterMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95">defectivePixelsFilterMode</a></td></tr>
+<tr class="memdesc:ae1e060a70ed836297ef3886db0bf8a95"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the operation mode of the defective pixels filter.  <a href="#ae1e060a70ed836297ef3886db0bf8a95">更多...</a><br /></td></tr>
+<tr class="separator:ae1e060a70ed836297ef3886db0bf8a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57e5c8cf92c06a12d27036387978b36d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a57e5c8cf92c06a12d27036387978b36d">defectivePixelsFilterLeakyPixelDeviation_ADCLimit</a></td></tr>
+<tr class="memdesc:a57e5c8cf92c06a12d27036387978b36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the max. allowed offset from the average grey value for a pixel during calibration.  <a href="#a57e5c8cf92c06a12d27036387978b36d">更多...</a><br /></td></tr>
+<tr class="separator:a57e5c8cf92c06a12d27036387978b36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae49f3046e9f407c2e3ef7c7e85d204cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae49f3046e9f407c2e3ef7c7e85d204cb">defectivePixelsFilterColdPixelDeviation_pc</a></td></tr>
+<tr class="memdesc:ae49f3046e9f407c2e3ef7c7e85d204cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the max. allowed deviation for a pixel in per cent from the average grey value.  <a href="#ae49f3046e9f407c2e3ef7c7e85d204cb">更多...</a><br /></td></tr>
+<tr class="separator:ae49f3046e9f407c2e3ef7c7e85d204cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd6475ebbec9d0d3f0968a0e383449d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#adcd6475ebbec9d0d3f0968a0e383449d">defectivePixelsFound</a></td></tr>
+<tr class="memdesc:adcd6475ebbec9d0d3f0968a0e383449d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of pixels considered as being defective with respect to the last calibration run.  <a href="#adcd6475ebbec9d0d3f0968a0e383449d">更多...</a><br /></td></tr>
+<tr class="separator:adcd6475ebbec9d0d3f0968a0e383449d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a5a32575a86e5f69eea1b5a0e1bb728"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a0a5a32575a86e5f69eea1b5a0e1bb728">defectivePixelOffsetX</a></td></tr>
+<tr class="memdesc:a0a5a32575a86e5f69eea1b5a0e1bb728"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining a list of X-offsets of all pixels currently treated as defective.  <a href="#a0a5a32575a86e5f69eea1b5a0e1bb728">更多...</a><br /></td></tr>
+<tr class="separator:a0a5a32575a86e5f69eea1b5a0e1bb728"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6339b18435a6c6e16b3e2a8faba9f7f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a6339b18435a6c6e16b3e2a8faba9f7f1">defectivePixelOffsetY</a></td></tr>
+<tr class="memdesc:a6339b18435a6c6e16b3e2a8faba9f7f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining a list of Y-offsets of all pixels currently treated as defective.  <a href="#a6339b18435a6c6e16b3e2a8faba9f7f1">更多...</a><br /></td></tr>
+<tr class="separator:a6339b18435a6c6e16b3e2a8faba9f7f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebd10f27aaab9228b4d3d207a6b27aca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aebd10f27aaab9228b4d3d207a6b27aca">defectivePixelReadFromDevice</a></td></tr>
+<tr class="memdesc:aebd10f27aaab9228b4d3d207a6b27aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calling this method will download defective pixels from the device.  <a href="#aebd10f27aaab9228b4d3d207a6b27aca">更多...</a><br /></td></tr>
+<tr class="separator:aebd10f27aaab9228b4d3d207a6b27aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc7e71de3b649a80d02ae944471eb1b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7fc7e71de3b649a80d02ae944471eb1b">defectivePixelWriteToDevice</a></td></tr>
+<tr class="memdesc:a7fc7e71de3b649a80d02ae944471eb1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calling this method will upload defective pixels from the device.  <a href="#a7fc7e71de3b649a80d02ae944471eb1b">更多...</a><br /></td></tr>
+<tr class="separator:a7fc7e71de3b649a80d02ae944471eb1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6922326134aec43993be0e07d4c5f76"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gae5e0a9f8a06ccd71118818818a717a8c">PropertyIFlatFieldFilterCorrectionMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae6922326134aec43993be0e07d4c5f76">flatFieldFilterCorrectionMode</a></td></tr>
+<tr class="memdesc:ae6922326134aec43993be0e07d4c5f76"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the correction mode of the flat field correction filter.  <a href="#ae6922326134aec43993be0e07d4c5f76">更多...</a><br /></td></tr>
+<tr class="separator:ae6922326134aec43993be0e07d4c5f76"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a228a7aa520bafcdadc2e30718b6052cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga135f01ac2dcf8ddcf43ae998eccb394e">PropertyIFlatFieldFilterMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a228a7aa520bafcdadc2e30718b6052cf">flatFieldFilterMode</a></td></tr>
+<tr class="memdesc:a228a7aa520bafcdadc2e30718b6052cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the operation mode of the flat field correction filter.  <a href="#a228a7aa520bafcdadc2e30718b6052cf">更多...</a><br /></td></tr>
+<tr class="separator:a228a7aa520bafcdadc2e30718b6052cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3eefa02a678739fea5280519ab398f8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3eefa02a678739fea5280519ab398f8"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ac3eefa02a678739fea5280519ab398f8">flatFieldFilterCalibrationImageCount</a></td></tr>
+<tr class="memdesc:ac3eefa02a678739fea5280519ab398f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the number of consecutive images to take into account during the calibration of the flat field filter. <br /></td></tr>
+<tr class="separator:ac3eefa02a678739fea5280519ab398f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a24af86e5db2dd3efc249ef1db69eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gade29cf3422c28d48e5d6c20cd9f47f1e">PropertyIDarkCurrentFilterMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a86a24af86e5db2dd3efc249ef1db69eb">darkCurrentFilterMode</a></td></tr>
+<tr class="memdesc:a86a24af86e5db2dd3efc249ef1db69eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the operation mode of the dark current filter.  <a href="#a86a24af86e5db2dd3efc249ef1db69eb">更多...</a><br /></td></tr>
+<tr class="separator:a86a24af86e5db2dd3efc249ef1db69eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad26adb6841d7a08858b824b3a846bbcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad26adb6841d7a08858b824b3a846bbcf"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ad26adb6841d7a08858b824b3a846bbcf">darkCurrentFilterCalibrationImageCount</a></td></tr>
+<tr class="memdesc:ad26adb6841d7a08858b824b3a846bbcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the number of consecutive images to take into account during calibration of the dark current filter. <br /></td></tr>
+<tr class="separator:ad26adb6841d7a08858b824b3a846bbcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe7ed4cb142288de179ce4e86b314ad6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#abe7ed4cb142288de179ce4e86b314ad6">gainOffsetKneeEnable</a></td></tr>
+<tr class="memdesc:abe7ed4cb142288de179ce4e86b314ad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable the Gain, Offset, Knee filter.  <a href="#abe7ed4cb142288de179ce4e86b314ad6">更多...</a><br /></td></tr>
+<tr class="separator:abe7ed4cb142288de179ce4e86b314ad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5b601b18f53f6b93f8f058225fae0ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ad5b601b18f53f6b93f8f058225fae0ec">gainOffsetKneeMasterOffset_pc</a></td></tr>
+<tr class="memdesc:ad5b601b18f53f6b93f8f058225fae0ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property that contains master offset(in percent).  <a href="#ad5b601b18f53f6b93f8f058225fae0ec">更多...</a><br /></td></tr>
+<tr class="separator:ad5b601b18f53f6b93f8f058225fae0ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8eb83578d97fde3405e6ae5d09e5c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7f8eb83578d97fde3405e6ae5d09e5c3">LUTEnable</a></td></tr>
+<tr class="memdesc:a7f8eb83578d97fde3405e6ae5d09e5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) transformations.  <a href="#a7f8eb83578d97fde3405e6ae5d09e5c3">更多...</a><br /></td></tr>
+<tr class="separator:a7f8eb83578d97fde3405e6ae5d09e5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2f3059a3574e6a08a2d4348f1d5a152"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga64e784bb1c97e3a3eed6ff572935e5d2">PropertyILUTMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae2f3059a3574e6a08a2d4348f1d5a152">LUTMode</a></td></tr>
+<tr class="memdesc:ae2f3059a3574e6a08a2d4348f1d5a152"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) transformation mode.  <a href="#ae2f3059a3574e6a08a2d4348f1d5a152">更多...</a><br /></td></tr>
+<tr class="separator:ae2f3059a3574e6a08a2d4348f1d5a152"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce44c89f01342416d0c3d37c16056cb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga2b9fd1a0f1dcf0867c527f11a1a1da65">PropertyILUTInterpolationMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a5ce44c89f01342416d0c3d37c16056cb">LUTInterpolationMode</a></td></tr>
+<tr class="memdesc:a5ce44c89f01342416d0c3d37c16056cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) interpolation mode.  <a href="#a5ce44c89f01342416d0c3d37c16056cb">更多...</a><br /></td></tr>
+<tr class="separator:a5ce44c89f01342416d0c3d37c16056cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab63796c1475d375fc872f0b11a102777"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga1188a6c6d64010982c28d3bb7b60b2f7">PropertyILUTImplementation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ab63796c1475d375fc872f0b11a102777">LUTImplementation</a></td></tr>
+<tr class="memdesc:ab63796c1475d375fc872f0b11a102777"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) implementation.  <a href="#ab63796c1475d375fc872f0b11a102777">更多...</a><br /></td></tr>
+<tr class="separator:ab63796c1475d375fc872f0b11a102777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6ef8a5f6168be4ebcdfe5c0d3e2d311"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga2641eda4be7328bd1e2af06cc136fb4b">PropertyILUTMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ac6ef8a5f6168be4ebcdfe5c0d3e2d311">LUTMappingHardware</a></td></tr>
+<tr class="memdesc:ac6ef8a5f6168be4ebcdfe5c0d3e2d311"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) mapping mode for LUT transformations done by the hardware.  <a href="#ac6ef8a5f6168be4ebcdfe5c0d3e2d311">更多...</a><br /></td></tr>
+<tr class="separator:ac6ef8a5f6168be4ebcdfe5c0d3e2d311"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec5f5970518b9ad4f8659fc5dba93416"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga2641eda4be7328bd1e2af06cc136fb4b">PropertyILUTMapping</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aec5f5970518b9ad4f8659fc5dba93416">LUTMappingSoftware</a></td></tr>
+<tr class="memdesc:aec5f5970518b9ad4f8659fc5dba93416"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) mapping mode for LUT transformations done optimized software algorithms.  <a href="#aec5f5970518b9ad4f8659fc5dba93416">更多...</a><br /></td></tr>
+<tr class="separator:aec5f5970518b9ad4f8659fc5dba93416"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6baedffb8af8bbd02452226028af8ce7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a6baedffb8af8bbd02452226028af8ce7">tapSortEnable</a></td></tr>
+<tr class="memdesc:a6baedffb8af8bbd02452226028af8ce7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable automatic data re-ordering from image sources delivering data from multiple taps that require re-ordering to reconstruct the image.  <a href="#a6baedffb8af8bbd02452226028af8ce7">更多...</a><br /></td></tr>
+<tr class="separator:a6baedffb8af8bbd02452226028af8ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a180de0eae56f31ec62fba059da8345ef"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a180de0eae56f31ec62fba059da8345ef">channelSplitEnable</a></td></tr>
+<tr class="memdesc:a180de0eae56f31ec62fba059da8345ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable automatic data re-ordering or extraction from multi-channel images.  <a href="#a180de0eae56f31ec62fba059da8345ef">更多...</a><br /></td></tr>
+<tr class="separator:a180de0eae56f31ec62fba059da8345ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29e6579bdae98ea9fe26b5f982b8cf24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga10dc070afa8c2d87bc6316c6a8507e82">PropertyIChannelSplitMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a29e6579bdae98ea9fe26b5f982b8cf24">channelSplitMode</a></td></tr>
+<tr class="memdesc:a29e6579bdae98ea9fe26b5f982b8cf24"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to define how data from multi-channel images shall be re-ordered.  <a href="#a29e6579bdae98ea9fe26b5f982b8cf24">更多...</a><br /></td></tr>
+<tr class="separator:a29e6579bdae98ea9fe26b5f982b8cf24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefbc72fe4b938214fa4e8b1f7b709aca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aefbc72fe4b938214fa4e8b1f7b709aca">channelSplitChannelIndex</a></td></tr>
+<tr class="memdesc:aefbc72fe4b938214fa4e8b1f7b709aca"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property which can be used to define which channel of the image shall be extracted.  <a href="#aefbc72fe4b938214fa4e8b1f7b709aca">更多...</a><br /></td></tr>
+<tr class="separator:aefbc72fe4b938214fa4e8b1f7b709aca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:addba5c4a6e43745b7e4445cb60c89287"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#addba5c4a6e43745b7e4445cb60c89287">channelSplitDeinterlaceEnable</a></td></tr>
+<tr class="memdesc:addba5c4a6e43745b7e4445cb60c89287"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable data re-ordering for interlaced images.  <a href="#addba5c4a6e43745b7e4445cb60c89287">更多...</a><br /></td></tr>
+<tr class="separator:addba5c4a6e43745b7e4445cb60c89287"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1059eb40d65d1ec9c66f5f0002b350c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a1059eb40d65d1ec9c66f5f0002b350c6">colorTwistInputCorrectionMatrixEnable</a></td></tr>
+<tr class="memdesc:a1059eb40d65d1ec9c66f5f0002b350c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable the color twist input correction matrix.  <a href="#a1059eb40d65d1ec9c66f5f0002b350c6">更多...</a><br /></td></tr>
+<tr class="separator:a1059eb40d65d1ec9c66f5f0002b350c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7af8df48fdaec0dd1a1dd6edff1a13cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gad8aa01209e3623c8739f5e1ded1b187d">PropertyIColorTwistInputCorrectionMatrixMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd">colorTwistInputCorrectionMatrixMode</a></td></tr>
+<tr class="memdesc:a7af8df48fdaec0dd1a1dd6edff1a13cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to select an input color correction matrix.  <a href="#a7af8df48fdaec0dd1a1dd6edff1a13cd">更多...</a><br /></td></tr>
+<tr class="separator:a7af8df48fdaec0dd1a1dd6edff1a13cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a697c4174ae80d29018b6595882ee8fed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a697c4174ae80d29018b6595882ee8fed">colorTwistInputCorrectionMatrixRow0</a></td></tr>
+<tr class="memdesc:a697c4174ae80d29018b6595882ee8fed"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first row of the input color correction matrix.  <a href="#a697c4174ae80d29018b6595882ee8fed">更多...</a><br /></td></tr>
+<tr class="separator:a697c4174ae80d29018b6595882ee8fed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95c6b003d27034b536a15106c79f2c16"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a95c6b003d27034b536a15106c79f2c16">colorTwistInputCorrectionMatrixRow1</a></td></tr>
+<tr class="memdesc:a95c6b003d27034b536a15106c79f2c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second row of the input color correction matrix.  <a href="#a95c6b003d27034b536a15106c79f2c16">更多...</a><br /></td></tr>
+<tr class="separator:a95c6b003d27034b536a15106c79f2c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb2992733955b923314845678c335e77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afb2992733955b923314845678c335e77">colorTwistInputCorrectionMatrixRow2</a></td></tr>
+<tr class="memdesc:afb2992733955b923314845678c335e77"><td class="mdescLeft">&#160;</td><td class="mdescRight">The third row of the input color correction matrix.  <a href="#afb2992733955b923314845678c335e77">更多...</a><br /></td></tr>
+<tr class="separator:afb2992733955b923314845678c335e77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a070473c70f0ee8047c89db923747b8f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a070473c70f0ee8047c89db923747b8f2">colorTwistEnable</a></td></tr>
+<tr class="memdesc:a070473c70f0ee8047c89db923747b8f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable the color twist matrix.  <a href="#a070473c70f0ee8047c89db923747b8f2">更多...</a><br /></td></tr>
+<tr class="separator:a070473c70f0ee8047c89db923747b8f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45ac933511a34f20785f092d0758f6b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a45ac933511a34f20785f092d0758f6b1">colorTwistRow0</a></td></tr>
+<tr class="memdesc:a45ac933511a34f20785f092d0758f6b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first row of the color twist matrix.  <a href="#a45ac933511a34f20785f092d0758f6b1">更多...</a><br /></td></tr>
+<tr class="separator:a45ac933511a34f20785f092d0758f6b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95f908912cfd2d3f82978070dacc8dac"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a95f908912cfd2d3f82978070dacc8dac">colorTwistRow1</a></td></tr>
+<tr class="memdesc:a95f908912cfd2d3f82978070dacc8dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second row of the color twist matrix.  <a href="#a95f908912cfd2d3f82978070dacc8dac">更多...</a><br /></td></tr>
+<tr class="separator:a95f908912cfd2d3f82978070dacc8dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05e9180a634ee3c5da6e41e51a3db47f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a05e9180a634ee3c5da6e41e51a3db47f">colorTwistRow2</a></td></tr>
+<tr class="memdesc:a05e9180a634ee3c5da6e41e51a3db47f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The third row of the color twist matrix.  <a href="#a05e9180a634ee3c5da6e41e51a3db47f">更多...</a><br /></td></tr>
+<tr class="separator:a05e9180a634ee3c5da6e41e51a3db47f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa30358eeb33f8d1b26cbafc37e829c08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#aa30358eeb33f8d1b26cbafc37e829c08">colorTwistOutputCorrectionMatrixEnable</a></td></tr>
+<tr class="memdesc:aa30358eeb33f8d1b26cbafc37e829c08"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable the color twist output correction matrix.  <a href="#aa30358eeb33f8d1b26cbafc37e829c08">更多...</a><br /></td></tr>
+<tr class="separator:aa30358eeb33f8d1b26cbafc37e829c08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c592b9bee390d8f918b0ef837604fae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gacf5323a7be006494492dd5f8c11c730e">PropertyIColorTwistOutputCorrectionMatrixMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae">colorTwistOutputCorrectionMatrixMode</a></td></tr>
+<tr class="memdesc:a9c592b9bee390d8f918b0ef837604fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to select an output color correction matrix.  <a href="#a9c592b9bee390d8f918b0ef837604fae">更多...</a><br /></td></tr>
+<tr class="separator:a9c592b9bee390d8f918b0ef837604fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab21f7d6e8ab3598c45411a1d66a3a71a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ab21f7d6e8ab3598c45411a1d66a3a71a">colorTwistOutputCorrectionMatrixRow0</a></td></tr>
+<tr class="memdesc:ab21f7d6e8ab3598c45411a1d66a3a71a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first row of the output color correction matrix.  <a href="#ab21f7d6e8ab3598c45411a1d66a3a71a">更多...</a><br /></td></tr>
+<tr class="separator:ab21f7d6e8ab3598c45411a1d66a3a71a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75cccfd023c20569ff5ff6e3e522595a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a75cccfd023c20569ff5ff6e3e522595a">colorTwistOutputCorrectionMatrixRow1</a></td></tr>
+<tr class="memdesc:a75cccfd023c20569ff5ff6e3e522595a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second row of the output color correction matrix.  <a href="#a75cccfd023c20569ff5ff6e3e522595a">更多...</a><br /></td></tr>
+<tr class="separator:a75cccfd023c20569ff5ff6e3e522595a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe3fe5344ec8268ad6936c0401c8231b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#abe3fe5344ec8268ad6936c0401c8231b">colorTwistOutputCorrectionMatrixRow2</a></td></tr>
+<tr class="memdesc:abe3fe5344ec8268ad6936c0401c8231b"><td class="mdescLeft">&#160;</td><td class="mdescRight">The third row of the output color correction matrix.  <a href="#abe3fe5344ec8268ad6936c0401c8231b">更多...</a><br /></td></tr>
+<tr class="separator:abe3fe5344ec8268ad6936c0401c8231b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad95d05e048058217b600eec09753435f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ad95d05e048058217b600eec09753435f">colorTwistResultingMatrixRow0</a></td></tr>
+<tr class="memdesc:ad95d05e048058217b600eec09753435f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The first row of the resulting color twist matrix.  <a href="#ad95d05e048058217b600eec09753435f">更多...</a><br /></td></tr>
+<tr class="separator:ad95d05e048058217b600eec09753435f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90cacc49731a478754e9c973a08e8a91"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a90cacc49731a478754e9c973a08e8a91">colorTwistResultingMatrixRow1</a></td></tr>
+<tr class="memdesc:a90cacc49731a478754e9c973a08e8a91"><td class="mdescLeft">&#160;</td><td class="mdescRight">The second row of the resulting color twist matrix.  <a href="#a90cacc49731a478754e9c973a08e8a91">更多...</a><br /></td></tr>
+<tr class="separator:a90cacc49731a478754e9c973a08e8a91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a357603532ef84699c0515474c3384dca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a357603532ef84699c0515474c3384dca">colorTwistResultingMatrixRow2</a></td></tr>
+<tr class="memdesc:a357603532ef84699c0515474c3384dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">The third row of the resulting color twist matrix.  <a href="#a357603532ef84699c0515474c3384dca">更多...</a><br /></td></tr>
+<tr class="separator:a357603532ef84699c0515474c3384dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15907d13fa374891738730e7addee017"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a15907d13fa374891738730e7addee017">formatReinterpreterEnable</a></td></tr>
+<tr class="memdesc:a15907d13fa374891738730e7addee017"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable the format reinterpreter filter.  <a href="#a15907d13fa374891738730e7addee017">更多...</a><br /></td></tr>
+<tr class="separator:a15907d13fa374891738730e7addee017"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9077d1d9e51681a0ae60e9265f5129a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga7fd91208d37ae9034d9639d64e0e0e25">PropertyIImageBufferFormatReinterpreterMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9077d1d9e51681a0ae60e9265f5129a8">formatReinterpreterMode</a></td></tr>
+<tr class="memdesc:a9077d1d9e51681a0ae60e9265f5129a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to configure the format reinterpreter filter.  <a href="#a9077d1d9e51681a0ae60e9265f5129a8">更多...</a><br /></td></tr>
+<tr class="separator:a9077d1d9e51681a0ae60e9265f5129a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af56131c2b74e45d953aa6aa16d0959f8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#af56131c2b74e45d953aa6aa16d0959f8">rotationEnable</a></td></tr>
+<tr class="memdesc:af56131c2b74e45d953aa6aa16d0959f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which can be used to enable/disable the rotation filter.  <a href="#af56131c2b74e45d953aa6aa16d0959f8">更多...</a><br /></td></tr>
+<tr class="separator:af56131c2b74e45d953aa6aa16d0959f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92070a7aa140d8f1e202df70c4b3fb7c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a92070a7aa140d8f1e202df70c4b3fb7c">rotationAngle</a></td></tr>
+<tr class="memdesc:a92070a7aa140d8f1e202df70c4b3fb7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The counterclockwise angle at which the image will be rotated.  <a href="#a92070a7aa140d8f1e202df70c4b3fb7c">更多...</a><br /></td></tr>
+<tr class="separator:a92070a7aa140d8f1e202df70c4b3fb7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Base class for image processing related properties. </p>
+<p>This class provides access to properties, which define how the image shall be processed after it has been captured but before it will be handed back to the user. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a81a81cdfd896ef8ceaead6f93b88038a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::ImageProcessing::ImageProcessing </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing_a81a81cdfd896ef8ceaead6f93b88038a_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="285,5,448,61"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="285,85,448,141"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="285,165,448,221"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="496,61,715,102"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="775,27,924,69"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="763,93,936,134"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="985,115,1213,171"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1261,122,1485,163"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="521,173,689,214"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a9476f886daf74017358ba91efed60a83"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::ImageProcessing::ImageProcessing </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html">ImageProcessing</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b> from and existing one. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>A constant reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html" title="Base class for image processing related properties. ">mvIMPACT::acquire::ImageProcessing</a></b> object, this object shall be created from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a93e811b5063a027b43599643abc3f132"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gain_offset_knee_channel_parameters.html">GainOffsetKneeChannelParameters</a>&amp; mvIMPACT::acquire::ImageProcessing::getGainOffsetKneeParameter </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to a set of user definable parameters to configure a certain channel of the GainOffsetKnee filter. </p>
+<dl class="section return"><dt>返回</dt><dd>A reference to one of the parameter sets for the GainOffsetKnee filter that can be altered by the user. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the gain, offset, knee parameter set to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a07f02208dbb6e3c36409c513874212b9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_l_u_t_parameters.html">LUTParameters</a>&amp; mvIMPACT::acquire::ImageProcessing::getLUTParameter </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to a set of user definable parameters to configure LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) operations. </p>
+<dl class="section return"><dt>返回</dt><dd>A reference to one of the parameter sets for LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) operations that can be altered by the user. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the LUT parameter set to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aa77f9e7eea7274c5cc1259c59a6f6b1f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_mirror_parameters.html">MirrorParameters</a>&amp; mvIMPACT::acquire::ImageProcessing::getMirrorParameter </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to a set of user definable parameters to configure mirror filter related features. </p>
+<dl class="section return"><dt>返回</dt><dd>A reference to one of the parameter sets for mirror filter related features that can be altered by the user. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the mirror parameter set to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1ebc9e7e21a15bee6d2fa867bb453d75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_white_balance_settings.html">WhiteBalanceSettings</a>&amp; mvIMPACT::acquire::ImageProcessing::getWBUserSetting </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a reference to a set of user definable parameters to perform a white balance correction. </p>
+<p>Pass '0' for the setting that is activated by setting the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afc417e7cc989db27966d9b267d337e0f" title="An integer property defining the parameter set to be used to perform the white balance correction...">mvIMPACT::acquire::ImageProcessing::whiteBalance</a></b> to <b>mvIMPACT::acquire::wbpUser1</b>, '1' for <b>mvIMPACT::acquire::wbpUser2</b> and so on.</p>
+<dl class="section return"><dt>返回</dt><dd>A reference to one of the parameter sets for white balance correction that can be altered by the user. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the white balance parameter set to be returned </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="aaaba17f2f9aadb9a1e93f3e21a3536fc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void mvIMPACT::acquire::ImageProcessing::setSaturation </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>K</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets the saturation by using the color twist matrix. </p>
+<p>The following saturation formula is used:</p>
+<div class="fragment"><div class="line">[0.299 + 0.701*K       , 0.587*(1-K) , 0.114*(1-K)     ]</div>
+<div class="line">[0.299*(1-K) + 0.701*K , 0.587       , 0.114*(1-K)     ]</div>
+<div class="line">[0.299*(1-K) + 0.701*K , 0.587*(1-K) , 0.114 + 0.886*K ]</div>
+</div><!-- fragment --><p>K is the saturation factor K &gt; 1 increases saturation K = 1 means no change 0 &lt; K &lt; 1 decreases saturation K = 0 produces B&amp;W K &lt; 0 inverts color</p>
+<dl class="section note"><dt>注解</dt><dd>To enable/disable the saturation the application must write to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a070473c70f0ee8047c89db923747b8f2" title="An enumerated integer property which can be used to enable/disable the color twist matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistEnable</a></b>. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">K</td><td>The saturation value. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a33f1980b7ef1e3acbe3e0dd67f0ce6d3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga0420d9b31df0caf0bc62286439e80366">PropertyIBayerConversionMode</a> mvIMPACT::acquire::ImageProcessing::bayerConversionMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining what kind of algorithm shall be used during Bayer to RGB conversion. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBayerConversionMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aefbc72fe4b938214fa4e8b1f7b709aca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::ImageProcessing::channelSplitChannelIndex</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property which can be used to define which channel of the image shall be extracted. </p>
+<p>This property will only be visible if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a29e6579bdae98ea9fe26b5f982b8cf24" title="An enumerated integer property which can be used to define how data from multi-channel images shall b...">mvIMPACT::acquire::ImageProcessing::channelSplitMode</a></b> is set to <b>mvIMPACT::acquire::csmExtractSingle</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="addba5c4a6e43745b7e4445cb60c89287"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::channelSplitDeinterlaceEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable data re-ordering for interlaced images. </p>
+<p>Enabling this feature will cause interlaced images in a way that the 2 fields will be display next to each other. This will modify the original image in an image with twice the width but half the height.</p>
+<dl class="section note"><dt>注解</dt><dd>Right now this property will only result in correct results for images, that are line wise interlaced, thus some special sensors that e.g. transfer Bayer interlaced data (2 lines field 0, 2 lines field even, etc.) can not be re-arranged in a meaningful way.</dd></dl>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a180de0eae56f31ec62fba059da8345ef"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::channelSplitEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable automatic data re-ordering or extraction from multi-channel images. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a29e6579bdae98ea9fe26b5f982b8cf24"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga10dc070afa8c2d87bc6316c6a8507e82">PropertyIChannelSplitMode</a> mvIMPACT::acquire::ImageProcessing::channelSplitMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to define how data from multi-channel images shall be re-ordered. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TChannelSplitMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="af8773a44e43169a2bdb68b402f4eafd0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gafa56b00b5309b5cb40e10b9eb07e1cf9">PropertyIColorProcessingMode</a> mvIMPACT::acquire::ImageProcessing::colorProcessing</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining what kind of color processing shall be applied to the raw image data. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TColorProcessingMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a070473c70f0ee8047c89db923747b8f2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::colorTwistEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable the color twist matrix. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<p>The color twist filter can be used to apply a linear transformation to a 3 channel image. Each pixel will first be multiplied by a 3x3 matrix and can then be added to an offset triplet.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1059eb40d65d1ec9c66f5f0002b350c6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable the color twist input correction matrix. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7af8df48fdaec0dd1a1dd6edff1a13cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gad8aa01209e3623c8739f5e1ded1b187d">PropertyIColorTwistInputCorrectionMatrixMode</a> mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to select an input color correction matrix. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TColorTwistInputCorrectionMatrixMode</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a697c4174ae80d29018b6595882ee8fed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixRow0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The first row of the input color correction matrix. </p>
+<p>This property will store the first row of a user defined 3x3 input color correction matrix if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd" title="An enumerated integer property which can be used to select an input color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</a></b> is set to <b>mvIMPACT::acquire::cticmmUser</b>. For other values of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd" title="An enumerated integer property which can be used to select an input color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</a></b> modifying this property will have no effect.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a95c6b003d27034b536a15106c79f2c16"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixRow1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The second row of the input color correction matrix. </p>
+<p>This property will store the second row of a user defined 3x3 input color correction matrix if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd" title="An enumerated integer property which can be used to select an input color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</a></b> is set to <b>mvIMPACT::acquire::cticmmUser</b>. For other values of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd" title="An enumerated integer property which can be used to select an input color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</a></b> modifying this property will have no effect.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afb2992733955b923314845678c335e77"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixRow2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The third row of the input color correction matrix. </p>
+<p>This property will store the third row of a user defined 3x3 input color correction matrix if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd" title="An enumerated integer property which can be used to select an input color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</a></b> is set to <b>mvIMPACT::acquire::cticmmUser</b>. For other values of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7af8df48fdaec0dd1a1dd6edff1a13cd" title="An enumerated integer property which can be used to select an input color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistInputCorrectionMatrixMode</a></b> modifying this property will have no effect.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa30358eeb33f8d1b26cbafc37e829c08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable the color twist output correction matrix. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c592b9bee390d8f918b0ef837604fae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gacf5323a7be006494492dd5f8c11c730e">PropertyIColorTwistOutputCorrectionMatrixMode</a> mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to select an output color correction matrix. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TColorTwistOutputCorrectionMatrixMode</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ab21f7d6e8ab3598c45411a1d66a3a71a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixRow0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The first row of the output color correction matrix. </p>
+<p>This property will store the first row of a user defined 3x3 output color correction matrix if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae" title="An enumerated integer property which can be used to select an output color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</a></b> is set to <b>mvIMPACT::acquire::ctocmmUser</b>. For other values of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae" title="An enumerated integer property which can be used to select an output color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</a></b> modifying this property will have no effect.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a75cccfd023c20569ff5ff6e3e522595a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixRow1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The second row of the output color correction matrix. </p>
+<p>This property will store the second row of a user defined 3x3 output color correction matrix if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae" title="An enumerated integer property which can be used to select an output color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</a></b> is set to <b>mvIMPACT::acquire::ctocmmUser</b>. For other values of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae" title="An enumerated integer property which can be used to select an output color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</a></b> modifying this property will have no effect.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe3fe5344ec8268ad6936c0401c8231b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixRow2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The third row of the output color correction matrix. </p>
+<p>This property will store the third row of a user defined 3x3 output color correction matrix if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae" title="An enumerated integer property which can be used to select an output color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</a></b> is set to <b>mvIMPACT::acquire::ctocmmUser</b>. For other values of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a9c592b9bee390d8f918b0ef837604fae" title="An enumerated integer property which can be used to select an output color correction matrix...">mvIMPACT::acquire::ImageProcessing::colorTwistOutputCorrectionMatrixMode</a></b> modifying this property will have no effect.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad95d05e048058217b600eec09753435f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistResultingMatrixRow0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The first row of the resulting color twist matrix. </p>
+<p>This property will store the first row of the 3x4 resulting color twist matrix. This matrix is created by multiplying the input correction matrix by the color twist matrix by the output correction matrix. Only active matrices will be used to calculate the resulting matrix.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90cacc49731a478754e9c973a08e8a91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistResultingMatrixRow1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The second row of the resulting color twist matrix. </p>
+<p>This property will store the second row of the 3x4 resulting color twist matrix. This matrix is created by multiplying the input correction matrix by the color twist matrix by the output correction matrix. Only active matrices will be used to calculate the resulting matrix.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a357603532ef84699c0515474c3384dca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistResultingMatrixRow2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The third row of the resulting color twist matrix. </p>
+<p>This property will store the third row of the 3x4 resulting color twist matrix. This matrix is created by multiplying the input correction matrix by the color twist matrix by the output correction matrix. Only active matrices will be used to calculate the resulting matrix.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a45ac933511a34f20785f092d0758f6b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistRow0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The first row of the color twist matrix. </p>
+<p>This property will store 4 values. The first 3 components for the first row of the 3x4 matrix, the last component is the offset of this row.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a95f908912cfd2d3f82978070dacc8dac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistRow1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The second row of the color twist matrix. </p>
+<p>This property will store 4 values. The first 3 components for the second row of the 3x4 matrix, the last component is the offset of this row.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a05e9180a634ee3c5da6e41e51a3db47f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::colorTwistRow2</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The third row of the color twist matrix. </p>
+<p>This property will store 4 values. The first 3 components for the third row of the 3x4 matrix, the last component is the offset of this row.</p>
+<dl class="section since"><dt>自从</dt><dd>2.2.2. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a86a24af86e5db2dd3efc249ef1db69eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gade29cf3422c28d48e5d6c20cd9f47f1e">PropertyIDarkCurrentFilterMode</a> mvIMPACT::acquire::ImageProcessing::darkCurrentFilterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the operation mode of the dark current filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDarkCurrentFilterMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0a5a32575a86e5f69eea1b5a0e1bb728"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::ImageProcessing::defectivePixelOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining a list of X-offsets of all pixels currently treated as defective. </p>
+<p>All these pixels will be replaced depending on the selected algorithm in <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95" title="An enumerated integer property defining the operation mode of the defective pixels filter...">mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>In order to collect <b>ALL</b> defective pixels the list of detected pixels is not emptied each time a new calibration is started. In order to get rid of currently detected pixels an application must set the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95" title="An enumerated integer property defining the operation mode of the defective pixels filter...">mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</a></b> to <b>mvIMPACT::acquire::dpfmResetCalibration</b> and then capture a fresh image. Only then all currently detected pixels will be discarded.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6339b18435a6c6e16b3e2a8faba9f7f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::ImageProcessing::defectivePixelOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining a list of Y-offsets of all pixels currently treated as defective. </p>
+<p>All these pixels will be replaced depending on the selected algorithm in <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95" title="An enumerated integer property defining the operation mode of the defective pixels filter...">mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>In order to collect <b>ALL</b> defective pixels the list of detected pixels is not emptied each time a new calibration is started. In order to get rid of currently detected pixels an application must set the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95" title="An enumerated integer property defining the operation mode of the defective pixels filter...">mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</a></b> to <b>mvIMPACT::acquire::dpfmResetCalibration</b> and then capture a fresh image. Only then all currently detected pixels will be discarded.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aebd10f27aaab9228b4d3d207a6b27aca"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::ImageProcessing::defectivePixelReadFromDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calling this method will download defective pixels from the device. </p>
+<dl class="section note"><dt>注解</dt><dd>In order to collect <b>ALL</b> defective pixels the list of detected pixels is not emptied each time a download from the device is executed. In order to get rid of currently detected pixels an application must set the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95" title="An enumerated integer property defining the operation mode of the defective pixels filter...">mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</a></b> to <b>mvIMPACT::acquire::dpfmResetCalibration</b> and then capture a fresh image. Only then all currently detected pixels will be discarded.</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>This feature will only be supported by some devices providing a special interface inside their firmware.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.1</dd></dl>
+<p>Calling this method will return <br />
+</p><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. Most likely mvIMPACT::acquire::DMR_FEATURE_NOT_AVAILABLE if the device does not support this feature. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="ae49f3046e9f407c2e3ef7c7e85d204cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterColdPixelDeviation_pc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the max. allowed deviation for a pixel in per cent from the average grey value. </p>
+<p>If this filter is active every pixel that during the calibration produces a grey value which is lower than the average grey value of the image minus the allowed deviation in per cent will be considered as a cold pixel and therefore will be replaced by a value depending on the operation mode of the filter. </p>
+
+</div>
+</div>
+<a class="anchor" id="a57e5c8cf92c06a12d27036387978b36d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterLeakyPixelDeviation_ADCLimit</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the max. allowed offset from the average grey value for a pixel during calibration. </p>
+<p>When this filter is calibrated each pixel producing a grey value higher than the average grey value plus the value of this property will be considered as a leaky pixel and therefore will be replaced by a value depending on the operation mode of the filter. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae1e060a70ed836297ef3886db0bf8a95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga1833e6534b35ce9f81fdc3a80cc332d3">PropertyIDefectivePixelsFilterMode</a> mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the operation mode of the defective pixels filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDefectivePixelsFilterMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="adcd6475ebbec9d0d3f0968a0e383449d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::ImageProcessing::defectivePixelsFound</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the number of pixels considered as being defective with respect to the last calibration run. </p>
+<dl class="section note"><dt>注解</dt><dd>In order to collect <b>ALL</b> defective pixels the list of detected pixels is not emptied each time a new calibration is started. In order to get rid of currently detected pixels an application must set the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae1e060a70ed836297ef3886db0bf8a95" title="An enumerated integer property defining the operation mode of the defective pixels filter...">mvIMPACT::acquire::ImageProcessing::defectivePixelsFilterMode</a></b> to <b>mvIMPACT::acquire::dpfmResetCalibration</b> and then capture a fresh image. Only then all currently detected pixels will be discarded.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.5.9 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7fc7e71de3b649a80d02ae944471eb1b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::ImageProcessing::defectivePixelWriteToDevice</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Calling this method will upload defective pixels from the device. </p>
+<dl class="section note"><dt>注解</dt><dd>This will <b>NOT</b> automatically store this data in non-volatile memory on the device! A call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control.html#a4acdf44b93d160f06022d1e52f5b1e42" title="A method object. Saves the defective pixels to device non volatile memory. ">mvIMPACT::acquire::GenICam::mvDefectivePixelCorrectionControl::mvDefectivePixelDataSave</a></b> might be needed!</dd></dl>
+<dl class="section attention"><dt>注意</dt><dd>This feature will only be supported by some devices providing a special interface inside their firmware.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.1</dd></dl>
+<p>Calling this method will return <br />
+</p><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. Most likely mvIMPACT::acquire::DMR_FEATURE_NOT_AVAILABLE if the device does not support this feature. </li>
+</ul>
+
+</div>
+</div>
+<a class="anchor" id="a5ccbcb292285fef63f625b25239c4164"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga32f5b5edac93671f54854b4a76f0057e">PropertyIImageProcessingFilter</a> mvIMPACT::acquire::ImageProcessing::filter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the filter to be applied to the image before it is transferred to the user. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TImageProcessingFilter</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae6922326134aec43993be0e07d4c5f76"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gae5e0a9f8a06ccd71118818818a717a8c">PropertyIFlatFieldFilterCorrectionMode</a> mvIMPACT::acquire::ImageProcessing::flatFieldFilterCorrectionMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the correction mode of the flat field correction filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TFlatFieldFilterCorrectionMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a228a7aa520bafcdadc2e30718b6052cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga135f01ac2dcf8ddcf43ae998eccb394e">PropertyIFlatFieldFilterMode</a> mvIMPACT::acquire::ImageProcessing::flatFieldFilterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the operation mode of the flat field correction filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TFlatFieldFilterMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a15907d13fa374891738730e7addee017"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::formatReinterpreterEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable the format reinterpreter filter. </p>
+<p>This filter can be used if a device transmits data in a non-compliant or incorrect format. Using this filter the incoming data will simply be treated as a different pixel format then. This will <b>NOT</b> copy or modify the pixel data but will only adjust some of the elements describing the buffer (e.g. the pixel format and width). When e.g. setting this filter to treat mono data as RGB data, this will result in buffers with a width divided by 3 but RGB pixels instead of mono pixel afterwards.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.10.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9077d1d9e51681a0ae60e9265f5129a8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga7fd91208d37ae9034d9639d64e0e0e25">PropertyIImageBufferFormatReinterpreterMode</a> mvIMPACT::acquire::ImageProcessing::formatReinterpreterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to configure the format reinterpreter filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TImageBufferFormatReinterpreterMode</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.10.1 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abe7ed4cb142288de179ce4e86b314ad6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::gainOffsetKneeEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable the Gain, Offset, Knee filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad5b601b18f53f6b93f8f058225fae0ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::gainOffsetKneeMasterOffset_pc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property that contains master offset(in percent). </p>
+<p>This offset will be applied before the channel specific gain. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f8eb83578d97fde3405e6ae5d09e5c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::LUTEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) transformations. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab63796c1475d375fc872f0b11a102777"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga1188a6c6d64010982c28d3bb7b60b2f7">PropertyILUTImplementation</a> mvIMPACT::acquire::ImageProcessing::LUTImplementation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) implementation. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TLUTImplementation</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will be invisible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7f8eb83578d97fde3405e6ae5d09e5c3" title="An enumerated integer property which can be used to enable LUT (Look Up Table) transformations. ">mvIMPACT::acquire::ImageProcessing::LUTEnable</a></b> is set to <b>mvIMPACT::acquire::bFalse</b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ce44c89f01342416d0c3d37c16056cb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga2b9fd1a0f1dcf0867c527f11a1a1da65">PropertyILUTInterpolationMode</a> mvIMPACT::acquire::ImageProcessing::LUTInterpolationMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) interpolation mode. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TLUTInterpolationMode</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will be invisible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7f8eb83578d97fde3405e6ae5d09e5c3" title="An enumerated integer property which can be used to enable LUT (Look Up Table) transformations. ">mvIMPACT::acquire::ImageProcessing::LUTEnable</a></b> is set to <b>mvIMPACT::acquire::bFalse</b> or if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ae2f3059a3574e6a08a2d4348f1d5a152" title="An enumerated integer property which can be used to configure the LUT (Look Up Table) transformation ...">mvIMPACT::acquire::ImageProcessing::LUTMode</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::LUTmInterpolated</b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac6ef8a5f6168be4ebcdfe5c0d3e2d311"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga2641eda4be7328bd1e2af06cc136fb4b">PropertyILUTMapping</a> mvIMPACT::acquire::ImageProcessing::LUTMappingHardware</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) mapping mode for LUT transformations done by the hardware. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TLUTMapping</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will be invisible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7f8eb83578d97fde3405e6ae5d09e5c3" title="An enumerated integer property which can be used to enable LUT (Look Up Table) transformations. ">mvIMPACT::acquire::ImageProcessing::LUTEnable</a></b> is set to <b>mvIMPACT::acquire::bFalse</b> or if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ab63796c1475d375fc872f0b11a102777" title="An enumerated integer property which can be used to configure the LUT (Look Up Table) implementation...">mvIMPACT::acquire::ImageProcessing::LUTImplementation</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::LUTiHardware</b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aec5f5970518b9ad4f8659fc5dba93416"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga2641eda4be7328bd1e2af06cc136fb4b">PropertyILUTMapping</a> mvIMPACT::acquire::ImageProcessing::LUTMappingSoftware</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) mapping mode for LUT transformations done optimized software algorithms. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TLUTMapping</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will be invisible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7f8eb83578d97fde3405e6ae5d09e5c3" title="An enumerated integer property which can be used to enable LUT (Look Up Table) transformations. ">mvIMPACT::acquire::ImageProcessing::LUTEnable</a></b> is set to <b>mvIMPACT::acquire::bFalse</b> or if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#ab63796c1475d375fc872f0b11a102777" title="An enumerated integer property which can be used to configure the LUT (Look Up Table) implementation...">mvIMPACT::acquire::ImageProcessing::LUTImplementation</a></b> is <b>NOT</b> set to <b>mvIMPACT::acquire::LUTiSoftware</b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ae2f3059a3574e6a08a2d4348f1d5a152"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga64e784bb1c97e3a3eed6ff572935e5d2">PropertyILUTMode</a> mvIMPACT::acquire::ImageProcessing::LUTMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to configure the LUT (<b>L</b>ook <b>U</b>p <b>T</b>able) transformation mode. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TLUTMode</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will be invisible when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a7f8eb83578d97fde3405e6ae5d09e5c3" title="An enumerated integer property which can be used to enable LUT (Look Up Table) transformations. ">mvIMPACT::acquire::ImageProcessing::LUTEnable</a></b> is set to <b>mvIMPACT::acquire::bFalse</b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a00449c128b1916f1a00e1f368e0f363c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga6adf15b90e84144e36bdfa8e26fb38de">PropertyIMirrorMode</a> mvIMPACT::acquire::ImageProcessing::mirrorModeGlobal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the mirror mode to be applied to ALL channels of the image. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TMirrorMode</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will only be visible, when <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afe70a375bdb82e907a6d420c9f40b246" title="An enumerated integer property defining the general mode the mirror filter will work in...">mvIMPACT::acquire::ImageProcessing::mirrorOperationMode</a></b> is set to <b>mvIMPACT::acquire::momGlobal</b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="afe70a375bdb82e907a6d420c9f40b246"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaeb7e2fadc87b5bf53e5ba09c3255a276">PropertyIMirrorOperationMode</a> mvIMPACT::acquire::ImageProcessing::mirrorOperationMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the general mode the mirror filter will work in. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TMirrorOperationMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a92070a7aa140d8f1e202df70c4b3fb7c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::ImageProcessing::rotationAngle</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>The counterclockwise angle at which the image will be rotated. </p>
+<p>This property will store the counterclockwise angle at which the image will be rotated.</p>
+<dl class="section since"><dt>自从</dt><dd>2.13.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af56131c2b74e45d953aa6aa16d0959f8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::rotationEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable the rotation filter. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>.</p>
+<dl class="section since"><dt>自从</dt><dd>2.13.2 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6baedffb8af8bbd02452226028af8ce7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::ImageProcessing::tapSortEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property which can be used to enable/disable automatic data re-ordering from image sources delivering data from multiple taps that require re-ordering to reconstruct the image. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBoolean</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="afc417e7cc989db27966d9b267d337e0f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gabdf739a9f4db49c6642a3bf50540a1b4">PropertyIWhiteBalanceParameter</a> mvIMPACT::acquire::ImageProcessing::whiteBalance</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the parameter set to be used to perform the white balance correction. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TWhiteBalanceParameter</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6b158bb26649b95f98f9efef72eddc33"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gab129f1b9a01f41a701fd35fd1fddc4d2">PropertyIWhiteBalanceCalibrationMode</a> mvIMPACT::acquire::ImageProcessing::whiteBalanceCalibration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the mode used for white balance calibration. </p>
+<p>This property can be used to define the way a white balance calibration shall be performed. Currently only the <b>mvIMPACT::acquire::wbcmNextFrame</b> mode is supported, but new modes might appear in later revisions of the interface.</p>
+<p>When this property is set to <b>mvIMPACT::acquire::wbcmNextFrame</b> the next image captured will be used as a reference to calculate the gain factors for the <em>red</em>, <em>green</em> and <em>blue</em> channel. So make sure when the next image is captured the camera looks on a plain white or slightly grey surface in order to obtain correct results. After the calibration has been done, the property will be reset to <b>mvIMPACT::acquire::wbcmOff</b> again.</p>
+<dl class="section note"><dt>注解</dt><dd>Performing this kind of white balance calibration will only affect Bayer color sensors and will only have any visual effect on the image if one of the user definable parameter sets has been selected before. This can be done by modifying the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#afc417e7cc989db27966d9b267d337e0f" title="An integer property defining the parameter set to be used to perform the white balance correction...">mvIMPACT::acquire::ImageProcessing::whiteBalance</a></b>. Afterwards the calculated factors will be stored in the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_white_balance_settings.html" title="Properties for adjusting the colors during a Bayer conversion. ">mvIMPACT::acquire::WhiteBalanceSettings</a></b> selected.</dd></dl>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TWhiteBalanceCalibrationMode</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html">ImageProcessing</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

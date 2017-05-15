@@ -1,0 +1,102 @@
+\hypertarget{class_plot_canvas_info_base}{\section{Plot\+Canvas\+Info\+Base类 参考}
+\label{class_plot_canvas_info_base}\index{Plot\+Canvas\+Info\+Base@{Plot\+Canvas\+Info\+Base}}
+}
+
+
+类 Plot\+Canvas\+Info\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_plot_canvas_info_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Plot\+Canvas\+Info\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_plot_canvas_info_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_info_base_a935f1356e2ab26137aea5696646f6163}{{\bfseries Plot\+Canvas\+Info\+Base} (wx\+Window $\ast$parent, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Plot\+Canvas\+Info\+Base\char`\"{}), bool bo\+Active=false)}\label{class_plot_canvas_info_base_a935f1356e2ab26137aea5696646f6163}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a003bb567205ef99156ce2369723155da}{void {\bfseries Clear\+Cache} (void)}\label{class_plot_canvas_info_base_a003bb567205ef99156ce2369723155da}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a06d73304015fe102a970381f92119a2f}{void {\bfseries Set\+History\+Depth} (unsigned int history\+Depth)}\label{class_plot_canvas_info_base_a06d73304015fe102a970381f92119a2f}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a7fa09da27b03ea0378e87eeed6bc05ee}{unsigned int {\bfseries Get\+History\+Depth} (void) const }\label{class_plot_canvas_info_base_a7fa09da27b03ea0378e87eeed6bc05ee}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a8cef248cefdc38f74074a069c900df01}{void {\bfseries Set\+Auto\+Scale} (bool bo\+Active)}\label{class_plot_canvas_info_base_a8cef248cefdc38f74074a069c900df01}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_ac0b9cb1513edb4f95ea82d85d856c292}{void {\bfseries Set\+Plot\+Differences} (bool bo\+Active)}\label{class_plot_canvas_info_base_ac0b9cb1513edb4f95ea82d85d856c292}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 类型}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_info_base_ab176c8948d190a6e33d58e614328e794}{typedef double {\bfseries plot\+\_\+data\+\_\+type}}\label{class_plot_canvas_info_base_ab176c8948d190a6e33d58e614328e794}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a510592793a04267522ea992ea9043400}{typedef std\+::map$<$ int, int $>$ {\bfseries Plot\+Hash\+Table}}\label{class_plot_canvas_info_base_a510592793a04267522ea992ea9043400}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_info_base_a11581b5a2a80dae77f47656d31c12875}{void {\bfseries Allocate\+Data\+Buffer} (unsigned int plot\+Count)}\label{class_plot_canvas_info_base_a11581b5a2a80dae77f47656d31c12875}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_abf159bd31982faf010ba6602c144b70f}{virtual double {\bfseries Get\+Scale\+X} (wx\+Coord w) const }\label{class_plot_canvas_info_base_abf159bd31982faf010ba6602c144b70f}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_adc295e8baa81875992a9e61f46b0f2ca}{virtual double {\bfseries Get\+Scale\+Y} (wx\+Coord h) const }\label{class_plot_canvas_info_base_adc295e8baa81875992a9e61f46b0f2ca}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_aaead5abf602e7d6510e71e077a7ab518}{virtual unsigned int {\bfseries Get\+X\+Marker\+Parameters} (unsigned int \&from, unsigned int \&to) const }\label{class_plot_canvas_info_base_aaead5abf602e7d6510e71e077a7ab518}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a394762b33b177ba3228c03908c324fd0}{virtual void {\bfseries On\+Paint\+Custom} (wx\+Paint\+D\+C \&dc)}\label{class_plot_canvas_info_base_a394762b33b177ba3228c03908c324fd0}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_aa2bd04908223fcea7309b5fd4a40ca23}{bool {\bfseries Refresh\+Plot\+Data} (void)}\label{class_plot_canvas_info_base_aa2bd04908223fcea7309b5fd4a40ca23}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_info_base_aebaefe518c61e8c5f1040adaafabb6fa}{std\+::vector$<$ plot\+\_\+data\+\_\+type $>$ {\bfseries m\+\_\+\+Current\+Plot\+Values}}\label{class_plot_canvas_info_base_aebaefe518c61e8c5f1040adaafabb6fa}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_ac47a8327fafff89b1d560f527285ed0f}{bool {\bfseries m\+\_\+bo\+Auto\+Scale}}\label{class_plot_canvas_info_base_ac47a8327fafff89b1d560f527285ed0f}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a20b1e8d65544f870aac901f155e96c2c}{bool {\bfseries m\+\_\+bo\+Plot\+Differences}}\label{class_plot_canvas_info_base_a20b1e8d65544f870aac901f155e96c2c}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a816a45b79637fbd072c8a6202b9bdfe2}{std\+::vector$<$ wx\+String $>$ {\bfseries m\+\_\+\+Plot\+Identifiers}}\label{class_plot_canvas_info_base_a816a45b79637fbd072c8a6202b9bdfe2}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a9039518f36bb412006748bfbf28889fd}{std\+::deque$<$ plot\+\_\+data\+\_\+type $>$ $\ast$$\ast$ {\bfseries m\+\_\+pp\+Plot\+Values}}\label{class_plot_canvas_info_base_a9039518f36bb412006748bfbf28889fd}
+
+\item 
+\hypertarget{class_plot_canvas_info_base_a3930f030b75ebbfac58f6f9ef7dcbed6}{\hyperlink{group___common_interface_ga7dbe9709a3bdae0b29581ff4f6fca3ff}{T\+Component\+Type} {\bfseries m\+\_\+data\+Type}}\label{class_plot_canvas_info_base_a3930f030b75ebbfac58f6f9ef7dcbed6}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Plot\+Canvas\+Info.\+h\item 
+apps/mv\+Prop\+View/Plot\+Canvas\+Info.\+cpp\end{DoxyCompactItemize}

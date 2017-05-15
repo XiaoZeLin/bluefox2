@@ -1,0 +1,48 @@
+\hypertarget{struct_event_data}{\section{Event\+Data结构体 参考}
+\label{struct_event_data}\index{Event\+Data@{Event\+Data}}
+}
+
+
+A structure containing information about an event that has been reported by the device driver and has been successfully waited for.  
+
+
+
+
+{\ttfamily \#include $<$mv\+Device\+Manager.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_event_data_a9fb758bd922a71dfb5757f2ecb66d417}{unsigned int \hyperlink{struct_event_data_a9fb758bd922a71dfb5757f2ecb66d417}{count}}\label{struct_event_data_a9fb758bd922a71dfb5757f2ecb66d417}
+
+\begin{DoxyCompactList}\small\item\em A consecutive number telling the user how many times this event has occurred already. \end{DoxyCompactList}\item 
+\hypertarget{struct_event_data_aaef7a7a2a08abbc0d4b953436159ea42}{unsigned int \hyperlink{struct_event_data_aaef7a7a2a08abbc0d4b953436159ea42}{timestamp\+\_\+low\+Part}}\label{struct_event_data_aaef7a7a2a08abbc0d4b953436159ea42}
+
+\begin{DoxyCompactList}\small\item\em The lower part of the timestamp associated with this event. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{struct_event_data_ac643d73ddbad0bf59dc98edd3b7b478c}{timestamp\+\_\+high\+Part}
+\begin{DoxyCompactList}\small\item\em The higher part of the timestamp associated with this event. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A structure containing information about an event that has been reported by the device driver and has been successfully waited for. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000005}{弃用}]This structure has been declared {\bfseries deprecated}. 'on\+Changed' callbacks can directly be registered on every feature now. \end{DoxyRefDesc}
+
+
+\subsection{类成员变量说明}
+\hypertarget{struct_event_data_ac643d73ddbad0bf59dc98edd3b7b478c}{\index{Event\+Data@{Event\+Data}!timestamp\+\_\+high\+Part@{timestamp\+\_\+high\+Part}}
+\index{timestamp\+\_\+high\+Part@{timestamp\+\_\+high\+Part}!Event\+Data@{Event\+Data}}
+\subsubsection[{timestamp\+\_\+high\+Part}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Event\+Data\+::timestamp\+\_\+high\+Part}}\label{struct_event_data_ac643d73ddbad0bf59dc98edd3b7b478c}
+
+
+The higher part of the timestamp associated with this event. 
+
+\begin{DoxyNote}{注解}
+Not every device or event type will support this parameter. If the parameter is not supported, it will be 0. 
+\end{DoxyNote}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+Device\+Manager/\+Include/mv\+Device\+Manager.\+h\end{DoxyCompactItemize}

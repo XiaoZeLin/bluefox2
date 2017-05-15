@@ -1,0 +1,35 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Request\+Factory类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+Factory@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+Factory}}
+}
+
+
+A default request factory.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory_a28f798247b8b77d81a28369f2d550fee}{virtual \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} $\ast$ {\bfseries create\+Request} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$, int)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_factory_a28f798247b8b77d81a28369f2d550fee}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A default request factory. 
+
+Applications need to derive from this class and must re-\/implement the function {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+Factory\+::create\+Request} to work with custom objects derived from {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}}.
+
+Deriving from {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} can be useful when a certain device driver or device offers a custom feature that is returned as part of the request object that can not be accessed using the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} class offered by this interface.
+
+\begin{DoxySince}{自从}
+1.\+12.\+56 
+\end{DoxySince}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

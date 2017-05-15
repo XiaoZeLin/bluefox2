@@ -1,0 +1,1211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::Property类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::Property类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A base class for properties.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+
+<p>继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">mvIMPACT::acquire::Component</a> .</p>
+
+<p>被 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html">mvIMPACT::acquire::EnumPropertyF&lt; double &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::EnumPropertyI64&lt; int64_type &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::EnumPropertyI64&lt; TDeviceTriggerOverlap &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; int &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAcquisitionField &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAcquisitionMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAcquisitionStartStopBehaviour &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAoiMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAutoControlMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAutoControlSpeed &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAutoExposureControl &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAutoGainControl &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TAutoOffsetCalibration &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBayerConversionMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBayerMosaicParity &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBayerWhiteBalanceResult &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBlueFOXDigitalInputThreshold &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBlueFOXFooterMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBlueFOXInfoSensorCapabilities &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBlueFOXOffsetAutoBlackSpeed &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBlueFOXSensorTiming &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBlueFOXTransferSize &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TBoolean &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraAoiMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraBinningMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraDataFormat &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraExposeMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraExternalSyncEdge &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraExternalSyncOutput &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraFlashMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraFlashType &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraHDRMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraInterlacedType &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraLinkDataValidMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraOutput &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraPixelClock &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraScanMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraSerialPortBaudRate &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraShutterMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraTapsXGeometry &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraTapsYGeometry &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraTestMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraTriggerMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TCameraTriggerSource &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TChannelSplitMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TClampMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TColorProcessingMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TColorTwistInputCorrectionMatrixMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TColorTwistOutputCorrectionMatrixMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDarkCurrentFilterMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDefectivePixelsFilterMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceAccessMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceAdvancedOptions &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceCapability &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceClass &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceDigitalOutputMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceEventMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceEventType &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceImageTrigger &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceInterfaceLayout &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceLoadSettings &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDevicePowerMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceScanRateMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceSignalOutputStartEvent &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceState &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceSyncOutMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceTriggerInterface &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDeviceTriggerMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDigIOState &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDigitalIOMeasurementMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDigitalIOMeasurementSource &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDigitalOutputControlMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TDigitalSignal &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TFieldGateMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TFlatFieldFilterCorrectionMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TFlatFieldFilterMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; THWUpdateResult &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TI2COperationMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TI2COperationStatus &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageBufferFormatReinterpreterMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageBufferPixelFormat &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageDestinationPixelFormat &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageProcessingFilter &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageProcessingMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageProcessingOptimization &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TImageRequestControlMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TInfoSensorColorMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TInfoSensorType &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TInterlacedMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TLineCounter &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TLUTGammaMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TLUTImplementation &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TLUTInterpolationMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TLUTMapping &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TLUTMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TMemoryManagerMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TMemoryManagerPoolMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TMirrorMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TMirrorOperationMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TPulseStartTrigger &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TRequestImageMemoryMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TRequestResult &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TRequestState &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TRTCtrlModes &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TRTProgOpCodes &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TScalerInterpolationMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TScalerMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TScanClock &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TScanStandard &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TThreadPriority &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TTriggerMoment &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TUserDataAccessRight &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TUserDataReconnectBehaviour &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TVideoStandard &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TVirtualDeviceImageType &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TVirtualDeviceTestMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TWhiteBalanceCalibrationMode &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; TWhiteBalanceParameter &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html">mvIMPACT::acquire::EnumPropertyF&lt; ZYX &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html">mvIMPACT::acquire::EnumPropertyI&lt; ZYX &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html">mvIMPACT::acquire::EnumPropertyI64&lt; ZYX &gt;</a>, <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr.html">mvIMPACT::acquire::PropertyPtr</a> , 以及 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">mvIMPACT::acquire::PropertyS</a> 继承.</p>
+<div class="dynheader">
+mvIMPACT::acquire::Property 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_property_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_property_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_property_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="4,97,152,138"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="4,6,152,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a32769caf6b712dea6fd583aadb37c641"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a32769caf6b712dea6fd583aadb37c641">Property</a> (void)</td></tr>
+<tr class="memdesc:a32769caf6b712dea6fd583aadb37c641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new unbound <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. ">mvIMPACT::acquire::Property</a></b> object.  <a href="#a32769caf6b712dea6fd583aadb37c641">更多...</a><br /></td></tr>
+<tr class="separator:a32769caf6b712dea6fd583aadb37c641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7f6c3efdcef31a840b52ddd35ec1b31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab7f6c3efdcef31a840b52ddd35ec1b31">Property</a> (HOBJ hProp)</td></tr>
+<tr class="memdesc:ab7f6c3efdcef31a840b52ddd35ec1b31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. ">mvIMPACT::acquire::Property</a></b> object.  <a href="#ab7f6c3efdcef31a840b52ddd35ec1b31">更多...</a><br /></td></tr>
+<tr class="separator:ab7f6c3efdcef31a840b52ddd35ec1b31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a098821f15ac08dbcd48af11b96ce8284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a098821f15ac08dbcd48af11b96ce8284">allowsValueCombinations</a> (void) const </td></tr>
+<tr class="memdesc:a098821f15ac08dbcd48af11b96ce8284"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this enumerated property allows the combination of enum values.  <a href="#a098821f15ac08dbcd48af11b96ce8284">更多...</a><br /></td></tr>
+<tr class="separator:a098821f15ac08dbcd48af11b96ce8284"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab47d418329e2422053fec56c8d316f17"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab47d418329e2422053fec56c8d316f17">dictSize</a> (void) const </td></tr>
+<tr class="memdesc:ab47d418329e2422053fec56c8d316f17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the size of the properties translation dictionary.  <a href="#ab47d418329e2422053fec56c8d316f17">更多...</a><br /></td></tr>
+<tr class="separator:ab47d418329e2422053fec56c8d316f17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a914eb2e3931822d4709543919899def3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a914eb2e3931822d4709543919899def3">hasDict</a> (void) const </td></tr>
+<tr class="memdesc:a914eb2e3931822d4709543919899def3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns whether this property defines a translation dictionary or not.  <a href="#a914eb2e3931822d4709543919899def3">更多...</a><br /></td></tr>
+<tr class="separator:a914eb2e3931822d4709543919899def3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12b00c261f6b436ee85eea1ec5573dd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a12b00c261f6b436ee85eea1ec5573dd9">MVIMPACT_DEPRECATED_CPP</a> (bool isConstDefined(<a class="el" href="group___common_interface.html#gab31a9721792e36b8c256a769961df4f9">TPropertyLimits</a> constant) const )</td></tr>
+<tr class="memdesc:a12b00c261f6b436ee85eea1ec5573dd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a certain constant is defined for this property(<b>deprecated</b>).  <a href="#a12b00c261f6b436ee85eea1ec5573dd9">更多...</a><br /></td></tr>
+<tr class="separator:a12b00c261f6b436ee85eea1ec5573dd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fbc59e51ec6bf739d054078a5aa3021"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a8fbc59e51ec6bf739d054078a5aa3021">hasMaxValue</a> (void) const </td></tr>
+<tr class="memdesc:a8fbc59e51ec6bf739d054078a5aa3021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a maximum value is defined for this property.  <a href="#a8fbc59e51ec6bf739d054078a5aa3021">更多...</a><br /></td></tr>
+<tr class="separator:a8fbc59e51ec6bf739d054078a5aa3021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab94e2773892274787f6745a133493ebb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab94e2773892274787f6745a133493ebb">hasMinValue</a> (void) const </td></tr>
+<tr class="memdesc:ab94e2773892274787f6745a133493ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a minimum value is defined for this property.  <a href="#ab94e2773892274787f6745a133493ebb">更多...</a><br /></td></tr>
+<tr class="separator:ab94e2773892274787f6745a133493ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b42a3292260a81fc6b72c85934d5564"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a8b42a3292260a81fc6b72c85934d5564">hasStepWidth</a> (void) const </td></tr>
+<tr class="memdesc:a8b42a3292260a81fc6b72c85934d5564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a step width is defined for this property.  <a href="#a8b42a3292260a81fc6b72c85934d5564">更多...</a><br /></td></tr>
+<tr class="separator:a8b42a3292260a81fc6b72c85934d5564"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5fe87d8c899f71c88a7cacb4da2fb43"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43">readS</a> (int index=0, const std::string &amp;format=&quot;&quot;) const </td></tr>
+<tr class="memdesc:aa5fe87d8c899f71c88a7cacb4da2fb43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from this property as a string.  <a href="#aa5fe87d8c899f71c88a7cacb4da2fb43">更多...</a><br /></td></tr>
+<tr class="separator:aa5fe87d8c899f71c88a7cacb4da2fb43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeba0bb5fdb980e349c412b6e34798428"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aeba0bb5fdb980e349c412b6e34798428">readSArray</a> (const std::string &amp;format=&quot;&quot;, const std::string &amp;delimiter=&quot;&quot;, int startIndex=0, int endIndex=INT_MAX, int mode=0) const </td></tr>
+<tr class="memdesc:aeba0bb5fdb980e349c412b6e34798428"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads data from this property as a string.  <a href="#aeba0bb5fdb980e349c412b6e34798428">更多...</a><br /></td></tr>
+<tr class="separator:aeba0bb5fdb980e349c412b6e34798428"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4633aaa98af921d39e645bf5738b5a97"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a4633aaa98af921d39e645bf5738b5a97">removeValue</a> (int index=0) const </td></tr>
+<tr class="memdesc:a4633aaa98af921d39e645bf5738b5a97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes a certain value from the property's data.  <a href="#a4633aaa98af921d39e645bf5738b5a97">更多...</a><br /></td></tr>
+<tr class="separator:a4633aaa98af921d39e645bf5738b5a97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b96fcc3fe07052044d762dcb219e236"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a3b96fcc3fe07052044d762dcb219e236">resizeValArray</a> (unsigned int newSize) const </td></tr>
+<tr class="memdesc:a3b96fcc3fe07052044d762dcb219e236"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes the property's data array.  <a href="#a3b96fcc3fe07052044d762dcb219e236">更多...</a><br /></td></tr>
+<tr class="separator:a3b96fcc3fe07052044d762dcb219e236"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad267e140bfb73254855b3792cd0d6f5d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ad267e140bfb73254855b3792cd0d6f5d">stringFormatString</a> (void) const </td></tr>
+<tr class="memdesc:ad267e140bfb73254855b3792cd0d6f5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the internal format string this property uses to convert data to strings.  <a href="#ad267e140bfb73254855b3792cd0d6f5d">更多...</a><br /></td></tr>
+<tr class="separator:ad267e140bfb73254855b3792cd0d6f5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af78d846031ef0e00abc302c7bed86944"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#af78d846031ef0e00abc302c7bed86944">valCount</a> (void) const </td></tr>
+<tr class="memdesc:af78d846031ef0e00abc302c7bed86944"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current number of values managed by this property.  <a href="#af78d846031ef0e00abc302c7bed86944">更多...</a><br /></td></tr>
+<tr class="separator:af78d846031ef0e00abc302c7bed86944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fa6dd31fb10a3dd278320d07fb40ac8"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a3fa6dd31fb10a3dd278320d07fb40ac8">maxValCount</a> (void) const </td></tr>
+<tr class="memdesc:a3fa6dd31fb10a3dd278320d07fb40ac8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns maximum number of values that can be managed by this property.  <a href="#a3fa6dd31fb10a3dd278320d07fb40ac8">更多...</a><br /></td></tr>
+<tr class="separator:a3fa6dd31fb10a3dd278320d07fb40ac8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51893d14c0fc6128bc9f4cc0ba5a7e5d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d">writeS</a> (const std::string &amp;value, int index=0) const </td></tr>
+<tr class="memdesc:a51893d14c0fc6128bc9f4cc0ba5a7e5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns a new value to this property.  <a href="#a51893d14c0fc6128bc9f4cc0ba5a7e5d">更多...</a><br /></td></tr>
+<tr class="separator:a51893d14c0fc6128bc9f4cc0ba5a7e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49c7ecf0cf3198e9b29e1db1c99a2b2b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a49c7ecf0cf3198e9b29e1db1c99a2b2b">writeS</a> (const std::vector&lt; std::string &gt; &amp;sequence, int index=0) const </td></tr>
+<tr class="memdesc:a49c7ecf0cf3198e9b29e1db1c99a2b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns new values to this property.  <a href="#a49c7ecf0cf3198e9b29e1db1c99a2b2b">更多...</a><br /></td></tr>
+<tr class="separator:a49c7ecf0cf3198e9b29e1db1c99a2b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">mvIMPACT::acquire::Component</a></td></tr>
+<tr class="memitem:a392b380b6a537cdfa5d49fc8335326af inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a392b380b6a537cdfa5d49fc8335326af">Component</a> (HOBJ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de">hObj</a>)</td></tr>
+<tr class="memdesc:a392b380b6a537cdfa5d49fc8335326af inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new access object to a driver object.  <a href="#a392b380b6a537cdfa5d49fc8335326af">更多...</a><br /></td></tr>
+<tr class="separator:a392b380b6a537cdfa5d49fc8335326af inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70865f299e03af1264d462a0e5fb724 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac70865f299e03af1264d462a0e5fb724"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac70865f299e03af1264d462a0e5fb724">Component</a> (void)</td></tr>
+<tr class="memdesc:ac70865f299e03af1264d462a0e5fb724 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new unbound access object. <br /></td></tr>
+<tr class="separator:ac70865f299e03af1264d462a0e5fb724 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0ce09671eb0bfd13bc9c41a62a4c2a0 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aa0ce09671eb0bfd13bc9c41a62a4c2a0">operator++</a> (void)</td></tr>
+<tr class="memdesc:aa0ce09671eb0bfd13bc9c41a62a4c2a0 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the next sibling(the next feature in the current list of features).  <a href="#aa0ce09671eb0bfd13bc9c41a62a4c2a0">更多...</a><br /></td></tr>
+<tr class="separator:aa0ce09671eb0bfd13bc9c41a62a4c2a0 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0e62e36aa38069b8f9d2fa7a242b1e inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a3c0e62e36aa38069b8f9d2fa7a242b1e">operator++</a> (int)</td></tr>
+<tr class="memdesc:a3c0e62e36aa38069b8f9d2fa7a242b1e inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the next sibling(the next feature in the current list of features).  <a href="#a3c0e62e36aa38069b8f9d2fa7a242b1e">更多...</a><br /></td></tr>
+<tr class="separator:a3c0e62e36aa38069b8f9d2fa7a242b1e inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ff9ff4adf233c79c621a81c45f6e3ea inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a3ff9ff4adf233c79c621a81c45f6e3ea">firstSibling</a> (void) const </td></tr>
+<tr class="memdesc:a3ff9ff4adf233c79c621a81c45f6e3ea inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the first sibling(the first feature in the current list of features).  <a href="#a3ff9ff4adf233c79c621a81c45f6e3ea">更多...</a><br /></td></tr>
+<tr class="separator:a3ff9ff4adf233c79c621a81c45f6e3ea inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7ecdaafa8fc95c761d4e913c199c53d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae7ecdaafa8fc95c761d4e913c199c53d">lastSibling</a> (void) const </td></tr>
+<tr class="memdesc:ae7ecdaafa8fc95c761d4e913c199c53d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the last sibling(the last feature in the current list of features).  <a href="#ae7ecdaafa8fc95c761d4e913c199c53d">更多...</a><br /></td></tr>
+<tr class="separator:ae7ecdaafa8fc95c761d4e913c199c53d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeccbdbf047d18e8ac0d20fc874c185a7 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aeccbdbf047d18e8ac0d20fc874c185a7">nextSibling</a> (void)</td></tr>
+<tr class="memdesc:aeccbdbf047d18e8ac0d20fc874c185a7 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the next sibling(the next feature in the current list of features).  <a href="#aeccbdbf047d18e8ac0d20fc874c185a7">更多...</a><br /></td></tr>
+<tr class="separator:aeccbdbf047d18e8ac0d20fc874c185a7 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf5cfd9177e1d002b501a85df253096b inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aaf5cfd9177e1d002b501a85df253096b">firstChild</a> (void) const </td></tr>
+<tr class="memdesc:aaf5cfd9177e1d002b501a85df253096b inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the first child of this component(moves down one level).  <a href="#aaf5cfd9177e1d002b501a85df253096b">更多...</a><br /></td></tr>
+<tr class="separator:aaf5cfd9177e1d002b501a85df253096b inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b183818aad835e54066780413de330 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a07b183818aad835e54066780413de330">parent</a> (void) const </td></tr>
+<tr class="memdesc:a07b183818aad835e54066780413de330 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moves to the parent of this component(moves up one level).  <a href="#a07b183818aad835e54066780413de330">更多...</a><br /></td></tr>
+<tr class="separator:a07b183818aad835e54066780413de330 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322ecaa2c5c86e07a31d0771f2c31683 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a322ecaa2c5c86e07a31d0771f2c31683">docString</a> (void) const </td></tr>
+<tr class="memdesc:a322ecaa2c5c86e07a31d0771f2c31683 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a string containing general information about the component referenced by this object.  <a href="#a322ecaa2c5c86e07a31d0771f2c31683">更多...</a><br /></td></tr>
+<tr class="separator:a322ecaa2c5c86e07a31d0771f2c31683 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92f9a75ca9a56430e172c00b29b5496f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga4ef1be7cf1ca9dd256fd3060dd0787bb">TComponentFlag</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a92f9a75ca9a56430e172c00b29b5496f">flags</a> (void) const </td></tr>
+<tr class="memdesc:a92f9a75ca9a56430e172c00b29b5496f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flags associated with this component.  <a href="#a92f9a75ca9a56430e172c00b29b5496f">更多...</a><br /></td></tr>
+<tr class="separator:a92f9a75ca9a56430e172c00b29b5496f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d650124bdad64f378a7b71a647d8e9b inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a4d650124bdad64f378a7b71a647d8e9b">flagsAsString</a> (const std::string &amp;separator=&quot; | &quot;) const </td></tr>
+<tr class="memdesc:a4d650124bdad64f378a7b71a647d8e9b inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the flags associated with this component as a string.  <a href="#a4d650124bdad64f378a7b71a647d8e9b">更多...</a><br /></td></tr>
+<tr class="separator:a4d650124bdad64f378a7b71a647d8e9b inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5ea06015da01ed640f4a357d90326f9 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae5ea06015da01ed640f4a357d90326f9">isDefault</a> (void) const </td></tr>
+<tr class="memdesc:ae5ea06015da01ed640f4a357d90326f9 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this component is currently referencing the default for this component.  <a href="#ae5ea06015da01ed640f4a357d90326f9">更多...</a><br /></td></tr>
+<tr class="separator:ae5ea06015da01ed640f4a357d90326f9 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38268d1606ad93359a7f5fa3304da8bd inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a38268d1606ad93359a7f5fa3304da8bd">isList</a> (void) const </td></tr>
+<tr class="memdesc:a38268d1606ad93359a7f5fa3304da8bd inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this component is of type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b>.  <a href="#a38268d1606ad93359a7f5fa3304da8bd">更多...</a><br /></td></tr>
+<tr class="separator:a38268d1606ad93359a7f5fa3304da8bd inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2281da2df8cf67acc9f26b68aa0718cd inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a2281da2df8cf67acc9f26b68aa0718cd">isMeth</a> (void) const </td></tr>
+<tr class="memdesc:a2281da2df8cf67acc9f26b68aa0718cd inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this component is of type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. ">mvIMPACT::acquire::Method</a></b>.  <a href="#a2281da2df8cf67acc9f26b68aa0718cd">更多...</a><br /></td></tr>
+<tr class="separator:a2281da2df8cf67acc9f26b68aa0718cd inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed95ea2f827d0fd457d03857516e0b68 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aed95ea2f827d0fd457d03857516e0b68">isProp</a> (void) const </td></tr>
+<tr class="memdesc:aed95ea2f827d0fd457d03857516e0b68 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if this component is of type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. ">mvIMPACT::acquire::Property</a></b> or a derived type.  <a href="#aed95ea2f827d0fd457d03857516e0b68">更多...</a><br /></td></tr>
+<tr class="separator:aed95ea2f827d0fd457d03857516e0b68 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51e55e7e046101f3c6119d84123abd5 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5">isValid</a> (void) const </td></tr>
+<tr class="memdesc:ac51e55e7e046101f3c6119d84123abd5 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the internal component referenced by this object is still valid.  <a href="#ac51e55e7e046101f3c6119d84123abd5">更多...</a><br /></td></tr>
+<tr class="separator:ac51e55e7e046101f3c6119d84123abd5 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9f95ac45440af06f7d36990ad633a73 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae9f95ac45440af06f7d36990ad633a73">isVisible</a> (void) const </td></tr>
+<tr class="memdesc:ae9f95ac45440af06f7d36990ad633a73 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the component is currently shadowed due to a settings made elsewhere or not.  <a href="#ae9f95ac45440af06f7d36990ad633a73">更多...</a><br /></td></tr>
+<tr class="separator:ae9f95ac45440af06f7d36990ad633a73 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac59a8e19513c8508ec72cccee4b3eff6 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac59a8e19513c8508ec72cccee4b3eff6">isWriteable</a> (void) const </td></tr>
+<tr class="memdesc:ac59a8e19513c8508ec72cccee4b3eff6 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the caller has write/modify access to the component.  <a href="#ac59a8e19513c8508ec72cccee4b3eff6">更多...</a><br /></td></tr>
+<tr class="separator:ac59a8e19513c8508ec72cccee4b3eff6 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa13d62964b8282fd66f6d4fae48f85b2 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aa13d62964b8282fd66f6d4fae48f85b2">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:aa13d62964b8282fd66f6d4fae48f85b2 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for the referenced component.  <a href="#aa13d62964b8282fd66f6d4fae48f85b2">更多...</a><br /></td></tr>
+<tr class="separator:aa13d62964b8282fd66f6d4fae48f85b2 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57b0745fbaeca5fb4cf3e35fd3143002 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga7dbe9709a3bdae0b29581ff4f6fca3ff">TComponentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a57b0745fbaeca5fb4cf3e35fd3143002">type</a> (void) const </td></tr>
+<tr class="memdesc:a57b0745fbaeca5fb4cf3e35fd3143002 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the referenced component.  <a href="#a57b0745fbaeca5fb4cf3e35fd3143002">更多...</a><br /></td></tr>
+<tr class="separator:a57b0745fbaeca5fb4cf3e35fd3143002 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e5b5315cc8649d5dbed13c8810e7649 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a9e5b5315cc8649d5dbed13c8810e7649">typeAsString</a> (void) const </td></tr>
+<tr class="memdesc:a9e5b5315cc8649d5dbed13c8810e7649 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the referenced component as a string.  <a href="#a9e5b5315cc8649d5dbed13c8810e7649">更多...</a><br /></td></tr>
+<tr class="separator:a9e5b5315cc8649d5dbed13c8810e7649 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986c68167207123176b6ffe03f974cf3 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga75b333e3ba771df98bde9ee1e12f57a0">TComponentVisibility</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a986c68167207123176b6ffe03f974cf3">visibility</a> (void) const </td></tr>
+<tr class="memdesc:a986c68167207123176b6ffe03f974cf3 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended visibility for this component.  <a href="#a986c68167207123176b6ffe03f974cf3">更多...</a><br /></td></tr>
+<tr class="separator:a986c68167207123176b6ffe03f974cf3 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae8c83e09af9886109e2c68533bdd7ec inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aae8c83e09af9886109e2c68533bdd7ec">visibilityAsString</a> (void) const </td></tr>
+<tr class="memdesc:aae8c83e09af9886109e2c68533bdd7ec inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended visibility of the referenced component as a string.  <a href="#aae8c83e09af9886109e2c68533bdd7ec">更多...</a><br /></td></tr>
+<tr class="separator:aae8c83e09af9886109e2c68533bdd7ec inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a877be25f91d98b261ace18060126c0e6 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga1e2d7ac6b3bb3ff1fe4bb53c4aa808ea">TComponentRepresentation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a877be25f91d98b261ace18060126c0e6">representation</a> (void) const </td></tr>
+<tr class="memdesc:a877be25f91d98b261ace18060126c0e6 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended representation for this component.  <a href="#a877be25f91d98b261ace18060126c0e6">更多...</a><br /></td></tr>
+<tr class="separator:a877be25f91d98b261ace18060126c0e6 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4a9da484b7cb0bde08ed77c8d6221fe inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ad4a9da484b7cb0bde08ed77c8d6221fe">representationAsString</a> (void) const </td></tr>
+<tr class="memdesc:ad4a9da484b7cb0bde08ed77c8d6221fe inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended representation of the referenced component as a string.  <a href="#ad4a9da484b7cb0bde08ed77c8d6221fe">更多...</a><br /></td></tr>
+<tr class="separator:ad4a9da484b7cb0bde08ed77c8d6221fe inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a328102430e483790a06769f85ea47 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a17a328102430e483790a06769f85ea47">selectedFeatureCount</a> (void) const </td></tr>
+<tr class="memdesc:a17a328102430e483790a06769f85ea47 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of features selected by the current one.  <a href="#a17a328102430e483790a06769f85ea47">更多...</a><br /></td></tr>
+<tr class="separator:a17a328102430e483790a06769f85ea47 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abca6187054b1eefdabd8822c5d889320 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#abca6187054b1eefdabd8822c5d889320">selectingFeatureCount</a> (void) const </td></tr>
+<tr class="memdesc:abca6187054b1eefdabd8822c5d889320 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of features selecting the current one.  <a href="#abca6187054b1eefdabd8822c5d889320">更多...</a><br /></td></tr>
+<tr class="separator:abca6187054b1eefdabd8822c5d889320 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8be119dbf4cc277280df78b2570a8b80 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a8be119dbf4cc277280df78b2570a8b80">selectedFeatures</a> (std::vector&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> &gt; &amp;v) const </td></tr>
+<tr class="memdesc:a8be119dbf4cc277280df78b2570a8b80 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the list of components that are selected by the current one.  <a href="#a8be119dbf4cc277280df78b2570a8b80">更多...</a><br /></td></tr>
+<tr class="separator:a8be119dbf4cc277280df78b2570a8b80 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad57072c7362fdf4e714cab1f06f2574c inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ad57072c7362fdf4e714cab1f06f2574c">selectingFeatures</a> (std::vector&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> &gt; &amp;v) const </td></tr>
+<tr class="memdesc:ad57072c7362fdf4e714cab1f06f2574c inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves the list of components that are selecting the current one.  <a href="#ad57072c7362fdf4e714cab1f06f2574c">更多...</a><br /></td></tr>
+<tr class="separator:ad57072c7362fdf4e714cab1f06f2574c inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e5f6370991cf77ca8cdd3ecc99e64a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a38e5f6370991cf77ca8cdd3ecc99e64a">selectedFeature</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a38e5f6370991cf77ca8cdd3ecc99e64a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a component that is selected by the current one.  <a href="#a38e5f6370991cf77ca8cdd3ecc99e64a">更多...</a><br /></td></tr>
+<tr class="separator:a38e5f6370991cf77ca8cdd3ecc99e64a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8a74647397e051683b301cb92d86e9f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ad8a74647397e051683b301cb92d86e9f">selectingFeature</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:ad8a74647397e051683b301cb92d86e9f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieves a component that is selecting the current one.  <a href="#ad8a74647397e051683b301cb92d86e9f">更多...</a><br /></td></tr>
+<tr class="separator:ad8a74647397e051683b301cb92d86e9f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:ac32f2e24d0edecf7da8368324bdc493f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac32f2e24d0edecf7da8368324bdc493f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#ac32f2e24d0edecf7da8368324bdc493f">operator HOBJ</a> () const </td></tr>
+<tr class="memdesc:ac32f2e24d0edecf7da8368324bdc493f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows implicit conversion to a HOBJ. <br /></td></tr>
+<tr class="separator:ac32f2e24d0edecf7da8368324bdc493f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1ce26fe668a03990316e35882ef82d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a9f1ce26fe668a03990316e35882ef82d">changedCounter</a> (void) const </td></tr>
+<tr class="memdesc:a9f1ce26fe668a03990316e35882ef82d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current changed counter for the component referenced by this object.  <a href="#a9f1ce26fe668a03990316e35882ef82d">更多...</a><br /></td></tr>
+<tr class="separator:a9f1ce26fe668a03990316e35882ef82d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e01578b604a92613cdd692947ba3f1 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a85e01578b604a92613cdd692947ba3f1">changedCounterAttr</a> (void) const </td></tr>
+<tr class="memdesc:a85e01578b604a92613cdd692947ba3f1 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current attribute changed counter for the component referenced by this object.  <a href="#a85e01578b604a92613cdd692947ba3f1">更多...</a><br /></td></tr>
+<tr class="separator:a85e01578b604a92613cdd692947ba3f1 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071d08bf770f55552998b86580e979de inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a071d08bf770f55552998b86580e979de inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component referenced by this object.  <a href="#a071d08bf770f55552998b86580e979de">更多...</a><br /></td></tr>
+<tr class="separator:a071d08bf770f55552998b86580e979de inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8b40bfc45b5752e03570afaadce217 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217">name</a> (void) const </td></tr>
+<tr class="memdesc:aee8b40bfc45b5752e03570afaadce217 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the component referenced by this object.  <a href="#aee8b40bfc45b5752e03570afaadce217">更多...</a><br /></td></tr>
+<tr class="separator:aee8b40bfc45b5752e03570afaadce217 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf61053aa53dc96896760cd402ab1541 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aaf61053aa53dc96896760cd402ab1541">displayName</a> (void) const </td></tr>
+<tr class="memdesc:aaf61053aa53dc96896760cd402ab1541 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the display name of the component referenced by this object.  <a href="#aaf61053aa53dc96896760cd402ab1541">更多...</a><br /></td></tr>
+<tr class="separator:aaf61053aa53dc96896760cd402ab1541 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a0fd0bbda8c9b678debc2b5e2eac0610d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0fd0bbda8c9b678debc2b5e2eac0610d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>valuesToRead</b> (int start, int end) const </td></tr>
+<tr class="separator:a0fd0bbda8c9b678debc2b5e2eac0610d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a00b32b493df38e7b351c48ba1060933b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b">compGetStringParam</a> (TOBJ_StringQuery query, int param1=0, int param2=0) const </td></tr>
+<tr class="memdesc:a00b32b493df38e7b351c48ba1060933b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function to query certain component related string parameters.  <a href="#a00b32b493df38e7b351c48ba1060933b">更多...</a><br /></td></tr>
+<tr class="separator:a00b32b493df38e7b351c48ba1060933b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44789e160eadc7b71e2c8f573cc2b08b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a44789e160eadc7b71e2c8f573cc2b08b">ComponentAccess</a> (HOBJ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de">hObj</a>)</td></tr>
+<tr class="memdesc:a44789e160eadc7b71e2c8f573cc2b08b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. ">mvIMPACT::acquire::ComponentAccess</a></b> object to a driver object.  <a href="#a44789e160eadc7b71e2c8f573cc2b08b">更多...</a><br /></td></tr>
+<tr class="separator:a44789e160eadc7b71e2c8f573cc2b08b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7407b550cbfcb1ce3373f1cdce9471b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7407b550cbfcb1ce3373f1cdce9471b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#ad7407b550cbfcb1ce3373f1cdce9471b">ComponentAccess</a> (void)</td></tr>
+<tr class="memdesc:ad7407b550cbfcb1ce3373f1cdce9471b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new unbound <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. ">mvIMPACT::acquire::ComponentAccess</a></b> object. <br /></td></tr>
+<tr class="separator:ad7407b550cbfcb1ce3373f1cdce9471b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">mvIMPACT::acquire::Component</a></td></tr>
+<tr class="memitem:adfb37f760b51b804473d180a83ef0fb6 inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="group___common_interface.html#ga7dbe9709a3bdae0b29581ff4f6fca3ff">TComponentType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#adfb37f760b51b804473d180a83ef0fb6">type</a> (HOBJ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de">hObj</a>)</td></tr>
+<tr class="memdesc:adfb37f760b51b804473d180a83ef0fb6 inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the type of the component referenced by <em>hObj</em>.  <a href="#adfb37f760b51b804473d180a83ef0fb6">更多...</a><br /></td></tr>
+<tr class="separator:adfb37f760b51b804473d180a83ef0fb6 inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab01e229848b62fccd552230fdc3124be inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ab01e229848b62fccd552230fdc3124be">visibilityAsString</a> (<a class="el" href="group___common_interface.html#ga75b333e3ba771df98bde9ee1e12f57a0">TComponentVisibility</a> <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a986c68167207123176b6ffe03f974cf3">visibility</a>)</td></tr>
+<tr class="memdesc:ab01e229848b62fccd552230fdc3124be inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended visibility converted to a string.  <a href="#ab01e229848b62fccd552230fdc3124be">更多...</a><br /></td></tr>
+<tr class="separator:ab01e229848b62fccd552230fdc3124be inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a9991665fc79069ec04644735832959 inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memItemLeft" align="right" valign="top">static std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a7a9991665fc79069ec04644735832959">representationAsString</a> (<a class="el" href="group___common_interface.html#ga1e2d7ac6b3bb3ff1fe4bb53c4aa808ea">TComponentRepresentation</a> <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a877be25f91d98b261ace18060126c0e6">representation</a>)</td></tr>
+<tr class="memdesc:a7a9991665fc79069ec04644735832959 inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the recommended representation converted to a string.  <a href="#a7a9991665fc79069ec04644735832959">更多...</a><br /></td></tr>
+<tr class="separator:a7a9991665fc79069ec04644735832959 inherit pub_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Protected 类型 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a3f76207dd889dca9dc7ba480dc2a6792 inherit pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f76207dd889dca9dc7ba480dc2a6792"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>BUFFER_INCREMENT_FACTOR</b> = 6
+ }</td></tr>
+<tr class="memdesc:a3f76207dd889dca9dc7ba480dc2a6792"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal constant that defines by which factor dynamic buffers will grow when the current size is not sufficient. <br /></td></tr>
+<tr class="separator:a3f76207dd889dca9dc7ba480dc2a6792 inherit pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;静态 Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a756900b648d65f8a20ded09ff4e5792d inherit pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a756900b648d65f8a20ded09ff4e5792d"></a>
+static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d">stringAllocator</a> (const char *pBuf, size_t reqBufSize)</td></tr>
+<tr class="memdesc:a756900b648d65f8a20ded09ff4e5792d inherit pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal helper function for fast string allocation. <br /></td></tr>
+<tr class="separator:a756900b648d65f8a20ded09ff4e5792d inherit pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a5ec5805e15290fcc78cf51bf0c0b5306 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ec5805e15290fcc78cf51bf0c0b5306"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a5ec5805e15290fcc78cf51bf0c0b5306">m_hObj</a></td></tr>
+<tr class="memdesc:a5ec5805e15290fcc78cf51bf0c0b5306 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier for the internal driver object referenced by this instance of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. ">mvIMPACT::acquire::ComponentAccess</a></b>. <br /></td></tr>
+<tr class="separator:a5ec5805e15290fcc78cf51bf0c0b5306 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A base class for properties. </p>
+<p>A property can be used to represent certain values like e.g. the input channel of a device. Depending on the way the property has been created it is either possible to read and write data to it or ( when the <b>mvIMPACT::acquire::cfWriteAccess</b> flag is <b>NOT</b> set ) just to read the data. In rare cases it might also be possible that the user is is not allowed to read the data of a property. To find out what you are allowed to do with a property or any other component the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a92f9a75ca9a56430e172c00b29b5496f" title="Returns the flags associated with this component. ">mvIMPACT::acquire::Component::flags()</a></b> can be called.</p>
+<p>A property can contain either a single value or an array of values of the same type (e.g. 4 integer values could be used to represent a property call 'Rectangle'. It can even (if the <b>mvIMPACT::acquire::cfFixedSize</b> flag is not set) contain a different number of values all the time its data is queried. E.g. for a property 'searchresults' each time some function is called which writes its results to this property the property could contain a different number of integer values afterwards.</p>
+<p>Every properties value can be read and written either as string or by it actual value type. So you can either assign the value of an integer property by using the standard 'write' function that accepts the value to be the type of the property or the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. ">mvIMPACT::acquire::Property::writeS</a></b> can be used to set the property via a string containing the new value.</p>
+<p>In addition to that <em>float</em> and <em>int</em> Properties might define a translation dictionary. This cannot be done by the user, but the user can work with the dictionary afterwards. A translation dictionary is a table which maps strings to certain values (e.g. integers).</p>
+<p>The translation dictionary serves two purposes: Once it has been defined this property can only be assigned values ( which can either be passed as a string or as the actual value ) which are contained in the translation table. Thus this makes it very easy to restrict a certain property to a fixed number of values, which can be assigned to it. Properties that have a translation dictionary will typically be defined by declaring a template instance with the type of the enumeration.</p>
+<p>The second benefit of a translation dictionary is that certain values can be assigned a meaningful description via its translation. When a translation table has been defined either the string translation can be used to assign its value or its actual data type. A float property e.g. might define a translation table like this: 'Auto -&gt; 0', 'auto -&gt; 1', 'OnLowLevel -&gt; 2'. Now to set this property to use the 'on low level' trigger mode this can be done by calling one of the 'write' functions.</p>
+<p>This can also be extremely useful to populate combo boxes for GUI applications.</p>
+<p>Float and int properties can also define certain constants like a max. value or a min. value. If a property does define such values it can't be assigned values which do not lie within the defined range. To find out if constants are defined The user can call the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a8fbc59e51ec6bf739d054078a5aa3021" title="Checks if a maximum value is defined for this property. ">mvIMPACT::acquire::Property::hasMaxValue</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab94e2773892274787f6745a133493ebb" title="Checks if a minimum value is defined for this property. ">mvIMPACT::acquire::Property::hasMinValue</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a8b42a3292260a81fc6b72c85934d5564" title="Checks if a step width is defined for this property. ">mvIMPACT::acquire::Property::hasStepWidth</a></b>. To query to actual value of the max, min or step width the functions <b>getMaxValue</b>, <b>getMinValue</b> and <b>getStepWidth</b> of the classes <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="A template class to represent float properties and enumerated float properties. ">mvIMPACT::acquire::EnumPropertyF</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="A template class to represent 32 bit integer properties and 32 bit enumerated integer properties...">mvIMPACT::acquire::EnumPropertyI</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="A template class to represent 64 bit integer properties and enumerated 64 bit integer properties...">mvIMPACT::acquire::EnumPropertyI64</a></b> can be called.</p>
+<p>When reading the value of a property as a string the user can define a format string telling the property module how to format the returned string. This works pretty much like when working e.g. with the <em>printf</em> function. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a32769caf6b712dea6fd583aadb37c641"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::Property::Property </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new unbound <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. ">mvIMPACT::acquire::Property</a></b> object. </p>
+<p>Properties constructed this way can't be used for anything unless they are bound to a internal driver property with a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator.html" title="A class to locate components within the driver. ">mvIMPACT::acquire::ComponentLocator</a></b> object. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7f6c3efdcef31a840b52ddd35ec1b31"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::Property::Property </td>
+          <td>(</td>
+          <td class="paramtype">HOBJ&#160;</td>
+          <td class="paramname"><em>hProp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. ">mvIMPACT::acquire::Property</a></b> object. </p>
+<p>Properties successfully constructed this way can be worked with directly. If <em>hObj</em> does not reference an internal driver property a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_e_not_a_property.html" title="An exception thrown in case of a mvIMPACT::acquire::PROPHANDLING_NOT_A_PROPERTY error. ">mvIMPACT::acquire::ENotAProperty</a></b> exception will be thrown. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">hProp</td><td>A valid handle to a property </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aed95ea2f827d0fd457d03857516e0b68" title="Checks if this component is of type mvIMPACT::acquire::Property or a derived type. " alt="" coords="203,9,352,50"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="597,38,816,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a57b0745fbaeca5fb4cf3e35fd3143002" title="Returns the type of the referenced component. " alt="" coords="400,9,549,50"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="876,5,1025,46"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="864,70,1037,111"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1086,92,1314,148"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1363,99,1587,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a098821f15ac08dbcd48af11b96ce8284"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Property::allowsValueCombinations </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if this enumerated property allows the combination of enum values. </p>
+<p>If this function returns true, the enum constants can be 'ored' together. This works for the enum constants as well as for the string representations returned in the properties translation dictionary.</p>
+<p>if a property e.g. defines a dictionary (('1', "one"), ('2', "two")) the following write operations will be valid:</p>
+<div class="fragment"><div class="line">prop = getPropFromSomewhere()</div>
+<div class="line">prop.write( 1 | 2 )</div>
+<div class="line">prop.write( &quot;one | two&quot;)</div>
+</div><!-- fragment --><dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if this property allows the combination of enum values.</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a92f9a75ca9a56430e172c00b29b5496f" title="Returns the flags associated with this component. " alt="" coords="283,38,432,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="480,38,699,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="759,5,908,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="747,70,920,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="969,92,1197,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1245,99,1469,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab47d418329e2422053fec56c8d316f17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::Property::dictSize </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the size of the properties translation dictionary. </p>
+<p>If the property does define a translation dictionary this function returns the number of elements contained in this dictionary. </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>The size of the properties translation dictionary.</li>
+<li>0 If this property does not define a translation dictionary. </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,38,421,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="481,5,631,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,70,643,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,92,919,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,99,1192,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a914eb2e3931822d4709543919899def3" title="Returns whether this property defines a translation dictionary or not. " alt="" coords="223,5,372,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#abe9c44a152e4d643309647817e085479" title="This function queries the property&#39;s translation table. " alt="" coords="216,69,379,125"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#ac7a2fc239bc7ac7b8ae2872f8a34a32f" title="This function queries a list of valid strings for this property. " alt="" coords="203,149,392,205"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#a9ed5e10a63d35c71b3050d92d1f20b64" title="This function queries a list of valid values for this property. " alt="" coords="203,229,391,285"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a914eb2e3931822d4709543919899def3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Property::hasDict </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns whether this property defines a translation dictionary or not. </p>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if this property defines a translation table</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab47d418329e2422053fec56c8d316f17" title="Returns the size of the properties translation dictionary. " alt="" coords="203,38,352,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="400,38,619,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="679,5,828,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="667,70,840,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="889,92,1117,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1165,99,1389,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8fbc59e51ec6bf739d054078a5aa3021"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Property::hasMaxValue </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a maximum value is defined for this property. </p>
+<dl class="section since"><dt>自从</dt><dd>1.12.63</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if this property defines a maximum value</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021_icgraph">
+<area shape="rect" id="node2" href="classwx_p_g_custom_spin_ctrl_editor.html#a6d5c3f9fa7042783c79198ad247898bc" title="Create controls and initialize event handling. " alt="" coords="214,5,399,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ab94e2773892274787f6745a133493ebb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Property::hasMinValue </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a minimum value is defined for this property. </p>
+<dl class="section since"><dt>自从</dt><dd>1.12.63</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if this property defines a minimum value</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb_icgraph">
+<area shape="rect" id="node2" href="classwx_p_g_custom_spin_ctrl_editor.html#a6d5c3f9fa7042783c79198ad247898bc" title="Create controls and initialize event handling. " alt="" coords="209,5,394,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a8b42a3292260a81fc6b72c85934d5564"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Property::hasStepWidth </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if a step width is defined for this property. </p>
+<dl class="section since"><dt>自从</dt><dd>1.12.63</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if this property defines a step width</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564_icgraph">
+<area shape="rect" id="node2" href="classwx_p_g_custom_spin_ctrl_editor.html#a6d5c3f9fa7042783c79198ad247898bc" title="Create controls and initialize event handling. " alt="" coords="217,5,402,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3fa6dd31fb10a3dd278320d07fb40ac8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::Property::maxValCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns maximum number of values that can be managed by this property. </p>
+<p>For the majority of properties this function will return '1', but as properties might manage more than a single value, this value might be interesting from time to time. </p><dl class="section return"><dt>返回</dt><dd>the maximum number of values that can be managed by this property. </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="213,38,432,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="492,5,641,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="480,70,653,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="702,92,930,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="979,99,1203,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a12b00c261f6b436ee85eea1ec5573dd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::Property::MVIMPACT_DEPRECATED_CPP </td>
+          <td>(</td>
+          <td class="paramtype">bool isConstDefined(<a class="el" href="group___common_interface.html#gab31a9721792e36b8c256a769961df4f9">TPropertyLimits</a> constant)&#160;</td>
+          <td class="paramname"><em>const</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Checks if a certain constant is defined for this property(<b>deprecated</b>). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">弃用:</a></b></dt><dd>This function has been declared deprecated and will be removed in future versions of this interface. Use <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a8fbc59e51ec6bf739d054078a5aa3021" title="Checks if a maximum value is defined for this property. ">mvIMPACT::acquire::Property::hasMaxValue()</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab94e2773892274787f6745a133493ebb" title="Checks if a minimum value is defined for this property. ">mvIMPACT::acquire::Property::hasMinValue()</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a8b42a3292260a81fc6b72c85934d5564" title="Checks if a step width is defined for this property. ">mvIMPACT::acquire::Property::hasStepWidth()</a></b> instead and see the corresponding 'Porting existing code' section in the documentation.</dd></dl>
+<p>Valid values for <em>constant</em> are defined by the enum <b><a class="el" href="group___common_interface.html#gab31a9721792e36b8c256a769961df4f9" title="Defines valid limits which can be queried for a mvIMPACT::acquire::Property object. ">mvIMPACT::acquire::TPropertyLimits</a></b>. </p><dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if this property defines this constant</li>
+<li>false otherwise </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa5fe87d8c899f71c88a7cacb4da2fb43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mvIMPACT::acquire::Property::readS </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads data from this property as a string. </p>
+<dl class="section note"><dt>注解</dt><dd>If the caller does not have the needed rights this function might throw an exception of the type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception.html" title="A base class for exceptions generated by mvIMPACT Acquire. ">mvIMPACT::acquire::ImpactAcquireException</a></b>.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A string containing the data questioned. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the desired value(only necessary for properties containing more than one value) </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The format string telling the function how to format the result. If left empty the property uses its standard way of converting its data into a string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,34,421,75"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,5,643,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,27,919,83"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,34,1192,75"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_icgraph">
+<area shape="rect" id="node2" href="class_prop_view_callback.html#a1e8b3138bb1074e64b86715f269e59c1" title="The callback function. " alt="" coords="1062,80,1245,107"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,1537,421,1578"/><area shape="rect" id="node32" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0" title="Open a file on the device. " alt="" coords="784,866,984,922"/><area shape="rect" id="node33" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804" title="Close a file on the device. " alt="" coords="784,946,984,1002"/><area shape="rect" id="node34" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9" title="Writes data into a file. " alt="" coords="784,2919,984,2975"/><area shape="rect" id="node35" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5" title="Read data from the device into a buffer. " alt="" coords="767,2998,1001,3040"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="474,1279,702,1335"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a44789e160eadc7b71e2c8f573cc2b08b" title="Constructs a new mvIMPACT::acquire::ComponentAccess object to a driver object. " alt="" coords="484,1359,692,1415"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a9f1ce26fe668a03990316e35882ef82d" title="Returns the current changed counter for the component referenced by this object. " alt="" coords="470,77,706,118"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a85e01578b604a92613cdd692947ba3f1" title="Returns the current attribute changed counter for the component referenced by this object..." alt="" coords="755,132,1013,173"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aa0ce09671eb0bfd13bc9c41a62a4c2a0" title="Moves to the next sibling(the next feature in the current list of features). " alt="" coords="508,1438,668,1480"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a3ff9ff4adf233c79c621a81c45f6e3ea" title="Moves to the first sibling(the first feature in the current list of features). " alt="" coords="509,1504,667,1545"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae7ecdaafa8fc95c761d4e913c199c53d" title="Moves to the last sibling(the last feature in the current list of features). " alt="" coords="509,1569,667,1610"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aaf5cfd9177e1d002b501a85df253096b" title="Moves to the first child of this component(moves down one level). " alt="" coords="513,1634,663,1676"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a07b183818aad835e54066780413de330" title="Moves to the parent of this component(moves up one level). " alt="" coords="513,1700,663,1741"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a92f9a75ca9a56430e172c00b29b5496f" title="Returns the flags associated with this component. " alt="" coords="513,1765,663,1806"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a4d650124bdad64f378a7b71a647d8e9b" title="Returns the flags associated with this component as a string. " alt="" coords="501,1830,675,1872"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ae5ea06015da01ed640f4a357d90326f9" title="Checks if this component is currently referencing the default for this component. ..." alt="" coords="513,1896,663,1937"/><area shape="rect" id="node16" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#aa13d62964b8282fd66f6d4fae48f85b2" title="Restores the default for the referenced component. " alt="" coords="499,1961,677,2002"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a57b0745fbaeca5fb4cf3e35fd3143002" title="Returns the type of the referenced component. " alt="" coords="513,712,663,753"/><area shape="rect" id="node18" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#a70c382683e15f9a02a253945a96a7367" title="Constructs a new mvIMPACT::acquire::EnumPropertyF object. " alt="" coords="803,734,965,790"/><area shape="rect" id="node19" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a986c68167207123176b6ffe03f974cf3" title="Returns the recommended visibility for this component. " alt="" coords="513,2026,663,2068"/><area shape="rect" id="node20" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ab01e229848b62fccd552230fdc3124be" title="Returns the recommended visibility converted to a string. " alt="" coords="491,2092,685,2133"/><area shape="rect" id="node21" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a877be25f91d98b261ace18060126c0e6" title="Returns the recommended representation for this component. " alt="" coords="499,2157,677,2198"/><area shape="rect" id="node22" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a7a9991665fc79069ec04644735832959" title="Returns the recommended representation converted to a string. " alt="" coords="491,2222,685,2278"/><area shape="rect" id="node23" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback.html#ac556b7ac1a6517f30734cbdae4f6ed6e" title="Creates a new mvIMPACT::acquire::ComponentCallback instance. " alt="" coords="481,2302,695,2358"/><area shape="rect" id="node24" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback.html#a9d6ac41d7885c16d1545fe7ceb0516dd" title="Registers a component for this callback. " alt="" coords="493,2382,683,2438"/><area shape="rect" id="node25" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback.html#a8e4afb1f424f70e9dea237fb1c5c0a3d" title="Unregisters a component for this callback. " alt="" coords="485,2462,691,2518"/><area shape="rect" id="node26" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="507,2542,669,2598"/><area shape="rect" id="node27" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="507,2622,669,2678"/><area shape="rect" id="node28" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html#a72205cdd281a5e62a43f53af93a37643" title="Constructs a new mvIMPACT::acquire::ComponentList object. " alt="" coords="485,2701,691,2742"/><area shape="rect" id="node29" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html#a4921fd9f3bd993a63ae69b9700a27e47" title="Returns The number of valid component entries in the referenced list. " alt="" coords="513,2766,663,2808"/><area shape="rect" id="node30" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a7ac9d9a45808153f9e546cfffb0054cc" title="Constructs a new mvIMPACT::acquire::Method object. " alt="" coords="513,2832,663,2873"/><area shape="rect" id="node31" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html#a0f6be3f09242b7a2fab7e45342c80fb0" title="Calls an underlying driver function. " alt="" coords="513,2962,663,3004"/><area shape="rect" id="node36" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab7f6c3efdcef31a840b52ddd35ec1b31" title="Constructs a new mvIMPACT::acquire::Property object. " alt="" coords="513,2897,663,2938"/><area shape="rect" id="node37" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#ab47d418329e2422053fec56c8d316f17" title="Returns the size of the properties translation dictionary. " alt="" coords="513,296,663,337"/><area shape="rect" id="node38" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#abe9c44a152e4d643309647817e085479" title="This function queries the property&#39;s translation table. " alt="" coords="803,200,965,256"/><area shape="rect" id="node39" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#ac7a2fc239bc7ac7b8ae2872f8a34a32f" title="This function queries a list of valid strings for this property. " alt="" coords="789,284,979,340"/><area shape="rect" id="node40" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#a9ed5e10a63d35c71b3050d92d1f20b64" title="This function queries a list of valid values for this property. " alt="" coords="790,503,978,559"/><area shape="rect" id="node41" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aeba0bb5fdb980e349c412b6e34798428" title="Reads data from this property as a string. " alt="" coords="513,3028,663,3069"/><area shape="rect" id="node42" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a4633aaa98af921d39e645bf5738b5a97" title="Removes a certain value from the property&#39;s data. " alt="" coords="511,464,665,505"/><area shape="rect" id="node43" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a3b96fcc3fe07052044d762dcb219e236" title="Resizes the property&#39;s data array. " alt="" coords="506,529,670,570"/><area shape="rect" id="node44" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#af78d846031ef0e00abc302c7bed86944" title="Returns the current number of values managed by this property. " alt="" coords="513,594,663,636"/><area shape="rect" id="node45" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a3fa6dd31fb10a3dd278320d07fb40ac8" title="Returns maximum number of values that can be managed by this property. " alt="" coords="509,829,667,870"/><area shape="rect" id="node46" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="513,894,663,936"/><area shape="rect" id="node47" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#a468d800a0a7063c06671b145f8db838d" title="This function reads a single translation table string entry from a property. " alt="" coords="497,959,679,1015"/><area shape="rect" id="node48" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#a2f112c022daf12eb6c216cbba0686911" title="This function reads a single translation table value entry from a property. " alt="" coords="497,1039,679,1095"/><area shape="rect" id="node49" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#a05816804ecc94c93353cc0c60e2fa6aa" title="Reads a value from a property. " alt="" coords="507,1119,669,1175"/><area shape="rect" id="node50" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html#aab43f168b6787d73837e2f9a65d983c4" title="Writes one value to the property. " alt="" coords="507,1199,669,1255"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aeba0bb5fdb980e349c412b6e34798428"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mvIMPACT::acquire::Property::readSArray </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>format</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>delimiter</em> = <code>&quot;&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>startIndex</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>endIndex</em> = <code>INT_MAX</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>mode</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads data from this property as a string. </p>
+<p>This function can be used to query a set of values if this property stores more than a single value which might be useful for GUI applications.</p>
+<dl class="section note"><dt>注解</dt><dd>If the caller does not have the needed rights this function might throw an exception of the type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception.html" title="A base class for exceptions generated by mvIMPACT Acquire. ">mvIMPACT::acquire::ImpactAcquireException</a></b>.</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A string containing the data questioned. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">format</td><td>The format string telling the function how to format the result. If left empty the property uses its standard way of converting its data into a string </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">delimiter</td><td>This string is used to separate the individual values from one another. If left empty, a single blank will separate the data. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">startIndex</td><td>The index of the first of the desired values </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">endIndex</td><td>The index of the last of the desired values. If <b>INT_MAX</b> is passed, every from <em>startIndex</em> to the last value stored by the property will be returned. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mode</td><td>Specifies the mode this function operates in. Currently only the LSB affects the behaviour of this function. When the LSB is set, the translation dictionary (if defined) will be ignored for this call. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,38,421,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="481,5,631,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,70,643,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,92,919,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,99,1192,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4633aaa98af921d39e645bf5738b5a97"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a>&amp; mvIMPACT::acquire::Property::removeValue </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes a certain value from the property's data. </p>
+<dl class="section return"><dt>返回</dt><dd>A const reference to the calling property. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the value to be removed </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="208,38,427,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="487,5,636,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="475,70,648,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="697,92,925,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="973,99,1197,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3b96fcc3fe07052044d762dcb219e236"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a>&amp; mvIMPACT::acquire::Property::resizeValArray </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>newSize</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Resizes the property's data array. </p>
+<p>This function resizes the internal data array of this property. The size of this array represents the number of values, which can be stored within the property. This function will only succeed, if the <b>mvIMPACT::acquire::cfFixedSize</b> is <b>NOT</b> set for this property and the user has <b>"write rights"</b> for this property. Otherwise an exception will be thrown. Whenever the user successfully writes an array of values to a property and this array contains more elements than the current internal data array can accommodate at the desired offset the internal data array will be increased automatically.</p>
+<dl class="section note"><dt>注解</dt><dd>If the caller does not have the needed rights this function might throw an exception of the type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception.html" title="A base class for exceptions generated by mvIMPACT Acquire. ">mvIMPACT::acquire::ImpactAcquireException</a></b>.</dd>
+<dd>
+In order to be allowed to modify the number of values a property can store, the <b>mvIMPACT::acquire::cfFixedSize</b> flag must <b>NOT</b> be set. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac59a8e19513c8508ec72cccee4b3eff6" title="Checks if the caller has write/modify access to the component. ">mvIMPACT::acquire::Component::isWriteable</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A const reference to the calling property. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">newSize</td><td>The new number of values this property shall be allowed to store </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="219,38,437,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="497,5,647,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="485,70,659,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="707,92,935,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="984,99,1208,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad267e140bfb73254855b3792cd0d6f5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string mvIMPACT::acquire::Property::stringFormatString </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the internal format string this property uses to convert data to strings. </p>
+<dl class="section return"><dt>返回</dt><dd>A string containing the format string internally used by the property whenever the user reads a value as a string without specifying a format string and the property is not a string type one. </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="241,63,469,119"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="517,5,741,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="520,70,739,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="801,67,951,109"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="789,133,963,174"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_icgraph">
+<area shape="rect" id="node2" href="classwx_p_g_custom_spin_ctrl_editor.html#a6d5c3f9fa7042783c79198ad247898bc" title="Create controls and initialize event handling. " alt="" coords="241,5,426,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af78d846031ef0e00abc302c7bed86944"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::Property::valCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current number of values managed by this property. </p>
+<p>For the majority of properties this function will return '1', but as properties might manage more than a single value, this value might be interesting from time to time. </p><dl class="section return"><dt>返回</dt><dd>the current number of values managed by this property. </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,38,421,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="481,5,631,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,70,643,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,92,919,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,99,1192,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_icgraph">
+<area shape="rect" id="node2" href="class_prop_grid_frame_base.html#a0afb2cdd3da1a2844d2c3a89ef6be719" title="PropGridFrameBase::\lOnPropertyRightClicked" alt="" coords="203,5,365,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a51893d14c0fc6128bc9f4cc0ba5a7e5d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a>&amp; mvIMPACT::acquire::Property::writeS </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns a new value to this property. </p>
+<p>The user caller have <b>"write rights"</b> for this property in order to be able to modify its value. Also if <em>index</em> is greater than the current internal data array size of this property the user must be allowed to change to size of the properties internal data array (the <b>mvIMPACT::acquire::cfFixedSize</b> flag must <b>NOT</b> be set).</p>
+<dl class="section note"><dt>注解</dt><dd>If the caller does not have the needed rights this function might throw an exception of the type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception.html" title="A base class for exceptions generated by mvIMPACT Acquire. ">mvIMPACT::acquire::ImpactAcquireException</a></b>.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac59a8e19513c8508ec72cccee4b3eff6" title="Checks if the caller has write/modify access to the component. ">mvIMPACT::acquire::Component::isWriteable</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a92f9a75ca9a56430e172c00b29b5496f" title="Returns the flags associated with this component. ">mvIMPACT::acquire::Component::flags</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. ">mvIMPACT::acquire::Property::writeS</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A const reference to the calling property. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The new value for this property at the given <em>index</em> </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the value to modify </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="203,38,421,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="481,5,631,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="469,70,643,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="691,92,919,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="968,99,1192,141"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a49c7ecf0cf3198e9b29e1db1c99a2b2b" title="Assigns new values to this property. " alt="" coords="245,5,395,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html#a53972e480094f5a3afe14d1ddb99838b" title="Writes one value to the property. " alt="" coords="245,70,395,111"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a849322aeba6552b08ac0ef4c69c390b0" title="Open a file on the device. " alt="" coords="220,215,420,271"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a89f55f99f0e20b79d2d7258f04fc5804" title="Close a file on the device. " alt="" coords="220,295,420,351"/><area shape="rect" id="node16" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a6fb017f1185bb2d85069dd77d50654b9" title="Writes data into a file. " alt="" coords="220,375,420,431"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#a37d4353bb8aa6f0b2d41a14c52eb2ab5" title="Read data from the device into a buffer. " alt="" coords="203,454,437,495"/><area shape="rect" id="node18" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_protocol_adapter.html#acb66bce933bb96624a3e3ae9427ec418" title="Fetch max FileAccessBuffer length for a file. " alt="" coords="220,135,420,191"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#abeac383d8920db202b6b9aa6d5ec557e" title="Opens a file on the device. " alt="" coords="489,142,722,183"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#afbe8e24163d5bd9cfdd353341ffd0e60" title="Opens a file on the device. " alt="" coords="486,207,725,249"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a76b6d17adb3ec0657f14deb374c5ff0b" title="Opens a file on the device. " alt="" coords="777,142,1020,183"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a7320dc61122a8643618f16afa01e7619" title="Open file on device in write mode. " alt="" coords="774,207,1023,249"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#a0bdb237270baa68431793dcf5de9c30f" title="Closes a file on the device. " alt="" coords="507,295,704,351"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#af6d1706049789ff8937e353bbb5f7cd6" title="Closes a file on the device. " alt="" coords="504,432,707,488"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_buf.html#aadb6c054750ff6390f13d5df7241ef8e" title="class destructor. " alt="" coords="800,272,997,328"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_i_dev_file_stream_base.html#a9a2c2982dc80de791f717eb33c400b56" title="Close the file on the device. " alt="" coords="795,352,1002,408"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_buf.html#a96a881b88fe2df12b9a218dcebfd15c4" title="class destructor. " alt="" coords="797,432,1000,488"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_o_dev_file_stream_base.html#a18c100cf08c0f6d64230a569de872a40" title="Close the file on device. " alt="" coords="792,512,1005,568"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a49c7ecf0cf3198e9b29e1db1c99a2b2b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a>&amp; mvIMPACT::acquire::Property::writeS </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sequence</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>index</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assigns new values to this property. </p>
+<p>The user must have <b>"write rights"</b> for this property in order to be able to modify its values. Also if <em>index</em> is greater than the current internal data array size of this property the user must be allowed to change to size of the properties internal data array (the <b>mvIMPACT::acquire::cfFixedSize</b> flag must <b>NOT</b> be set). This function behaves exactly like <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. ">mvIMPACT::acquire::Property::writeS</a></b> except that is can be used to assign more than one value at the same time. The parameter <em>index</em> here serves as an offset. If for example a property holds 3 values 'one', 'two' and 'three' before this call and the function is then called with an array containing the string 'orange' and 'blue' and <em>index</em> = 2 then after a successful call to this function the property will hold the data 'one', 'two', 'orange' and 'blue'.</p>
+<dl class="section note"><dt>注解</dt><dd>If the caller does not have the needed rights this function might throw an exception of the type <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception.html" title="A base class for exceptions generated by mvIMPACT Acquire. ">mvIMPACT::acquire::ImpactAcquireException</a></b>.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac59a8e19513c8508ec72cccee4b3eff6" title="Checks if the caller has write/modify access to the component. ">mvIMPACT::acquire::Component::isWriteable</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#a92f9a75ca9a56430e172c00b29b5496f" title="Returns the flags associated with this component. ">mvIMPACT::acquire::Component::flags</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. ">mvIMPACT::acquire::Property::writeS</a></b> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A const reference to the calling property. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">sequence</td><td>A constant reference to an array containing the strings to be assigned to the property </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The offset from where to start to assign the values </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#a51893d14c0fc6128bc9f4cc0ba5a7e5d" title="Assigns a new value to this property. " alt="" coords="203,38,352,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="400,38,619,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="679,5,828,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="667,70,840,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="889,92,1117,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1165,99,1389,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html">Property</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Event\+Wait\+Results类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}
+}
+
+
+A class containing the result of a wait call for events ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only)({\bfseries deprecated}).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga6f53d7cf6f361a7a87d468be369c6a1e}{Event\+Wait\+Results} (int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a72954fbe6c75cc1ca7c6123c02358350}{error\+Code}, \hyperlink{group___common_interface_ga0947eb7d6a73b9baab283cbf65cd8d6b}{T\+Device\+Event\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a9a0ae92dc85c4daa39baeb7707446b69}{wait\+Mask}, \hyperlink{group___common_interface_ga0947eb7d6a73b9baab283cbf65cd8d6b}{T\+Device\+Event\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a26d8df5e9f77bcfed2dd550c993e5306}{result\+Mask})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}} object. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a72954fbe6c75cc1ca7c6123c02358350}{error\+Code} (void) const 
+\begin{DoxyCompactList}\small\item\em The error code returned by the wait function. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga0947eb7d6a73b9baab283cbf65cd8d6b}{T\+Device\+Event\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a9a0ae92dc85c4daa39baeb7707446b69}{wait\+Mask} (void) const 
+\begin{DoxyCompactList}\small\item\em The wait mask passed to the wait function. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga0947eb7d6a73b9baab283cbf65cd8d6b}{T\+Device\+Event\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a26d8df5e9f77bcfed2dd550c993e5306}{result\+Mask} (void) const 
+\begin{DoxyCompactList}\small\item\em The result mask of the wait function call. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A class containing the result of a wait call for events ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only)({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000012}{弃用}]This class has been declared {\bfseries deprecated} and will be removed in future versions of this interface. A more flexible way of getting informed about changes in driver features has been added to the interface and should be used instead. An example for this new method can be found here\+: Callback.\+cpp\end{DoxyRefDesc}
+
+
+Objects of this class will be returned by {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::wait\+For} calls.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a72954fbe6c75cc1ca7c6123c02358350}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}!error\+Code@{error\+Code}}
+\index{error\+Code@{error\+Code}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}
+\subsubsection[{error\+Code}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results\+::error\+Code (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a72954fbe6c75cc1ca7c6123c02358350}
+
+
+The error code returned by the wait function. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000025}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a26d8df5e9f77bcfed2dd550c993e5306}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}!result\+Mask@{result\+Mask}}
+\index{result\+Mask@{result\+Mask}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}
+\subsubsection[{result\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Device\+Event\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results\+::result\+Mask (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a26d8df5e9f77bcfed2dd550c993e5306}
+
+
+The result mask of the wait function call. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000027}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a9a0ae92dc85c4daa39baeb7707446b69}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}!wait\+Mask@{wait\+Mask}}
+\index{wait\+Mask@{wait\+Mask}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}
+\subsubsection[{wait\+Mask}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Device\+Event\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results\+::wait\+Mask (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results_a9a0ae92dc85c4daa39baeb7707446b69}
+
+
+The wait mask passed to the wait function. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000026}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}}. \end{DoxyRefDesc}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

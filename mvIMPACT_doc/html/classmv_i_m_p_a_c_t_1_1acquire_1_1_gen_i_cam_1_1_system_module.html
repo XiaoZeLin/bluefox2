@@ -1,0 +1,802 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::SystemModule类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::SystemModule类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category that contains items that belong to the system module of the transport layer.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::GenICam::SystemModule 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="17,6,165,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::SystemModule 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="772,11,921,53"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="772,182,921,223"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,367,555,409"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="765,313,928,369"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="753,393,941,434"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,423,355,465"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,439,728,481"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,423,155,465"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:afa84665420b30c9d83ed1aada601a583"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#afa84665420b30c9d83ed1aada601a583">SystemModule</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev)</td></tr>
+<tr class="memdesc:afa84665420b30c9d83ed1aada601a583"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html" title="Category that contains items that belong to the system module of the transport layer. ">mvIMPACT::acquire::GenICam::SystemModule</a></b> object.  <a href="#afa84665420b30c9d83ed1aada601a583">更多...</a><br /></td></tr>
+<tr class="separator:afa84665420b30c9d83ed1aada601a583"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d7dc89a345ea7f459e47949480b646"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1d7dc89a345ea7f459e47949480b646"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#aa1d7dc89a345ea7f459e47949480b646">SystemModule</a> ()</td></tr>
+<tr class="memdesc:aa1d7dc89a345ea7f459e47949480b646"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html" title="Category that contains items that belong to the system module of the transport layer. ">mvIMPACT::acquire::GenICam::SystemModule</a></b> object. <br /></td></tr>
+<tr class="separator:aa1d7dc89a345ea7f459e47949480b646"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a4b14d0aa202e4a6f813f8fc8e6cc11b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a4b14d0aa202e4a6f813f8fc8e6cc11b6">TLVendorName</a></td></tr>
+<tr class="memdesc:a4b14d0aa202e4a6f813f8fc8e6cc11b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the name of the transport layer vendor.  <a href="#a4b14d0aa202e4a6f813f8fc8e6cc11b6">更多...</a><br /></td></tr>
+<tr class="separator:a4b14d0aa202e4a6f813f8fc8e6cc11b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3dd9e091672c62757fbe1de1cee0f30a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a3dd9e091672c62757fbe1de1cee0f30a">TLModelName</a></td></tr>
+<tr class="memdesc:a3dd9e091672c62757fbe1de1cee0f30a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the name of the transport layer Model.  <a href="#a3dd9e091672c62757fbe1de1cee0f30a">更多...</a><br /></td></tr>
+<tr class="separator:a3dd9e091672c62757fbe1de1cee0f30a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ed6c131c7c3bbd4ceb979fcd04a4f4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a4ed6c131c7c3bbd4ceb979fcd04a4f4b">TLID</a></td></tr>
+<tr class="memdesc:a4ed6c131c7c3bbd4ceb979fcd04a4f4b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the ID of the transport layer.  <a href="#a4ed6c131c7c3bbd4ceb979fcd04a4f4b">更多...</a><br /></td></tr>
+<tr class="separator:a4ed6c131c7c3bbd4ceb979fcd04a4f4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a876fa426180d3e60e2d600dd1e5ab6d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a876fa426180d3e60e2d600dd1e5ab6d2">TLVersion</a></td></tr>
+<tr class="memdesc:a876fa426180d3e60e2d600dd1e5ab6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates a vendor specific version string for this transport layer.  <a href="#a876fa426180d3e60e2d600dd1e5ab6d2">更多...</a><br /></td></tr>
+<tr class="separator:a876fa426180d3e60e2d600dd1e5ab6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f77060028e0d27ae600a3a197adb65d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a4f77060028e0d27ae600a3a197adb65d">TLFileName</a></td></tr>
+<tr class="memdesc:a4f77060028e0d27ae600a3a197adb65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the file name of the GenTL Producer driver including name and extension.  <a href="#a4f77060028e0d27ae600a3a197adb65d">更多...</a><br /></td></tr>
+<tr class="separator:a4f77060028e0d27ae600a3a197adb65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5c343774dcbce2bf1b54dd14138ed95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#ab5c343774dcbce2bf1b54dd14138ed95">TLDisplayName</a></td></tr>
+<tr class="memdesc:ab5c343774dcbce2bf1b54dd14138ed95"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. User readable name of the GenTL Producer.  <a href="#ab5c343774dcbce2bf1b54dd14138ed95">更多...</a><br /></td></tr>
+<tr class="separator:ab5c343774dcbce2bf1b54dd14138ed95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4b4281b0bb95e222f94a4f9df7922e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#ab4b4281b0bb95e222f94a4f9df7922e4">TLPath</a></td></tr>
+<tr class="memdesc:ab4b4281b0bb95e222f94a4f9df7922e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. Indicates the full path to the GenTL Producer driver including name and extension.  <a href="#ab4b4281b0bb95e222f94a4f9df7922e4">更多...</a><br /></td></tr>
+<tr class="separator:ab4b4281b0bb95e222f94a4f9df7922e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483183eb91826654275c0861dce3e1cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a483183eb91826654275c0861dce3e1cd">TLType</a></td></tr>
+<tr class="memdesc:a483183eb91826654275c0861dce3e1cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Identifies the transport layer technology of the GenTL Producer implementation.  <a href="#a483183eb91826654275c0861dce3e1cd">更多...</a><br /></td></tr>
+<tr class="separator:a483183eb91826654275c0861dce3e1cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d18ebd0935c13034576105263123ea6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a0d18ebd0935c13034576105263123ea6">genTLVersionMajor</a></td></tr>
+<tr class="memdesc:a0d18ebd0935c13034576105263123ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the major version number of the GenTL specification the GenTL Producer implementation complies with.  <a href="#a0d18ebd0935c13034576105263123ea6">更多...</a><br /></td></tr>
+<tr class="separator:a0d18ebd0935c13034576105263123ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f7476e44901bb10365032ea76b2f57a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a7f7476e44901bb10365032ea76b2f57a">genTLVersionMinor</a></td></tr>
+<tr class="memdesc:a7f7476e44901bb10365032ea76b2f57a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the minor version number of the GenTL specification the GenTL Producer implementation complies with.  <a href="#a7f7476e44901bb10365032ea76b2f57a">更多...</a><br /></td></tr>
+<tr class="separator:a7f7476e44901bb10365032ea76b2f57a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a310d740a20bad8729d066423d5445df0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a310d740a20bad8729d066423d5445df0">genTLSFNCVersionMajor</a></td></tr>
+<tr class="memdesc:a310d740a20bad8729d066423d5445df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the major version number of the GenTL SFNC specification the GenTL Producer implementation complies with.  <a href="#a310d740a20bad8729d066423d5445df0">更多...</a><br /></td></tr>
+<tr class="separator:a310d740a20bad8729d066423d5445df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae852c6e9fe3e60c10184a5a8529c87ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#ae852c6e9fe3e60c10184a5a8529c87ed">genTLSFNCVersionMinor</a></td></tr>
+<tr class="memdesc:ae852c6e9fe3e60c10184a5a8529c87ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the minor version number of the GenTL SFNC specification the GenTL Producer implementation complies with.  <a href="#ae852c6e9fe3e60c10184a5a8529c87ed">更多...</a><br /></td></tr>
+<tr class="separator:ae852c6e9fe3e60c10184a5a8529c87ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd11b3d1a0c1a59a0bf1b9762c0e8dfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#afd11b3d1a0c1a59a0bf1b9762c0e8dfb">genTLSFNCVersionSubMinor</a></td></tr>
+<tr class="memdesc:afd11b3d1a0c1a59a0bf1b9762c0e8dfb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the sub minor version number of the GenTL SFNC specification the GenTL Producer implementation complies with.  <a href="#afd11b3d1a0c1a59a0bf1b9762c0e8dfb">更多...</a><br /></td></tr>
+<tr class="separator:afd11b3d1a0c1a59a0bf1b9762c0e8dfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f65ada43ea781c0a47a094deb7dd39e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a2f65ada43ea781c0a47a094deb7dd39e">genCPVersionMajor</a></td></tr>
+<tr class="memdesc:a2f65ada43ea781c0a47a094deb7dd39e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the major version number of the GenCP specification this GenTL Producer implementation complies with.  <a href="#a2f65ada43ea781c0a47a094deb7dd39e">更多...</a><br /></td></tr>
+<tr class="separator:a2f65ada43ea781c0a47a094deb7dd39e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae40cc61bb868b23e61acd184e1a5b5b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#ae40cc61bb868b23e61acd184e1a5b5b9">genCPVersionMinor</a></td></tr>
+<tr class="memdesc:ae40cc61bb868b23e61acd184e1a5b5b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the minor version number of the GenCP specification this GenTL Producer implementation complies with.  <a href="#ae40cc61bb868b23e61acd184e1a5b5b9">更多...</a><br /></td></tr>
+<tr class="separator:ae40cc61bb868b23e61acd184e1a5b5b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71bc6f8eab54b687fb89575a0af7cf9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a71bc6f8eab54b687fb89575a0af7cf9f">gevVersionMajor</a></td></tr>
+<tr class="memdesc:a71bc6f8eab54b687fb89575a0af7cf9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated (See DeviceTLVersionMajor).  <a href="#a71bc6f8eab54b687fb89575a0af7cf9f">更多...</a><br /></td></tr>
+<tr class="separator:a71bc6f8eab54b687fb89575a0af7cf9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a743cf765f431c037b166db1a2f6ebe31"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a743cf765f431c037b166db1a2f6ebe31">gevVersionMinor</a></td></tr>
+<tr class="memdesc:a743cf765f431c037b166db1a2f6ebe31"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. This feature is deprecated (See DeviceTLVersionMinor).  <a href="#a743cf765f431c037b166db1a2f6ebe31">更多...</a><br /></td></tr>
+<tr class="separator:a743cf765f431c037b166db1a2f6ebe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21d87726103ba795abd382f948688adc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a21d87726103ba795abd382f948688adc">u3vVersionMajor</a></td></tr>
+<tr class="memdesc:a21d87726103ba795abd382f948688adc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the major version number of the USB3 Vision specification this GenTL Producer implementation complies with.  <a href="#a21d87726103ba795abd382f948688adc">更多...</a><br /></td></tr>
+<tr class="separator:a21d87726103ba795abd382f948688adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09cc58892ace4b142df7c60594a326c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a09cc58892ace4b142df7c60594a326c9">u3vVersionMinor</a></td></tr>
+<tr class="memdesc:a09cc58892ace4b142df7c60594a326c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the minor version number of the USB3 Vision specification this GenTL Producer implementation complies with.  <a href="#a09cc58892ace4b142df7c60594a326c9">更多...</a><br /></td></tr>
+<tr class="separator:a09cc58892ace4b142df7c60594a326c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9881c83f6912bea00767ccbee5bc3385"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a9881c83f6912bea00767ccbee5bc3385">mvGevChannelDummyPacketSendEnable</a></td></tr>
+<tr class="memdesc:a9881c83f6912bea00767ccbee5bc3385"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Enables or disables the periodical sending of dummy packets to a stream or message channel source port of a GigE Vision device.  <a href="#a9881c83f6912bea00767ccbee5bc3385">更多...</a><br /></td></tr>
+<tr class="separator:a9881c83f6912bea00767ccbee5bc3385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa62bfd581c2017182bbd1ad4173706d2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#aa62bfd581c2017182bbd1ad4173706d2">mvGevChannelDummyPacketSendInterval</a></td></tr>
+<tr class="memdesc:aa62bfd581c2017182bbd1ad4173706d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Defines the period(in ms) for sending dummy packets to a stream or message channel source port of a GigE Vision device.  <a href="#aa62bfd581c2017182bbd1ad4173706d2">更多...</a><br /></td></tr>
+<tr class="separator:aa62bfd581c2017182bbd1ad4173706d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9019b47e1561a33b050eae66a7a8372e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a9019b47e1561a33b050eae66a7a8372e">interfaceUpdateList</a></td></tr>
+<tr class="memdesc:a9019b47e1561a33b050eae66a7a8372e"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Updates the internal interface list.  <a href="#a9019b47e1561a33b050eae66a7a8372e">更多...</a><br /></td></tr>
+<tr class="separator:a9019b47e1561a33b050eae66a7a8372e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b00bc5a21e9f7839039da1f3555d47"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a48b00bc5a21e9f7839039da1f3555d47">interfaceSelector</a></td></tr>
+<tr class="memdesc:a48b00bc5a21e9f7839039da1f3555d47"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selector for the different GenTL Producer interfaces.  <a href="#a48b00bc5a21e9f7839039da1f3555d47">更多...</a><br /></td></tr>
+<tr class="separator:a48b00bc5a21e9f7839039da1f3555d47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41763f2b261c03af6c0a8870e5d60a9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a41763f2b261c03af6c0a8870e5d60a9f">interfaceID</a></td></tr>
+<tr class="memdesc:a41763f2b261c03af6c0a8870e5d60a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property. GenTL producer wide unique identifier of the selected interface.  <a href="#a41763f2b261c03af6c0a8870e5d60a9f">更多...</a><br /></td></tr>
+<tr class="separator:a41763f2b261c03af6c0a8870e5d60a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81236e2c1b6a29de2c2863517929b45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#ae81236e2c1b6a29de2c2863517929b45">interfaceType</a></td></tr>
+<tr class="memdesc:ae81236e2c1b6a29de2c2863517929b45"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Identifies the interfaces technology of the GenTL Producer implementation.  <a href="#ae81236e2c1b6a29de2c2863517929b45">更多...</a><br /></td></tr>
+<tr class="separator:ae81236e2c1b6a29de2c2863517929b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef65b56a13878a70a9bad2309fb749c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#aef65b56a13878a70a9bad2309fb749c0">gevInterfaceMACAddress</a></td></tr>
+<tr class="memdesc:aef65b56a13878a70a9bad2309fb749c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the 48-bit MAC address of the selected interface.  <a href="#aef65b56a13878a70a9bad2309fb749c0">更多...</a><br /></td></tr>
+<tr class="separator:aef65b56a13878a70a9bad2309fb749c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab02912952d8611f5b7c08714c18e7729"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#ab02912952d8611f5b7c08714c18e7729">gevInterfaceDefaultIPAddress</a></td></tr>
+<tr class="memdesc:ab02912952d8611f5b7c08714c18e7729"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the IP address of the first subnet of the selected interface.  <a href="#ab02912952d8611f5b7c08714c18e7729">更多...</a><br /></td></tr>
+<tr class="separator:ab02912952d8611f5b7c08714c18e7729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4fb4d0b42cb5cc8239fd17f8d84da4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a8b4fb4d0b42cb5cc8239fd17f8d84da4">gevInterfaceDefaultSubnetMask</a></td></tr>
+<tr class="memdesc:a8b4fb4d0b42cb5cc8239fd17f8d84da4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the subnet mask of the first subnet of the selected interface.  <a href="#a8b4fb4d0b42cb5cc8239fd17f8d84da4">更多...</a><br /></td></tr>
+<tr class="separator:a8b4fb4d0b42cb5cc8239fd17f8d84da4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a892fdf7b71a2bb07fc27b03b5752237e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a892fdf7b71a2bb07fc27b03b5752237e">gevInterfaceDefaultGateway</a></td></tr>
+<tr class="memdesc:a892fdf7b71a2bb07fc27b03b5752237e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the default gateway of the first subnet of the selected interface.  <a href="#a892fdf7b71a2bb07fc27b03b5752237e">更多...</a><br /></td></tr>
+<tr class="separator:a892fdf7b71a2bb07fc27b03b5752237e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf1647cef98a641c128e2b93973b88b9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#abf1647cef98a641c128e2b93973b88b9">mvGevInterfaceMTU</a></td></tr>
+<tr class="memdesc:abf1647cef98a641c128e2b93973b88b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the MTU of the selected interface.  <a href="#abf1647cef98a641c128e2b93973b88b9">更多...</a><br /></td></tr>
+<tr class="separator:abf1647cef98a641c128e2b93973b88b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a2d2d7fa7a6b3baf93991e108df1fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#a24a2d2d7fa7a6b3baf93991e108df1fb">mvGevInterfaceLinkSpeed</a></td></tr>
+<tr class="memdesc:a24a2d2d7fa7a6b3baf93991e108df1fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Indicates the link speed of this interface.  <a href="#a24a2d2d7fa7a6b3baf93991e108df1fb">更多...</a><br /></td></tr>
+<tr class="separator:a24a2d2d7fa7a6b3baf93991e108df1fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category that contains items that belong to the system module of the transport layer. </p>
+<p>The System category contains items that belong to the system module of the transport layer. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="afa84665420b30c9d83ed1aada601a583"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::SystemModule::SystemModule </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html" title="Category that contains items that belong to the system module of the transport layer. ">mvIMPACT::acquire::GenICam::SystemModule</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_afa84665420b30c9d83ed1aada601a583_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_afa84665420b30c9d83ed1aada601a583_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_afa84665420b30c9d83ed1aada601a583_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module_afa84665420b30c9d83ed1aada601a583_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a41a5bc2d37b631bf6b258d9ac64a62b1" title="Returns a list providing access to driver library specific features. " alt="" coords="227,5,437,46"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="251,69,413,125"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="485,41,704,82"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="764,7,913,49"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="752,73,925,114"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="974,95,1202,151"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1251,102,1475,143"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a2f65ada43ea781c0a47a094deb7dd39e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genCPVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the major version number of the GenCP specification this GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It indicates the major version number of the GenCP specification this GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae40cc61bb868b23e61acd184e1a5b5b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genCPVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the minor version number of the GenCP specification this GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It indicates the minor version number of the GenCP specification this GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="a310d740a20bad8729d066423d5445df0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genTLSFNCVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the major version number of the GenTL SFNC specification the GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It defines the major version number of the GenTL SFNC specification the GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae852c6e9fe3e60c10184a5a8529c87ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genTLSFNCVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the minor version number of the GenTL SFNC specification the GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It defines the minor version number of the GenTL SFNC specification the GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="afd11b3d1a0c1a59a0bf1b9762c0e8dfb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genTLSFNCVersionSubMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the sub minor version number of the GenTL SFNC specification the GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It defines the sub minor version number of the GenTL SFNC specification the GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0d18ebd0935c13034576105263123ea6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genTLVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the major version number of the GenTL specification the GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It defines the major version number of the GenTL specification the GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7f7476e44901bb10365032ea76b2f57a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::genTLVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the minor version number of the GenTL specification the GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It defines the minor version number of the GenTL specification the GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="a892fdf7b71a2bb07fc27b03b5752237e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::gevInterfaceDefaultGateway</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the default gateway of the first subnet of the selected interface. </p>
+<p>This is a read only element. It indicates the default gateway of the first subnet of the selected interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab02912952d8611f5b7c08714c18e7729"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::gevInterfaceDefaultIPAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the IP address of the first subnet of the selected interface. </p>
+<p>This is a read only element. It indicates the IP address of the first subnet of the selected interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8b4fb4d0b42cb5cc8239fd17f8d84da4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::gevInterfaceDefaultSubnetMask</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the subnet mask of the first subnet of the selected interface. </p>
+<p>This is a read only element. It indicates the subnet mask of the first subnet of the selected interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="aef65b56a13878a70a9bad2309fb749c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::gevInterfaceMACAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the 48-bit MAC address of the selected interface. </p>
+<p>This is a read only element. It indicates the 48-bit MAC address of the selected interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="a71bc6f8eab54b687fb89575a0af7cf9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::gevVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated (See DeviceTLVersionMajor). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000094">弃用:</a></b></dt><dd>This feature is deprecated (See DeviceTLVersionMajor). It was representing the major version of the specification. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a743cf765f431c037b166db1a2f6ebe31"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::gevVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. This feature is deprecated (See DeviceTLVersionMinor). </p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000095">弃用:</a></b></dt><dd>This feature is deprecated (See DeviceTLVersionMinor). It was representing the minor version of the specification. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a41763f2b261c03af6c0a8870e5d60a9f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::interfaceID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. GenTL producer wide unique identifier of the selected interface. </p>
+<p>This is a read only element. It is a string that indicates a GenTL producer wide unique identifier of the selected interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="a48b00bc5a21e9f7839039da1f3555d47"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::interfaceSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selector for the different GenTL Producer interfaces. </p>
+<p>Selector for the different GenTL Producer interfaces. Selector for the different GenTL Producer interfaces. This interface list only changes on execution of InterfaceUpdateList. The selector is 0-based in order to match the index of the C interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae81236e2c1b6a29de2c2863517929b45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::interfaceType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Identifies the interfaces technology of the GenTL Producer implementation. </p>
+<p>This is a read only feature. This enumeration provides a value that indicates interfaces technology of the GenTL Producer implementation.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Custom</b> (Display string: 'Custom'): This enumeration value indicates that this is a device for a custom protocol.</li>
+<li><b>GEV</b> (Display string: 'GigE Vision'): This enumeration value indicates that this is an interface for the GigE Vision protocol.</li>
+<li><b>U3V</b> (Display string: 'USB3 Vision'): This enumeration value indicates that this is an interface for the USB3 Vision protocol.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9019b47e1561a33b050eae66a7a8372e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::SystemModule::interfaceUpdateList</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Updates the internal interface list. </p>
+<p>This command updates the internal interface list of this transport layer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9881c83f6912bea00767ccbee5bc3385"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::SystemModule::mvGevChannelDummyPacketSendEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Enables or disables the periodical sending of dummy packets to a stream or message channel source port of a GigE Vision device. </p>
+<p>Enables or disables the periodical sending of dummy packets to a stream or message channel source port of a GigE Vision device. This might be useful to overcome firewall related problems when working with network devices. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa62bfd581c2017182bbd1ad4173706d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::mvGevChannelDummyPacketSendInterval</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Defines the period(in ms) for sending dummy packets to a stream or message channel source port of a GigE Vision device. </p>
+<p>Defines the period(in ms) for sending dummy packets to a stream or message channel source port of a GigE Vision device. This might be useful to overcome firewall related problems when working with network devices. </p>
+
+</div>
+</div>
+<a class="anchor" id="a24a2d2d7fa7a6b3baf93991e108df1fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::mvGevInterfaceLinkSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the link speed of this interface. </p>
+<p>This is a read only element. It indicates the link speed(in Mbits per second) of this interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf1647cef98a641c128e2b93973b88b9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::mvGevInterfaceMTU</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the MTU of the selected interface. </p>
+<p>This is a read only element. It indicates the MTU(Maximum Transmission Unit) of the selected interface. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab5c343774dcbce2bf1b54dd14138ed95"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLDisplayName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. User readable name of the GenTL Producer. </p>
+<p>This is a read only element. It is a string that indicates a user readable name of the GenTL Producer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f77060028e0d27ae600a3a197adb65d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLFileName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the file name of the GenTL Producer driver including name and extension. </p>
+<p>This is a read only element. It is a string that indicates the file name of the GenTL Producer driver including name and extension. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4ed6c131c7c3bbd4ceb979fcd04a4f4b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the ID of the transport layer. </p>
+<p>This is a read only element. It is a string that indicates the ID of the transport layer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3dd9e091672c62757fbe1de1cee0f30a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLModelName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the name of the transport layer Model. </p>
+<p>This is a read only element. It is a string that indicates the name of the transport layer Model to distinguish different kinds of GenTL Producer implementations from one vendor. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab4b4281b0bb95e222f94a4f9df7922e4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLPath</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the full path to the GenTL Producer driver including name and extension. </p>
+<p>This is a read only element. It is a string that indicates the full path to the GenTL Producer driver including name and extension. </p>
+
+</div>
+</div>
+<a class="anchor" id="a483183eb91826654275c0861dce3e1cd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::TLType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Identifies the transport layer technology of the GenTL Producer implementation. </p>
+<p>This is a read only feature. This enumeration provides a value that indicates the transport layer technology of the GenTL Producer implementation.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Mixed</b> (Display string: 'Mixed'): This enumeration value indicates that this is a transport layer for different technologies.</li>
+<li><b>GEV</b> (Display string: 'GigE Vision'): This enumeration value indicates that this is a transport layer for the GigE Vision protocol.</li>
+<li><b>U3V</b> (Display string: 'USB3 Vision'): This enumeration value indicates that this is a transport layer for the USB3 Vision protocol.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b14d0aa202e4a6f813f8fc8e6cc11b6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLVendorName</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates the name of the transport layer vendor. </p>
+<p>This is a read only element. It is a string that indicates the name of the transport layer vendor. </p>
+
+</div>
+</div>
+<a class="anchor" id="a876fa426180d3e60e2d600dd1e5ab6d2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::GenICam::SystemModule::TLVersion</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property. Indicates a vendor specific version string for this transport layer. </p>
+<p>This is a read only element. It is a string that indicates a vendor specific version string for this transport layer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a21d87726103ba795abd382f948688adc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::u3vVersionMajor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the major version number of the USB3 Vision specification this GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It indicates the major version number of the USB3 Vision specification this GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<a class="anchor" id="a09cc58892ace4b142df7c60594a326c9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SystemModule::u3vVersionMinor</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Indicates the minor version number of the USB3 Vision specification this GenTL Producer implementation complies with. </p>
+<p>This is a read only element. It indicates the minor version number of the USB3 Vision specification this GenTL Producer implementation complies with. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html">SystemModule</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:25 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

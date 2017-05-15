@@ -1,0 +1,132 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Digital\+Output类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}
+}
+
+
+A class to represent a digital output pin({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a67cf42fcef76587e859c5cf53d4652db}{flip} (void)
+\begin{DoxyCompactList}\small\item\em Inverts the current state of the digital output and returns the previous state. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a9282bfba2482425bbe09feca682d1ed8}{get} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of this output pin. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_ad31d273043705b1d36e1b1f678128148}{is\+Writeable} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if the caller has write/modify access to this digital output. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_aad8f86e2e64cff6044cac0bbb2a460fd}{void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_aad8f86e2e64cff6044cac0bbb2a460fd}{set} (void)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_aad8f86e2e64cff6044cac0bbb2a460fd}
+
+\begin{DoxyCompactList}\small\item\em Sets the output pin to 'logic 1'. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a4d813a511b663ee99f141c22473ff6db}{void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a4d813a511b663ee99f141c22473ff6db}{reset} (void)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a4d813a511b663ee99f141c22473ff6db}
+
+\begin{DoxyCompactList}\small\item\em Sets the output pin to 'logic 0'. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a7f77527bd1234158b833ceb49e639a87}{get\+Description} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a description for this digital output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a3a1008d5502332da6f64a8940aa3a007}{class {\bfseries I\+O\+Sub\+System}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a3a1008d5502332da6f64a8940aa3a007}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A class to represent a digital output pin({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a67cf42fcef76587e859c5cf53d4652db}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}!flip@{flip}}
+\index{flip@{flip}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}
+\subsubsection[{flip}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output\+::flip (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a67cf42fcef76587e859c5cf53d4652db}
+
+
+Inverts the current state of the digital output and returns the previous state. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the previous state of this pin was considered as 'logic 1'
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a9282bfba2482425bbe09feca682d1ed8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}!get@{get}}
+\index{get@{get}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output\+::get (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a9282bfba2482425bbe09feca682d1ed8}
+
+
+Returns the current state of this output pin. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the current state of this pin is considered as 'logic 1'
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a7f77527bd1234158b833ceb49e639a87}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}!get\+Description@{get\+Description}}
+\index{get\+Description@{get\+Description}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}
+\subsubsection[{get\+Description}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output\+::get\+Description (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a7f77527bd1234158b833ceb49e639a87}
+
+
+Returns a description for this digital output. 
+
+This might contain connector descriptions or other information like e.\+g. 'C\+C1(\+J1)', which means, this is the Camera\+Link\textregistered{} control channel 1 of connector {\itshape J1}. 
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_a7f77527bd1234158b833ceb49e639a87_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_ad31d273043705b1d36e1b1f678128148}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}!is\+Writeable@{is\+Writeable}}
+\index{is\+Writeable@{is\+Writeable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output}}
+\subsubsection[{is\+Writeable}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Digital\+Output\+::is\+Writeable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output_ad31d273043705b1d36e1b1f678128148}
+
+
+Checks if the caller has write/modify access to this digital output. 
+
+Some devices will offer access to digital outputs, but these outputs can't be switched manually. E.\+g. a device might offer a digital output that can only be configured to stay either high or low during frame exposure but can't be switched to high at a certain user defined moment. For such an output, this function will return false.
+
+If the user calls a function belonging to this class that would modify the state of the associated digital output, an exception will be raised.
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the caller is allowed to call write/modify operation for this component.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

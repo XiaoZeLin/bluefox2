@@ -1,0 +1,133 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:User\+Data\+Entry类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}}
+}
+
+
+A helper class that represents one entry in the devices non-\/volatile memory.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:User\+Data\+Entry 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aad3a7a9bf3566193f2a367389c560e73}{is\+Valid} (void) const 
+\begin{DoxyCompactList}\small\item\em Call this function to check if this object references an existing entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aa0eccb56a941b1237924d95f61460a21}{name}
+\begin{DoxyCompactList}\small\item\em The name of the entry. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a3dfca06b8c8b7368fd36382ddf95ac46}{data}
+\begin{DoxyCompactList}\small\item\em The data stored in this entry. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga047125aae9705dc31db2e88a52f6422e}{Property\+I\+User\+Data\+Access\+Right} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a918aecd20592f81141f12d5ceeff17da}{access}
+\begin{DoxyCompactList}\small\item\em The access rights for this entry. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aae1a558c633261b0d2c72ab043421e83}{password}
+\begin{DoxyCompactList}\small\item\em The password needed to modify this entry. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aef1580ddee573cb02a996815d74cccfa}{class {\bfseries User\+Data}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aef1580ddee573cb02a996815d74cccfa}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A helper class that represents one entry in the devices non-\/volatile memory. 
+
+(if available).
+
+Each entry of user and device specific data consists of a name, data a property defining the access rights for this entry and an optional password.
+
+The name can be any string, but currently is limited to 255 characters.
+
+The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a3dfca06b8c8b7368fd36382ddf95ac46}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::data}} property can hold any type of user data that shall be stored in the device's non-\/volatile memory. This can either be a string or binary data. To store binary data the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s_ac08293bd5d249b57a66ea5d325c9a37a}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+S\+::write\+Binary}} can be used. Internally however binary data will be stored as a base64 encoded string. To read binary data from the property again the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s_a29342383600102e22fd6e235fcd63728}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+S\+::read\+Binary}} must be called. The theoretical limit for the amount of data per entry is 2$^\wedge$16 (64\+K\+B) bytes, however the real limit might be below this value because the device does not offer that much memory.
+
+The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a918aecd20592f81141f12d5ceeff17da}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::access}} property defines the access rights the user has when working with the entry. {\bfseries A\+F\+T\+E\+R} creation but {\bfseries B\+E\+F\+O\+R\+E} storing the entry into the device this property can be modified. At this point the creator of the entry can choose between 2 options\+: {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::udar\+Full} and {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::udar\+R\+W}. After storing the entry into the device by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware}} this property will become {\bfseries read-\/only} and will remain {\bfseries read-\/only} until the complete entry is deleted.
+
+When the user creates a new entry for the user accessible device non-\/volatile memory he can either create a read/write data set, which means that every user can modify the {\itshape data} and the {\itshape name} property. In that case the property {\itshape password} is ignored. Apart from that an entry that can only be modified when the correct password has been written to the {\itshape password} property. To read a value is always allowed.
+
+The {\itshape password} property will hold the user input and {\bfseries N\+O\+T} the actual password needed to unlock the data set. However when an entry has been created the creator afterwards can write to the password. When the creator then calls the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware}} the value of the {\itshape password} property is used as the 'real' password from that moment onwards.
+
+The maximum length for the password currently is 255 characters. This does not provide total security of cause, but the idea of the password only is to hinder the user from deleting an import entry by accident.
+
+The memory consumed by a single {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}} can vary from device to device and depends on the way the data is stored internally. In any case when an entry is created it will consume more memory than the amount of bytes written to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a3dfca06b8c8b7368fd36382ddf95ac46}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::data}}. After data has been written to an entry it is therefore important to check the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a73d926fc65fbae2a8b78016744c20be8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::memory\+Available\+\_\+bytes}} property if there is still enough memory available.
+
+\begin{DoxyNote}{注解}
+There might be entries that can't be modified by the user. These entries contain important data that have been written to the memory during production. An attempt to delete this data will fail.
+
+Instances of this class can only be created by the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data}{User\+Data}}. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aad3a7a9bf3566193f2a367389c560e73}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}!is\+Valid@{is\+Valid}}
+\index{is\+Valid@{is\+Valid}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}}
+\subsubsection[{is\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::is\+Valid (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aad3a7a9bf3566193f2a367389c560e73}
+
+
+Call this function to check if this object references an existing entry. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this object references an existing entry
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a918aecd20592f81141f12d5ceeff17da}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}!access@{access}}
+\index{access@{access}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}}
+\subsubsection[{access}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+User\+Data\+Access\+Right} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::access}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a918aecd20592f81141f12d5ceeff17da}
+
+
+The access rights for this entry. 
+
+After this entry has been written to the devices non-\/volatile memory, this property will become {\bfseries read-\/only}.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+User\+Data\+Access\+Right}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a3dfca06b8c8b7368fd36382ddf95ac46}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}!data@{data}}
+\index{data@{data}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}}
+\subsubsection[{data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::data}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_a3dfca06b8c8b7368fd36382ddf95ac46}
+
+
+The data stored in this entry. 
+
+The theoretical limit for the amount of data per entry is 2$^\wedge$16 (64\+K\+B) bytes, however the real limit might be below this value because the device does not offer that much memory.
+
+This property can either store string or binary data. See {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+S}} to find out how to work with binary data. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aa0eccb56a941b1237924d95f61460a21}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}!name@{name}}
+\index{name@{name}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}}
+\subsubsection[{name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::name}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aa0eccb56a941b1237924d95f61460a21}
+
+
+The name of the entry. 
+
+The maximum length for the name currently is 255 characters. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aae1a558c633261b0d2c72ab043421e83}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}!password@{password}}
+\index{password@{password}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}}
+\subsubsection[{password}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::password}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aae1a558c633261b0d2c72ab043421e83}
+
+
+The password needed to modify this entry. 
+
+The maximum length for the password is 255 characters currently. When the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::udar\+Password} is not specified by the {\itshape access} property, this property will be ignored. Otherwise this property must have been assigned the correct password (case sensitive) before the {\itshape name} and {\itshape data} properties can be modified. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

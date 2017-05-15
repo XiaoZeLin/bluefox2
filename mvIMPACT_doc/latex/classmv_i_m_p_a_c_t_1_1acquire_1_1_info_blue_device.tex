@@ -1,0 +1,135 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Info\+Blue\+Device类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}}
+}
+
+
+A more specific class to query information about a {\bfseries mv\+Blue\+Device} device and its driver({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Info\+Blue\+Device 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Info\+Blue\+Device 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a9285bf45e3ecce242611f00eb5d8063f}{Info\+Blue\+Device} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a566ec34434c15f5a04cab7b8c16cda94}{sensor\+X\+Res}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the horizontal resolution of the camera sensor. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_ade697938bd71524589e433abe30a39d9}{sensor\+Y\+Res}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the vertical resolution of the camera sensor. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaf05019cc6b863ccf692d8705e7ae6c57}{Property\+I\+Info\+Sensor\+Color\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_ac6da6693f0d2cc7f9e7b0967382b0aca}{sensor\+Color\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the type of the sensor (color/mono/...)(if known). \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga071d509608754cf5b0d258cc0ac39726}{Property\+I\+Info\+Sensor\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a6936345cc2e2d0b638e50bfc6eaf7271}{sensor\+Type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the type of sensor chip of the camera (if known). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A more specific class to query information about a {\bfseries mv\+Blue\+Device} device and its driver({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class contains a collection of properties providing various information about a {\bfseries mv\+Blue\+Device} device and its driver.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a9285bf45e3ecce242611f00eb5d8063f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}!Info\+Blue\+Device@{Info\+Blue\+Device}}
+\index{Info\+Blue\+Device@{Info\+Blue\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}}
+\subsubsection[{Info\+Blue\+Device}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device\+::\+Info\+Blue\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a9285bf45e3ecce242611f00eb5d8063f}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a9285bf45e3ecce242611f00eb5d8063f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_ac6da6693f0d2cc7f9e7b0967382b0aca}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}!sensor\+Color\+Mode@{sensor\+Color\+Mode}}
+\index{sensor\+Color\+Mode@{sensor\+Color\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}}
+\subsubsection[{sensor\+Color\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Info\+Sensor\+Color\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device\+::sensor\+Color\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_ac6da6693f0d2cc7f9e7b0967382b0aca}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the type of the sensor (color/mono/...)(if known). 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Info\+Sensor\+Color\+Mode}.
+
+\begin{DoxyNote}{注解}
+If nothing is known about this feature, this property will contain {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::iscm\+Unknown}.
+\end{DoxyNote}
+If the device has more than one sensor head, and all these sensor heads can be accessed using the current interface, this property will contain as many values as the devices offers sensor heads. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a6936345cc2e2d0b638e50bfc6eaf7271}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}!sensor\+Type@{sensor\+Type}}
+\index{sensor\+Type@{sensor\+Type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}}
+\subsubsection[{sensor\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Info\+Sensor\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device\+::sensor\+Type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a6936345cc2e2d0b638e50bfc6eaf7271}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the type of sensor chip of the camera (if known). 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Info\+Sensor\+Type}.
+
+This usually will either be {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ist\+C\+C\+D} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ist\+C\+M\+O\+S}.
+
+If the device has more than one sensor head, and all these sensor heads can be accessed using the current interface, this property will contain as many values as the devices offers sensor heads. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a566ec34434c15f5a04cab7b8c16cda94}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}!sensor\+X\+Res@{sensor\+X\+Res}}
+\index{sensor\+X\+Res@{sensor\+X\+Res}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}}
+\subsubsection[{sensor\+X\+Res}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device\+::sensor\+X\+Res}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_a566ec34434c15f5a04cab7b8c16cda94}
+
+
+An integer property {\bfseries }(read-\/only) containing the horizontal resolution of the camera sensor. 
+
+If the device has more than one sensor head, and all these sensor heads can be accessed using the current interface, this property will contain as many values as the devices offers sensor heads. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_ade697938bd71524589e433abe30a39d9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}!sensor\+Y\+Res@{sensor\+Y\+Res}}
+\index{sensor\+Y\+Res@{sensor\+Y\+Res}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device}}
+\subsubsection[{sensor\+Y\+Res}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Info\+Blue\+Device\+::sensor\+Y\+Res}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device_ade697938bd71524589e433abe30a39d9}
+
+
+An integer property {\bfseries }(read-\/only) containing the vertical resolution of the camera sensor. 
+
+If the device has more than one sensor head, and all these sensor heads can be accessed using the current interface, this property will contain as many values as the devices offers sensor heads. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

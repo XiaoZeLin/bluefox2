@@ -1,0 +1,545 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::ComponentLocatorBase类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::ComponentLocatorBase类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A base class to locate components within the driver.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::ComponentLocatorBase 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_inherit__map">
+<area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator.html" title="A class to locate components within the driver. " alt="" coords="5,187,153,229"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html" title="A class to locate components within the driver. " alt="" coords="179,187,352,229"/><area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="97,6,245,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::ComponentLocatorBase 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="12,6,160,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:aacf80105a85ffd855ed86ff9264d32b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacf80105a85ffd855ed86ff9264d32b9"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aacf80105a85ffd855ed86ff9264d32b9">ComponentLocatorBase</a> ()</td></tr>
+<tr class="memdesc:aacf80105a85ffd855ed86ff9264d32b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new unbound locator. <br /></td></tr>
+<tr class="separator:aacf80105a85ffd855ed86ff9264d32b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa11bc27e6ff9370eb572772067572de"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aaa11bc27e6ff9370eb572772067572de">ComponentLocatorBase</a> (HLIST baselist)</td></tr>
+<tr class="memdesc:aaa11bc27e6ff9370eb572772067572de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new bound to the specified base list locator.  <a href="#aaa11bc27e6ff9370eb572772067572de">更多...</a><br /></td></tr>
+<tr class="separator:aaa11bc27e6ff9370eb572772067572de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480f09bcdf478c9ed417d69d507ba6bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a480f09bcdf478c9ed417d69d507ba6bb">ComponentLocatorBase</a> (HLIST baselist, const std::string &amp;pathToSearchBase)</td></tr>
+<tr class="memdesc:a480f09bcdf478c9ed417d69d507ba6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new locator and searches the search base list.  <a href="#a480f09bcdf478c9ed417d69d507ba6bb">更多...</a><br /></td></tr>
+<tr class="separator:a480f09bcdf478c9ed417d69d507ba6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07a75604e54c78ff772d9e0731c8a318"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318">bindComponent</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> &amp;access, const std::string &amp;<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217">name</a>, int searchMode=0, int maxSearchDepth=INT_MAX) const </td></tr>
+<tr class="memdesc:a07a75604e54c78ff772d9e0731c8a318"><td class="mdescLeft">&#160;</td><td class="mdescRight">Binds an access object to an internal driver object.  <a href="#a07a75604e54c78ff772d9e0731c8a318">更多...</a><br /></td></tr>
+<tr class="separator:a07a75604e54c78ff772d9e0731c8a318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa61ea409ece7907085014ea9ab724a90"><td class="memItemLeft" align="right" valign="top">HLIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90">bindSearchBase</a> (HLIST baselist, const std::string &amp;pathToSearchBase=&quot;&quot;)</td></tr>
+<tr class="memdesc:aa61ea409ece7907085014ea9ab724a90"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assign a new search base to the locator.  <a href="#aa61ea409ece7907085014ea9ab724a90">更多...</a><br /></td></tr>
+<tr class="separator:aa61ea409ece7907085014ea9ab724a90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b3d738296e53a5d2a0cc5bdcaa2304b"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b">findComponent</a> (const std::string &amp;<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217">name</a>, int searchMode=0, int maxSearchDepth=INT_MAX) const </td></tr>
+<tr class="memdesc:a2b3d738296e53a5d2a0cc5bdcaa2304b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Tries to locate a certain component in a hierarchy of components.  <a href="#a2b3d738296e53a5d2a0cc5bdcaa2304b">更多...</a><br /></td></tr>
+<tr class="separator:a2b3d738296e53a5d2a0cc5bdcaa2304b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0380fa414baee7f123736f105ff1a378"><td class="memItemLeft" align="right" valign="top">HLIST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378">searchbase_id</a> (void) const </td></tr>
+<tr class="memdesc:a0380fa414baee7f123736f105ff1a378"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the unique identifier of the base list from where to start searching for a component.  <a href="#a0380fa414baee7f123736f105ff1a378">更多...</a><br /></td></tr>
+<tr class="separator:a0380fa414baee7f123736f105ff1a378"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:ac32f2e24d0edecf7da8368324bdc493f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac32f2e24d0edecf7da8368324bdc493f"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#ac32f2e24d0edecf7da8368324bdc493f">operator HOBJ</a> () const </td></tr>
+<tr class="memdesc:ac32f2e24d0edecf7da8368324bdc493f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows implicit conversion to a HOBJ. <br /></td></tr>
+<tr class="separator:ac32f2e24d0edecf7da8368324bdc493f inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1ce26fe668a03990316e35882ef82d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a9f1ce26fe668a03990316e35882ef82d">changedCounter</a> (void) const </td></tr>
+<tr class="memdesc:a9f1ce26fe668a03990316e35882ef82d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current changed counter for the component referenced by this object.  <a href="#a9f1ce26fe668a03990316e35882ef82d">更多...</a><br /></td></tr>
+<tr class="separator:a9f1ce26fe668a03990316e35882ef82d inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e01578b604a92613cdd692947ba3f1 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a85e01578b604a92613cdd692947ba3f1">changedCounterAttr</a> (void) const </td></tr>
+<tr class="memdesc:a85e01578b604a92613cdd692947ba3f1 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current attribute changed counter for the component referenced by this object.  <a href="#a85e01578b604a92613cdd692947ba3f1">更多...</a><br /></td></tr>
+<tr class="separator:a85e01578b604a92613cdd692947ba3f1 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071d08bf770f55552998b86580e979de inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a071d08bf770f55552998b86580e979de inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component referenced by this object.  <a href="#a071d08bf770f55552998b86580e979de">更多...</a><br /></td></tr>
+<tr class="separator:a071d08bf770f55552998b86580e979de inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee8b40bfc45b5752e03570afaadce217 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217">name</a> (void) const </td></tr>
+<tr class="memdesc:aee8b40bfc45b5752e03570afaadce217 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the component referenced by this object.  <a href="#aee8b40bfc45b5752e03570afaadce217">更多...</a><br /></td></tr>
+<tr class="separator:aee8b40bfc45b5752e03570afaadce217 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf61053aa53dc96896760cd402ab1541 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aaf61053aa53dc96896760cd402ab1541">displayName</a> (void) const </td></tr>
+<tr class="memdesc:aaf61053aa53dc96896760cd402ab1541 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the display name of the component referenced by this object.  <a href="#aaf61053aa53dc96896760cd402ab1541">更多...</a><br /></td></tr>
+<tr class="separator:aaf61053aa53dc96896760cd402ab1541 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Protected 类型 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a3f76207dd889dca9dc7ba480dc2a6792 inherit pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f76207dd889dca9dc7ba480dc2a6792"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>BUFFER_INCREMENT_FACTOR</b> = 6
+ }</td></tr>
+<tr class="memdesc:a3f76207dd889dca9dc7ba480dc2a6792"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal constant that defines by which factor dynamic buffers will grow when the current size is not sufficient. <br /></td></tr>
+<tr class="separator:a3f76207dd889dca9dc7ba480dc2a6792 inherit pro_types_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a00b32b493df38e7b351c48ba1060933b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b">compGetStringParam</a> (TOBJ_StringQuery query, int param1=0, int param2=0) const </td></tr>
+<tr class="memdesc:a00b32b493df38e7b351c48ba1060933b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function to query certain component related string parameters.  <a href="#a00b32b493df38e7b351c48ba1060933b">更多...</a><br /></td></tr>
+<tr class="separator:a00b32b493df38e7b351c48ba1060933b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44789e160eadc7b71e2c8f573cc2b08b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a44789e160eadc7b71e2c8f573cc2b08b">ComponentAccess</a> (HOBJ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de">hObj</a>)</td></tr>
+<tr class="memdesc:a44789e160eadc7b71e2c8f573cc2b08b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. ">mvIMPACT::acquire::ComponentAccess</a></b> object to a driver object.  <a href="#a44789e160eadc7b71e2c8f573cc2b08b">更多...</a><br /></td></tr>
+<tr class="separator:a44789e160eadc7b71e2c8f573cc2b08b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7407b550cbfcb1ce3373f1cdce9471b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad7407b550cbfcb1ce3373f1cdce9471b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#ad7407b550cbfcb1ce3373f1cdce9471b">ComponentAccess</a> (void)</td></tr>
+<tr class="memdesc:ad7407b550cbfcb1ce3373f1cdce9471b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new unbound <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. ">mvIMPACT::acquire::ComponentAccess</a></b> object. <br /></td></tr>
+<tr class="separator:ad7407b550cbfcb1ce3373f1cdce9471b inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;静态 Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a756900b648d65f8a20ded09ff4e5792d inherit pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a756900b648d65f8a20ded09ff4e5792d"></a>
+static char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d">stringAllocator</a> (const char *pBuf, size_t reqBufSize)</td></tr>
+<tr class="memdesc:a756900b648d65f8a20ded09ff4e5792d inherit pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">An internal helper function for fast string allocation. <br /></td></tr>
+<tr class="separator:a756900b648d65f8a20ded09ff4e5792d inherit pro_static_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html">mvIMPACT::acquire::ComponentAccess</a></td></tr>
+<tr class="memitem:a5ec5805e15290fcc78cf51bf0c0b5306 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ec5805e15290fcc78cf51bf0c0b5306"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a5ec5805e15290fcc78cf51bf0c0b5306">m_hObj</a></td></tr>
+<tr class="memdesc:a5ec5805e15290fcc78cf51bf0c0b5306 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="mdescLeft">&#160;</td><td class="mdescRight">A unique identifier for the internal driver object referenced by this instance of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. ">mvIMPACT::acquire::ComponentAccess</a></b>. <br /></td></tr>
+<tr class="separator:a5ec5805e15290fcc78cf51bf0c0b5306 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A base class to locate components within the driver. </p>
+<p>Every driver will offer a set of properties, methods and component lists. <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. ">mvIMPACT::acquire::Property</a></b> objects contain data such as the current gain in dB, the state of a digital input, etc.. <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. ">mvIMPACT::acquire::Method</a></b> objects can be executed like a normal function and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list.html" title="A class to provide access to component lists. ">mvIMPACT::acquire::ComponentList</a></b> objects are used to group certain objects together to form a logical unit.</p>
+<p>When it's necessary to locate one or more of these objects without knowing exactly where to look for them this locator class can be used to look for the component. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="aaa11bc27e6ff9370eb572772067572de"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::ComponentLocatorBase::ComponentLocatorBase </td>
+          <td>(</td>
+          <td class="paramtype">HLIST&#160;</td>
+          <td class="paramname"><em>baselist</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new bound to the specified base list locator. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">baselist</td><td>A unique identifier to the base list from where to start to search for the search base. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a480f09bcdf478c9ed417d69d507ba6bb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::ComponentLocatorBase::ComponentLocatorBase </td>
+          <td>(</td>
+          <td class="paramtype">HLIST&#160;</td>
+          <td class="paramname"><em>baselist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pathToSearchBase</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new locator and searches the search base list. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">baselist</td><td>A unique identifier to the base list from where to start to search for the search base. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pathToSearchBase</td><td>The name or path ('/' separated) to the search base. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a480f09bcdf478c9ed417d69d507ba6bb_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="224,31,387,87"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="435,38,653,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="713,5,863,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="701,70,875,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="923,92,1151,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1200,99,1424,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="a07a75604e54c78ff772d9e0731c8a318"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::ComponentLocatorBase::bindComponent </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">Component</a> &amp;&#160;</td>
+          <td class="paramname"><em>access</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>searchMode</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxSearchDepth</em> = <code>INT_MAX</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Binds an access object to an internal driver object. </p>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if successful</li>
+<li>false otherwise. In case false is returned by this function the component could not be bound, which means subsequent calls using <em>access</em> will fail or throw an exception. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in,out]</td><td class="paramname">access</td><td>The access object to bind to the driver object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The path and/or name of the object to be located. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">searchMode</td><td>Specifies how and what to search for. Valid flags(these flags can be combined using the '|' operator) for this parameter are:<ul>
+<li>smIgnoreLists</li>
+<li>smIgnoreMethods</li>
+<li>smIgnoreProperties </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxSearchDepth</td><td>The maximum depth (in lists) where to search for the component. By e.g. setting this value to 2, the current list and all its sub lists will be searched for the object, but no sublists of sub lists. -1 will search in ALL sub lists. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a07a75604e54c78ff772d9e0731c8a318_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="216,29,379,85"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="223,109,372,150"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="452,5,620,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="427,70,645,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="705,37,855,78"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="693,102,867,143"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="915,124,1143,180"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1192,131,1416,173"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa61ea409ece7907085014ea9ab724a90"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HLIST mvIMPACT::acquire::ComponentLocatorBase::bindSearchBase </td>
+          <td>(</td>
+          <td class="paramtype">HLIST&#160;</td>
+          <td class="paramname"><em>baselist</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>pathToSearchBase</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assign a new search base to the locator. </p>
+<p>This new search base will be searched starting from the base list specified. </p><dl class="section return"><dt>返回</dt><dd>The unique identifier of the new search base. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">baselist</td><td>A unique identifier for the base list used to start searching the search base. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">pathToSearchBase</td><td>The name or path to the search base. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_aa61ea409ece7907085014ea9ab724a90_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="216,38,435,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="495,5,644,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="483,70,656,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="705,92,933,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="981,99,1205,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2b3d738296e53a5d2a0cc5bdcaa2304b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HOBJ mvIMPACT::acquire::ComponentLocatorBase::findComponent </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>searchMode</em> = <code>0</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxSearchDepth</em> = <code>INT_MAX</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Tries to locate a certain component in a hierarchy of components. </p>
+<dl class="section return"><dt>返回</dt><dd>A unique identifier to the component if found or <b>mvIMPACT::acquire::INVALID_ID</b> if the component couldn't be found. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The path and/or name of the object to be located. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">searchMode</td><td>Specifies how and what to search for. Valid flags(these flags can be combined using the '|' operator) for this parameter are:<ul>
+<li>smIgnoreLists</li>
+<li>smIgnoreMethods</li>
+<li>smIgnoreProperties </li>
+</ul>
+</td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">maxSearchDepth</td><td>The maximum depth (in lists) where to search for the component. By e.g. setting this value to 2, the current list and all its sub lists will be searched for the object, but no sublists of sub lists. -1 will search in ALL sub lists. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="241,5,409,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="216,70,435,111"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="495,37,644,78"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="483,102,656,143"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="705,124,933,180"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="981,131,1205,173"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+这是这个函数的调用关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_icgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_icgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_icgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base_a2b3d738296e53a5d2a0cc5bdcaa2304b_icgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="251,1773,413,1829"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#aeb3e2612fd93d61ac176da74f235a0eb" title="Constructs a new function interface for the device pointed to by pDev. " alt="" coords="529,5,711,61"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html#a5ec444f1ca44491ea53969ba7690e736" title="Constructs a new mvIMPACT::acquire::IOSubSystemBlueFOX object. " alt="" coords="537,85,703,141"/><area shape="rect" id="node16" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common.html#a0c3d31940f4d07a231a2b08e749d1ef1" title="Constructs a new mvIMPACT::acquire::IOSubSystemCommon object. " alt="" coords="497,165,743,221"/><area shape="rect" id="node21" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_connector.html#ae857d0fefd53cf48038b011819e4fb9d" title="Constructs a new mvIMPACT::acquire::Connector object. " alt="" coords="545,245,695,286"/><area shape="rect" id="node22" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a48c2eadebe65f845c04cf014703e725a" title="Constructs a new mvIMPACT::acquire::CameraSettingsBase object. " alt="" coords="543,2972,697,3028"/><area shape="rect" id="node27" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_c_o_u_g_a_r.html#a2955cf571183873bf9da11046cc6d6e1" title="Constructs a new mvIMPACT::acquire::CameraSettingsBlueCOUGAR object. " alt="" coords="515,3052,725,3108"/><area shape="rect" id="node28" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber.html#a21e294f723493ea165c3cb2b414ba433" title="Constructs a new mvIMPACT::acquire::CameraSettingsFrameGrabber object. " alt="" coords="517,3132,723,3188"/><area shape="rect" id="node29" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i2_c_control.html#a0caccb546bad1ad3fa85e5ab7f908099" title="brief Constructs a new mvIMPACT::acquire::I2CControl object. " alt="" coords="542,3211,698,3253"/><area shape="rect" id="node30" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_motor_focus_control.html#a0f790215b1eadcd259f7ada4257ab70c" title="brief Constructs a new mvIMPACT::acquire::MotorFocusControl object. " alt="" coords="515,3276,725,3332"/><area shape="rect" id="node31" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_i_o_measurement_control.html#a3722c740967e1e233d636ac68cb2ab7b" title="brief Constructs a new mvIMPACT::acquire::DigitalIOMeasurementControl object. " alt="" coords="519,3356,721,3412"/><area shape="rect" id="node48" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_interface_module.html#a1d86a96f413173c7f0298b45bbaef6da" title="Constructs a new mvIMPACT::acquire::GenICam::InterfaceModule object. " alt="" coords="531,3436,709,3492"/><area shape="rect" id="node49" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module.html#a00c7d97f96b849f43663dbb85e5dedf2" title="Constructs a new mvIMPACT::acquire::GenICam::DataStreamModule object. " alt="" coords="521,3516,719,3572"/><area shape="rect" id="node50" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_processing.html#a81a81cdfd896ef8ceaead6f93b88038a" title="brief Constructs a new mvIMPACT::acquire::ImageProcessing object. " alt="" coords="216,3422,448,3463"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#a1a8e0e36c92556e626ec6a64c3f63965" title="Constructs a new mvIMPACT::acquire::ImageRequestControl object. " alt="" coords="541,389,699,445"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_info.html#acd283bf5ade401d68a7ea075432e32a4" title="Constructs a new mvIMPACT::acquire::Info object. " alt="" coords="545,469,695,510"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#a4956794c96ca7afea6910d6fdbfd3257" title="brief Constructs a new mvIMPACT::acquire::BasicDeviceSettings object. " alt="" coords="544,533,696,589"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination.html#a1ccdf12b3e0069dccabc017bb9d0c34e" title="brief Constructs a new mvIMPACT::acquire::ImageDestination object. " alt="" coords="503,613,737,654"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_info_configuration.html#ada3a8f1d27c9a51d603ae3225c9c14d9" title="brief Constructs a new mvIMPACT::acquire::RequestInfoConfiguration object. " alt="" coords="531,677,709,733"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics.html#aade00e306b719630ce5c77301b070fcf" title="mvIMPACT::acquire::\lStatistics::Statistics" alt="" coords="545,757,695,798"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html#aa494575f3d3beef84ba4789ecaf182ae" title="Constructs a new mvIMPACT::acquire::SystemSettings object. " alt="" coords="512,822,728,863"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_memory_manager.html#a332c46fc70ec6e91eedfbd8b81712354" title="Constructs a new mvIMPACT::acquire::ImageMemoryManager object. " alt="" coords="539,887,701,943"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_device.html#a9285bf45e3ecce242611f00eb5d8063f" title="Constructs a new mvIMPACT::acquire::InfoBlueDevice object. " alt="" coords="516,966,724,1007"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_c_o_u_g_a_r.html#a9811aaf42274ffec10fedec50cb7b3cd" title="Constructs a new mvIMPACT::acquire::InfoBlueCOUGAR object. " alt="" coords="498,1031,742,1073"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_info_blue_f_o_x.html#a1adc3c7014728a039f0956cbb3cede81" title="Constructs a new mvIMPACT::acquire::InfoBlueFOX object. " alt="" coords="530,1097,710,1138"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_blue_device.html#a7d6ab619d350994da9d2bf43b0994ba5" title="Constructs a new mvIMPACT::acquire::OutputSignalGeneratorBlueDevice object. " alt="" coords="505,1161,735,1217"/><area shape="rect" id="node18" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html#a9a02c6ab9fa2ec7a170514dd9ac89002" title="Constructs a new mvIMPACT::acquire::IOSubSystemFrameGrabber object. " alt="" coords="523,1241,717,1297"/><area shape="rect" id="node19" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_output_signal_generator_frame_grabber.html#a633df02b634f912222d7d40a37e1a46a" title="Constructs a new mvIMPACT::acquire::OutputSignalGeneratorFrameGrabber object. " alt="" coords="497,1322,743,1393"/><area shape="rect" id="node20" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r.html#adbc3e17f8f197947024f748d26f1a8b3" title="Constructs a new mvIMPACT::acquire::IOSubSystemBlueCOUGAR object. " alt="" coords="521,1417,719,1473"/><area shape="rect" id="node23" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device.html#ab3c227879b2b35d67a4598af1dd9f25c" title="Constructs a new mvIMPACT::acquire::CameraSettingsVirtualDevice object. " alt="" coords="519,1497,721,1553"/><area shape="rect" id="node24" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_v4_l2_device.html#aa8462fef321b1ddfd69166fbedcb136f" title="Constructs a new mvIMPACT::acquire::CameraSettingsV4L2Device object. " alt="" coords="523,1577,717,1633"/><area shape="rect" id="node25" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a66c6f132a7574119e138887e91bd635a" title="Constructs a new mvIMPACT::acquire::CameraSettingsBlueDevice object. " alt="" coords="525,1657,715,1713"/><area shape="rect" id="node26" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#acd1731450b9b16c03b4de2748a00d801" title="Constructs a new mvIMPACT::acquire::CameraSettingsBlueFOX object. " alt="" coords="531,1737,709,1793"/><area shape="rect" id="node32" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_full_settings_base.html#a6f8eadfe847b03c9ed8b21dc9f7e6db9" title="brief Constructs a new mvIMPACT::acquire::FullSettingsBase object. " alt="" coords="506,1817,734,1858"/><area shape="rect" id="node33" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_blue_f_o_x.html#ac039cd80970d6004a1676410f26d651b" title="Constructs a new mvIMPACT::acquire::SystemBlueFOX object. " alt="" coords="507,1882,733,1923"/><area shape="rect" id="node34" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_v4_l2.html#aea82e3241696f1ff8597fe83262acd6b" title="Constructs a new mvIMPACT::acquire::SystemV4L2 object. " alt="" coords="530,1947,710,1989"/><area shape="rect" id="node35" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#aa8fe708bc7cb141db42b52031edb1f30" title="Constructs a new mvIMPACT::acquire::GenICam::DeviceControl object. " alt="" coords="535,2012,705,2068"/><area shape="rect" id="node36" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#a4588e35f52c727616fad4f7331d625a7" title="Constructs a new mvIMPACT::acquire::GenICam::ImageFormatControl object. " alt="" coords="517,2092,723,2148"/><area shape="rect" id="node37" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#a66a96d4ef8ec636ed0830bb8e5c94ca8" title="Constructs a new mvIMPACT::acquire::GenICam::AcquisitionControl object. " alt="" coords="524,2172,716,2228"/><area shape="rect" id="node38" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_analog_control.html#a88bf85ca3c41e27b68c3af8eb12ee605" title="Constructs a new mvIMPACT::acquire::GenICam::AnalogControl object. " alt="" coords="536,2252,704,2308"/><area shape="rect" id="node39" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_l_u_t_control.html#a9b9e73a05f8f0c7888ef54585c797ee7" title="Constructs a new mvIMPACT::acquire::GenICam::LUTControl object. " alt="" coords="543,2332,697,2388"/><area shape="rect" id="node40" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_color_transformation_control.html#a5acb6faedf2372988c37941343c013df" title="Constructs a new mvIMPACT::acquire::GenICam::ColorTransformationControl object. " alt="" coords="504,2412,736,2468"/><area shape="rect" id="node41" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#a7a1bf59d9fddd27e95b04e12e4039b18" title="Constructs a new mvIMPACT::acquire::GenICam::DigitalIOControl object. " alt="" coords="531,2492,709,2548"/><area shape="rect" id="node42" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#a9ca851d25166e401670195607f772ef4" title="Constructs a new mvIMPACT::acquire::GenICam::CounterAndTimerControl object. " alt="" coords="505,2572,735,2628"/><area shape="rect" id="node43" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control.html#a33339c7f0b709d90dfdad3be7c0b6c37" title="Constructs a new mvIMPACT::acquire::GenICam::EncoderControl object. " alt="" coords="532,2652,708,2708"/><area shape="rect" id="node44" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#a49c914f981187804f292d7d71133a31d" title="Constructs a new mvIMPACT::acquire::GenICam::LogicBlockControl object. " alt="" coords="524,2732,716,2788"/><area shape="rect" id="node45" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_software_signal_control.html#a3e52bba0ee1a97727f77a7cf504528ff" title="Constructs a new mvIMPACT::acquire::GenICam::SoftwareSignalControl object. " alt="" coords="512,2812,728,2868"/><area shape="rect" id="node46" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_action_control.html#a56eca802da75b6c50fdb665ab02716a9" title="Constructs a new mvIMPACT::acquire::GenICam::ActionControl object. " alt="" coords="537,2892,703,2948"/><area shape="rect" id="node47" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_event_control.html#a789fa270416fde1fb37b359c8264c9a8" title="Constructs a new mvIMPACT::acquire::GenICam::EventControl object. " alt="" coords="539,309,701,365"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a0380fa414baee7f123736f105ff1a378"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">HLIST mvIMPACT::acquire::ComponentLocatorBase::searchbase_id </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the unique identifier of the base list from where to start searching for a component. </p>
+<dl class="section return"><dt>返回</dt><dd>The unique identifier of the base list from where searching for a component will start currently. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html">ComponentLocatorBase</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

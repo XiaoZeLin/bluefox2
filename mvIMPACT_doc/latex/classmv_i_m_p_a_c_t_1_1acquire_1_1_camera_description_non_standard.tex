@@ -1,0 +1,148 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Non\+Standard类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+}
+
+
+A class describing non-\/standard video cameras({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Non\+Standard 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=242pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Non\+Standard 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a0ecfe452c35344325938c08df52a3563}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a0ecfe452c35344325938c08df52a3563}{line\+Frequency\+\_\+\+Hz}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a0ecfe452c35344325938c08df52a3563}
+
+\begin{DoxyCompactList}\small\item\em An integer property containing the line frequency of this camera in Hertz. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaac63793b596b074fc5012dd82aafd035}{Property\+I\+Camera\+External\+Sync\+Edge} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a688577153fdb465ea25854df6eb57995}{V\+D\+Output}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining whether the vertical sync. information is part of the video signal or transmitted via a separate wire. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaac63793b596b074fc5012dd82aafd035}{Property\+I\+Camera\+External\+Sync\+Edge} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_ac1ded162cacf263999ae46d8b00bd0ec}{H\+D\+Output}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining whether the horizontal sync. information is part of the video signal or transmitted via a separate wire. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaf4592fe544c7f9ad2d0b480f7f1b75b5}{Property\+I\+Camera\+External\+Sync\+Output} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a72881ca42a2397676d6f5f7249170ecb}{sync\+Output}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property for R\+G\+B cameras containing information where the sync. information is transmitted. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gaac63793b596b074fc5012dd82aafd035}{Property\+I\+Camera\+External\+Sync\+Edge} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a06f48f20eb41f74b5c9f0a0f954d0d99}{pixel\+Clock\+Output}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property containing information whether the pixel clock is part of the video signal or not. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga625ac6e1557893c15272ebbbeab39958}{Property\+I\+Field\+Gate\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a741b45e81e1aad1caa43cb60068a86c0}{field\+Gate\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the clamp mode for this camera description. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a1974cb5221b4ace734c8f36502ff95cd}{field\+Gate\+Start}
+\begin{DoxyCompactList}\small\item\em An integer property defining the start position (in pixel clocks) of the field gate detection area. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a82b6254a0535520f563521d5826a4921}{field\+Gate\+Width}
+\begin{DoxyCompactList}\small\item\em An integer property defining the width (in pixel clocks) of the field gate detection area. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga44f306409b1d737b2eea3f66767e2c23}{Property\+I\+Clamp\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_ab91de3b95c85d57f81b5bc7eaae108fa}{clamp\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the clamp mode for this camera description. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a6135afff218b13b8b1db5eb04729e5b9}{clamp\+Start\+\_\+us}
+\begin{DoxyCompactList}\small\item\em The clamp start position defines where in each line of the video signal the frame grabber assumes the black level position. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a754f74db1fd8a2e7cf0bca76c10d00dd}{class {\bfseries Camera\+Description\+Manager}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a754f74db1fd8a2e7cf0bca76c10d00dd}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class describing non-\/standard video cameras({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class can be used to describe a non-\/standard analogue video camera. A camera considered as non-\/standard when it is not compliant with one of the defined video standards like e.\+g. C\+C\+I\+R.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_ab91de3b95c85d57f81b5bc7eaae108fa}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!clamp\+Mode@{clamp\+Mode}}
+\index{clamp\+Mode@{clamp\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{clamp\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Clamp\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::clamp\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_ab91de3b95c85d57f81b5bc7eaae108fa}
+
+
+An enumerated integer property defining the clamp mode for this camera description. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Clamp\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a6135afff218b13b8b1db5eb04729e5b9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!clamp\+Start\+\_\+us@{clamp\+Start\+\_\+us}}
+\index{clamp\+Start\+\_\+us@{clamp\+Start\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{clamp\+Start\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::clamp\+Start\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a6135afff218b13b8b1db5eb04729e5b9}
+
+
+The clamp start position defines where in each line of the video signal the frame grabber assumes the black level position. 
+
+This will only need modification in very rare cases. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a741b45e81e1aad1caa43cb60068a86c0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!field\+Gate\+Mode@{field\+Gate\+Mode}}
+\index{field\+Gate\+Mode@{field\+Gate\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{field\+Gate\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Field\+Gate\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::field\+Gate\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a741b45e81e1aad1caa43cb60068a86c0}
+
+
+An enumerated integer property defining the clamp mode for this camera description. 
+
+This defines how the field detection(O\+D\+D/\+E\+V\+E\+N) is done.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Field\+Gate\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a1974cb5221b4ace734c8f36502ff95cd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!field\+Gate\+Start@{field\+Gate\+Start}}
+\index{field\+Gate\+Start@{field\+Gate\+Start}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{field\+Gate\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::field\+Gate\+Start}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a1974cb5221b4ace734c8f36502ff95cd}
+
+
+An integer property defining the start position (in pixel clocks) of the field gate detection area. 
+
+This will only need modification in very rare cases. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a82b6254a0535520f563521d5826a4921}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!field\+Gate\+Width@{field\+Gate\+Width}}
+\index{field\+Gate\+Width@{field\+Gate\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{field\+Gate\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::field\+Gate\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a82b6254a0535520f563521d5826a4921}
+
+
+An integer property defining the width (in pixel clocks) of the field gate detection area. 
+
+This will only need modification in very rare cases. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_ac1ded162cacf263999ae46d8b00bd0ec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!H\+D\+Output@{H\+D\+Output}}
+\index{H\+D\+Output@{H\+D\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{H\+D\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Edge} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::\+H\+D\+Output}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_ac1ded162cacf263999ae46d8b00bd0ec}
+
+
+An enumerated integer property defining whether the horizontal sync. information is part of the video signal or transmitted via a separate wire. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Edge}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a06f48f20eb41f74b5c9f0a0f954d0d99}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!pixel\+Clock\+Output@{pixel\+Clock\+Output}}
+\index{pixel\+Clock\+Output@{pixel\+Clock\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{pixel\+Clock\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Edge} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::pixel\+Clock\+Output}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a06f48f20eb41f74b5c9f0a0f954d0d99}
+
+
+An enumerated integer property containing information whether the pixel clock is part of the video signal or not. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Edge}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a72881ca42a2397676d6f5f7249170ecb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!sync\+Output@{sync\+Output}}
+\index{sync\+Output@{sync\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{sync\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Output} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::sync\+Output}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a72881ca42a2397676d6f5f7249170ecb}
+
+
+An enumerated integer property for R\+G\+B cameras containing information where the sync. information is transmitted. 
+
+This can either be within one of the three color components or on a separate wire.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Output}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a688577153fdb465ea25854df6eb57995}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}!V\+D\+Output@{V\+D\+Output}}
+\index{V\+D\+Output@{V\+D\+Output}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}}
+\subsubsection[{V\+D\+Output}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+External\+Sync\+Edge} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard\+::\+V\+D\+Output}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard_a688577153fdb465ea25854df6eb57995}
+
+
+An enumerated integer property defining whether the vertical sync. information is part of the video signal or transmitted via a separate wire. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+External\+Sync\+Edge}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

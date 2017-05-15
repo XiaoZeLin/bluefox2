@@ -1,0 +1,72 @@
+\hypertarget{class_my_callback}{\section{My\+Callback类 参考}
+\label{class_my_callback}\index{My\+Callback@{My\+Callback}}
+}
+
+
+类 My\+Callback 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_my_callback__inherit__graph}
+\end{center}
+\end{figure}
+
+
+My\+Callback 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{class_my_callback__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_my_callback_acf894abf04d548c3bee5b3571f5881d2}{{\bfseries My\+Callback} (void $\ast$p\+User\+Data=0)}\label{class_my_callback_acf894abf04d548c3bee5b3571f5881d2}
+
+\item 
+virtual void \hyperlink{class_my_callback_abca435945a6153c057be2a98bf57a9d1}{execute} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} \&c, void $\ast$p\+User\+Data)
+\begin{DoxyCompactList}\small\item\em The callback function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{成员函数说明}
+\hypertarget{class_my_callback_abca435945a6153c057be2a98bf57a9d1}{\index{My\+Callback@{My\+Callback}!execute@{execute}}
+\index{execute@{execute}!My\+Callback@{My\+Callback}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}virtual void My\+Callback\+::execute (
+\begin{DoxyParamCaption}
+\item[{{\bf Component} \&}]{, }
+\item[{void $\ast$}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_my_callback_abca435945a6153c057be2a98bf57a9d1}
+
+
+The callback function. 
+
+Re-\/implement this function in a derived class in order to get the desired behaviour.
+
+\begin{DoxyNote}{注解}
+Please note that this function might be executed from {\bfseries A\+N\+Y} thread context, which is most likely not the same as used by the application thus appropriate mechanisms to ensure correct execution must be implemented by an application(e.\+g. G\+U\+I applications might send an event to the main thread instead of directly accessing G\+U\+I elements). 
+\end{DoxyNote}
+
+
+重载 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_callback_a043e5e1faaa00a954dcb1eb9b765988d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Callback} .
+
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_my_callback_abca435945a6153c057be2a98bf57a9d1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/\+Callback/Callback.\+cpp\end{DoxyCompactItemize}

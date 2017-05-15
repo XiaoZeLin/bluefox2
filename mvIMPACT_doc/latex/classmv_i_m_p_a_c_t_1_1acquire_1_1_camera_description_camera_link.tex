@@ -1,0 +1,87 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Camera\+Link类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}}
+}
+
+
+A class to describe a Camera\+Link\textregistered{} compliant camera({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Camera\+Link 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Camera\+Link 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_gaf6940dc7fdb7d3db42b5cace6bca208b}{Property\+I\+Camera\+Link\+Data\+Valid\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_acf103eb0dc8dfb45567c4be3e1fe001e}{data\+Valid}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the way this camera transmits the data valid ({\bfseries D\+V\+A\+L}) signal. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gadb3acd27da51bc318c073aa7d052607b}{Property\+I\+Camera\+Taps\+X\+Geometry} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_ae00a43dc132c45342054a60f1535c086}{taps\+X\+Geometry}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the way this camera transmits the pixel data in X direction. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga8ca68a8fc0e8c81dacb76b2cfc289909}{Property\+I\+Camera\+Taps\+Y\+Geometry} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_a284e7283b6a82c2fa44a22f90a85ce7e}{taps\+Y\+Geometry}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the way this camera transmits the pixel data in Y direction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_a754f74db1fd8a2e7cf0bca76c10d00dd}{class {\bfseries Camera\+Description\+Manager}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_a754f74db1fd8a2e7cf0bca76c10d00dd}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to describe a Camera\+Link\textregistered{} compliant camera({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides access to all settings specific for Camera\+Link\textregistered{} compliant cameras.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_acf103eb0dc8dfb45567c4be3e1fe001e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}!data\+Valid@{data\+Valid}}
+\index{data\+Valid@{data\+Valid}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}}
+\subsubsection[{data\+Valid}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Link\+Data\+Valid\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link\+::data\+Valid}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_acf103eb0dc8dfb45567c4be3e1fe001e}
+
+
+An enumerated integer property defining the way this camera transmits the data valid ({\bfseries D\+V\+A\+L}) signal. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Link\+Data\+Valid\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_ae00a43dc132c45342054a60f1535c086}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}!taps\+X\+Geometry@{taps\+X\+Geometry}}
+\index{taps\+X\+Geometry@{taps\+X\+Geometry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}}
+\subsubsection[{taps\+X\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Taps\+X\+Geometry} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link\+::taps\+X\+Geometry}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_ae00a43dc132c45342054a60f1535c086}
+
+
+An enumerated integer property defining the way this camera transmits the pixel data in X direction. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Taps\+X\+Geometry}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_a284e7283b6a82c2fa44a22f90a85ce7e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}!taps\+Y\+Geometry@{taps\+Y\+Geometry}}
+\index{taps\+Y\+Geometry@{taps\+Y\+Geometry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}}
+\subsubsection[{taps\+Y\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Taps\+Y\+Geometry} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link\+::taps\+Y\+Geometry}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link_a284e7283b6a82c2fa44a22f90a85ce7e}
+
+
+An enumerated integer property defining the way this camera transmits the pixel data in Y direction. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Taps\+Y\+Geometry}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

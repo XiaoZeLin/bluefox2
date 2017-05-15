@@ -1,0 +1,184 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Common类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}}
+}
+
+
+A base class to handle the digital inputs and outputs for devices ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Common 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:I\+O\+Sub\+System\+Common 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a0c3d31940f4d07a231a2b08e749d1ef1}{I\+O\+Sub\+System\+Common} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}} object. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a52b6ff935e658f10740affb6f02ca688}{read\+Input\+Register} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of the digital input register. \end{DoxyCompactList}\item 
+virtual unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_ad8fa21aced46ef81615db07bd6421645}{read\+Output\+Register} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current state of the digital output register. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a6021cce5baf25b4cd055b009a58d0c00}{write\+Output\+Register} (unsigned int value, unsigned int mask=U\+I\+N\+T\+\_\+\+M\+A\+X)
+\begin{DoxyCompactList}\small\item\em Alters the state of the digital output register. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to handle the digital inputs and outputs for devices ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides a convenient basic access to the digital inputs and outputs of almost every device supported by this interface.
+
+\begin{DoxyNote}{注解}
+This class may {\bfseries N\+O\+T} be used for mv\+Blue\+F\+O\+X devices.
+
+The number of digital inputs and outputs available will vary significantly from device to device. Some devices might not even have digital inputs and/or digital outputs. Therefore it's crucial to check for available pins before using them. The corresponding functions to do that can be found in the base class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}}.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a0c3d31940f4d07a231a2b08e749d1ef1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}!I\+O\+Sub\+System\+Common@{I\+O\+Sub\+System\+Common}}
+\index{I\+O\+Sub\+System\+Common@{I\+O\+Sub\+System\+Common}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}}
+\subsubsection[{I\+O\+Sub\+System\+Common}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common\+::\+I\+O\+Sub\+System\+Common (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a0c3d31940f4d07a231a2b08e749d1ef1}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a0c3d31940f4d07a231a2b08e749d1ef1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a52b6ff935e658f10740affb6f02ca688}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}!read\+Input\+Register@{read\+Input\+Register}}
+\index{read\+Input\+Register@{read\+Input\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}}
+\subsubsection[{read\+Input\+Register}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common\+::read\+Input\+Register (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a52b6ff935e658f10740affb6f02ca688}
+
+
+Returns the current state of the digital input register. 
+
+This function can be used to read all digital inputs as a single value. Each bit represents the status of one digital output pin.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+A value of '3' returned by this function means that digital inputs 0 and 1 are currently have a voltage considered as logical '1' applied to them.
+
+\begin{DoxyReturn}{返回}
+The current state of the digital inputs where bit 0 in the result represents the state of digital input 0, bit 1 the state of digital input 1 a.\+s.\+o. 
+\end{DoxyReturn}
+
+
+实现了 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a2370e52d2818ff78f977dc1112027e15}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}.
+
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a52b6ff935e658f10740affb6f02ca688_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_ad8fa21aced46ef81615db07bd6421645}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}!read\+Output\+Register@{read\+Output\+Register}}
+\index{read\+Output\+Register@{read\+Output\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}}
+\subsubsection[{read\+Output\+Register}]{\setlength{\rightskip}{0pt plus 5cm}virtual unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common\+::read\+Output\+Register (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_ad8fa21aced46ef81615db07bd6421645}
+
+
+Returns the current state of the digital output register. 
+
+This function can be used to read all digital outputs as a single value. Each bit represents the status of one digital output pin.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+A value of '3' returned by this function means that digital output 0 and 1 are currently set to high.
+
+\begin{DoxyReturn}{返回}
+The current state of the digital outputs where bit 0 in the result represents the state of digital output 0, bit 1 the state of digital output 1 a.\+s.\+o. 
+\end{DoxyReturn}
+
+
+实现了 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a8c39de7c726456fcb01b692cfff83e75}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}.
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a6021cce5baf25b4cd055b009a58d0c00}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}!write\+Output\+Register@{write\+Output\+Register}}
+\index{write\+Output\+Register@{write\+Output\+Register}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common}}
+\subsubsection[{write\+Output\+Register}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+Common\+::write\+Output\+Register (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{value, }
+\item[{unsigned int}]{mask = {\ttfamily UINT\+\_\+MAX}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common_a6021cce5baf25b4cd055b009a58d0c00}
+
+
+Alters the state of the digital output register. 
+
+This function can be used to alter the state of certain (or all) digital outputs with a single function call. By working with the parameter {\itshape mask} certain bits can remain unaffected.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E} 
+
+If the previous state of a digital output register was '5', which means that outputs 0 and 2 are set to high a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a196daf5a92ce713e5bd7a192aa1bef17}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System\+::write\+Output\+Register}} with {\itshape value} set to 2 and {\itshape mask} set to 3 would result in '6' as the new value for the output register. Pin 2 will remain unaffected, as {\itshape mask} states just to modify pin 0 and 1 ( 3 = 00000011 binary ). 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em value} & The value to be applied to the output register \\
+\hline
+\mbox{\tt in}  & {\em mask} & The mask to specify which pins to modify. A bit set to '1' in this parameter means that the state of this output has to adopt its style according to the value in {\itshape value}. \\
+\hline
+\end{DoxyParams}
+
+
+实现了 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_a196daf5a92ce713e5bd7a192aa1bef17}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+I\+O\+Sub\+System}.
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

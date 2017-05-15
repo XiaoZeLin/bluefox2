@@ -1,0 +1,285 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:User\+Data类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+}
+
+
+A helper class to work with the device specific non-\/volatile memory(if available).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:User\+Data 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{User\+Data\+Entry} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09}{create\+Entry} (void)
+\begin{DoxyCompactList}\small\item\em Creates and returns a new entry to store user specific data. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed}{delete\+Entry} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{User\+Data\+Entry} \&user\+Data\+Entry)
+\begin{DoxyCompactList}\small\item\em Deletes an entry of user specific data. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ab1c2adb53dfe271c3ddeebf458a5a021}{get\+Free\+Memory} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of bytes of user accessible, non-\/volatile memory that is still available. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{User\+Data\+Entry} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a45146a280d80c00c39b435bd9b63a612}{get\+User\+Data\+Entry} (int nr) const 
+\begin{DoxyCompactList}\small\item\em Returns An object to work with an existing entry of user specific data. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5}{valid\+User\+Data\+Entry\+Indexes} (std\+::vector$<$ int $>$ \&sequence) const 
+\begin{DoxyCompactList}\small\item\em Fills an array with all currently valid user data entry indexes. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a1b86acbf21478b9eb2ea528d67cbfe09}{is\+Available} (void) const 
+\begin{DoxyCompactList}\small\item\em This function should be called to check if this device offers non-\/volatile memory that can be accessed. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{write\+To\+Hardware} (void) const 
+\begin{DoxyCompactList}\small\item\em Writes the current set of user data into the devices non-\/volatile memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga26a11fd50037db50142ec603904bcb8d}{Property\+I\+User\+Data\+Reconnect\+Behaviour} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a14b5d5322cb10f3d6ce9b67e613a4cb4}{reconnect\+Behaviour}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property that can be used to configure how the user data should be treated in case of a device that has been unplugged is plugged back in again. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a73d926fc65fbae2a8b78016744c20be8}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a73d926fc65fbae2a8b78016744c20be8}{memory\+Available\+\_\+bytes}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a73d926fc65fbae2a8b78016744c20be8}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of bytes of user accessible, non-\/volatile memory this device has available. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a4ea40b43d2ffba2efb6c14bdd6583b59}{memory\+Consumed\+\_\+bytes}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of bytes of user accessible, non-\/volatile memory currently consumed by user data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a520fa05e0bf58785da428f7a0241eee2}{class {\bfseries Device}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a520fa05e0bf58785da428f7a0241eee2}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A helper class to work with the device specific non-\/volatile memory(if available). 
+
+A device might have a certain amount of non-\/volatile memory which can be accessed and modified by the user. This data can e.\+g. be used to store certain parameters or custom data permanently into the device. Thus this property e.\+g. allows to store configuration data in the device before shipping it to the end user.
+
+In theory the number of entries that can be stored in the device is not limited. However no device will provide an unlimited amount of memory.
+
+Writing data to any property of a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}} as well as creating a new entry by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::create\+Entry}} or deleting an entry with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::delete\+Entry}} will {\bfseries N\+O\+T} automatically result in the complete data to be updated in the device specific memory. As writing to the device memory takes a long (in terms of ms) time depending on the device architecture the modifications will only become. permanent when calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware}}.
+
+If data at the end of the list of entries doesn't fit in the memory it will be discarded and therefore will not be visible the next time the device is enumerated/accessed after the running process has terminated or the device has been disconnected.
+
+\begin{DoxyNote}{注解}
+Entries that contain no data will not be stored in hardware. If e.\+g. 5 user data entries have been created, but only entry 0, 1, 2 and 4 contain data the write operation will pack the data in a way that when the user data is read from the device again (when the driver for that device is loaded the next time) the list of entries will contain elements at position 0, 1, 2 and 3 but {\bfseries N\+O\+T} a index number 4. Deleting an entry from the middle of the list of user data however will {\bfseries N\+O\+T} move all remaining entries one step towards the front of the list. Therefore during one session the entry indexes will {\bfseries N\+O\+T} change. They can either become invalid (when the corresponding entry has been deleted), can get valid (newly created entries will always appear at the next free entry, thus deleting and entry and creating a new directly afterwards will create that entry at exactly the same index) or new entries can appear (when a new entry has been created and no free list position in the middle of the list of entries has been available).
+
+The device must be closed in order to write the user data. Check the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a8e6d960358632d3e55f2f20474a3aa26}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::\+H\+W\+Update\+Result}} afterwards in order to make sure the data transfer was successful.
+
+If a device does not offer user accessible data {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}} objects will still be returned by certain functions. To check if this feature is available call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a1b86acbf21478b9eb2ea528d67cbfe09}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::is\+Available}}.
+
+If the user accessible data currently can't be modified an exception of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_e_no_write_rights}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+E\+No\+Write\+Rights}} will be thrown.
+
+Instances of this class cannot be constructed directly. To get access the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a08734e0c6fd862e3c6e7160c66b927ec}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::get\+User\+Data}}. must be used. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!create\+Entry@{create\+Entry}}
+\index{create\+Entry@{create\+Entry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{create\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\+Data\+Entry} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::create\+Entry (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09}
+
+
+Creates and returns a new entry to store user specific data. 
+
+\begin{DoxyNote}{注解}
+The data handled by this object will not be stored permanently in the devices non-\/volatile memory until {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware}} has been called successfully.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::delete\+Entry}}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+A new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}} instance that can be used to store user specific data in the devices non-\/volatile memory. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!delete\+Entry@{delete\+Entry}}
+\index{delete\+Entry@{delete\+Entry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{delete\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::delete\+Entry (
+\begin{DoxyParamCaption}
+\item[{{\bf User\+Data\+Entry} \&}]{user\+Data\+Entry}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed}
+
+
+Deletes an entry of user specific data. 
+
+If the entry has been stored to the non-\/volatile memory already and has been assigned the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::udar\+Password} flag, this call will fail, when {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aae1a558c633261b0d2c72ab043421e83}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::password}} does not contain the correct password. \begin{DoxyNote}{注解}
+The data handled by this object will not be removed permanently from the devices non-\/volatile memory until {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware( void ) const }has} been called successfully. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::create\+Entry}}, ~\newline
+ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware} 
+\end{DoxySeeAlso}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em user\+Data\+Entry} & A reference to the entry to delete \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ab1c2adb53dfe271c3ddeebf458a5a021}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!get\+Free\+Memory@{get\+Free\+Memory}}
+\index{get\+Free\+Memory@{get\+Free\+Memory}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{get\+Free\+Memory}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::get\+Free\+Memory (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ab1c2adb53dfe271c3ddeebf458a5a021}
+
+
+Returns the number of bytes of user accessible, non-\/volatile memory that is still available. 
+
+\begin{DoxySince}{自从}
+1.\+12.\+64 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a45146a280d80c00c39b435bd9b63a612}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!get\+User\+Data\+Entry@{get\+User\+Data\+Entry}}
+\index{get\+User\+Data\+Entry@{get\+User\+Data\+Entry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{get\+User\+Data\+Entry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\+Data\+Entry} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::get\+User\+Data\+Entry (
+\begin{DoxyParamCaption}
+\item[{int}]{nr}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a45146a280d80c00c39b435bd9b63a612}
+
+
+Returns An object to work with an existing entry of user specific data. 
+
+\begin{DoxyNote}{注解}
+If an invalid number has been passed as {\itshape nr} an object will be returned as well. Therefore always check if the entry is valid by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry_aad3a7a9bf3566193f2a367389c560e73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry\+::is\+Valid}} before working with the object.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+An object to work with an existing entry of user specific data. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em nr} & The number of the entry to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a1b86acbf21478b9eb2ea528d67cbfe09}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!is\+Available@{is\+Available}}
+\index{is\+Available@{is\+Available}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{is\+Available}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::is\+Available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a1b86acbf21478b9eb2ea528d67cbfe09}
+
+
+This function should be called to check if this device offers non-\/volatile memory that can be accessed. 
+
+by the user. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the device offers non-\/volatile memory that can be accessed by the user
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!valid\+User\+Data\+Entry\+Indexes@{valid\+User\+Data\+Entry\+Indexes}}
+\index{valid\+User\+Data\+Entry\+Indexes@{valid\+User\+Data\+Entry\+Indexes}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{valid\+User\+Data\+Entry\+Indexes}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::valid\+User\+Data\+Entry\+Indexes (
+\begin{DoxyParamCaption}
+\item[{std\+::vector$<$ int $>$ \&}]{sequence}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5}
+
+
+Fills an array with all currently valid user data entry indexes. 
+
+This function can be used to obtain a list of valid parameters for calls to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a45146a280d80c00c39b435bd9b63a612}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::get\+User\+Data\+Entry}}. Every value in the returned array will (when passed to the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a45146a280d80c00c39b435bd9b63a612}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::get\+User\+Data\+Entry}}) result in a valid {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_entry}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+Entry}} object. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt out}  & {\em sequence} & A reference to the array receiving the list of valid indexes \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a80922fd3f90b3d292fd87760c41337d5_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!write\+To\+Hardware@{write\+To\+Hardware}}
+\index{write\+To\+Hardware@{write\+To\+Hardware}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{write\+To\+Hardware}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}
+
+
+Writes the current set of user data into the devices non-\/volatile memory. 
+
+This function might take a while. Depending on the device architecture and the amount of memory up to some hundred ms. Therefore make sure this function is not called more often than necessary to let your application perform efficiently. \begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a693c8931c71b9911657636bd07ab1e09}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::create\+Entry}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a5c3bcff4890369e8c8b446fa0344e7ed}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::delete\+Entry}} 
+\end{DoxySeeAlso}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a4ea40b43d2ffba2efb6c14bdd6583b59}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!memory\+Consumed\+\_\+bytes@{memory\+Consumed\+\_\+bytes}}
+\index{memory\+Consumed\+\_\+bytes@{memory\+Consumed\+\_\+bytes}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{memory\+Consumed\+\_\+bytes}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::memory\+Consumed\+\_\+bytes}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a4ea40b43d2ffba2efb6c14bdd6583b59}
+
+
+An integer property {\bfseries }(read-\/only) containing the number of bytes of user accessible, non-\/volatile memory currently consumed by user data. 
+
+This doesn't indicate that all the data has already been stored in the non-\/volatile memory, but is the number of bytes needed to store the current user data permanently. No check for overflows will be performed. If the user defined data exceeds the size of the available memory, this data will be lost when disconnecting or switching of the supply voltage for this device.
+
+To write data permanently into the device call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_ae6e2e87a923281c6a821b0f221b968b8}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::write\+To\+Hardware}} But even after calling this function data that exceeds the available memory will be lost when the device looses supply voltage and/or the process terminates. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a14b5d5322cb10f3d6ce9b67e613a4cb4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}!reconnect\+Behaviour@{reconnect\+Behaviour}}
+\index{reconnect\+Behaviour@{reconnect\+Behaviour}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data}}
+\subsubsection[{reconnect\+Behaviour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+User\+Data\+Reconnect\+Behaviour} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+User\+Data\+::reconnect\+Behaviour}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data_a14b5d5322cb10f3d6ce9b67e613a4cb4}
+
+
+An enumerated integer property that can be used to configure how the user data should be treated in case of a device that has been unplugged is plugged back in again. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+User\+Data\+Reconnect\+Behaviour}.
+
+If a device does not support hot-\/plugging, this property will be invisible ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ae9f95ac45440af06f7d36990ad633a73}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Visible()}}), 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,92 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Standard\+Base类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}}
+}
+
+
+An internal base class to describe standard analogue video cameras({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Standard\+Base 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Standard\+Base 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga8b964e42762ee1cba12e1b4bd9c9f114}{Property\+I\+Video\+Standard} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a4677d000f2ddaec6e356b6cc48eb50e0}{video\+Standard}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property for defining the video standard this camera is compliant with. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gabc31d508d02db97ff522a1285a450f04}{Property\+I\+Scan\+Standard} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a818090d21bb246d02c4db4474dcc32d8}{scan\+Standard}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the scan standard this camera is compliant with. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a17049ae421918e4dd00635eacea1ed17}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a17049ae421918e4dd00635eacea1ed17}{scan\+Rate\+\_\+k\+Hz}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a17049ae421918e4dd00635eacea1ed17}
+
+\begin{DoxyCompactList}\small\item\em An integer property containing the scan rate in k\+Hz needed to driver the A\+D converter of the capture device with to convert the video signal properly. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga01090436ef6969d1fedb45ce24f68d9b}{Property\+I\+Acquisition\+Field} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_acad50fee713c8790dc7c23b64d86a9ac}{start\+Field}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property containing information about the first field transmitted by a camera. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_afdac5e8f16d0f5511d535292893eed0b}{{\bfseries Camera\+Description\+Standard\+Base} (H\+D\+R\+V h\+Drv, H\+L\+I\+S\+T h\+List)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_afdac5e8f16d0f5511d535292893eed0b}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+An internal base class to describe standard analogue video cameras({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+Instances of this class can't be constructed directly. Use one of the derived types.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a818090d21bb246d02c4db4474dcc32d8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}!scan\+Standard@{scan\+Standard}}
+\index{scan\+Standard@{scan\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}}
+\subsubsection[{scan\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Scan\+Standard} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base\+::scan\+Standard}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a818090d21bb246d02c4db4474dcc32d8}
+
+
+An enumerated integer property defining the scan standard this camera is compliant with. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Scan\+Standard}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_acad50fee713c8790dc7c23b64d86a9ac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}!start\+Field@{start\+Field}}
+\index{start\+Field@{start\+Field}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}}
+\subsubsection[{start\+Field}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Acquisition\+Field} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base\+::start\+Field}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_acad50fee713c8790dc7c23b64d86a9ac}
+
+
+An enumerated integer property containing information about the first field transmitted by a camera. 
+
+A camera might transmit either the odd or the even field of an interlaced video signal first.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Acquisition\+Field}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a4677d000f2ddaec6e356b6cc48eb50e0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}!video\+Standard@{video\+Standard}}
+\index{video\+Standard@{video\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base}}
+\subsubsection[{video\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Video\+Standard} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard\+Base\+::video\+Standard}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard_base_a4677d000f2ddaec6e356b6cc48eb50e0}
+
+
+An enumerated integer property for defining the video standard this camera is compliant with. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Video\+Standard}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

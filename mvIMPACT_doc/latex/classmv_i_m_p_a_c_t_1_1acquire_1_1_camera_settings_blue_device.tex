@@ -1,0 +1,306 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Blue\+Device类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+}
+
+
+A base class for camera related settings belonging to the mv\+Blue\+X\+X\+X-\/series ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Blue\+Device 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Blue\+Device 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a66c6f132a7574119e138887e91bd635a}{Camera\+Settings\+Blue\+Device} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters}{Auto\+Control\+Parameters} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ad0110b1e3664d2c563ae850178bc367a}{get\+Auto\+Control\+Parameters} (void)
+\begin{DoxyCompactList}\small\item\em Provides access to the control parameters for A\+G\+C and A\+E\+C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga692ee7a4c1a557177eba5b66deed4c2d}{Property\+I\+Auto\+Control\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a4332b415ee1aa70f66f1c229f2149f71}{auto\+Control\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the auto control mode the device is operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga6489a23af699da0b3a1f151c966ab906}{Property\+I\+Auto\+Gain\+Control} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a9d65d62f763438188309c1807b7fc436}{auto\+Gain\+Control}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property, which represents the current mode the A\+G\+C ({\bfseries A} utomatic {\bfseries G} ain {\bfseries C} ontrol) is operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga5223682df43da3c6e83d7c8382189d7c}{Property\+I\+Auto\+Exposure\+Control} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a42cf7abb4f526ee88e74e040a3c9c3ba}{auto\+Expose\+Control}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property, which represents the current mode the A\+E\+C ({\bfseries A} utomatic {\bfseries E} xpose {\bfseries C} ontrol) is operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a670966b0117c0fbf623d169e9ee69431}{gain\+\_\+d\+B}
+\begin{DoxyCompactList}\small\item\em A float property defining the gain in d\+B. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_aa3bbc947f98f3182b8bd0121a511b1c2}{offset\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em A float property defining the analogue sensor offset in percent of the allowed range (sensor specific). \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga346a75ab93c8255ce16833b47718680d}{Property\+I\+Camera\+Pixel\+Clock} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a39df2b304078d58d4031ee2b00d9b7c3}{pixel\+Clock\+\_\+\+K\+Hz}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the pixel clock of the camera sensor in K\+Hz. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga1b37c202f78d874f5a68bfd7555ea552}{Property\+I\+Camera\+Expose\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ac41f734868b019f40aad28839554c79a}{expose\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the exposure mode the camera sensor is operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ab802a564f56c021c4730899f1d8c1cba}{expose\+\_\+us}
+\begin{DoxyCompactList}\small\item\em An integer property which defines the exposure time for an image in us. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga416d63b8d5d2dd2e5fabd253db5f8efc}{Property\+I\+Camera\+Binning\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a6dc3cb5b21c3b9b6ebba4039a601b982}{binning\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the binning mode the camera is operated in. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gac0b281150a89dd23bb2a696aba431225}{Property\+I\+Camera\+Test\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a986bc69aacf955629a6c3d0cf5971dc5}{test\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the image transmission mode of the camera. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gad47fbc49f6f36b45b3458aef7a61849a}{Property\+I\+Camera\+Trigger\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a736a6e90f7bb19b4f10e7ff0110c657e}{trigger\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which defines what kind of trigger mode shall be used for an image acquisition. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a73d838f2083f213c50ee6d2b161ad703}{frame\+Delay\+\_\+us}
+\begin{DoxyCompactList}\small\item\em An integer property defining the delay in us between an external trigger event an the begin of the sensor exposure. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters}{Auto\+Control\+Parameters} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_af360308aed6a5ebc938f4fd19b2ebe6f}{auto\+Control\+Parameters}
+\begin{DoxyCompactList}\small\item\em Provides access to the control parameters for A\+G\+C and A\+E\+C. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class for camera related settings belonging to the mv\+Blue\+X\+X\+X-\/series ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a66c6f132a7574119e138887e91bd635a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!Camera\+Settings\+Blue\+Device@{Camera\+Settings\+Blue\+Device}}
+\index{Camera\+Settings\+Blue\+Device@{Camera\+Settings\+Blue\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{Camera\+Settings\+Blue\+Device}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::\+Camera\+Settings\+Blue\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a66c6f132a7574119e138887e91bd635a}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a66c6f132a7574119e138887e91bd635a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ad0110b1e3664d2c563ae850178bc367a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!get\+Auto\+Control\+Parameters@{get\+Auto\+Control\+Parameters}}
+\index{get\+Auto\+Control\+Parameters@{get\+Auto\+Control\+Parameters}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{get\+Auto\+Control\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Auto\+Control\+Parameters}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::get\+Auto\+Control\+Parameters (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ad0110b1e3664d2c563ae850178bc367a}
+
+
+Provides access to the control parameters for A\+G\+C and A\+E\+C. 
+
+\begin{DoxyNote}{注解}
+These settings will only affect the image if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a9d65d62f763438188309c1807b7fc436}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Gain\+Control}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a42cf7abb4f526ee88e74e040a3c9c3ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Expose\+Control}} or both are set to active. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a4332b415ee1aa70f66f1c229f2149f71}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!auto\+Control\+Mode@{auto\+Control\+Mode}}
+\index{auto\+Control\+Mode@{auto\+Control\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{auto\+Control\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Auto\+Control\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Control\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a4332b415ee1aa70f66f1c229f2149f71}
+
+
+An enumerated integer property defining the auto control mode the device is operated in. 
+
+This property can be used to control the overall behaviour of the algorithms used for performing A\+E\+C ({\bfseries A} utomatic {\bfseries E} xpose {\bfseries C} ontrol) or A\+G\+C ({\bfseries A} utomatic {\bfseries G} ain {\bfseries C} ontrol). This could be done by the device itself thus e.\+g. even in the analog domain or e.\+g. by a software process in the driver. Each method will offer certain advantages and disadvantages and depending on the application the correct method can be selected.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Auto\+Control\+Mode}.
+
+Every device or even different models belonging to the same device family may support different auto control modes, thus it's crucial to query the valid modes for each device by reading the properties translation dictionary B\+E\+F\+O\+R\+E trying to assign a certain value to this property. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_af360308aed6a5ebc938f4fd19b2ebe6f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!auto\+Control\+Parameters@{auto\+Control\+Parameters}}
+\index{auto\+Control\+Parameters@{auto\+Control\+Parameters}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{auto\+Control\+Parameters}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Auto\+Control\+Parameters} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Control\+Parameters}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_af360308aed6a5ebc938f4fd19b2ebe6f}
+
+
+Provides access to the control parameters for A\+G\+C and A\+E\+C. 
+
+\begin{DoxyNote}{注解}
+These settings will only affect the image if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a9d65d62f763438188309c1807b7fc436}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Gain\+Control}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a42cf7abb4f526ee88e74e040a3c9c3ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Expose\+Control}} or both are set to active. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a42cf7abb4f526ee88e74e040a3c9c3ba}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!auto\+Expose\+Control@{auto\+Expose\+Control}}
+\index{auto\+Expose\+Control@{auto\+Expose\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{auto\+Expose\+Control}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Auto\+Exposure\+Control} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Expose\+Control}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a42cf7abb4f526ee88e74e040a3c9c3ba}
+
+
+An enumerated integer property, which represents the current mode the A\+E\+C ({\bfseries A} utomatic {\bfseries E} xpose {\bfseries C} ontrol) is operated in. 
+
+The values used to capture the image, which are directly influenced by an activated A\+G\+C or A\+E\+C (e.\+g. the gain or the exposure time) will be returned as part of the result of the image request.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Auto\+Exposure\+Control}.
+
+\begin{DoxyNote}{注解}
+This property might not be supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a9d65d62f763438188309c1807b7fc436}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!auto\+Gain\+Control@{auto\+Gain\+Control}}
+\index{auto\+Gain\+Control@{auto\+Gain\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{auto\+Gain\+Control}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Auto\+Gain\+Control} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::auto\+Gain\+Control}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a9d65d62f763438188309c1807b7fc436}
+
+
+An enumerated integer property, which represents the current mode the A\+G\+C ({\bfseries A} utomatic {\bfseries G} ain {\bfseries C} ontrol) is operated in. 
+
+The values used to capture the image, which are directly influenced by an activated A\+G\+C or A\+E\+C (e.\+g. the gain or the exposure time) will be returned as part of the result of the image request.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Auto\+Gain\+Control}.
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a6dc3cb5b21c3b9b6ebba4039a601b982}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!binning\+Mode@{binning\+Mode}}
+\index{binning\+Mode@{binning\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{binning\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Binning\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::binning\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a6dc3cb5b21c3b9b6ebba4039a601b982}
+
+
+An enumerated integer property defining the binning mode the camera is operated in. 
+
+By default the no binning will be performed. \begin{DoxyNote}{注解}
+Not every camera will support every binning mode. To find out which binning modes are supported by your camera you can query the properties translation table with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+Binning\+Mode\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+Binning\+Mode\+::get\+Translation\+Dict\+Value}} 
+\end{DoxyNote}
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Binning\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ab802a564f56c021c4730899f1d8c1cba}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!expose\+\_\+us@{expose\+\_\+us}}
+\index{expose\+\_\+us@{expose\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{expose\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::expose\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ab802a564f56c021c4730899f1d8c1cba}
+
+
+An integer property which defines the exposure time for an image in us. 
+
+ \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ac41f734868b019f40aad28839554c79a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!expose\+Mode@{expose\+Mode}}
+\index{expose\+Mode@{expose\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{expose\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Expose\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::expose\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_ac41f734868b019f40aad28839554c79a}
+
+
+An enumerated integer property defining the exposure mode the camera sensor is operated in. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Expose\+Mode}.
+
+\begin{DoxyNote}{注解}
+Not every device will offer the same options. Check for valid modes by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+Expose\+Mode\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Camera\+Expose\+Mode\+::get\+Translation\+Dict\+Value}}. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a73d838f2083f213c50ee6d2b161ad703}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!frame\+Delay\+\_\+us@{frame\+Delay\+\_\+us}}
+\index{frame\+Delay\+\_\+us@{frame\+Delay\+\_\+us}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{frame\+Delay\+\_\+us}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::frame\+Delay\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a73d838f2083f213c50ee6d2b161ad703}
+
+
+An integer property defining the delay in us between an external trigger event an the begin of the sensor exposure. 
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a670966b0117c0fbf623d169e9ee69431}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!gain\+\_\+d\+B@{gain\+\_\+d\+B}}
+\index{gain\+\_\+d\+B@{gain\+\_\+d\+B}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{gain\+\_\+d\+B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::gain\+\_\+d\+B}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a670966b0117c0fbf623d169e9ee69431}
+
+
+A float property defining the gain in d\+B. 
+
+The formula for given {\ttfamily gain\+\_\+d\+B} is 
+\begin{DoxyCode}
+gain\_x= 10 ^ (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a670966b0117c0fbf623d169e9ee69431}{gain\_dB}/20)
+\end{DoxyCode}
+
+
+{\bfseries Example\+:} 
+
+
+\begin{DoxyCode}
+gain\_x = 10 ^ (6/20) = 1.995
+\end{DoxyCode}
+
+
+I.\+e. increasing the gain setting by 6d\+B corresponds to factor of 2.
+
+The formula for given gain\+\_\+x is 
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a670966b0117c0fbf623d169e9ee69431}{gain\_dB} = 20*log(gain\_x) dB
+\end{DoxyCode}
+
+
+Where\+: ~\newline
+{\ttfamily gain\+\_\+d\+B\+:} M\+A\+T\+R\+I\+X V\+I\+S\+I\+O\+N gain value (logarithmic) ~\newline
+{\ttfamily gain\+\_\+x\+:} multiplicative gain ~\newline
+{\ttfamily $^\wedge$}\+: power function ~\newline
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_aa3bbc947f98f3182b8bd0121a511b1c2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!offset\+\_\+pc@{offset\+\_\+pc}}
+\index{offset\+\_\+pc@{offset\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{offset\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::offset\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_aa3bbc947f98f3182b8bd0121a511b1c2}
+
+
+A float property defining the analogue sensor offset in percent of the allowed range (sensor specific). 
+
+This property influences the average grey level when no light reaches the sensor.{\bfseries mv\+Blue\+F\+O\+X} {\bfseries specific\+:} Changing its value will have no effect if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_a94b65c4b3b21b5f968ddee1dc804db34}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X\+::offset\+Auto\+Calibration}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::aoc\+On}.
+
+By default this value will be around 10 (if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_a94b65c4b3b21b5f968ddee1dc804db34}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X\+::offset\+Auto\+Calibration}} if set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::aoc\+On}). This means the average grey value for an image taken in a completely dark environment will be around 10. When setting {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_a94b65c4b3b21b5f968ddee1dc804db34}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X\+::offset\+Auto\+Calibration}} to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::aoc\+Off} {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_aa3bbc947f98f3182b8bd0121a511b1c2}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+F\+O\+X\+::offset\+\_\+pc}} can be used to modify this value.  The valid range for this property lies between -\/100\% and +100\%, whereas negative values will shifts the black level towards 0 and positive values to 255.
+
+\begin{DoxyNote}{注解}
+This property might not be supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a39df2b304078d58d4031ee2b00d9b7c3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!pixel\+Clock\+\_\+\+K\+Hz@{pixel\+Clock\+\_\+\+K\+Hz}}
+\index{pixel\+Clock\+\_\+\+K\+Hz@{pixel\+Clock\+\_\+\+K\+Hz}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{pixel\+Clock\+\_\+\+K\+Hz}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Pixel\+Clock} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::pixel\+Clock\+\_\+\+K\+Hz}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a39df2b304078d58d4031ee2b00d9b7c3}
+
+
+An enumerated integer property defining the pixel clock of the camera sensor in K\+Hz. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Pixel\+Clock}.
+
+\begin{DoxyNote}{注解}
+Changing the pixel clock at runtime will have major impact on the overall behaviour of the camera. The pixel clock should therefore not be modified constantly during the execution of the application code. Whenever this property is changed, the next images captured should be skipped if a device works with an active auto offset calibration controller circuit as then the control circuits on the camera might need one to three images until all control loops are locked again.
+\end{DoxyNote}
+Every device or even different models belonging to the same device family may support different pixel clocks, thus it's crucial to query the valid clock modes for each sensor by reading the properties translation dictionary. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a986bc69aacf955629a6c3d0cf5971dc5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!test\+Mode@{test\+Mode}}
+\index{test\+Mode@{test\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{test\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Test\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::test\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a986bc69aacf955629a6c3d0cf5971dc5}
+
+
+An enumerated integer property defining the image transmission mode of the camera. 
+
+If this property is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ctm\+Off} the 'normal' image captured by the cameras sensor will be transmitted. This is the default. To ensure correct operation the camera might define several test modes where some kind of well defined pattern will be transmitted.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Test\+Mode}. No every test mode will be supported by every device. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a736a6e90f7bb19b4f10e7ff0110c657e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}!trigger\+Mode@{trigger\+Mode}}
+\index{trigger\+Mode@{trigger\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device}}
+\subsubsection[{trigger\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Trigger\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Blue\+Device\+::trigger\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device_a736a6e90f7bb19b4f10e7ff0110c657e}
+
+
+An enumerated integer property which defines what kind of trigger mode shall be used for an image acquisition. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Trigger\+Mode}.
+
+\begin{DoxyNote}{注解}
+Not every device will support every trigger mode. To find out which trigger modes are supported by a specific device at runtime the properties translation dictionary should be queried.
+
+Also the sensor specific part of this manual will contain a list of trigger modes that are available for this specific image sensor. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

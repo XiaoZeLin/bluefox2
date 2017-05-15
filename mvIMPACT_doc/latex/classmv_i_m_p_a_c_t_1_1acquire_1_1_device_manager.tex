@@ -1,0 +1,453 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Device\+Manager类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+}
+
+
+Grants access to devices that can be operated by this software interface.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a4881ebceb5f5700332f204b7b2110ba7}{Device\+Manager} (void)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_af3a2bb47592d848ec95b8523de851bab}{Device\+Manager} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object from an existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ab4583106065b5d4f8fb4be9e42962dd7}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ab4583106065b5d4f8fb4be9e42962dd7}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ab4583106065b5d4f8fb4be9e42962dd7}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} objects. \end{DoxyCompactList}\item 
+virtual \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a42765646b80c0dfe0bdca469095290bf}{$\sim$\+Device\+Manager} (void)
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad1f491bc48507740e7933e74c17da578}{H\+D\+M\+R \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad1f491bc48507740e7933e74c17da578}{get\+Internal\+Handle} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad1f491bc48507740e7933e74c17da578}
+
+\begin{DoxyCompactList}\small\item\em Returns the internal handle to the device manager created via {\bfseries D\+M\+R\+\_\+\+Init()}. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a37f937858e3fca7bdebd62856ddf4ea0}{operator\mbox{[}$\,$\mbox{]}} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_acfff7b0dbb399008640b47de950b2b38}{changed\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current changed counter for the device list. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}{device\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of devices currently present in the system. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a2078f9532f67854352c3be3e32364879}{update\+Device\+List} (void) const 
+\begin{DoxyCompactList}\small\item\em Updates the internal device list. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_aebf05bf5500e7db13096c20611c15335}{get\+Device} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{get\+Device\+By\+Serial} (const std\+::string \&serial=\char`\"{}\char`\"{}, unsigned int dev\+Nr=0, char wildcard= '$\ast$') const 
+\begin{DoxyCompactList}\small\item\em Tries to locate a device via the serial number. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{get\+Device\+By\+Family} (const std\+::string \&family=\char`\"{}\char`\"{}, unsigned int dev\+Nr=0, char wildcard= '$\ast$') const 
+\begin{DoxyCompactList}\small\item\em Tries to locate a device via the family name. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{get\+Device\+By\+Product} (const std\+::string \&product=\char`\"{}\char`\"{}, unsigned int dev\+Nr=0, char wildcard= '$\ast$') const 
+\begin{DoxyCompactList}\small\item\em Tries to locate a device via the product name. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad92a73317e3dbd9443c3a7dd8bff6118}{get\+Device\+By\+Product\+And\+I\+D} (const std\+::string \&product=\char`\"{}\char`\"{}, unsigned int dev\+I\+D=0, char wildcard= '$\ast$') const 
+\begin{DoxyCompactList}\small\item\em Tries to locate a device via the product name and the device I\+D. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{静态 Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a3fa7d36d6b440b785db9c21e4a9f9567}{get\+Version\+As\+String} (\hyperlink{group___common_interface_gaa0089595ddb29525273fab145356014c}{T\+Library\+Query} library\+Query)
+\begin{DoxyCompactList}\small\item\em Returns a string containing the version number of the specified library. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Grants access to devices that can be operated by this software interface. 
+
+This class will grant access to any device installed on/in the current system. Whenever somewhere in the code a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} instance is created it can be used to access any device currently supported and available. ~\newline
+ ~\newline
+ This is the only class which is allowed to create instances of the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}, which are needed to access a certain device.
+
+If a device is installed in the system but an appropriate driver has not been installed, this class will {\bfseries N\+O\+T} list these devices.
+
+As a result of this every program written by the use of this interface will create an instance of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} before performing any other operations which uses objects or functions from this interface.
+
+During the construction of a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object the system will be scanned for supported devices and once the instance has been created the object will provide an up to date list of devices whenever the user asks for it. Some devices when plugged into the system after the device manager has been created might require an explicit update of the device list. This can be triggered by an application by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a2078f9532f67854352c3be3e32364879}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::update\+Device\+List()}}.
+
+This class also provides various functions to find a particular device in the system. Devices can e.\+g. be found by family or by serial number.
+
+\begin{DoxyNote}{注解}
+There always has to be at least one instance of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager}} when the user still works with {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} objects, as when the last instance to this object is destroyed all remaining {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} objects will be closed automatically!
+\end{DoxyNote}
+\begin{DoxyAttention}{注意}
+{\bfseries N\+E\+V\+E\+R} try to explicitly delete an instance of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!} You did not allocate it and the result will be a crash! The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} will take care of all resources for you.
+\end{DoxyAttention}
+\begin{DoxyNote}{注解}
+A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object will initially return pointers to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} objects, which all seem to be closed. However one or more of the devices might have been opened by another instance of the device manager running in a different process. In that case the attempt to open a device, which seems to be closed will raise an exception with the error code {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+D\+R\+V\+\_\+\+A\+L\+R\+E\+A\+D\+Y\+\_\+\+I\+N\+\_\+\+U\+S\+E}, which M\+U\+S\+T be handled by the user. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a4881ebceb5f5700332f204b7b2110ba7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!Device\+Manager@{Device\+Manager}}
+\index{Device\+Manager@{Device\+Manager}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{Device\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::\+Device\+Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a4881ebceb5f5700332f204b7b2110ba7}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. 
+
+If the construction of this object fails for some reason this constructor might throw an exception of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}} or a type derived from this class. 
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a4881ebceb5f5700332f204b7b2110ba7_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_af3a2bb47592d848ec95b8523de851bab}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!Device\+Manager@{Device\+Manager}}
+\index{Device\+Manager@{Device\+Manager}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{Device\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::\+Device\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Device\+Manager} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_af3a2bb47592d848ec95b8523de851bab}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object from an existing one. 
+
+If the construction of this object fails for some reason this constructor might throw an exception of type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}} or a type derived from this class. 
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_af3a2bb47592d848ec95b8523de851bab_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a42765646b80c0dfe0bdca469095290bf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!````~Device\+Manager@{$\sim$\+Device\+Manager}}
+\index{````~Device\+Manager@{$\sim$\+Device\+Manager}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{$\sim$\+Device\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}virtual mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::$\sim$\+Device\+Manager (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a42765646b80c0dfe0bdca469095290bf}
+
+
+Class destructor. 
+
+There always has to be at least one instance of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager}} when the user still works with {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} objects, as when the last instance to this object is destroyed all remaining {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} objects will be closed automatically! 
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_acfff7b0dbb399008640b47de950b2b38}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!changed\+Count@{changed\+Count}}
+\index{changed\+Count@{changed\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{changed\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::changed\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_acfff7b0dbb399008640b47de950b2b38}
+
+
+Returns the current changed counter for the device list. 
+
+This is a useful function to find out if the device list has been changed in any way. Such a change might be the appearance of a new U\+S\+B device or a state change of any other device (e.\+g. when a U\+S\+B device has been unplugged). Thus this function can be called periodically in order to maintain lists in G\+U\+I application for example. To find out the actual number of devices call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::device\+Count}}. \begin{DoxyReturn}{返回}
+The current changed counter for the device list. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_acfff7b0dbb399008640b47de950b2b38_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!device\+Count@{device\+Count}}
+\index{device\+Count@{device\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{device\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::device\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}
+
+
+Returns the number of devices currently present in the system. 
+
+This function returns the number of devices currently detected in the system. A device once connected to the system while the device manager was running will remain in its list even if it's unplugged (then only its state will change). To detect changes in the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} objects list call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_acfff7b0dbb399008640b47de950b2b38}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::changed\+Count}}. \begin{DoxyReturn}{返回}
+The number of devices detected in the current system. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_aebf05bf5500e7db13096c20611c15335}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!get\+Device@{get\+Device}}
+\index{get\+Device@{get\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{get\+Device}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_aebf05bf5500e7db13096c20611c15335}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object. 
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object specifying the device found at the given index in the device managers internal list.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}{Device\+Manager\+::device\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{Device\+Manager\+::get\+Device\+By\+Serial}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{Device\+Manager\+::get\+Device\+By\+Family}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{Device\+Manager\+::get\+Device\+By\+Product}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to the device if {\itshape index} specifies a valid value. ~\newline
+
+\item an exception will be raised otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the device to be returned. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!get\+Device\+By\+Family@{get\+Device\+By\+Family}}
+\index{get\+Device\+By\+Family@{get\+Device\+By\+Family}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{get\+Device\+By\+Family}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Family (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{family = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{dev\+Nr = {\ttfamily 0}, }
+\item[{char}]{wildcard = {\ttfamily '$\ast$'}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}
+
+
+Tries to locate a device via the family name. 
+
+This function tries to find a device by its family (or parts of this family name). The user can specify only parts of the family name and a wildcard. The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object will then try to find the device that matches these parameters in its current list. The family is the most general method of searching for a device apart from 'any device'. E.\+g. for a device the family name might be 'Sample\+Device'
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Serial}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Product}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad92a73317e3dbd9443c3a7dd8bff6118}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Product\+And\+I\+D}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to the device if found. ~\newline
+
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em family} & The full family name of the requested device or known parts of it and wildcard characters. \\
+\hline
+\mbox{\tt in}  & {\em dev\+Nr} & The number of the device to return (if there is more than one candidate). \\
+\hline
+\mbox{\tt in}  & {\em wildcard} & The character to ignore in {\itshape family}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!get\+Device\+By\+Product@{get\+Device\+By\+Product}}
+\index{get\+Device\+By\+Product@{get\+Device\+By\+Product}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{get\+Device\+By\+Product}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Product (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{product = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{dev\+Nr = {\ttfamily 0}, }
+\item[{char}]{wildcard = {\ttfamily '$\ast$'}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}
+
+
+Tries to locate a device via the product name. 
+
+This function tries to find a device by its product name (or parts of it). The user can specify only parts of the name and a wildcard. The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object will then try to find the device that matches these parameters in its current list. The product name is a bit more specific than the family name, but less specific than the serial. For the 'Sample\+Device' for example there might be different product names for different device types. This might e.\+g. be 'Sample\+Device-\/\+G' for a grey version of the sample device and 'Sample\+Device-\/\+C' for the color version of the sample device.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{Device\+Manager\+::get\+Device\+By\+Serial}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{Device\+Manager\+::get\+Device\+By\+Family}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad92a73317e3dbd9443c3a7dd8bff6118}{Device\+Manager\+::get\+Device\+By\+Product\+And\+I\+D}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to the device if found. ~\newline
+
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em product} & The full product name of the requested device or known parts of it and wildcard characters. \\
+\hline
+\mbox{\tt in}  & {\em dev\+Nr} & The number of the device to return (if there is more than one candidate). \\
+\hline
+\mbox{\tt in}  & {\em wildcard} & The character to ignore in {\itshape product}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad92a73317e3dbd9443c3a7dd8bff6118}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!get\+Device\+By\+Product\+And\+I\+D@{get\+Device\+By\+Product\+And\+I\+D}}
+\index{get\+Device\+By\+Product\+And\+I\+D@{get\+Device\+By\+Product\+And\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{get\+Device\+By\+Product\+And\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Product\+And\+I\+D (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{product = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{dev\+I\+D = {\ttfamily 0}, }
+\item[{char}]{wildcard = {\ttfamily '$\ast$'}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad92a73317e3dbd9443c3a7dd8bff6118}
+
+
+Tries to locate a device via the product name and the device I\+D. 
+
+This function behaves like {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Product}} except that the second parameter now is interpreted as the device I\+D.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a239e7c6f214d441015ef15e4cbde83ca}{Device\+::device\+I\+D}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{Device\+Manager\+::get\+Device\+By\+Family}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{Device\+Manager\+::get\+Device\+By\+Product}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{Device\+Manager\+::get\+Device\+By\+Serial}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cf73e03bb07320488a703a573f043ac}{Device\+::set\+I\+D}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to the device if found. ~\newline
+
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em product} & The full product name of the requested device or known parts of it and wildcard characters. \\
+\hline
+\mbox{\tt in}  & {\em dev\+I\+D} & The I\+D associated with this device. \\
+\hline
+\mbox{\tt in}  & {\em wildcard} & The character to ignore in {\itshape product}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!get\+Device\+By\+Serial@{get\+Device\+By\+Serial}}
+\index{get\+Device\+By\+Serial@{get\+Device\+By\+Serial}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{get\+Device\+By\+Serial}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Serial (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{serial = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{unsigned int}]{dev\+Nr = {\ttfamily 0}, }
+\item[{char}]{wildcard = {\ttfamily '$\ast$'}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}
+
+
+Tries to locate a device via the serial number. 
+
+This function tries to find a device by its serial number (or parts of this number). The user can specify only parts of the serial number and a wildcard. The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object will then try to find that matches these parameters in its current list.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{Device\+Manager\+::get\+Device\+By\+Family}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{Device\+Manager\+::get\+Device\+By\+Product}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_ad92a73317e3dbd9443c3a7dd8bff6118}{Device\+Manager\+::get\+Device\+By\+Product\+And\+I\+D}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to the device if found. ~\newline
+
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em serial} & The full serial number or the known parts of the serial number and wildcard characters. \\
+\hline
+\mbox{\tt in}  & {\em dev\+Nr} & The number of the device to return (if there is more than one candidate). \\
+\hline
+\mbox{\tt in}  & {\em wildcard} & The character to ignore in {\itshape serial}. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a3fa7d36d6b440b785db9c21e4a9f9567}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!get\+Version\+As\+String@{get\+Version\+As\+String}}
+\index{get\+Version\+As\+String@{get\+Version\+As\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{get\+Version\+As\+String}]{\setlength{\rightskip}{0pt plus 5cm}static std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Version\+As\+String (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Library\+Query}}]{library\+Query}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a3fa7d36d6b440b785db9c21e4a9f9567}
+
+
+Returns a string containing the version number of the specified library. 
+
+This function returns a string containing the version number of the specified library.
+
+The format of the string will be M\+A\+J\+O\+R.\+M\+I\+N\+O\+R.\+R\+E\+L\+E\+A\+S\+E.\+B\+U\+I\+L\+D. \begin{DoxySince}{自从}
+2.\+1.\+2 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+A pointer to an internal version string. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em library\+Query} & Specifies the library to query information from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a37f937858e3fca7bdebd62856ddf4ea0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Device}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a37f937858e3fca7bdebd62856ddf4ea0}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object. 
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object specifying the device found at the given index in the device managers internal list.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::device\+Count}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a7bf58516da0597acf3d899981e52aa92}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Serial}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a8ffbf3573bd8836d2583b271b5f43834}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Family}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a61b35d3c0ebbf79dc15d8704d6e772ad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::get\+Device\+By\+Product}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item A pointer to the device if found.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the device to be returned. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a2078f9532f67854352c3be3e32364879}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}!update\+Device\+List@{update\+Device\+List}}
+\index{update\+Device\+List@{update\+Device\+List}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}
+\subsubsection[{update\+Device\+List}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::update\+Device\+List (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a2078f9532f67854352c3be3e32364879}
+
+
+Updates the internal device list. 
+
+Most devices can't appear out of nowhere. For example a P\+C\+I device is either connected to the current system when the device manager is initialized or not but it will never appear at runtime after this instance of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} has been created.
+
+However certain device classes (e.\+g. network devices) might be connected to the system {\bfseries A\+F\+T\+E\+R} the device manager has been initialized. Some will announce themselves like e.\+g. U\+S\+B devices, which will send a message to every application interested while others like e.\+g. network devices wont. In order not to pollute the network or bus with constant rescan messages no polling is done inside the driver. the user should call this function instead when looking for new devices. This can either be done in reasonable intervals or after it is known that a new device has been connected to the system.
+
+If new devices have been detected a subsequent call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a1d58b307ac5a3648cb6a0e8d5d3b37ab}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::device\+Count}} will result in a higher value when compared to a previous call and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_acfff7b0dbb399008640b47de950b2b38}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::changed\+Count}} will contain a different value as well then (however this could also happen because a certain device related property did change its state).
+
+\begin{DoxyNote}{注解}
+As long as a certain instance of a device manager is active, the devices once detected will {\bfseries N\+O\+T} disappear from the list of devices even if they have been unplugged from the system. So the list of devices can only grow, but never gets shorter again until either the process terminates or the last instance of this class went out of scope. If a device has been unplugged, its {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4861037a845148f813bc72bad7334ebd}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::state}} property will change. If the application is interested in getting an instant notification when a device has been disconnected a callback can be registered on this property. How to do this is explained here\+: Callback.\+cpp 
+\end{DoxyNote}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a2078f9532f67854352c3be3e32364879_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

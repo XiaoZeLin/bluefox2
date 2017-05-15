@@ -1,0 +1,105 @@
+\hypertarget{class_plot_canvas}{\section{Plot\+Canvas类 参考}
+\label{class_plot_canvas}\index{Plot\+Canvas@{Plot\+Canvas}}
+}
+
+
+类 Plot\+Canvas 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_plot_canvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Plot\+Canvas 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_plot_canvas__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_a2a252e506a73b3f49d278b6911a47232}{{\bfseries Plot\+Canvas} (wx\+Window $\ast$parent, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Plot\+Canvas\char`\"{}), bool bo\+Active=false)}\label{class_plot_canvas_a2a252e506a73b3f49d278b6911a47232}
+
+\item 
+\hypertarget{class_plot_canvas_a3ab50ba1fb3a311265b3e3274f220b5c}{bool {\bfseries Set\+Update\+Frequency} (int frequency)}\label{class_plot_canvas_a3ab50ba1fb3a311265b3e3274f220b5c}
+
+\item 
+\hypertarget{class_plot_canvas_a14e1ee51587c627e11e811eb7866b215}{int {\bfseries Get\+Update\+Frequency} (void) const }\label{class_plot_canvas_a14e1ee51587c627e11e811eb7866b215}
+
+\item 
+\hypertarget{class_plot_canvas_aea23c053ab2c95ec81175f4e62b39225}{int {\bfseries Get\+Update\+Frequency\+Min} (void) const }\label{class_plot_canvas_aea23c053ab2c95ec81175f4e62b39225}
+
+\item 
+\hypertarget{class_plot_canvas_a3aecbd8bf3461d8651b59e3ff1d4a6e5}{int {\bfseries Get\+Update\+Frequency\+Max} (void) const }\label{class_plot_canvas_a3aecbd8bf3461d8651b59e3ff1d4a6e5}
+
+\item 
+\hypertarget{class_plot_canvas_ae6d6dc17298dbdf6155db1d053267cde}{int {\bfseries Get\+Border\+Width} (void) const }\label{class_plot_canvas_ae6d6dc17298dbdf6155db1d053267cde}
+
+\item 
+\hypertarget{class_plot_canvas_a15bec8adff88a87e8afeb443ab587a1b}{void {\bfseries Set\+Border\+Width} (int border\+Width)}\label{class_plot_canvas_a15bec8adff88a87e8afeb443ab587a1b}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_ab8ac41fbe7a62af7228c4544d25a1661}{virtual void {\bfseries On\+Paint\+Custom} (wx\+Paint\+D\+C \&dc)=0}\label{class_plot_canvas_ab8ac41fbe7a62af7228c4544d25a1661}
+
+\item 
+\hypertarget{class_plot_canvas_a7d33e169a519f3c8173514deed67c954}{void {\bfseries Draw\+Info\+String} (wx\+Paint\+D\+C \&dc, const wx\+String \&info, wx\+Coord \&x\+Offset, wx\+Coord y\+Offset, const wx\+Colour \&colour) const }\label{class_plot_canvas_a7d33e169a519f3c8173514deed67c954}
+
+\item 
+\hypertarget{class_plot_canvas_ab408942eaa307fd7e14cdc0693e080c4}{void {\bfseries Draw\+Marker\+Lines} (wx\+Paint\+D\+C \&dc, const wx\+Coord w, const wx\+Coord h, const double scale\+X) const }\label{class_plot_canvas_ab408942eaa307fd7e14cdc0693e080c4}
+
+\item 
+\hypertarget{class_plot_canvas_a002a805720751e56824734cfe42027ef}{void {\bfseries Draw\+Profile\+Line} (wx\+Paint\+D\+C \&dc, int h, int start\+Offset, double scale\+X, double scale\+Y, unsigned int from, unsigned int to, int $\ast$p\+Data, int element\+Count, const wx\+Colour \&colour) const }\label{class_plot_canvas_a002a805720751e56824734cfe42027ef}
+
+\item 
+\hypertarget{class_plot_canvas_a61a712fb45b875da1ac93324ee8d6d87}{virtual double {\bfseries Get\+Scale\+X} (wx\+Coord) const }\label{class_plot_canvas_a61a712fb45b875da1ac93324ee8d6d87}
+
+\item 
+\hypertarget{class_plot_canvas_a9c5bbc8dbb636e5d53a0a0859e0707b5}{virtual double {\bfseries Get\+Scale\+Y} (wx\+Coord) const }\label{class_plot_canvas_a9c5bbc8dbb636e5d53a0a0859e0707b5}
+
+\item 
+\hypertarget{class_plot_canvas_a271de403c21aec07d1c8c54310a05b6b}{virtual unsigned int {\bfseries Get\+X\+Marker\+Parameters} (unsigned int \&from, unsigned int \&to) const =0}\label{class_plot_canvas_a271de403c21aec07d1c8c54310a05b6b}
+
+\item 
+\hypertarget{class_plot_canvas_af30951c51b13bc973a93675ad3b31f5b}{virtual void {\bfseries On\+Paint} (wx\+Paint\+Event \&)}\label{class_plot_canvas_af30951c51b13bc973a93675ad3b31f5b}
+
+\item 
+\hypertarget{class_plot_canvas_abeb512d4044ba2fe5943be89be7909bd}{virtual void {\bfseries On\+Update\+Frequency\+Changed} (void)}\label{class_plot_canvas_abeb512d4044ba2fe5943be89be7909bd}
+
+\end{DoxyCompactItemize}
+\subsection*{静态 Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_a1346e9c291fbee3cada9f757f8dd12fd}{static unsigned int {\bfseries Get\+X\+Marker\+Step\+Width} (const unsigned int from, const unsigned int to)}\label{class_plot_canvas_a1346e9c291fbee3cada9f757f8dd12fd}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_plot_canvas_abd4a6690f369d0a73d69d0053dc3c2c9}{int {\bfseries m\+\_\+\+Image\+Count}}\label{class_plot_canvas_abd4a6690f369d0a73d69d0053dc3c2c9}
+
+\item 
+\hypertarget{class_plot_canvas_a0bec66c9cae1f6fba5ad13eb928c2184}{int {\bfseries m\+\_\+\+Update\+Frequency}}\label{class_plot_canvas_a0bec66c9cae1f6fba5ad13eb928c2184}
+
+\item 
+\hypertarget{class_plot_canvas_ae865582d895070a4013bfe6d69b2f17a}{int {\bfseries m\+\_\+\+Update\+Frequency\+Min}}\label{class_plot_canvas_ae865582d895070a4013bfe6d69b2f17a}
+
+\item 
+\hypertarget{class_plot_canvas_a44d99e757507e301b366e4169ff9346f}{int {\bfseries m\+\_\+\+Update\+Frequency\+Max}}\label{class_plot_canvas_a44d99e757507e301b366e4169ff9346f}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Plot\+Canvas.\+h\item 
+apps/mv\+Prop\+View/Plot\+Canvas.\+cpp\end{DoxyCompactItemize}

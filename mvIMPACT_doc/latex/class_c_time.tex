@@ -1,0 +1,97 @@
+\hypertarget{class_c_time}{\section{C\+Time类 参考}
+\label{class_c_time}\index{C\+Time@{C\+Time}}
+}
+
+
+Provides clock and time measurement functions.  
+
+
+
+
+{\ttfamily \#include $<$Timer.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_c_time_a8214eca7d1860b4ca82c15db55ef6a8e}{void {\bfseries start} (void)}\label{class_c_time_a8214eca7d1860b4ca82c15db55ef6a8e}
+
+\item 
+\hypertarget{class_c_time_a75c288cd86139cac8f56997940d3fb38}{double {\bfseries elapsed} (void)}\label{class_c_time_a75c288cd86139cac8f56997940d3fb38}
+
+\item 
+\hypertarget{class_c_time_abd2bb1db26aab1405a70426d3a58e3d4}{double {\bfseries restart} (void)}\label{class_c_time_abd2bb1db26aab1405a70426d3a58e3d4}
+
+\item 
+\hyperlink{class_c_time_ae54335556cd4f492f308218a80493d3b}{C\+Time} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new time measurement object. \end{DoxyCompactList}\item 
+void \hyperlink{class_c_time_a8214eca7d1860b4ca82c15db55ef6a8e}{start} (void)
+\begin{DoxyCompactList}\small\item\em Starts a new time measurement. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_time_a75c288cd86139cac8f56997940d3fb38}{elapsed} (void)
+\begin{DoxyCompactList}\small\item\em Returns the elapsed time in sec. \end{DoxyCompactList}\item 
+double \hyperlink{class_c_time_abd2bb1db26aab1405a70426d3a58e3d4}{restart} (void)
+\begin{DoxyCompactList}\small\item\em Returns the elapsed time in sec. and sets this time to the current time. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Provides clock and time measurement functions. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{class_c_time_ae54335556cd4f492f308218a80493d3b}{\index{C\+Time@{C\+Time}!C\+Time@{C\+Time}}
+\index{C\+Time@{C\+Time}!C\+Time@{C\+Time}}
+\subsubsection[{C\+Time}]{\setlength{\rightskip}{0pt plus 5cm}C\+Time\+::\+C\+Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_time_ae54335556cd4f492f308218a80493d3b}
+
+
+Constructs a new time measurement object. 
+
+This constructs the new object and starts a new measurement.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries C\+Time\+::start()} 
+\end{DoxySeeAlso}
+
+
+\subsection{成员函数说明}
+\hypertarget{class_c_time_a75c288cd86139cac8f56997940d3fb38}{\index{C\+Time@{C\+Time}!elapsed@{elapsed}}
+\index{elapsed@{elapsed}!C\+Time@{C\+Time}}
+\subsubsection[{elapsed}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Time\+::elapsed (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_c_time_a75c288cd86139cac8f56997940d3fb38}
+
+
+Returns the elapsed time in sec. 
+
+Returns the elapsed time in sec. after the last call to {\bfseries C\+Time\+::start()} \hypertarget{class_c_time_abd2bb1db26aab1405a70426d3a58e3d4}{\index{C\+Time@{C\+Time}!restart@{restart}}
+\index{restart@{restart}!C\+Time@{C\+Time}}
+\subsubsection[{restart}]{\setlength{\rightskip}{0pt plus 5cm}double C\+Time\+::restart (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_c_time_abd2bb1db26aab1405a70426d3a58e3d4}
+
+
+Returns the elapsed time in sec. and sets this time to the current time. 
+
+Returns the elapsed time in sec. after the last call to {\bfseries C\+Time\+::start()} or {\bfseries C\+Time\+::restart()} and sets this time to the current time. \hypertarget{class_c_time_a8214eca7d1860b4ca82c15db55ef6a8e}{\index{C\+Time@{C\+Time}!start@{start}}
+\index{start@{start}!C\+Time@{C\+Time}}
+\subsubsection[{start}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Time\+::start (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{class_c_time_a8214eca7d1860b4ca82c15db55ef6a8e}
+
+
+Starts a new time measurement. 
+
+Call {\bfseries C\+Time\+::elapsed()} to get the timespan in sec. after the last call to {\bfseries C\+Time\+::start()}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/\+Gen\+I\+Cam\+Sequencer\+Usage/Gen\+I\+Cam\+Sequencer\+Usage.\+cpp\item 
+apps/\+Power\+Down\+Test/Timer.\+h\item 
+apps/\+Power\+Down\+Test/Timer.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,69 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+S\+D\+I类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}}
+}
+
+
+A base class to describe a S\+D\+I(\+Serial Digital Interface) camera signal ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+S\+D\+I 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=230pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+S\+D\+I 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_ga8b964e42762ee1cba12e1b4bd9c9f114}{Property\+I\+Video\+Standard} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i_a6ba8278510409ac4019fd858f3af3452}{video\+Standard}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property for defining the video standard this camera is compliant with. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i_a754f74db1fd8a2e7cf0bca76c10d00dd}{class {\bfseries Camera\+Description\+Manager}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i_a754f74db1fd8a2e7cf0bca76c10d00dd}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class to describe a S\+D\+I(\+Serial Digital Interface) camera signal ({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides access to all settings specific for S\+D\+I video signals.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i_a6ba8278510409ac4019fd858f3af3452}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}!video\+Standard@{video\+Standard}}
+\index{video\+Standard@{video\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}}
+\subsubsection[{video\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Video\+Standard} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I\+::video\+Standard}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i_a6ba8278510409ac4019fd858f3af3452}
+
+
+An enumerated integer property for defining the video standard this camera is compliant with. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Video\+Standard}. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

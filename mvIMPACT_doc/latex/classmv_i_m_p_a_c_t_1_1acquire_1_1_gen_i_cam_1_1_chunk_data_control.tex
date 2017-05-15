@@ -1,0 +1,1252 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Chunk\+Data\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+}
+
+
+Category that contains the Chunk Data control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Chunk\+Data\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c}{Chunk\+Data\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aae91a9b1196e832dccef5e078a75c2ee}{chunk\+Mode\+Active}
+\begin{DoxyCompactList}\small\item\em A boolean property. Activates the inclusion of Chunk data in the payload of the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_afa89c2551ad7b82a5a6ce641cc169523}{chunk\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Chunk to enable or control. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ae4448c564c23ae14648a81c74fdd2f6f}{chunk\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. Enables the inclusion of the selected Chunk data in the payload of the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5f1f17a1606e9ea9a5c660886422d5b7}{chunk\+Component\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} from which to retreive data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a303eb2c02211269edcdc7c1899270c73}{chunk\+Component\+I\+D}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} Identifier of the selected \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9ff4b23f4b20e7aa48c31fa742a7b8fb}{chunk\+Component\+I\+D\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns a unique Identifier value that correspond to the selected chunk \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a0abd13d321577a5794abad963840cc6c}{chunk\+Image\+Component}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. This feature is deprecated (See Chunk\+Component\+I\+D). \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_af192e7c6c38acc638f7bdfc18bb7f96e}{chunk\+Part\+Selector}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature is deprecated (See Chunk\+Component\+Selector). \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ac35c9adb7b18011c9dcae2b2e07fd728}{chunk\+Image}
+\begin{DoxyCompactList}\small\item\em A string property. Returns the entire image data included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_acc2f89fbe1e30303592aa20d17323814}{chunk\+Offset\+X}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the Offset\+X of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a02440e61ff51103cfbc224a31cee7898}{chunk\+Offset\+Y}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the Offset\+Y of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6cf6b5feed11d6d46885ee126a7345f4}{chunk\+Width}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the Width of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a333f4b2dfbc993bfbd6dbfc6049ca36e}{chunk\+Height}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the Height of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9ece8017c9040ec2ffc9b180bd3c1abb}{chunk\+Pixel\+Format}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Pixel\+Format of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5a9b1a979bd09b5a47ad56f5b178cb38}{chunk\+Pixel\+Dynamic\+Range\+Min}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the minimum value of dynamic range of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a64e63b9d3a7ec7e2a8011df6e4893f48}{chunk\+Pixel\+Dynamic\+Range\+Max}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the maximum value of dynamic range of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6524fff11f2289aecb48e49f15a28710}{chunk\+Timestamp}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the Timestamp of the image included in the payload at the time of the Frame\+Start internal event. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aaaa113e713066193edd3549f5a6c0ab5}{chunk\+Timestamp\+Latch\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the last Timestamp latched with the Timestamp\+Latch command. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aefb276829f054332349de8fa7eb5125f}{chunk\+Line\+Status\+All}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the status of all the I/\+O lines at the time of the Frame\+Start internal event. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ac43d711538b1fb622260f8dc3c1cc4af}{chunk\+Counter\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which counter to retrieve data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a21793d389f9c7b12053027e6cef91520}{chunk\+Counter\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the value of the selected Chunk counter at the time of the Frame\+Start event. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ae64defa82d79e8cc3b38aa6ff2c5e31a}{chunk\+Timer\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Timer to retrieve data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6974218ada079b8968619a5e54ea8232}{chunk\+Scan\+Line\+Selector}
+\begin{DoxyCompactList}\small\item\em An integer property. Index for vector representation of one chunk value per line in an image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a147570f20aaa1f8afa4b6da7d18a7b35}{chunk\+Encoder\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Encoder to retrieve data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9483a862178c537ba676b62bd51a5711}{chunk\+Encoder\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the counter's value of the selected Encoder at the time of the Frame\+Start in area scan mode or the counter's value at the time of the Line\+Start selected by Chunk\+Scan\+Line\+Selector in Linescan mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a1e3efd94e47ad8ea76c4ad05a91fc208}{chunk\+Encoder\+Status}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the motion status of the selected encoder. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a54579ccb17b4adfac634b977c5a97341}{chunk\+Exposure\+Time\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which exposure time is read by the Chunk\+Exposure\+Time feature. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5b634696877e47f3c773da528d1c8f90}{chunk\+Timer\+Value}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the value of the selected Timer at the time of the Frame\+Start internal event. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a111bfcd0b354e55b9a54ffbb1a9d5299}{chunk\+Exposure\+Time}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the exposure time used to capture the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9d9f20487202b9100f118509754ecde4}{chunk\+Gain\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Gain to return. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ab8a83e2478ddaae9fc8b59d86cbe75a5}{chunk\+Gain}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the gain used to capture the image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a63720c40901053497a17d6e30e95070a}{chunk\+Black\+Level\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Black Level to return. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6d6b7d5f4bb92ae9f7d780d262ecd016}{chunk\+Black\+Level}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the black level used to capture the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a058ff2d5680ac5df29d70b5c78542974}{chunk\+Line\+Pitch}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the Line\+Pitch of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5d3849e86e7ae821d2a3ca73d6b472fc}{chunk\+Frame\+I\+D}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the unique Identifier of the frame (or image) included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_acab8906c60d43214bdbc540dafa7a62e}{chunk\+Source\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Source to retrieve data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a014b54e61bfa874ae1b64cf7de60a4cf}{chunk\+Source\+I\+D}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Identifier of Source that the image comes from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_adc24abab055024927db1829bdbd17b74}{chunk\+Source\+I\+D\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the unique integer Identifier value of the Source that the image comes from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a44981b8369742dda80bf40a15190c93a}{chunk\+Region\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Region to retrieve data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aca35041bfcc573ab5d91adb8e386bfcb}{chunk\+Region\+I\+D}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Identifier of Region that the image comes from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a4bfe87b51e018b8e2b0b869950ffde7c}{chunk\+Region\+I\+D\+Value}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the unique integer Identifier value of the Region that the image comes from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a43f3d8e2284b6742b8b22186407dce52}{chunk\+Transfer\+Block\+I\+D}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the unique identifier of the transfer block used to transport the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5d99e230c1a36d0649c93d6d6de2a139}{chunk\+Transfer\+Stream\+I\+D}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns identifier of the stream that generated this block. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a0eba9a22dc04bd1928c4807cb6dd45fe}{chunk\+Transfer\+Queue\+Current\+Block\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the current number of blocks in the transfer queue. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_af31e8f39ddba15bdeb3c2199abbd3f32}{chunk\+Stream\+Channel\+I\+D}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns identifier of the stream channel used to carry the block. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5c83ad3228ab5d5bc74603f8848961c5}{chunk\+Sequencer\+Set\+Active}
+\begin{DoxyCompactList}\small\item\em An integer property. Return the index of the active set of the running sequencer included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a4fb027191f957cc9e3884ba176e52562}{chunk\+Scan3d\+Distance\+Unit}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Distance Unit of the payload image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a1b968c0335e50b8852709bc5d5cbcd93}{chunk\+Scan3d\+Output\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Calibrated Mode of the payload image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a2200e547f083391291827a35957d4b8d}{chunk\+Scan3d\+Coordinate\+System}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Coordinate System of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a15827600dc5405f7893efdcf8dfa0569}{chunk\+Scan3d\+Coordinate\+System\+Reference}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Returns the Coordinate System Position of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_abcd836abcc68145bec18c5b45e189324}{chunk\+Scan3d\+Coordinate\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which Coordinate to retrieve data from. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a652394e0ffd066f97020683b5640c399}{chunk\+Scan3d\+Coordinate\+Scale}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the Scale for the selected coordinate axis of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a18a1e19081d8b40f6f297abf6b68fc5c}{chunk\+Scan3d\+Coordinate\+Offset}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the Offset for the selected coordinate axis of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a60ad92001a22ff71b3e9241272d650d3}{chunk\+Scan3d\+Invalid\+Data\+Flag}
+\begin{DoxyCompactList}\small\item\em A boolean property. Returns if a specific non-\/valid data flag is used in the data stream. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a7006c4bc9dee316064885ebe3f6c0ae7}{chunk\+Scan3d\+Invalid\+Data\+Value}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the Invalid Data Value used for the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ab3e60dd32a90d506e0ae169d38f0215a}{chunk\+Scan3d\+Axis\+Min}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5307f0f9c4b623fb7315af85f9f1624c}{chunk\+Scan3d\+Axis\+Max}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a8ab0a44c2daae75c839b3974a1c1cb6b}{chunk\+Scan3d\+Coordinate\+Transform\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selector for transform values. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a2236122637d64d832aa5ebfaef7c0f29}{chunk\+Scan3d\+Transform\+Value}
+\begin{DoxyCompactList}\small\item\em A floating point property. Returns the transform value. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa1f8d5ac6f3f254800f33d0b57bddd18}{chunk\+Scan3d\+Coordinate\+Reference\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selector to read a coordinate system reference value defining the transform of a point from one system to the other. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa45a547729c3dac4c8b8b0348c1c1bdd}{chunk\+Scan3d\+Coordinate\+Reference\+Value}
+\begin{DoxyCompactList}\small\item\em A floating point property. Reads the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a78076131ba88ad24c78eb473d10ae3f6}{mv\+Chunk\+J\+P\+E\+G}
+\begin{DoxyCompactList}\small\item\em A string property. Allows to access a J\+P\+E\+G image transmitted as part of the chunk data. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a504add88bb062ed69bf85424113cb2a7}{chunkmv\+Custom\+Identifier}
+\begin{DoxyCompactList}\small\item\em An integer property. Contains a custom identifier previously specified by the user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category that contains the Chunk Data control features. 
+
+A category that contains the Chunk Data control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!Chunk\+Data\+Control@{Chunk\+Data\+Control}}
+\index{Chunk\+Data\+Control@{Chunk\+Data\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{Chunk\+Data\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::\+Chunk\+Data\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa4dbe6191aa44650f68e0a5c6bb3926c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6d6b7d5f4bb92ae9f7d780d262ecd016}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Black\+Level@{chunk\+Black\+Level}}
+\index{chunk\+Black\+Level@{chunk\+Black\+Level}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Black\+Level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Black\+Level}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6d6b7d5f4bb92ae9f7d780d262ecd016}
+
+
+A floating point property. Returns the black level used to capture the image included in the payload. 
+
+Returns the black level used to capture the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a63720c40901053497a17d6e30e95070a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Black\+Level\+Selector@{chunk\+Black\+Level\+Selector}}
+\index{chunk\+Black\+Level\+Selector@{chunk\+Black\+Level\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Black\+Level\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Black\+Level\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a63720c40901053497a17d6e30e95070a}
+
+
+An enumerated integer property. Selects which Black Level to return. 
+
+Selects which Black Level to return. Possible values are\+:
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries All} (Display string\+: 'All')\+: Black Level will be applied to all channels or taps.
+\item {\bfseries Red} (Display string\+: 'Red')\+: Black Level will be applied to the red channel.
+\item {\bfseries Green} (Display string\+: 'Green')\+: Black Level will be applied to the green channel.
+\item {\bfseries Blue} (Display string\+: 'Blue')\+: Black Level will be applied to the blue channel.
+\item {\bfseries Y} (Display string\+: 'Y')\+: Black Level will be applied to Y channel.
+\item {\bfseries U} (Display string\+: 'U')\+: Black Level will be applied to U channel.
+\item {\bfseries V} (Display string\+: 'V')\+: Black Level will be applied to V channel.
+\item {\bfseries Tap1} (Display string\+: 'Tap 1')\+: Black Level will be applied to Tap 1.
+\item {\bfseries Tap2} (Display string\+: 'Tap 2')\+: Black Level will be applied to Tap 2.
+\item {\bfseries Tap\#3\#} (Display string\+: 'Tap \#3\#')\+: Black Level will be applied to Tap \#3\#.
+\item {\bfseries Tap3} (Display string\+: 'Tap 3')\+: Black Level will be applied to Tap 3.
+\item {\bfseries Tap4} (Display string\+: 'Tap 4')\+: Black Level will be applied to Tap 4.
+\item {\bfseries Tap5} (Display string\+: 'Tap 5')\+: Black Level will be applied to Tap 5.
+\item {\bfseries Tap6} (Display string\+: 'Tap 6')\+: Black Level will be applied to Tap 6.
+\item {\bfseries Tap7} (Display string\+: 'Tap 7')\+: Black Level will be applied to Tap 7.
+\item {\bfseries Tap8} (Display string\+: 'Tap 8')\+: Black Level will be applied to Tap 8.
+\item {\bfseries Tap9} (Display string\+: 'Tap 9')\+: Black Level will be applied to Tap 9.
+\item {\bfseries Tap10} (Display string\+: 'Tap 10')\+: Black Level will be applied to Tap 10.
+\item {\bfseries Tap11} (Display string\+: 'Tap 11')\+: Black Level will be applied to Tap 11.
+\item {\bfseries Tap12} (Display string\+: 'Tap 12')\+: Black Level will be applied to Tap 12.
+\item {\bfseries Tap13} (Display string\+: 'Tap 13')\+: Black Level will be applied to Tap 13.
+\item {\bfseries Tap14} (Display string\+: 'Tap 14')\+: Black Level will be applied to Tap 14.
+\item {\bfseries Tap15} (Display string\+: 'Tap 15')\+: Black Level will be applied to Tap 15.
+\item {\bfseries Tap16} (Display string\+: 'Chunk Black Level Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a303eb2c02211269edcdc7c1899270c73}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Component\+I\+D@{chunk\+Component\+I\+D}}
+\index{chunk\+Component\+I\+D@{chunk\+Component\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Component\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Component\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a303eb2c02211269edcdc7c1899270c73}
+
+
+An enumerated integer property. Returns the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} Identifier of the selected \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} image. 
+
+Returns the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} Identifier of the selected \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} image. This can be used to identify the image component type of a multi-\/component buffer.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Intensity} (Display string\+: 'Intensity')\+: The image data is the intensity component (visible).
+\item {\bfseries Infrared} (Display string\+: 'Infrared')\+: The image data is the infrared component.
+\item {\bfseries Ultraviolet} (Display string\+: 'Ultraviolet')\+: The image data is the ultraviolet component.
+\item {\bfseries Range} (Display string\+: 'Range')\+: The image data is the range component (distance or depth).
+\item {\bfseries Reflectance} (Display string\+: 'Reflectance')\+: The image data is the reflected intensity component (acquired with the Range).
+\item {\bfseries Disparity} (Display string\+: 'Disparity')\+: The image data is the disparity component.
+\item {\bfseries Confidence} (Display string\+: 'Confidence')\+: The image data is the confidence map component.
+\item {\bfseries Scatter} (Display string\+: 'Scatter')\+: The image data is the scatter component.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9ff4b23f4b20e7aa48c31fa742a7b8fb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Component\+I\+D\+Value@{chunk\+Component\+I\+D\+Value}}
+\index{chunk\+Component\+I\+D\+Value@{chunk\+Component\+I\+D\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Component\+I\+D\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Component\+I\+D\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9ff4b23f4b20e7aa48c31fa742a7b8fb}
+
+
+An integer property. Returns a unique Identifier value that correspond to the selected chunk \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component}. 
+
+Returns a unique Identifier value that correspond to the selected chunk \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5f1f17a1606e9ea9a5c660886422d5b7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Component\+Selector@{chunk\+Component\+Selector}}
+\index{chunk\+Component\+Selector@{chunk\+Component\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Component\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Component\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5f1f17a1606e9ea9a5c660886422d5b7}
+
+
+An enumerated integer property. Selects the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} from which to retreive data from. 
+
+Selects the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} from which to retreive data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Intensity} (Display string\+: 'Intensity')\+: The image data is the intensity component (visible).
+\item {\bfseries Infrared} (Display string\+: 'Infrared')\+: The image data is the infrared component.
+\item {\bfseries Ultraviolet} (Display string\+: 'Ultraviolet')\+: The image data is the ultraviolet component.
+\item {\bfseries Range} (Display string\+: 'Range')\+: The image data is the range component (distance or depth).
+\item {\bfseries Reflectance} (Display string\+: 'Reflectance')\+: The image data is the reflected intensity component (acquired with the Range).
+\item {\bfseries Disparity} (Display string\+: 'Disparity')\+: The image data is the disparity component.
+\item {\bfseries Confidence} (Display string\+: 'Confidence')\+: The image data is the confidence map component.
+\item {\bfseries Scatter} (Display string\+: 'Scatter')\+: The image data is the scatter component.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ac43d711538b1fb622260f8dc3c1cc4af}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Counter\+Selector@{chunk\+Counter\+Selector}}
+\index{chunk\+Counter\+Selector@{chunk\+Counter\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Counter\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Counter\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ac43d711538b1fb622260f8dc3c1cc4af}
+
+
+An enumerated integer property. Selects which counter to retrieve data from. 
+
+Selects which counter to retrieve data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Counter0} (Display string\+: 'Counter 0')\+: Selects the counter 0.
+\item {\bfseries Counter1} (Display string\+: 'Counter 1')\+: Selects the counter 1.
+\item {\bfseries Counter2} (Display string\+: 'Counter 2')\+: Selects the counter 2.
+\item {\bfseries Counter\#3\#} (Display string\+: 'Counter \#3\#')\+: Selects the counter \#3\#.
+\item {\bfseries Counter3} (Display string\+: 'Counter 3')\+: Selects the counter 3.
+\item {\bfseries Counter4} (Display string\+: 'Counter 4')\+: Selects the counter 4.
+\item {\bfseries Counter5} (Display string\+: 'Counter 5')\+: Selects the counter 5.
+\item {\bfseries Counter6} (Display string\+: 'Counter 6')\+: Selects the counter 6.
+\item {\bfseries Counter7} (Display string\+: 'Counter 7')\+: Selects the counter 7.
+\item {\bfseries Counter8} (Display string\+: 'Counter 8')\+: Selects the counter 8.
+\item {\bfseries Counter9} (Display string\+: 'Counter 9')\+: Selects the counter 9.
+\item {\bfseries Counter10} (Display string\+: 'Counter 10')\+: Selects the counter 10.
+\item {\bfseries Counter11} (Display string\+: 'Counter 11')\+: Selects the counter 11.
+\item {\bfseries Counter12} (Display string\+: 'Counter 12')\+: Selects the counter 12.
+\item {\bfseries Counter13} (Display string\+: 'Counter 13')\+: Selects the counter 13.
+\item {\bfseries Counter14} (Display string\+: 'Counter 14')\+: Selects the counter 14.
+\item {\bfseries Counter15} (Display string\+: 'Counter 15')\+: Selects the counter 15.
+\item {\bfseries Counter16} (Display string\+: 'Chunk Counter Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a21793d389f9c7b12053027e6cef91520}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Counter\+Value@{chunk\+Counter\+Value}}
+\index{chunk\+Counter\+Value@{chunk\+Counter\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Counter\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Counter\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a21793d389f9c7b12053027e6cef91520}
+
+
+An integer property. Returns the value of the selected Chunk counter at the time of the Frame\+Start event. 
+
+Returns the value of the selected Chunk counter at the time of the Frame\+Start event. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ae4448c564c23ae14648a81c74fdd2f6f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Enable@{chunk\+Enable}}
+\index{chunk\+Enable@{chunk\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ae4448c564c23ae14648a81c74fdd2f6f}
+
+
+A boolean property. Enables the inclusion of the selected Chunk data in the payload of the image. 
+
+Enables the inclusion of the selected Chunk data in the payload of the image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a147570f20aaa1f8afa4b6da7d18a7b35}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Encoder\+Selector@{chunk\+Encoder\+Selector}}
+\index{chunk\+Encoder\+Selector@{chunk\+Encoder\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Encoder\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Encoder\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a147570f20aaa1f8afa4b6da7d18a7b35}
+
+
+An enumerated integer property. Selects which Encoder to retrieve data from. 
+
+Selects which Encoder to retrieve data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Selects the first Encoder.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Selects the first Encoder.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Selects the second Encoder.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Selects the second Encoder.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a1e3efd94e47ad8ea76c4ad05a91fc208}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Encoder\+Status@{chunk\+Encoder\+Status}}
+\index{chunk\+Encoder\+Status@{chunk\+Encoder\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Encoder\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Encoder\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a1e3efd94e47ad8ea76c4ad05a91fc208}
+
+
+An enumerated integer property. Returns the motion status of the selected encoder. 
+
+Returns the motion status of the selected encoder.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Encoder\+Up} (Display string\+: 'Encoder Up')\+: The encoder counter last incremented.
+\item {\bfseries Encoder\+Down} (Display string\+: 'Encoder Down')\+: The encoder counter last decremented.
+\item {\bfseries Encoder\+Idle} (Display string\+: 'Encoder Idle')\+: The encoder is not active.
+\item {\bfseries Encoder\+Static} (Display string\+: 'Encoder Static')\+: No motion within the Encoder\+Timeout time.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9483a862178c537ba676b62bd51a5711}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Encoder\+Value@{chunk\+Encoder\+Value}}
+\index{chunk\+Encoder\+Value@{chunk\+Encoder\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Encoder\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Encoder\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9483a862178c537ba676b62bd51a5711}
+
+
+An integer property. Returns the counter's value of the selected Encoder at the time of the Frame\+Start in area scan mode or the counter's value at the time of the Line\+Start selected by Chunk\+Scan\+Line\+Selector in Linescan mode. 
+
+Returns the counter's value of the selected Encoder at the time of the Frame\+Start in area scan mode or the counter's value at the time of the Line\+Start selected by Chunk\+Scan\+Line\+Selector in Linescan mode. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a111bfcd0b354e55b9a54ffbb1a9d5299}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Exposure\+Time@{chunk\+Exposure\+Time}}
+\index{chunk\+Exposure\+Time@{chunk\+Exposure\+Time}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Exposure\+Time}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Exposure\+Time}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a111bfcd0b354e55b9a54ffbb1a9d5299}
+
+
+A floating point property. Returns the exposure time used to capture the image. 
+
+Returns the exposure time used to capture the image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a54579ccb17b4adfac634b977c5a97341}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Exposure\+Time\+Selector@{chunk\+Exposure\+Time\+Selector}}
+\index{chunk\+Exposure\+Time\+Selector@{chunk\+Exposure\+Time\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Exposure\+Time\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Exposure\+Time\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a54579ccb17b4adfac634b977c5a97341}
+
+
+An enumerated integer property. Selects which exposure time is read by the Chunk\+Exposure\+Time feature. 
+
+Selects which exposure time is read by the Chunk\+Exposure\+Time feature.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Common} (Display string\+: 'Common')\+: Selects the common Exposure\+Time.
+\item {\bfseries Red} (Display string\+: 'Red')\+: Selects the red common Exposure\+Time.
+\item {\bfseries Green} (Display string\+: 'Green')\+: Selects the green Exposure\+Time.
+\item {\bfseries Blue} (Display string\+: 'Blue')\+: Selects the blue Exposure\+Time.
+\item {\bfseries Cyan} (Display string\+: 'Cyan')\+: Selects the cyan common Exposure\+Time..
+\item {\bfseries Magenta} (Display string\+: 'Magenta')\+: Selects the magenta Exposure\+Time..
+\item {\bfseries Yellow} (Display string\+: 'Yellow')\+: Selects the yellow Exposure\+Time..
+\item {\bfseries Infrared} (Display string\+: 'Infrared')\+: Selects the infrared Exposure\+Time.
+\item {\bfseries Ultraviolet} (Display string\+: 'Ultraviolet')\+: Selects the ultraviolet Exposure\+Time.
+\item {\bfseries Stage1} (Display string\+: 'Stage 1')\+: Selects the first stage Exposure\+Time.
+\item {\bfseries Stage2} (Display string\+: 'Stage 2')\+: Selects the second stage Exposure\+Time.
+\item {\bfseries Stage\#3\#} (Display string\+: 'Stage \#3\#')\+: Selects the second stage Exposure\+Time.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5d3849e86e7ae821d2a3ca73d6b472fc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Frame\+I\+D@{chunk\+Frame\+I\+D}}
+\index{chunk\+Frame\+I\+D@{chunk\+Frame\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Frame\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Frame\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5d3849e86e7ae821d2a3ca73d6b472fc}
+
+
+An integer property. Returns the unique Identifier of the frame (or image) included in the payload. 
+
+Returns the unique Identifier of the frame (or image) included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ab8a83e2478ddaae9fc8b59d86cbe75a5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Gain@{chunk\+Gain}}
+\index{chunk\+Gain@{chunk\+Gain}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Gain}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Gain}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ab8a83e2478ddaae9fc8b59d86cbe75a5}
+
+
+A floating point property. Returns the gain used to capture the image. 
+
+Returns the gain used to capture the image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9d9f20487202b9100f118509754ecde4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Gain\+Selector@{chunk\+Gain\+Selector}}
+\index{chunk\+Gain\+Selector@{chunk\+Gain\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Gain\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Gain\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9d9f20487202b9100f118509754ecde4}
+
+
+An enumerated integer property. Selects which Gain to return. 
+
+Selects which Gain to return.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries All} (Display string\+: 'All')\+: Gain will be applied to all channels or taps.
+\item {\bfseries Red} (Display string\+: 'Red')\+: Gain will be applied to the red channel.
+\item {\bfseries Green} (Display string\+: 'Green')\+: Gain will be applied to the green channel.
+\item {\bfseries Blue} (Display string\+: 'Blue')\+: Gain will be applied to the blue channel.
+\item {\bfseries Y} (Display string\+: 'Y')\+: Gain will be applied to Y channel.
+\item {\bfseries U} (Display string\+: 'U')\+: Gain will be applied to U channel.
+\item {\bfseries V} (Display string\+: 'V')\+: Gain will be applied to V channel.
+\item {\bfseries Tap1} (Display string\+: 'Tap 1')\+: Gain will be applied to Tap 1.
+\item {\bfseries Tap2} (Display string\+: 'Tap 2')\+: Gain will be applied to Tap 2.
+\item {\bfseries Tap\#3\#} (Display string\+: 'Tap \#3\#')\+: Gain will be applied to Tap \#3\#.
+\item {\bfseries Analog\+All} (Display string\+: 'Analog All')\+: Gain will be applied to all analog channels or taps.
+\item {\bfseries Analog\+Red} (Display string\+: 'Analog Red')\+: Gain will be applied to the red analog channel.
+\item {\bfseries Analog\+Green} (Display string\+: 'Analog Green')\+: Gain will be applied to the green analog channel.
+\item {\bfseries Analog\+Blue} (Display string\+: 'Analog Blue')\+: Gain will be applied to the blue analog channel.
+\item {\bfseries Analog\+Y} (Display string\+: 'Analog Y')\+: Gain will be applied to Y analog channel.
+\item {\bfseries Analog\+U} (Display string\+: 'Analog U')\+: Gain will be applied to U analog channel.
+\item {\bfseries Analog\+V} (Display string\+: 'Analog V')\+: Gain will be applied to V analog channel.
+\item {\bfseries Analog\+Tap1} (Display string\+: 'Analog Tap 1')\+: Analog gain will be applied to Tap 1.
+\item {\bfseries Analog\+Tap2} (Display string\+: 'Analog Tap 2')\+: Analog gain will be applied to Tap 2.
+\item {\bfseries Analog\+Tap\#3\#} (Display string\+: 'Analog Tap \#3\#')\+: Analog gain will be applied to Tap \#3\#.
+\item {\bfseries Digital\+All} (Display string\+: 'Digital All')\+: Gain will be applied to all digital channels or taps.
+\item {\bfseries Digital\+Red} (Display string\+: 'Digital Red')\+: Gain will be applied to the red digital channel.
+\item {\bfseries Digital\+Green} (Display string\+: 'Digital Green')\+: Gain will be applied to the green digital channel.
+\item {\bfseries Digital\+Blue} (Display string\+: 'Digital Blue')\+: Gain will be applied to the blue digital channel.
+\item {\bfseries Digital\+Y} (Display string\+: 'Digital Y')\+: Gain will be applied to Y digital channel.
+\item {\bfseries Digital\+U} (Display string\+: 'Digital U')\+: Gain will be applied to U digital channel.
+\item {\bfseries Digital\+V} (Display string\+: 'Digital V')\+: Gain will be applied to V digital channel.
+\item {\bfseries Digital\+Tap1} (Display string\+: 'Digital Tap 1')\+: Digital gain will be applied to Tap 1.
+\item {\bfseries Digital\+Tap2} (Display string\+: 'Digital Tap 2')\+: Digital gain will be applied to Tap 2.
+\item {\bfseries Digital\+Tap\#3\#} (Display string\+: 'Digital Tap \#3\#')\+: Digital gain will be applied to Tap \#3\#.
+\item {\bfseries Tap3} (Display string\+: 'Tap 3')\+: Gain will be applied to Tap 3.
+\item {\bfseries Tap4} (Display string\+: 'Tap 4')\+: Gain will be applied to Tap 4.
+\item {\bfseries Tap5} (Display string\+: 'Tap 5')\+: Gain will be applied to Tap 5.
+\item {\bfseries Tap6} (Display string\+: 'Tap 6')\+: Gain will be applied to Tap 6.
+\item {\bfseries Tap7} (Display string\+: 'Tap 7')\+: Gain will be applied to Tap 7.
+\item {\bfseries Tap8} (Display string\+: 'Tap 8')\+: Gain will be applied to Tap 8.
+\item {\bfseries Tap9} (Display string\+: 'Tap 9')\+: Gain will be applied to Tap 9.
+\item {\bfseries Tap10} (Display string\+: 'Tap 10')\+: Gain will be applied to Tap 10.
+\item {\bfseries Tap11} (Display string\+: 'Tap 11')\+: Gain will be applied to Tap 11.
+\item {\bfseries Tap12} (Display string\+: 'Tap 12')\+: Gain will be applied to Tap 12.
+\item {\bfseries Tap13} (Display string\+: 'Tap 13')\+: Gain will be applied to Tap 13.
+\item {\bfseries Tap14} (Display string\+: 'Tap 14')\+: Gain will be applied to Tap 14.
+\item {\bfseries Tap15} (Display string\+: 'Tap 15')\+: Gain will be applied to Tap 15.
+\item {\bfseries Tap16} (Display string\+: 'Chunk Gain Selector')
+\item {\bfseries Analog\+Tap3} (Display string\+: 'Analog Tap 3')\+: Analog gain will be applied to Tap 3.
+\item {\bfseries Analog\+Tap4} (Display string\+: 'Analog Tap 4')\+: Analog gain will be applied to Tap 4.
+\item {\bfseries Analog\+Tap5} (Display string\+: 'Analog Tap 5')\+: Analog gain will be applied to Tap 5.
+\item {\bfseries Analog\+Tap6} (Display string\+: 'Analog Tap 6')\+: Analog gain will be applied to Tap 6.
+\item {\bfseries Analog\+Tap7} (Display string\+: 'Analog Tap 7')\+: Analog gain will be applied to Tap 7.
+\item {\bfseries Analog\+Tap8} (Display string\+: 'Analog Tap 8')\+: Analog gain will be applied to Tap 8.
+\item {\bfseries Analog\+Tap9} (Display string\+: 'Analog Tap 9')\+: Analog gain will be applied to Tap 9.
+\item {\bfseries Analog\+Tap10} (Display string\+: 'Analog Tap 10')\+: Analog gain will be applied to Tap 10.
+\item {\bfseries Analog\+Tap11} (Display string\+: 'Analog Tap 11')\+: Analog gain will be applied to Tap 11.
+\item {\bfseries Analog\+Tap12} (Display string\+: 'Analog Tap 12')\+: Analog gain will be applied to Tap 12.
+\item {\bfseries Analog\+Tap13} (Display string\+: 'Analog Tap 13')\+: Analog gain will be applied to Tap 13.
+\item {\bfseries Analog\+Tap14} (Display string\+: 'Analog Tap 14')\+: Analog gain will be applied to Tap 14.
+\item {\bfseries Analog\+Tap15} (Display string\+: 'Analog Tap 15')\+: Analog gain will be applied to Tap 15.
+\item {\bfseries Analog\+Tap16} (Display string\+: 'Chunk Gain Selector')
+\item {\bfseries Digital\+Tap3} (Display string\+: 'Digital Tap 3')\+: Digital gain will be applied to Tap 3.
+\item {\bfseries Digital\+Tap4} (Display string\+: 'Digital Tap 4')\+: Digital gain will be applied to Tap 4.
+\item {\bfseries Digital\+Tap5} (Display string\+: 'Digital Tap 5')\+: Digital gain will be applied to Tap 5.
+\item {\bfseries Digital\+Tap6} (Display string\+: 'Digital Tap 6')\+: Digital gain will be applied to Tap 6.
+\item {\bfseries Digital\+Tap7} (Display string\+: 'Digital Tap 7')\+: Digital gain will be applied to Tap 7.
+\item {\bfseries Digital\+Tap8} (Display string\+: 'Digital Tap 8')\+: Digital gain will be applied to Tap 8.
+\item {\bfseries Digital\+Tap9} (Display string\+: 'Digital Tap 9')\+: Digital gain will be applied to Tap 9.
+\item {\bfseries Digital\+Tap10} (Display string\+: 'Digital Tap 10')\+: Digital gain will be applied to Tap 10.
+\item {\bfseries Digital\+Tap11} (Display string\+: 'Digital Tap 11')\+: Digital gain will be applied to Tap 11.
+\item {\bfseries Digital\+Tap12} (Display string\+: 'Digital Tap 12')\+: Digital gain will be applied to Tap 12.
+\item {\bfseries Digital\+Tap13} (Display string\+: 'Digital Tap 13')\+: Digital gain will be applied to Tap 13.
+\item {\bfseries Digital\+Tap14} (Display string\+: 'Digital Tap 14')\+: Digital gain will be applied to Tap 14.
+\item {\bfseries Digital\+Tap15} (Display string\+: 'Digital Tap 15')\+: Digital gain will be applied to Tap 15.
+\item {\bfseries Digital\+Tap16} (Display string\+: 'Chunk Gain Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a333f4b2dfbc993bfbd6dbfc6049ca36e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Height@{chunk\+Height}}
+\index{chunk\+Height@{chunk\+Height}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Height}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Height}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a333f4b2dfbc993bfbd6dbfc6049ca36e}
+
+
+An integer property. Returns the Height of the image included in the payload. 
+
+Returns the Height of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ac35c9adb7b18011c9dcae2b2e07fd728}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Image@{chunk\+Image}}
+\index{chunk\+Image@{chunk\+Image}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Image}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Image}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ac35c9adb7b18011c9dcae2b2e07fd728}
+
+
+A string property. Returns the entire image data included in the payload. 
+
+Returns the entire image data included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a0abd13d321577a5794abad963840cc6c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Image\+Component@{chunk\+Image\+Component}}
+\index{chunk\+Image\+Component@{chunk\+Image\+Component}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Image\+Component}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Image\+Component}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a0abd13d321577a5794abad963840cc6c}
+
+
+An enumerated integer property. This feature is deprecated (See Chunk\+Component\+I\+D). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000055}{弃用}]This feature is deprecated (See Chunk\+Component\+I\+D). It was representing the \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} of the payload image.\end{DoxyRefDesc}
+
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Intensity} (Display string\+: 'Intensity')\+: Intensity
+\item {\bfseries Infrared} (Display string\+: 'Infrared')\+: Infrared
+\item {\bfseries Ultraviolet} (Display string\+: 'Ultraviolet')\+: Ultraviolet
+\item {\bfseries Range} (Display string\+: 'Range')\+: Range
+\item {\bfseries Reflectance} (Display string\+: 'Reflectance')\+: Reflectance
+\item {\bfseries Disparity} (Display string\+: 'Disparity')\+: Disparity
+\item {\bfseries Confidence} (Display string\+: 'Confidence')\+: Confidence
+\item {\bfseries Scatter} (Display string\+: 'Scatter')\+: Scatter
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a058ff2d5680ac5df29d70b5c78542974}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Line\+Pitch@{chunk\+Line\+Pitch}}
+\index{chunk\+Line\+Pitch@{chunk\+Line\+Pitch}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Line\+Pitch}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Line\+Pitch}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a058ff2d5680ac5df29d70b5c78542974}
+
+
+An integer property. Returns the Line\+Pitch of the image included in the payload. 
+
+Returns the Line\+Pitch of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aefb276829f054332349de8fa7eb5125f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Line\+Status\+All@{chunk\+Line\+Status\+All}}
+\index{chunk\+Line\+Status\+All@{chunk\+Line\+Status\+All}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Line\+Status\+All}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Line\+Status\+All}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aefb276829f054332349de8fa7eb5125f}
+
+
+An integer property. Returns the status of all the I/\+O lines at the time of the Frame\+Start internal event. 
+
+Returns the status of all the I/\+O lines at the time of the Frame\+Start internal event. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aae91a9b1196e832dccef5e078a75c2ee}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Mode\+Active@{chunk\+Mode\+Active}}
+\index{chunk\+Mode\+Active@{chunk\+Mode\+Active}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Mode\+Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Mode\+Active}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aae91a9b1196e832dccef5e078a75c2ee}
+
+
+A boolean property. Activates the inclusion of Chunk data in the payload of the image. 
+
+Activates the inclusion of Chunk data in the payload of the image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a504add88bb062ed69bf85424113cb2a7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunkmv\+Custom\+Identifier@{chunkmv\+Custom\+Identifier}}
+\index{chunkmv\+Custom\+Identifier@{chunkmv\+Custom\+Identifier}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunkmv\+Custom\+Identifier}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunkmv\+Custom\+Identifier}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a504add88bb062ed69bf85424113cb2a7}
+
+
+An integer property. Contains a custom identifier previously specified by the user. 
+
+Contains a custom identifier previously specified by the user. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_acc2f89fbe1e30303592aa20d17323814}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Offset\+X@{chunk\+Offset\+X}}
+\index{chunk\+Offset\+X@{chunk\+Offset\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Offset\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_acc2f89fbe1e30303592aa20d17323814}
+
+
+An integer property. Returns the Offset\+X of the image included in the payload. 
+
+Returns the Offset\+X of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a02440e61ff51103cfbc224a31cee7898}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Offset\+Y@{chunk\+Offset\+Y}}
+\index{chunk\+Offset\+Y@{chunk\+Offset\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Offset\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a02440e61ff51103cfbc224a31cee7898}
+
+
+An integer property. Returns the Offset\+Y of the image included in the payload. 
+
+Returns the Offset\+Y of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_af192e7c6c38acc638f7bdfc18bb7f96e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Part\+Selector@{chunk\+Part\+Selector}}
+\index{chunk\+Part\+Selector@{chunk\+Part\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Part\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Part\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_af192e7c6c38acc638f7bdfc18bb7f96e}
+
+
+An integer property. This feature is deprecated (See Chunk\+Component\+Selector). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000056}{弃用}]This feature is deprecated (See Chunk\+Component\+Selector). It was selecting the individual parts of a multi-\/component/multi-\/part buffer to access. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a64e63b9d3a7ec7e2a8011df6e4893f48}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Pixel\+Dynamic\+Range\+Max@{chunk\+Pixel\+Dynamic\+Range\+Max}}
+\index{chunk\+Pixel\+Dynamic\+Range\+Max@{chunk\+Pixel\+Dynamic\+Range\+Max}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Pixel\+Dynamic\+Range\+Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Pixel\+Dynamic\+Range\+Max}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a64e63b9d3a7ec7e2a8011df6e4893f48}
+
+
+An integer property. Returns the maximum value of dynamic range of the image included in the payload. 
+
+Returns the maximum value of dynamic range of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5a9b1a979bd09b5a47ad56f5b178cb38}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Pixel\+Dynamic\+Range\+Min@{chunk\+Pixel\+Dynamic\+Range\+Min}}
+\index{chunk\+Pixel\+Dynamic\+Range\+Min@{chunk\+Pixel\+Dynamic\+Range\+Min}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Pixel\+Dynamic\+Range\+Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Pixel\+Dynamic\+Range\+Min}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5a9b1a979bd09b5a47ad56f5b178cb38}
+
+
+An integer property. Returns the minimum value of dynamic range of the image included in the payload. 
+
+Returns the minimum value of dynamic range of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9ece8017c9040ec2ffc9b180bd3c1abb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Pixel\+Format@{chunk\+Pixel\+Format}}
+\index{chunk\+Pixel\+Format@{chunk\+Pixel\+Format}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Pixel\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Pixel\+Format}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a9ece8017c9040ec2ffc9b180bd3c1abb}
+
+
+An enumerated integer property. Returns the Pixel\+Format of the image included in the payload. 
+
+Returns the Pixel\+Format of the image included in the payload.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Mono1p} (Display string\+: 'Mono1p')\+: Mono 1 bit packed.
+\item {\bfseries Mono2p} (Display string\+: 'Mono2p')\+: Mono 2 bit packed.
+\item {\bfseries Mono4p} (Display string\+: 'Mono4p')\+: Mono 4 bit packed.
+\item {\bfseries Mono8} (Display string\+: 'Mono8')\+: Mono 8 bit packed.
+\item {\bfseries Mono8s} (Display string\+: 'Mono8s')\+: Mono 1 bit signed.
+\item {\bfseries Mono10} (Display string\+: 'Mono10')\+: Mono 10 bit.
+\item {\bfseries Mono10p} (Display string\+: 'Mono10p')\+: Mono 10 bit packed.
+\item {\bfseries Mono12} (Display string\+: 'Mono12')\+: Mono 12 bit.
+\item {\bfseries Mono12p} (Display string\+: 'Mono12p')\+: Mono 12 bit packed.
+\item {\bfseries Mono14} (Display string\+: 'Mono14')\+: Mono 14 bit.
+\item {\bfseries Mono16} (Display string\+: 'Mono16')\+: Mono 16 bit.
+\item {\bfseries R8} (Display string\+: 'R8')\+: Red 8 bit.
+\item {\bfseries G8} (Display string\+: 'G8')\+: Green 8 bit.
+\item {\bfseries B8} (Display string\+: 'B8')\+: Blue 8 bit.
+\item {\bfseries R\+G\+B8} (Display string\+: 'R\+G\+B8')\+: Red, Green, Blue 8 bit
+\item {\bfseries R\+G\+B8\+\_\+\+Planar} (Display string\+: 'R\+G\+B8\+\_\+\+Planar')\+: Red, Green, Blue 8 bit planar.
+\item {\bfseries R\+G\+Ba8} (Display string\+: 'R\+G\+Ba8')\+: Red, Green, Blue 8 bit aligned on 8 bit
+\item {\bfseries R\+G\+B10} (Display string\+: 'R\+G\+B10')\+: Red, Green, Blue 10 bit.
+\item {\bfseries R\+G\+B10\+\_\+\+Planar} (Display string\+: 'R\+G\+B10\+\_\+\+Planar')\+: Red, Green, Blue 10 bit planar.
+\item {\bfseries R\+G\+B10p32} (Display string\+: 'R\+G\+B10p32')\+: Red, Green, Blue 10 bit packed in 32 bit pixel.
+\item {\bfseries R\+G\+B12} (Display string\+: 'R\+G\+B12')\+: Red, Green, Blue 12 bit.
+\item {\bfseries R\+G\+B12\+\_\+\+Planar} (Display string\+: 'R\+G\+B12\+\_\+\+Planar')\+: Red, Green, Blue 12 bit planar.
+\item {\bfseries R\+G\+B16} (Display string\+: 'R\+G\+B16')\+: Red, Green, Blue 16 bit.
+\item {\bfseries R\+G\+B16\+\_\+\+Planar} (Display string\+: 'R\+G\+B16\+\_\+\+Planar')\+: Red, Green, Blue 16 bit planar.
+\item {\bfseries R\+G\+B565p} (Display string\+: 'R\+G\+B565p')\+: Red, Green, Blue 16 bit packet in 5, 6, 5 bits.
+\item {\bfseries B\+G\+R10} (Display string\+: 'B\+G\+R10')\+: Blue, Green, Red, 10 bit.
+\item {\bfseries B\+G\+R12} (Display string\+: 'B\+G\+R12')\+: Blue, Green, Red, 12 bit.
+\item {\bfseries B\+G\+R16} (Display string\+: 'B\+G\+R16')\+: Blue, Green, Red, 16 bit.
+\item {\bfseries B\+G\+R565p} (Display string\+: 'B\+G\+R565p')\+: Blue, Green, Red, 16 bit packet in 5, 6, 5 bits.
+\item {\bfseries B\+G\+R8} (Display string\+: 'B\+G\+R8')\+: Blue, Green, Red, 8 bit.
+\item {\bfseries B\+G\+Ra8} (Display string\+: 'B\+G\+Ra8')\+: Blue, Green, Red, Alpha 8 bit.
+\item {\bfseries Y\+U\+V422\+\_\+8} (Display string\+: 'Y\+U\+V422\+\_\+8')\+: Y\+U\+V 422 8 bit.
+\item {\bfseries Y\+Cb\+Cr411\+\_\+8} (Display string\+: 'Y\+Cb\+Cr411\+\_\+8')\+: Y\+Cr\+Cb 411 8 bit.
+\item {\bfseries Y\+Cb\+Cr422\+\_\+8} (Display string\+: 'Y\+Cb\+Cr422\+\_\+8')\+: Y\+Cr\+Cb 422 8 bit.
+\item {\bfseries Y\+Cb\+Cr601\+\_\+422\+\_\+8} (Display string\+: 'Y\+Cb\+Cr601\+\_\+422\+\_\+8')\+: Y\+Cr\+Cb 601 422 8 bit.
+\item {\bfseries Y\+Cb\+Cr709\+\_\+422\+\_\+8} (Display string\+: 'Y\+Cb\+Cr709\+\_\+422\+\_\+8')\+: Y\+Cr\+Cb 709 422 8 bit.
+\item {\bfseries Y\+Cb\+Cr8} (Display string\+: 'Y\+Cb\+Cr8')\+: Y\+Cb\+Cr 8 bit.
+\item {\bfseries Bayer\+B\+G8} (Display string\+: 'Bayer\+B\+G8')\+: Bayer Blue Green 8 bit.
+\item {\bfseries Bayer\+G\+B8} (Display string\+: 'Bayer\+G\+B8')\+: Bayer Green Blue 8 bit.
+\item {\bfseries Bayer\+G\+R8} (Display string\+: 'Bayer\+G\+R8')\+: Bayer Green Red 8 bit.
+\item {\bfseries Bayer\+R\+G8} (Display string\+: 'Bayer\+R\+G8')\+: Bayer Red Green 8 bit.
+\item {\bfseries Bayer\+B\+G10} (Display string\+: 'Bayer\+B\+G10')\+: Bayer Blue Green 10 bit.
+\item {\bfseries Bayer\+G\+B10} (Display string\+: 'Bayer\+G\+B10')\+: Bayer Green Blue 10 bit.
+\item {\bfseries Bayer\+G\+R10} (Display string\+: 'Bayer\+G\+R10')\+: Bayer Green Red 10 bit.
+\item {\bfseries Bayer\+R\+G10} (Display string\+: 'Bayer\+R\+G10')\+: Bayer Red Green 10 bit.
+\item {\bfseries Bayer\+B\+G12} (Display string\+: 'Bayer\+B\+G12')\+: Bayer Blue Green 12 bit
+\item {\bfseries Bayer\+G\+B12} (Display string\+: 'Bayer\+G\+B12')\+: Bayer Green Blue 12 bit
+\item {\bfseries Bayer\+G\+R12} (Display string\+: 'Bayer\+G\+R12')\+: Bayer Green Red 12 bit.
+\item {\bfseries Bayer\+R\+G12} (Display string\+: 'Bayer\+R\+G12')\+: Bayer Red Green 12 bit.
+\item {\bfseries Bayer\+B\+G16} (Display string\+: 'Bayer\+B\+G16')\+: Bayer Blue Green 16 bit.
+\item {\bfseries Bayer\+G\+B16} (Display string\+: 'Bayer\+G\+B16')\+: Bayer Green Blue 16 bit.
+\item {\bfseries Bayer\+G\+R16} (Display string\+: 'Bayer\+G\+R16')\+: Bayer Green Red 16 bit.
+\item {\bfseries Bayer\+R\+G16} (Display string\+: 'Bayer\+R\+G16')\+: Bayer Red Green 16 bit.
+\item {\bfseries Coord3\+D\+\_\+\+A8} (Display string\+: 'Coord3\+D\+\_\+\+A8')\+: 3\+D coordinate, first component 8 bit.
+\item {\bfseries Coord3\+D\+\_\+\+B8} (Display string\+: 'Coord3\+D\+\_\+\+B8')\+: 3\+D coordinate, second component 8 bit.
+\item {\bfseries Coord3\+D\+\_\+\+C8} (Display string\+: 'Coord3\+D\+\_\+\+C8')\+: 3\+D coordinate, third component 8 bit.
+\item {\bfseries Coord3\+D\+\_\+\+A\+B\+C8} (Display string\+: 'Coord3\+D\+\_\+\+A\+B\+C8')\+: 3\+D coordinates, 3 components 8 bit.
+\item {\bfseries Coord3\+D\+\_\+\+A\+B\+C8\+\_\+\+Planar} (Display string\+: 'Coord3\+D\+\_\+\+A\+B\+C8\+\_\+\+Planar')\+: 3\+D coordinates, 3 components 8 bit planar.
+\item {\bfseries Coord3\+D\+\_\+\+A16} (Display string\+: 'Coord3\+D\+\_\+\+A16')\+: 3\+D coordinate, first component 16 bit.
+\item {\bfseries Coord3\+D\+\_\+\+B16} (Display string\+: 'Coord3\+D\+\_\+\+B16')\+: 3\+D coordinate, second component 16 bit.
+\item {\bfseries Coord3\+D\+\_\+\+C16} (Display string\+: 'Coord3\+D\+\_\+\+C16')\+: 3\+D coordinate, third component 16 bit.
+\item {\bfseries Coord3\+D\+\_\+\+A\+B\+C16} (Display string\+: 'Coord3\+D\+\_\+\+A\+B\+C16')\+: 3\+D coordinates, 3 components 16 bit.
+\item {\bfseries Coord3\+D\+\_\+\+A\+B\+C16\+\_\+\+Planar} (Display string\+: 'Coord3\+D\+\_\+\+A\+B\+C16\+\_\+\+Planar')\+: 3\+D coordinates, 3 components 16 bit planar.
+\item {\bfseries Coord3\+D\+\_\+\+A32f} (Display string\+: 'Coord3\+D\+\_\+\+A32f')\+: 3\+D coordinate, first component 32 bit float.
+\item {\bfseries Coord3\+D\+\_\+\+B32f} (Display string\+: 'Coord3\+D\+\_\+\+B32f')\+: 3\+D coordinate, second component 32 bit float.
+\item {\bfseries Coord3\+D\+\_\+\+C32f} (Display string\+: 'Coord3\+D\+\_\+\+C32f')\+: 3\+D coordinate, third component 32 bit float.
+\item {\bfseries Coord3\+D\+\_\+\+A\+B\+C32f} (Display string\+: 'Coord3\+D\+\_\+\+A\+B\+C32f')\+: 3\+D coordinates, 3 components 32 bit float.
+\item {\bfseries Coord3\+D\+\_\+\+A\+B\+C32f\+\_\+\+Planar} (Display string\+: 'Coord3\+D\+\_\+\+A\+B\+C32f\+\_\+\+Planar')\+: 3\+D coordinates, 3 components 32 bit float planar.
+\item {\bfseries Confidence1} (Display string\+: 'Confidence1')\+: Confidence data 1 bit.
+\item {\bfseries Confidence1p} (Display string\+: 'Confidence1p')\+: Confidence data 1 bit packed.
+\item {\bfseries Confidence8} (Display string\+: 'Confidence8')\+: Confidence data 8 bit.
+\item {\bfseries Confidence16} (Display string\+: 'Confidence16')\+: Confidence data 16 bit.
+\item {\bfseries Confidence32f} (Display string\+: 'Confidence32f')\+: Confidence data 32 bit float.
+\item {\bfseries Raw8} (Display string\+: 'Raw8')\+: Raw 8 bit.
+\item {\bfseries Raw16} (Display string\+: 'Raw16')\+: Raw 16 bit.
+\item {\bfseries Mono12\+Packed} (Display string\+: 'Mono12\+Packed')\+: Mono 12 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+G\+R10\+Packed} (Display string\+: 'Bayer\+G\+R10\+Packed')\+: Bayer G\+R 10 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+R\+G10\+Packed} (Display string\+: 'Bayer\+R\+G10\+Packed')\+: Bayer R\+G 10 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+G\+B10\+Packed} (Display string\+: 'Bayer\+G\+B10\+Packed')\+: Bayer G\+B 10 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+B\+G10\+Packed} (Display string\+: 'Bayer\+B\+G10\+Packed')\+: Bayer B\+G 10 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+G\+R12\+Packed} (Display string\+: 'Bayer\+G\+R12\+Packed')\+: Bayer G\+R 12 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+R\+G12\+Packed} (Display string\+: 'Bayer\+R\+G12\+Packed')\+: Bayer R\+G 12 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+G\+B12\+Packed} (Display string\+: 'Bayer\+G\+B12\+Packed')\+: Bayer G\+B 12 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Bayer\+B\+G12\+Packed} (Display string\+: 'Bayer\+B\+G12\+Packed')\+: Bayer B\+G 12 bit packed (Gig\+E Vision Specific).
+\item {\bfseries R\+G\+B10\+V1\+Packed} (Display string\+: 'R\+G\+B10\+V1\+Packed')\+: R\+G\+B 10 bit packed (Gig\+E Vision Specific).
+\item {\bfseries B\+G\+R10\+V1\+Packed} (Display string\+: 'B\+G\+R10\+V1\+Packed')\+: B\+G\+R 10 bit packed (Gig\+E Vision Specific).
+\item {\bfseries R\+G\+B12\+V1\+Packed} (Display string\+: 'R\+G\+B12\+V1\+Packed')\+: R\+G\+B 12 bit packed (Gig\+E Vision Specific).
+\item {\bfseries Mono8\+Signed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries Mono10\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B8\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries B\+G\+R8\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B\+A8\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries B\+G\+R\+A8\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B10\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries B\+G\+R10\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B12\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries B\+G\+R12\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B16\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B10\+V2\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B565\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries B\+G\+R565\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries Y\+U\+V411\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries Y\+U\+V422\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries Y\+U\+V444\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries Y\+U\+Y\+V\+Packed} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B8\+Planar} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B10\+Planar} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B12\+Planar} (Display string\+: 'Chunk Pixel Format')
+\item {\bfseries R\+G\+B16\+Planar} (Display string\+: 'Chunk Pixel Format')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aca35041bfcc573ab5d91adb8e386bfcb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Region\+I\+D@{chunk\+Region\+I\+D}}
+\index{chunk\+Region\+I\+D@{chunk\+Region\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Region\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Region\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aca35041bfcc573ab5d91adb8e386bfcb}
+
+
+An enumerated integer property. Returns the Identifier of Region that the image comes from. 
+
+Returns the Identifier of Region that the image comes from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Region0} (Display string\+: 'Region 0')\+: Image comes from the Region 0.
+\item {\bfseries Region1} (Display string\+: 'Region 1')\+: Image comes from the Region 1.
+\item {\bfseries Region2} (Display string\+: 'Region 2')\+: Image comes from the Region 2.
+\item {\bfseries Region\#3\#} (Display string\+: 'Region \#3\#')\+: Image comes from the Region \#3\#.
+\item {\bfseries Scan3d\+Extraction0} (Display string\+: 'Scan 3d Extraction 0')\+: Image comes from the Scan3d\+Extraction output Region 0.
+\item {\bfseries Scan3d\+Extraction1} (Display string\+: 'Scan 3d Extraction 1')\+: Image comes from the Scan3d\+Extraction output Region 1.
+\item {\bfseries Scan3d\+Extraction2} (Display string\+: 'Scan 3d Extraction 2')\+: Image comes from the Scan3d\+Extraction output Region 2.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a4bfe87b51e018b8e2b0b869950ffde7c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Region\+I\+D\+Value@{chunk\+Region\+I\+D\+Value}}
+\index{chunk\+Region\+I\+D\+Value@{chunk\+Region\+I\+D\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Region\+I\+D\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Region\+I\+D\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a4bfe87b51e018b8e2b0b869950ffde7c}
+
+
+An integer property. Returns the unique integer Identifier value of the Region that the image comes from. 
+
+Returns the unique integer Identifier value of the Region that the image comes from. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a44981b8369742dda80bf40a15190c93a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Region\+Selector@{chunk\+Region\+Selector}}
+\index{chunk\+Region\+Selector@{chunk\+Region\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Region\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Region\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a44981b8369742dda80bf40a15190c93a}
+
+
+An enumerated integer property. Selects which Region to retrieve data from. 
+
+Selects which Region to retrieve data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Region0} (Display string\+: 'Region 0')\+: Image comes from the Region 0.
+\item {\bfseries Region1} (Display string\+: 'Region 1')\+: Image comes from the Region 1.
+\item {\bfseries Region2} (Display string\+: 'Region 2')\+: Image comes from the Region 2.
+\item {\bfseries Region\#3\#} (Display string\+: 'Region \#3\#')\+: Image comes from the Region \#3\#.
+\item {\bfseries Scan3d\+Extraction0} (Display string\+: 'Scan 3d Extraction 0')\+: Image comes from the Scan3d\+Extraction output Region 0.
+\item {\bfseries Scan3d\+Extraction1} (Display string\+: 'Scan 3d Extraction 1')\+: Image comes from the Scan3d\+Extraction output Region 1.
+\item {\bfseries Scan3d\+Extraction2} (Display string\+: 'Scan 3d Extraction 2')\+: Image comes from the Scan3d\+Extraction output Region 2.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5307f0f9c4b623fb7315af85f9f1624c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Axis\+Max@{chunk\+Scan3d\+Axis\+Max}}
+\index{chunk\+Scan3d\+Axis\+Max@{chunk\+Scan3d\+Axis\+Max}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Axis\+Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Axis\+Max}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5307f0f9c4b623fb7315af85f9f1624c}
+
+
+A floating point property. Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload. 
+
+Returns the Maximum Axis value for the selected coordinate axis of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ab3e60dd32a90d506e0ae169d38f0215a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Axis\+Min@{chunk\+Scan3d\+Axis\+Min}}
+\index{chunk\+Scan3d\+Axis\+Min@{chunk\+Scan3d\+Axis\+Min}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Axis\+Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Axis\+Min}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ab3e60dd32a90d506e0ae169d38f0215a}
+
+
+A floating point property. Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload. 
+
+Returns the Minimum Axis value for the selected coordinate axis of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a18a1e19081d8b40f6f297abf6b68fc5c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+Offset@{chunk\+Scan3d\+Coordinate\+Offset}}
+\index{chunk\+Scan3d\+Coordinate\+Offset@{chunk\+Scan3d\+Coordinate\+Offset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+Offset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a18a1e19081d8b40f6f297abf6b68fc5c}
+
+
+A floating point property. Returns the Offset for the selected coordinate axis of the image included in the payload. 
+
+Returns the Offset for the selected coordinate axis of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa1f8d5ac6f3f254800f33d0b57bddd18}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+Reference\+Selector@{chunk\+Scan3d\+Coordinate\+Reference\+Selector}}
+\index{chunk\+Scan3d\+Coordinate\+Reference\+Selector@{chunk\+Scan3d\+Coordinate\+Reference\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+Reference\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+Reference\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa1f8d5ac6f3f254800f33d0b57bddd18}
+
+
+An enumerated integer property. Selector to read a coordinate system reference value defining the transform of a point from one system to the other. 
+
+Selector to read a coordinate system reference value defining the transform of a point from one system to the other.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rotation\+X} (Display string\+: 'Rotation X')\+: Rotation around X axis.
+\item {\bfseries Rotation\+Y} (Display string\+: 'Rotation Y')\+: Rotation around Y axis.
+\item {\bfseries Rotation\+Z} (Display string\+: 'Rotation Z')\+: Rotation around Z axis.
+\item {\bfseries Translation\+X} (Display string\+: 'Translation X')\+: X axis translation.
+\item {\bfseries Translation\+Y} (Display string\+: 'Translation Y')\+: Y axis translation.
+\item {\bfseries Translation\+Z} (Display string\+: 'Translation Z')\+: Z axis translation.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa45a547729c3dac4c8b8b0348c1c1bdd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+Reference\+Value@{chunk\+Scan3d\+Coordinate\+Reference\+Value}}
+\index{chunk\+Scan3d\+Coordinate\+Reference\+Value@{chunk\+Scan3d\+Coordinate\+Reference\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+Reference\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+Reference\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aa45a547729c3dac4c8b8b0348c1c1bdd}
+
+
+A floating point property. Reads the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point. 
+
+Reads the value of a position or pose coordinate for the anchor or transformed coordinate systems relative to the reference point. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a652394e0ffd066f97020683b5640c399}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+Scale@{chunk\+Scan3d\+Coordinate\+Scale}}
+\index{chunk\+Scan3d\+Coordinate\+Scale@{chunk\+Scan3d\+Coordinate\+Scale}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+Scale}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+Scale}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a652394e0ffd066f97020683b5640c399}
+
+
+A floating point property. Returns the Scale for the selected coordinate axis of the image included in the payload. 
+
+Returns the Scale for the selected coordinate axis of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_abcd836abcc68145bec18c5b45e189324}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+Selector@{chunk\+Scan3d\+Coordinate\+Selector}}
+\index{chunk\+Scan3d\+Coordinate\+Selector@{chunk\+Scan3d\+Coordinate\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_abcd836abcc68145bec18c5b45e189324}
+
+
+An enumerated integer property. Selects which Coordinate to retrieve data from. 
+
+Selects which Coordinate to retrieve data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Coordinate\+A} (Display string\+: 'Coordinate A')\+: The first (X or Theta) coordinate
+\item {\bfseries Coordinate\+B} (Display string\+: 'Coordinate B')\+: The second (Y or Phi) coordinate
+\item {\bfseries Coordinate\+C} (Display string\+: 'Coordinate C')\+: The third (Z or Rho) coordinate.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a2200e547f083391291827a35957d4b8d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+System@{chunk\+Scan3d\+Coordinate\+System}}
+\index{chunk\+Scan3d\+Coordinate\+System@{chunk\+Scan3d\+Coordinate\+System}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+System}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+System}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a2200e547f083391291827a35957d4b8d}
+
+
+An enumerated integer property. Returns the Coordinate System of the image included in the payload. 
+
+Returns the Coordinate System of the image included in the payload.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Cartesian} (Display string\+: 'Cartesian')\+: Default value. 3-\/axis orthogonal, right-\/hand X-\/\+Y-\/\+Z.
+\item {\bfseries Spherical} (Display string\+: 'Spherical')\+: A Theta-\/\+Phi-\/\+Rho coordinate system.
+\item {\bfseries Cylindrical} (Display string\+: 'Cylindrical')\+: A Theta-\/\+Y-\/\+Rho coordinate system.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a15827600dc5405f7893efdcf8dfa0569}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+System\+Reference@{chunk\+Scan3d\+Coordinate\+System\+Reference}}
+\index{chunk\+Scan3d\+Coordinate\+System\+Reference@{chunk\+Scan3d\+Coordinate\+System\+Reference}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+System\+Reference}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+System\+Reference}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a15827600dc5405f7893efdcf8dfa0569}
+
+
+An enumerated integer property. Returns the Coordinate System Position of the image included in the payload. 
+
+Returns the Coordinate System Position of the image included in the payload.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Anchor} (Display string\+: 'Anchor')\+: Default value. Original fixed reference. The coordinate system fixed relative the camera reference point marker is used.
+\item {\bfseries Transformed} (Display string\+: 'Transformed')\+: Transformed reference system. The transformed coordinate system is used according to the definition in the rotation and translation matrices.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a8ab0a44c2daae75c839b3974a1c1cb6b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Coordinate\+Transform\+Selector@{chunk\+Scan3d\+Coordinate\+Transform\+Selector}}
+\index{chunk\+Scan3d\+Coordinate\+Transform\+Selector@{chunk\+Scan3d\+Coordinate\+Transform\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Coordinate\+Transform\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Coordinate\+Transform\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a8ab0a44c2daae75c839b3974a1c1cb6b}
+
+
+An enumerated integer property. Selector for transform values. 
+
+Selector for transform values.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rotation\+X} (Display string\+: 'Rotation X')\+: Rotation around X axis.
+\item {\bfseries Rotation\+Y} (Display string\+: 'Rotation Y')\+: Rotation around Y axis.
+\item {\bfseries Rotation\+Z} (Display string\+: 'Rotation Z')\+: Rotation around Z axis.
+\item {\bfseries Translation\+X} (Display string\+: 'Translation X')\+: Translation along X axis.
+\item {\bfseries Translation\+Y} (Display string\+: 'Translation Y')\+: Translation along Y axis.
+\item {\bfseries Translation\+Z} (Display string\+: 'Translation Z')\+: Translation along Z axis.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a4fb027191f957cc9e3884ba176e52562}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Distance\+Unit@{chunk\+Scan3d\+Distance\+Unit}}
+\index{chunk\+Scan3d\+Distance\+Unit@{chunk\+Scan3d\+Distance\+Unit}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Distance\+Unit}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Distance\+Unit}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a4fb027191f957cc9e3884ba176e52562}
+
+
+An enumerated integer property. Returns the Distance Unit of the payload image. 
+
+Returns the Distance Unit of the payload image.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Millimeter} (Display string\+: 'Millimeter')\+: Default value. Distance values are in millimeter units.
+\item {\bfseries Inch} (Display string\+: 'Inch')\+: Distance values are in inch units.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a60ad92001a22ff71b3e9241272d650d3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Invalid\+Data\+Flag@{chunk\+Scan3d\+Invalid\+Data\+Flag}}
+\index{chunk\+Scan3d\+Invalid\+Data\+Flag@{chunk\+Scan3d\+Invalid\+Data\+Flag}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Invalid\+Data\+Flag}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Invalid\+Data\+Flag}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a60ad92001a22ff71b3e9241272d650d3}
+
+
+A boolean property. Returns if a specific non-\/valid data flag is used in the data stream. 
+
+Returns if a specific non-\/valid data flag is used in the data stream. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a7006c4bc9dee316064885ebe3f6c0ae7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Invalid\+Data\+Value@{chunk\+Scan3d\+Invalid\+Data\+Value}}
+\index{chunk\+Scan3d\+Invalid\+Data\+Value@{chunk\+Scan3d\+Invalid\+Data\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Invalid\+Data\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Invalid\+Data\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a7006c4bc9dee316064885ebe3f6c0ae7}
+
+
+A floating point property. Returns the Invalid Data Value used for the image included in the payload. 
+
+Returns the Invalid Data Value used for the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a1b968c0335e50b8852709bc5d5cbcd93}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Output\+Mode@{chunk\+Scan3d\+Output\+Mode}}
+\index{chunk\+Scan3d\+Output\+Mode@{chunk\+Scan3d\+Output\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Output\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Output\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a1b968c0335e50b8852709bc5d5cbcd93}
+
+
+An enumerated integer property. Returns the Calibrated Mode of the payload image. 
+
+Returns the Calibrated Mode of the payload image.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Uncalibrated\+C} (Display string\+: 'Uncalibrated C')\+: Uncalibrated 2.\+5\+D Depth map. The distance data does not represent a physical unit and may be non-\/linear. The data is a 2.\+5\+D range map only.
+\item {\bfseries Calibrated\+A\+B\+C\+\_\+\+Grid} (Display string\+: 'Calibrated A\+B\+C Grid')\+: 3 Coordinates in grid organization. The full 3 coordinate data with the grid array organization from the sensor kept.
+\item {\bfseries Calibrated\+A\+B\+C\+\_\+\+Point\+Cloud} (Display string\+: 'Calibrated A\+B\+C Point Cloud')\+: 3 Coordinates without organization. The full 3 coordinate data without any organization of data points. Typically only valid points transmitted giving varying image size.
+\item {\bfseries Calibrated\+A\+C} (Display string\+: 'Calibrated A\+C')\+: 2 Coordinates with fixed B sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis uses the scale and offset parameters for the B axis.
+\item {\bfseries Calibrated\+A\+C\+\_\+\+Linescan} (Display string\+: 'Calibrated A\+C Linescan')\+: 2 Coordinates with varying sampling. The data is sent as a A and C coordinates (X,Z or Theta,Rho). The B (Y) axis comes from the encoder chunk value.
+\item {\bfseries Calibrated\+C} (Display string\+: 'Calibrated C')\+: Calibrated 2.\+5\+D Depth map. The distance data is expressed in the chosen distance unit. The data is a 2.\+5\+D range map. No information on X-\/\+Y axes available.
+\item {\bfseries Calibrated\+C\+\_\+\+Linescan} (Display string\+: 'Calibrated C Linescan')\+: Depth Map with varying B sampling. The distance data is expressed in the chosen distance unit. The data is a 2.\+5\+D range map. The B (Y) axis comes from the encoder chunk value.
+\item {\bfseries Rectified\+C} (Display string\+: 'Rectified C')\+: Rectified 2.\+5\+D Depth map. The distance data has been rectified to a uniform sampling pattern in the X and Y direction. The data is a 2.\+5\+D range map only. If a complete 3\+D point cloud is rectified but transmitted as explicit coordinates it should be transmitted as one of the 'Calibrated\+A\+B\+C' formats.
+\item {\bfseries Rectified\+C\+\_\+\+Linescan} (Display string\+: 'Rectified C Linescan')\+: Rectified 2.\+5\+D Depth map with varying B sampling. The data is sent as rectified 1\+D profiles using Coord3\+D\+\_\+\+C pixels. The B (Y) axis comes from the encoder chunk value.
+\item {\bfseries Disparity\+C} (Display string\+: 'Disparity C')\+: Disparity 2.\+5\+D Depth map. The distance is inversely proportional to the pixel (disparity) value.
+\item {\bfseries Disparity\+C\+\_\+\+Linescan} (Display string\+: 'Disparity C Linescan')\+: Disparity 2.\+5\+D Depth map with varying B sampling. The distance is inversely proportional to the pixel (disparity) value. The B (Y) axis comes from the encoder chunk value.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a2236122637d64d832aa5ebfaef7c0f29}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan3d\+Transform\+Value@{chunk\+Scan3d\+Transform\+Value}}
+\index{chunk\+Scan3d\+Transform\+Value@{chunk\+Scan3d\+Transform\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan3d\+Transform\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan3d\+Transform\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a2236122637d64d832aa5ebfaef7c0f29}
+
+
+A floating point property. Returns the transform value. 
+
+Returns the transform value. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6974218ada079b8968619a5e54ea8232}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Scan\+Line\+Selector@{chunk\+Scan\+Line\+Selector}}
+\index{chunk\+Scan\+Line\+Selector@{chunk\+Scan\+Line\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Scan\+Line\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Scan\+Line\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6974218ada079b8968619a5e54ea8232}
+
+
+An integer property. Index for vector representation of one chunk value per line in an image. 
+
+Index for vector representation of one chunk value per line in an image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_afa89c2551ad7b82a5a6ce641cc169523}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Selector@{chunk\+Selector}}
+\index{chunk\+Selector@{chunk\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_afa89c2551ad7b82a5a6ce641cc169523}
+
+
+An enumerated integer property. Selects which Chunk to enable or control. 
+
+Selects which Chunk to enable or control.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Image} (Display string\+: 'Image')\+: Image
+\item {\bfseries Offset\+X} (Display string\+: 'Offset X')\+: Offset X
+\item {\bfseries Offset\+Y} (Display string\+: 'Offset Y')\+: Offset Y
+\item {\bfseries Width} (Display string\+: 'Width')\+: Width
+\item {\bfseries Height} (Display string\+: 'Height')\+: Height
+\item {\bfseries Pixel\+Format} (Display string\+: 'Pixel Format')\+: Pixel Format
+\item {\bfseries Pixel\+Dynamic\+Range\+Max} (Display string\+: 'Pixel Dynamic Range Max')\+: Pixel Dynamic Range Max
+\item {\bfseries Pixel\+Dynamic\+Range\+Min} (Display string\+: 'Pixel Dynamic Range Min')\+: Pixel Dynamic Range Min
+\item {\bfseries Timestamp} (Display string\+: 'Timestamp')\+: Timestamp
+\item {\bfseries Line\+Status\+All} (Display string\+: 'Line Status All')\+: Line Status All
+\item {\bfseries Counter\+Value} (Display string\+: 'Counter Value')\+: Counter Value
+\item {\bfseries Timer\+Value} (Display string\+: 'Timer Value')\+: Timer Value
+\item {\bfseries Encoder\+Value} (Display string\+: 'Encoder Value')\+: Encoder Value
+\item {\bfseries Exposure\+Time} (Display string\+: 'Exposure Time')\+: Exposure Time
+\item {\bfseries Gain} (Display string\+: 'Gain')\+: Gain
+\item {\bfseries Black\+Level} (Display string\+: 'Black Level')\+: Black Level
+\item {\bfseries Line\+Pitch} (Display string\+: 'Line Pitch')\+: Line Pitch
+\item {\bfseries Frame\+I\+D} (Display string\+: 'Frame I\+D')\+: Frame I\+D
+\item {\bfseries Source\+I\+D} (Display string\+: 'Source I\+D')\+: Source I\+D
+\item {\bfseries Source\+I\+D\+Value} (Display string\+: 'Source I\+D Value')\+: Source I\+D Value
+\item {\bfseries Region\+I\+D} (Display string\+: 'Region I\+D')\+: Region I\+D
+\item {\bfseries Region\+I\+D\+Value} (Display string\+: 'Region I\+D Value')\+: Region I\+D Value
+\item {\bfseries Component\+I\+D} (Display string\+: '\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} I\+D')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} I\+D
+\item {\bfseries Component\+I\+D\+Value} (Display string\+: '\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} I\+D Value')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{Component} I\+D Value
+\item {\bfseries Transfer\+Block\+I\+D} (Display string\+: 'Transfer Block I\+D')\+: Transfer Block I\+D
+\item {\bfseries Transfer\+Stream\+I\+D} (Display string\+: 'Transfer Stream I\+D')\+: Transfer Stream I\+D
+\item {\bfseries Transfer\+Queue\+Current\+Block\+Count} (Display string\+: 'Transfer Queue Current Block Count')\+: Transfer Queue Current Block Count
+\item {\bfseries Stream\+Channel\+I\+D} (Display string\+: 'Stream Channel I\+D')\+: Stream Channel I\+D
+\item {\bfseries Scan3d\+Distance\+Unit} (Display string\+: 'Scan 3d Distance Unit')\+: Scan 3d Distance Unit
+\item {\bfseries Scan3d\+Output\+Mode} (Display string\+: 'Scan 3d Output Mode')\+: Scan 3d Output Mode
+\item {\bfseries Scan3d\+Coordinate\+System} (Display string\+: 'Scan 3d Coordinate System')\+: Scan 3d Coordinate System
+\item {\bfseries Scan3d\+Coordinate\+System\+Reference} (Display string\+: 'Scan 3d Coordinate System Reference')\+: Scan 3d Coordinate System Reference
+\item {\bfseries Scan3d\+Coordinate\+Scale} (Display string\+: 'Scan 3d Coordinate Scale')\+: Scan 3d Coordinate Scale
+\item {\bfseries Scan3d\+Coordinate\+Offset} (Display string\+: 'Scan 3d Coordinate Offset')\+: Scan 3d Coordinate Offset
+\item {\bfseries Scan3d\+Invalid\+Data\+Flag} (Display string\+: 'Scan 3d Invalid Data Flag')\+: Scan 3d Invalid Data Flag
+\item {\bfseries Scan3d\+Invalid\+Data\+Value} (Display string\+: 'Scan 3d Invalid Data Value')\+: Scan 3d Invalid Data Value
+\item {\bfseries Scan3d\+Axis\+Min} (Display string\+: 'Scan 3d Axis Min')\+: Scan 3d Axis Min
+\item {\bfseries Scan3d\+Axis\+Max} (Display string\+: 'Scan 3d Axis Max')\+: Scan 3d Axis Max
+\item {\bfseries Scan3d\+Coordinate\+Transform\+Value\+Scan3d\+Coordinate\+Reference\+Value} (Display string\+: 'Scan 3d Coordinate Transform Value Scan 3d Coordinate Reference Value')\+: Scan 3d Coordinate Transform Value Scan 3d Coordinate Reference Value
+\item {\bfseries Pixel\+Dynamic\+Range\+Min\+Timestamp} (Display string\+: 'Chunk Selector')
+\item {\bfseries Additional\+Info} (Display string\+: 'Chunk Selector')
+\item {\bfseries J\+P\+E\+G} (Display string\+: 'Chunk Selector')
+\item {\bfseries mv\+Custom\+Identifier} (Display string\+: 'Chunk Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5c83ad3228ab5d5bc74603f8848961c5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Sequencer\+Set\+Active@{chunk\+Sequencer\+Set\+Active}}
+\index{chunk\+Sequencer\+Set\+Active@{chunk\+Sequencer\+Set\+Active}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Sequencer\+Set\+Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Sequencer\+Set\+Active}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5c83ad3228ab5d5bc74603f8848961c5}
+
+
+An integer property. Return the index of the active set of the running sequencer included in the payload. 
+
+Return the index of the active set of the running sequencer included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a014b54e61bfa874ae1b64cf7de60a4cf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Source\+I\+D@{chunk\+Source\+I\+D}}
+\index{chunk\+Source\+I\+D@{chunk\+Source\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Source\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Source\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a014b54e61bfa874ae1b64cf7de60a4cf}
+
+
+An enumerated integer property. Returns the Identifier of Source that the image comes from. 
+
+Returns the Identifier of Source that the image comes from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Source0} (Display string\+: 'Source 0')\+: Image comes from the Source 0.
+\item {\bfseries Source1} (Display string\+: 'Source 1')\+: Image comes from the Source 1.
+\item {\bfseries Source2} (Display string\+: 'Source 2')\+: Image comes from the Source 2.
+\item {\bfseries Source\#3\#} (Display string\+: 'Source \#3\#')\+: Image comes from the Source \#3\#.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_adc24abab055024927db1829bdbd17b74}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Source\+I\+D\+Value@{chunk\+Source\+I\+D\+Value}}
+\index{chunk\+Source\+I\+D\+Value@{chunk\+Source\+I\+D\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Source\+I\+D\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Source\+I\+D\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_adc24abab055024927db1829bdbd17b74}
+
+
+An integer property. Returns the unique integer Identifier value of the Source that the image comes from. 
+
+Returns the unique integer Identifier value of the Source that the image comes from. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_acab8906c60d43214bdbc540dafa7a62e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Source\+Selector@{chunk\+Source\+Selector}}
+\index{chunk\+Source\+Selector@{chunk\+Source\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Source\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Source\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_acab8906c60d43214bdbc540dafa7a62e}
+
+
+An enumerated integer property. Selects which Source to retrieve data from. 
+
+Selects which Source to retrieve data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Source0} (Display string\+: 'Source 0')\+: Image comes from the Source 0.
+\item {\bfseries Source1} (Display string\+: 'Source 1')\+: Image comes from the Source 1.
+\item {\bfseries Source2} (Display string\+: 'Source 2')\+: Image comes from the Source 2.
+\item {\bfseries Source\#3\#} (Display string\+: 'Source \#3\#')\+: Image comes from the Source \#3\#.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_af31e8f39ddba15bdeb3c2199abbd3f32}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Stream\+Channel\+I\+D@{chunk\+Stream\+Channel\+I\+D}}
+\index{chunk\+Stream\+Channel\+I\+D@{chunk\+Stream\+Channel\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Stream\+Channel\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Stream\+Channel\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_af31e8f39ddba15bdeb3c2199abbd3f32}
+
+
+An integer property. Returns identifier of the stream channel used to carry the block. 
+
+Returns identifier of the stream channel used to carry the block. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ae64defa82d79e8cc3b38aa6ff2c5e31a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Timer\+Selector@{chunk\+Timer\+Selector}}
+\index{chunk\+Timer\+Selector@{chunk\+Timer\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Timer\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Timer\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_ae64defa82d79e8cc3b38aa6ff2c5e31a}
+
+
+An enumerated integer property. Selects which Timer to retrieve data from. 
+
+Selects which Timer to retrieve data from.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Timer0} (Display string\+: 'Timer 0')\+: Selects the first Timer.
+\item {\bfseries Timer1} (Display string\+: 'Timer 1')\+: Selects the first Timer.
+\item {\bfseries Timer2} (Display string\+: 'Timer 2')\+: Selects the second Timer.
+\item {\bfseries Timer\#3\#} (Display string\+: 'Timer \#3\#')\+: Selects the second Timer.
+\item {\bfseries Timer3} (Display string\+: 'Timer 3')\+: Selects the second Timer.
+\item {\bfseries Timer4} (Display string\+: 'Timer 4')\+: Selects the second Timer.
+\item {\bfseries Timer5} (Display string\+: 'Timer 5')\+: Selects the second Timer.
+\item {\bfseries Timer6} (Display string\+: 'Timer 6')\+: Selects the second Timer.
+\item {\bfseries Timer7} (Display string\+: 'Timer 7')\+: Selects the second Timer.
+\item {\bfseries Timer8} (Display string\+: 'Timer 8')\+: Selects the second Timer.
+\item {\bfseries Timer9} (Display string\+: 'Timer 9')\+: Selects the second Timer.
+\item {\bfseries Timer10} (Display string\+: 'Timer 10')\+: Selects the second Timer.
+\item {\bfseries Timer11} (Display string\+: 'Timer 11')\+: Selects the second Timer.
+\item {\bfseries Timer12} (Display string\+: 'Timer 12')\+: Selects the second Timer.
+\item {\bfseries Timer13} (Display string\+: 'Timer 13')\+: Selects the second Timer.
+\item {\bfseries Timer14} (Display string\+: 'Timer 14')\+: Selects the second Timer.
+\item {\bfseries Timer15} (Display string\+: 'Timer 15')\+: Selects the second Timer.
+\item {\bfseries Timer16} (Display string\+: 'Chunk Timer Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5b634696877e47f3c773da528d1c8f90}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Timer\+Value@{chunk\+Timer\+Value}}
+\index{chunk\+Timer\+Value@{chunk\+Timer\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Timer\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Timer\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5b634696877e47f3c773da528d1c8f90}
+
+
+A floating point property. Returns the value of the selected Timer at the time of the Frame\+Start internal event. 
+
+Returns the value of the selected Timer at the time of the Frame\+Start internal event. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6524fff11f2289aecb48e49f15a28710}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Timestamp@{chunk\+Timestamp}}
+\index{chunk\+Timestamp@{chunk\+Timestamp}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Timestamp}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Timestamp}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6524fff11f2289aecb48e49f15a28710}
+
+
+An integer property. Returns the Timestamp of the image included in the payload at the time of the Frame\+Start internal event. 
+
+Returns the Timestamp of the image included in the payload at the time of the Frame\+Start internal event. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aaaa113e713066193edd3549f5a6c0ab5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Timestamp\+Latch\+Value@{chunk\+Timestamp\+Latch\+Value}}
+\index{chunk\+Timestamp\+Latch\+Value@{chunk\+Timestamp\+Latch\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Timestamp\+Latch\+Value}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Timestamp\+Latch\+Value}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_aaaa113e713066193edd3549f5a6c0ab5}
+
+
+An integer property. Returns the last Timestamp latched with the Timestamp\+Latch command. 
+
+Returns the last Timestamp latched with the Timestamp\+Latch command. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a43f3d8e2284b6742b8b22186407dce52}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Transfer\+Block\+I\+D@{chunk\+Transfer\+Block\+I\+D}}
+\index{chunk\+Transfer\+Block\+I\+D@{chunk\+Transfer\+Block\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Transfer\+Block\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Transfer\+Block\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a43f3d8e2284b6742b8b22186407dce52}
+
+
+An integer property. Returns the unique identifier of the transfer block used to transport the payload. 
+
+Returns the unique identifier of the transfer block used to transport the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a0eba9a22dc04bd1928c4807cb6dd45fe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Transfer\+Queue\+Current\+Block\+Count@{chunk\+Transfer\+Queue\+Current\+Block\+Count}}
+\index{chunk\+Transfer\+Queue\+Current\+Block\+Count@{chunk\+Transfer\+Queue\+Current\+Block\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Transfer\+Queue\+Current\+Block\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Transfer\+Queue\+Current\+Block\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a0eba9a22dc04bd1928c4807cb6dd45fe}
+
+
+An integer property. Returns the current number of blocks in the transfer queue. 
+
+Returns the current number of blocks in the transfer queue. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5d99e230c1a36d0649c93d6d6de2a139}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Transfer\+Stream\+I\+D@{chunk\+Transfer\+Stream\+I\+D}}
+\index{chunk\+Transfer\+Stream\+I\+D@{chunk\+Transfer\+Stream\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Transfer\+Stream\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Transfer\+Stream\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a5d99e230c1a36d0649c93d6d6de2a139}
+
+
+An enumerated integer property. Returns identifier of the stream that generated this block. 
+
+Returns identifier of the stream that generated this block.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Stream0} (Display string\+: 'Stream 0')\+: Data comes from Stream0.
+\item {\bfseries Stream1} (Display string\+: 'Stream 1')\+: Data comes from Stream1.
+\item {\bfseries Stream2} (Display string\+: 'Stream 2')\+: Data comes from Stream2.
+\item {\bfseries Stream3} (Display string\+: 'Stream 3')\+: Data comes from Stream3.
+\item {\bfseries Stream\#4\#} (Display string\+: 'Stream \#4\#')\+: Data comes from Stream\#4\#.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6cf6b5feed11d6d46885ee126a7345f4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!chunk\+Width@{chunk\+Width}}
+\index{chunk\+Width@{chunk\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{chunk\+Width}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::chunk\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a6cf6b5feed11d6d46885ee126a7345f4}
+
+
+An integer property. Returns the Width of the image included in the payload. 
+
+Returns the Width of the image included in the payload. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a78076131ba88ad24c78eb473d10ae3f6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}!mv\+Chunk\+J\+P\+E\+G@{mv\+Chunk\+J\+P\+E\+G}}
+\index{mv\+Chunk\+J\+P\+E\+G@{mv\+Chunk\+J\+P\+E\+G}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control}}
+\subsubsection[{mv\+Chunk\+J\+P\+E\+G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Chunk\+Data\+Control\+::mv\+Chunk\+J\+P\+E\+G}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control_a78076131ba88ad24c78eb473d10ae3f6}
+
+
+A string property. Allows to access a J\+P\+E\+G image transmitted as part of the chunk data. 
+
+Allows to access a J\+P\+E\+G image transmitted as part of the chunk data. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

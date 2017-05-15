@@ -1,0 +1,46 @@
+\hypertarget{struct_channel_data}{\section{Channel\+Data结构体 参考}
+\label{struct_channel_data}\index{Channel\+Data@{Channel\+Data}}
+}
+
+
+A structure for image buffer channel specific data.  
+
+
+
+
+{\ttfamily \#include $<$mv\+Device\+Manager.\+h$>$}
+
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_channel_data_a21c7478dc819c48236e9f3d08bfb9dd3}{int \hyperlink{struct_channel_data_a21c7478dc819c48236e9f3d08bfb9dd3}{i\+Channel\+Offset}}\label{struct_channel_data_a21c7478dc819c48236e9f3d08bfb9dd3}
+
+\begin{DoxyCompactList}\small\item\em The offset (in bytes) to the next channel. \end{DoxyCompactList}\item 
+\hypertarget{struct_channel_data_a7d146307f0641ef506e5588a2edcfd77}{int \hyperlink{struct_channel_data_a7d146307f0641ef506e5588a2edcfd77}{i\+Line\+Pitch}}\label{struct_channel_data_a7d146307f0641ef506e5588a2edcfd77}
+
+\begin{DoxyCompactList}\small\item\em The offset (in bytes) to the next line of this channel. \end{DoxyCompactList}\item 
+\hypertarget{struct_channel_data_a3435222e4fe3c4ea06b7bfbfde1a0cb5}{int \hyperlink{struct_channel_data_a3435222e4fe3c4ea06b7bfbfde1a0cb5}{i\+Pixel\+Pitch}}\label{struct_channel_data_a3435222e4fe3c4ea06b7bfbfde1a0cb5}
+
+\begin{DoxyCompactList}\small\item\em The offset (in bytes) to the next pixel of this channel. \end{DoxyCompactList}\item 
+char \hyperlink{struct_channel_data_ad67b0964b56b1af796428b3fe3f2f735}{sz\+Channel\+Desc} \mbox{[}D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+I\+M\+I\+T\mbox{]}
+\begin{DoxyCompactList}\small\item\em The string descriptor for this channel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+A structure for image buffer channel specific data. 
+
+Channel specific data in an image is data, that in e.\+g. and R\+G\+B image might differ for the color components red, green and blue. 
+
+\subsection{类成员变量说明}
+\hypertarget{struct_channel_data_ad67b0964b56b1af796428b3fe3f2f735}{\index{Channel\+Data@{Channel\+Data}!sz\+Channel\+Desc@{sz\+Channel\+Desc}}
+\index{sz\+Channel\+Desc@{sz\+Channel\+Desc}!Channel\+Data@{Channel\+Data}}
+\subsubsection[{sz\+Channel\+Desc}]{\setlength{\rightskip}{0pt plus 5cm}char Channel\+Data\+::sz\+Channel\+Desc\mbox{[}D\+E\+F\+A\+U\+L\+T\+\_\+\+S\+T\+R\+I\+N\+G\+\_\+\+S\+I\+Z\+E\+\_\+\+L\+I\+M\+I\+T\mbox{]}}}\label{struct_channel_data_ad67b0964b56b1af796428b3fe3f2f735}
+
+
+The string descriptor for this channel. 
+
+For an R\+G\+B image the string values of three {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Channel\+Data} structures this might e.\+g. be \char`\"{}\+R\char`\"{}, \char`\"{}\+G\char`\"{} and \char`\"{}\+B\char`\"{}. 
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+Device\+Manager/\+Include/mv\+Device\+Manager.\+h\end{DoxyCompactItemize}

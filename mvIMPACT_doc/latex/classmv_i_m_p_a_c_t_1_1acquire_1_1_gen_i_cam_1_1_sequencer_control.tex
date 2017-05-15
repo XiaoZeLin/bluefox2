@@ -1,0 +1,311 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Sequencer\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+}
+
+
+Category for the Sequencer Control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Sequencer\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3}{Sequencer\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9988c1f6abaf32ace7220c2139bdd5c7}{sequencer\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls if the sequencer mechanism is active. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_acd4fe83b0353ecdcd9c8c5b17db09570}{sequencer\+Configuration\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Controls if the sequencer configuration mode is active. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aa8c6d750c19279e6c4c629b767e60899}{sequencer\+Feature\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects which sequencer features to control. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9f42d8001d6d139d3603d0fe02225a71}{sequencer\+Feature\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. Enables the selected feature and make it active in all the sequencer sets. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a110c5e05d7b5f9e990b0ed2b1b8e423b}{sequencer\+Set\+Selector}
+\begin{DoxyCompactList}\small\item\em An integer property. Selects the sequencer set to which further feature settings applies. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a16552a61786cbe9280b5ab174997c80a}{sequencer\+Set\+Save}
+\begin{DoxyCompactList}\small\item\em A method object. Saves the current device state to the sequencer set selected by the Sequencer\+Set\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aa3b1c98fb945874f5399281be7564f26}{sequencer\+Set\+Load}
+\begin{DoxyCompactList}\small\item\em A method object. Loads the sequencer set selected by Sequencer\+Set\+Selector in the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_ab7c1aa6c23757b04d16a10d271802cb8}{sequencer\+Set\+Active}
+\begin{DoxyCompactList}\small\item\em An integer property. Contains the currently active sequencer set. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a4801f0f7996890b7cf3b1812fd8a93fb}{sequencer\+Set\+Start}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the initial/start sequencer set, which is the first set used within a sequencer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aaa2c1ca336588b658c3e1f25e9d3ce7a}{sequencer\+Path\+Selector}
+\begin{DoxyCompactList}\small\item\em An integer property. Selects to which branching path further path settings applies. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adfee8f4bf16d10c0298e42b9c886cdb1}{sequencer\+Set\+Next}
+\begin{DoxyCompactList}\small\item\em An integer property. Specifies the next sequencer set. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9ae04765c395a9ffdbdbcd8232ebbed2}{sequencer\+Trigger\+Source}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the internal signal or physical input line to use as the sequencer trigger source. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_abf216c266c3d02126daa2d09fc1fe161}{sequencer\+Trigger\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Specifies the activation mode of the sequencer trigger. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category for the Sequencer Control features. 
+
+A category for the Sequencer Control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!Sequencer\+Control@{Sequencer\+Control}}
+\index{Sequencer\+Control@{Sequencer\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{Sequencer\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::\+Sequencer\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_acd4fe83b0353ecdcd9c8c5b17db09570}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Configuration\+Mode@{sequencer\+Configuration\+Mode}}
+\index{sequencer\+Configuration\+Mode@{sequencer\+Configuration\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Configuration\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Configuration\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_acd4fe83b0353ecdcd9c8c5b17db09570}
+
+
+An enumerated integer property. Controls if the sequencer configuration mode is active. 
+
+Controls if the sequencer configuration mode is active.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries On} (Display string\+: 'On')\+: Enables the sequencer configuration mode.
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the sequencer configuration mode.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9f42d8001d6d139d3603d0fe02225a71}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Feature\+Enable@{sequencer\+Feature\+Enable}}
+\index{sequencer\+Feature\+Enable@{sequencer\+Feature\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Feature\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Feature\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9f42d8001d6d139d3603d0fe02225a71}
+
+
+A boolean property. Enables the selected feature and make it active in all the sequencer sets. 
+
+Enables the selected feature and make it active in all the sequencer sets. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aa8c6d750c19279e6c4c629b767e60899}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Feature\+Selector@{sequencer\+Feature\+Selector}}
+\index{sequencer\+Feature\+Selector@{sequencer\+Feature\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Feature\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Feature\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aa8c6d750c19279e6c4c629b767e60899}
+
+
+An enumerated integer property. Selects which sequencer features to control. 
+
+Selects which sequencer features to control.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Device-\/\+Specific} (Display string\+: '\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} -\/ Specific')\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} -\/ Specific
+\item {\bfseries Exposure\+Time} (Display string\+: 'Sequencer Feature Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9988c1f6abaf32ace7220c2139bdd5c7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Mode@{sequencer\+Mode}}
+\index{sequencer\+Mode@{sequencer\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9988c1f6abaf32ace7220c2139bdd5c7}
+
+
+An enumerated integer property. Controls if the sequencer mechanism is active. 
+
+Controls if the sequencer mechanism is active.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries On} (Display string\+: 'On')\+: Enables the sequencer.
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the sequencer.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aaa2c1ca336588b658c3e1f25e9d3ce7a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Path\+Selector@{sequencer\+Path\+Selector}}
+\index{sequencer\+Path\+Selector@{sequencer\+Path\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Path\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Path\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aaa2c1ca336588b658c3e1f25e9d3ce7a}
+
+
+An integer property. Selects to which branching path further path settings applies. 
+
+Selects to which branching path further path settings applies. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_ab7c1aa6c23757b04d16a10d271802cb8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Set\+Active@{sequencer\+Set\+Active}}
+\index{sequencer\+Set\+Active@{sequencer\+Set\+Active}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Set\+Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Set\+Active}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_ab7c1aa6c23757b04d16a10d271802cb8}
+
+
+An integer property. Contains the currently active sequencer set. 
+
+Contains the currently active sequencer set. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aa3b1c98fb945874f5399281be7564f26}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Set\+Load@{sequencer\+Set\+Load}}
+\index{sequencer\+Set\+Load@{sequencer\+Set\+Load}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Set\+Load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Set\+Load}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_aa3b1c98fb945874f5399281be7564f26}
+
+
+A method object. Loads the sequencer set selected by Sequencer\+Set\+Selector in the device. 
+
+Loads the sequencer set selected by Sequencer\+Set\+Selector in the device. Even if Sequencer\+Mode is off, this will change the device state to the configuration of the selected set. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adfee8f4bf16d10c0298e42b9c886cdb1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Set\+Next@{sequencer\+Set\+Next}}
+\index{sequencer\+Set\+Next@{sequencer\+Set\+Next}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Set\+Next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Set\+Next}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adfee8f4bf16d10c0298e42b9c886cdb1}
+
+
+An integer property. Specifies the next sequencer set. 
+
+Specifies the next sequencer set. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a16552a61786cbe9280b5ab174997c80a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Set\+Save@{sequencer\+Set\+Save}}
+\index{sequencer\+Set\+Save@{sequencer\+Set\+Save}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Set\+Save}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Set\+Save}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a16552a61786cbe9280b5ab174997c80a}
+
+
+A method object. Saves the current device state to the sequencer set selected by the Sequencer\+Set\+Selector. 
+
+Saves the current device state to the sequencer set selected by the Sequencer\+Set\+Selector. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a110c5e05d7b5f9e990b0ed2b1b8e423b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Set\+Selector@{sequencer\+Set\+Selector}}
+\index{sequencer\+Set\+Selector@{sequencer\+Set\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Set\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Set\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a110c5e05d7b5f9e990b0ed2b1b8e423b}
+
+
+An integer property. Selects the sequencer set to which further feature settings applies. 
+
+Selects the sequencer set to which further feature settings applies. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a4801f0f7996890b7cf3b1812fd8a93fb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Set\+Start@{sequencer\+Set\+Start}}
+\index{sequencer\+Set\+Start@{sequencer\+Set\+Start}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Set\+Start}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Set\+Start}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a4801f0f7996890b7cf3b1812fd8a93fb}
+
+
+An integer property. Sets the initial/start sequencer set, which is the first set used within a sequencer. 
+
+Sets the initial/start sequencer set, which is the first set used within a sequencer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_abf216c266c3d02126daa2d09fc1fe161}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Trigger\+Activation@{sequencer\+Trigger\+Activation}}
+\index{sequencer\+Trigger\+Activation@{sequencer\+Trigger\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Trigger\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Trigger\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_abf216c266c3d02126daa2d09fc1fe161}
+
+
+An enumerated integer property. Specifies the activation mode of the sequencer trigger. 
+
+Specifies the activation mode of the sequencer trigger.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Rising\+Edge} (Display string\+: 'Rising Edge')\+: Specifies that the trigger is considered valid on the rising edge of the source signal.
+\item {\bfseries Falling\+Edge} (Display string\+: 'Falling Edge')\+: Specifies that the trigger is considered valid on the falling edge of the source signal.
+\item {\bfseries Any\+Edge} (Display string\+: 'Any Edge')\+: Specifies that the trigger is considered valid on the falling or rising edge of the source signal.
+\item {\bfseries Level\+High} (Display string\+: 'Level High')\+: Specifies that the trigger is considered valid as long as the level of the source signal is high.
+\item {\bfseries Level\+Low} (Display string\+: 'Level Low')\+: Specifies that the trigger is considered valid as long as the level of the source signal is low.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9ae04765c395a9ffdbdbcd8232ebbed2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}!sequencer\+Trigger\+Source@{sequencer\+Trigger\+Source}}
+\index{sequencer\+Trigger\+Source@{sequencer\+Trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control}}
+\subsubsection[{sequencer\+Trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Sequencer\+Control\+::sequencer\+Trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_a9ae04765c395a9ffdbdbcd8232ebbed2}
+
+
+An enumerated integer property. Specifies the internal signal or physical input line to use as the sequencer trigger source. 
+
+Specifies the internal signal or physical input line to use as the sequencer trigger source.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'Off')\+: Disables the sequencer trigger.
+\item {\bfseries Acquisition\+Trigger} (Display string\+: 'Acquisition Trigger')\+: Starts with the reception of the Acquisition Trigger.
+\item {\bfseries Acquisition\+Trigger\+Missed} (Display string\+: 'Acquisition Trigger Missed')\+: Starts with the reception of the missed Acquisition Trigger.
+\item {\bfseries Acquisition\+Start} (Display string\+: 'Acquisition Start')\+: Starts with the reception of the Acquisition Start.
+\item {\bfseries Acquisition\+End} (Display string\+: 'Acquisition End')\+: Starts with the reception of the Acquisition End.
+\item {\bfseries Frame\+Trigger} (Display string\+: 'Frame Trigger')\+: Starts with the reception of the Frame Start Trigger.
+\item {\bfseries Frame\+Trigger\+Missed} (Display string\+: 'Frame Trigger Missed')\+: Starts with the reception of the missed Frame Trigger.
+\item {\bfseries Frame\+Start} (Display string\+: 'Frame Start')\+: Starts with the reception of the Frame Start.
+\item {\bfseries Frame\+End} (Display string\+: 'Frame End')\+: Starts with the reception of the Frame End.
+\item {\bfseries Frame\+Burst\+Start} (Display string\+: 'Frame Burst Start')\+: Starts with the reception of the Frame Burst Start.
+\item {\bfseries Frame\+Burst\+End} (Display string\+: 'Frame Burst End')\+: Starts with the reception of the Frame Burst End.
+\item {\bfseries Exposure\+Start} (Display string\+: 'Exposure Start')\+: Starts with the reception of the Exposure Start.
+\item {\bfseries Exposure\+End} (Display string\+: 'Exposure End')\+: Starts with the reception of the Exposure End.
+\item {\bfseries Line0} (Display string\+: 'Line 0')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line1} (Display string\+: 'Line 1')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line2} (Display string\+: 'Line 2')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries Line\#3\#} (Display string\+: 'Line \#3\#')\+: Starts when the specified Timer\+Trigger\+Activation condition is met on the chosen I/\+O Line.
+\item {\bfseries User\+Output0} (Display string\+: 'User Output 0')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output1} (Display string\+: 'User Output 1')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output2} (Display string\+: 'User Output 2')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries User\+Output\#3\#} (Display string\+: 'User Output \#3\#')\+: Specifies which User Output bit signal to use as internal source for the trigger.
+\item {\bfseries Counter0\+Start} (Display string\+: 'Counter 0 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter1\+Start} (Display string\+: 'Counter 1 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter2\+Start} (Display string\+: 'Counter 2 Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter\#3\#Start} (Display string\+: 'Counter \#3\# Start')\+: Starts with the reception of the Counter Start.
+\item {\bfseries Counter0\+End} (Display string\+: 'Counter 0 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter1\+End} (Display string\+: 'Counter 1 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter2\+End} (Display string\+: 'Counter 2 End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Counter\#3\#End} (Display string\+: 'Counter \#3\# End')\+: Starts with the reception of the Counter End.
+\item {\bfseries Timer0\+Start} (Display string\+: 'Timer 0 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer1\+Start} (Display string\+: 'Timer 1 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer2\+Start} (Display string\+: 'Timer 2 Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer\#3\#Start} (Display string\+: 'Timer \#3\# Start')\+: Starts with the reception of the Timer Start.
+\item {\bfseries Timer0\+End} (Display string\+: 'Timer 0 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer1\+End} (Display string\+: 'Timer 1 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer2\+End} (Display string\+: 'Timer 2 End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Timer\#3\#End} (Display string\+: 'Timer \#3\# End')\+: Starts with the reception of the Timer End.
+\item {\bfseries Encoder0} (Display string\+: 'Encoder 0')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder1} (Display string\+: 'Encoder 1')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder2} (Display string\+: 'Encoder 2')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Encoder\#3\#} (Display string\+: 'Encoder \#3\#')\+: Starts with the reception of the Encoder output signal.
+\item {\bfseries Logic\+Block0} (Display string\+: 'Logic Block 0')\+: Starts with the reception of the Logioc Block output signal.
+\item {\bfseries Logic\+Block1} (Display string\+: 'Logic Block 1')\+: Starts with the reception of the Logioc Block output signal.
+\item {\bfseries Logic\+Block2} (Display string\+: 'Logic Block 2')\+: Starts with the reception of the Logioc Block output signal.
+\item {\bfseries Logic\+Block\#3\#} (Display string\+: 'Logic Block \#3\#')\+: Starts with the reception of the Logioc Block output signal.
+\item {\bfseries Software\+Signal0} (Display string\+: 'Software Signal 0')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal1} (Display string\+: 'Software Signal 1')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal2} (Display string\+: 'Software Signal 2')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Software\+Signal\#3\#} (Display string\+: 'Software Signal \#3\#')\+: Starts on the reception of the Software Signal.
+\item {\bfseries Action0} (Display string\+: 'Action 0')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action1} (Display string\+: 'Action 1')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action2} (Display string\+: 'Action 2')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Action\#3\#} (Display string\+: 'Action \#3\#')\+: Starts with the assertion of the chosen action signal.
+\item {\bfseries Link\+Trigger0} (Display string\+: 'Link Trigger 0')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Link\+Trigger1} (Display string\+: 'Link Trigger 1')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Link\+Trigger2} (Display string\+: 'Link Trigger 2')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries Link\+Trigger\#3\#} (Display string\+: 'Link Trigger \#3\#')\+: Starts with the reception of the chosen Link Trigger.
+\item {\bfseries C\+C1} (Display string\+: 'C\+C 1')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C2} (Display string\+: 'C\+C 2')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C3} (Display string\+: 'C\+C 3')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\item {\bfseries C\+C4} (Display string\+: 'C\+C 4')\+: Index of the Camera Link physical line and associated I/\+O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to Camera\+Link products only.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

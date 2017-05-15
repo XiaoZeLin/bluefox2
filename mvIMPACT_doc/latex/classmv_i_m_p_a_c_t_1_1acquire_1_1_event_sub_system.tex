@@ -1,0 +1,214 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Event\+Sub\+System类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+}
+
+
+An interface class that provides access to all event handling related objects and functions({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only)({\bfseries deprecated}).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a89aef19fe3be239f2280f65d865dd32a}{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{Event\+Sub\+System}(\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev))
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}} object({\bfseries deprecated}). \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gadb3fa35ca8658058536b71acba5934bf}{Event\+Sub\+System} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{Event\+Sub\+System} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}} from an existing one. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a69d2a064b0b7c16861e7512491af81e7}{$\sim$\+Event\+Sub\+System} ()
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{Event\+Sub\+System} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a3f60f59e43ab58f591f73d871778d6b1}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{Event\+Sub\+System} \&rhs)
+\begin{DoxyCompactList}\small\item\em Allows assignment of one {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}} to another. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a523c894cbe15b257cf14ec3050e88919}{get\+Event\+By\+Index} (int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} based on the index in the internal array of event references. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a1fd518a1695f14d8963f7bad4084f473}{get\+Event\+By\+Type} (\hyperlink{group___common_interface_ga0947eb7d6a73b9baab283cbf65cd8d6b}{T\+Device\+Event\+Type} type) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} based on the type of the event. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{Event} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a9d73c821084f1376e221191cf4efaa57}{get\+Event\+By\+Name} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a reference to an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} based on the type (represented as a string) of the event. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a3f2509bbadd74548d28460908ad5754c}{get\+Event\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the number of different event types available for the device that has been passed to the constructor of this object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a18be5407d1c6b041f55f9854712e8c61}{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{Event\+Wait\+Results} wait\+For(int timeout\+\_\+ms, \hyperlink{group___common_interface_ga0947eb7d6a73b9baab283cbf65cd8d6b}{T\+Device\+Event\+Type} mask))
+\begin{DoxyCompactList}\small\item\em Allows to wait for the occurrence of one or more events({\bfseries deprecated}). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+An interface class that provides access to all event handling related objects and functions({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only)({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000013}{弃用}]This class has been declared {\bfseries deprecated} and will be removed in future versions of this interface. A more flexible way of getting informed about changes in driver features has been added to the interface and should be used instead. An example for this new method can be found here\+: Callback.\+cpp\end{DoxyRefDesc}
+
+
+Events from the {\bfseries mv\+I\+M\+P\+A\+C\+T} {\bfseries Acquire} interfaces point of view are certain things reported by the hardware like e.\+g. the detection of a frame start or the change on one of the digital inputs of a device.
+
+This class combines everything that is related {\bfseries mv\+I\+M\+P\+A\+C\+T} {\itshape Acquire} s event handling.
+
+\begin{DoxyNote}{注解}
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a69d2a064b0b7c16861e7512491af81e7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!````~Event\+Sub\+System@{$\sim$\+Event\+Sub\+System}}
+\index{````~Event\+Sub\+System@{$\sim$\+Event\+Sub\+System}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{$\sim$\+Event\+Sub\+System}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::$\sim$\+Event\+Sub\+System (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a69d2a064b0b7c16861e7512491af81e7}
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000030}{弃用}]\end{DoxyRefDesc}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a523c894cbe15b257cf14ec3050e88919}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!get\+Event\+By\+Index@{get\+Event\+By\+Index}}
+\index{get\+Event\+By\+Index@{get\+Event\+By\+Index}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{get\+Event\+By\+Index}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::get\+Event\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a523c894cbe15b257cf14ec3050e88919}
+
+
+Returns a reference to an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} based on the index in the internal array of event references. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000032}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} object specifying the event the given index in the internal list if available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the event object the user wants to access. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a9d73c821084f1376e221191cf4efaa57}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!get\+Event\+By\+Name@{get\+Event\+By\+Name}}
+\index{get\+Event\+By\+Name@{get\+Event\+By\+Name}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{get\+Event\+By\+Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::get\+Event\+By\+Name (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a9d73c821084f1376e221191cf4efaa57}
+
+
+Returns a reference to an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} based on the type (represented as a string) of the event. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000034}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} object specifying the event of the given type in the internal list if available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name/string representation of the event object the user wants to access. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a1fd518a1695f14d8963f7bad4084f473}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!get\+Event\+By\+Type@{get\+Event\+By\+Type}}
+\index{get\+Event\+By\+Type@{get\+Event\+By\+Type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{get\+Event\+By\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::get\+Event\+By\+Type (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Device\+Event\+Type}}]{type}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a1fd518a1695f14d8963f7bad4084f473}
+
+
+Returns a reference to an {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} based on the type of the event. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000033}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}.\end{DoxyRefDesc}
+
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event}} object specifying the event of the given type in the internal list if available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em type} & The type of the event object the user wants to access. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a3f2509bbadd74548d28460908ad5754c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!get\+Event\+Count@{get\+Event\+Count}}
+\index{get\+Event\+Count@{get\+Event\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{get\+Event\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::get\+Event\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a3f2509bbadd74548d28460908ad5754c}
+
+
+Returns the number of different event types available for the device that has been passed to the constructor of this object. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000035}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a89aef19fe3be239f2280f65d865dd32a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}}
+\index{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::\+M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Sub\+System}({\bf Device} $\ast$p\+Dev)}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a89aef19fe3be239f2280f65d865dd32a}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}} object({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000028}{弃用}]All functions belonging to this class have been declared {\bfseries deprecated}. See detailed description of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}. \end{DoxyRefDesc}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a18be5407d1c6b041f55f9854712e8c61}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}}
+\index{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::\+M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P (
+\begin{DoxyParamCaption}
+\item[{{\bf Event\+Wait\+Results} }]{wait\+Forint timeout\+\_\+ms, T\+Device\+Event\+Type mask}
+\end{DoxyParamCaption}
+)}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a18be5407d1c6b041f55f9854712e8c61}
+
+
+Allows to wait for the occurrence of one or more events({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000036}{弃用}]This function has been declared {\bfseries deprecated} and will be removed in future versions of this interface. A more flexible way of getting informed about changes in driver features has been added to the interface and should be used instead. An example for this new method can be found here\+: Callback.\+cpp\end{DoxyRefDesc}
+
+
+This function must be called to wait for one or more events to becomes signalled by the device driver.
+
+\begin{DoxyReturn}{返回}
+A {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_wait_results}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Wait\+Results}} object containing information about the result of this operation. 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a3f60f59e43ab58f591f73d871778d6b1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}!operator=@{operator=}}
+\index{operator=@{operator=}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Event\+Sub\+System}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Event\+Sub\+System} \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system_a3f60f59e43ab58f591f73d871778d6b1}
+
+
+Allows assignment of one {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}} to another. 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000031}{弃用}]Internal data is reference counted, thus modifying an event obtained from {\itshape src} will also modify the same event obtained from this newly constructed class. \end{DoxyRefDesc}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em rhs} & A reference to an existing {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_event_sub_system}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Event\+Sub\+System}}. \\
+\hline
+\end{DoxyParams}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

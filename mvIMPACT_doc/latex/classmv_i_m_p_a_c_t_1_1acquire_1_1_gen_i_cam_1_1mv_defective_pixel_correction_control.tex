@@ -1,0 +1,151 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+Defective\+Pixel\+Correction\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+}
+
+
+Contains features to control the device's defective pixel correction parameters.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+Defective\+Pixel\+Correction\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=266pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+Defective\+Pixel\+Correction\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aae69ade3611d8ec28ff1074e0182404a}{mv\+Defective\+Pixel\+Correction\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_ac986d55f2cd37273af4915b39fa451a1}{mv\+Defective\+Pixel\+Enable}
+\begin{DoxyCompactList}\small\item\em A boolean property. Activates the sensor's defective pixel correction. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aa641704fe6e34fd75e1a894674cd0641}{mv\+Defective\+Pixel\+Selector}
+\begin{DoxyCompactList}\small\item\em An integer property. Controls the index (offset) of the defective pixel to access. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a8248f54afba3baa709bcfc59f6d8ba0f}{mv\+Defective\+Pixel\+Offset\+X}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the horizontal offset of the defective pixel selected by mv\+Defective\+Pixel\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a168ab762c3f2b0026c3c40b2eea7bc9b}{mv\+Defective\+Pixel\+Offset\+Y}
+\begin{DoxyCompactList}\small\item\em An integer property. Returns the vertical offset of the defective pixel selected by mv\+Defective\+Pixel\+Selector. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4f7d37dd9b5ecd6469ab5f847929d1cf}{mv\+Defective\+Pixel\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Contains the number of valid defective pixels. Increasing this value adds a new empty entry. Decreasing this value deletes the last entry. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_ade84f64ea63b2949dfdaaf618dd295af}{mv\+Defective\+Pixel\+Data\+Load}
+\begin{DoxyCompactList}\small\item\em A method object. Loads the defective pixels from device non volatile memory. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4acdf44b93d160f06022d1e52f5b1e42}{mv\+Defective\+Pixel\+Data\+Save}
+\begin{DoxyCompactList}\small\item\em A method object. Saves the defective pixels to device non volatile memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Contains features to control the device's defective pixel correction parameters. 
+
+Contains features to control the device's defective pixel correction parameters. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aae69ade3611d8ec28ff1074e0182404a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Correction\+Control@{mv\+Defective\+Pixel\+Correction\+Control}}
+\index{mv\+Defective\+Pixel\+Correction\+Control@{mv\+Defective\+Pixel\+Correction\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Correction\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Correction\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aae69ade3611d8ec28ff1074e0182404a}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aae69ade3611d8ec28ff1074e0182404a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4f7d37dd9b5ecd6469ab5f847929d1cf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Count@{mv\+Defective\+Pixel\+Count}}
+\index{mv\+Defective\+Pixel\+Count@{mv\+Defective\+Pixel\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4f7d37dd9b5ecd6469ab5f847929d1cf}
+
+
+An integer property. Contains the number of valid defective pixels. Increasing this value adds a new empty entry. Decreasing this value deletes the last entry. 
+
+Contains the number of valid defective pixels. Increasing this value adds a new empty entry. Decreasing this value deletes the last entry. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_ade84f64ea63b2949dfdaaf618dd295af}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Data\+Load@{mv\+Defective\+Pixel\+Data\+Load}}
+\index{mv\+Defective\+Pixel\+Data\+Load@{mv\+Defective\+Pixel\+Data\+Load}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Data\+Load}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Data\+Load}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_ade84f64ea63b2949dfdaaf618dd295af}
+
+
+A method object. Loads the defective pixels from device non volatile memory. 
+
+Loads the defective pixels from device non volatile memory. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4acdf44b93d160f06022d1e52f5b1e42}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Data\+Save@{mv\+Defective\+Pixel\+Data\+Save}}
+\index{mv\+Defective\+Pixel\+Data\+Save@{mv\+Defective\+Pixel\+Data\+Save}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Data\+Save}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Data\+Save}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a4acdf44b93d160f06022d1e52f5b1e42}
+
+
+A method object. Saves the defective pixels to device non volatile memory. 
+
+Saves the defective pixels to device non volatile memory. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_ac986d55f2cd37273af4915b39fa451a1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Enable@{mv\+Defective\+Pixel\+Enable}}
+\index{mv\+Defective\+Pixel\+Enable@{mv\+Defective\+Pixel\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_ac986d55f2cd37273af4915b39fa451a1}
+
+
+A boolean property. Activates the sensor's defective pixel correction. 
+
+Activates the sensor's defective pixel correction. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a8248f54afba3baa709bcfc59f6d8ba0f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Offset\+X@{mv\+Defective\+Pixel\+Offset\+X}}
+\index{mv\+Defective\+Pixel\+Offset\+X@{mv\+Defective\+Pixel\+Offset\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Offset\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Offset\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a8248f54afba3baa709bcfc59f6d8ba0f}
+
+
+An integer property. Returns the horizontal offset of the defective pixel selected by mv\+Defective\+Pixel\+Selector. 
+
+Returns the horizontal offset of the defective pixel selected by mv\+Defective\+Pixel\+Selector. This data is N\+O\+T part of a user set, but must be written to non volatile memory by calling 'mv\+Defective\+Pixel\+Data\+Save' explicitly. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a168ab762c3f2b0026c3c40b2eea7bc9b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Offset\+Y@{mv\+Defective\+Pixel\+Offset\+Y}}
+\index{mv\+Defective\+Pixel\+Offset\+Y@{mv\+Defective\+Pixel\+Offset\+Y}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Offset\+Y}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Offset\+Y}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_a168ab762c3f2b0026c3c40b2eea7bc9b}
+
+
+An integer property. Returns the vertical offset of the defective pixel selected by mv\+Defective\+Pixel\+Selector. 
+
+Returns the vertical offset of the defective pixel selected by mv\+Defective\+Pixel\+Selector. This data is N\+O\+T part of a user set, but must be written to non volatile memory by calling 'mv\+Defective\+Pixel\+Data\+Save' explicitly. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aa641704fe6e34fd75e1a894674cd0641}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}!mv\+Defective\+Pixel\+Selector@{mv\+Defective\+Pixel\+Selector}}
+\index{mv\+Defective\+Pixel\+Selector@{mv\+Defective\+Pixel\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control}}
+\subsubsection[{mv\+Defective\+Pixel\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Defective\+Pixel\+Correction\+Control\+::mv\+Defective\+Pixel\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control_aa641704fe6e34fd75e1a894674cd0641}
+
+
+An integer property. Controls the index (offset) of the defective pixel to access. 
+
+Controls the index (offset) of the defective pixel to access. Data selected by this selector is N\+O\+T part of a user set, but must be written to non volatile memory by calling 'mv\+Defective\+Pixel\+Data\+Save' explicitly. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

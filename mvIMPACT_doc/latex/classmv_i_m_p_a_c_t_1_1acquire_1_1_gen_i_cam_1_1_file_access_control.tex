@@ -1,0 +1,226 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:File\+Access\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+}
+
+
+Category that contains the File Access control features.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:File\+Access\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_abb7557bf51da54023072c0cf2ca4d2ce}{File\+Access\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ac9dbcb001cea7d1cf901e71265e384e0}{file\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the target file in the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a1f5569c43561d1a144dc8ae6fc5bb477}{file\+Operation\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the target operation for the selected file in the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ae711a06491fa4bc8b5a707ce5a5135c4}{file\+Operation\+Execute}
+\begin{DoxyCompactList}\small\item\em A method object. Executes the operation selected by File\+Operation\+Selector on the selected file. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ab897a73644bac00e623b80287360fa7b}{file\+Open\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the access mode in which a file is opened in the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_adec95e8c921aa8ad11ab285a1c8dd696}{file\+Access\+Buffer}
+\begin{DoxyCompactList}\small\item\em A string property. Defines the intermediate access buffer that allows the exchange of data between the device file storage and the application. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a92feefbf9e3688fd5e62e01922c8f365}{file\+Access\+Offset}
+\begin{DoxyCompactList}\small\item\em An integer property. Controls the Offset of the mapping between the device file storage and the File\+Access\+Buffer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a8c99b56aab262605e285f3e2b5a3ecb7}{file\+Access\+Length}
+\begin{DoxyCompactList}\small\item\em An integer property. Controls the Length of the mapping between the device file storage and the File\+Access\+Buffer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a8d7a328ad57ab278a4eb0cd3d7e0856f}{file\+Operation\+Status}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Represents the file operation execution status. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a97f3bb5c03a3f0b0ec3cece78e6548ae}{file\+Operation\+Result}
+\begin{DoxyCompactList}\small\item\em An integer property. Represents the file operation result. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_aa1ce3e612b1e7a27711d8590471cf3bc}{file\+Size}
+\begin{DoxyCompactList}\small\item\em An integer property. Represents the size of the selected file in bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Category that contains the File Access control features. 
+
+A category that contains the File Access control features. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_abb7557bf51da54023072c0cf2ca4d2ce}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!File\+Access\+Control@{File\+Access\+Control}}
+\index{File\+Access\+Control@{File\+Access\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{File\+Access\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::\+File\+Access\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_abb7557bf51da54023072c0cf2ca4d2ce}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_abb7557bf51da54023072c0cf2ca4d2ce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_adec95e8c921aa8ad11ab285a1c8dd696}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Access\+Buffer@{file\+Access\+Buffer}}
+\index{file\+Access\+Buffer@{file\+Access\+Buffer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Access\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Access\+Buffer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_adec95e8c921aa8ad11ab285a1c8dd696}
+
+
+A string property. Defines the intermediate access buffer that allows the exchange of data between the device file storage and the application. 
+
+Defines the intermediate access buffer that allows the exchange of data between the device file storage and the application. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a8c99b56aab262605e285f3e2b5a3ecb7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Access\+Length@{file\+Access\+Length}}
+\index{file\+Access\+Length@{file\+Access\+Length}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Access\+Length}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Access\+Length}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a8c99b56aab262605e285f3e2b5a3ecb7}
+
+
+An integer property. Controls the Length of the mapping between the device file storage and the File\+Access\+Buffer. 
+
+Controls the Length of the mapping between the device file storage and the File\+Access\+Buffer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a92feefbf9e3688fd5e62e01922c8f365}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Access\+Offset@{file\+Access\+Offset}}
+\index{file\+Access\+Offset@{file\+Access\+Offset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Access\+Offset}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Access\+Offset}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a92feefbf9e3688fd5e62e01922c8f365}
+
+
+An integer property. Controls the Offset of the mapping between the device file storage and the File\+Access\+Buffer. 
+
+Controls the Offset of the mapping between the device file storage and the File\+Access\+Buffer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ab897a73644bac00e623b80287360fa7b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Open\+Mode@{file\+Open\+Mode}}
+\index{file\+Open\+Mode@{file\+Open\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Open\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Open\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ab897a73644bac00e623b80287360fa7b}
+
+
+An enumerated integer property. Selects the access mode in which a file is opened in the device. 
+
+Selects the access mode in which a file is opened in the device.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Read} (Display string\+: 'Read')\+: This mode selects read-\/only open mode.
+\item {\bfseries Write} (Display string\+: 'Write')\+: This mode selects write-\/only open mode.
+\item {\bfseries Read\+Write} (Display string\+: 'Read Write')\+: This mode selects read and write open mode.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ae711a06491fa4bc8b5a707ce5a5135c4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Operation\+Execute@{file\+Operation\+Execute}}
+\index{file\+Operation\+Execute@{file\+Operation\+Execute}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Operation\+Execute}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Operation\+Execute}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ae711a06491fa4bc8b5a707ce5a5135c4}
+
+
+A method object. Executes the operation selected by File\+Operation\+Selector on the selected file. 
+
+Executes the operation selected by File\+Operation\+Selector on the selected file. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a97f3bb5c03a3f0b0ec3cece78e6548ae}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Operation\+Result@{file\+Operation\+Result}}
+\index{file\+Operation\+Result@{file\+Operation\+Result}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Operation\+Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Operation\+Result}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a97f3bb5c03a3f0b0ec3cece78e6548ae}
+
+
+An integer property. Represents the file operation result. 
+
+Represents the file operation result. For Read or Write operations, the number of successfully read/written bytes is returned. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a1f5569c43561d1a144dc8ae6fc5bb477}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Operation\+Selector@{file\+Operation\+Selector}}
+\index{file\+Operation\+Selector@{file\+Operation\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Operation\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Operation\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a1f5569c43561d1a144dc8ae6fc5bb477}
+
+
+An enumerated integer property. Selects the target operation for the selected file in the device. 
+
+Selects the target operation for the selected file in the device. This Operation is executed when the File\+Operation\+Execute feature is called.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Open} (Display string\+: 'Open')\+: Opens the file selected by File\+Selector in the device. The access mode in which the file is opened is selected by File\+Open\+Mode.
+\item {\bfseries Close} (Display string\+: 'Close')\+: Closes the file selected by File\+Selector in the device.
+\item {\bfseries Read} (Display string\+: 'Read')\+: Reads File\+Access\+Length bytes from the device storage at the file relative offset File\+Access\+Offset into File\+Access\+Buffer.
+\item {\bfseries Write} (Display string\+: 'Write')\+: Writes File\+Access\+Length bytes taken from the File\+Access\+Buffer into the device storage at the file relative offset File\+Access\+Offset.
+\item {\bfseries Delete} (Display string\+: 'Delete')\+: Deletes the file selected by File\+Selector in the device. Note that deleting a device file should not remove the associated File\+Selector entry to allow future operation on this file.
+\item {\bfseries Mv\+Flash\+Write} (Display string\+: 'File Operation Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a8d7a328ad57ab278a4eb0cd3d7e0856f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Operation\+Status@{file\+Operation\+Status}}
+\index{file\+Operation\+Status@{file\+Operation\+Status}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Operation\+Status}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Operation\+Status}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_a8d7a328ad57ab278a4eb0cd3d7e0856f}
+
+
+An enumerated integer property. Represents the file operation execution status. 
+
+Represents the file operation execution status.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Success} (Display string\+: 'Success')\+: File Operation was sucessful.
+\item {\bfseries Failure} (Display string\+: 'Failure')\+: File Operation failed.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ac9dbcb001cea7d1cf901e71265e384e0}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Selector@{file\+Selector}}
+\index{file\+Selector@{file\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_ac9dbcb001cea7d1cf901e71265e384e0}
+
+
+An enumerated integer property. Selects the target file in the device. 
+
+Selects the target file in the device.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries User\+Set\+Default} (Display string\+: 'User Set Default')\+: The default user set of the device.
+\item {\bfseries User\+Set1} (Display string\+: 'User Set 1')\+: The first user set of the device.
+\item {\bfseries User\+Set2} (Display string\+: 'User Set 2')\+: The second user set of the device.
+\item {\bfseries User\+Set3} (Display string\+: 'User Set 3')\+: The third user set of the device.
+\item {\bfseries User\+Set\#4\#} (Display string\+: 'User Set \#4\#')\+: The third user set of the device.
+\item {\bfseries L\+U\+T\+Luminance} (Display string\+: 'L\+U\+T Luminance')\+: The Luminance L\+U\+T of the camera.
+\item {\bfseries L\+U\+T\+Red} (Display string\+: 'L\+U\+T Red')\+: The Red L\+U\+T of the camera.
+\item {\bfseries L\+U\+T\+Green} (Display string\+: 'L\+U\+T Green')\+: The Green L\+U\+T of the camera.
+\item {\bfseries L\+U\+T\+Blue} (Display string\+: 'L\+U\+T Blue')\+: The Blue L\+U\+T of the camera.
+\item {\bfseries Device\+Firmware} (Display string\+: 'File Selector')
+\item {\bfseries User\+File} (Display string\+: 'File Selector')
+\item {\bfseries mv\+F\+F\+C\+Image} (Display string\+: 'File Selector')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_aa1ce3e612b1e7a27711d8590471cf3bc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}!file\+Size@{file\+Size}}
+\index{file\+Size@{file\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control}}
+\subsubsection[{file\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+File\+Access\+Control\+::file\+Size}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control_aa1ce3e612b1e7a27711d8590471cf3bc}
+
+
+An integer property. Represents the size of the selected file in bytes. 
+
+Represents the size of the selected file in bytes. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

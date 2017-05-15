@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::CameraSettingsBlueFOX类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::CameraSettingsBlueFOX类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><b>mvBlueFOX</b> related camera settings(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::CameraSettingsBlueFOX 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html" title="A base class for camera related settings belonging to the mvBlueXXX&#45;series (Device specific interface..." alt="" coords="5,278,187,319"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). " alt="" coords="21,187,169,229"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html" title="A base class for essential device related settings. " alt="" coords="21,97,169,138"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="21,6,169,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::CameraSettingsBlueFOX 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html" title="A base class for camera related settings belonging to the mvBlueXXX&#45;series (Device specific interface..." alt="" coords="2079,819,2262,861"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). " alt="" coords="1608,819,1757,861"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html" title="A base class for essential device related settings. " alt="" coords="1105,731,1255,773"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="631,390,780,431"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html" title="A class to control the automatic control parameters of a device(Device specific interface layout only..." alt="" coords="1101,281,1259,322"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="631,850,780,891"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,1035,555,1077"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="631,757,780,798"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TImageBuffer\lPixelFormat \&gt;" alt="" coords="839,904,1039,960"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAutoControl\lMode \&gt;" alt="" coords="1331,1000,1530,1056"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraExpose\lMode \&gt;" alt="" coords="829,325,1048,381"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAutoGainControl \&gt;" alt="" coords="1312,1062,1549,1103"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraBinning\lMode \&gt;" alt="" coords="1573,1089,1792,1145"/><area shape="rect" id="node16" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraPixel\lClock \&gt;" alt="" coords="837,1155,1041,1211"/><area shape="rect" id="node18" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAoiMode \&gt;" alt="" coords="609,273,801,314"/><area shape="rect" id="node19" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="618,94,793,135"/><area shape="rect" id="node20" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAutoControl\lSpeed \&gt;" alt="" coords="606,193,805,249"/><area shape="rect" id="node21" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraTrigger\lMode \&gt;" alt="" coords="1073,408,1287,464"/><area shape="rect" id="node22" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraTest\lMode \&gt;" alt="" coords="1330,491,1531,547"/><area shape="rect" id="node23" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAutoExposure\lControl \&gt;" alt="" coords="1577,884,1788,940"/><area shape="rect" id="node24" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraTrigger\lSource \&gt;" alt="" coords="1818,1196,2033,1252"/><area shape="rect" id="node25" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraShutter\lMode \&gt;" alt="" coords="1817,1259,2034,1315"/><area shape="rect" id="node26" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBlueFOXSensor\lTiming \&gt;" alt="" coords="2059,1260,2282,1316"/><area shape="rect" id="node27" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraFlash\lMode \&gt;" alt="" coords="1822,1356,2029,1412"/><area shape="rect" id="node28" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBlueFOXOffset\lAutoBlackSpeed \&gt;" alt="" coords="2061,1403,2280,1459"/><area shape="rect" id="node29" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraFlash\lType \&gt;" alt="" coords="835,1459,1042,1515"/><area shape="rect" id="node30" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAutoOffset\lCalibration \&gt;" alt="" coords="1084,1524,1276,1580"/><area shape="rect" id="node31" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceAdvanced\lOptions \&gt;" alt="" coords="1317,1581,1545,1637"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,1035,355,1077"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,1035,155,1077"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:acd1731450b9b16c03b4de2748a00d801"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#acd1731450b9b16c03b4de2748a00d801">CameraSettingsBlueFOX</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:acd1731450b9b16c03b4de2748a00d801"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html" title="mvBlueFOX related camera settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBlueFOX</a></b> object.  <a href="#acd1731450b9b16c03b4de2748a00d801">更多...</a><br /></td></tr>
+<tr class="separator:acd1731450b9b16c03b4de2748a00d801"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a141d3c1944245f8097e805dfbf75c9bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a141d3c1944245f8097e805dfbf75c9bd"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control.html">HDRControl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a141d3c1944245f8097e805dfbf75c9bd">getHDRControl</a> (void)</td></tr>
+<tr class="memdesc:a141d3c1944245f8097e805dfbf75c9bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_h_d_r_control.html" title="A class to control the HDR (High Dynamic Range) parameters of a device (Device specific interface lay...">mvIMPACT::acquire::HDRControl</a></b> object associated with this setting. <br /></td></tr>
+<tr class="separator:a141d3c1944245f8097e805dfbf75c9bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html">mvIMPACT::acquire::CameraSettingsBlueDevice</a></td></tr>
+<tr class="memitem:a66c6f132a7574119e138887e91bd635a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a66c6f132a7574119e138887e91bd635a">CameraSettingsBlueDevice</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a66c6f132a7574119e138887e91bd635a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html" title="A base class for camera related settings belonging to the mvBlueXXX-series (Device specific interface...">mvIMPACT::acquire::CameraSettingsBlueDevice</a></b> object.  <a href="#a66c6f132a7574119e138887e91bd635a">更多...</a><br /></td></tr>
+<tr class="separator:a66c6f132a7574119e138887e91bd635a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0110b1e3664d2c563ae850178bc367a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html">AutoControlParameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#ad0110b1e3664d2c563ae850178bc367a">getAutoControlParameters</a> (void)</td></tr>
+<tr class="memdesc:ad0110b1e3664d2c563ae850178bc367a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to the control parameters for AGC and AEC.  <a href="#ad0110b1e3664d2c563ae850178bc367a">更多...</a><br /></td></tr>
+<tr class="separator:ad0110b1e3664d2c563ae850178bc367a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html">mvIMPACT::acquire::CameraSettingsBase</a></td></tr>
+<tr class="memitem:a48c2eadebe65f845c04cf014703e725a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a48c2eadebe65f845c04cf014703e725a">CameraSettingsBase</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a48c2eadebe65f845c04cf014703e725a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html" title="A base class for camera related settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBase</a></b> object.  <a href="#a48c2eadebe65f845c04cf014703e725a">更多...</a><br /></td></tr>
+<tr class="separator:a48c2eadebe65f845c04cf014703e725a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html">mvIMPACT::acquire::BasicDeviceSettings</a></td></tr>
+<tr class="memitem:a4956794c96ca7afea6910d6fdbfd3257 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#a4956794c96ca7afea6910d6fdbfd3257">BasicDeviceSettings</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:a4956794c96ca7afea6910d6fdbfd3257 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">brief Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html" title="A base class for essential device related settings. ">mvIMPACT::acquire::BasicDeviceSettings</a></b> object.  <a href="#a4956794c96ca7afea6910d6fdbfd3257">更多...</a><br /></td></tr>
+<tr class="separator:a4956794c96ca7afea6910d6fdbfd3257 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a94b65c4b3b21b5f968ddee1dc804db34"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gac5eea380ea812d37bc6562246cdff73d">PropertyIAutoOffsetCalibration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a94b65c4b3b21b5f968ddee1dc804db34">offsetAutoCalibration</a></td></tr>
+<tr class="memdesc:a94b65c4b3b21b5f968ddee1dc804db34"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the offset calibration mode.  <a href="#a94b65c4b3b21b5f968ddee1dc804db34">更多...</a><br /></td></tr>
+<tr class="separator:a94b65c4b3b21b5f968ddee1dc804db34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c4f9f618485d3be2c952343f584bbc5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a8c4f9f618485d3be2c952343f584bbc5">offsetCorrection_pc</a></td></tr>
+<tr class="memdesc:a8c4f9f618485d3be2c952343f584bbc5"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining and <b>additional</b> analogue sensor offset in percent of the allowed range (sensor specific) <b>per</b> <b>color</b> <b>channel</b>.  <a href="#a8c4f9f618485d3be2c952343f584bbc5">更多...</a><br /></td></tr>
+<tr class="separator:a8c4f9f618485d3be2c952343f584bbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcd01df795b09dba9257c30470abba50"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#adcd01df795b09dba9257c30470abba50">offsetAutoBlackLevel</a></td></tr>
+<tr class="memdesc:adcd01df795b09dba9257c30470abba50"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the digital value assumed as black.  <a href="#adcd01df795b09dba9257c30470abba50">更多...</a><br /></td></tr>
+<tr class="separator:adcd01df795b09dba9257c30470abba50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a2cb8906b30b94653d4209740a7733"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga748b74d12ddf41831cc263b764026029">PropertyIBlueFOXOffsetAutoBlackSpeed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#ac7a2cb8906b30b94653d4209740a7733">offsetAutoBlackSpeed</a></td></tr>
+<tr class="memdesc:ac7a2cb8906b30b94653d4209740a7733"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the speed of the auto offset calibration circuit.  <a href="#ac7a2cb8906b30b94653d4209740a7733">更多...</a><br /></td></tr>
+<tr class="separator:ac7a2cb8906b30b94653d4209740a7733"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3046edfaab3f6f0f909d8ebd4fa0c4c0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a3046edfaab3f6f0f909d8ebd4fa0c4c0">lineDelay_clk</a></td></tr>
+<tr class="memdesc:a3046edfaab3f6f0f909d8ebd4fa0c4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the delay in clocks between two lines.  <a href="#a3046edfaab3f6f0f909d8ebd4fa0c4c0">更多...</a><br /></td></tr>
+<tr class="separator:a3046edfaab3f6f0f909d8ebd4fa0c4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab121de32a400194b4313fbadfa3abf01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga100e69ae1a36b64b3abed0337f42628a">PropertyIDeviceAdvancedOptions</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#ab121de32a400194b4313fbadfa3abf01">advancedOptions</a></td></tr>
+<tr class="memdesc:ab121de32a400194b4313fbadfa3abf01"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining a collection of advanced options that can be enabled or disabled.  <a href="#ab121de32a400194b4313fbadfa3abf01">更多...</a><br /></td></tr>
+<tr class="separator:ab121de32a400194b4313fbadfa3abf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af918a5013ceba642fc62182417b23340"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#af918a5013ceba642fc62182417b23340">flashToExposeDelay_us</a></td></tr>
+<tr class="memdesc:af918a5013ceba642fc62182417b23340"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the delay in us between the start of the flash signal output and the beginning of the expose period of the image sensor.  <a href="#af918a5013ceba642fc62182417b23340">更多...</a><br /></td></tr>
+<tr class="separator:af918a5013ceba642fc62182417b23340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5313c4dc12dd4b6bd30a2dbaef0f8436"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga6a8c7e0a6ec0abe20119f36cdde81a1c">PropertyICameraFlashMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a5313c4dc12dd4b6bd30a2dbaef0f8436">flashMode</a></td></tr>
+<tr class="memdesc:a5313c4dc12dd4b6bd30a2dbaef0f8436"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the behaviour of the flash output of the camera (if available).  <a href="#a5313c4dc12dd4b6bd30a2dbaef0f8436">更多...</a><br /></td></tr>
+<tr class="separator:a5313c4dc12dd4b6bd30a2dbaef0f8436"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a55515a629ceb7d7b0223711a370dd4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga597262f972ec6a59487c7434c39ecfba">PropertyICameraFlashType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a9a55515a629ceb7d7b0223711a370dd4">flashType</a></td></tr>
+<tr class="memdesc:a9a55515a629ceb7d7b0223711a370dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the type of the flash output of the camera (if available).  <a href="#a9a55515a629ceb7d7b0223711a370dd4">更多...</a><br /></td></tr>
+<tr class="separator:a9a55515a629ceb7d7b0223711a370dd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd4e31b70fbc2c296fc2532202c7b49"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gae67620addf31f8c9a17c46d8a7e5464a">PropertyICameraShutterMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a3cd4e31b70fbc2c296fc2532202c7b49">shutterMode</a></td></tr>
+<tr class="memdesc:a3cd4e31b70fbc2c296fc2532202c7b49"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the shutter mode to use.  <a href="#a3cd4e31b70fbc2c296fc2532202c7b49">更多...</a><br /></td></tr>
+<tr class="separator:a3cd4e31b70fbc2c296fc2532202c7b49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f52f05612fa050ca3ae507e340d8d9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga40354af1fd85b454ec1b4e5ca007755d">PropertyICameraTriggerSource</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#ad9f52f05612fa050ca3ae507e340d8d9">triggerSource</a></td></tr>
+<tr class="memdesc:ad9f52f05612fa050ca3ae507e340d8d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining where the trigger signal is expected to occur.  <a href="#ad9f52f05612fa050ca3ae507e340d8d9">更多...</a><br /></td></tr>
+<tr class="separator:ad9f52f05612fa050ca3ae507e340d8d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82207f8af714d74c943d0cc2725cb7c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga45fd35a32780ef2617233fe593eb9c1f">PropertyIBlueFOXSensorTiming</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a82207f8af714d74c943d0cc2725cb7c8">sensorTimingMode</a></td></tr>
+<tr class="memdesc:a82207f8af714d74c943d0cc2725cb7c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the current image sensor timing mode.  <a href="#a82207f8af714d74c943d0cc2725cb7c8">更多...</a><br /></td></tr>
+<tr class="separator:a82207f8af714d74c943d0cc2725cb7c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html">mvIMPACT::acquire::CameraSettingsBlueDevice</a></td></tr>
+<tr class="memitem:a4332b415ee1aa70f66f1c229f2149f71 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga692ee7a4c1a557177eba5b66deed4c2d">PropertyIAutoControlMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a4332b415ee1aa70f66f1c229f2149f71">autoControlMode</a></td></tr>
+<tr class="memdesc:a4332b415ee1aa70f66f1c229f2149f71 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the auto control mode the device is operated in.  <a href="#a4332b415ee1aa70f66f1c229f2149f71">更多...</a><br /></td></tr>
+<tr class="separator:a4332b415ee1aa70f66f1c229f2149f71 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d65d62f763438188309c1807b7fc436 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga6489a23af699da0b3a1f151c966ab906">PropertyIAutoGainControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a9d65d62f763438188309c1807b7fc436">autoGainControl</a></td></tr>
+<tr class="memdesc:a9d65d62f763438188309c1807b7fc436 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property, which represents the current mode the AGC (<b>A</b> utomatic <b>G</b> ain <b>C</b> ontrol) is operated in.  <a href="#a9d65d62f763438188309c1807b7fc436">更多...</a><br /></td></tr>
+<tr class="separator:a9d65d62f763438188309c1807b7fc436 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42cf7abb4f526ee88e74e040a3c9c3ba inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga5223682df43da3c6e83d7c8382189d7c">PropertyIAutoExposureControl</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a42cf7abb4f526ee88e74e040a3c9c3ba">autoExposeControl</a></td></tr>
+<tr class="memdesc:a42cf7abb4f526ee88e74e040a3c9c3ba inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property, which represents the current mode the AEC (<b>A</b> utomatic <b>E</b> xpose <b>C</b> ontrol) is operated in.  <a href="#a42cf7abb4f526ee88e74e040a3c9c3ba">更多...</a><br /></td></tr>
+<tr class="separator:a42cf7abb4f526ee88e74e040a3c9c3ba inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670966b0117c0fbf623d169e9ee69431 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a670966b0117c0fbf623d169e9ee69431">gain_dB</a></td></tr>
+<tr class="memdesc:a670966b0117c0fbf623d169e9ee69431 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining the gain in dB.  <a href="#a670966b0117c0fbf623d169e9ee69431">更多...</a><br /></td></tr>
+<tr class="separator:a670966b0117c0fbf623d169e9ee69431 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3bbc947f98f3182b8bd0121a511b1c2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#aa3bbc947f98f3182b8bd0121a511b1c2">offset_pc</a></td></tr>
+<tr class="memdesc:aa3bbc947f98f3182b8bd0121a511b1c2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property defining the analogue sensor offset in percent of the allowed range (sensor specific).  <a href="#aa3bbc947f98f3182b8bd0121a511b1c2">更多...</a><br /></td></tr>
+<tr class="separator:aa3bbc947f98f3182b8bd0121a511b1c2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39df2b304078d58d4031ee2b00d9b7c3 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga346a75ab93c8255ce16833b47718680d">PropertyICameraPixelClock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a39df2b304078d58d4031ee2b00d9b7c3">pixelClock_KHz</a></td></tr>
+<tr class="memdesc:a39df2b304078d58d4031ee2b00d9b7c3 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the pixel clock of the camera sensor in KHz.  <a href="#a39df2b304078d58d4031ee2b00d9b7c3">更多...</a><br /></td></tr>
+<tr class="separator:a39df2b304078d58d4031ee2b00d9b7c3 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac41f734868b019f40aad28839554c79a inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga1b37c202f78d874f5a68bfd7555ea552">PropertyICameraExposeMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#ac41f734868b019f40aad28839554c79a">exposeMode</a></td></tr>
+<tr class="memdesc:ac41f734868b019f40aad28839554c79a inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the exposure mode the camera sensor is operated in.  <a href="#ac41f734868b019f40aad28839554c79a">更多...</a><br /></td></tr>
+<tr class="separator:ac41f734868b019f40aad28839554c79a inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab802a564f56c021c4730899f1d8c1cba inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#ab802a564f56c021c4730899f1d8c1cba">expose_us</a></td></tr>
+<tr class="memdesc:ab802a564f56c021c4730899f1d8c1cba inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property which defines the exposure time for an image in us.  <a href="#ab802a564f56c021c4730899f1d8c1cba">更多...</a><br /></td></tr>
+<tr class="separator:ab802a564f56c021c4730899f1d8c1cba inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dc3cb5b21c3b9b6ebba4039a601b982 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga416d63b8d5d2dd2e5fabd253db5f8efc">PropertyICameraBinningMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a6dc3cb5b21c3b9b6ebba4039a601b982">binningMode</a></td></tr>
+<tr class="memdesc:a6dc3cb5b21c3b9b6ebba4039a601b982 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the binning mode the camera is operated in.  <a href="#a6dc3cb5b21c3b9b6ebba4039a601b982">更多...</a><br /></td></tr>
+<tr class="separator:a6dc3cb5b21c3b9b6ebba4039a601b982 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986bc69aacf955629a6c3d0cf5971dc5 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gac0b281150a89dd23bb2a696aba431225">PropertyICameraTestMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a986bc69aacf955629a6c3d0cf5971dc5">testMode</a></td></tr>
+<tr class="memdesc:a986bc69aacf955629a6c3d0cf5971dc5 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the image transmission mode of the camera.  <a href="#a986bc69aacf955629a6c3d0cf5971dc5">更多...</a><br /></td></tr>
+<tr class="separator:a986bc69aacf955629a6c3d0cf5971dc5 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a736a6e90f7bb19b4f10e7ff0110c657e inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gad47fbc49f6f36b45b3458aef7a61849a">PropertyICameraTriggerMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a736a6e90f7bb19b4f10e7ff0110c657e">triggerMode</a></td></tr>
+<tr class="memdesc:a736a6e90f7bb19b4f10e7ff0110c657e inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property which defines what kind of trigger mode shall be used for an image acquisition.  <a href="#a736a6e90f7bb19b4f10e7ff0110c657e">更多...</a><br /></td></tr>
+<tr class="separator:a736a6e90f7bb19b4f10e7ff0110c657e inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73d838f2083f213c50ee6d2b161ad703 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#a73d838f2083f213c50ee6d2b161ad703">frameDelay_us</a></td></tr>
+<tr class="memdesc:a73d838f2083f213c50ee6d2b161ad703 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the delay in us between an external trigger event an the begin of the sensor exposure.  <a href="#a73d838f2083f213c50ee6d2b161ad703">更多...</a><br /></td></tr>
+<tr class="separator:a73d838f2083f213c50ee6d2b161ad703 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af360308aed6a5ebc938f4fd19b2ebe6f inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_auto_control_parameters.html">AutoControlParameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#af360308aed6a5ebc938f4fd19b2ebe6f">autoControlParameters</a></td></tr>
+<tr class="memdesc:af360308aed6a5ebc938f4fd19b2ebe6f inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides access to the control parameters for AGC and AEC.  <a href="#af360308aed6a5ebc938f4fd19b2ebe6f">更多...</a><br /></td></tr>
+<tr class="separator:af360308aed6a5ebc938f4fd19b2ebe6f inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html">mvIMPACT::acquire::CameraSettingsBase</a></td></tr>
+<tr class="memitem:a0058890a1b217348bc9d74276d136cd0 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0058890a1b217348bc9d74276d136cd0"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a0058890a1b217348bc9d74276d136cd0">aoiHeight</a></td></tr>
+<tr class="memdesc:a0058890a1b217348bc9d74276d136cd0 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the number of lines to capture. <br /></td></tr>
+<tr class="separator:a0058890a1b217348bc9d74276d136cd0 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbfbd65eb718a5a57084b7fc8f594ace inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#adbfbd65eb718a5a57084b7fc8f594ace">aoiStartX</a></td></tr>
+<tr class="memdesc:adbfbd65eb718a5a57084b7fc8f594ace inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the X-offset for each capture line.  <a href="#adbfbd65eb718a5a57084b7fc8f594ace">更多...</a><br /></td></tr>
+<tr class="separator:adbfbd65eb718a5a57084b7fc8f594ace inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a848ee514681ffe6bf617cf6de0bf5a48 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#a848ee514681ffe6bf617cf6de0bf5a48">aoiStartY</a></td></tr>
+<tr class="memdesc:a848ee514681ffe6bf617cf6de0bf5a48 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the Y-offset.  <a href="#a848ee514681ffe6bf617cf6de0bf5a48">更多...</a><br /></td></tr>
+<tr class="separator:a848ee514681ffe6bf617cf6de0bf5a48 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1d058292017a9d17046e5ab3ba38933 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d058292017a9d17046e5ab3ba38933"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#ac1d058292017a9d17046e5ab3ba38933">aoiWidth</a></td></tr>
+<tr class="memdesc:ac1d058292017a9d17046e5ab3ba38933 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the number of pixels to capture per line. <br /></td></tr>
+<tr class="separator:ac1d058292017a9d17046e5ab3ba38933 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af295aa670e45c6cbdb6e5d8517922371 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga4f53082cdae4edfc1f87e928a0ab4184">PropertyIImageBufferPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base.html#af295aa670e45c6cbdb6e5d8517922371">pixelFormat</a></td></tr>
+<tr class="memdesc:af295aa670e45c6cbdb6e5d8517922371 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the pixel format used to transfer the image data into the target systems host memory.  <a href="#af295aa670e45c6cbdb6e5d8517922371">更多...</a><br /></td></tr>
+<tr class="separator:af295aa670e45c6cbdb6e5d8517922371 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings')"><img src="closed.png" alt="-"/>&#160;Public 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html">mvIMPACT::acquire::BasicDeviceSettings</a></td></tr>
+<tr class="memitem:aa6ca2a2fe4794fbc5bf638b48440eac1 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#aa6ca2a2fe4794fbc5bf638b48440eac1">basedOn</a></td></tr>
+<tr class="memdesc:aa6ca2a2fe4794fbc5bf638b48440eac1 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the name of the setting this setting is based on.  <a href="#aa6ca2a2fe4794fbc5bf638b48440eac1">更多...</a><br /></td></tr>
+<tr class="separator:aa6ca2a2fe4794fbc5bf638b48440eac1 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bbc413a2afe5a1d8eb673ba14047ae2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings.html#a5bbc413a2afe5a1d8eb673ba14047ae2">imageRequestTimeout_ms</a></td></tr>
+<tr class="memdesc:a5bbc413a2afe5a1d8eb673ba14047ae2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property defining the maximum time to wait for an image in ms.  <a href="#a5bbc413a2afe5a1d8eb673ba14047ae2">更多...</a><br /></td></tr>
+<tr class="separator:a5bbc413a2afe5a1d8eb673ba14047ae2 inherit pub_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_basic_device_settings"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p><b>mvBlueFOX</b> related camera settings(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>This class contains properties to control the way the image sensor of the <b>mvBlueFOX</b> behaves.</p>
+<dl class="section note"><dt>注解</dt><dd>This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="acd1731450b9b16c03b4de2748a00d801"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::CameraSettingsBlueFOX::CameraSettingsBlueFOX </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html" title="mvBlueFOX related camera settings(Device specific interface layout only). ">mvIMPACT::acquire::CameraSettingsBlueFOX</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_acd1731450b9b16c03b4de2748a00d801_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_acd1731450b9b16c03b4de2748a00d801_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_acd1731450b9b16c03b4de2748a00d801_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x_acd1731450b9b16c03b4de2748a00d801_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="232,65,395,121"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="443,29,605,85"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="449,109,599,150"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="679,5,847,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="653,70,872,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="932,37,1081,78"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="920,102,1093,143"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1142,124,1370,180"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1419,131,1643,173"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="ab121de32a400194b4313fbadfa3abf01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga100e69ae1a36b64b3abed0337f42628a">PropertyIDeviceAdvancedOptions</a> mvIMPACT::acquire::CameraSettingsBlueFOX::advancedOptions</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining a collection of advanced options that can be enabled or disabled. </p>
+<p>This property is highly sensor dependent. Each sensor might offer a different sub set of the options offered. Only experienced users should work with this feature.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDeviceAdvancedOptions</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a5313c4dc12dd4b6bd30a2dbaef0f8436"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga6a8c7e0a6ec0abe20119f36cdde81a1c">PropertyICameraFlashMode</a> mvIMPACT::acquire::CameraSettingsBlueFOX::flashMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the behaviour of the flash output of the camera (if available). </p>
+<p>If this property is set the cameras flash output (if available) will be pulsed during the exposure period of the sensor. In that case the pulse width will be equal to the exposure time.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraFlashMode</b>.</p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#af918a5013ceba642fc62182417b23340" title="An integer property defining the delay in us between the start of the flash signal output and the beg...">mvIMPACT::acquire::CameraSettingsBlueFOX::flashToExposeDelay_us</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af918a5013ceba642fc62182417b23340"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::CameraSettingsBlueFOX::flashToExposeDelay_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the delay in us between the start of the flash signal output and the beginning of the expose period of the image sensor. </p>
+<dl class="section note"><dt>注解</dt><dd>This property is mainly provided for compatibility reasons. Previous versions of the <b>mvBlueFOX</b> driver produced a fixed delay of about 300 us between the beginning of the flash signal creation and the beginning of the sensors expose period. Newer versions of the driver do <b>NOT</b> produce this delay anymore which might cause a different illumination for applications using very intensive, short flash and expose times. Applications relying on the delay introduced in older driver versions should set this property to '300' by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a5f8110041cdd79bc953d9933737f5812" title="Writes one value to the property. ">mvIMPACT::acquire::PropertyI::write</a></b>.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#ab802a564f56c021c4730899f1d8c1cba" title="An integer property which defines the exposure time for an image in us. ">mvIMPACT::acquire::CameraSettingsBlueDevice::expose_us</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9a55515a629ceb7d7b0223711a370dd4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga597262f972ec6a59487c7434c39ecfba">PropertyICameraFlashType</a> mvIMPACT::acquire::CameraSettingsBlueFOX::flashType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the type of the flash output of the camera (if available). </p>
+<p>Depending of the camera sensor type (<em>rolling</em> shutter or <em>frame</em> <em>shutter</em> there well be different modes available</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraFlashType</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3046edfaab3f6f0f909d8ebd4fa0c4c0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::CameraSettingsBlueFOX::lineDelay_clk</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the delay in clocks between two lines. </p>
+<p>Can be used to slow down the image readout the reduce the peak bandwidth required for the transfer. </p>
+
+</div>
+</div>
+<a class="anchor" id="adcd01df795b09dba9257c30470abba50"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::CameraSettingsBlueFOX::offsetAutoBlackLevel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property defining the digital value assumed as black. </p>
+<p>Modifying this property in rare cases might be useful to achieve a higher dynamic range for noise close to the black level.</p>
+<dl class="section note"><dt>注解</dt><dd>As the <b>mvBlueFOX</b> internally works with a 10 bit analog to digital conversion increasing this value by 4 will result in a black level increased by about 1 in the resulting 8 bit raw image delivered from the camera. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac7a2cb8906b30b94653d4209740a7733"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga748b74d12ddf41831cc263b764026029">PropertyIBlueFOXOffsetAutoBlackSpeed</a> mvIMPACT::acquire::CameraSettingsBlueFOX::offsetAutoBlackSpeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the speed of the auto offset calibration circuit. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBlueFOXOffsetAutoBlackSpeed</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a94b65c4b3b21b5f968ddee1dc804db34"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gac5eea380ea812d37bc6562246cdff73d">PropertyIAutoOffsetCalibration</a> mvIMPACT::acquire::CameraSettingsBlueFOX::offsetAutoCalibration</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the offset calibration mode. </p>
+<p>If this property is set to <b>mvIMPACT::acquire::aocOff</b> the offset can be adjusted manually by modifying the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#aa3bbc947f98f3182b8bd0121a511b1c2" title="A float property defining the analogue sensor offset in percent of the allowed range (sensor specific...">mvIMPACT::acquire::CameraSettingsBlueFOX::offset_pc</a></b> and <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#a8c4f9f618485d3be2c952343f584bbc5" title="A float property defining and additional analogue sensor offset in percent of the allowed range (sens...">mvIMPACT::acquire::CameraSettingsBlueFOX::offsetCorrection_pc</a> properties.</p>
+<p>If set to <b>mvIMPACT::acquire::aocOn</b> the offset is approx. 10. That means, that the medium pixel count is 10, in case no light is falling on the sensor.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TAutoOffsetCalibration</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a8c4f9f618485d3be2c952343f584bbc5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::CameraSettingsBlueFOX::offsetCorrection_pc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property defining and <b>additional</b> analogue sensor offset in percent of the allowed range (sensor specific) <b>per</b> <b>color</b> <b>channel</b>. </p>
+<p>Together with value of the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#aa3bbc947f98f3182b8bd0121a511b1c2" title="A float property defining the analogue sensor offset in percent of the allowed range (sensor specific...">mvIMPACT::acquire::CameraSettingsBlueDevice::offset_pc</a></b> this property influences the average grey level when no light reaches the sensor.</p>
+<p>This property stores 4 values.</p><ul>
+<li>The value at index 0 applies to the green component of the red-green rows of the bayer pattern</li>
+<li>The value at index 1 applies to the red component of the bayer pattern</li>
+<li>The value at index 2 applies to the green component of the blue-green rows of the bayer pattern</li>
+<li>The value at index 3 applies to the blue component of the bayer pattern</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>This property might not be supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. In addition to that this property must be enabled explicitly by setting the advanced option bit <b>mvIMPACT::acquire::daoEnablePerChannelOffsetCorrection</b> of the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html#ab121de32a400194b4313fbadfa3abf01" title="An enumerated integer property defining a collection of advanced options that can be enabled or disab...">mvIMPACT::acquire::CameraSettingsBlueFOX::advancedOptions</a></b>. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_device.html#aa3bbc947f98f3182b8bd0121a511b1c2" title="A float property defining the analogue sensor offset in percent of the allowed range (sensor specific...">mvIMPACT::acquire::CameraSettingsBlueDevice::offset_pc</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a82207f8af714d74c943d0cc2725cb7c8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga45fd35a32780ef2617233fe593eb9c1f">PropertyIBlueFOXSensorTiming</a> mvIMPACT::acquire::CameraSettingsBlueFOX::sensorTimingMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the current image sensor timing mode. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBlueFOXSensorTiming</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3cd4e31b70fbc2c296fc2532202c7b49"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gae67620addf31f8c9a17c46d8a7e5464a">PropertyICameraShutterMode</a> mvIMPACT::acquire::CameraSettingsBlueFOX::shutterMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the shutter mode to use. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraShutterMode</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad9f52f05612fa050ca3ae507e340d8d9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga40354af1fd85b454ec1b4e5ca007755d">PropertyICameraTriggerSource</a> mvIMPACT::acquire::CameraSettingsBlueFOX::triggerSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining where the trigger signal is expected to occur. </p>
+<p>When working with hardware generated signals via <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b> objects this property should be set to <b>mvIMPACT::acquire::ctsRTCtrl</b> as otherwise the program will not affect the behaviour of the camera.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraTriggerSource</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_blue_f_o_x.html">CameraSettingsBlueFOX</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:22 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

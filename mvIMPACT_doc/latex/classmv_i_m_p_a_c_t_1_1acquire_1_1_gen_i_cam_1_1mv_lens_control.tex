@@ -1,0 +1,204 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+Lens\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+}
+
+
+Contains features to control motorized lenses.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+Lens\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=210pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:mv\+Lens\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3a0edfeb5e8b583cb69f12ee85db2e76}{mv\+Lens\+Control} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a21b42a21cab10d159c5283452a8489f5}{mv\+Iris\+Type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Sets the iris type. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a1838326a8bf847b4a99580a519bcd13f}{mv\+Iris\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Sets the iris operating mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_aaf7d5f46be0aeb8d7ed468bff4145d64}{mv\+Iris\+Signal\+Level\+Min}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the minimum iris signal level in m\+V. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_ac71d9986da32f2f6cbe2922876262651}{mv\+Iris\+Signal\+Level\+Max}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the maximum iris signal level in m\+V. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_abeff1f248c0200b0055f09b9c52f6eb8}{mv\+Drive\+Selector}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Selects the lens drive that should be adjusted. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3aaebee0c8285e1be20c468a7f8e6342}{mv\+Drive\+Forward}
+\begin{DoxyCompactList}\small\item\em A method object. Generates a pulse defined by 'mv\+Drive\+Duration' and 'mv\+Drive\+Level' to move the selected motor in forward direction. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_method}{Method} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a6299fe531c5cf9275c981adf5a5c8c69}{mv\+Drive\+Backward}
+\begin{DoxyCompactList}\small\item\em A method object. Generates a pulse defined by 'mv\+Drive\+Duration' and 'mv\+Drive\+Level' to move the selected motor in backward direction. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_ab549cd58a4cc4f210c47c6868f5ec5d9}{mv\+Drive\+Duration}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the duration of the drive command in us. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a1575e6269e232773024c4e6896694175}{mv\+Drive\+Level}
+\begin{DoxyCompactList}\small\item\em An integer property. Sets the voltage level of the drive command in m\+V. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Contains features to control motorized lenses. 
+
+Contains features to control motorized lenses. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3a0edfeb5e8b583cb69f12ee85db2e76}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Lens\+Control@{mv\+Lens\+Control}}
+\index{mv\+Lens\+Control@{mv\+Lens\+Control}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Lens\+Control}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Lens\+Control (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3a0edfeb5e8b583cb69f12ee85db2e76}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3a0edfeb5e8b583cb69f12ee85db2e76_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a6299fe531c5cf9275c981adf5a5c8c69}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Drive\+Backward@{mv\+Drive\+Backward}}
+\index{mv\+Drive\+Backward@{mv\+Drive\+Backward}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Drive\+Backward}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Drive\+Backward}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a6299fe531c5cf9275c981adf5a5c8c69}
+
+
+A method object. Generates a pulse defined by 'mv\+Drive\+Duration' and 'mv\+Drive\+Level' to move the selected motor in backward direction. 
+
+Generates a pulse defined by 'mv\+Drive\+Duration' and 'mv\+Drive\+Level' to move the selected motor in backward direction. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_ab549cd58a4cc4f210c47c6868f5ec5d9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Drive\+Duration@{mv\+Drive\+Duration}}
+\index{mv\+Drive\+Duration@{mv\+Drive\+Duration}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Drive\+Duration}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Drive\+Duration}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_ab549cd58a4cc4f210c47c6868f5ec5d9}
+
+
+An integer property. Sets the duration of the drive command in us. 
+
+Sets the duration of the drive command in us. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3aaebee0c8285e1be20c468a7f8e6342}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Drive\+Forward@{mv\+Drive\+Forward}}
+\index{mv\+Drive\+Forward@{mv\+Drive\+Forward}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Drive\+Forward}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Method} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Drive\+Forward}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a3aaebee0c8285e1be20c468a7f8e6342}
+
+
+A method object. Generates a pulse defined by 'mv\+Drive\+Duration' and 'mv\+Drive\+Level' to move the selected motor in forward direction. 
+
+Generates a pulse defined by 'mv\+Drive\+Duration' and 'mv\+Drive\+Level' to move the selected motor in forward direction. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a1575e6269e232773024c4e6896694175}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Drive\+Level@{mv\+Drive\+Level}}
+\index{mv\+Drive\+Level@{mv\+Drive\+Level}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Drive\+Level}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Drive\+Level}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a1575e6269e232773024c4e6896694175}
+
+
+An integer property. Sets the voltage level of the drive command in m\+V. 
+
+Sets the voltage level of the drive command in m\+V. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_abeff1f248c0200b0055f09b9c52f6eb8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Drive\+Selector@{mv\+Drive\+Selector}}
+\index{mv\+Drive\+Selector@{mv\+Drive\+Selector}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Drive\+Selector}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Drive\+Selector}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_abeff1f248c0200b0055f09b9c52f6eb8}
+
+
+An enumerated integer property. Selects the lens drive that should be adjusted. 
+
+Selects the lens drive that should be adjusted.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Focus} (Display string\+: 'mv Drive Selector')\+: Selects the motor to control the focus.
+\item {\bfseries mv\+Zoom} (Display string\+: 'mv Drive Selector')\+: Selects the motor to control the zoom.
+\item {\bfseries mv\+Iris} (Display string\+: 'mv Drive Selector')\+: Selects the motor to control the iris.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a1838326a8bf847b4a99580a519bcd13f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Iris\+Mode@{mv\+Iris\+Mode}}
+\index{mv\+Iris\+Mode@{mv\+Iris\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Iris\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Iris\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a1838326a8bf847b4a99580a519bcd13f}
+
+
+An enumerated integer property. Sets the iris operating mode. 
+
+Sets the iris operating mode.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Off} (Display string\+: 'mv Iris Mode')\+: No iris adjustment will be done.
+\item {\bfseries mv\+Iris\+Auto} (Display string\+: 'mv Iris Mode')\+: The iris adjustment will be done automatically by evaluating the current image data.
+\item {\bfseries mv\+Iris\+Open} (Display string\+: 'mv Iris Mode')\+: The iris is fully open.
+\item {\bfseries mv\+Iris\+Close} (Display string\+: 'mv Iris Mode')\+: The iris is fully closed.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_ac71d9986da32f2f6cbe2922876262651}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Iris\+Signal\+Level\+Max@{mv\+Iris\+Signal\+Level\+Max}}
+\index{mv\+Iris\+Signal\+Level\+Max@{mv\+Iris\+Signal\+Level\+Max}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Iris\+Signal\+Level\+Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Iris\+Signal\+Level\+Max}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_ac71d9986da32f2f6cbe2922876262651}
+
+
+An integer property. Sets the maximum iris signal level in m\+V. 
+
+Sets the maximum iris signal level in m\+V. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_aaf7d5f46be0aeb8d7ed468bff4145d64}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Iris\+Signal\+Level\+Min@{mv\+Iris\+Signal\+Level\+Min}}
+\index{mv\+Iris\+Signal\+Level\+Min@{mv\+Iris\+Signal\+Level\+Min}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Iris\+Signal\+Level\+Min}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Iris\+Signal\+Level\+Min}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_aaf7d5f46be0aeb8d7ed468bff4145d64}
+
+
+An integer property. Sets the minimum iris signal level in m\+V. 
+
+Sets the minimum iris signal level in m\+V. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a21b42a21cab10d159c5283452a8489f5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}!mv\+Iris\+Type@{mv\+Iris\+Type}}
+\index{mv\+Iris\+Type@{mv\+Iris\+Type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control}}
+\subsubsection[{mv\+Iris\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::mv\+Lens\+Control\+::mv\+Iris\+Type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control_a21b42a21cab10d159c5283452a8489f5}
+
+
+An enumerated integer property. Sets the iris type. 
+
+Sets the iris type.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries mv\+Video\+Iris} (Display string\+: 'mv Iris Type')
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

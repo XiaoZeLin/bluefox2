@@ -1,0 +1,236 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Statistics类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+}
+
+
+Contains basic statistical information.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Statistics 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Statistics 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aade00e306b719630ce5c77301b070fcf}{Statistics} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{reset} (void) const 
+\begin{DoxyCompactList}\small\item\em Resets all statistical properties. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a0f67a746f45715fcb71fc36dfe0bd286}{capture\+Time\+\_\+s}
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the average time needed to capture an image. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a790d6e4e3e25b3bc11aa9fded463853e}{bandwidth\+Consumed}
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the current bandwidth consumed by this device in K\+B/s based on the average buffer size and the timestamps delivered from the device driver. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a238de49246362ad3594e9af8894628cc}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a238de49246362ad3594e9af8894628cc}{error\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a238de49246362ad3594e9af8894628cc}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the overall count of image requests which returned with an error since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a75c922d6e66abab66cc74be07ad514ff}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a75c922d6e66abab66cc74be07ad514ff}{aborted\+Requests\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a75c922d6e66abab66cc74be07ad514ff}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the overall count of image requests which have been aborted since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ab8738bd52627e687745a8a5e8cfcf9a6}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ab8738bd52627e687745a8a5e8cfcf9a6}{timed\+Out\+Requests\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ab8738bd52627e687745a8a5e8cfcf9a6}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the overall count of image requests which have timed out since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a6f6a470085cfb55e2f2a973562344dec}{\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a6f6a470085cfb55e2f2a973562344dec}{frames\+Per\+Second}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a6f6a470085cfb55e2f2a973562344dec}
+
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the current number of frames captured per second. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a6b7121fa07c4e99b29c26473f3e6d229}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a6b7121fa07c4e99b29c26473f3e6d229}{frame\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a6b7121fa07c4e99b29c26473f3e6d229}
+
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the overall count of images captured since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ac65c579e00cb51b5c841b6730631fe7e}{image\+Proc\+Time\+\_\+s}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the time (in seconds) needed to process the image data internally. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a27471ea82829cdb1540804d89dad5f57}{format\+Convert\+Time\+\_\+s}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the time (in seconds) needed to convert the image data delivered by the hardware and/or active internal driver filter nodes to the format specified by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_abfd0d30346d66251d5941a5e57efb784}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::pixel\+Format}} internally. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aad94af2739fc56bcd30f5fd062dd6374}{queue\+Time\+\_\+s}
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the average time (in seconds) a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object spends in the request queue of the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_abde1d07aa81d81e9c9a9825a2674fbcd}{lost\+Images\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the number of images that have been lost from a continuous image stream coming from a video signal source. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_abf27ea8fea8cad9b47b621ecab4e39d9}{frames\+Incomplete\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the overall count of image requests which haven't been captured completely since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adb07566662f23c71c69465bab7b149e4}{missing\+Data\+Average\+\_\+pc}
+\begin{DoxyCompactList}\small\item\em A float property {\bfseries }(read-\/only) containing the average amount of data missing in frames that haven't been captured completely since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a2671816bdd4ada13dae8930029510be1}{retransmit\+Count}
+\begin{DoxyCompactList}\small\item\em A 64 bit integer property {\bfseries }(read-\/only) containing the number of retransmit requests issued due to temporary bus bandwidth shortages or other transmission problems since this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Contains basic statistical information. 
+
+This class contains basic statistical information about the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} and the the current image acquisition progress. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aade00e306b719630ce5c77301b070fcf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!Statistics@{Statistics}}
+\index{Statistics@{Statistics}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{Statistics}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::\+Statistics (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aade00e306b719630ce5c77301b070fcf}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aade00e306b719630ce5c77301b070fcf_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!reset@{reset}}
+\index{reset@{reset}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}
+
+
+Resets all statistical properties. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a790d6e4e3e25b3bc11aa9fded463853e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!bandwidth\+Consumed@{bandwidth\+Consumed}}
+\index{bandwidth\+Consumed@{bandwidth\+Consumed}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{bandwidth\+Consumed}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::bandwidth\+Consumed}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a790d6e4e3e25b3bc11aa9fded463853e}
+
+
+A float property {\bfseries }(read-\/only) containing the current bandwidth consumed by this device in K\+B/s based on the average buffer size and the timestamps delivered from the device driver. 
+
+\begin{DoxySince}{自从}
+2.\+12.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a0f67a746f45715fcb71fc36dfe0bd286}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!capture\+Time\+\_\+s@{capture\+Time\+\_\+s}}
+\index{capture\+Time\+\_\+s@{capture\+Time\+\_\+s}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{capture\+Time\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::capture\+Time\+\_\+s}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a0f67a746f45715fcb71fc36dfe0bd286}
+
+
+A float property {\bfseries }(read-\/only) containing the average time needed to capture an image. 
+
+This time is {\bfseries N\+O\+T} the reciprocal of the frame rate, but usually a longer period of time as it includes the time elapsed from the trigger signal to the end of the image processing time. This can include time for image processing like format conversion or scaling. Typically more images can be captured as the processing can run in parallel to the sensor readout for example. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a27471ea82829cdb1540804d89dad5f57}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!format\+Convert\+Time\+\_\+s@{format\+Convert\+Time\+\_\+s}}
+\index{format\+Convert\+Time\+\_\+s@{format\+Convert\+Time\+\_\+s}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{format\+Convert\+Time\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::format\+Convert\+Time\+\_\+s}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a27471ea82829cdb1540804d89dad5f57}
+
+
+An integer property {\bfseries }(read-\/only) containing the time (in seconds) needed to convert the image data delivered by the hardware and/or active internal driver filter nodes to the format specified by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_destination_abfd0d30346d66251d5941a5e57efb784}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Destination\+::pixel\+Format}} internally. 
+
+This time will be almost 0 when no custom destination pixel format has been specified and if a custom destination format was selected and this format differs from the pixel format that is transferred by the hardware this time will be a part (or all, but never more) than the time reported by {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ac65c579e00cb51b5c841b6730631fe7e}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::image\+Proc\+Time\+\_\+s}}.
+
+\begin{DoxySince}{自从}
+1.\+12.\+58 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_abf27ea8fea8cad9b47b621ecab4e39d9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!frames\+Incomplete\+Count@{frames\+Incomplete\+Count}}
+\index{frames\+Incomplete\+Count@{frames\+Incomplete\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{frames\+Incomplete\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::frames\+Incomplete\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_abf27ea8fea8cad9b47b621ecab4e39d9}
+
+
+An integer property {\bfseries }(read-\/only) containing the overall count of image requests which haven't been captured completely since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened. 
+
+This value is a good indicator for bandwidth problems on the device to host connection.
+
+\begin{DoxyNote}{注解}
+This feature is supported by every device driver. If a device does not seem to support this feature (calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} returns false) a driver update will fix this. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ac65c579e00cb51b5c841b6730631fe7e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!image\+Proc\+Time\+\_\+s@{image\+Proc\+Time\+\_\+s}}
+\index{image\+Proc\+Time\+\_\+s@{image\+Proc\+Time\+\_\+s}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{image\+Proc\+Time\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::image\+Proc\+Time\+\_\+s}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_ac65c579e00cb51b5c841b6730631fe7e}
+
+
+An integer property {\bfseries }(read-\/only) containing the time (in seconds) needed to process the image data internally. 
+
+This time might be interesting e.\+g. if the image data is transformed into a color image by the driver (e.\+g. when working with Bayer mosaic cameras) or if any other processing function is applied to the image before it is transferred to the user. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_abde1d07aa81d81e9c9a9825a2674fbcd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!lost\+Images\+Count@{lost\+Images\+Count}}
+\index{lost\+Images\+Count@{lost\+Images\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{lost\+Images\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::lost\+Images\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_abde1d07aa81d81e9c9a9825a2674fbcd}
+
+
+An integer property {\bfseries }(read-\/only) containing the number of images that have been lost from a continuous image stream coming from a video signal source. 
+
+\begin{DoxyNote}{注解}
+For some devices this value is based on an assumption so it's by no means absolutely accurate, but when this value starts to increase this might indicate that a problem is present.
+\end{DoxyNote}
+Possible causes (among others) might be\+:
+\begin{DoxyItemize}
+\item the capture device or device driver can't cope with the amount of data the video signal source is delivering in the current mode of operation
+\item the capture device or device driver can't transfer all the data to the host P\+C because of bus bandwidth shortages
+\item the capture device or device driver image request queue ran low because the system is busy doing other things or because of a bug in the application
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+This feature is supported by every device driver. If a device does not seem to support this feature (calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} returns false) a driver update will fix this. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adb07566662f23c71c69465bab7b149e4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!missing\+Data\+Average\+\_\+pc@{missing\+Data\+Average\+\_\+pc}}
+\index{missing\+Data\+Average\+\_\+pc@{missing\+Data\+Average\+\_\+pc}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{missing\+Data\+Average\+\_\+pc}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::missing\+Data\+Average\+\_\+pc}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adb07566662f23c71c69465bab7b149e4}
+
+
+A float property {\bfseries }(read-\/only) containing the average amount of data missing in frames that haven't been captured completely since the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. 
+
+This value is a good indicator for bandwidth problems on the device to host connection.
+
+\begin{DoxyNote}{注解}
+This feature is supported by every device driver. If a device does not seem to support this feature (calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} returns false) a driver update will fix this. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aad94af2739fc56bcd30f5fd062dd6374}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!queue\+Time\+\_\+s@{queue\+Time\+\_\+s}}
+\index{queue\+Time\+\_\+s@{queue\+Time\+\_\+s}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{queue\+Time\+\_\+s}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::queue\+Time\+\_\+s}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_aad94af2739fc56bcd30f5fd062dd6374}
+
+
+A float property {\bfseries }(read-\/only) containing the average time (in seconds) a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object spends in the request queue of the device. 
+
+This is the time between a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a59571120b5e81c3af596ea5da5dc63ba}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Single()}} and the time the driver actually uses this buffer to capture data into it or to forward it into a kernel driver. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a2671816bdd4ada13dae8930029510be1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}!retransmit\+Count@{retransmit\+Count}}
+\index{retransmit\+Count@{retransmit\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics}}
+\subsubsection[{retransmit\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::retransmit\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_a2671816bdd4ada13dae8930029510be1}
+
+
+A 64 bit integer property {\bfseries }(read-\/only) containing the number of retransmit requests issued due to temporary bus bandwidth shortages or other transmission problems since this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} has been opened O\+R since the last call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_statistics_adc21a9add6973f8f829f751e616b0a43}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Statistics\+::reset()}}. 
+
+This value can be an indicator for transmission problems because of bad signal quality or bus bandwidth shortages in the system. Ideally this property should stay 0 all the time if the system can cope with the amount of data transferred and the signal quality is good. However it might increase slowly and still every frame will be flawless as the driver internally was able to restore the lost data by re-\/requesting it from the video signal source again.
+
+\begin{DoxyNote}{注解}
+This feature is supported by every device driver. If a device does not seem to support this feature (calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} returns false) a driver update will fix this. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

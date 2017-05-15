@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::GenICam::SequencerControl类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::GenICam::SequencerControl类 参考<div class="ingroups"><a class="el" href="group___gen_i_cam_interface.html">GenICam interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Category for the Sequencer Control features.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::GenICam::SequencerControl 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="765,117,928,173"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,197,555,238"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="753,197,941,238"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,243,355,285"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html" title="A class to call arbitrary driver functions. " alt="" coords="579,267,728,309"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,243,155,285"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:adc43769f66b198dfba7c456dd3cbbaa3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#adc43769f66b198dfba7c456dd3cbbaa3">SequencerControl</a> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *pDev, const std::string &amp;settingName=&quot;Base&quot;)</td></tr>
+<tr class="memdesc:adc43769f66b198dfba7c456dd3cbbaa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html" title="Category for the Sequencer Control features. ">mvIMPACT::acquire::GenICam::SequencerControl</a></b> object.  <a href="#adc43769f66b198dfba7c456dd3cbbaa3">更多...</a><br /></td></tr>
+<tr class="separator:adc43769f66b198dfba7c456dd3cbbaa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a9988c1f6abaf32ace7220c2139bdd5c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#a9988c1f6abaf32ace7220c2139bdd5c7">sequencerMode</a></td></tr>
+<tr class="memdesc:a9988c1f6abaf32ace7220c2139bdd5c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls if the sequencer mechanism is active.  <a href="#a9988c1f6abaf32ace7220c2139bdd5c7">更多...</a><br /></td></tr>
+<tr class="separator:a9988c1f6abaf32ace7220c2139bdd5c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd4fe83b0353ecdcd9c8c5b17db09570"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#acd4fe83b0353ecdcd9c8c5b17db09570">sequencerConfigurationMode</a></td></tr>
+<tr class="memdesc:acd4fe83b0353ecdcd9c8c5b17db09570"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Controls if the sequencer configuration mode is active.  <a href="#acd4fe83b0353ecdcd9c8c5b17db09570">更多...</a><br /></td></tr>
+<tr class="separator:acd4fe83b0353ecdcd9c8c5b17db09570"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8c6d750c19279e6c4c629b767e60899"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#aa8c6d750c19279e6c4c629b767e60899">sequencerFeatureSelector</a></td></tr>
+<tr class="memdesc:aa8c6d750c19279e6c4c629b767e60899"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Selects which sequencer features to control.  <a href="#aa8c6d750c19279e6c4c629b767e60899">更多...</a><br /></td></tr>
+<tr class="separator:aa8c6d750c19279e6c4c629b767e60899"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f42d8001d6d139d3603d0fe02225a71"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#a9f42d8001d6d139d3603d0fe02225a71">sequencerFeatureEnable</a></td></tr>
+<tr class="memdesc:a9f42d8001d6d139d3603d0fe02225a71"><td class="mdescLeft">&#160;</td><td class="mdescRight">A boolean property. Enables the selected feature and make it active in all the sequencer sets.  <a href="#a9f42d8001d6d139d3603d0fe02225a71">更多...</a><br /></td></tr>
+<tr class="separator:a9f42d8001d6d139d3603d0fe02225a71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a110c5e05d7b5f9e990b0ed2b1b8e423b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#a110c5e05d7b5f9e990b0ed2b1b8e423b">sequencerSetSelector</a></td></tr>
+<tr class="memdesc:a110c5e05d7b5f9e990b0ed2b1b8e423b"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects the sequencer set to which further feature settings applies.  <a href="#a110c5e05d7b5f9e990b0ed2b1b8e423b">更多...</a><br /></td></tr>
+<tr class="separator:a110c5e05d7b5f9e990b0ed2b1b8e423b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16552a61786cbe9280b5ab174997c80a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#a16552a61786cbe9280b5ab174997c80a">sequencerSetSave</a></td></tr>
+<tr class="memdesc:a16552a61786cbe9280b5ab174997c80a"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Saves the current device state to the sequencer set selected by the SequencerSetSelector.  <a href="#a16552a61786cbe9280b5ab174997c80a">更多...</a><br /></td></tr>
+<tr class="separator:a16552a61786cbe9280b5ab174997c80a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3b1c98fb945874f5399281be7564f26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#aa3b1c98fb945874f5399281be7564f26">sequencerSetLoad</a></td></tr>
+<tr class="memdesc:aa3b1c98fb945874f5399281be7564f26"><td class="mdescLeft">&#160;</td><td class="mdescRight">A method object. Loads the sequencer set selected by SequencerSetSelector in the device.  <a href="#aa3b1c98fb945874f5399281be7564f26">更多...</a><br /></td></tr>
+<tr class="separator:aa3b1c98fb945874f5399281be7564f26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7c1aa6c23757b04d16a10d271802cb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#ab7c1aa6c23757b04d16a10d271802cb8">sequencerSetActive</a></td></tr>
+<tr class="memdesc:ab7c1aa6c23757b04d16a10d271802cb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Contains the currently active sequencer set.  <a href="#ab7c1aa6c23757b04d16a10d271802cb8">更多...</a><br /></td></tr>
+<tr class="separator:ab7c1aa6c23757b04d16a10d271802cb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4801f0f7996890b7cf3b1812fd8a93fb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#a4801f0f7996890b7cf3b1812fd8a93fb">sequencerSetStart</a></td></tr>
+<tr class="memdesc:a4801f0f7996890b7cf3b1812fd8a93fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Sets the initial/start sequencer set, which is the first set used within a sequencer.  <a href="#a4801f0f7996890b7cf3b1812fd8a93fb">更多...</a><br /></td></tr>
+<tr class="separator:a4801f0f7996890b7cf3b1812fd8a93fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2c1ca336588b658c3e1f25e9d3ce7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#aaa2c1ca336588b658c3e1f25e9d3ce7a">sequencerPathSelector</a></td></tr>
+<tr class="memdesc:aaa2c1ca336588b658c3e1f25e9d3ce7a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Selects to which branching path further path settings applies.  <a href="#aaa2c1ca336588b658c3e1f25e9d3ce7a">更多...</a><br /></td></tr>
+<tr class="separator:aaa2c1ca336588b658c3e1f25e9d3ce7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfee8f4bf16d10c0298e42b9c886cdb1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#adfee8f4bf16d10c0298e42b9c886cdb1">sequencerSetNext</a></td></tr>
+<tr class="memdesc:adfee8f4bf16d10c0298e42b9c886cdb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property. Specifies the next sequencer set.  <a href="#adfee8f4bf16d10c0298e42b9c886cdb1">更多...</a><br /></td></tr>
+<tr class="separator:adfee8f4bf16d10c0298e42b9c886cdb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ae04765c395a9ffdbdbcd8232ebbed2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#a9ae04765c395a9ffdbdbcd8232ebbed2">sequencerTriggerSource</a></td></tr>
+<tr class="memdesc:a9ae04765c395a9ffdbdbcd8232ebbed2"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the internal signal or physical input line to use as the sequencer trigger source.  <a href="#a9ae04765c395a9ffdbdbcd8232ebbed2">更多...</a><br /></td></tr>
+<tr class="separator:a9ae04765c395a9ffdbdbcd8232ebbed2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf216c266c3d02126daa2d09fc1fe161"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#abf216c266c3d02126daa2d09fc1fe161">sequencerTriggerActivation</a></td></tr>
+<tr class="memdesc:abf216c266c3d02126daa2d09fc1fe161"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property. Specifies the activation mode of the sequencer trigger.  <a href="#abf216c266c3d02126daa2d09fc1fe161">更多...</a><br /></td></tr>
+<tr class="separator:abf216c266c3d02126daa2d09fc1fe161"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Category for the Sequencer Control features. </p>
+<p>A category for the Sequencer Control features. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="adc43769f66b198dfba7c456dd3cbbaa3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::GenICam::SequencerControl::SequencerControl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">mvIMPACT::acquire::Device</a> *&#160;</td>
+          <td class="paramname"><em>pDev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>settingName</em> = <code>&quot;Base&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html" title="Category for the Sequencer Control features. ">mvIMPACT::acquire::GenICam::SequencerControl</a></b> object. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pDev</td><td>A pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> object obtained from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager.html" title="Grants access to devices that can be operated by this software interface. ">mvIMPACT::acquire::DeviceManager</a></b> object. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">settingName</td><td>The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a272042e5f2ac48dbce329b736e576aad" title="Returns the names of the settings available for this mvIMPACT::acquire::Device. ">mvIMPACT::acquire::FunctionInterface::getAvailableSettings</a></b>, new settings can be created with the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a17e85331ed0965a52cff8b62279ef40c" title="Creates a new setting. ">mvIMPACT::acquire::FunctionInterface::createSetting</a></b> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control_adc43769f66b198dfba7c456dd3cbbaa3_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#aa61ea409ece7907085014ea9ab724a90" title="Assign a new search base to the locator. " alt="" coords="456,23,619,79"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a0380fa414baee7f123736f105ff1a378" title="Returns the unique identifier of the base list from where to start searching for a component..." alt="" coords="245,88,408,144"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a07a75604e54c78ff772d9e0731c8a318" title="Binds an access object to an internal driver object. " alt="" coords="245,168,408,224"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="667,38,885,79"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="945,5,1095,46"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="933,70,1107,111"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="1155,92,1383,148"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1432,99,1656,141"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html#a2b3d738296e53a5d2a0cc5bdcaa2304b" title="Tries to locate a certain component in a hierarchy of components. " alt="" coords="456,103,619,159"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="463,182,612,223"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="692,110,860,151"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="acd4fe83b0353ecdcd9c8c5b17db09570"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerConfigurationMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls if the sequencer configuration mode is active. </p>
+<p>Controls if the sequencer configuration mode is active.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>On</b> (Display string: 'On'): Enables the sequencer configuration mode.</li>
+<li><b>Off</b> (Display string: 'Off'): Disables the sequencer configuration mode.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9f42d8001d6d139d3603d0fe02225a71"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga44f9437e24b21b6c93da9039ec6786aa">PropertyIBoolean</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerFeatureEnable</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A boolean property. Enables the selected feature and make it active in all the sequencer sets. </p>
+<p>Enables the selected feature and make it active in all the sequencer sets. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa8c6d750c19279e6c4c629b767e60899"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerFeatureSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Selects which sequencer features to control. </p>
+<p>Selects which sequencer features to control.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Device-Specific</b> (Display string: '<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> - Specific'): <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a> - Specific</li>
+<li><b>ExposureTime</b> (Display string: 'Sequencer Feature Selector')</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9988c1f6abaf32ace7220c2139bdd5c7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Controls if the sequencer mechanism is active. </p>
+<p>Controls if the sequencer mechanism is active.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>On</b> (Display string: 'On'): Enables the sequencer.</li>
+<li><b>Off</b> (Display string: 'Off'): Disables the sequencer.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aaa2c1ca336588b658c3e1f25e9d3ce7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerPathSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects to which branching path further path settings applies. </p>
+<p>Selects to which branching path further path settings applies. </p>
+
+</div>
+</div>
+<a class="anchor" id="ab7c1aa6c23757b04d16a10d271802cb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerSetActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Contains the currently active sequencer set. </p>
+<p>Contains the currently active sequencer set. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa3b1c98fb945874f5399281be7564f26"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerSetLoad</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Loads the sequencer set selected by SequencerSetSelector in the device. </p>
+<p>Loads the sequencer set selected by SequencerSetSelector in the device. Even if SequencerMode is off, this will change the device state to the configuration of the selected set. </p>
+
+</div>
+</div>
+<a class="anchor" id="adfee8f4bf16d10c0298e42b9c886cdb1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerSetNext</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Specifies the next sequencer set. </p>
+<p>Specifies the next sequencer set. </p>
+
+</div>
+</div>
+<a class="anchor" id="a16552a61786cbe9280b5ab174997c80a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_method.html">Method</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerSetSave</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A method object. Saves the current device state to the sequencer set selected by the SequencerSetSelector. </p>
+<p>Saves the current device state to the sequencer set selected by the SequencerSetSelector. </p>
+
+</div>
+</div>
+<a class="anchor" id="a110c5e05d7b5f9e990b0ed2b1b8e423b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerSetSelector</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Selects the sequencer set to which further feature settings applies. </p>
+<p>Selects the sequencer set to which further feature settings applies. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4801f0f7996890b7cf3b1812fd8a93fb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerSetStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property. Sets the initial/start sequencer set, which is the first set used within a sequencer. </p>
+<p>Sets the initial/start sequencer set, which is the first set used within a sequencer. </p>
+
+</div>
+</div>
+<a class="anchor" id="abf216c266c3d02126daa2d09fc1fe161"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerTriggerActivation</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the activation mode of the sequencer trigger. </p>
+<p>Specifies the activation mode of the sequencer trigger.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>RisingEdge</b> (Display string: 'Rising Edge'): Specifies that the trigger is considered valid on the rising edge of the source signal.</li>
+<li><b>FallingEdge</b> (Display string: 'Falling Edge'): Specifies that the trigger is considered valid on the falling edge of the source signal.</li>
+<li><b>AnyEdge</b> (Display string: 'Any Edge'): Specifies that the trigger is considered valid on the falling or rising edge of the source signal.</li>
+<li><b>LevelHigh</b> (Display string: 'Level High'): Specifies that the trigger is considered valid as long as the level of the source signal is high.</li>
+<li><b>LevelLow</b> (Display string: 'Level Low'): Specifies that the trigger is considered valid as long as the level of the source signal is low.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9ae04765c395a9ffdbdbcd8232ebbed2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::GenICam::SequencerControl::sequencerTriggerSource</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property. Specifies the internal signal or physical input line to use as the sequencer trigger source. </p>
+<p>Specifies the internal signal or physical input line to use as the sequencer trigger source.</p>
+<p>The following string values might be valid for this feature:</p><ul>
+<li><b>Off</b> (Display string: 'Off'): Disables the sequencer trigger.</li>
+<li><b>AcquisitionTrigger</b> (Display string: 'Acquisition Trigger'): Starts with the reception of the Acquisition Trigger.</li>
+<li><b>AcquisitionTriggerMissed</b> (Display string: 'Acquisition Trigger Missed'): Starts with the reception of the missed Acquisition Trigger.</li>
+<li><b>AcquisitionStart</b> (Display string: 'Acquisition Start'): Starts with the reception of the Acquisition Start.</li>
+<li><b>AcquisitionEnd</b> (Display string: 'Acquisition End'): Starts with the reception of the Acquisition End.</li>
+<li><b>FrameTrigger</b> (Display string: 'Frame Trigger'): Starts with the reception of the Frame Start Trigger.</li>
+<li><b>FrameTriggerMissed</b> (Display string: 'Frame Trigger Missed'): Starts with the reception of the missed Frame Trigger.</li>
+<li><b>FrameStart</b> (Display string: 'Frame Start'): Starts with the reception of the Frame Start.</li>
+<li><b>FrameEnd</b> (Display string: 'Frame End'): Starts with the reception of the Frame End.</li>
+<li><b>FrameBurstStart</b> (Display string: 'Frame Burst Start'): Starts with the reception of the Frame Burst Start.</li>
+<li><b>FrameBurstEnd</b> (Display string: 'Frame Burst End'): Starts with the reception of the Frame Burst End.</li>
+<li><b>ExposureStart</b> (Display string: 'Exposure Start'): Starts with the reception of the Exposure Start.</li>
+<li><b>ExposureEnd</b> (Display string: 'Exposure End'): Starts with the reception of the Exposure End.</li>
+<li><b>Line0</b> (Display string: 'Line 0'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line1</b> (Display string: 'Line 1'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line2</b> (Display string: 'Line 2'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>Line#3#</b> (Display string: 'Line #3#'): Starts when the specified TimerTriggerActivation condition is met on the chosen I/O Line.</li>
+<li><b>UserOutput0</b> (Display string: 'User Output 0'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput1</b> (Display string: 'User Output 1'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput2</b> (Display string: 'User Output 2'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>UserOutput#3#</b> (Display string: 'User Output #3#'): Specifies which User Output bit signal to use as internal source for the trigger.</li>
+<li><b>Counter0Start</b> (Display string: 'Counter 0 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter1Start</b> (Display string: 'Counter 1 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter2Start</b> (Display string: 'Counter 2 Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter#3#Start</b> (Display string: 'Counter #3# Start'): Starts with the reception of the Counter Start.</li>
+<li><b>Counter0End</b> (Display string: 'Counter 0 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter1End</b> (Display string: 'Counter 1 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter2End</b> (Display string: 'Counter 2 End'): Starts with the reception of the Counter End.</li>
+<li><b>Counter#3#End</b> (Display string: 'Counter #3# End'): Starts with the reception of the Counter End.</li>
+<li><b>Timer0Start</b> (Display string: 'Timer 0 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer1Start</b> (Display string: 'Timer 1 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer2Start</b> (Display string: 'Timer 2 Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer#3#Start</b> (Display string: 'Timer #3# Start'): Starts with the reception of the Timer Start.</li>
+<li><b>Timer0End</b> (Display string: 'Timer 0 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer1End</b> (Display string: 'Timer 1 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer2End</b> (Display string: 'Timer 2 End'): Starts with the reception of the Timer End.</li>
+<li><b>Timer#3#End</b> (Display string: 'Timer #3# End'): Starts with the reception of the Timer End.</li>
+<li><b>Encoder0</b> (Display string: 'Encoder 0'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder1</b> (Display string: 'Encoder 1'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder2</b> (Display string: 'Encoder 2'): Starts with the reception of the Encoder output signal.</li>
+<li><b>Encoder#3#</b> (Display string: 'Encoder #3#'): Starts with the reception of the Encoder output signal.</li>
+<li><b>LogicBlock0</b> (Display string: 'Logic Block 0'): Starts with the reception of the Logioc Block output signal.</li>
+<li><b>LogicBlock1</b> (Display string: 'Logic Block 1'): Starts with the reception of the Logioc Block output signal.</li>
+<li><b>LogicBlock2</b> (Display string: 'Logic Block 2'): Starts with the reception of the Logioc Block output signal.</li>
+<li><b>LogicBlock#3#</b> (Display string: 'Logic Block #3#'): Starts with the reception of the Logioc Block output signal.</li>
+<li><b>SoftwareSignal0</b> (Display string: 'Software Signal 0'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal1</b> (Display string: 'Software Signal 1'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal2</b> (Display string: 'Software Signal 2'): Starts on the reception of the Software Signal.</li>
+<li><b>SoftwareSignal#3#</b> (Display string: 'Software Signal #3#'): Starts on the reception of the Software Signal.</li>
+<li><b>Action0</b> (Display string: 'Action 0'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action1</b> (Display string: 'Action 1'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action2</b> (Display string: 'Action 2'): Starts with the assertion of the chosen action signal.</li>
+<li><b>Action#3#</b> (Display string: 'Action #3#'): Starts with the assertion of the chosen action signal.</li>
+<li><b>LinkTrigger0</b> (Display string: 'Link Trigger 0'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>LinkTrigger1</b> (Display string: 'Link Trigger 1'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>LinkTrigger2</b> (Display string: 'Link Trigger 2'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>LinkTrigger#3#</b> (Display string: 'Link Trigger #3#'): Starts with the reception of the chosen Link Trigger.</li>
+<li><b>CC1</b> (Display string: 'CC 1'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC2</b> (Display string: 'CC 2'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC3</b> (Display string: 'CC 3'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+<li><b>CC4</b> (Display string: 'CC 4'): Index of the Camera Link physical line and associated I/O control block to use. This ensures a direct mapping between the lines on the frame grabber and on the camera. Applicable to CameraLink products only.</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0ba6ccbf5ee69784d5d0b537924d26b6" title="This function queries a list of valid strings for this property. ">mvIMPACT::acquire::EnumPropertyI::getTranslationDictStrings()</a></b> or one of the other functions dealing with translation dictionaries for enumerated properties. </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire___gen_i_cam_8h_source.html">mvIMPACT_acquire_GenICam.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html">GenICam</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html">SequencerControl</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:25 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

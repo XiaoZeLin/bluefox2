@@ -1,0 +1,1807 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::Request类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::Request类 参考<div class="ingroups"><a class="el" href="group___common_interface.html">Common</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Contains information about a captured image.  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+mvIMPACT::acquire::Request 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_request__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_request_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_request_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_request_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html" title="A class to represent string properties. " alt="" coords="837,747,987,789"/><area shape="rect" id="node20" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys..." alt="" coords="1325,1225,1475,1266"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="419,813,568,854"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TRequestResult \&gt;" alt="" coords="1059,69,1287,110"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="837,813,987,854"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64.html" title="mvIMPACT::acquire::\lEnumPropertyI64\&lt; int64\l_type \&gt;" alt="" coords="1539,223,1701,279"/><area shape="rect" id="node9" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TImageBuffer\lPixelFormat \&gt;" alt="" coords="1073,309,1273,365"/><area shape="rect" id="node10" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr.html" title="A class to represent pointer properties. " alt="" coords="1545,370,1695,411"/><area shape="rect" id="node11" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBayerMosaic\lParity \&gt;" alt="" coords="1760,424,1965,480"/><area shape="rect" id="node12" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TCameraOutput \&gt;" alt="" coords="1060,497,1287,538"/><area shape="rect" id="node13" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f.html" title="mvIMPACT::acquire::\lEnumPropertyF\&lt; double \&gt;" alt="" coords="1313,579,1487,621"/><area shape="rect" id="node14" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TRequestImage\lMemoryMode \&gt;" alt="" coords="1513,633,1727,689"/><area shape="rect" id="node15" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TRequestState \&gt;" alt="" coords="1752,725,1973,766"/><area shape="rect" id="node21" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceAccess\lMode \&gt;" alt="" coords="805,1008,1019,1064"/><area shape="rect" id="node22" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceLoad\lSettings \&gt;" alt="" coords="813,1088,1011,1144"/><area shape="rect" id="node23" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; THWUpdateResult \&gt;" alt="" coords="790,943,1034,985"/><area shape="rect" id="node24" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceCapability \&gt;" alt="" coords="792,1167,1032,1209"/><area shape="rect" id="node25" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TAcquisition\lStartStopBehaviour \&gt;" alt="" coords="815,1297,1009,1353"/><area shape="rect" id="node26" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TBoolean \&gt;" alt="" coords="818,1377,1006,1418"/><area shape="rect" id="node27" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceInterface\lLayout \&gt;" alt="" coords="801,1441,1023,1497"/><area shape="rect" id="node28" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceClass \&gt;" alt="" coords="804,1233,1020,1274"/><area shape="rect" id="node29" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDeviceState \&gt;" alt="" coords="805,878,1019,919"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="212,1541,361,1582"/><area shape="rect" id="node16" href="structmv_i_m_p_a_c_t_1_1acquire_1_1_request_1_1_reference_counted_data.html" title="mvIMPACT::acquire::\lRequest::ReferenceCountedData" alt="" coords="1755,1545,1971,1586"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,1570,155,1611"/><area shape="rect" id="node18" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator_base.html" title="A base class to locate components within the driver. " alt="" coords="205,1606,368,1647"/><area shape="rect" id="node17" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html" title="A class to locate components within the driver. " alt="" coords="592,1606,765,1647"/><area shape="rect" id="node19" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc.html" title="A wrapper class to handle mvIMPACT::acquire::ImageBuffer structures. " alt="" coords="1325,1665,1475,1706"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmv_i_m_p_a_c_t_1_1acquire_1_1_request_1_1_reference_counted_data.html">ReferenceCountedData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a43a70b9653e60efd9ecfb33433518981"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a43a70b9653e60efd9ecfb33433518981">Request</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> &amp;src)</td></tr>
+<tr class="memdesc:a43a70b9653e60efd9ecfb33433518981"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> from and existing one.  <a href="#a43a70b9653e60efd9ecfb33433518981">更多...</a><br /></td></tr>
+<tr class="separator:a43a70b9653e60efd9ecfb33433518981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a634f1302fbb2f3aebe1e3d11ce5c0eb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a634f1302fbb2f3aebe1e3d11ce5c0eb1"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a634f1302fbb2f3aebe1e3d11ce5c0eb1">operator=</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> &amp;rhs)</td></tr>
+<tr class="memdesc:a634f1302fbb2f3aebe1e3d11ce5c0eb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows assignments of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects. <br /></td></tr>
+<tr class="separator:a634f1302fbb2f3aebe1e3d11ce5c0eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2dc69f50a17c1319ddcbbef5fd3ab2bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html">DeviceComponentLocator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a2dc69f50a17c1319ddcbbef5fd3ab2bd">getComponentLocator</a> (void) const </td></tr>
+<tr class="memdesc:a2dc69f50a17c1319ddcbbef5fd3ab2bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a component locator for this request.  <a href="#a2dc69f50a17c1319ddcbbef5fd3ab2bd">更多...</a><br /></td></tr>
+<tr class="separator:a2dc69f50a17c1319ddcbbef5fd3ab2bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57688f576163674a855a07854fa9e7a3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57688f576163674a855a07854fa9e7a3"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a57688f576163674a855a07854fa9e7a3">getNumber</a> (void) const </td></tr>
+<tr class="memdesc:a57688f576163674a855a07854fa9e7a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number associated with this request. <br /></td></tr>
+<tr class="separator:a57688f576163674a855a07854fa9e7a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ee1fe02ab7a1fcd5f894a317353f39"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc.html">ImageBufferDesc</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a76ee1fe02ab7a1fcd5f894a317353f39">getImageBufferDesc</a> (void) const </td></tr>
+<tr class="memdesc:a76ee1fe02ab7a1fcd5f894a317353f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the image buffer descriptor of this request.  <a href="#a76ee1fe02ab7a1fcd5f894a317353f39">更多...</a><br /></td></tr>
+<tr class="separator:a76ee1fe02ab7a1fcd5f894a317353f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d82ad8332a4fd79db9bcb59970836f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga461a5ba2197d9e599ee35e2514d684ef">ComponentIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a1d82ad8332a4fd79db9bcb59970836f1">getInfoIterator</a> (void) const </td></tr>
+<tr class="memdesc:a1d82ad8332a4fd79db9bcb59970836f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to for iterating inside the info list of the request.  <a href="#a1d82ad8332a4fd79db9bcb59970836f1">更多...</a><br /></td></tr>
+<tr class="separator:a1d82ad8332a4fd79db9bcb59970836f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3df38a3b0375cea7fed2826b62163264"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga461a5ba2197d9e599ee35e2514d684ef">ComponentIterator</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3df38a3b0375cea7fed2826b62163264">getImageProcessingResultsIterator</a> (void) const </td></tr>
+<tr class="memdesc:a3df38a3b0375cea7fed2826b62163264"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an iterator to for iterating inside the info/imageProcessingResults list of the request.  <a href="#a3df38a3b0375cea7fed2826b62163264">更多...</a><br /></td></tr>
+<tr class="separator:a3df38a3b0375cea7fed2826b62163264"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523d15ab27c20de51f0c5ffd41ff3834"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a523d15ab27c20de51f0c5ffd41ff3834">hasProcessingBeenSkipped</a> (void) const </td></tr>
+<tr class="memdesc:a523d15ab27c20de51f0c5ffd41ff3834"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if image processing that was set up for this request has been skipped for performance reasons.  <a href="#a523d15ab27c20de51f0c5ffd41ff3834">更多...</a><br /></td></tr>
+<tr class="separator:a523d15ab27c20de51f0c5ffd41ff3834"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7282a37729fa0a4e02f0e77d9a39d27"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#af7282a37729fa0a4e02f0e77d9a39d27">getChunkCounterCount</a> (void) const </td></tr>
+<tr class="memdesc:af7282a37729fa0a4e02f0e77d9a39d27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of counter values that can be returned as part of the additional data of the buffer containing the request data.  <a href="#af7282a37729fa0a4e02f0e77d9a39d27">更多...</a><br /></td></tr>
+<tr class="separator:af7282a37729fa0a4e02f0e77d9a39d27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07d7edad7cdae47d16de0356ebb2e42e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a07d7edad7cdae47d16de0356ebb2e42e">getChunkCounterValue</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a07d7edad7cdae47d16de0356ebb2e42e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a 64 bit integer property <b></b>(read-only) defining the selected counter value at the time of the internal frame start event for this request.  <a href="#a07d7edad7cdae47d16de0356ebb2e42e">更多...</a><br /></td></tr>
+<tr class="separator:a07d7edad7cdae47d16de0356ebb2e42e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6458f69adbeb566126db8fbda2e84df"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad6458f69adbeb566126db8fbda2e84df">getChunkTimerCount</a> (void) const </td></tr>
+<tr class="memdesc:ad6458f69adbeb566126db8fbda2e84df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of timer values that can be returned as part of the additional data of the buffer containing the request data.  <a href="#ad6458f69adbeb566126db8fbda2e84df">更多...</a><br /></td></tr>
+<tr class="separator:ad6458f69adbeb566126db8fbda2e84df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a459a1c5b4cdb00df81e73f66b5985557"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a459a1c5b4cdb00df81e73f66b5985557">getChunkTimerValue</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a459a1c5b4cdb00df81e73f66b5985557"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a floating point property <b></b>(read-only) defining the selected timer value at the time of the internal frame start event for this request.  <a href="#a459a1c5b4cdb00df81e73f66b5985557">更多...</a><br /></td></tr>
+<tr class="separator:a459a1c5b4cdb00df81e73f66b5985557"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae940fe94ee8091d89cf9f4d4e7808c81"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ae940fe94ee8091d89cf9f4d4e7808c81">getChunkGainCount</a> (void) const </td></tr>
+<tr class="memdesc:ae940fe94ee8091d89cf9f4d4e7808c81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of gain values that can be returned as part of the additional data of the buffer containing the request data.  <a href="#ae940fe94ee8091d89cf9f4d4e7808c81">更多...</a><br /></td></tr>
+<tr class="separator:ae940fe94ee8091d89cf9f4d4e7808c81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89d55e162f431703c1dc495de6b34a08"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a89d55e162f431703c1dc495de6b34a08">getChunkGain</a> (unsigned int index) const </td></tr>
+<tr class="memdesc:a89d55e162f431703c1dc495de6b34a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a floating point property <b></b>(read-only) defining the selected gain value at the time of the internal frame start event for this request.  <a href="#a89d55e162f431703c1dc495de6b34a08">更多...</a><br /></td></tr>
+<tr class="separator:a89d55e162f431703c1dc495de6b34a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3582f4b4f56c3abe5c0056b8a01ce98"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad3582f4b4f56c3abe5c0056b8a01ce98">getChunkGain</a> (const std::string &amp;name) const </td></tr>
+<tr class="memdesc:ad3582f4b4f56c3abe5c0056b8a01ce98"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a floating point property <b></b>(read-only) defining the selected gain value at the time of the internal frame start event for this request.  <a href="#ad3582f4b4f56c3abe5c0056b8a01ce98">更多...</a><br /></td></tr>
+<tr class="separator:ad3582f4b4f56c3abe5c0056b8a01ce98"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7120b640d76a3f8ed3711a8a773ad4be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a7120b640d76a3f8ed3711a8a773ad4be">isOK</a> (void) const </td></tr>
+<tr class="memdesc:a7120b640d76a3f8ed3711a8a773ad4be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to check if a request has been processed successfully.  <a href="#a7120b640d76a3f8ed3711a8a773ad4be">更多...</a><br /></td></tr>
+<tr class="separator:a7120b640d76a3f8ed3711a8a773ad4be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad02aed16acd60699f3d8757c63af43"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43">configure</a> (void)</td></tr>
+<tr class="memdesc:a5ad02aed16acd60699f3d8757c63af43"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows to set a request into configuration mode.  <a href="#a5ad02aed16acd60699f3d8757c63af43">更多...</a><br /></td></tr>
+<tr class="separator:a5ad02aed16acd60699f3d8757c63af43"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c30ced407d20caef49e3148257cd91e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e">unlock</a> (void)</td></tr>
+<tr class="memdesc:a3c30ced407d20caef49e3148257cd91e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unlocks the request for the driver again.  <a href="#a3c30ced407d20caef49e3148257cd91e">更多...</a><br /></td></tr>
+<tr class="separator:a3c30ced407d20caef49e3148257cd91e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8f58a136dafcb2bae251da383e2b18"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18">attachUserBuffer</a> (void *pBuf, int bufSize)</td></tr>
+<tr class="memdesc:acd8f58a136dafcb2bae251da383e2b18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to attach a user supplied buffer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object.  <a href="#acd8f58a136dafcb2bae251da383e2b18">更多...</a><br /></td></tr>
+<tr class="separator:acd8f58a136dafcb2bae251da383e2b18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a154f54b267a1d9860d1206b2138ef8d0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0">detachUserBuffer</a> (void)</td></tr>
+<tr class="memdesc:a154f54b267a1d9860d1206b2138ef8d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convenience function to detach a user supplied buffer from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object.  <a href="#a154f54b267a1d9860d1206b2138ef8d0">更多...</a><br /></td></tr>
+<tr class="separator:a154f54b267a1d9860d1206b2138ef8d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a90b174d20b986b585b37c74791726012"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga1589b24b307be9af82ada97e4588a6bd">PropertyIRequestResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a90b174d20b986b585b37c74791726012">requestResult</a></td></tr>
+<tr class="memdesc:a90b174d20b986b585b37c74791726012"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) defining the result of this request.  <a href="#a90b174d20b986b585b37c74791726012">更多...</a><br /></td></tr>
+<tr class="separator:a90b174d20b986b585b37c74791726012"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf9adfbc13cad31da7c10741252ed1e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaa47cf118ef2a24f22680d3a3b2fcdf60">PropertyIRequestState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acf9adfbc13cad31da7c10741252ed1e1">requestState</a></td></tr>
+<tr class="memdesc:acf9adfbc13cad31da7c10741252ed1e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) defining the current state of this request.  <a href="#acf9adfbc13cad31da7c10741252ed1e1">更多...</a><br /></td></tr>
+<tr class="separator:acf9adfbc13cad31da7c10741252ed1e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08460d237bdcedcbfbca11aa528969e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a08460d237bdcedcbfbca11aa528969e6">infoFrameID</a></td></tr>
+<tr class="memdesc:a08460d237bdcedcbfbca11aa528969e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing a frame identifier.  <a href="#a08460d237bdcedcbfbca11aa528969e6">更多...</a><br /></td></tr>
+<tr class="separator:a08460d237bdcedcbfbca11aa528969e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e740dd9dbe32832ce1b87e417f74c7b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4e740dd9dbe32832ce1b87e417f74c7b"></a>
+<a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a4e740dd9dbe32832ce1b87e417f74c7b">infoFrameNr</a></td></tr>
+<tr class="memdesc:a4e740dd9dbe32832ce1b87e417f74c7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the number of images captured since the driver has been initialized including the current image. <br /></td></tr>
+<tr class="separator:a4e740dd9dbe32832ce1b87e417f74c7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54da8206db5d5175d1c4c25baf0b134"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac54da8206db5d5175d1c4c25baf0b134">infoExposeStart_us</a></td></tr>
+<tr class="memdesc:ac54da8206db5d5175d1c4c25baf0b134"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing a timestamp (in us) defining the time the device started the exposure of the image associated with this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object.  <a href="#ac54da8206db5d5175d1c4c25baf0b134">更多...</a><br /></td></tr>
+<tr class="separator:ac54da8206db5d5175d1c4c25baf0b134"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872084ae4d05e6276afb06a314d8af59"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a872084ae4d05e6276afb06a314d8af59">infoExposeTime_us</a></td></tr>
+<tr class="memdesc:a872084ae4d05e6276afb06a314d8af59"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the 'real' expose time (in us) used to generate this image.  <a href="#a872084ae4d05e6276afb06a314d8af59">更多...</a><br /></td></tr>
+<tr class="separator:a872084ae4d05e6276afb06a314d8af59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e57b8102fcc2bed76459ed24c09f6cf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a6e57b8102fcc2bed76459ed24c09f6cf">infoTransferDelay_us</a></td></tr>
+<tr class="memdesc:a6e57b8102fcc2bed76459ed24c09f6cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the time the transaction of this image has been delayed (in us) because either the bus was blocked or the CPU was busy.  <a href="#a6e57b8102fcc2bed76459ed24c09f6cf">更多...</a><br /></td></tr>
+<tr class="separator:a6e57b8102fcc2bed76459ed24c09f6cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d6be44d8421373b538b60ca56633385"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d6be44d8421373b538b60ca56633385"></a>
+<a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a8d6be44d8421373b538b60ca56633385">infoGain_dB</a></td></tr>
+<tr class="memdesc:a8d6be44d8421373b538b60ca56633385"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property <b></b>(read-only) containing the gain(in dB) this image has been taken with. <br /></td></tr>
+<tr class="separator:a8d6be44d8421373b538b60ca56633385"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac26005e19f53dc564e3c3763a1fccaee"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac26005e19f53dc564e3c3763a1fccaee">infoTimeStamp_us</a></td></tr>
+<tr class="memdesc:ac26005e19f53dc564e3c3763a1fccaee"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing a timestamp to define the exact time this image has been captured (stored after the integration).  <a href="#ac26005e19f53dc564e3c3763a1fccaee">更多...</a><br /></td></tr>
+<tr class="separator:ac26005e19f53dc564e3c3763a1fccaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6bed2d106f7443c329eb3afa9d658af0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a6bed2d106f7443c329eb3afa9d658af0">infoSettingUsed</a></td></tr>
+<tr class="memdesc:a6bed2d106f7443c329eb3afa9d658af0"><td class="mdescLeft">&#160;</td><td class="mdescRight">A enumerated integer property <b></b>(read-only) containing the setting that was used for processing this request.  <a href="#a6bed2d106f7443c329eb3afa9d658af0">更多...</a><br /></td></tr>
+<tr class="separator:a6bed2d106f7443c329eb3afa9d658af0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1426e97c10c38d2a22c5dda70ac4fd42"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1426e97c10c38d2a22c5dda70ac4fd42"></a>
+<a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a1426e97c10c38d2a22c5dda70ac4fd42">infoImageAverage</a></td></tr>
+<tr class="memdesc:a1426e97c10c38d2a22c5dda70ac4fd42"><td class="mdescLeft">&#160;</td><td class="mdescRight">Currently unsupported. <br /></td></tr>
+<tr class="separator:a1426e97c10c38d2a22c5dda70ac4fd42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a833becdf1c41fa70dac4824d5ea01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a18a833becdf1c41fa70dac4824d5ea01">infoVideoChannel</a></td></tr>
+<tr class="memdesc:a18a833becdf1c41fa70dac4824d5ea01"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the video input channel of the device this image has been acquired from.  <a href="#a18a833becdf1c41fa70dac4824d5ea01">更多...</a><br /></td></tr>
+<tr class="separator:a18a833becdf1c41fa70dac4824d5ea01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a531770aef701671337f6a75f6d08aa09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga48585b26ebc31ccee54f34c7d6bbdda3">PropertyICameraOutput</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a531770aef701671337f6a75f6d08aa09">infoCameraOutputUsed</a></td></tr>
+<tr class="memdesc:a531770aef701671337f6a75f6d08aa09"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) containing the camera output used to transmit the image to the capture device.  <a href="#a531770aef701671337f6a75f6d08aa09">更多...</a><br /></td></tr>
+<tr class="separator:a531770aef701671337f6a75f6d08aa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22b3b014b6d006099e6bd2db72ca65fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a22b3b014b6d006099e6bd2db72ca65fe">infoLineCounter</a></td></tr>
+<tr class="memdesc:a22b3b014b6d006099e6bd2db72ca65fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of lines since the last trigger event.  <a href="#a22b3b014b6d006099e6bd2db72ca65fe">更多...</a><br /></td></tr>
+<tr class="separator:a22b3b014b6d006099e6bd2db72ca65fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91a5b9cb9445b7730686c02036c47274"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a91a5b9cb9445b7730686c02036c47274">infoMissingData_pc</a></td></tr>
+<tr class="memdesc:a91a5b9cb9445b7730686c02036c47274"><td class="mdescLeft">&#160;</td><td class="mdescRight">A float property <b></b>(read-only) containing the amount of data missing in the current image.  <a href="#a91a5b9cb9445b7730686c02036c47274">更多...</a><br /></td></tr>
+<tr class="separator:a91a5b9cb9445b7730686c02036c47274"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510ba758567a030145090f020fa9a732"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a510ba758567a030145090f020fa9a732">infoIOStatesAtExposureStart</a></td></tr>
+<tr class="memdesc:a510ba758567a030145090f020fa9a732"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the state of all the IO lines at the beginning of the frame exposure as a device specific bit field.  <a href="#a510ba758567a030145090f020fa9a732">更多...</a><br /></td></tr>
+<tr class="separator:a510ba758567a030145090f020fa9a732"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39f42fe7bd18748985f3d0bca0c2ad01"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a39f42fe7bd18748985f3d0bca0c2ad01">infoIOStatesAtExposureEnd</a></td></tr>
+<tr class="memdesc:a39f42fe7bd18748985f3d0bca0c2ad01"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the state of all the IO lines at the end of the frame exposure as a device specific bit field.  <a href="#a39f42fe7bd18748985f3d0bca0c2ad01">更多...</a><br /></td></tr>
+<tr class="separator:a39f42fe7bd18748985f3d0bca0c2ad01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af0a8aaee59305ce3215db9bea6826958"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#af0a8aaee59305ce3215db9bea6826958">chunkOffsetX</a></td></tr>
+<tr class="memdesc:af0a8aaee59305ce3215db9bea6826958"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the X-offset of the image in pixels as returned in the chunk data attached to the image.  <a href="#af0a8aaee59305ce3215db9bea6826958">更多...</a><br /></td></tr>
+<tr class="separator:af0a8aaee59305ce3215db9bea6826958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadd30b0a6de334e3819621b37e0e2c63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#aadd30b0a6de334e3819621b37e0e2c63">chunkOffsetY</a></td></tr>
+<tr class="memdesc:aadd30b0a6de334e3819621b37e0e2c63"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the Y-offset of the image in pixels as returned in the chunk data attached to the image.  <a href="#aadd30b0a6de334e3819621b37e0e2c63">更多...</a><br /></td></tr>
+<tr class="separator:aadd30b0a6de334e3819621b37e0e2c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acda54bfbef3fcf4719dc68d16c2b5193"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acda54bfbef3fcf4719dc68d16c2b5193">chunkWidth</a></td></tr>
+<tr class="memdesc:acda54bfbef3fcf4719dc68d16c2b5193"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the width of the image in pixels as returned in the chunk data attached to the image.  <a href="#acda54bfbef3fcf4719dc68d16c2b5193">更多...</a><br /></td></tr>
+<tr class="separator:acda54bfbef3fcf4719dc68d16c2b5193"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e0047f0e5ea3bd83ebb77786a787f45"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a4e0047f0e5ea3bd83ebb77786a787f45">chunkHeight</a></td></tr>
+<tr class="memdesc:a4e0047f0e5ea3bd83ebb77786a787f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the height of the image in pixels as returned in the chunk data attached to the image.  <a href="#a4e0047f0e5ea3bd83ebb77786a787f45">更多...</a><br /></td></tr>
+<tr class="separator:a4e0047f0e5ea3bd83ebb77786a787f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff2e190d6cc5eed39686684febf2b633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#aff2e190d6cc5eed39686684febf2b633">chunkPixelFormat</a></td></tr>
+<tr class="memdesc:aff2e190d6cc5eed39686684febf2b633"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the pixel format of the image as returned in the chunk data attached to the image.  <a href="#aff2e190d6cc5eed39686684febf2b633">更多...</a><br /></td></tr>
+<tr class="separator:aff2e190d6cc5eed39686684febf2b633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada6f72ff16650724cfd26d8048673081"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ada6f72ff16650724cfd26d8048673081">chunkDynamicRangeMin</a></td></tr>
+<tr class="memdesc:ada6f72ff16650724cfd26d8048673081"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the minimum value of dynamic range of the image as returned in the chunk data attached to the image.  <a href="#ada6f72ff16650724cfd26d8048673081">更多...</a><br /></td></tr>
+<tr class="separator:ada6f72ff16650724cfd26d8048673081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a093f5ff03d40b74691acd10724f66885"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a093f5ff03d40b74691acd10724f66885">chunkDynamicRangeMax</a></td></tr>
+<tr class="memdesc:a093f5ff03d40b74691acd10724f66885"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the maximum value of dynamic range of the image as returned in the chunk data attached to the image.  <a href="#a093f5ff03d40b74691acd10724f66885">更多...</a><br /></td></tr>
+<tr class="separator:a093f5ff03d40b74691acd10724f66885"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a511879bedfe4c8104b12e512144bed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3a511879bedfe4c8104b12e512144bed">chunkExposureTime</a></td></tr>
+<tr class="memdesc:a3a511879bedfe4c8104b12e512144bed"><td class="mdescLeft">&#160;</td><td class="mdescRight">A floating point property <b></b>(read-only) containing the exposure time used to capture the image as returned in the chunk data attached to the image.  <a href="#a3a511879bedfe4c8104b12e512144bed">更多...</a><br /></td></tr>
+<tr class="separator:a3a511879bedfe4c8104b12e512144bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a72c1a18dd08d50deeb4117baf25225b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a72c1a18dd08d50deeb4117baf25225b2">chunkTimestamp</a></td></tr>
+<tr class="memdesc:a72c1a18dd08d50deeb4117baf25225b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the timestamp value of the internal frame start signal of the image as returned in the chunk data attached to the image.  <a href="#a72c1a18dd08d50deeb4117baf25225b2">更多...</a><br /></td></tr>
+<tr class="separator:a72c1a18dd08d50deeb4117baf25225b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a659b5850f2db44b715b3d17af425c263"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a659b5850f2db44b715b3d17af425c263">chunkLineStatusAll</a></td></tr>
+<tr class="memdesc:a659b5850f2db44b715b3d17af425c263"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the status of all I/O lines at the time of the internal frame start signal of the image as returned in the chunk data attached to the image.  <a href="#a659b5850f2db44b715b3d17af425c263">更多...</a><br /></td></tr>
+<tr class="separator:a659b5850f2db44b715b3d17af425c263"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa66d08fd7e75d93657c403d6c697e656"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#aa66d08fd7e75d93657c403d6c697e656">chunkSequencerSetActive</a></td></tr>
+<tr class="memdesc:aa66d08fd7e75d93657c403d6c697e656"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64-bit integer property <b></b>(read-only) containing the index of the active set of the running sequencer use during the creation of this block of data.  <a href="#aa66d08fd7e75d93657c403d6c697e656">更多...</a><br /></td></tr>
+<tr class="separator:aa66d08fd7e75d93657c403d6c697e656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9f523d03a4ef82a5340f74ffc45934"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a9d9f523d03a4ef82a5340f74ffc45934">chunkmvCustomIdentifier</a></td></tr>
+<tr class="memdesc:a9d9f523d03a4ef82a5340f74ffc45934"><td class="mdescLeft">&#160;</td><td class="mdescRight">A 64 bit integer property <b></b>(read-only) containing the previously configured user defined identifier attached to the image.  <a href="#a9d9f523d03a4ef82a5340f74ffc45934">更多...</a><br /></td></tr>
+<tr class="separator:a9d9f523d03a4ef82a5340f74ffc45934"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05c7f2aad294449e1a9f6eb4a13597d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga9fb22f658031cb16ba91a7446462670f">PropertyIRequestImageMemoryMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a05c7f2aad294449e1a9f6eb4a13597d4">imageMemoryMode</a></td></tr>
+<tr class="memdesc:a05c7f2aad294449e1a9f6eb4a13597d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) containing the memory mode used for this request.  <a href="#a05c7f2aad294449e1a9f6eb4a13597d4">更多...</a><br /></td></tr>
+<tr class="separator:a05c7f2aad294449e1a9f6eb4a13597d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b904be99f464613adb54c09cf674ad9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga4f53082cdae4edfc1f87e928a0ab4184">PropertyIImageBufferPixelFormat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a4b904be99f464613adb54c09cf674ad9">imagePixelFormat</a></td></tr>
+<tr class="memdesc:a4b904be99f464613adb54c09cf674ad9"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) containing the pixel format of this image.  <a href="#a4b904be99f464613adb54c09cf674ad9">更多...</a><br /></td></tr>
+<tr class="separator:a4b904be99f464613adb54c09cf674ad9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad676c45f908bb41df04b15a85bf1f6fd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr.html">PropertyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad676c45f908bb41df04b15a85bf1f6fd">imageData</a></td></tr>
+<tr class="memdesc:ad676c45f908bb41df04b15a85bf1f6fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer property <b></b>(read-only) containing the start address of the image data.  <a href="#ad676c45f908bb41df04b15a85bf1f6fd">更多...</a><br /></td></tr>
+<tr class="separator:ad676c45f908bb41df04b15a85bf1f6fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac568c457aa474e73066bcc369a26cca1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac568c457aa474e73066bcc369a26cca1">imageSize</a></td></tr>
+<tr class="memdesc:ac568c457aa474e73066bcc369a26cca1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the size (in bytes) of the whole image.  <a href="#ac568c457aa474e73066bcc369a26cca1">更多...</a><br /></td></tr>
+<tr class="separator:ac568c457aa474e73066bcc369a26cca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb47966e7619eec1fa38befb388a2f39"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr.html">PropertyPtr</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acb47966e7619eec1fa38befb388a2f39">imageFooter</a></td></tr>
+<tr class="memdesc:acb47966e7619eec1fa38befb388a2f39"><td class="mdescLeft">&#160;</td><td class="mdescRight">A pointer property <b></b>(read-only) containing the start address of the footer associated with this image.  <a href="#acb47966e7619eec1fa38befb388a2f39">更多...</a><br /></td></tr>
+<tr class="separator:acb47966e7619eec1fa38befb388a2f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d8df3daf87f05fefbad25b7591a2459"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a6d8df3daf87f05fefbad25b7591a2459">imageFooterSize</a></td></tr>
+<tr class="memdesc:a6d8df3daf87f05fefbad25b7591a2459"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the size (in bytes) of the footer associated with this image.  <a href="#a6d8df3daf87f05fefbad25b7591a2459">更多...</a><br /></td></tr>
+<tr class="separator:a6d8df3daf87f05fefbad25b7591a2459"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00bdcb0cbf23ca71092474d93a80fb0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a00bdcb0cbf23ca71092474d93a80fb0c">imagePixelPitch</a></td></tr>
+<tr class="memdesc:a00bdcb0cbf23ca71092474d93a80fb0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the offset (in bytes) to the next pixel of the specified channel of this image.  <a href="#a00bdcb0cbf23ca71092474d93a80fb0c">更多...</a><br /></td></tr>
+<tr class="separator:a00bdcb0cbf23ca71092474d93a80fb0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd5f9eac58473f54725987c7fd1d9a7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#abdd5f9eac58473f54725987c7fd1d9a7">imageChannelCount</a></td></tr>
+<tr class="memdesc:abdd5f9eac58473f54725987c7fd1d9a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of channels this image consists of.  <a href="#abdd5f9eac58473f54725987c7fd1d9a7">更多...</a><br /></td></tr>
+<tr class="separator:abdd5f9eac58473f54725987c7fd1d9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06a1b6f82fadab310b409434af963b36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a06a1b6f82fadab310b409434af963b36">imageChannelOffset</a></td></tr>
+<tr class="memdesc:a06a1b6f82fadab310b409434af963b36"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the offset (in bytes) to each channel belonging to the current image relative to the address.  <a href="#a06a1b6f82fadab310b409434af963b36">更多...</a><br /></td></tr>
+<tr class="separator:a06a1b6f82fadab310b409434af963b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee32f6b6dabfd192119afa932045ecbe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#aee32f6b6dabfd192119afa932045ecbe">imageChannelBitDepth</a></td></tr>
+<tr class="memdesc:aee32f6b6dabfd192119afa932045ecbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of effective bits stored in each channel belonging to the current image.  <a href="#aee32f6b6dabfd192119afa932045ecbe">更多...</a><br /></td></tr>
+<tr class="separator:aee32f6b6dabfd192119afa932045ecbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac94ef78b0834deb1f291dacc97c600bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac94ef78b0834deb1f291dacc97c600bc">imageLinePitch</a></td></tr>
+<tr class="memdesc:ac94ef78b0834deb1f291dacc97c600bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the offset (in bytes) to the next line of each channel belonging to the current image.  <a href="#ac94ef78b0834deb1f291dacc97c600bc">更多...</a><br /></td></tr>
+<tr class="separator:ac94ef78b0834deb1f291dacc97c600bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0e635d0a9be516925d40c5d1b77b1da"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac0e635d0a9be516925d40c5d1b77b1da">imageChannelDesc</a></td></tr>
+<tr class="memdesc:ac0e635d0a9be516925d40c5d1b77b1da"><td class="mdescLeft">&#160;</td><td class="mdescRight">A string property <b></b>(read-only) containing the string descriptors of each channel belonging to the current image.  <a href="#ac0e635d0a9be516925d40c5d1b77b1da">更多...</a><br /></td></tr>
+<tr class="separator:ac0e635d0a9be516925d40c5d1b77b1da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e4317ddfdd7d8d67c3a2fae94d8045"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85e4317ddfdd7d8d67c3a2fae94d8045"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a85e4317ddfdd7d8d67c3a2fae94d8045">imageBytesPerPixel</a></td></tr>
+<tr class="memdesc:a85e4317ddfdd7d8d67c3a2fae94d8045"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the number of bytes per pixel in this image. <br /></td></tr>
+<tr class="separator:a85e4317ddfdd7d8d67c3a2fae94d8045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d51bca84206dbed070f85751dbdbb92"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a1d51bca84206dbed070f85751dbdbb92">imageOffsetX</a></td></tr>
+<tr class="memdesc:a1d51bca84206dbed070f85751dbdbb92"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the X-offset of the image in pixels.  <a href="#a1d51bca84206dbed070f85751dbdbb92">更多...</a><br /></td></tr>
+<tr class="separator:a1d51bca84206dbed070f85751dbdbb92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f815967e03ba2d74ffbe66006a30ac1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a6f815967e03ba2d74ffbe66006a30ac1">imageOffsetY</a></td></tr>
+<tr class="memdesc:a6f815967e03ba2d74ffbe66006a30ac1"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the Y-offset of the image in pixels.  <a href="#a6f815967e03ba2d74ffbe66006a30ac1">更多...</a><br /></td></tr>
+<tr class="separator:a6f815967e03ba2d74ffbe66006a30ac1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b55253e7d176517fd60ddae724f974c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b55253e7d176517fd60ddae724f974c"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3b55253e7d176517fd60ddae724f974c">imageWidth</a></td></tr>
+<tr class="memdesc:a3b55253e7d176517fd60ddae724f974c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the width of the image in pixels. <br /></td></tr>
+<tr class="separator:a3b55253e7d176517fd60ddae724f974c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a509bd410685fe447196c821db0926e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a7a509bd410685fe447196c821db0926e">imageWidthTotal</a></td></tr>
+<tr class="memdesc:a7a509bd410685fe447196c821db0926e"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the total width of the image in pixels if this buffer is part of a larger image.  <a href="#a7a509bd410685fe447196c821db0926e">更多...</a><br /></td></tr>
+<tr class="separator:a7a509bd410685fe447196c821db0926e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7654539fb5277dec6f7b59fa428354f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7654539fb5277dec6f7b59fa428354f"></a>
+<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#af7654539fb5277dec6f7b59fa428354f">imageHeight</a></td></tr>
+<tr class="memdesc:af7654539fb5277dec6f7b59fa428354f"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the height of the image in pixels. <br /></td></tr>
+<tr class="separator:af7654539fb5277dec6f7b59fa428354f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84c5b14d9856295065bdd4efa2371484"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a84c5b14d9856295065bdd4efa2371484">imageHeightTotal</a></td></tr>
+<tr class="memdesc:a84c5b14d9856295065bdd4efa2371484"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property <b></b>(read-only) containing the total height of the image in pixels.  <a href="#a84c5b14d9856295065bdd4efa2371484">更多...</a><br /></td></tr>
+<tr class="separator:a84c5b14d9856295065bdd4efa2371484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db5758c23b9167a1af7da2f9829289a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#gafaa3668c30761b139d7ff110ac2c83e4">PropertyIBayerMosaicParity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a4db5758c23b9167a1af7da2f9829289a">imageBayerMosaicParity</a></td></tr>
+<tr class="memdesc:a4db5758c23b9167a1af7da2f9829289a"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property <b></b>(read-only) containing the bayer parity of this image if this buffer is part of a larger image.  <a href="#a4db5758c23b9167a1af7da2f9829289a">更多...</a><br /></td></tr>
+<tr class="separator:a4db5758c23b9167a1af7da2f9829289a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a582f7755c88d450da1c9c4ff0f818d02"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a582f7755c88d450da1c9c4ff0f818d02"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>Request</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev, int requestNr)</td></tr>
+<tr class="separator:a582f7755c88d450da1c9c4ff0f818d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ab173ef7ecf6f0d750214fd6d3afc16fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab173ef7ecf6f0d750214fd6d3afc16fc"></a>
+struct <br class="typebreak" />
+<a class="el" href="structmv_i_m_p_a_c_t_1_1acquire_1_1_request_1_1_reference_counted_data.html">mvIMPACT::acquire::Request::ReferenceCountedData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRefData</b></td></tr>
+<tr class="separator:ab173ef7ecf6f0d750214fd6d3afc16fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:a09d9d7eed388a7128da621fce0de1548"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09d9d7eed388a7128da621fce0de1548"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>FunctionInterface</b></td></tr>
+<tr class="separator:a09d9d7eed388a7128da621fce0de1548"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Contains information about a captured image. </p>
+<p>This class provides access to all sorts of information about the captured image. Only Instances of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html" title="The function interface to devices supported by this interface. ">mvIMPACT::acquire::FunctionInterface</a></b> are allowed to create objects of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>. Consequently the only way to get access to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object is via a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#afea62dee2bda1b47c24821f9121c5505" title="Returns a pointer to the desired mvIMPACT::acquire::Request. ">mvIMPACT::acquire::FunctionInterface::getRequest</a></b>.</p>
+<p>A <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> represents an object used by the driver to fill its internal job queues. Whenever an image shall be captured a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> is sent to the driver and the hardware then tries to capture the desired image as fast as possible.</p>
+<p>Requests are managed by the driver. The only thing the user needs to configure is the maximum number of requests he wants the driver to work with. To make sure a certain number of requests are available, the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html#aebae5e452b01f037b681faca41fb70ac" title="An integer property defining the number of requests allocated by the driver. ">mvIMPACT::acquire::SystemSettings::requestCount</a></b> can be used. This can be useful for time critical applications where the hardware can capture images in the background while the PC performs other tasks. In that case it's necessary to make sure that the request queue never runs low to ensure loss less image acquisition. </p>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="a43a70b9653e60efd9ecfb33433518981"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::Request::Request </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> from and existing one. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>A constant reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object, this object shall be created from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="acd8f58a136dafcb2bae251da383e2b18"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::Request::attachUserBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>pBuf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>bufSize</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function to attach a user supplied buffer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object. </p>
+<p>This function just provides a nicer way to attach a user supplied buffer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>.</p>
+<p>To find out more about capturing to user supplied buffers please refer to the example CaptureToUserMemory.cpp and have a look at the documentation of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b>, <br />
+ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a>, <br />
+ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a>, <br />
+ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a>, <br />
+ <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.68</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">pBuf</td><td>A pointer to a user supplied buffer </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">bufSize</td><td>The size of the user supplied buffer </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a5ad02aed16acd60699f3d8757c63af43"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::Request::configure </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Allows to set a request into configuration mode. </p>
+<p>In configuration mode certain properties like <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad676c45f908bb41df04b15a85bf1f6fd" title="A pointer property (read-only) containing the start address of the image data. ">mvIMPACT::acquire::Request::imageData</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac568c457aa474e73066bcc369a26cca1" title="An integer property (read-only) containing the size (in bytes) of the whole image. ">mvIMPACT::acquire::Request::imageSize</a></b>, <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a05c7f2aad294449e1a9f6eb4a13597d4" title="An enumerated integer property (read-only) containing the memory mode used for this request...">mvIMPACT::acquire::Request::imageMemoryMode</a></b> of a request object can be modified. This can be used to configure one or more requests to use a user supplied memory. To use only a subset of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> objects available the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control.html#acb01d358421ecad7b28f3de692c4868d" title="An integer property defining which request object shall be used for the next image request...">mvIMPACT::acquire::ImageRequestControl::requestToUse</a></b> feature can be used.</p>
+<p>Only requests that are currently not used by the driver and are not locked because they contain image data that hasn't been processed can be set into configuration mode.</p>
+<dl class="section note"><dt>注解</dt><dd>Instead of calling this function directly for most cases it is much more convenient to use the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b> instead.</dd></dl>
+<p>User supplied buffers must follow the alignment and size requirements reported by versions of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a45d71bedd05998dd9839e1fddc219d5a" title="Returns information about the current capture buffer requirements. ">mvIMPACT::acquire::FunctionInterface::getCurrentCaptureBufferLayout</a></b>. Calling a version of this function will return all the information required to allocate buffers that can be used to capture data for the specified settings.</p>
+<p>When allocating memory on the heap, the complete buffer size is needed which is calculated like this:</p>
+<p><b>size</b> + alignment</p>
+<dl class="section note"><dt>注解</dt><dd>The address passed to the request object must be aligned already!</dd>
+<dd>
+A request that is in configuration mode can't be sent to the driver for acquisition until <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b> or <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b> has been called again. By using <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b> this locking and unlocking is done internally thus the application does not need to worry about this.</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a154f54b267a1d9860d1206b2138ef8d0" title="Convenience function to detach a user supplied buffer from a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::detachUserBuffer</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f" title="Deletes all requests currently queued for the specified mvIMPACT::acquire::ImageRequestControl. ">mvIMPACT::acquire::FunctionInterface::imageRequestReset</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.68</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a154f54b267a1d9860d1206b2138ef8d0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::Request::detachUserBuffer </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function to detach a user supplied buffer from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object. </p>
+<p>This function just provides a nicer way to detach a user supplied buffer from a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>.</p>
+<p>To find out more about capturing to user supplied buffers please refer to the example CaptureToUserMemory.cpp and have a look at the documentation of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </p>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#acd8f58a136dafcb2bae251da383e2b18" title="Convenience function to attach a user supplied buffer to a mvIMPACT::acquire::Request object...">mvIMPACT::acquire::Request::attachUserBuffer</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.68</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af7282a37729fa0a4e02f0e77d9a39d27"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::Request::getChunkCounterCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of counter values that can be returned as part of the additional data of the buffer containing the request data. </p>
+<p>A device may support a large number of counters even though just a few of them or none is configured for counting. In such a case situation when switching on the transmission of the counter values at the time of the internal frame start event will allow to access the number of counters returned by this function but then the data in these counters of course will be meaningless.</p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.0.15 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>The number of counter values that can be returned as part of the additional data of the buffer containing the request data. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a07d7edad7cdae47d16de0356ebb2e42e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::getChunkCounterValue </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a 64 bit integer property <b></b>(read-only) defining the selected counter value at the time of the internal frame start event for this request. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.0.15 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the counter to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a89d55e162f431703c1dc495de6b34a08"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::Request::getChunkGain </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a floating point property <b></b>(read-only) defining the selected gain value at the time of the internal frame start event for this request. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.3 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the gain to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ad3582f4b4f56c3abe5c0056b8a01ce98"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::Request::getChunkGain </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a floating point property <b></b>(read-only) defining the selected gain value at the time of the internal frame start event for this request. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.3 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">name</td><td>The name of the gain to return (as selected by <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_analog_control.html#a48fb299bea5b80eb2e113ba4f28fd489" title="An enumerated integer property. Selects which Gain is controlled by the various Gain features...">mvIMPACT::acquire::GenICam::AnalogControl::gainSelector</a></b>) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_ad3582f4b4f56c3abe5c0056b8a01ce98_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="216,38,435,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="495,5,644,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="483,70,656,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="705,92,933,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="981,99,1205,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae940fe94ee8091d89cf9f4d4e7808c81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::Request::getChunkGainCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of gain values that can be returned as part of the additional data of the buffer containing the request data. </p>
+<p>A device may support a large number of gains even though just a few of them or none is configured to run. In such a case situation when switching on the transmission of the gain values at the time of the internal frame start event will allow to access the number of gains returned by this function but then the data in these gains of course will be meaningless.</p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.3 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad6458f69adbeb566126db8fbda2e84df"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int mvIMPACT::acquire::Request::getChunkTimerCount </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of timer values that can be returned as part of the additional data of the buffer containing the request data. </p>
+<p>A device may support a large number of timers even though just a few of them or none is configured to run. In such a case situation when switching on the transmission of the timer values at the time of the internal frame start event will allow to access the number of timers returned by this function but then the data in these timers of course will be meaningless.</p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.0.15 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a459a1c5b4cdb00df81e73f66b5985557"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::Request::getChunkTimerValue </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a floating point property <b></b>(read-only) defining the selected timer value at the time of the internal frame start event for this request. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.0.15 </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">index</td><td>The index of the timer to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2dc69f50a17c1319ddcbbef5fd3ab2bd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device_component_locator.html">DeviceComponentLocator</a> mvIMPACT::acquire::Request::getComponentLocator </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a component locator for this request. </p>
+<p>This will allow to write custom feature bind operations.</p>
+<dl class="section since"><dt>自从</dt><dd>1.12.68 </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>A component locator for this request. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a76ee1fe02ab7a1fcd5f894a317353f39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc.html">ImageBufferDesc</a>&amp; mvIMPACT::acquire::Request::getImageBufferDesc </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const reference to the image buffer descriptor of this request. </p>
+<p>This function returns a const reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc.html" title="A wrapper class to handle mvIMPACT::acquire::ImageBuffer structures. ">mvIMPACT::acquire::ImageBufferDesc</a></b> associated with this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>.</p>
+<dl class="section warning"><dt>警告</dt><dd>Please do <b>NEVER</b> work with old references to this structure. So do <b>NOT</b> store this reference in some variable to use it for the evaluation of the next <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object as well, as this will not work. Whenever <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a76ee1fe02ab7a1fcd5f894a317353f39" title="Returns a const reference to the image buffer descriptor of this request. ">mvIMPACT::acquire::Request::getImageBufferDesc</a></b> is called the function will make sure that the data in the returned structure is up to date while when working with an old reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_image_buffer_desc.html" title="A wrapper class to handle mvIMPACT::acquire::ImageBuffer structures. ">mvIMPACT::acquire::ImageBufferDesc</a></b> structure the containing data might refer to a previous result. </dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a76ee1fe02ab7a1fcd5f894a317353f39_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_exception_factory.html#a70b2f93291f2269c04ef2092c7872527" title="Raises an exception from an error code, its origin, a string with additional information and an optio..." alt="" coords="253,38,472,79"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html#aa5fe87d8c899f71c88a7cacb4da2fb43" title="Reads data from this property as a string. " alt="" coords="532,5,681,46"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#aee8b40bfc45b5752e03570afaadce217" title="Returns the name of the component referenced by this object. " alt="" coords="520,70,693,111"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a00b32b493df38e7b351c48ba1060933b" title="A helper function to query certain component related string parameters. " alt="" coords="742,92,970,148"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a756900b648d65f8a20ded09ff4e5792d" title="An internal helper function for fast string allocation. " alt="" coords="1019,99,1243,141"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3df38a3b0375cea7fed2826b62163264"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga461a5ba2197d9e599ee35e2514d684ef">ComponentIterator</a> mvIMPACT::acquire::Request::getImageProcessingResultsIterator </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator to for iterating inside the info/imageProcessingResults list of the request. </p>
+<p>This can be useful when custom or device specific algorithms have been applied to the request object that weren't known at compile time.</p>
+<p>For a code example please refer to the documentation of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a1d82ad8332a4fd79db9bcb59970836f1" title="Returns an iterator to for iterating inside the info list of the request. ">mvIMPACT::acquire::Request::getInfoIterator</a></b> </p><dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a1d82ad8332a4fd79db9bcb59970836f1" title="Returns an iterator to for iterating inside the info list of the request. ">mvIMPACT::acquire::Request::getInfoIterator</a></b> <br />
+ </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.14.0</dd></dl>
+<dl class="section return"><dt>返回</dt><dd>An iterator to for iterating inside the info/imageProcessingResults list of the request. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d82ad8332a4fd79db9bcb59970836f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga461a5ba2197d9e599ee35e2514d684ef">ComponentIterator</a> mvIMPACT::acquire::Request::getInfoIterator </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns an iterator to for iterating inside the info list of the request. </p>
+<p>This can be useful when custom or device specific information has been attached to the request object that wasn't known at compile time.</p>
+<dl class="section return"><dt>返回</dt><dd>An iterator to for iterating inside the info list of the request. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a523d15ab27c20de51f0c5ffd41ff3834"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Request::hasProcessingBeenSkipped </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if image processing that was set up for this request has been skipped for performance reasons. </p>
+<p>If <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a4d5db996353c3b9ada5f6a15fb19f9eb" title="An enumerated integer property defining whether user controlled image processing related features sha...">mvIMPACT::acquire::Device::userControlledImageProcessingEnable</a></b> is set to <b>mvIMPACT::acquire::bTrue</b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html#a0e9c91668ae90fb631d5d69c32395fce" title="An enumerated integer property influencing the behaviour of the internal image processing pipeline...">mvIMPACT::acquire::SystemSettings::imageProcessingMode</a></b> is set to <b>mvIMPACT::acquire::ipmProcessLatestOnly</b> this function can be used to check if at least one algorithm has been skipped because of a lack of processing time. </p><dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#a4d5db996353c3b9ada5f6a15fb19f9eb" title="An enumerated integer property defining whether user controlled image processing related features sha...">mvIMPACT::acquire::Device::userControlledImageProcessingEnable</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings.html#a0e9c91668ae90fb631d5d69c32395fce" title="An enumerated integer property influencing the behaviour of the internal image processing pipeline...">mvIMPACT::acquire::SystemSettings::imageProcessingMode</a></b> <br />
+ </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.14.0</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if at least one internal algorithm has been skipped.</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+
+<p><div class="dynheader">
+函数调用图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834_cgraph.png" border="0" usemap="#classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834_cgraph" alt=""/></div>
+<map name="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834_cgraph" id="classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834_cgraph">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. " alt="" coords="257,5,407,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html#a071d08bf770f55552998b86580e979de" title="Returns a unique identifier for the component referenced by this object. " alt="" coords="248,70,416,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a7120b640d76a3f8ed3711a8a773ad4be"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool mvIMPACT::acquire::Request::isOK </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Convenience function to check if a request has been processed successfully. </p>
+<p>This is just a nicer way of checking the value of the <em>requestResult</em> property:</p>
+<dl class="section since"><dt>自从</dt><dd>1.12.63</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li>true if the request has been processed successfully.</li>
+<li>false otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3c30ced407d20caef49e3148257cd91e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int mvIMPACT::acquire::Request::unlock </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Unlocks the request for the driver again. </p>
+<p>To ensure that no image data is overwritten by another image request while the user still deals with the image from a previous acquisition each image buffer will be locked by the driver when it is returned to the user by a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b>. No new image will be captured into the same buffer until the user unlocks the buffer again by calling <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3c30ced407d20caef49e3148257cd91e" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::Request::unlock</a></b> or <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a378a338217d5a681e880a0d9395f1a62" title="Unlocks the request for the driver again. ">mvIMPACT::acquire::FunctionInterface::imageRequestUnlock</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>After unlocking a request it is no longer guaranteed that the memory once referenced by the request and the image buffer belonging to it stays valid, so do <b>NEVER</b> try to access memory belonging to an unlocked request object. If you need to copy the image buffer or modify it in any other way, do everything you have to do <b>BEFORE</b> calling this function!</dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a234b2c6e31f3e83629501da47095c54f" title="Deletes all requests currently queued for the specified mvIMPACT::acquire::ImageRequestControl. ">mvIMPACT::acquire::FunctionInterface::imageRequestReset</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a59571120b5e81c3af596ea5da5dc63ba" title="Sends an image request to the mvIMPACT::acquire::Device driver. ">mvIMPACT::acquire::FunctionInterface::imageRequestSingle</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a4cefdfda8e8940736ae9a4c97b6de8c9" title="Waits for an image request to become ready. ">mvIMPACT::acquire::FunctionInterface::imageRequestWaitFor</a></b> <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </dd></dl>
+<dl class="section since"><dt>自从</dt><dd>1.12.68</dd></dl>
+<dl class="section return"><dt>返回</dt><dd><ul>
+<li><b>mvIMPACT::acquire::DMR_NO_ERROR</b> if successful.</li>
+<li>A negative error code of type <b>mvIMPACT::acquire::TDMR_ERROR</b> otherwise. </li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a093f5ff03d40b74691acd10724f66885"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkDynamicRangeMax</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the maximum value of dynamic range of the image as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ada6f72ff16650724cfd26d8048673081"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkDynamicRangeMin</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the minimum value of dynamic range of the image as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a3a511879bedfe4c8104b12e512144bed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::Request::chunkExposureTime</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A floating point property <b></b>(read-only) containing the exposure time used to capture the image as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.5.16 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4e0047f0e5ea3bd83ebb77786a787f45"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkHeight</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the height of the image in pixels as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a659b5850f2db44b715b3d17af425c263"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkLineStatusAll</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the status of all I/O lines at the time of the internal frame start signal of the image as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9d9f523d03a4ef82a5340f74ffc45934"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkmvCustomIdentifier</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the previously configured user defined identifier attached to the image. </p>
+<p>This identifier can be specified by some other functions belonging to this SDK. If not specified this value will be 0.</p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.17.3 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="af0a8aaee59305ce3215db9bea6826958"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the X-offset of the image in pixels as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aadd30b0a6de334e3819621b37e0e2c63"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the Y-offset of the image in pixels as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aff2e190d6cc5eed39686684febf2b633"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkPixelFormat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the pixel format of the image as returned in the chunk data attached to the image. </p>
+<p>This will <b>NOT</b> be a valid mvIMPACT acquire pixel format but e.g. a GigEVision pixel format or somethins else. </p><dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="aa66d08fd7e75d93657c403d6c697e656"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkSequencerSetActive</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64-bit integer property <b></b>(read-only) containing the index of the active set of the running sequencer use during the creation of this block of data. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk.</dd></dl>
+<dl class="section since"><dt>自从</dt><dd>2.12.3 </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a72c1a18dd08d50deeb4117baf25225b2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkTimestamp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the timestamp value of the internal frame start signal of the image as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acda54bfbef3fcf4719dc68d16c2b5193"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::chunkWidth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing the width of the image in pixels as returned in the chunk data attached to the image. </p>
+<dl class="section note"><dt>注解</dt><dd>For additional information about the chunk data format please refer to ImageAcquisition_section_chunk. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4db5758c23b9167a1af7da2f9829289a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gafaa3668c30761b139d7ff110ac2c83e4">PropertyIBayerMosaicParity</a> mvIMPACT::acquire::Request::imageBayerMosaicParity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) containing the bayer parity of this image if this buffer is part of a larger image. </p>
+<p>If the current image does not contain bayer data, this value will be <b>mvIMPACT::acquire::bmpUndefined</b>.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TBayerMosaicParity</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aee32f6b6dabfd192119afa932045ecbe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageChannelBitDepth</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the number of effective bits stored in each channel belonging to the current image. </p>
+<dl class="section note"><dt>注解</dt><dd>This property will store <em>imageChannelCount</em> values. These can be queried one by one using the <em>index</em> parameter of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a6f88e97f646978391226aaf82cd5955d" title="Reads a value from a property. ">mvIMPACT::acquire::PropertyI::read()</a></b> or in a single call by using the overloaded <em>read</em> function accepting a reference to a vector. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="abdd5f9eac58473f54725987c7fd1d9a7"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageChannelCount</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the number of channels this image consists of. </p>
+<p>For an RGB image this value e.g. would be 3. This value also defines how many parameters are stored by the properties <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a00bdcb0cbf23ca71092474d93a80fb0c" title="An integer property (read-only) containing the offset (in bytes) to the next pixel of the specified c...">mvIMPACT::acquire::Request::imagePixelPitch</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac94ef78b0834deb1f291dacc97c600bc" title="An integer property (read-only) containing the offset (in bytes) to the next line of each channel bel...">mvIMPACT::acquire::Request::imageLinePitch</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#aee32f6b6dabfd192119afa932045ecbe" title="An integer property (read-only) containing the number of effective bits stored in each channel belong...">mvIMPACT::acquire::Request::imageChannelBitDepth</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac0e635d0a9be516925d40c5d1b77b1da" title="A string property (read-only) containing the string descriptors of each channel belonging to the curr...">mvIMPACT::acquire::Request::imageChannelDesc</a></b> and <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a06a1b6f82fadab310b409434af963b36" title="An integer property (read-only) containing the offset (in bytes) to each channel belonging to the cur...">mvIMPACT::acquire::Request::imageChannelOffset</a></b>.</p>
+<p>If e.g. the channel count is 3 a call like pRequest-&gt;imageChannelOffset.read( 2 ) would return the channel offset of channel 3 (as calls to the read functions of properties are '0' based). </p>
+
+</div>
+</div>
+<a class="anchor" id="ac0e635d0a9be516925d40c5d1b77b1da"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s.html">PropertyS</a> mvIMPACT::acquire::Request::imageChannelDesc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A string property <b></b>(read-only) containing the string descriptors of each channel belonging to the current image. </p>
+<dl class="section note"><dt>注解</dt><dd>This property will store <em>imageChannelCount</em> values. These can be queried one by one using the <em>index</em> parameter of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a6f88e97f646978391226aaf82cd5955d" title="Reads a value from a property. ">mvIMPACT::acquire::PropertyI::read()</a></b> or in a single call by using the overloaded <em>read</em> function accepting a reference to a vector.</dd></dl>
+<p>For an RGB image this property e.g. might contain three values "R", "G" and "B". </p>
+
+</div>
+</div>
+<a class="anchor" id="a06a1b6f82fadab310b409434af963b36"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageChannelOffset</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the offset (in bytes) to each channel belonging to the current image relative to the address. </p>
+<p>contained in <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad676c45f908bb41df04b15a85bf1f6fd" title="A pointer property (read-only) containing the start address of the image data. ">mvIMPACT::acquire::Request::imageData</a></b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will store <em>imageChannelCount</em> values. These can be queried one by one using the <em>index</em> parameter of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a6f88e97f646978391226aaf82cd5955d" title="Reads a value from a property. ">mvIMPACT::acquire::PropertyI::read()</a></b> or in a single call by using the overloaded <em>read</em> function accepting a reference to a vector. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ad676c45f908bb41df04b15a85bf1f6fd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr.html">PropertyPtr</a> mvIMPACT::acquire::Request::imageData</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer property <b></b>(read-only) containing the start address of the image data. </p>
+<p>This address in connection with <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac568c457aa474e73066bcc369a26cca1" title="An integer property (read-only) containing the size (in bytes) of the whole image. ">mvIMPACT::acquire::Request::imageSize</a></b> is sufficient to copy the complete image without having any additional information about it.</p>
+<dl class="section note"><dt>注解</dt><dd>It's not always necessary to copy the image data! Each image buffer is an integral part of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object returned to the user by a call to the corresponding 'waitFor' function offered by the interface. The data in this buffer remains valid until the user either unlocks the request buffer or closes the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> again.</dd>
+<dd>
+By unlocking the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>, the user informs the driver that this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> and the image buffer belonging to that <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> is no longer needed by the user. The driver then queues this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> for capturing image data into it once again. However, once a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> has been returned to the user, its image buffer can't be overwritten by the driver! Therefore the user can work with, modify, store or copy the data safely until he unlocks the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> again.</dd>
+<dd>
+This property will become writeable if this request is in configuration mode. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac568c457aa474e73066bcc369a26cca1" title="An integer property (read-only) containing the size (in bytes) of the whole image. ">mvIMPACT::acquire::Request::imageSize</a></b>, <br />
+ <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a6d8df3daf87f05fefbad25b7591a2459" title="An integer property (read-only) containing the size (in bytes) of the footer associated with this ima...">mvIMPACT::acquire::Request::imageFooterSize</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="acb47966e7619eec1fa38befb388a2f39"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr.html">PropertyPtr</a> mvIMPACT::acquire::Request::imageFooter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A pointer property <b></b>(read-only) containing the start address of the footer associated with this image. </p>
+<p>A footer may contain additional data like e.g. information about the image (e.g. the exposure time used for this image). If this property contains the value '0' no footer is attached to this image.</p>
+<dl class="section note"><dt>注解</dt><dd>In general it is not necessary to access footer data. Sometime e.g. when the hardware already does some image pre-processing a footer containing additional information about the image data might be attached to the image. In this case some additional information about the structure of the footer might be needed as well. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6d8df3daf87f05fefbad25b7591a2459"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageFooterSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the size (in bytes) of the footer associated with this image. </p>
+<p>If this property contains the value '0' no footer is attached to this image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a84c5b14d9856295065bdd4efa2371484"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageHeightTotal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the total height of the image in pixels. </p>
+<dl class="section note"><dt>注解</dt><dd>This feature will be supported by devices using a mvIMPACT Acquire driver greater or equal version 1.11.50. Not every device driver will be capable of dealing with multiple buffers forming a single image. If a device driver can not deliver parts of a larger image, then this property will always contain the same value as returned by <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#af7654539fb5277dec6f7b59fa428354f" title="An integer property (read-only) containing the height of the image in pixels. ">mvIMPACT::acquire::Request::imageHeight</a></b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac94ef78b0834deb1f291dacc97c600bc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageLinePitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the offset (in bytes) to the next line of each channel belonging to the current image. </p>
+<dl class="section note"><dt>注解</dt><dd>This property will store <em>imageChannelCount</em> values. These can be queried one by one using the <em>index</em> parameter of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a6f88e97f646978391226aaf82cd5955d" title="Reads a value from a property. ">mvIMPACT::acquire::PropertyI::read()</a></b> or in a single call by using the overloaded <em>read</em> function accepting a reference to a vector. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a05c7f2aad294449e1a9f6eb4a13597d4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga9fb22f658031cb16ba91a7446462670f">PropertyIRequestImageMemoryMode</a> mvIMPACT::acquire::Request::imageMemoryMode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) containing the memory mode used for this request. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TRequestImageMemoryMode</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become writeable if this request is in configuration mode. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a1d51bca84206dbed070f85751dbdbb92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageOffsetX</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the X-offset of the image in pixels. </p>
+<dl class="section note"><dt>注解</dt><dd>This feature will be supported by devices using a mvIMPACT Acquire driver greater or equal version 1.10.92. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a6f815967e03ba2d74ffbe66006a30ac1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageOffsetY</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the Y-offset of the image in pixels. </p>
+<dl class="section note"><dt>注解</dt><dd>This feature will be supported by devices using a mvIMPACT Acquire driver greater or equal version 1.10.92. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a4b904be99f464613adb54c09cf674ad9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga4f53082cdae4edfc1f87e928a0ab4184">PropertyIImageBufferPixelFormat</a> mvIMPACT::acquire::Request::imagePixelFormat</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) containing the pixel format of this image. </p>
+<p>This might be important, when the image data needs to be processed or stored in a file or maybe even if the image shall be displayed.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TImageBufferPixelFormat</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a00bdcb0cbf23ca71092474d93a80fb0c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imagePixelPitch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the offset (in bytes) to the next pixel of the specified channel of this image. </p>
+<dl class="section note"><dt>注解</dt><dd>This property will store <em>imageChannelCount</em> values. These can be queried one by one using the <em>index</em> parameter of the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a6f88e97f646978391226aaf82cd5955d" title="Reads a value from a property. ">mvIMPACT::acquire::PropertyI::read()</a></b> or in a single call by using the overloaded <em>read</em> function accepting a reference to a vector. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac568c457aa474e73066bcc369a26cca1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageSize</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the size (in bytes) of the whole image. </p>
+<p>This value in connection with <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad676c45f908bb41df04b15a85bf1f6fd" title="A pointer property (read-only) containing the start address of the image data. ">mvIMPACT::acquire::Request::imageData</a></b> is sufficient to copy the complete image without having any additional information about it.</p>
+<dl class="section note"><dt>注解</dt><dd>This property will become writeable if this request is in configuration mode. </dd></dl>
+<dl class="section see"><dt>参见</dt><dd><b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface.html#a05594ac5b54679152d27ac0e73b3908e" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::FunctionInterface::imageRequestConfigure</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a5ad02aed16acd60699f3d8757c63af43" title="Allows to set a request into configuration mode. ">mvIMPACT::acquire::Request::configure</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ad676c45f908bb41df04b15a85bf1f6fd" title="A pointer property (read-only) containing the start address of the image data. ">mvIMPACT::acquire::Request::imageData</a></b>, <br />
+<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a6d8df3daf87f05fefbad25b7591a2459" title="An integer property (read-only) containing the size (in bytes) of the footer associated with this ima...">mvIMPACT::acquire::Request::imageFooterSize</a></b> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a7a509bd410685fe447196c821db0926e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::imageWidthTotal</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the total width of the image in pixels if this buffer is part of a larger image. </p>
+<dl class="section note"><dt>注解</dt><dd>This feature will be supported by devices using a mvIMPACT Acquire driver greater or equal version 1.11.50. Not every device driver will be capable of dealing with multiple buffers forming a single image. If a device driver can not deliver parts of a larger image, then this property will always contain the same value as returned by <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a3b55253e7d176517fd60ddae724f974c" title="An integer property (read-only) containing the width of the image in pixels. ">mvIMPACT::acquire::Request::imageWidth</a></b>. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a531770aef701671337f6a75f6d08aa09"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga48585b26ebc31ccee54f34c7d6bbdda3">PropertyICameraOutput</a> mvIMPACT::acquire::Request::infoCameraOutputUsed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) containing the camera output used to transmit the image to the capture device. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TCameraOutput</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ac54da8206db5d5175d1c4c25baf0b134"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoExposeStart_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing a timestamp (in us) defining the time the device started the exposure of the image associated with this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> object. </p>
+<p>This value will stay 0 if nothing is known about the time the exposure did start. In such a case the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#ac26005e19f53dc564e3c3763a1fccaee" title="A 64 bit integer property (read-only) containing a timestamp to define the exact time this image has ...">mvIMPACT::acquire::Request::infoTimeStamp_us</a></b> property should be used instead. </p>
+
+</div>
+</div>
+<a class="anchor" id="a872084ae4d05e6276afb06a314d8af59"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoExposeTime_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the 'real' expose time (in us) used to generate this image. </p>
+<p>This might differ slightly from the value selected by the user via the corresponding exposure property depending on the precision available for the device or the connected camera. </p>
+
+</div>
+</div>
+<a class="anchor" id="a08460d237bdcedcbfbca11aa528969e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::infoFrameID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing a frame identifier. </p>
+<p>This parameter is returned as part of the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b>. It is used to associate a certain image with a unique identifier.</p>
+<p>When an <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b> instruction of the type <b>mvIMPACT::acquire::rtctrlProgTriggerSet</b> is executed, the <em>frameID</em> is set to the value of the property <em>FrameID</em> of a corresponding <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b> if the HRTC is used and any program step executes the setting of the ID.</p>
+<p>If a device (e.g. a digital camera) supports the transmission of a unique identifier for an image, this property will reflect the identifier as transmitted by the device.</p>
+<dl class="section note"><dt>注解</dt><dd><b>mvBlueFOX</b>, <b>mvBlueCOUGAR-P</b>, <b>mvBlueLYNX-M7</b> and <b>mvHYPERION</b> specific: This property will only contain meaningful data if the device supports at least one <b>HRTC</b> and a program is running and writing data to the property OR if a device supports the transmission of a unique identifier for an image. Currently HRTC programs are supported by <b>mvBlueFOX</b>, <b>mvBlueCOUGAR-P</b>, <b>mvBlueLYNX-M7</b> and <b>mvHYPERION</b> devices while a unique identifier transmitted by the device is support by all GigE Vision compliant devices. For GigE Vision compliant devices, this will be a 16 bit counter that will be incremented with every data block(e.g. an image or chunk data) transmitted by the device where '0' is a reserved value, which will never be used, thus values like this will be transmitted in a round robin scheme: 1, 2, 3, ..., 65535, 1, 2, ... Please note that due to the nature of <b>mvIMPACT::acquire::amContinuous</b> there might be gaps between the last image of a continuous stream and the first image of the next continuous stream if the device is stopped or re-programmed in between.</dd>
+<dd>
+<b>GigE</b> <b>Vision</b> and <b>USB3</b> <b>Vision</b> specific: This is the property where the so called block ID will be stored. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a39f42fe7bd18748985f3d0bca0c2ad01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoIOStatesAtExposureEnd</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the state of all the IO lines at the end of the frame exposure as a device specific bit field. </p>
+<p>See <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html#a510ba758567a030145090f020fa9a732" title="An integer property (read-only) containing the state of all the IO lines at the beginning of the fram...">mvIMPACT::acquire::Request::infoIOStatesAtExposureStart</a></b> for details on how to interpret the data.</p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a510ba758567a030145090f020fa9a732"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoIOStatesAtExposureStart</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the state of all the IO lines at the beginning of the frame exposure as a device specific bit field. </p>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueLYNX-M7</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">in 0 </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">in 1 </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">out 2 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">out 3 </td></tr>
+<tr>
+<td class="indexvalue">6</td><td class="indexvalue">in 2 </td></tr>
+<tr>
+<td class="indexvalue">7</td><td class="indexvalue">in 3 </td></tr>
+<tr>
+<td class="indexvalue">8</td><td class="indexvalue">in 4 </td></tr>
+<tr>
+<td class="indexvalue">9</td><td class="indexvalue">out 4 </td></tr>
+<tr>
+<td class="indexvalue">10</td><td class="indexvalue">out 5 </td></tr>
+</table>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueCOUGAR-P</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">out 0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">out 1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">in 0 </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">in 1 </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">out 2 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">out 3 </td></tr>
+</table>
+<p>The following table documents which bit in this property represents the state of which digital I/O for <b>mvBlueFOX</b> devices:</p>
+<table class="doxtable">
+<tr>
+<td class="header">bit</td><td class="header">IO </td></tr>
+<tr>
+<td class="indexvalue">0</td><td class="indexvalue">in 0 </td></tr>
+<tr>
+<td class="indexvalue">1</td><td class="indexvalue">in 1 </td></tr>
+<tr>
+<td class="indexvalue">2</td><td class="indexvalue">in 2(if available) </td></tr>
+<tr>
+<td class="indexvalue">3</td><td class="indexvalue">in 3(if available) </td></tr>
+<tr>
+<td class="indexvalue">4</td><td class="indexvalue">out 0 </td></tr>
+<tr>
+<td class="indexvalue">5</td><td class="indexvalue">out 1 </td></tr>
+<tr>
+<td class="indexvalue">6</td><td class="indexvalue">out 2(if available) </td></tr>
+<tr>
+<td class="indexvalue">7</td><td class="indexvalue">out 3(if available) </td></tr>
+</table>
+<dl class="section attention"><dt>注意</dt><dd>This feature is currently only available for <b>mvBlueFOX-MLC</b> devices!</dd></dl>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a22b3b014b6d006099e6bd2db72ca65fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoLineCounter</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the number of lines since the last trigger event. </p>
+<p>Will contain</p><ul>
+<li>the number of lines since last trigger event of the first line of the snap if line counting is enabled</li>
+<li>-1 otherwise</li>
+</ul>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a91a5b9cb9445b7730686c02036c47274"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaf54865fe5a3d5cfd15f9a111b40d09f9">PropertyF</a> mvIMPACT::acquire::Request::infoMissingData_pc</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A float property <b></b>(read-only) containing the amount of data missing in the current image. </p>
+<p>The value of this property will be 0 almost always. However if a device can detect blocks of missing data and an image request has returned with <b>mvIMPACT::acquire::rrFrameIncomplete</b> to indicate that not all the data has been captured, this property will contain the amount of data missing in percent. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6bed2d106f7443c329eb3afa9d658af0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoSettingUsed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A enumerated integer property <b></b>(read-only) containing the setting that was used for processing this request. </p>
+<p>The string representation will be a valid setting name, the integer representation can be casted into a <b>mvIMPACT::acquire::HOBJ</b> type. </p>
+
+</div>
+</div>
+<a class="anchor" id="ac26005e19f53dc564e3c3763a1fccaee"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga81749b2696755513663492664a18a893">PropertyI64</a> mvIMPACT::acquire::Request::infoTimeStamp_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>A 64 bit integer property <b></b>(read-only) containing a timestamp to define the exact time this image has been captured (stored after the integration). </p>
+<p><b>mvBlueFOX</b> specific: The counter of the timestamp starts when the camera gets initialized. It is measured in us. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6e57b8102fcc2bed76459ed24c09f6cf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoTransferDelay_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the time the transaction of this image has been delayed (in us) because either the bus was blocked or the CPU was busy. </p>
+<p>Normally this value will be 0. A value larger than 0 indicates that the system can't manage the current load.</p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a18a833becdf1c41fa70dac4824d5ea01"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::Request::infoVideoChannel</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property <b></b>(read-only) containing the video input channel of the device this image has been acquired from. </p>
+<dl class="section note"><dt>注解</dt><dd>This property is not supported by every device and will only be available if the device has more than one input channel. Therefore always call the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html#ac51e55e7e046101f3c6119d84123abd5" title="Checks if the internal component referenced by this object is still valid. ">mvIMPACT::acquire::Component::isValid</a></b> to check if this property is available or not. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a90b174d20b986b585b37c74791726012"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga1589b24b307be9af82ada97e4588a6bd">PropertyIRequestResult</a> mvIMPACT::acquire::Request::requestResult</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) defining the result of this request. </p>
+<p>This parameter indicates whether a previous image acquisition has been successful or not.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TRequestResult</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="acf9adfbc13cad31da7c10741252ed1e1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#gaa47cf118ef2a24f22680d3a3b2fcdf60">PropertyIRequestState</a> mvIMPACT::acquire::Request::requestState</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property <b></b>(read-only) defining the current state of this request. </p>
+<p>This parameter indicates the current state of this request. A <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> e.g. can currently be idle. This would mean that it is currently not used for image acquisition. Also a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html" title="Contains information about a captured image. ">mvIMPACT::acquire::Request</a></b> can be in 'Capturing' state, which means it is currently processed by the driver.</p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TRequestState</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_request.html">Request</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

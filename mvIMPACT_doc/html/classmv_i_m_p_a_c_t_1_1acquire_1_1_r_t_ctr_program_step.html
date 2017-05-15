@@ -1,0 +1,357 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::RTCtrProgramStep类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public 属性</a> &#124;
+<a href="#friends">友元</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::RTCtrProgramStep类 参考<div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A class to represent one step of a real time control(<b>RTCtr</b>) program (<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::RTCtrProgramStep 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="4,6,152,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::RTCtrProgramStep 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step_coll__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html" title="A base class for sets of properties that can be modified by the user. " alt="" coords="652,5,801,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TRTProgOpCodes \&gt;" alt="" coords="606,74,847,115"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_property.html" title="A base class for properties. " alt="" coords="405,143,555,185"/><area shape="rect" id="node7" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; int \&gt;" alt="" coords="652,143,801,185"/><area shape="rect" id="node8" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html" title="mvIMPACT::acquire::\lEnumPropertyI\&lt; TDigIOState \&gt;" alt="" coords="623,213,830,254"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html" title="A base class to implement access to internal driver components. " alt="" coords="205,143,355,185"/><area shape="rect" id="node6" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_access.html" title="A base class to implement access to internal driver objects. " alt="" coords="5,143,155,185"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public 属性</h2></td></tr>
+<tr class="memitem:a2a9740df9ac629e37f87b67249858f4c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a2a9740df9ac629e37f87b67249858f4c">address</a></td></tr>
+<tr class="memdesc:a2a9740df9ac629e37f87b67249858f4c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property, which defines the absolute jump address within this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>.  <a href="#a2a9740df9ac629e37f87b67249858f4c">更多...</a><br /></td></tr>
+<tr class="separator:a2a9740df9ac629e37f87b67249858f4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaad4a76b9a9805234c1a8a1a7aa0aa3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#acaad4a76b9a9805234c1a8a1a7aa0aa3">frameID</a></td></tr>
+<tr class="memdesc:acaad4a76b9a9805234c1a8a1a7aa0aa3"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property, which defines the frame ID of the triggered image <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>.  <a href="#acaad4a76b9a9805234c1a8a1a7aa0aa3">更多...</a><br /></td></tr>
+<tr class="separator:acaad4a76b9a9805234c1a8a1a7aa0aa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3939901a39a4b5b95d3c1b1c5f176458"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a3939901a39a4b5b95d3c1b1c5f176458">clocks_us</a></td></tr>
+<tr class="memdesc:a3939901a39a4b5b95d3c1b1c5f176458"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property, which defines the waiting time <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>.  <a href="#a3939901a39a4b5b95d3c1b1c5f176458">更多...</a><br /></td></tr>
+<tr class="separator:a3939901a39a4b5b95d3c1b1c5f176458"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15975e93c4803355e9ce1bf5a33786ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga26369d2e6b583ee092988de00a839413">PropertyIDigIOState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a15975e93c4803355e9ce1bf5a33786ec">digitalInputs</a></td></tr>
+<tr class="memdesc:a15975e93c4803355e9ce1bf5a33786ec"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property to define for which digital input state this program step waits for.  <a href="#a15975e93c4803355e9ce1bf5a33786ec">更多...</a><br /></td></tr>
+<tr class="separator:a15975e93c4803355e9ce1bf5a33786ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ccd96117b14e3031c38a59f6cf6595c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga26369d2e6b583ee092988de00a839413">PropertyIDigIOState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a9ccd96117b14e3031c38a59f6cf6595c">digitalOutputs</a></td></tr>
+<tr class="memdesc:a9ccd96117b14e3031c38a59f6cf6595c"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property to define how to set the digital outputs of this device.  <a href="#a9ccd96117b14e3031c38a59f6cf6595c">更多...</a><br /></td></tr>
+<tr class="separator:a9ccd96117b14e3031c38a59f6cf6595c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bdc2bfbec5bd9680753a3aa3d6ed483"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#ga26369d2e6b583ee092988de00a839413">PropertyIDigIOState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a1bdc2bfbec5bd9680753a3aa3d6ed483">sensorHeads</a></td></tr>
+<tr class="memdesc:a1bdc2bfbec5bd9680753a3aa3d6ed483"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property to define which sensor heads to trigger (for devices with more than one sensor head).  <a href="#a1bdc2bfbec5bd9680753a3aa3d6ed483">更多...</a><br /></td></tr>
+<tr class="separator:a1bdc2bfbec5bd9680753a3aa3d6ed483"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a823c9cad26ad628155d68130ad1d6d5d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___device_specific_interface.html#gaa22518faa79c768c8c1cbf763bc0dec7">PropertyIRTProgOpCodes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d">opCode</a></td></tr>
+<tr class="memdesc:a823c9cad26ad628155d68130ad1d6d5d"><td class="mdescLeft">&#160;</td><td class="mdescRight">An enumerated integer property defining the general purpose of this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b> object.  <a href="#a823c9cad26ad628155d68130ad1d6d5d">更多...</a><br /></td></tr>
+<tr class="separator:a823c9cad26ad628155d68130ad1d6d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6109b0aa37200c31f2bbeecd5f2eec8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#af6109b0aa37200c31f2bbeecd5f2eec8">controllerRegister</a></td></tr>
+<tr class="memdesc:af6109b0aa37200c31f2bbeecd5f2eec8"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property, which defines the index of the controller register to refer in this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b>.  <a href="#af6109b0aa37200c31f2bbeecd5f2eec8">更多...</a><br /></td></tr>
+<tr class="separator:af6109b0aa37200c31f2bbeecd5f2eec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a8088b0cb951026c8a290b82bc6657"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#aa4a8088b0cb951026c8a290b82bc6657">registerValue</a></td></tr>
+<tr class="memdesc:aa4a8088b0cb951026c8a290b82bc6657"><td class="mdescLeft">&#160;</td><td class="mdescRight">An integer property, which defines the a value to associate with a register access in this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b>.  <a href="#aa4a8088b0cb951026c8a290b82bc6657">更多...</a><br /></td></tr>
+<tr class="separator:aa4a8088b0cb951026c8a290b82bc6657"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+友元</h2></td></tr>
+<tr class="memitem:aba6b541c1e0b106c36bd31585855a154"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba6b541c1e0b106c36bd31585855a154"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>RTCtrProgram</b></td></tr>
+<tr class="separator:aba6b541c1e0b106c36bd31585855a154"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">HOBJ&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a7073a97a1f05bb3cf45a15358b1ca557">hObj</a> (void) const </td></tr>
+<tr class="memdesc:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unique identifier for the component collection referenced by this object.  <a href="#a7073a97a1f05bb3cf45a15358b1ca557">更多...</a><br /></td></tr>
+<tr class="separator:a7073a97a1f05bb3cf45a15358b1ca557 inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">ComponentCollection</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html#a986cf6758394195fb4f47e8b5b9d0c8a">restoreDefault</a> (void) const </td></tr>
+<tr class="memdesc:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores the default for every component of this collection.  <a href="#a986cf6758394195fb4f47e8b5b9d0c8a">更多...</a><br /></td></tr>
+<tr class="separator:a986cf6758394195fb4f47e8b5b9d0c8a inherit pub_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae65cba200e6585531b0de331ad8fbc2e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (HOBJ hRoot)</td></tr>
+<tr class="separator:ae65cba200e6585531b0de331ad8fbc2e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6579e4e8e49b2d7560a259a81de266e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ComponentCollection</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:af6579e4e8e49b2d7560a259a81de266e inherit pro_methods_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection.html">mvIMPACT::acquire::ComponentCollection</a></td></tr>
+<tr class="memitem:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a429f84c6b8e03c9c26c36de0d16021d2"></a>
+HOBJ&#160;</td><td class="memItemRight" valign="bottom"><b>m_hRoot</b></td></tr>
+<tr class="separator:a429f84c6b8e03c9c26c36de0d16021d2 inherit pro_attribs_classmv_i_m_p_a_c_t_1_1acquire_1_1_component_collection"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A class to represent one step of a real time control(<b>RTCtr</b>) program (<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>An object of this class represents a single instruction in a program represented by an <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>. <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b> object can't be constructed directly, but must be accessed via the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html#ad15489b2d15c594dd44f01d4f515c97f" title="Returns a pointer to a program instruction of the program. ">mvIMPACT::acquire::RTCtrProgram::programStep</a></b> of the program they belong to.</p>
+<p>The instruction this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b> will executed when the program is executed is defined by the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b>. Depending on the value of this property certain other parameters will influence the behaviour of this instruction.</p>
+<dl class="section note"><dt>注解</dt><dd>This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">类成员变量说明</h2>
+<a class="anchor" id="a2a9740df9ac629e37f87b67249858f4c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::RTCtrProgramStep::address</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property, which defines the absolute jump address within this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>. </p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgJumpLoc</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a3939901a39a4b5b95d3c1b1c5f176458"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::RTCtrProgramStep::clocks_us</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property, which defines the waiting time <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>. </p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgWaitClocks</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="af6109b0aa37200c31f2bbeecd5f2eec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::RTCtrProgramStep::controllerRegister</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property, which defines the index of the controller register to refer in this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b>. </p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgRegisterSet</b>, <b>mvIMPACT::acquire::rtctrlProgRegisterAdd</b>, <b>mvIMPACT::acquire::rtctrlProgRegisterSub</b>, <b>mvIMPACT::acquire::rtctrlProgJumpLocOnZero</b> or <b>mvIMPACT::acquire::rtctrlProgJumpLocOnNotZero</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This feature will not be available for every device offering a HRTC. It will be available if the translation dictionary of the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> contains <b>mvIMPACT::acquire::rtctrlProgRegisterSet</b>, <b>mvIMPACT::acquire::rtctrlProgRegisterAdd</b>, <b>mvIMPACT::acquire::rtctrlProgRegisterSub</b>, <b>mvIMPACT::acquire::rtctrlProgJumpLocOnZero</b> or <b>mvIMPACT::acquire::rtctrlProgJumpLocOnNotZero</b>.</dd></dl>
+<p>Read the properties translation dictionary with the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#af5ec5a9c3657af2917f4ead78ef067db" title="This function reads a single translation table string entry from a property. ">mvIMPACT::acquire::PropertyIPulseStartTrigger::getTranslationDictString</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0c50700ebff2806621c63d03b624f200" title="This function reads a single translation table value entry from a property. ">mvIMPACT::acquire::PropertyIPulseStartTrigger::getTranslationDictValue</a></b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a15975e93c4803355e9ce1bf5a33786ec"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga26369d2e6b583ee092988de00a839413">PropertyIDigIOState</a> mvIMPACT::acquire::RTCtrProgramStep::digitalInputs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property to define for which digital input state this program step waits for. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDigIOState</b>.</p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgWaitDigin</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9ccd96117b14e3031c38a59f6cf6595c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga26369d2e6b583ee092988de00a839413">PropertyIDigIOState</a> mvIMPACT::acquire::RTCtrProgramStep::digitalOutputs</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property to define how to set the digital outputs of this device. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDigIOState</b>.</p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgSetDigout</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="acaad4a76b9a9805234c1a8a1a7aa0aa3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::RTCtrProgramStep::frameID</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property, which defines the frame ID of the triggered image <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b>. </p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgTriggerSet</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a823c9cad26ad628155d68130ad1d6d5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#gaa22518faa79c768c8c1cbf763bc0dec7">PropertyIRTProgOpCodes</a> mvIMPACT::acquire::RTCtrProgramStep::opCode</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property defining the general purpose of this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b> object. </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TRTProgOpCodes</b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="aa4a8088b0cb951026c8a290b82bc6657"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> mvIMPACT::acquire::RTCtrProgramStep::registerValue</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An integer property, which defines the a value to associate with a register access in this <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html" title="A class to represent one step of a real time control(RTCtr) program (Device specific interface layout...">mvIMPACT::acquire::RTCtrProgramStep</a></b>. </p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgRegisterSet</b>, <b>mvIMPACT::acquire::rtctrlProgRegisterAdd</b> or <b>mvIMPACT::acquire::rtctrlProgRegisterSub</b>.</p>
+<dl class="section note"><dt>注解</dt><dd>This feature will not be available for every device offering a HRTC. It will be available if the translation dictionary of the property <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> contains <b>mvIMPACT::acquire::rtctrlProgRegisterSet</b>, <b>mvIMPACT::acquire::rtctrlProgRegisterAdd</b>, or <b>mvIMPACT::acquire::rtctrlProgRegisterSub</b>.</dd></dl>
+<p>Read the properties translation dictionary with the functions <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#af5ec5a9c3657af2917f4ead78ef067db" title="This function reads a single translation table string entry from a property. ">mvIMPACT::acquire::PropertyIPulseStartTrigger::getTranslationDictString</a></b> and <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i.html#a0c50700ebff2806621c63d03b624f200" title="This function reads a single translation table value entry from a property. ">mvIMPACT::acquire::PropertyIPulseStartTrigger::getTranslationDictValue</a></b>. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1bdc2bfbec5bd9680753a3aa3d6ed483"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="group___device_specific_interface.html#ga26369d2e6b583ee092988de00a839413">PropertyIDigIOState</a> mvIMPACT::acquire::RTCtrProgramStep::sensorHeads</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>An enumerated integer property to define which sensor heads to trigger (for devices with more than one sensor head). </p>
+<p>Valid values for this property are defined by the enumeration <b>mvIMPACT::acquire::TDigIOState</b>.</p>
+<p>This property only is taken into account, if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html#a823c9cad26ad628155d68130ad1d6d5d" title="An enumerated integer property defining the general purpose of this mvIMPACT::acquire::RTCtrProgramSt...">mvIMPACT::acquire::RTCtrProgramStep::opCode</a></b> is set to <b>mvIMPACT::acquire::rtctrlProgTriggerSet</b> or <b>mvIMPACT::acquire::rtctrlProgTriggerReset</b>. </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program_step.html">RTCtrProgramStep</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

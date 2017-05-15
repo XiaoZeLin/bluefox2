@@ -1,0 +1,103 @@
+\hypertarget{struct_image_buffer}{\section{Image\+Buffer结构体 参考}
+\label{struct_image_buffer}\index{Image\+Buffer@{Image\+Buffer}}
+}
+
+
+Fully describes a captured image.  
+
+
+
+
+{\ttfamily \#include $<$mv\+Device\+Manager.\+h$>$}
+
+
+
+Image\+Buffer 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=167pt]{struct_image_buffer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{struct_image_buffer_ab3a5f0c0ce093491638a7c10dda8c14c}{int \hyperlink{struct_image_buffer_ab3a5f0c0ce093491638a7c10dda8c14c}{i\+Bytes\+Per\+Pixel}}\label{struct_image_buffer_ab3a5f0c0ce093491638a7c10dda8c14c}
+
+\begin{DoxyCompactList}\small\item\em The number of bytes per pixel. \end{DoxyCompactList}\item 
+\hypertarget{struct_image_buffer_a590ae28b8676c88979d0216d8f4e10bf}{int \hyperlink{struct_image_buffer_a590ae28b8676c88979d0216d8f4e10bf}{i\+Height}}\label{struct_image_buffer_a590ae28b8676c88979d0216d8f4e10bf}
+
+\begin{DoxyCompactList}\small\item\em The height of the image in pixel or lines. \end{DoxyCompactList}\item 
+\hypertarget{struct_image_buffer_ab86c2341c91142138f674108543c2851}{int \hyperlink{struct_image_buffer_ab86c2341c91142138f674108543c2851}{i\+Width}}\label{struct_image_buffer_ab86c2341c91142138f674108543c2851}
+
+\begin{DoxyCompactList}\small\item\em The width of the image in pixel. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga456e8aa76e06bb761f27c52141475985}{T\+Image\+Buffer\+Pixel\+Format} \hyperlink{struct_image_buffer_a18c13011f02db49b05f5f34af314e1b2}{pixel\+Format}
+\begin{DoxyCompactList}\small\item\em The pixel format of this image. \end{DoxyCompactList}\item 
+int \hyperlink{struct_image_buffer_a694d3c3df58d29da2b9741498566f352}{i\+Size}
+\begin{DoxyCompactList}\small\item\em The size (in bytes) of the whole image. \end{DoxyCompactList}\item 
+void $\ast$ \hyperlink{struct_image_buffer_ab67c9c21d749e786302c848b508e0673}{vp\+Data}
+\begin{DoxyCompactList}\small\item\em The starting address of the image. \end{DoxyCompactList}\item 
+int \hyperlink{struct_image_buffer_aff3523b865533ee79471454201a5350c}{i\+Channel\+Count}
+\begin{DoxyCompactList}\small\item\em The number of channels this image consists of. \end{DoxyCompactList}\item 
+\hypertarget{struct_image_buffer_a3e019502761bca451991fcc538dab274}{\hyperlink{struct_channel_data}{Channel\+Data} $\ast$ \hyperlink{struct_image_buffer_a3e019502761bca451991fcc538dab274}{p\+Channels}}\label{struct_image_buffer_a3e019502761bca451991fcc538dab274}
+
+\begin{DoxyCompactList}\small\item\em A pointer to an array of channel specific image data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Fully describes a captured image. 
+
+This class serves as a describing structure for captured images. 
+
+\subsection{类成员变量说明}
+\hypertarget{struct_image_buffer_aff3523b865533ee79471454201a5350c}{\index{Image\+Buffer@{Image\+Buffer}!i\+Channel\+Count@{i\+Channel\+Count}}
+\index{i\+Channel\+Count@{i\+Channel\+Count}!Image\+Buffer@{Image\+Buffer}}
+\subsubsection[{i\+Channel\+Count}]{\setlength{\rightskip}{0pt plus 5cm}int Image\+Buffer\+::i\+Channel\+Count}}\label{struct_image_buffer_aff3523b865533ee79471454201a5350c}
+
+
+The number of channels this image consists of. 
+
+For an R\+G\+B image this value e.\+g. would be 3. This value defines how many {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Channel\+Data} structures {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+::p\+Channels} is pointing to once this structure has been allocated and filled with valid data. \hypertarget{struct_image_buffer_a694d3c3df58d29da2b9741498566f352}{\index{Image\+Buffer@{Image\+Buffer}!i\+Size@{i\+Size}}
+\index{i\+Size@{i\+Size}!Image\+Buffer@{Image\+Buffer}}
+\subsubsection[{i\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int Image\+Buffer\+::i\+Size}}\label{struct_image_buffer_a694d3c3df58d29da2b9741498566f352}
+
+
+The size (in bytes) of the whole image. 
+
+This value in connection with {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+::vp\+Data} is sufficient to copy the complete image without having any additional information about it. \hypertarget{struct_image_buffer_a18c13011f02db49b05f5f34af314e1b2}{\index{Image\+Buffer@{Image\+Buffer}!pixel\+Format@{pixel\+Format}}
+\index{pixel\+Format@{pixel\+Format}!Image\+Buffer@{Image\+Buffer}}
+\subsubsection[{pixel\+Format}]{\setlength{\rightskip}{0pt plus 5cm}{\bf T\+Image\+Buffer\+Pixel\+Format} Image\+Buffer\+::pixel\+Format}}\label{struct_image_buffer_a18c13011f02db49b05f5f34af314e1b2}
+
+
+The pixel format of this image. 
+
+This might be important, when the image data needs to be processed or stored in a file or maybe even if the image shall be displayed. \hypertarget{struct_image_buffer_ab67c9c21d749e786302c848b508e0673}{\index{Image\+Buffer@{Image\+Buffer}!vp\+Data@{vp\+Data}}
+\index{vp\+Data@{vp\+Data}!Image\+Buffer@{Image\+Buffer}}
+\subsubsection[{vp\+Data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ Image\+Buffer\+::vp\+Data}}\label{struct_image_buffer_ab67c9c21d749e786302c848b508e0673}
+
+
+The starting address of the image. 
+
+This address in connection with {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer\+::i\+Size} is sufficient to copy the complete image without having any additional information about it.
+
+{\bfseries E\+X\+A\+M\+P\+L\+E\+:}~\newline
+~\newline
+ 
+\begin{DoxyCode}
+\textcolor{keyword}{const} \hyperlink{struct_image_buffer}{ImageBuffer}* pib = getImageBufferFromSomewhere();
+\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}* pTempBuf = \textcolor{keyword}{new} \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{char}[ib.iSize];
+memcpy( pTempBuf, pib.\hyperlink{struct_image_buffer_ab67c9c21d749e786302c848b508e0673}{vpData}, pIB.iSize );
+\end{DoxyCode}
+
+
+\begin{DoxyNote}{注解}
+It's not always necessary to copy the image data! Each {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} is an integral part of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} object returned to the user by a call to the corresponding 'wait\+For' function offered by the interface. The data in this {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} remains valid until the user either unlocks the request buffer or closes the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} again.
+
+By unlocking the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} the user informs the driver, that this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} and the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} belonging to that {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} is not longer needed by the user. The driver then queues this {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} for capturing image data into it once again. However once a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} has been returned to the user, its {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Buffer} can't be overwritten by the driver! Therefore the user can work with, modify, store or copy the data safely until he unlocks the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} again. 
+\end{DoxyNote}
+
+
+该结构体的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+Device\+Manager/\+Include/mv\+Device\+Manager.\+h\end{DoxyCompactItemize}

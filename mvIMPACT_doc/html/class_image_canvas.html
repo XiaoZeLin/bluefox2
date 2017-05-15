@@ -1,0 +1,339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: ImageCanvas类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_image_canvas.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="class_image_canvas-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">ImageCanvas类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 ImageCanvas 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_image_canvas__inherit__graph.png" border="0" usemap="#_image_canvas_inherit__map" alt="Inheritance graph"/></div>
+<map name="_image_canvas_inherit__map" id="_image_canvas_inherit__map">
+<area shape="rect" id="node2" href="class_drawing_canvas.html" title="DrawingCanvas" alt="" coords="15,80,129,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+ImageCanvas 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_image_canvas__coll__graph.png" border="0" usemap="#_image_canvas_coll__map" alt="Collaboration graph"/></div>
+<map name="_image_canvas_coll__map" id="_image_canvas_coll__map">
+<area shape="rect" id="node2" href="class_drawing_canvas.html" title="DrawingCanvas" alt="" coords="15,80,129,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:a0c2b3731815ac22f218b08d36df3bac9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c2b3731815ac22f218b08d36df3bac9"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TSaveResult</b> { <b>srOK</b>, 
+<b>srNoImage</b>, 
+<b>srFailedToSave</b>
+ }</td></tr>
+<tr class="separator:a0c2b3731815ac22f218b08d36df3bac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a224d2497503b5fa611862e028a0c2ef3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a224d2497503b5fa611862e028a0c2ef3"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TScalingMode</b> { <b>smNearestNeighbour</b>, 
+<b>smLinear</b>, 
+<b>smCubic</b>
+ }</td></tr>
+<tr class="separator:a224d2497503b5fa611862e028a0c2ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a63f276994b62c23a84fa81fe8197cef1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a63f276994b62c23a84fa81fe8197cef1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>ImageCanvas</b> (wxWindow *pApp, wxWindow *parent, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxBORDER_NONE, const wxString &amp;name=wxT(&quot;ImageCanvas&quot;), bool boActive=true)</td></tr>
+<tr class="separator:a63f276994b62c23a84fa81fe8197cef1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d810eebd144ca876339ff81f04b08e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31d810eebd144ca876339ff81f04b08e"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentPixelDataAsString</b> (void) const </td></tr>
+<tr class="separator:a31d810eebd144ca876339ff81f04b08e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92c5d6aaa84a45aca8ecf5fb1971a64"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab92c5d6aaa84a45aca8ecf5fb1971a64"></a>
+wxRect&#160;</td><td class="memItemRight" valign="bottom"><b>GetVisiblePartOfImage</b> (void)</td></tr>
+<tr class="separator:ab92c5d6aaa84a45aca8ecf5fb1971a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af91056aae00eef8cf23f1eba6a9d6091"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af91056aae00eef8cf23f1eba6a9d6091"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsScaled</b> (void) const </td></tr>
+<tr class="separator:af91056aae00eef8cf23f1eba6a9d6091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b9d8a11981ec7344ec3ab13c0d02cc9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b9d8a11981ec7344ec3ab13c0d02cc9"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsFullScreen</b> (void) const </td></tr>
+<tr class="separator:a6b9d8a11981ec7344ec3ab13c0d02cc9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9e617c78a2e446a46c675f1d3583d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba9e617c78a2e446a46c675f1d3583d8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_canvas.html#aba9e617c78a2e446a46c675f1d3583d8">SetFullScreenMode</a> (bool boActive)</td></tr>
+<tr class="memdesc:aba9e617c78a2e446a46c675f1d3583d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Not supported without the mvDisplay library (which uses DirectX internally) <br /></td></tr>
+<tr class="separator:aba9e617c78a2e446a46c675f1d3583d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b5f86f4c80fc73055acb709e54a45f4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8b5f86f4c80fc73055acb709e54a45f4"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>InfoOverlayActive</b> (void) const </td></tr>
+<tr class="separator:a8b5f86f4c80fc73055acb709e54a45f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b28cbff150eb048eb75246ad18b738"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84b28cbff150eb048eb75246ad18b738"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RefreshScrollbars</b> (bool boMoveToMousePos=false)</td></tr>
+<tr class="separator:a84b28cbff150eb048eb75246ad18b738"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbb4a3aeb64bb169d6d27e4e2e75e1c0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbb4a3aeb64bb169d6d27e4e2e75e1c0"></a>
+<a class="el" href="struct_a_o_i.html">AOI</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterAOI</b> (const wxRect &amp;, const wxColour &amp;, const <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a> *const pOwner)</td></tr>
+<tr class="separator:acbb4a3aeb64bb169d6d27e4e2e75e1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad038feaa07968d026c52a6c82758366b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad038feaa07968d026c52a6c82758366b"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RegisterMonitorDisplay</b> (<a class="el" href="class_image_canvas.html">ImageCanvas</a> *pMonitorDisplay)</td></tr>
+<tr class="separator:ad038feaa07968d026c52a6c82758366b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3e041467a4d2072cc8cac89ecbd434"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a3e041467a4d2072cc8cac89ecbd434"></a>
+<a class="el" href="class_image_canvas.html">ImageCanvas</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetMonitorDisplay</b> (void) const </td></tr>
+<tr class="separator:a0a3e041467a4d2072cc8cac89ecbd434"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22d7e4b90533d43e64b23e858b0d3f9f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22d7e4b90533d43e64b23e858b0d3f9f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>RemoveAOI</b> (const <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a> *const pOwner)</td></tr>
+<tr class="separator:a22d7e4b90533d43e64b23e858b0d3f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6ed8408d025c286fcc7cf235a118642"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6ed8408d025c286fcc7cf235a118642"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>IncreaseSkippedCounter</b> (size_t count)</td></tr>
+<tr class="separator:ae6ed8408d025c286fcc7cf235a118642"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd14199ee130f90bdac4f3e49e134a3f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd14199ee130f90bdac4f3e49e134a3f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleMouseAndKeyboardEvents</b> (bool boHandle)</td></tr>
+<tr class="separator:acd14199ee130f90bdac4f3e49e134a3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca737316c7de89a68b160f9250f4757f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca737316c7de89a68b160f9250f4757f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>DisableDoubleClickAndPrunePopupMenu</b> (bool boDisable)</td></tr>
+<tr class="separator:aca737316c7de89a68b160f9250f4757f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abccf29fde25b2c93bcd5d7bedeb50625"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abccf29fde25b2c93bcd5d7bedeb50625"></a>
+TSaveResult&#160;</td><td class="memItemRight" valign="bottom"><b>SaveCurrentImage</b> (const wxString &amp;filenameAndPath, const wxString &amp;extension) const </td></tr>
+<tr class="separator:abccf29fde25b2c93bcd5d7bedeb50625"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75898cdd7e1789e110b798037d9a6a4a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75898cdd7e1789e110b798037d9a6a4a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActiveAnalysisPlot</b> (const <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a> *pPlot)</td></tr>
+<tr class="separator:a75898cdd7e1789e110b798037d9a6a4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ee0ca0138add4ad861610690f41c77"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a59ee0ca0138add4ad861610690f41c77"></a>
+const <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>GetActiveAnalysisPlot</b> (void) const </td></tr>
+<tr class="separator:a59ee0ca0138add4ad861610690f41c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1748491c45b30ae132c9c96d1910b00e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1748491c45b30ae132c9c96d1910b00e"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetAOI</b> (const <a class="el" href="class_plot_canvas_image_analysis.html">PlotCanvasImageAnalysis</a> *pPlot, int x, int y, int w, int h)</td></tr>
+<tr class="separator:a1748491c45b30ae132c9c96d1910b00e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba3902aa128ee939ee26665cf9742d5d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image_canvas.html#aba3902aa128ee939ee26665cf9742d5d">SetImage</a> (const mvIMPACT::acquire::ImageBuffer *pIB, bool boMustRefresh=true)</td></tr>
+<tr class="separator:aba3902aa128ee939ee26665cf9742d5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa84fb42497a28fd90c3e74b415138b37"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa84fb42497a28fd90c3e74b415138b37"></a>
+const <br class="typebreak" />
+mvIMPACT::acquire::ImageBuffer *&#160;</td><td class="memItemRight" valign="bottom"><b>GetImage</b> (void) const </td></tr>
+<tr class="separator:aa84fb42497a28fd90c3e74b415138b37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88da52921ebe0a54de423c5fca25b5f9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a88da52921ebe0a54de423c5fca25b5f9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScaling</b> (bool boOn)</td></tr>
+<tr class="separator:a88da52921ebe0a54de423c5fca25b5f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f8ed032c7cf09ef3948221e22c4ecc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f8ed032c7cf09ef3948221e22c4ecc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInfoOverlay</b> (const std::vector&lt; wxString &gt; &amp;infoStrings)</td></tr>
+<tr class="separator:a2f8ed032c7cf09ef3948221e22c4ecc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a913ff75607832db40c3acac68da91b4d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a913ff75607832db40c3acac68da91b4d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetInfoOverlayMode</b> (bool boOn)</td></tr>
+<tr class="separator:a913ff75607832db40c3acac68da91b4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972e7527243ac69732908dcd05d28142"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a972e7527243ac69732908dcd05d28142"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetRequestInProgressFlag</b> (void)</td></tr>
+<tr class="separator:a972e7527243ac69732908dcd05d28142"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b1612e47706fcc45c0a92e26973ea2d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b1612e47706fcc45c0a92e26973ea2d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ResetSkippedImagesCounter</b> (void)</td></tr>
+<tr class="separator:a4b1612e47706fcc45c0a92e26973ea2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e286f82e991c2487531f0eedd3932a4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e286f82e991c2487531f0eedd3932a4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetImageModificationWarningOutput</b> (bool boOn)</td></tr>
+<tr class="separator:a9e286f82e991c2487531f0eedd3932a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aaad632de88107fd92abd1550d1ce6d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4aaad632de88107fd92abd1550d1ce6d"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetImageModificationWarningOutput</b> (void) const </td></tr>
+<tr class="separator:a4aaad632de88107fd92abd1550d1ce6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeec1468b63dd42a264f45c7d622be010"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeec1468b63dd42a264f45c7d622be010"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetPerformanceWarningOutput</b> (bool boOn)</td></tr>
+<tr class="separator:aeec1468b63dd42a264f45c7d622be010"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57cf4003bf17c0fb344bbbcc779e2e27"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57cf4003bf17c0fb344bbbcc779e2e27"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetPerformanceWarningOutput</b> (void) const </td></tr>
+<tr class="separator:a57cf4003bf17c0fb344bbbcc779e2e27"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5304e711bac31eef24bec975b327205f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5304e711bac31eef24bec975b327205f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetUserData</b> (int userData)</td></tr>
+<tr class="separator:a5304e711bac31eef24bec975b327205f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad73adc33780dced2902efb8278aea01f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad73adc33780dced2902efb8278aea01f"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>GetUserData</b> (void) const </td></tr>
+<tr class="separator:ad73adc33780dced2902efb8278aea01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f1d6d8ff6880c403e977d02f37c499"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7f1d6d8ff6880c403e977d02f37c499"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetScalingMode</b> (TScalingMode mode)</td></tr>
+<tr class="separator:ac7f1d6d8ff6880c403e977d02f37c499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5892abe00d2638ff6651ea4c80100b1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5892abe00d2638ff6651ea4c80100b1"></a>
+TScalingMode&#160;</td><td class="memItemRight" valign="bottom"><b>GetScalingMode</b> (void) const </td></tr>
+<tr class="separator:ac5892abe00d2638ff6651ea4c80100b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15b324e425a6ea86aeb177d02b43bb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af15b324e425a6ea86aeb177d02b43bb8"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SupportsDifferentScalingModes</b> (void) const </td></tr>
+<tr class="separator:af15b324e425a6ea86aeb177d02b43bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:a881bb87309826c92c0564de4363cbcd2 inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a881bb87309826c92c0564de4363cbcd2"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>DrawingCanvas</b> (wxWindow *parent, wxWindowID id=-1, const wxPoint &amp;pos=wxDefaultPosition, const wxSize &amp;size=wxDefaultSize, long style=wxBORDER_NONE, const wxString &amp;name=wxT(&quot;DrawingCanvas&quot;), bool boActive=false)</td></tr>
+<tr class="separator:a881bb87309826c92c0564de4363cbcd2 inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab9f8216597135cd8f7ae1969dadbf74 inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab9f8216597135cd8f7ae1969dadbf74"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>IsActive</b> (void) const </td></tr>
+<tr class="separator:aab9f8216597135cd8f7ae1969dadbf74 inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1387ecc7ce03e14b61827e2d7b487a86 inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1387ecc7ce03e14b61827e2d7b487a86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSize</b> (wxSizeEvent &amp;)</td></tr>
+<tr class="separator:a1387ecc7ce03e14b61827e2d7b487a86 inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae81952df1c2507b13d2d9bafd76812ac inherit pub_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae81952df1c2507b13d2d9bafd76812ac"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>SetActive</b> (bool boActive)</td></tr>
+<tr class="separator:ae81952df1c2507b13d2d9bafd76812ac inherit pub_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pub_static_methods_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;静态 Public 成员函数 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:a7153565fd6483fa98858aa0c2e841753 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7153565fd6483fa98858aa0c2e841753"></a>
+static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>GetMono12Packed_V1Pixel</b> (const unsigned char *const pBuffer, int pixel)</td></tr>
+<tr class="separator:a7153565fd6483fa98858aa0c2e841753 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1615b8f32f7a20e51e6cb1adbfbf5877 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1615b8f32f7a20e51e6cb1adbfbf5877"></a>
+static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>GetMonoPacked_V2Pixel</b> (const unsigned char *const pBuffer, int pixel, int shift)</td></tr>
+<tr class="separator:a1615b8f32f7a20e51e6cb1adbfbf5877 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb088653169a2af43c54c0dafb5fa288 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb088653169a2af43c54c0dafb5fa288"></a>
+static unsigned short&#160;</td><td class="memItemRight" valign="bottom"><b>GetMono12Packed_V2Pixel</b> (const unsigned char *const pBuffer, int pixel)</td></tr>
+<tr class="separator:afb088653169a2af43c54c0dafb5fa288 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23881a32a4344c99287805a272e9ab22 inherit pub_static_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a23881a32a4344c99287805a272e9ab22"></a>
+static void&#160;</td><td class="memItemRight" valign="bottom"><b>GetBGR101010Packed_V2Pixel</b> (unsigned int pixel, unsigned short &amp;red, unsigned short &amp;green, unsigned short &amp;blue)</td></tr>
+<tr class="separator:a23881a32a4344c99287805a272e9ab22 inherit pub_static_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:af3b9030a544090a116ff805270771820 inherit pro_methods_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af3b9030a544090a116ff805270771820"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>HandleSizeEvent</b> (wxSizeEvent &amp;e)</td></tr>
+<tr class="separator:af3b9030a544090a116ff805270771820 inherit pro_methods_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_drawing_canvas"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_drawing_canvas')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_drawing_canvas.html">DrawingCanvas</a></td></tr>
+<tr class="memitem:a6be903bfad178b8e1777f297930119ae inherit pro_attribs_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6be903bfad178b8e1777f297930119ae"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>m_boActive</b></td></tr>
+<tr class="separator:a6be903bfad178b8e1777f297930119ae inherit pro_attribs_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad97d516b6f924da07d4b9ce5db0ecb62 inherit pro_attribs_class_drawing_canvas"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad97d516b6f924da07d4b9ce5db0ecb62"></a>
+wxCriticalSection&#160;</td><td class="memItemRight" valign="bottom"><b>m_critSect</b></td></tr>
+<tr class="separator:ad97d516b6f924da07d4b9ce5db0ecb62 inherit pro_attribs_class_drawing_canvas"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="aba3902aa128ee939ee26665cf9742d5d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ImageCanvas::SetImage </td>
+          <td>(</td>
+          <td class="paramtype">const mvIMPACT::acquire::ImageBuffer *&#160;</td>
+          <td class="paramname"><em>pIB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>boMustRefresh</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">待办事项:</a></b></dt><dd>how can we deal with padding in x-direction here??? </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>apps/mvPropView/<a class="el" href="_image_canvas_8h_source.html">ImageCanvas.h</a></li>
+<li>apps/mvPropView/ImageCanvas.cpp</li>
+<li>apps/mvPropView/ImageCanvasCommon.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_image_canvas.html">ImageCanvas</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:21 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

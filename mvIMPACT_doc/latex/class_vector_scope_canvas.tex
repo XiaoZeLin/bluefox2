@@ -1,0 +1,78 @@
+\hypertarget{class_vector_scope_canvas}{\section{Vector\+Scope\+Canvas类 参考}
+\label{class_vector_scope_canvas}\index{Vector\+Scope\+Canvas@{Vector\+Scope\+Canvas}}
+}
+
+
+类 Vector\+Scope\+Canvas 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_vector_scope_canvas__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Vector\+Scope\+Canvas 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_vector_scope_canvas__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vector_scope_canvas_a416bba65490086d028a6882bee05fb4d}{{\bfseries Vector\+Scope\+Canvas} (wx\+Window $\ast$parent, wx\+Window\+I\+D id=-\/1, const wx\+Point \&pos=wx\+Default\+Position, const wx\+Size \&size=wx\+Default\+Size, long style=wx\+B\+O\+R\+D\+E\+R\+\_\+\+N\+O\+N\+E, const wx\+String \&name=wx\+T(\char`\"{}Vector Scope\char`\"{}), bool bo\+Active=false)}\label{class_vector_scope_canvas_a416bba65490086d028a6882bee05fb4d}
+
+\item 
+\hypertarget{class_vector_scope_canvas_ad4138edd7afe29df0a4482efc484bbd3}{virtual wx\+String {\bfseries Get\+Grid\+Value} (int row, int col) const }\label{class_vector_scope_canvas_ad4138edd7afe29df0a4482efc484bbd3}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a8b9ace8914164178cc3fc30108836f90}{virtual void {\bfseries Refresh\+Data} (const \hyperlink{struct_request_data}{Request\+Data} \&data, int x=-\/1, int y=-\/1, int w=-\/1, int h=-\/1, bool bo\+Force\+Refresh=false)}\label{class_vector_scope_canvas_a8b9ace8914164178cc3fc30108836f90}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_vector_scope_canvas_aa75b08476075bf8f65cc9d0758ce865a}{virtual void {\bfseries Create\+Grid\+Custom} (void)}\label{class_vector_scope_canvas_aa75b08476075bf8f65cc9d0758ce865a}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a1dcba95361ba881e92f888edb560f88c}{void {\bfseries Deallocate\+Data\+Buffer} (void)}\label{class_vector_scope_canvas_a1dcba95361ba881e92f888edb560f88c}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a01caf77f36552844a224bd2dfe32f407}{virtual unsigned int {\bfseries Get\+X\+Marker\+Parameters} (unsigned int \&from, unsigned int \&to) const }\label{class_vector_scope_canvas_a01caf77f36552844a224bd2dfe32f407}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a83a0bdb1701600a836e2002d2b45a6c2}{void {\bfseries Init\+Reference\+Points} (int bit\+Shift)}\label{class_vector_scope_canvas_a83a0bdb1701600a836e2002d2b45a6c2}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a8043f966050532088b291ffefec76489}{virtual void {\bfseries On\+Paint\+Custom} (wx\+Paint\+D\+C \&dc)}\label{class_vector_scope_canvas_a8043f966050532088b291ffefec76489}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a5b9d42011d519c06c60d18784e4b8fa2}{void {\bfseries Prepare\+Data\+Buffer} (bool bo\+Format\+Changed)}\label{class_vector_scope_canvas_a5b9d42011d519c06c60d18784e4b8fa2}
+
+\item 
+\hypertarget{class_vector_scope_canvas_aefe92f844315afa1bc3dcfb35e527841}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Process\+Mono\+Packed\+Data} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, Data\+Point $\ast$p, const int bit\+Shift, \+\_\+\+Ty pixel\+Access\+Fn)}\label{class_vector_scope_canvas_aefe92f844315afa1bc3dcfb35e527841}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a1f432e2bd5b85780cceff736bf8d7f95}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Process\+Y\+U\+V411\+\_\+\+U\+Y\+Y\+V\+Y\+Y\+Data} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, Data\+Point $\ast$p, const int bit\+Shift)}\label{class_vector_scope_canvas_a1f432e2bd5b85780cceff736bf8d7f95}
+
+\item 
+\hypertarget{class_vector_scope_canvas_aa99b8a2ad6c162a9c424320d6129e4a2}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Process\+Y\+U\+V422\+Data} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, Data\+Point $\ast$p, const int bit\+Shift)}\label{class_vector_scope_canvas_aa99b8a2ad6c162a9c424320d6129e4a2}
+
+\item 
+\hypertarget{class_vector_scope_canvas_aaa41f5ef6c785cea7065a96006c1c313}{{\footnotesize template$<$typename \+\_\+\+Ty $>$ }\\void {\bfseries Process\+U\+Y\+V422\+Data} (const \hyperlink{struct_image_buffer}{Image\+Buffer} $\ast$p\+I\+B, Data\+Point $\ast$p, const int bit\+Shift)}\label{class_vector_scope_canvas_aaa41f5ef6c785cea7065a96006c1c313}
+
+\item 
+\hypertarget{class_vector_scope_canvas_a138c6b17ef880525e98a4e513520c52f}{virtual void {\bfseries Update\+Grid} (void)}\label{class_vector_scope_canvas_a138c6b17ef880525e98a4e513520c52f}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+apps/mv\+Prop\+View/Vector\+Scope\+Canvas.\+h\item 
+apps/mv\+Prop\+View/Vector\+Scope\+Canvas.\+cpp\end{DoxyCompactItemize}

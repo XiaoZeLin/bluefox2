@@ -1,0 +1,753 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Property类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+}
+
+
+A base class for properties.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+继承自 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component} .
+
+
+
+被 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+F$<$ double $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I64$<$ int64\+\_\+type $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I64$<$ T\+Device\+Trigger\+Overlap $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ int $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Acquisition\+Field $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Acquisition\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Acquisition\+Start\+Stop\+Behaviour $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Aoi\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Auto\+Control\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Auto\+Control\+Speed $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Auto\+Exposure\+Control $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Auto\+Gain\+Control $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Auto\+Offset\+Calibration $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Bayer\+Conversion\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Bayer\+Mosaic\+Parity $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Bayer\+White\+Balance\+Result $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Blue\+F\+O\+X\+Digital\+Input\+Threshold $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Blue\+F\+O\+X\+Footer\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Blue\+F\+O\+X\+Info\+Sensor\+Capabilities $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Blue\+F\+O\+X\+Offset\+Auto\+Black\+Speed $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Blue\+F\+O\+X\+Sensor\+Timing $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Blue\+F\+O\+X\+Transfer\+Size $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Boolean $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Aoi\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Binning\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Data\+Format $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Expose\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+External\+Sync\+Edge $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+External\+Sync\+Output $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Flash\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Flash\+Type $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+H\+D\+R\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Interlaced\+Type $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Link\+Data\+Valid\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Output $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Pixel\+Clock $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Scan\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Serial\+Port\+Baud\+Rate $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Shutter\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Taps\+X\+Geometry $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Taps\+Y\+Geometry $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Test\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Trigger\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Camera\+Trigger\+Source $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Channel\+Split\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Clamp\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Color\+Processing\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Color\+Twist\+Input\+Correction\+Matrix\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Color\+Twist\+Output\+Correction\+Matrix\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Dark\+Current\+Filter\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Defective\+Pixels\+Filter\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Access\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Advanced\+Options $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Capability $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Class $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Digital\+Output\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Event\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Event\+Type $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Image\+Trigger $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Interface\+Layout $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Load\+Settings $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Power\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Scan\+Rate\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Signal\+Output\+Start\+Event $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+State $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Sync\+Out\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Trigger\+Interface $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Device\+Trigger\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Dig\+I\+O\+State $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Digital\+I\+O\+Measurement\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Digital\+I\+O\+Measurement\+Source $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Digital\+Output\+Control\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Digital\+Signal $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Field\+Gate\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Flat\+Field\+Filter\+Correction\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Flat\+Field\+Filter\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+H\+W\+Update\+Result $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+I2\+C\+Operation\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+I2\+C\+Operation\+Status $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Buffer\+Format\+Reinterpreter\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Buffer\+Pixel\+Format $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Destination\+Pixel\+Format $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Processing\+Filter $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Processing\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Processing\+Optimization $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Image\+Request\+Control\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Info\+Sensor\+Color\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Info\+Sensor\+Type $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Interlaced\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Line\+Counter $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+L\+U\+T\+Gamma\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+L\+U\+T\+Implementation $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+L\+U\+T\+Interpolation\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+L\+U\+T\+Mapping $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+L\+U\+T\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Memory\+Manager\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Memory\+Manager\+Pool\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Mirror\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Mirror\+Operation\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Pulse\+Start\+Trigger $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Request\+Image\+Memory\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Request\+Result $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Request\+State $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+R\+T\+Ctrl\+Modes $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+R\+T\+Prog\+Op\+Codes $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Scaler\+Interpolation\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Scaler\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Scan\+Clock $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Scan\+Standard $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Thread\+Priority $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Trigger\+Moment $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+User\+Data\+Access\+Right $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+User\+Data\+Reconnect\+Behaviour $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Video\+Standard $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Virtual\+Device\+Image\+Type $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+Virtual\+Device\+Test\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+White\+Balance\+Calibration\+Mode $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ T\+White\+Balance\+Parameter $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+F$<$ Z\+Y\+X $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I$<$ Z\+Y\+X $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I64$<$ Z\+Y\+X $>$}, \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ptr}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+Ptr} , 以及 \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+S} 继承.
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Property 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a32769caf6b712dea6fd583aadb37c641}{Property} (void)
+\begin{DoxyCompactList}\small\item\em Constructs a new unbound {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31}{Property} (H\+O\+B\+J h\+Prop)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} object. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284}{allows\+Value\+Combinations} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if this enumerated property allows the combination of enum values. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17}{dict\+Size} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the size of the properties translation dictionary. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3}{has\+Dict} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns whether this property defines a translation dictionary or not. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a12b00c261f6b436ee85eea1ec5573dd9}{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P} (bool is\+Const\+Defined(\hyperlink{group___common_interface_gab31a9721792e36b8c256a769961df4f9}{T\+Property\+Limits} constant) const )
+\begin{DoxyCompactList}\small\item\em Checks if a certain constant is defined for this property({\bfseries deprecated}). \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021}{has\+Max\+Value} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if a maximum value is defined for this property. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb}{has\+Min\+Value} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if a minimum value is defined for this property. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564}{has\+Step\+Width} (void) const 
+\begin{DoxyCompactList}\small\item\em Checks if a step width is defined for this property. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43}{read\+S} (int index=0, const std\+::string \&format=\char`\"{}\char`\"{}) const 
+\begin{DoxyCompactList}\small\item\em Reads data from this property as a string. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428}{read\+S\+Array} (const std\+::string \&format=\char`\"{}\char`\"{}, const std\+::string \&delimiter=\char`\"{}\char`\"{}, int start\+Index=0, int end\+Index=I\+N\+T\+\_\+\+M\+A\+X, int mode=0) const 
+\begin{DoxyCompactList}\small\item\em Reads data from this property as a string. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{Property} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97}{remove\+Value} (int index=0) const 
+\begin{DoxyCompactList}\small\item\em Removes a certain value from the property's data. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{Property} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236}{resize\+Val\+Array} (unsigned int new\+Size) const 
+\begin{DoxyCompactList}\small\item\em Resizes the property's data array. \end{DoxyCompactList}\item 
+std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d}{string\+Format\+String} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the internal format string this property uses to convert data to strings. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944}{val\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current number of values managed by this property. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8}{max\+Val\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns maximum number of values that can be managed by this property. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{Property} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}{write\+S} (const std\+::string \&value, int index=0) const 
+\begin{DoxyCompactList}\small\item\em Assigns a new value to this property. \end{DoxyCompactList}\item 
+const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{Property} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b}{write\+S} (const std\+::vector$<$ std\+::string $>$ \&sequence, int index=0) const 
+\begin{DoxyCompactList}\small\item\em Assigns new values to this property. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a0fd0bbda8c9b678debc2b5e2eac0610d}{int {\bfseries values\+To\+Read} (int start, int end) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a0fd0bbda8c9b678debc2b5e2eac0610d}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A base class for properties. 
+
+A property can be used to represent certain values like e.\+g. the input channel of a device. Depending on the way the property has been created it is either possible to read and write data to it or ( when the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Write\+Access} flag is {\bfseries N\+O\+T} set ) just to read the data. In rare cases it might also be possible that the user is is not allowed to read the data of a property. To find out what you are allowed to do with a property or any other component the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::flags()}} can be called.
+
+A property can contain either a single value or an array of values of the same type (e.\+g. 4 integer values could be used to represent a property call 'Rectangle'. It can even (if the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Fixed\+Size} flag is not set) contain a different number of values all the time its data is queried. E.\+g. for a property 'searchresults' each time some function is called which writes its results to this property the property could contain a different number of integer values afterwards.
+
+Every properties value can be read and written either as string or by it actual value type. So you can either assign the value of an integer property by using the standard 'write' function that accepts the value to be the type of the property or the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::write\+S}} can be used to set the property via a string containing the new value.
+
+In addition to that {\itshape float} and {\itshape int} Properties might define a translation dictionary. This cannot be done by the user, but the user can work with the dictionary afterwards. A translation dictionary is a table which maps strings to certain values (e.\+g. integers).
+
+The translation dictionary serves two purposes\+: Once it has been defined this property can only be assigned values ( which can either be passed as a string or as the actual value ) which are contained in the translation table. Thus this makes it very easy to restrict a certain property to a fixed number of values, which can be assigned to it. Properties that have a translation dictionary will typically be defined by declaring a template instance with the type of the enumeration.
+
+The second benefit of a translation dictionary is that certain values can be assigned a meaningful description via its translation. When a translation table has been defined either the string translation can be used to assign its value or its actual data type. A float property e.\+g. might define a translation table like this\+: 'Auto -\/$>$ 0', 'auto -\/$>$ 1', 'On\+Low\+Level -\/$>$ 2'. Now to set this property to use the 'on low level' trigger mode this can be done by calling one of the 'write' functions.
+
+This can also be extremely useful to populate combo boxes for G\+U\+I applications.
+
+Float and int properties can also define certain constants like a max. value or a min. value. If a property does define such values it can't be assigned values which do not lie within the defined range. To find out if constants are defined The user can call the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Max\+Value}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Min\+Value}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Step\+Width}}. To query to actual value of the max, min or step width the functions {\bfseries get\+Max\+Value}, {\bfseries get\+Min\+Value} and {\bfseries get\+Step\+Width} of the classes {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+F}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I64}} can be called.
+
+When reading the value of a property as a string the user can define a format string telling the property module how to format the returned string. This works pretty much like when working e.\+g. with the {\itshape printf} function. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a32769caf6b712dea6fd583aadb37c641}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!Property@{Property}}
+\index{Property@{Property}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{Property}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::\+Property (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a32769caf6b712dea6fd583aadb37c641}
+
+
+Constructs a new unbound {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} object. 
+
+Properties constructed this way can't be used for anything unless they are bound to a internal driver property with a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_locator}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+Locator}} object. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!Property@{Property}}
+\index{Property@{Property}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{Property}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::\+Property (
+\begin{DoxyParamCaption}
+\item[{H\+O\+B\+J}]{h\+Prop}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}} object. 
+
+Properties successfully constructed this way can be worked with directly. If {\itshape h\+Obj} does not reference an internal driver property a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_e_not_a_property}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+E\+Not\+A\+Property}} exception will be thrown. 
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em h\+Prop} & A valid handle to a property \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab7f6c3efdcef31a840b52ddd35ec1b31_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!allows\+Value\+Combinations@{allows\+Value\+Combinations}}
+\index{allows\+Value\+Combinations@{allows\+Value\+Combinations}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{allows\+Value\+Combinations}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::allows\+Value\+Combinations (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284}
+
+
+Checks if this enumerated property allows the combination of enum values. 
+
+If this function returns true, the enum constants can be 'ored' together. This works for the enum constants as well as for the string representations returned in the properties translation dictionary.
+
+if a property e.\+g. defines a dictionary (('1', \char`\"{}one\char`\"{}), ('2', \char`\"{}two\char`\"{})) the following write operations will be valid\+:
+
+
+\begin{DoxyCode}
+prop = getPropFromSomewhere()
+prop.write( 1 | 2 )
+prop.write( "one | two")
+\end{DoxyCode}
+
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this property allows the combination of enum values.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a098821f15ac08dbcd48af11b96ce8284_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!dict\+Size@{dict\+Size}}
+\index{dict\+Size@{dict\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{dict\+Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::dict\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17}
+
+
+Returns the size of the properties translation dictionary. 
+
+If the property does define a translation dictionary this function returns the number of elements contained in this dictionary. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item The size of the properties translation dictionary.
+\item 0 If this property does not define a translation dictionary. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab47d418329e2422053fec56c8d316f17_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!has\+Dict@{has\+Dict}}
+\index{has\+Dict@{has\+Dict}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{has\+Dict}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Dict (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3}
+
+
+Returns whether this property defines a translation dictionary or not. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this property defines a translation table
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a914eb2e3931822d4709543919899def3_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!has\+Max\+Value@{has\+Max\+Value}}
+\index{has\+Max\+Value@{has\+Max\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{has\+Max\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Max\+Value (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021}
+
+
+Checks if a maximum value is defined for this property. 
+
+\begin{DoxySince}{自从}
+1.\+12.\+63
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this property defines a maximum value
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!has\+Min\+Value@{has\+Min\+Value}}
+\index{has\+Min\+Value@{has\+Min\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{has\+Min\+Value}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Min\+Value (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb}
+
+
+Checks if a minimum value is defined for this property. 
+
+\begin{DoxySince}{自从}
+1.\+12.\+63
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this property defines a minimum value
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!has\+Step\+Width@{has\+Step\+Width}}
+\index{has\+Step\+Width@{has\+Step\+Width}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{has\+Step\+Width}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Step\+Width (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564}
+
+
+Checks if a step width is defined for this property. 
+
+\begin{DoxySince}{自从}
+1.\+12.\+63
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this property defines a step width
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!max\+Val\+Count@{max\+Val\+Count}}
+\index{max\+Val\+Count@{max\+Val\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{max\+Val\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::max\+Val\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8}
+
+
+Returns maximum number of values that can be managed by this property. 
+
+For the majority of properties this function will return '1', but as properties might manage more than a single value, this value might be interesting from time to time. \begin{DoxyReturn}{返回}
+the maximum number of values that can be managed by this property. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3fa6dd31fb10a3dd278320d07fb40ac8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a12b00c261f6b436ee85eea1ec5573dd9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}}
+\index{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P@{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::\+M\+V\+I\+M\+P\+A\+C\+T\+\_\+\+D\+E\+P\+R\+E\+C\+A\+T\+E\+D\+\_\+\+C\+P\+P (
+\begin{DoxyParamCaption}
+\item[{bool is\+Const\+Defined({\bf T\+Property\+Limits} constant)}]{const}
+\end{DoxyParamCaption}
+)}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a12b00c261f6b436ee85eea1ec5573dd9}
+
+
+Checks if a certain constant is defined for this property({\bfseries deprecated}). 
+
+\begin{DoxyRefDesc}{弃用}
+\item[\hyperlink{deprecated__deprecated000015}{弃用}]This function has been declared deprecated and will be removed in future versions of this interface. Use {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8fbc59e51ec6bf739d054078a5aa3021}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Max\+Value()}}, {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ab94e2773892274787f6745a133493ebb}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Min\+Value()}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a8b42a3292260a81fc6b72c85934d5564}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::has\+Step\+Width()}} instead and see the corresponding 'Porting existing code' section in the documentation.\end{DoxyRefDesc}
+
+
+Valid values for {\itshape constant} are defined by the enum {\bfseries \hyperlink{group___common_interface_gab31a9721792e36b8c256a769961df4f9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Property\+Limits}}. \begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if this property defines this constant
+\item false otherwise 
+\end{DoxyItemize}
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!read\+S@{read\+S}}
+\index{read\+S@{read\+S}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{read\+S}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::read\+S (
+\begin{DoxyParamCaption}
+\item[{int}]{index = {\ttfamily 0}, }
+\item[{const std\+::string \&}]{format = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43}
+
+
+Reads data from this property as a string. 
+
+\begin{DoxyNote}{注解}
+If the caller does not have the needed rights this function might throw an exception of the type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}}.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+A string containing the data questioned. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the desired value(only necessary for properties containing more than one value) \\
+\hline
+\mbox{\tt in}  & {\em format} & The format string telling the function how to format the result. If left empty the property uses its standard way of converting its data into a string \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aa5fe87d8c899f71c88a7cacb4da2fb43_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!read\+S\+Array@{read\+S\+Array}}
+\index{read\+S\+Array@{read\+S\+Array}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{read\+S\+Array}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::read\+S\+Array (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{format = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const std\+::string \&}]{delimiter = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{int}]{start\+Index = {\ttfamily 0}, }
+\item[{int}]{end\+Index = {\ttfamily INT\+\_\+MAX}, }
+\item[{int}]{mode = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428}
+
+
+Reads data from this property as a string. 
+
+This function can be used to query a set of values if this property stores more than a single value which might be useful for G\+U\+I applications.
+
+\begin{DoxyNote}{注解}
+If the caller does not have the needed rights this function might throw an exception of the type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}}.
+\end{DoxyNote}
+\begin{DoxyReturn}{返回}
+A string containing the data questioned. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em format} & The format string telling the function how to format the result. If left empty the property uses its standard way of converting its data into a string \\
+\hline
+\mbox{\tt in}  & {\em delimiter} & This string is used to separate the individual values from one another. If left empty, a single blank will separate the data. \\
+\hline
+\mbox{\tt in}  & {\em start\+Index} & The index of the first of the desired values \\
+\hline
+\mbox{\tt in}  & {\em end\+Index} & The index of the last of the desired values. If {\bfseries I\+N\+T\+\_\+\+M\+A\+X} is passed, every from {\itshape start\+Index} to the last value stored by the property will be returned. \\
+\hline
+\mbox{\tt in}  & {\em mode} & Specifies the mode this function operates in. Currently only the L\+S\+B affects the behaviour of this function. When the L\+S\+B is set, the translation dictionary (if defined) will be ignored for this call. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_aeba0bb5fdb980e349c412b6e34798428_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!remove\+Value@{remove\+Value}}
+\index{remove\+Value@{remove\+Value}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{remove\+Value}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Property}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::remove\+Value (
+\begin{DoxyParamCaption}
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97}
+
+
+Removes a certain value from the property's data. 
+
+\begin{DoxyReturn}{返回}
+A const reference to the calling property. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the value to be removed \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a4633aaa98af921d39e645bf5738b5a97_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!resize\+Val\+Array@{resize\+Val\+Array}}
+\index{resize\+Val\+Array@{resize\+Val\+Array}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{resize\+Val\+Array}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Property}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::resize\+Val\+Array (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{new\+Size}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236}
+
+
+Resizes the property's data array. 
+
+This function resizes the internal data array of this property. The size of this array represents the number of values, which can be stored within the property. This function will only succeed, if the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Fixed\+Size} is {\bfseries N\+O\+T} set for this property and the user has {\bfseries \char`\"{}write rights\char`\"{}} for this property. Otherwise an exception will be thrown. Whenever the user successfully writes an array of values to a property and this array contains more elements than the current internal data array can accommodate at the desired offset the internal data array will be increased automatically.
+
+\begin{DoxyNote}{注解}
+If the caller does not have the needed rights this function might throw an exception of the type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}}.
+
+In order to be allowed to modify the number of values a property can store, the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Fixed\+Size} flag must {\bfseries N\+O\+T} be set. 
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Writeable}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+A const reference to the calling property. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em new\+Size} & The new number of values this property shall be allowed to store \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a3b96fcc3fe07052044d762dcb219e236_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!string\+Format\+String@{string\+Format\+String}}
+\index{string\+Format\+String@{string\+Format\+String}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{string\+Format\+String}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::string\+Format\+String (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d}
+
+
+Returns the internal format string this property uses to convert data to strings. 
+
+\begin{DoxyReturn}{返回}
+A string containing the format string internally used by the property whenever the user reads a value as a string without specifying a format string and the property is not a string type one. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_ad267e140bfb73254855b3792cd0d6f5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!val\+Count@{val\+Count}}
+\index{val\+Count@{val\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{val\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::val\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944}
+
+
+Returns the current number of values managed by this property. 
+
+For the majority of properties this function will return '1', but as properties might manage more than a single value, this value might be interesting from time to time. \begin{DoxyReturn}{返回}
+the current number of values managed by this property. 
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_af78d846031ef0e00abc302c7bed86944_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!write\+S@{write\+S}}
+\index{write\+S@{write\+S}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{write\+S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Property}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::write\+S (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{value, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}
+
+
+Assigns a new value to this property. 
+
+The user caller have {\bfseries \char`\"{}write rights\char`\"{}} for this property in order to be able to modify its value. Also if {\itshape index} is greater than the current internal data array size of this property the user must be allowed to change to size of the properties internal data array (the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Fixed\+Size} flag must {\bfseries N\+O\+T} be set).
+
+\begin{DoxyNote}{注解}
+If the caller does not have the needed rights this function might throw an exception of the type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}}.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Writeable}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::flags}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::write\+S}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+A const reference to the calling property. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em value} & The new value for this property at the given {\itshape index} \\
+\hline
+\mbox{\tt in}  & {\em index} & The index of the value to modify \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}!write\+S@{write\+S}}
+\index{write\+S@{write\+S}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property}}
+\subsubsection[{write\+S}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Property}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::write\+S (
+\begin{DoxyParamCaption}
+\item[{const std\+::vector$<$ std\+::string $>$ \&}]{sequence, }
+\item[{int}]{index = {\ttfamily 0}}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b}
+
+
+Assigns new values to this property. 
+
+The user must have {\bfseries \char`\"{}write rights\char`\"{}} for this property in order to be able to modify its values. Also if {\itshape index} is greater than the current internal data array size of this property the user must be allowed to change to size of the properties internal data array (the {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cf\+Fixed\+Size} flag must {\bfseries N\+O\+T} be set). This function behaves exactly like {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::write\+S}} except that is can be used to assign more than one value at the same time. The parameter {\itshape index} here serves as an offset. If for example a property holds 3 values 'one', 'two' and 'three' before this call and the function is then called with an array containing the string 'orange' and 'blue' and {\itshape index} = 2 then after a successful call to this function the property will hold the data 'one', 'two', 'orange' and 'blue'.
+
+\begin{DoxyNote}{注解}
+If the caller does not have the needed rights this function might throw an exception of the type {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_impact_acquire_exception}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Impact\+Acquire\+Exception}}.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac59a8e19513c8508ec72cccee4b3eff6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Writeable}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_a92f9a75ca9a56430e172c00b29b5496f}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::flags}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a51893d14c0fc6128bc9f4cc0ba5a7e5d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+::write\+S}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+A const reference to the calling property. 
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em sequence} & A constant reference to an array containing the strings to be assigned to the property \\
+\hline
+\mbox{\tt in}  & {\em index} & The offset from where to start to assign the values \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_a49c7ecf0cf3198e9b29e1db1c99a2b2b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

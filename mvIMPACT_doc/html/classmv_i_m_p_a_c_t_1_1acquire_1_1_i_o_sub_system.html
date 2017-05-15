@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: mvIMPACT::acquire::IOSubSystem类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-types">Protected 类型</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="#pro-attribs">Protected 属性</a> &#124;
+<a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">mvIMPACT::acquire::IOSubSystem类 参考<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group___device_specific_interface.html">Device specific interface layout</a></div></div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>A base class to handle digital inputs and outputs(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only).  
+ <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#details">更多...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a>&gt;</code></p>
+<div class="dynheader">
+类 mvIMPACT::acquire::IOSubSystem 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system__inherit__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_inherit__map" alt="Inheritance graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_inherit__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_inherit__map">
+<area shape="rect" id="node2" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html" title="A class to handle the digital inputs and outputs for mvBlueFOX USB cameras(Device specific interface ..." alt="" coords="203,5,360,46"/><area shape="rect" id="node3" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common.html" title="A base class to handle the digital inputs and outputs for devices (Device specific interface layout o..." alt="" coords="203,70,360,111"/><area shape="rect" id="node4" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_c_o_u_g_a_r.html" title="A class to handle the digital inputs and outputs of a mvBlueCOUGAR of mvBlueLYNX&#45;M7 device(Device spe..." alt="" coords="408,37,597,78"/><area shape="rect" id="node5" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_frame_grabber.html" title="A class to handle the digital inputs and outputs for frame grabber devices(Device specific interface ..." alt="" coords="409,102,596,143"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+mvIMPACT::acquire::IOSubSystem 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system__coll__graph.png" border="0" usemap="#mv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_coll__map" alt="Collaboration graph"/></div>
+<map name="mv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_coll__map" id="mv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_coll__map">
+<area shape="rect" id="node2" href="structmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_1_1_reference_counted_data.html" title="mvIMPACT::acquire::\lIOSubSystem::ReferenceCountedData" alt="" coords="5,6,253,47"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_1_1_reference_counted_data.html">ReferenceCountedData</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:abe8360e07888561ed6a6c76a4eb84b6c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#abe8360e07888561ed6a6c76a4eb84b6c">IOSubSystem</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html">IOSubSystem</a> &amp;src)</td></tr>
+<tr class="memdesc:abe8360e07888561ed6a6c76a4eb84b6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html" title="A base class to handle digital inputs and outputs(Device specific interface layout only)...">mvIMPACT::acquire::IOSubSystem</a></b> from and existing one.  <a href="#abe8360e07888561ed6a6c76a4eb84b6c">更多...</a><br /></td></tr>
+<tr class="separator:abe8360e07888561ed6a6c76a4eb84b6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6f2ba3019061e1f9beaeab18f866183"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6f2ba3019061e1f9beaeab18f866183"></a>
+<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html">IOSubSystem</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#ab6f2ba3019061e1f9beaeab18f866183">operator=</a> (const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html">IOSubSystem</a> &amp;rhs)</td></tr>
+<tr class="memdesc:ab6f2ba3019061e1f9beaeab18f866183"><td class="mdescLeft">&#160;</td><td class="mdescRight">Allows assignments of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html" title="A base class to handle digital inputs and outputs(Device specific interface layout only)...">mvIMPACT::acquire::IOSubSystem</a></b> objects. <br /></td></tr>
+<tr class="separator:ab6f2ba3019061e1f9beaeab18f866183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af699c6e691ece416ec2242d08e35cb58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#af699c6e691ece416ec2242d08e35cb58">getPulseStartConfiguration</a> (unsigned int nr) const </td></tr>
+<tr class="memdesc:af699c6e691ece416ec2242d08e35cb58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html" title="A class to configure the creation of digital signals passed to one or more of the digital outputs of ...">mvIMPACT::acquire::PulseStartConfiguration</a></b> associated with this device.  <a href="#af699c6e691ece416ec2242d08e35cb58">更多...</a><br /></td></tr>
+<tr class="separator:af699c6e691ece416ec2242d08e35cb58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f33bc4f6613b7c8b268beba61a09661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6f33bc4f6613b7c8b268beba61a09661"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a6f33bc4f6613b7c8b268beba61a09661">getPulseStartConfigurationCount</a> (void) const </td></tr>
+<tr class="memdesc:a6f33bc4f6613b7c8b268beba61a09661"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html" title="A class to configure the creation of digital signals passed to one or more of the digital outputs of ...">mvIMPACT::acquire::PulseStartConfiguration</a></b> objects available for the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> associated with this object. <br /></td></tr>
+<tr class="separator:a6f33bc4f6613b7c8b268beba61a09661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b2329037b2d00dda936ad2e33b92471"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html">RTCtrProgram</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a1b2329037b2d00dda936ad2e33b92471">getRTCtrProgram</a> (unsigned int nr) const </td></tr>
+<tr class="memdesc:a1b2329037b2d00dda936ad2e33b92471"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b> associated with this device.  <a href="#a1b2329037b2d00dda936ad2e33b92471">更多...</a><br /></td></tr>
+<tr class="separator:a1b2329037b2d00dda936ad2e33b92471"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae93c1931f9b2c53d8e1aaa7c74afccc8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae93c1931f9b2c53d8e1aaa7c74afccc8"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#ae93c1931f9b2c53d8e1aaa7c74afccc8">RTCtrProgramCount</a> (void) const </td></tr>
+<tr class="memdesc:ae93c1931f9b2c53d8e1aaa7c74afccc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b> s available for the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> associated with this object. <br /></td></tr>
+<tr class="separator:ae93c1931f9b2c53d8e1aaa7c74afccc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87dbc8674329075b91232cdec8db52f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87dbc8674329075b91232cdec8db52f3"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a87dbc8674329075b91232cdec8db52f3">getInputCount</a> (void) const </td></tr>
+<tr class="memdesc:a87dbc8674329075b91232cdec8db52f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_input.html" title="A class to represent a digital input pin(Device specific interface layout only). ">mvIMPACT::acquire::DigitalInput</a></b> s available for the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> associated with this object. <br /></td></tr>
+<tr class="separator:a87dbc8674329075b91232cdec8db52f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2370e52d2818ff78f977dc1112027e15"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a2370e52d2818ff78f977dc1112027e15">readInputRegister</a> (void) const =0</td></tr>
+<tr class="memdesc:a2370e52d2818ff78f977dc1112027e15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the digital input register.  <a href="#a2370e52d2818ff78f977dc1112027e15">更多...</a><br /></td></tr>
+<tr class="separator:a2370e52d2818ff78f977dc1112027e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d7b7016bff7aa59c6963748936f148d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_input.html">DigitalInput</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a4d7b7016bff7aa59c6963748936f148d">input</a> (unsigned int nr) const </td></tr>
+<tr class="memdesc:a4d7b7016bff7aa59c6963748936f148d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_input.html" title="A class to represent a digital input pin(Device specific interface layout only). ">mvIMPACT::acquire::DigitalInput</a></b> object.  <a href="#a4d7b7016bff7aa59c6963748936f148d">更多...</a><br /></td></tr>
+<tr class="separator:a4d7b7016bff7aa59c6963748936f148d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53e4cfdb38ae5d78ec9baa7434388ac0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a53e4cfdb38ae5d78ec9baa7434388ac0">output</a> (unsigned int nr) const </td></tr>
+<tr class="memdesc:a53e4cfdb38ae5d78ec9baa7434388ac0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object.  <a href="#a53e4cfdb38ae5d78ec9baa7434388ac0">更多...</a><br /></td></tr>
+<tr class="separator:a53e4cfdb38ae5d78ec9baa7434388ac0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84a4cbe51bdc3829d3d124c9200508af"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84a4cbe51bdc3829d3d124c9200508af"></a>
+unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a84a4cbe51bdc3829d3d124c9200508af">getOutputCount</a> (void) const </td></tr>
+<tr class="memdesc:a84a4cbe51bdc3829d3d124c9200508af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of digital outputs available for the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">mvIMPACT::acquire::Device</a></b> associated with this object. <br /></td></tr>
+<tr class="separator:a84a4cbe51bdc3829d3d124c9200508af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c39de7c726456fcb01b692cfff83e75"><td class="memItemLeft" align="right" valign="top">virtual unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a8c39de7c726456fcb01b692cfff83e75">readOutputRegister</a> (void) const =0</td></tr>
+<tr class="memdesc:a8c39de7c726456fcb01b692cfff83e75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the digital output register.  <a href="#a8c39de7c726456fcb01b692cfff83e75">更多...</a><br /></td></tr>
+<tr class="separator:a8c39de7c726456fcb01b692cfff83e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196daf5a92ce713e5bd7a192aa1bef17"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a196daf5a92ce713e5bd7a192aa1bef17">writeOutputRegister</a> (unsigned int value, unsigned int mask=UINT_MAX)=0</td></tr>
+<tr class="memdesc:a196daf5a92ce713e5bd7a192aa1bef17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alters the state of the digital output register.  <a href="#a196daf5a92ce713e5bd7a192aa1bef17">更多...</a><br /></td></tr>
+<tr class="separator:a196daf5a92ce713e5bd7a192aa1bef17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected 类型</h2></td></tr>
+<tr class="memitem:a73496b5081e8232ac655f3ae4f69b303"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73496b5081e8232ac655f3ae4f69b303"></a>
+typedef std::vector<br class="typebreak" />
+&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html">RTCtrProgram</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>RTCtrProgramVector</b></td></tr>
+<tr class="separator:a73496b5081e8232ac655f3ae4f69b303"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d4b2c4fd05eedfc35b9b368510781cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d4b2c4fd05eedfc35b9b368510781cc"></a>
+typedef std::vector<br class="typebreak" />
+&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_input.html">DigitalInput</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DigitalInputVector</b></td></tr>
+<tr class="separator:a8d4b2c4fd05eedfc35b9b368510781cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a90150ba784dbb58fed3f5ed78d929"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86a90150ba784dbb58fed3f5ed78d929"></a>
+typedef std::vector<br class="typebreak" />
+&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>DigitalOutputVector</b></td></tr>
+<tr class="separator:a86a90150ba784dbb58fed3f5ed78d929"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad955a98b511d6ce0c1f84e7545fd8200"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad955a98b511d6ce0c1f84e7545fd8200"></a>
+typedef std::vector&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_sync_output.html">SyncOutput</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SyncOutputVector</b></td></tr>
+<tr class="separator:ad955a98b511d6ce0c1f84e7545fd8200"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11c50bda535c9e0cd7768760d8ef97ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11c50bda535c9e0cd7768760d8ef97ef"></a>
+typedef std::vector<br class="typebreak" />
+&lt; <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>PulseStartConfigurationVector</b></td></tr>
+<tr class="separator:a11c50bda535c9e0cd7768760d8ef97ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a5b11d134aa10c1e02d8e5cd57cd3cf91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5b11d134aa10c1e02d8e5cd57cd3cf91"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>IOSubSystem</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html">Device</a> *pDev)</td></tr>
+<tr class="separator:a5b11d134aa10c1e02d8e5cd57cd3cf91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af919596b5e34619bb71e0e09a4be8796"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af919596b5e34619bb71e0e09a4be8796"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>dealloc</b> (void)</td></tr>
+<tr class="separator:af919596b5e34619bb71e0e09a4be8796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56ccb1aeb48f6d28b8276a3e0b8ddbd7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a56ccb1aeb48f6d28b8276a3e0b8ddbd7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerAllRTCtrPrograms</b> (HDRV hDrv, HLIST hList)</td></tr>
+<tr class="separator:a56ccb1aeb48f6d28b8276a3e0b8ddbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46b170c2210c1a4eef0fd8d68dce6722"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46b170c2210c1a4eef0fd8d68dce6722"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerDigitalInput</b> (HDRV hDrv, <a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> reg, int nr, const std::string &amp;desc)</td></tr>
+<tr class="separator:a46b170c2210c1a4eef0fd8d68dce6722"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae34699a099f9c243c1995cd18ee7799e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae34699a099f9c243c1995cd18ee7799e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerDigitalOutput</b> (<a class="el" href="group___common_interface.html#ga12d5e434238ca242a1ba4c6c3ea45780">PropertyI</a> reg, int nr, const std::string &amp;desc)</td></tr>
+<tr class="separator:ae34699a099f9c243c1995cd18ee7799e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953ec0eff5773459d42a13e98be87098"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a953ec0eff5773459d42a13e98be87098"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerHDOutput</b> (HLIST hList)</td></tr>
+<tr class="separator:a953ec0eff5773459d42a13e98be87098"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fa885944f0282fffe4d0be7f7ff7757"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2fa885944f0282fffe4d0be7f7ff7757"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerRTCtrProgram</b> (HDRV hDrv, HLIST hList)</td></tr>
+<tr class="separator:a2fa885944f0282fffe4d0be7f7ff7757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38eb8b001bed98340a84c7dc4ed2a5ca"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38eb8b001bed98340a84c7dc4ed2a5ca"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerPulseStartConfiguration</b> (HLIST hList)</td></tr>
+<tr class="separator:a38eb8b001bed98340a84c7dc4ed2a5ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c65dded338b5b954bdc60a9106211c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1c65dded338b5b954bdc60a9106211c4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>registerVDOutput</b> (HLIST hList)</td></tr>
+<tr class="separator:a1c65dded338b5b954bdc60a9106211c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Protected 属性</h2></td></tr>
+<tr class="memitem:ab0978dd09b8acebe1b38c249b482a41c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0978dd09b8acebe1b38c249b482a41c"></a>
+struct <br class="typebreak" />
+<a class="el" href="structmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_1_1_reference_counted_data.html">mvIMPACT::acquire::IOSubSystem::ReferenceCountedData</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pRefData</b></td></tr>
+<tr class="separator:ab0978dd09b8acebe1b38c249b482a41c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>A base class to handle digital inputs and outputs(<b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html" title="This class and its functions represent an actual device detected by this interface in the current sys...">Device</a></b> specific interface layout only). </p>
+<p>This class can't be instantiated by the user, but acts as a base class for hardware specific classes. Please use a device specific class suitable for the device you are working with instead. The documentation of the device specific class will also contain some example code.</p>
+<dl class="section note"><dt>注解</dt><dd>This class will only be available if <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_device.html#ab4dd0ecc9d456bb5ddc01d844c9d6f2d" title="An enumerated integer property which can be used to define which interface layout shall be used when ...">mvIMPACT::acquire::Device::interfaceLayout</a></b> is set to <b>mvIMPACT::acquire::dilDeviceSpecific</b> before the device is opened. </dd></dl>
+</div><h2 class="groupheader">构造及析构函数说明</h2>
+<a class="anchor" id="abe8360e07888561ed6a6c76a4eb84b6c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mvIMPACT::acquire::IOSubSystem::IOSubSystem </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html">IOSubSystem</a> &amp;&#160;</td>
+          <td class="paramname"><em>src</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a new <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html" title="A base class to handle digital inputs and outputs(Device specific interface layout only)...">mvIMPACT::acquire::IOSubSystem</a></b> from and existing one. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">src</td><td>A constant reference to the <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html" title="A base class to handle digital inputs and outputs(Device specific interface layout only)...">mvIMPACT::acquire::IOSubSystem</a></b> object, this object shall be created from </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="af699c6e691ece416ec2242d08e35cb58"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html">PulseStartConfiguration</a>* mvIMPACT::acquire::IOSubSystem::getPulseStartConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_pulse_start_configuration.html" title="A class to configure the creation of digital signals passed to one or more of the digital outputs of ...">mvIMPACT::acquire::PulseStartConfiguration</a></b> associated with this device. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the pulse start configuration to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a1b2329037b2d00dda936ad2e33b92471"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html">RTCtrProgram</a>* mvIMPACT::acquire::IOSubSystem::getRTCtrProgram </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_r_t_ctr_program.html" title="A class to represent real time control programs(Device specific interface layout only). ">mvIMPACT::acquire::RTCtrProgram</a></b> associated with this device. </p>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the real time controller program to return </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a4d7b7016bff7aa59c6963748936f148d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_input.html">DigitalInput</a>* mvIMPACT::acquire::IOSubSystem::input </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a const pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_input.html" title="A class to represent a digital input pin(Device specific interface layout only). ">mvIMPACT::acquire::DigitalInput</a></b> object. </p>
+<dl class="section note"><dt>注解</dt><dd>The possibility to access the digital inputs of a device as single objects is just provided for convenience. The same thing can be achieved by calling the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a2370e52d2818ff78f977dc1112027e15" title="Returns the current state of the digital input register. ">mvIMPACT::acquire::IOSubSystem::readInputRegister</a></b>. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the digital input. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a53e4cfdb38ae5d78ec9baa7434388ac0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html">DigitalOutput</a>* mvIMPACT::acquire::IOSubSystem::output </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>nr</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a pointer to a <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_digital_output.html" title="A class to represent a digital output pin(Device specific interface layout only). ...">mvIMPACT::acquire::DigitalOutput</a></b> object. </p>
+<dl class="section note"><dt>注解</dt><dd>The possibility to access the digital outputs of a device as single objects is just provided for convenience. The same thing can be achieved by calling the function <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a196daf5a92ce713e5bd7a192aa1bef17" title="Alters the state of the digital output register. ">mvIMPACT::acquire::IOSubSystem::writeOutputRegister</a></b> with the corresponding bit mask. </dd></dl>
+<dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">nr</td><td>The number of the digital output. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a2370e52d2818ff78f977dc1112027e15"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int mvIMPACT::acquire::IOSubSystem::readInputRegister </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current state of the digital input register. </p>
+<p>This function can be used to read all digital inputs as a single value. Each bit represents the status of one digital output pin.</p>
+<p><b>EXAMPLE</b> </p>
+<p>A value of '3' returned by this function means that digital inputs 0 and 1 are currently have a voltage considered as logical '1' applied to them. </p>
+
+<p>在 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common.html#a52b6ff935e658f10740affb6f02ca688">mvIMPACT::acquire::IOSubSystemCommon</a> , 以及 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html#a5f72cdec1f31de3f4a277dbeef08ec3f">mvIMPACT::acquire::IOSubSystemBlueFOX</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a8c39de7c726456fcb01b692cfff83e75"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual unsigned int mvIMPACT::acquire::IOSubSystem::readOutputRegister </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the current state of the digital output register. </p>
+<p>This function can be used to read all digital outputs as a single value. Each bit represents the status of one digital output pin.</p>
+<p><b>EXAMPLE</b> </p>
+<p>A value of '3' returned by this function means that digital output 0 and 1 are currently set to high. </p>
+
+<p>在 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common.html#ad8fa21aced46ef81615db07bd6421645">mvIMPACT::acquire::IOSubSystemCommon</a> , 以及 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html#a966200aab95be5ab603bfeb79d7dbe69">mvIMPACT::acquire::IOSubSystemBlueFOX</a> 内被实现.</p>
+
+</div>
+</div>
+<a class="anchor" id="a196daf5a92ce713e5bd7a192aa1bef17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void mvIMPACT::acquire::IOSubSystem::writeOutputRegister </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>mask</em> = <code>UINT_MAX</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Alters the state of the digital output register. </p>
+<p>This function can be used to alter the state of certain (or all) digital outputs with a single function call. By working with the parameter <em>mask</em> certain bits can remain unaffected.</p>
+<p><b>EXAMPLE</b> </p>
+<p>If the previous state of a digital output register was '5', which means that outputs 0 and 2 are set to high a call to <b><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html#a196daf5a92ce713e5bd7a192aa1bef17" title="Alters the state of the digital output register. ">mvIMPACT::acquire::IOSubSystem::writeOutputRegister</a></b> with <em>value</em> set to 2 and <em>mask</em> set to 3 would result in '6' as the new value for the output register. Pin 2 will remain unaffected, as <em>mask</em> states just to modify pin 0 and 1 ( 3 = 00000011 binary ).</p>
+<div class="fragment"><div class="line">currentValue = 5, mask = 3, value = 2</div>
+<div class="line">( currentValue &amp; ~mask ) | value -&gt; <span class="keyword">new</span> Value</div>
+<div class="line">( 00000101b(current value) &amp; 11111100(~mask) ) | 00000010(value) -&gt; 0000110(<span class="keyword">new</span> value of the <span class="keyword">register</span>)</div>
+</div><!-- fragment --> <dl class="params"><dt>参数</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">value</td><td>The value to be applied to the output register </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">mask</td><td>The mask to specify which pins to modify. A bit set to '1' in this parameter means that the state of this output has to adopt its style according to the value in <em>value</em>. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>在 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_common.html#a6021cce5baf25b4cd055b009a58d0c00">mvIMPACT::acquire::IOSubSystemCommon</a> , 以及 <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system_blue_f_o_x.html#ace2cc014147d336748bd3529d7bae059">mvIMPACT::acquire::IOSubSystemBlueFOX</a> 内被实现.</p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>mvIMPACT_CPP/<a class="el" href="mv_i_m_p_a_c_t__acquire_8h_source.html">mvIMPACT_acquire.h</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><b>mvIMPACT</b></li><li class="navelem"><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire.html">acquire</a></li><li class="navelem"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_i_o_sub_system.html">IOSubSystem</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:23 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

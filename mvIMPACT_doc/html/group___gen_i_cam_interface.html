@@ -1,0 +1,387 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: GenICam interface layout</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('group___gen_i_cam_interface.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#groups">模块</a> &#124;
+<a href="#nested-classes">类</a> &#124;
+<a href="#enum-members">枚举</a>  </div>
+  <div class="headertitle">
+<div class="title">GenICam interface layout</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Classes and functions that will be available if the device is used with the <em><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a></em> interface layout.  
+<a href="#details">更多...</a></p>
+<div class="dynheader">
+GenICam interface layout 的协作图:</div>
+<div class="dyncontent">
+<center><table><tr><td><img src="group___gen_i_cam_interface.png" border="0" alt="" usemap="#group______gen__i__cam__interface"/>
+<map name="group______gen__i__cam__interface" id="group______gen__i__cam__interface">
+<area shape="rect" id="node2" href="group___gen_i_cam_interface_file_stream.html" title="Classes and functions that will be available if the device is used with the GenICam interface layout..." alt="" coords="224,5,395,46"/></map>
+</td></tr></table></center>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="groups"></a>
+模块</h2></td></tr>
+<tr class="memitem:group___gen_i_cam_interface_file_stream"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___gen_i_cam_interface_file_stream.html">GenICam interface layout(file stream)</a></td></tr>
+<tr class="memdesc:group___gen_i_cam_interface_file_stream"><td class="mdescLeft">&#160;</td><td class="mdescRight">Classes and functions that will be available if the device is used with the <em><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a></em> interface layout. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+类</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html">mvIMPACT::acquire::GenICam::DeviceControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for device information and control.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html">mvIMPACT::acquire::GenICam::ImageFormatControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for Image Format Control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_image_format_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html">mvIMPACT::acquire::GenICam::AcquisitionControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for the acquisition and trigger control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_acquisition_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_analog_control.html">mvIMPACT::acquire::GenICam::AnalogControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Analog control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_analog_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_l_u_t_control.html">mvIMPACT::acquire::GenICam::LUTControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that includes the LUT control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_l_u_t_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_color_transformation_control.html">mvIMPACT::acquire::GenICam::ColorTransformationControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Color Transformation control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_color_transformation_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html">mvIMPACT::acquire::GenICam::DigitalIOControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the digital input and output control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_digital_i_o_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html">mvIMPACT::acquire::GenICam::CounterAndTimerControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Counter and Timer control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_counter_and_timer_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control.html">mvIMPACT::acquire::GenICam::EncoderControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the quadrature Encoder Control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_encoder_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html">mvIMPACT::acquire::GenICam::LogicBlockControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Logic Block control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_logic_block_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_software_signal_control.html">mvIMPACT::acquire::GenICam::SoftwareSignalControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Software Signal Control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_software_signal_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_action_control.html">mvIMPACT::acquire::GenICam::ActionControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Action control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_action_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_event_control.html">mvIMPACT::acquire::GenICam::EventControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains <a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_event.html" title="An interface class to model a internal driver event that the user can wait for(Device specific interf...">Event</a> control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_event_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control.html">mvIMPACT::acquire::GenICam::UserSetControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the User Set control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_user_set_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html">mvIMPACT::acquire::GenICam::SequencerControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for the Sequencer Control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_sequencer_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control.html">mvIMPACT::acquire::GenICam::mvDefectivePixelCorrectionControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains features to control the device's defective pixel correction parameters.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_defective_pixel_correction_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control.html">mvIMPACT::acquire::GenICam::FileAccessControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the File Access control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_file_access_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_source_control.html">mvIMPACT::acquire::GenICam::SourceControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the source control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_source_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html">mvIMPACT::acquire::GenICam::TransferControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for the data Transfer Control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transfer_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html">mvIMPACT::acquire::GenICam::Scan3dControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for control of 3D camera specific features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_scan3d_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html">mvIMPACT::acquire::GenICam::ChunkDataControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the Chunk Data control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_chunk_data_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_test_control.html">mvIMPACT::acquire::GenICam::TestControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category for Test Control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_test_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transport_layer_control.html">mvIMPACT::acquire::GenICam::TransportLayerControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains the transport Layer control features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_transport_layer_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_custom_data.html">mvIMPACT::acquire::GenICam::mvCustomData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Custom area.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_custom_data.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_o_m_a_p_preview_config.html">mvIMPACT::acquire::GenICam::mvOMAPPreviewConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains OMAP Preview Engine specific features.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_o_m_a_p_preview_config.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_x_lamp_control.html">mvIMPACT::acquire::GenICam::mvXLampControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains X-Lamp specific control parameters.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_x_lamp_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html">mvIMPACT::acquire::GenICam::mvLogicGateControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to control the devices Logic Gate Control parameters.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_logic_gate_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_current_control.html">mvIMPACT::acquire::GenICam::mvCurrentControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to control the devices Current Control parameters.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_current_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control.html">mvIMPACT::acquire::GenICam::mvLensControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains features to control motorized lenses.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_lens_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_f_f_c_control.html">mvIMPACT::acquire::GenICam::mvFFCControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to control the devices Flat Field Correction parameters.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_f_f_c_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_frame_average_control.html">mvIMPACT::acquire::GenICam::mvFrameAverageControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to control the frame averaging engine.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_frame_average_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_h_d_r_control.html">mvIMPACT::acquire::GenICam::mvHDRControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to control the devices High Dynamic Range parameters.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_h_d_r_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control.html">mvIMPACT::acquire::GenICam::mvSPIControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to access the device internal SPI bus.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_s_p_i_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_d_a_c_params.html">mvIMPACT::acquire::GenICam::mvDACParams</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to access DAC devices.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_d_a_c_params.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_a_c_c_control.html">mvIMPACT::acquire::GenICam::mvACCControl</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains features to access accelerometer data.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1mv_a_c_c_control.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html">mvIMPACT::acquire::GenICam::SystemModule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains items that belong to the system module of the transport layer.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_system_module.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_interface_module.html">mvIMPACT::acquire::GenICam::InterfaceModule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains items that belong to the interface module of the transport layer.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_interface_module.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_module.html">mvIMPACT::acquire::GenICam::DeviceModule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category contains items that belong to the device module of the transport layer.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_device_module.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module.html">mvIMPACT::acquire::GenICam::DataStreamModule</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Category that contains items that belong to the data stream module of the transport layer.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator.html">mvIMPACT::acquire::GenICam::CustomCommandGenerator</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains convenience functions to control features understood by a devices custom command interpreter.  <a href="classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_custom_command_generator.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+枚举</h2></td></tr>
+<tr class="memitem:ga5817a4e9c4ac30a320103ae1cec95cb9"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___gen_i_cam_interface.html#ga5817a4e9c4ac30a320103ae1cec95cb9">TRequestTransmissionMode</a> { <a class="el" href="group___gen_i_cam_interface.html#gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366">rtmFullResolution</a>
+ }</td></tr>
+<tr class="memdesc:ga5817a4e9c4ac30a320103ae1cec95cb9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines valid request transmission modes.  <a href="group___gen_i_cam_interface.html#ga5817a4e9c4ac30a320103ae1cec95cb9">更多...</a><br /></td></tr>
+<tr class="separator:ga5817a4e9c4ac30a320103ae1cec95cb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga458c2281fb19ba32fa6a49b02e0a976d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___gen_i_cam_interface.html#ga458c2281fb19ba32fa6a49b02e0a976d">TSequencerSetParameter</a> { <br />
+&#160;&#160;<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976dad0dad11a8cc7e4e88d3064d45bcfd176">sspCounterDuration_Counter1</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976daade5a041d90379daa8c593fa233f5f39">sspCounterDuration_Counter2</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da5431b0525ccea128b56b89cef9205cc5">sspCounterDuration_Counter3</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da934cfdcedce55eef12c04c4a83a6e859">sspCounterDuration_Counter4</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da9d9d2cf6bf463d881dcd369c29929ae5">sspCounterDuration_Counter5</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976daaf504ea0b68ddb6a237d64c6d88b7080">sspCounterDuration_Counter6</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da5ac5a2906dc45cc78aed18cdc012e505">sspCounterDuration_Counter7</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976dadc226bde1d28a1b9d42260eb92f8ab2a">sspCounterDuration_Counter8</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da23cbccf7c89a18488ab68d5c16fe7519">sspExposureTime</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da12982df75ec50ed03752228f5b9a5086">sspGain_AnalogAll</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da16ea35405781537240dada11ec119538">sspGain_AnalogRed</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976dafe6e1cd96f7ac7fbfea2a50ef8ced41a">sspGain_AnalogGreen</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da03e16ad2b8287894218a642da693d20e">sspGain_AnalogBlue</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da37ebd5c403c0abf1379280f9b7b6e22f">sspGain_AnalogTap1</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da79911fe4a88877b0e84acd913fcefcda">sspGain_AnalogTap2</a>, 
+<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976da3e13b1302e61acfc34fbc761b9baa0a8">sspGain_AnalogTap3</a>, 
+<br />
+&#160;&#160;<a class="el" href="group___gen_i_cam_interface.html#gga458c2281fb19ba32fa6a49b02e0a976daf702df1286b84779f39ba3f1da973dd7">sspGain_AnalogTap4</a>
+<br />
+ }</td></tr>
+<tr class="memdesc:ga458c2281fb19ba32fa6a49b02e0a976d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Defines valid parameters that can be modified within a sequencer set at runtime.  <a href="group___gen_i_cam_interface.html#ga458c2281fb19ba32fa6a49b02e0a976d">更多...</a><br /></td></tr>
+<tr class="separator:ga458c2281fb19ba32fa6a49b02e0a976d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<p>Classes and functions that will be available if the device is used with the <em><a class="el" href="namespacemv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam.html" title="This namespace contains classes and functions belonging to the GenICam specific part of the image acq...">GenICam</a></em> interface layout. </p>
+<h2 class="groupheader">枚举类型说明</h2>
+<a class="anchor" id="ga5817a4e9c4ac30a320103ae1cec95cb9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___gen_i_cam_interface.html#ga5817a4e9c4ac30a320103ae1cec95cb9">TRequestTransmissionMode</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines valid request transmission modes. </p>
+<p>Using the custom command interpreter images can requested again from a device supporting it in different resolutions. This enumeration can be used to define what/how to transmit the image.</p>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga5817a4e9c4ac30a320103ae1cec95cb9aa8d28f2764e3f2869ec70d36a2ce2366"></a>rtmFullResolution&#160;</td><td class="fielddoc">
+<p>Request transmission of an image in full resolution. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a class="anchor" id="ga458c2281fb19ba32fa6a49b02e0a976d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="group___gen_i_cam_interface.html#ga458c2281fb19ba32fa6a49b02e0a976d">TSequencerSetParameter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Defines valid parameters that can be modified within a sequencer set at runtime. </p>
+<p>Using the custom command interpreter features controlled by a running sequencer can be modified while the sequencer is running. This enumeration can be used to define which parameter shall/can be modified.</p>
+<dl class="section since"><dt>自从</dt><dd>2.18.0 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976dad0dad11a8cc7e4e88d3064d45bcfd176"></a>sspCounterDuration_Counter1&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter1]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976daade5a041d90379daa8c593fa233f5f39"></a>sspCounterDuration_Counter2&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter2]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da5431b0525ccea128b56b89cef9205cc5"></a>sspCounterDuration_Counter3&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter3]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da934cfdcedce55eef12c04c4a83a6e859"></a>sspCounterDuration_Counter4&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter4]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da9d9d2cf6bf463d881dcd369c29929ae5"></a>sspCounterDuration_Counter5&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter5]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976daaf504ea0b68ddb6a237d64c6d88b7080"></a>sspCounterDuration_Counter6&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter6]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da5ac5a2906dc45cc78aed18cdc012e505"></a>sspCounterDuration_Counter7&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter7]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976dadc226bde1d28a1b9d42260eb92f8ab2a"></a>sspCounterDuration_Counter8&#160;</td><td class="fielddoc">
+<p>Defines the <code>CounterDuration[CounterSelector=Counter8]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da23cbccf7c89a18488ab68d5c16fe7519"></a>sspExposureTime&#160;</td><td class="fielddoc">
+<p>Defines the <code>ExposureTime</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da12982df75ec50ed03752228f5b9a5086"></a>sspGain_AnalogAll&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogAll]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da16ea35405781537240dada11ec119538"></a>sspGain_AnalogRed&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogRed]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976dafe6e1cd96f7ac7fbfea2a50ef8ced41a"></a>sspGain_AnalogGreen&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogGreen]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da03e16ad2b8287894218a642da693d20e"></a>sspGain_AnalogBlue&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogBlue]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da37ebd5c403c0abf1379280f9b7b6e22f"></a>sspGain_AnalogTap1&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogTap1]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da79911fe4a88877b0e84acd913fcefcda"></a>sspGain_AnalogTap2&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogTap2]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976da3e13b1302e61acfc34fbc761b9baa0a8"></a>sspGain_AnalogTap3&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogTap3]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga458c2281fb19ba32fa6a49b02e0a976daf702df1286b84779f39ba3f1da973dd7"></a>sspGain_AnalogTap4&#160;</td><td class="fielddoc">
+<p>Defines the <code>Gain[GainSelector=AnalogTap4]</code> property shall be modified in a user selected sequencer set. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:21 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>

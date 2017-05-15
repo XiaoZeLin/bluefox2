@@ -1,0 +1,247 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Virtual\+Device类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+}
+
+
+{\bfseries mv\+Virtual\+Device} related camera settings({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Virtual\+Device 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Settings\+Virtual\+Device 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c}{Camera\+Settings\+Virtual\+Device} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___device_specific_interface_gac3481ade98270de3d8aa7ae47cbe5c4e}{Property\+I\+Camera\+Aoi\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_acdafab3d8e09657de37e15f066c41d33}{aoi\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the used \hyperlink{struct_a_o_i}{A\+O\+I} mode for the image capture. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a4337e2da0e836c79f18b619dc68d8681}{gain\+\_\+d\+B}
+\begin{DoxyCompactList}\small\item\em A float property defining the gain in d\+B to be applied to the test image. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga3e8eeaeee6e265c687f5f1bcc8f086a6}{Property\+I\+Virtual\+Device\+Test\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{test\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the test mode use to generate the dummy images. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_aa8d2e4f540d6c550d7ef0140260d3d91}{channel\+Bit\+Depth}
+\begin{DoxyCompactList}\small\item\em An integer property defining the channel bit depth for certain test image generation modes. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a0aeed2e2b157d75a0e3f6fe1914c3328}{padding\+X}
+\begin{DoxyCompactList}\small\item\em An integer property defining the padding(in bytes) in X-\/direction for certain test image generation modes. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gadb3acd27da51bc318c073aa7d052607b}{Property\+I\+Camera\+Taps\+X\+Geometry} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a0bbf2c1250572ec75184d9a56fc12de2}{taps\+X\+Geometry}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the way this camera transmits the pixel data in X direction. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_ga8ca68a8fc0e8c81dacb76b2cfc289909}{Property\+I\+Camera\+Taps\+Y\+Geometry} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_af9547245a868b5fb47a0f8591b4b5408}{taps\+Y\+Geometry}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the way this camera transmits the pixel data in Y direction. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a2adc7091ec9b1537ff57011f25eb4f7a}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a2adc7091ec9b1537ff57011f25eb4f7a}{frame\+Delay\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a2adc7091ec9b1537ff57011f25eb4f7a}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining a delay in us before the 'captured' image is returned to the user. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a399ecae9be05ea1c5bc3f73565fb7ea5}{image\+Directory}
+\begin{DoxyCompactList}\small\item\em A string property defining the directory to capture images from. \end{DoxyCompactList}\item 
+\hyperlink{group___device_specific_interface_gacfecce2b643c06f4a31fbced42789247}{Property\+I\+Virtual\+Device\+Image\+Type} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_aa2e7f03546b993681065cf0e5ff870dc}{image\+Type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining what images shall be captured from harddisc. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gafaa3668c30761b139d7ff110ac2c83e4}{Property\+I\+Bayer\+Mosaic\+Parity} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a869a0aa796304b7c181fce9ff7a6abec}{bayer\+Mosaic\+Parity}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the bayer attribute assigned to the generated test image. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a874e311390efb6d1399422843a0a6f01}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a874e311390efb6d1399422843a0a6f01}{test\+Image\+Bar\+Width}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a874e311390efb6d1399422843a0a6f01}
+
+\begin{DoxyCompactList}\small\item\em An integer property defining the width (in pixels) of the different bars in certain test modes. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_abb3e253cf1ce3d67b534362fd93856ec}{user\+Data}
+\begin{DoxyCompactList}\small\item\em A string property that will be copied into the user data property of each request. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+{\bfseries mv\+Virtual\+Device} related camera settings({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+\begin{DoxyNote}{注解}
+As this is a device driver meant for testing the interface an allowing to start the integration of mv\+I\+M\+P\+A\+C\+T Acquire into an application, this class might change at A\+N\+Y time! Changes in the virtual device driver might not be backward compatible!
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!Camera\+Settings\+Virtual\+Device@{Camera\+Settings\+Virtual\+Device}}
+\index{Camera\+Settings\+Virtual\+Device@{Camera\+Settings\+Virtual\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{Camera\+Settings\+Virtual\+Device}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::\+Camera\+Settings\+Virtual\+Device (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_ab3c227879b2b35d67a4598af1dd9f25c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_acdafab3d8e09657de37e15f066c41d33}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!aoi\+Mode@{aoi\+Mode}}
+\index{aoi\+Mode@{aoi\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{aoi\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Aoi\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::aoi\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_acdafab3d8e09657de37e15f066c41d33}
+
+
+An enumerated integer property defining the used \hyperlink{struct_a_o_i}{A\+O\+I} mode for the image capture. 
+
+This feature will only be visible, when the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::test\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Image\+Directory}. Then this property will allow to enforce a certain image dimension ( {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cam\+User} ) or to capture every image file in its original dimensions ( {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::cam\+Full} ). Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Aoi\+Mode}.
+
+\begin{DoxySince}{自从}
+2.\+11.\+9 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a869a0aa796304b7c181fce9ff7a6abec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!bayer\+Mosaic\+Parity@{bayer\+Mosaic\+Parity}}
+\index{bayer\+Mosaic\+Parity@{bayer\+Mosaic\+Parity}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{bayer\+Mosaic\+Parity}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Bayer\+Mosaic\+Parity} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::bayer\+Mosaic\+Parity}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a869a0aa796304b7c181fce9ff7a6abec}
+
+
+An enumerated integer property defining the bayer attribute assigned to the generated test image. 
+
+When images are acquired via a directory, or a bayer test pattern is generated this can be used to specify the bayer parity. {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::bmp\+Undefined} will set the buffers bayer attribute thus will result in a grey(mono) buffer being returned.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Bayer\+Mosaic\+Parity}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_aa8d2e4f540d6c550d7ef0140260d3d91}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!channel\+Bit\+Depth@{channel\+Bit\+Depth}}
+\index{channel\+Bit\+Depth@{channel\+Bit\+Depth}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{channel\+Bit\+Depth}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::channel\+Bit\+Depth}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_aa8d2e4f540d6c550d7ef0140260d3d91}
+
+
+An integer property defining the channel bit depth for certain test image generation modes. 
+
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_af295aa670e45c6cbdb6e5d8517922371}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::pixel\+Format}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ibpf\+Auto}, this this property will become invisible.
+
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::test\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Moving\+Mono\+Ramp}, {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Moving\+Bayer\+Data\+Ramp} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Bayer\+White\+Balance\+Test\+Image} this property will allow to define the pixel format for the test image. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a4337e2da0e836c79f18b619dc68d8681}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!gain\+\_\+d\+B@{gain\+\_\+d\+B}}
+\index{gain\+\_\+d\+B@{gain\+\_\+d\+B}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{gain\+\_\+d\+B}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::gain\+\_\+d\+B}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a4337e2da0e836c79f18b619dc68d8681}
+
+
+A float property defining the gain in d\+B to be applied to the test image. 
+
+The formula for given {\ttfamily gain\+\_\+d\+B} is 
+\begin{DoxyCode}
+gain\_x= 10 ^ (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a4337e2da0e836c79f18b619dc68d8681}{gain\_dB}/20)
+\end{DoxyCode}
+
+
+{\bfseries Example\+:} 
+
+
+\begin{DoxyCode}
+gain\_x = 10 ^ (6/20) = 1.995
+\end{DoxyCode}
+
+
+I.\+e. increasing the gain setting by 6d\+B corresponds to factor of 2.
+
+The formula for given gain\+\_\+x is 
+\begin{DoxyCode}
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a4337e2da0e836c79f18b619dc68d8681}{gain\_dB} = 20*log(gain\_x) dB
+\end{DoxyCode}
+
+
+Where\+: ~\newline
+{\ttfamily gain\+\_\+d\+B\+:} M\+A\+T\+R\+I\+X V\+I\+S\+I\+O\+N gain value (logarithmic) ~\newline
+{\ttfamily gain\+\_\+x\+:} multiplicative gain ~\newline
+{\ttfamily $^\wedge$}\+: power function ~\newline
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a399ecae9be05ea1c5bc3f73565fb7ea5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!image\+Directory@{image\+Directory}}
+\index{image\+Directory@{image\+Directory}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{image\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::image\+Directory}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a399ecae9be05ea1c5bc3f73565fb7ea5}
+
+
+A string property defining the directory to capture images from. 
+
+This feature will only be visible, when the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::test\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Image\+Directory}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_aa2e7f03546b993681065cf0e5ff870dc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!image\+Type@{image\+Type}}
+\index{image\+Type@{image\+Type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{image\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Virtual\+Device\+Image\+Type} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::image\+Type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_aa2e7f03546b993681065cf0e5ff870dc}
+
+
+An enumerated integer property defining what images shall be captured from harddisc. 
+
+This feature will only be visible, when the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::test\+Mode}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Image\+Directory}.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Virtual\+Device\+Test\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a0aeed2e2b157d75a0e3f6fe1914c3328}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!padding\+X@{padding\+X}}
+\index{padding\+X@{padding\+X}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{padding\+X}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::padding\+X}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a0aeed2e2b157d75a0e3f6fe1914c3328}
+
+
+An integer property defining the padding(in bytes) in X-\/direction for certain test image generation modes. 
+
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::test\+Mode}} is set to a mono format(not the weird packed ones!), {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Moving\+Bayer\+Data\+Ramp} or {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::vdtm\+Bayer\+White\+Balance\+Test\+Image} this property will allow to define the padding in bytes for each line. This will result in images where the line pitch differs from the width multiplied by the bytes per pixel value. E.\+g. a padding of 1 in X-\/direction and a width of 5 for a 16 bit mono format will result in a line pitch of 11 bytes(5$\ast$2 + 1). \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a0bbf2c1250572ec75184d9a56fc12de2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!taps\+X\+Geometry@{taps\+X\+Geometry}}
+\index{taps\+X\+Geometry@{taps\+X\+Geometry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{taps\+X\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Taps\+X\+Geometry} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::taps\+X\+Geometry}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a0bbf2c1250572ec75184d9a56fc12de2}
+
+
+An enumerated integer property defining the way this camera transmits the pixel data in X direction. 
+
+Within the virtual device driver, modifying this property internally will only attach the corresponding attribute to the request buffer, thus might result in the tap sort filter to process the data. This is mainly meant for testing purposes.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Taps\+X\+Geometry}. \begin{DoxySince}{自从}
+2.\+5.\+2 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_af9547245a868b5fb47a0f8591b4b5408}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!taps\+Y\+Geometry@{taps\+Y\+Geometry}}
+\index{taps\+Y\+Geometry@{taps\+Y\+Geometry}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{taps\+Y\+Geometry}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Camera\+Taps\+Y\+Geometry} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::taps\+Y\+Geometry}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_af9547245a868b5fb47a0f8591b4b5408}
+
+
+An enumerated integer property defining the way this camera transmits the pixel data in Y direction. 
+
+Within the virtual device driver, modifying this property internally will only attach the corresponding attribute to the request buffer, thus might result in the tap sort filter to process the data. This is mainly meant for testing purposes.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Camera\+Taps\+Y\+Geometry}. \begin{DoxySince}{自从}
+2.\+5.\+2 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!test\+Mode@{test\+Mode}}
+\index{test\+Mode@{test\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{test\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Virtual\+Device\+Test\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::test\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_a804a5ef868aaf896d39986547d8407f6}
+
+
+An enumerated integer property defining the test mode use to generate the dummy images. 
+
+When {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base_af295aa670e45c6cbdb6e5d8517922371}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base\+::pixel\+Format}} is {\bfseries N\+O\+T} set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::ibpf\+Auto}, this this property will become invisible.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Virtual\+Device\+Test\+Mode}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_abb3e253cf1ce3d67b534362fd93856ec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}!user\+Data@{user\+Data}}
+\index{user\+Data@{user\+Data}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device}}
+\subsubsection[{user\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Virtual\+Device\+::user\+Data}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_virtual_device_abb3e253cf1ce3d67b534362fd93856ec}
+
+
+A string property that will be copied into the user data property of each request. 
+
+This e.\+g. can be used to assign a certain identifier to each image request. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,137 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Trigger\+Control类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}}
+}
+
+
+A class to configure the behaviour of trigger signals.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Trigger\+Control 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Trigger\+Control 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a1072aa0cf993cf5610a2bb91d2927f34}{std\+::string \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a1072aa0cf993cf5610a2bb91d2927f34}{get\+Description} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a1072aa0cf993cf5610a2bb91d2927f34}
+
+\begin{DoxyCompactList}\small\item\em Returns a name of the trigger being configured. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ae96bff39192548c0d9f453d3b205b0ac}{trigger\+Software} (void) const 
+\begin{DoxyCompactList}\small\item\em Generates of software trigger command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a96921f2c80161e22665bff479dba1323}{\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a96921f2c80161e22665bff479dba1323}{trigger\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a96921f2c80161e22665bff479dba1323}
+
+\begin{DoxyCompactList}\small\item\em Defines if the selected trigger is active. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ad931c24fbfb7e09ab087387927f3caea}{trigger\+Source}
+\begin{DoxyCompactList}\small\item\em Defines the signal that will cause the trigger event. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a285ca671cde7d936027f19781070e0cc}{trigger\+Activation}
+\begin{DoxyCompactList}\small\item\em An enumerated 64 bit integer property that defines the start condition for the selected trigger. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a53b2713eee5c3a895e772f8a2cfb0cbf}{trigger\+Divider}
+\begin{DoxyCompactList}\small\item\em An integer property used to divide the number of incoming trigger pulses by an integer factor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ac084914e593ad5cba7f1f1b00ce232aa}{\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ac084914e593ad5cba7f1f1b00ce232aa}{trigger\+Delay\+Abs\+\_\+us}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ac084914e593ad5cba7f1f1b00ce232aa}
+
+\begin{DoxyCompactList}\small\item\em Specifies the absolute delay in microseconds (us) to apply after the trigger reception before effectively activating it. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a88f288f7c8c4ee71402366f8a8a24d19}{\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a88f288f7c8c4ee71402366f8a8a24d19}{trigger\+Delay\+Lines}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a88f288f7c8c4ee71402366f8a8a24d19}
+
+\begin{DoxyCompactList}\small\item\em Specifies the absolute delay in lines to apply after the trigger reception before effectively activating it. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga2fc921dda59fa054dbcb02f41ba4d423}{Property\+I64\+Device\+Trigger\+Overlap} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a14e6151f6e6f0b3da896e0bfc0226855}{trigger\+Overlap}
+\begin{DoxyCompactList}\small\item\em Specifies the type trigger overlap permitted with the previous frame. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_abb8b34d4826a4241462f6682dead7323}{class {\bfseries Camera\+Settings\+Blue\+C\+O\+U\+G\+A\+R}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_abb8b34d4826a4241462f6682dead7323}
+
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_acf0753e6a362e1c4375e1ef090c077f9}{class {\bfseries Camera\+Settings\+Frame\+Grabber}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_acf0753e6a362e1c4375e1ef090c077f9}
+
+\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+A class to configure the behaviour of trigger signals. 
+
+Features in this class will open up a more flexible way to configure certain trigger events for devices then the previous features('trigger\+Interface', 'trigger\+Source' and 'trigger\+Mode' used.
+
+\begin{DoxyNote}{注解}
+Not ever device will support every property listed in this class for every trigger mode. Always call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check whether a feature is available or not before using it. Otherwise an exception will be generated. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ae96bff39192548c0d9f453d3b205b0ac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}!trigger\+Software@{trigger\+Software}}
+\index{trigger\+Software@{trigger\+Software}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}}
+\subsubsection[{trigger\+Software}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control\+::trigger\+Software (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ae96bff39192548c0d9f453d3b205b0ac}
+
+
+Generates of software trigger command. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a285ca671cde7d936027f19781070e0cc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}!trigger\+Activation@{trigger\+Activation}}
+\index{trigger\+Activation@{trigger\+Activation}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}}
+\subsubsection[{trigger\+Activation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control\+::trigger\+Activation}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a285ca671cde7d936027f19781070e0cc}
+
+
+An enumerated 64 bit integer property that defines the start condition for the selected trigger. 
+
+Valid value will be 'Rising\+Edge', 'Falling\+Edge', 'Any\+Edge', 'Level\+Low' or 'Level\+High'. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a53b2713eee5c3a895e772f8a2cfb0cbf}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}!trigger\+Divider@{trigger\+Divider}}
+\index{trigger\+Divider@{trigger\+Divider}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}}
+\subsubsection[{trigger\+Divider}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control\+::trigger\+Divider}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a53b2713eee5c3a895e772f8a2cfb0cbf}
+
+
+An integer property used to divide the number of incoming trigger pulses by an integer factor. 
+
+E.\+g. setting this value to 2 would generate 5 internal trigger events from a 10 Hz external signal. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a14e6151f6e6f0b3da896e0bfc0226855}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}!trigger\+Overlap@{trigger\+Overlap}}
+\index{trigger\+Overlap@{trigger\+Overlap}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}}
+\subsubsection[{trigger\+Overlap}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64\+Device\+Trigger\+Overlap} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control\+::trigger\+Overlap}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_a14e6151f6e6f0b3da896e0bfc0226855}
+
+
+Specifies the type trigger overlap permitted with the previous frame. 
+
+This defines when a valid trigger will be accepted (or latched) for a new frame. Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Trigger\+Overlap}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ad931c24fbfb7e09ab087387927f3caea}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}!trigger\+Source@{trigger\+Source}}
+\index{trigger\+Source@{trigger\+Source}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control}}
+\subsubsection[{trigger\+Source}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Trigger\+Control\+::trigger\+Source}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_trigger_control_ad931c24fbfb7e09ab087387927f3caea}
+
+
+Defines the signal that will cause the trigger event. 
+
+Currently this property will define a translation dictionary that can e.\+g. be queried via a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i64_a44a7cd1ee2000d169e39f4e5b130a410}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I64\+::get\+Translation\+Dict}}. The resulting translation dictionary can be used to select the desired trigger source either via a string or the associated 64 bit integer value. 
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

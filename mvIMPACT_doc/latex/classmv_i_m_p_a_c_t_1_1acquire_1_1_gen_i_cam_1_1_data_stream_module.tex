@@ -1,0 +1,275 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Data\+Stream\+Module类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+}
+
+
+Category that contains items that belong to the data stream module of the transport layer.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h$>$}
+
+
+
+类 mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Data\+Stream\+Module 继承关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module__inherit__graph}
+\end{center}
+\end{figure}
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Gen\+I\+Cam\+:\+:Data\+Stream\+Module 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a00c7d97f96b849f43663dbb85e5dedf2}{Data\+Stream\+Module} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$p\+Dev, int64\+\_\+type index, const std\+::string \&setting\+Name=\char`\"{}Base\char`\"{})
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_aaab634dd91e5fac930fa661918d8b0f8}{stream\+I\+D}
+\begin{DoxyCompactList}\small\item\em A string property. \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} wide unique I\+D of the selected stream. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a2201f31acb5ff5b785d8a746cda383de}{stream\+Announced\+Buffer\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property. Number of announced (known) buffers on this stream. This value is volatile. It may change if additional buffers are announced and/or buffers are revoked by the Gen\+T\+L Consumer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_acf7cc30058bb28b05c725ba0a2657617}{mv\+Stream\+Announce\+Buffer\+Maximum}
+\begin{DoxyCompactList}\small\item\em An integer property. Maximal number of buffers to announce to enable selected acquisition mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a4641a6c84bb270821225acc34cc106ac}{stream\+Buffer\+Handling\+Mode}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Allows to select the buffer handling mode for the stream. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a3a218f6e6062c463b6eaaf53da37af58}{stream\+Announce\+Buffer\+Minimum}
+\begin{DoxyCompactList}\small\item\em An integer property. Minimal number of buffers to announce to enable selected acquisition mode. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_ada03b278d8c08fd81cdabcb52ef55de5}{stream\+Type}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property. Identifies the stream technology of the Gen\+T\+L Producer implementation. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a9ab64bbfd598bf9d8f0fb6859ecb3e45}{mv\+Stream\+Driver\+Technology}
+\begin{DoxyCompactList}\small\item\em A string property. The underlying driver technology used by this stream. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a87ac66bf873cec84754bd58c6d938408}{mv\+Auto\+Join\+Multicast\+Groups}
+\begin{DoxyCompactList}\small\item\em A boolean property. This feature controls whether the host automatically joins the multicast group(s) of the camera(s) it configures. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a201b0d1ea5837dc3554c269d91f1b431}{mv\+Resend\+Active}
+\begin{DoxyCompactList}\small\item\em A boolean property. This feature controls if the stream will issue packet resend requests. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_af1254901b3e7ae569d1688ae609132b6}{mv\+Resend\+Mode}
+\begin{DoxyCompactList}\small\item\em An integer property. Indicates the mode the internal resend algorithm is working in. This feature is a bit mask. The bits have the following meaning (L\+S\+B to M\+S\+B)\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when a new block starts and the current one has missing packets(0x01)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when a new block starts and the current one has no trailer so far(0x02)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when more than 'Resend\+Threshold' packets have been received since a missing packet has been detected(0x04), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever 'mv\+Resend\+Response\+Timeout' did elapse for the previous still incomplete buffer(0x08), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever 'mv\+Resend\+Response\+Timeout' did elapse for the current still incomplete buffer(0x10), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever a packet is considered as missing(0x20)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever a block start has been missing(e.\+g. because no capture buffer was available at the time the block did start)(0x40) \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a363a6f5efc816a87ce1b9fac3548e69f}{mv\+Resend\+Batching\+Active}
+\begin{DoxyCompactList}\small\item\em A boolean property. This feature controls if the stream will issue batched packet resend requests if it detects several consecutive missing packets. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a99ef2f34ba6cab3607cd73a393ac30ae}{mv\+Resend\+Capture\+Window\+Size}
+\begin{DoxyCompactList}\small\item\em An integer property. Indicates the width of the capture window. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_af464f44e350a2ca19f84dcc19b6f05b8}{mv\+Resend\+Threshold}
+\begin{DoxyCompactList}\small\item\em An integer property. Indicates the resend threshold within the capture window. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a94debea1582b53ca02fdb929286313d9}{mv\+Resend\+Request\+Max}
+\begin{DoxyCompactList}\small\item\em An integer property. Indicates the maximum number of resend requests per packet to send to the device until the packet is considered as lost. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gaf54865fe5a3d5cfd15f9a111b40d09f9}{Property\+F} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a66859d673975f0f4e4bebe6d3e780c45}{mv\+Resend\+Request\+Credits}
+\begin{DoxyCompactList}\small\item\em A floating point property. Indicates the maximum number of resend requests in percent of payload packets per buffer to send to the device until the packet is considered as lost. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a2fc39b5e76055a6f344fb90c3fdb0b0f}{mv\+Resend\+Response\+Timeout}
+\begin{DoxyCompactList}\small\item\em An integer property. This feature controls the resend response timeout in milliseconds. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a55cb9733b226b2dd8608573f0f9c16f1}{mv\+Resends\+Per\+Timeout}
+\begin{DoxyCompactList}\small\item\em An integer property. Indicates the number of packets to be requested whenever the resend response timeout elapses. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga81749b2696755513663492664a18a893}{Property\+I64} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a6d0627c14abcb399e3431b1f5a156020}{mv\+Resend\+Features\+Locked}
+\begin{DoxyCompactList}\small\item\em An integer property. Used by the driver to lock critical resend related parameters during the acquisition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{额外继承的成员函数}
+
+
+\subsection{详细描述}
+Category that contains items that belong to the data stream module of the transport layer. 
+
+The Data\+Stream category contains items that belong to the data stream module of the transport layer. 
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a00c7d97f96b849f43663dbb85e5dedf2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!Data\+Stream\+Module@{Data\+Stream\+Module}}
+\index{Data\+Stream\+Module@{Data\+Stream\+Module}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{Data\+Stream\+Module}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::\+Data\+Stream\+Module (
+\begin{DoxyParamCaption}
+\item[{{\bf mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device} $\ast$}]{p\+Dev, }
+\item[{int64\+\_\+type}]{index, }
+\item[{const std\+::string \&}]{setting\+Name = {\ttfamily \char`\"{}Base\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a00c7d97f96b849f43663dbb85e5dedf2}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object. \\
+\hline
+\mbox{\tt in}  & {\em index} & The {\itshape index} of the instance this object shall be created for. Passing an invalid index will raise an exception. \\
+\hline
+\mbox{\tt in}  & {\em setting\+Name} & The name of the driver internal setting to access with this instance. A list of valid setting names can be obtained by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a272042e5f2ac48dbce329b736e576aad}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::get\+Available\+Settings}}, new settings can be created with the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a17e85331ed0965a52cff8b62279ef40c}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::create\+Setting}} \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a00c7d97f96b849f43663dbb85e5dedf2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a87ac66bf873cec84754bd58c6d938408}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Auto\+Join\+Multicast\+Groups@{mv\+Auto\+Join\+Multicast\+Groups}}
+\index{mv\+Auto\+Join\+Multicast\+Groups@{mv\+Auto\+Join\+Multicast\+Groups}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Auto\+Join\+Multicast\+Groups}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Auto\+Join\+Multicast\+Groups}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a87ac66bf873cec84754bd58c6d938408}
+
+
+A boolean property. This feature controls whether the host automatically joins the multicast group(s) of the camera(s) it configures. 
+
+This feature controls whether the host automatically joins the multicast group(s) of the camera(s) it configures. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a201b0d1ea5837dc3554c269d91f1b431}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Active@{mv\+Resend\+Active}}
+\index{mv\+Resend\+Active@{mv\+Resend\+Active}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Active}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a201b0d1ea5837dc3554c269d91f1b431}
+
+
+A boolean property. This feature controls if the stream will issue packet resend requests. 
+
+This feature controls if the stream will issue packet resend requests. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a363a6f5efc816a87ce1b9fac3548e69f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Batching\+Active@{mv\+Resend\+Batching\+Active}}
+\index{mv\+Resend\+Batching\+Active@{mv\+Resend\+Batching\+Active}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Batching\+Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Batching\+Active}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a363a6f5efc816a87ce1b9fac3548e69f}
+
+
+A boolean property. This feature controls if the stream will issue batched packet resend requests if it detects several consecutive missing packets. 
+
+This feature controls if the stream will issue batched packet resend requests if it detects several consecutive missing packets. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a99ef2f34ba6cab3607cd73a393ac30ae}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Capture\+Window\+Size@{mv\+Resend\+Capture\+Window\+Size}}
+\index{mv\+Resend\+Capture\+Window\+Size@{mv\+Resend\+Capture\+Window\+Size}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Capture\+Window\+Size}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Capture\+Window\+Size}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a99ef2f34ba6cab3607cd73a393ac30ae}
+
+
+An integer property. Indicates the width of the capture window. 
+
+This feature indicates the width of the capture window in packets. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a6d0627c14abcb399e3431b1f5a156020}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Features\+Locked@{mv\+Resend\+Features\+Locked}}
+\index{mv\+Resend\+Features\+Locked@{mv\+Resend\+Features\+Locked}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Features\+Locked}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Features\+Locked}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a6d0627c14abcb399e3431b1f5a156020}
+
+
+An integer property. Used by the driver to lock critical resend related parameters during the acquisition. 
+
+Used by the driver to lock critical resend related parameters during the acquisition. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_af1254901b3e7ae569d1688ae609132b6}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Mode@{mv\+Resend\+Mode}}
+\index{mv\+Resend\+Mode@{mv\+Resend\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_af1254901b3e7ae569d1688ae609132b6}
+
+
+An integer property. Indicates the mode the internal resend algorithm is working in. This feature is a bit mask. The bits have the following meaning (L\+S\+B to M\+S\+B)\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when a new block starts and the current one has missing packets(0x01)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when a new block starts and the current one has no trailer so far(0x02)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when more than 'Resend\+Threshold' packets have been received since a missing packet has been detected(0x04), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever 'mv\+Resend\+Response\+Timeout' did elapse for the previous still incomplete buffer(0x08), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever 'mv\+Resend\+Response\+Timeout' did elapse for the current still incomplete buffer(0x10), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever a packet is considered as missing(0x20)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever a block start has been missing(e.\+g. because no capture buffer was available at the time the block did start)(0x40) 
+
+Indicates the mode the internal resend algorithm is working in. This feature is a bit mask. The bits have the following meaning (L\+S\+B to M\+S\+B)\+: \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when a new block starts and the current one has missing packets(0x01)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when a new block starts and the current one has no trailer so far(0x02)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends when more than 'Resend\+Threshold' packets have been received since a missing packet has been detected(0x04), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever 'mv\+Resend\+Response\+Timeout' did elapse for the previous still incomplete buffer(0x08), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever 'mv\+Resend\+Response\+Timeout' did elapse for the current still incomplete buffer(0x10), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever a packet is considered as missing(0x20)(not recommended for L\+A\+G), \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{Request} Resends whenever a block start has been missing(e.\+g. because no capture buffer was available at the time the block did start)(0x40) \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a66859d673975f0f4e4bebe6d3e780c45}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Request\+Credits@{mv\+Resend\+Request\+Credits}}
+\index{mv\+Resend\+Request\+Credits@{mv\+Resend\+Request\+Credits}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Request\+Credits}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+F} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Request\+Credits}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a66859d673975f0f4e4bebe6d3e780c45}
+
+
+A floating point property. Indicates the maximum number of resend requests in percent of payload packets per buffer to send to the device until the packet is considered as lost. 
+
+This feature indicates the maximum number of resend requests in percent of payload packets per buffer to send to the device until the packet is considered as lost. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a94debea1582b53ca02fdb929286313d9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Request\+Max@{mv\+Resend\+Request\+Max}}
+\index{mv\+Resend\+Request\+Max@{mv\+Resend\+Request\+Max}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Request\+Max}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Request\+Max}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a94debea1582b53ca02fdb929286313d9}
+
+
+An integer property. Indicates the maximum number of resend requests per packet to send to the device until the packet is considered as lost. 
+
+This feature indicates the maximum number of resend requests per packet to send to the device until the packet is considered as lost. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a2fc39b5e76055a6f344fb90c3fdb0b0f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Response\+Timeout@{mv\+Resend\+Response\+Timeout}}
+\index{mv\+Resend\+Response\+Timeout@{mv\+Resend\+Response\+Timeout}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Response\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Response\+Timeout}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a2fc39b5e76055a6f344fb90c3fdb0b0f}
+
+
+An integer property. This feature controls the resend response timeout in milliseconds. 
+
+This float value sets the resend response timeout in milliseconds. Whenever a requested packet does not arrive within this timer period it will be requested again until mv\+Resend\+Request\+Max resend requests for this packet have been issued. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a55cb9733b226b2dd8608573f0f9c16f1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resends\+Per\+Timeout@{mv\+Resends\+Per\+Timeout}}
+\index{mv\+Resends\+Per\+Timeout@{mv\+Resends\+Per\+Timeout}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resends\+Per\+Timeout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resends\+Per\+Timeout}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a55cb9733b226b2dd8608573f0f9c16f1}
+
+
+An integer property. Indicates the number of packets to be requested whenever the resend response timeout elapses. 
+
+This feature indicates the number of packets to be requested whenever the resend response timeout elapses. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_af464f44e350a2ca19f84dcc19b6f05b8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Resend\+Threshold@{mv\+Resend\+Threshold}}
+\index{mv\+Resend\+Threshold@{mv\+Resend\+Threshold}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Resend\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Resend\+Threshold}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_af464f44e350a2ca19f84dcc19b6f05b8}
+
+
+An integer property. Indicates the resend threshold within the capture window. 
+
+This feature indicates the resend threshold within the capture window. If current packet I\+D and first missing packet I\+D are mv\+Resend\+Threshold I\+Ds apart the stream will issue a resend request. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_acf7cc30058bb28b05c725ba0a2657617}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Stream\+Announce\+Buffer\+Maximum@{mv\+Stream\+Announce\+Buffer\+Maximum}}
+\index{mv\+Stream\+Announce\+Buffer\+Maximum@{mv\+Stream\+Announce\+Buffer\+Maximum}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Stream\+Announce\+Buffer\+Maximum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Stream\+Announce\+Buffer\+Maximum}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_acf7cc30058bb28b05c725ba0a2657617}
+
+
+An integer property. Maximal number of buffers to announce to enable selected acquisition mode. 
+
+This feature indicates the maximal number of buffers to announce to enable selected acquisition mode. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a9ab64bbfd598bf9d8f0fb6859ecb3e45}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!mv\+Stream\+Driver\+Technology@{mv\+Stream\+Driver\+Technology}}
+\index{mv\+Stream\+Driver\+Technology@{mv\+Stream\+Driver\+Technology}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{mv\+Stream\+Driver\+Technology}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::mv\+Stream\+Driver\+Technology}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a9ab64bbfd598bf9d8f0fb6859ecb3e45}
+
+
+A string property. The underlying driver technology used by this stream. 
+
+This is a read only element. It is a string that contains the underlying driver technology used by this stream. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a3a218f6e6062c463b6eaaf53da37af58}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!stream\+Announce\+Buffer\+Minimum@{stream\+Announce\+Buffer\+Minimum}}
+\index{stream\+Announce\+Buffer\+Minimum@{stream\+Announce\+Buffer\+Minimum}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{stream\+Announce\+Buffer\+Minimum}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::stream\+Announce\+Buffer\+Minimum}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a3a218f6e6062c463b6eaaf53da37af58}
+
+
+An integer property. Minimal number of buffers to announce to enable selected acquisition mode. 
+
+This feature indicates the minimal number of buffers to announce to enable selected acquisition mode. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a2201f31acb5ff5b785d8a746cda383de}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!stream\+Announced\+Buffer\+Count@{stream\+Announced\+Buffer\+Count}}
+\index{stream\+Announced\+Buffer\+Count@{stream\+Announced\+Buffer\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{stream\+Announced\+Buffer\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::stream\+Announced\+Buffer\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a2201f31acb5ff5b785d8a746cda383de}
+
+
+An integer property. Number of announced (known) buffers on this stream. This value is volatile. It may change if additional buffers are announced and/or buffers are revoked by the Gen\+T\+L Consumer. 
+
+This is a read-\/only feature. It indicates the number of announced (known) buffers on this stream. This value is volatile. It may change if additional buffers are announced and/or buffers are revoked by the Gen\+T\+L Consumer. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a4641a6c84bb270821225acc34cc106ac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!stream\+Buffer\+Handling\+Mode@{stream\+Buffer\+Handling\+Mode}}
+\index{stream\+Buffer\+Handling\+Mode@{stream\+Buffer\+Handling\+Mode}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{stream\+Buffer\+Handling\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::stream\+Buffer\+Handling\+Mode}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_a4641a6c84bb270821225acc34cc106ac}
+
+
+An enumerated integer property. Allows to select the buffer handling mode for the stream. 
+
+This enumeration allows the selection of the buffer handling mode for the stream.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Oldest\+First} (Display string\+: 'Oldest\+First')\+: This enumeration value indicates that this stream is using the default acquisition mode.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_aaab634dd91e5fac930fa661918d8b0f8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!stream\+I\+D@{stream\+I\+D}}
+\index{stream\+I\+D@{stream\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{stream\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::stream\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_aaab634dd91e5fac930fa661918d8b0f8}
+
+
+A string property. \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} wide unique I\+D of the selected stream. 
+
+This is a read only element. It is a string that indicates a device wide unique identifier of the selected stream. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_ada03b278d8c08fd81cdabcb52ef55de5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}!stream\+Type@{stream\+Type}}
+\index{stream\+Type@{stream\+Type}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module}}
+\subsubsection[{stream\+Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I64} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Gen\+I\+Cam\+::\+Data\+Stream\+Module\+::stream\+Type}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_gen_i_cam_1_1_data_stream_module_ada03b278d8c08fd81cdabcb52ef55de5}
+
+
+An enumerated integer property. Identifies the stream technology of the Gen\+T\+L Producer implementation. 
+
+This is a read only feature. This enumeration provides a value that indicates stream technology of the Gen\+T\+L Producer implementation.
+
+The following string values might be valid for this feature\+:
+\begin{DoxyItemize}
+\item {\bfseries Custom} (Display string\+: 'Custom')\+: This enumeration value indicates that this is a device for a custom protocol.
+\item {\bfseries G\+E\+V} (Display string\+: 'Gig\+E Vision')\+: This enumeration value indicates that this is a stream for the Gig\+E Vision protocol.
+\item {\bfseries U3\+V} (Display string\+: 'U\+S\+B3 Vision')\+: This enumeration value indicates that this is a stream for the U\+S\+B3 Vision protocol.
+\end{DoxyItemize}
+
+\begin{DoxyNote}{注解}
+Depending on the device some of these values might not be supported and especially when working with third party devices there might be custom values which are not listed here. To get a complete and reliable list of supported values at runtime an application should therefore call {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0ba6ccbf5ee69784d5d0b537924d26b6}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Enum\+Property\+I\+::get\+Translation\+Dict\+Strings()}} or one of the other functions dealing with translation dictionaries for enumerated properties. 
+\end{DoxyNote}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire\+\_\+\+Gen\+I\+Cam.\+h\end{DoxyCompactItemize}

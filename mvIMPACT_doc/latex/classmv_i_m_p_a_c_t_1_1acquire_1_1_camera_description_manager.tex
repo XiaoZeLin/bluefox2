@@ -1,0 +1,340 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Camera\+Description\+Manager类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+}
+
+
+Grants access to camera description objects({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only).  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa13872274650dd27f2b13fcb2463e5d8}{Camera\+Description\+Manager} (\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} $\ast$p\+Dev)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}} object. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ae121412942e6b15854f5db73c39db0c9}{Camera\+Description\+Manager} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{Camera\+Description\+Manager} \&src)
+\begin{DoxyCompactList}\small\item\em Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}} from and existing one. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a4a58366e0591e3590576b4156e36729b}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a4a58366e0591e3590576b4156e36729b}{$\sim$\+Camera\+Description\+Manager} ()}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a4a58366e0591e3590576b4156e36729b}
+
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a599f16571bdb33271660a4d5a701e7b9}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{Camera\+Description\+Manager} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a599f16571bdb33271660a4d5a701e7b9}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{Camera\+Description\+Manager} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a599f16571bdb33271660a4d5a701e7b9}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}} objects. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a292ddbfa5b47dad5bcdfa4d18683e375}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a292ddbfa5b47dad5bcdfa4d18683e375}{get\+C\+L\+Camera\+Description\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a292ddbfa5b47dad5bcdfa4d18683e375}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of Camera\+Link\textregistered{} camera descriptions currently available for the device that constructed this instance of the class. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{Camera\+Description\+Camera\+Link} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab743ef7d5165d5833ada0379e9fe474e}{camera\+Description\+Camera\+Link} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}} object specifying the camera description found at the given index in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{Camera\+Description\+Camera\+Link} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab6eae71972102fe4a10b2ccdc9e415bc}{camera\+Description\+Camera\+Link} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}} object specifying the camera description with the given name in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ad261ec6605ee115c6e6f6e071ff320ed}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ad261ec6605ee115c6e6f6e071ff320ed}{get\+S\+D\+I\+Camera\+Description\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ad261ec6605ee115c6e6f6e071ff320ed}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of S\+D\+I camera descriptions currently available for the device that constructed this instance of the class. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{Camera\+Description\+S\+D\+I} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a5ff91ebbca27cd1daac4a3a6f961cf01}{camera\+Description\+S\+D\+I} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}} object specifying the camera description found at the given index in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{Camera\+Description\+S\+D\+I} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a94082a599d42380f36acd4d658c92d13}{camera\+Description\+S\+D\+I} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}} object specifying the camera description with the given name in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a01ccae7a4e14cd3b5111918a51c51409}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a01ccae7a4e14cd3b5111918a51c51409}{get\+Digital\+Camera\+Description\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a01ccae7a4e14cd3b5111918a51c51409}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of non-\/standard digital camera descriptions currently available for the device that constructed this instance of the class. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{Camera\+Description\+Digital} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a7e264a5f9223da75b62c43125262d3dc}{camera\+Description\+Digital} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}} object specifying the camera description found at the given index in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{Camera\+Description\+Digital} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab7cf1f226815fc835b71085cb6bea3f2}{camera\+Description\+Digital} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}} object specifying the camera description with the given name in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a0e5770c514cea2b84607acb8dd38c933}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a0e5770c514cea2b84607acb8dd38c933}{get\+Standard\+Camera\+Description\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a0e5770c514cea2b84607acb8dd38c933}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of standard camera descriptions currently available for the device that constructed this instance of the class. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{Camera\+Description\+Standard} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ad804f345731ca3f5a1c53a838a99842c}{camera\+Description\+Standard} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard}} object specifying the camera description found at the given index in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{Camera\+Description\+Standard} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a47790df5d13eef68c9fe5739cb6946ae}{camera\+Description\+Standard} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard}} object specifying the camera description with the given name in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aaed5fe2628a9f04cd4c860a49bc01ccd}{unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aaed5fe2628a9f04cd4c860a49bc01ccd}{get\+Non\+Standard\+Camera\+Description\+Count} (void) const }\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aaed5fe2628a9f04cd4c860a49bc01ccd}
+
+\begin{DoxyCompactList}\small\item\em Returns the number of non-\/standard camera descriptions currently available for the device that constructed this instance of the class. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{Camera\+Description\+Non\+Standard} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa3fcc43230b21d472ccbfa6dc4fd2f05}{camera\+Description\+Non\+Standard} (unsigned int index) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}} object specifying the camera description found at the given index in the camera description managers internal list. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{Camera\+Description\+Non\+Standard} $\ast$ \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a560cc6a14c30fe41fef4b4afbcf63f56}{camera\+Description\+Non\+Standard} (const std\+::string \&name) const 
+\begin{DoxyCompactList}\small\item\em Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}} object specifying the camera description with the given name in the camera description managers internal list. \end{DoxyCompactList}\item 
+unsigned int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a5efb9a43877db573ba51518c335a184b}{get\+Total\+Camera\+Description\+Count} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the total number camera descriptions currently available for the device that constructed this instance of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+Grants access to camera description objects({\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device}} specific interface layout only). 
+
+This class provides access to the various camera description objects. Each device recognizes a different set of camera descriptions. E.\+g. a digital frame grabber will not be able to work with analogue cameras. Each camera description class will be derived from {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Base}}.
+
+\begin{DoxyNote}{注解}
+Please note that instances of this class will {\bfseries O\+N\+L\+Y} list camera descriptions that have once been selected by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}} at runtime. This is to save memory. A complete list of camera descriptions available for the current device therefore can only be queried by reading the the translation dictionary of the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_frame_grabber_a3cf5c97b03127b143d79619658e2edb9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Frame\+Grabber\+::type}}.
+
+This class will only be available for frame grabber devices. For other devices the class constructor will raise an exception.
+
+This class will only be available if {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::dil\+Device\+Specific} before the device is opened. 
+\end{DoxyNote}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa13872274650dd27f2b13fcb2463e5d8}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!Camera\+Description\+Manager@{Camera\+Description\+Manager}}
+\index{Camera\+Description\+Manager@{Camera\+Description\+Manager}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{Camera\+Description\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::\+Camera\+Description\+Manager (
+\begin{DoxyParamCaption}
+\item[{{\bf Device} $\ast$}]{p\+Dev}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa13872274650dd27f2b13fcb2463e5d8}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}} object. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em p\+Dev} & A pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object obtained from a {\bfseries \hyperlink{namespacemv_i_m_p_a_c_t_1_1acquire}{mv\+I\+M\+P\+A\+C\+T\+::acquire}\+:}\+:$>$\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager} object. \\
+\hline
+\end{DoxyParams}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa13872274650dd27f2b13fcb2463e5d8_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ae121412942e6b15854f5db73c39db0c9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!Camera\+Description\+Manager@{Camera\+Description\+Manager}}
+\index{Camera\+Description\+Manager@{Camera\+Description\+Manager}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{Camera\+Description\+Manager}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::\+Camera\+Description\+Manager (
+\begin{DoxyParamCaption}
+\item[{const {\bf Camera\+Description\+Manager} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ae121412942e6b15854f5db73c39db0c9}
+
+
+Constructs a new {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}} from and existing one. 
+
+
+\begin{DoxyParams}{参数}
+{\em src} & A constant reference to the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}} object, this object shall be created from \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab743ef7d5165d5833ada0379e9fe474e}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Camera\+Link@{camera\+Description\+Camera\+Link}}
+\index{camera\+Description\+Camera\+Link@{camera\+Description\+Camera\+Link}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Camera\+Link}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Camera\+Link}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Camera\+Link (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab743ef7d5165d5833ada0379e9fe474e}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}} object specifying the camera description found at the given index in the camera description managers internal list. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the camera description to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab6eae71972102fe4a10b2ccdc9e415bc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Camera\+Link@{camera\+Description\+Camera\+Link}}
+\index{camera\+Description\+Camera\+Link@{camera\+Description\+Camera\+Link}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Camera\+Link}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Camera\+Link}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Camera\+Link (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab6eae71972102fe4a10b2ccdc9e415bc}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}} object specifying the camera description with the given name in the camera description managers internal list. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_camera_link}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Camera\+Link}} object specifying the camera description with the given name in the camera description managers internal list if a camera description with {\itshape name} is available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the camera description. This can either be the name of the list like e.\+g. 'Camera\+Link\+\_\+\+Generic' or the value of the property 'name' of this description like e.\+g. 'Generic'. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a7e264a5f9223da75b62c43125262d3dc}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Digital@{camera\+Description\+Digital}}
+\index{camera\+Description\+Digital@{camera\+Description\+Digital}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Digital}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Digital}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Digital (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a7e264a5f9223da75b62c43125262d3dc}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}} object specifying the camera description found at the given index in the camera description managers internal list. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the camera description to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab7cf1f226815fc835b71085cb6bea3f2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Digital@{camera\+Description\+Digital}}
+\index{camera\+Description\+Digital@{camera\+Description\+Digital}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Digital}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Digital}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Digital (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ab7cf1f226815fc835b71085cb6bea3f2}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}} object specifying the camera description with the given name in the camera description managers internal list. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_digital}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Digital}} object specifying the camera description with the given name in the camera description managers internal list if a camera description with {\itshape name} is available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the camera description. This can either be the name of the list like e.\+g. 'Digital\+\_\+\+Generic' or the value of the property 'name' of this description like e.\+g. 'Generic'. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa3fcc43230b21d472ccbfa6dc4fd2f05}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Non\+Standard@{camera\+Description\+Non\+Standard}}
+\index{camera\+Description\+Non\+Standard@{camera\+Description\+Non\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Non\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Non\+Standard}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Non\+Standard (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_aa3fcc43230b21d472ccbfa6dc4fd2f05}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}} object specifying the camera description found at the given index in the camera description managers internal list. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the camera description to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a560cc6a14c30fe41fef4b4afbcf63f56}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Non\+Standard@{camera\+Description\+Non\+Standard}}
+\index{camera\+Description\+Non\+Standard@{camera\+Description\+Non\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Non\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Non\+Standard}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Non\+Standard (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a560cc6a14c30fe41fef4b4afbcf63f56}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}} object specifying the camera description with the given name in the camera description managers internal list. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_non_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Non\+Standard}} object specifying the camera description with the given name in the camera description managers internal list if a camera description with {\itshape name} is available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the camera description. This can either be the name of the list like e.\+g. 'Non\+Standard\+\_\+\+Generic' or the value of the property 'name' of this description like e.\+g. 'Generic'. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a5ff91ebbca27cd1daac4a3a6f961cf01}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+S\+D\+I@{camera\+Description\+S\+D\+I}}
+\index{camera\+Description\+S\+D\+I@{camera\+Description\+S\+D\+I}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+S\+D\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+S\+D\+I}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+S\+D\+I (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a5ff91ebbca27cd1daac4a3a6f961cf01}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}} object specifying the camera description found at the given index in the camera description managers internal list. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the camera description to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a94082a599d42380f36acd4d658c92d13}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+S\+D\+I@{camera\+Description\+S\+D\+I}}
+\index{camera\+Description\+S\+D\+I@{camera\+Description\+S\+D\+I}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+S\+D\+I}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+S\+D\+I}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+S\+D\+I (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a94082a599d42380f36acd4d658c92d13}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}} object specifying the camera description with the given name in the camera description managers internal list. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_s_d_i}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+S\+D\+I}} object specifying the camera description with the given name in the camera description managers internal list if a camera description with {\itshape name} is available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the camera description. This can either be the name of the list like e.\+g. 'Camera\+Link\+\_\+\+Generic' or the value of the property 'name' of this description like e.\+g. 'Generic'. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ad804f345731ca3f5a1c53a838a99842c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Standard@{camera\+Description\+Standard}}
+\index{camera\+Description\+Standard@{camera\+Description\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Standard}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Standard (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_ad804f345731ca3f5a1c53a838a99842c}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard}} object specifying the camera description found at the given index in the camera description managers internal list. 
+
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em index} & The index of the camera description to return \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a47790df5d13eef68c9fe5739cb6946ae}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!camera\+Description\+Standard@{camera\+Description\+Standard}}
+\index{camera\+Description\+Standard@{camera\+Description\+Standard}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{camera\+Description\+Standard}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Camera\+Description\+Standard}$\ast$ mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::camera\+Description\+Standard (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{name}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a47790df5d13eef68c9fe5739cb6946ae}
+
+
+Returns a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard}} object specifying the camera description with the given name in the camera description managers internal list. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_standard}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Standard}} object specifying the camera description with the given name in the camera description managers internal list if a camera description with {\itshape name} is available.
+\item an invalid pointer or reference otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em name} & The name of the camera description. This can either be the name of the list like e.\+g. 'Standard\+\_\+\+Generic' or the value of the property 'name' of this description like e.\+g. 'Generic'. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a5efb9a43877db573ba51518c335a184b}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}!get\+Total\+Camera\+Description\+Count@{get\+Total\+Camera\+Description\+Count}}
+\index{get\+Total\+Camera\+Description\+Count@{get\+Total\+Camera\+Description\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager}}
+\subsubsection[{get\+Total\+Camera\+Description\+Count}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Description\+Manager\+::get\+Total\+Camera\+Description\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_description_manager_a5efb9a43877db573ba51518c335a184b}
+
+
+Returns the total number camera descriptions currently available for the device that constructed this instance of the class. 
+
+\begin{DoxySince}{自从}
+2.\+1.\+4 
+\end{DoxySince}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

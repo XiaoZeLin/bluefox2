@@ -1,0 +1,777 @@
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{\section{mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Device类 参考}
+\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+}
+
+
+This class and its functions represent an actual device detected by this interface in the current system.  
+
+
+
+
+{\ttfamily \#include $<$mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h$>$}
+
+
+
+mv\+I\+M\+P\+A\+C\+T\+:\+:acquire\+:\+:Device 的协作图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public 成员函数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a20235ebedf424e31d1fed2433ba3408f}{Device} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} \&src)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4eeacbcb3dcfd03d39faa3eba43ead6f}{$\sim$\+Device} (void)
+\begin{DoxyCompactList}\small\item\em Class destructor. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3f4faaf1d0c1d88c0daecace9b9e3abc}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3f4faaf1d0c1d88c0daecace9b9e3abc}{operator=} (const \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} \&rhs)}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3f4faaf1d0c1d88c0daecace9b9e3abc}
+
+\begin{DoxyCompactList}\small\item\em Allows assignments of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} objects. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{close} (void)
+\begin{DoxyCompactList}\small\item\em Closes an opened device. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1d37b729e39fcb65e29a66cb34c5b78c}{has\+Capability} (\hyperlink{group___common_interface_gab025951bf5eb52c67790e7ecd197b76e}{T\+Device\+Capability} capability) const 
+\begin{DoxyCompactList}\small\item\em Checks whether this device has a certain capability. \end{DoxyCompactList}\item 
+H\+D\+E\+V \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a73fb3a8ac92b197700f04e1df9c250e7}{h\+Dev} (void) const 
+\begin{DoxyCompactList}\small\item\em A unique identifier for this device. \end{DoxyCompactList}\item 
+H\+D\+R\+V \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe}{h\+Drv} (void) const 
+\begin{DoxyCompactList}\small\item\em A unique identifier for the functionality offered by this device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_list}{Component\+List} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1}{device\+Driver\+Feature\+List} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns a list providing access to driver library specific features. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9}{is\+Open} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current initialisation status in this process. \end{DoxyCompactList}\item 
+bool \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a}{is\+In\+Use} (void) const 
+\begin{DoxyCompactList}\small\item\em Returns the current usage status of this device. \end{DoxyCompactList}\item 
+void \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{open} (void)
+\begin{DoxyCompactList}\small\item\em Opens a device. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cf73e03bb07320488a703a573f043ac}{set\+I\+D} (int new\+I\+D) const 
+\begin{DoxyCompactList}\small\item\em Assigns a new I\+D to this device. \end{DoxyCompactList}\item 
+int \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5584b58e68c8e3237b7fcdb698d36b7}{update\+Firmware} (void) const 
+\begin{DoxyCompactList}\small\item\em Updates the firmware of the device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_user_data}{User\+Data} \& \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a08734e0c6fd862e3c6e7160c66b927ec}{get\+User\+Data} (void)
+\begin{DoxyCompactList}\small\item\em Returns a reference to a helper class to handle user specific data stored in the devices non-\/volatile memory(if available). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public 属性}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{group___common_interface_gaa711dff24b159d7f25686f736db21a2f}{Property\+I\+Device\+Class} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cc7db9051fa3ebe73a8f38a274dad19}{device\+Class}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) defining the device class this device belongs to. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_abaf3edcac50921a93df9080c39c75fc3}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_abaf3edcac50921a93df9080c39c75fc3}{family}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_abaf3edcac50921a93df9080c39c75fc3}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the family name of this device. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_af37787e344732926a99103df8faf05be}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_af37787e344732926a99103df8faf05be}{product}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_af37787e344732926a99103df8faf05be}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the product name of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga4a143abc5e951b2d4a22a0a835d4c5d1}{Property\+I\+Device\+Capability} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ae12276c8f5655fa8d771774804e53c13}{capabilities}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) defining special device capabilities. \end{DoxyCompactList}\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a7d4f0c0118d979c503abeb37f65b0c8b}{\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a7d4f0c0118d979c503abeb37f65b0c8b}{serial}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a7d4f0c0118d979c503abeb37f65b0c8b}
+
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the serial number of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga1127fb45b2263d328e769e81b1096baf}{Property\+I\+Device\+State} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4861037a845148f813bc72bad7334ebd}{state}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) containing the current state of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a239e7c6f214d441015ef15e4cbde83ca}{device\+I\+D}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the device I\+D associated with this device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a52f3dd5742f14fff0c6fabeae0ccaee1}{device\+Version}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the version(e.\+g. the hard ware revision) of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a74abbd0bc1fda2dce54e28c6076f9528}{firmware\+Version}
+\begin{DoxyCompactList}\small\item\em An integer property {\bfseries }(read-\/only) containing the firmware version of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga8af4dfc27c6b4403fb87ad509f67181b}{Property\+I\+Device\+Load\+Settings} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ac4bcb8da9f46585ea042a6b3fa618933}{load\+Settings}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to define which previously stored setting to load when the device is opened. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3130a245e1dc22be91511ce6a6bdf957}{auto\+Load\+Setting\+Order}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the auto load order of feature settings that is executed during initialisation of the device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gab90d40765ad00c8bd36b05645f3472dc}{Property\+I\+Device\+Interface\+Layout} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{interface\+Layout}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to define which interface layout shall be used when the device is opened. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a356137fa9ec71b56e7981276aaf3c4f2}{custom\+Data\+Directory}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only once the device is open) containing a path to a custom directory for the location of. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a703ef11aee37b938415a85c9f9256222}{default\+Request\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property that defines the number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects to be created when the device is opened. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga12d5e434238ca242a1ba4c6c3ea45780}{Property\+I} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a93878aa300a8cff3dc3c4ef84d5d4276}{result\+Queue\+Count}
+\begin{DoxyCompactList}\small\item\em An integer property that defines the number of result queues to be created when the device is opened. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}{user\+Controlled\+Image\+Processing\+Enable}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining whether user controlled image processing related features shall be created under 'System Settings' or not. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga44f9437e24b21b6c93da9039ec6786aa}{Property\+I\+Boolean} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1cce00cf697d950dace425bcc7a61b82}{allow\+Unrecommended\+Features}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property which can be used to unlock certain features, that are available but not recommended by the device manufacturer. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga4b53c0f0c5478e5c079b4c2082c53690}{Property\+I\+Acquisition\+Start\+Stop\+Behaviour} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{acquisition\+Start\+Stop\+Behaviour}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property defining the start/stop behaviour during acquisition of this driver instance. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_ga111916e947fe10d171bc6c2a10f15ae2}{Property\+I\+H\+W\+Update\+Result} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a8e6d960358632d3e55f2f20474a3aa26}{H\+W\+Update\+Result}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) defining user executed hardware update results. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa3ee34abadfd5192050fb3281282190d}{manufacturer}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing the name of the manufacturer of this device. \end{DoxyCompactList}\item 
+\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_property_s}{Property\+S} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ad10fa0ebc71bae2bf872fcbed6d34701}{manufacturer\+Specific\+Information}
+\begin{DoxyCompactList}\small\item\em A string property {\bfseries }(read-\/only) containing manufacturer specific information of this device. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gac860ed08eaeb7ccb3cbc879a22ca43c9}{Property\+I\+Device\+Access\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a26e3ec1dd3b45767268946aebfbc3250}{desired\+Access}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property that can be used to define the desired access to the device when opening it. \end{DoxyCompactList}\item 
+\hyperlink{group___common_interface_gac860ed08eaeb7ccb3cbc879a22ca43c9}{Property\+I\+Device\+Access\+Mode} \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1bafdfce12e0ea8b8f9fa0c3c36ab4bb}{granted\+Access}
+\begin{DoxyCompactList}\small\item\em An enumerated integer property {\bfseries }(read-\/only) that can be used to query the granted access to the device after an attempt to open it. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{友元}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aead9a9546ea765538d3f95894afea912}{class {\bfseries Device\+Manager}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aead9a9546ea765538d3f95894afea912}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{详细描述}
+This class and its functions represent an actual device detected by this interface in the current system. 
+
+Instances of it can only be created by instances of the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} class as only the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} has the precise knowledge to do that anyway. As a result from this fact pointers to instances of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} can be obtained via a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object only.
+
+\begin{DoxyAttention}{注意}
+{\bfseries N\+E\+V\+E\+R} try to explicitly delete an instance of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!} You did not allocate it and the result will be a crash! The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} will take care of all resources for you.
+\end{DoxyAttention}
+A valid pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object is needed to construct most of the other objects available in this interface.
+
+Almost every object requiering a valid pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object will need to device in an initialized state as the properties provided e.\+g. by the class {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}} will be constructed when the device is initialized. To initialize a device this class provides the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{Device\+::open}}. However every object which needs an initialized device to be constructed successfully will try to open the device when it hasn't been opened before, so the user does not need to call this function explicitly.
+
+\begin{DoxyAttention}{注意}
+Whenever a device is closed via a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::close}} all other objects constructed with a pointer to that device(e.\+g. {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}} before will become invalid and need to be reconstructed afterwards, so don't close a device needlessly.
+
+Whenever the last instance to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{Device\+Manager}} object get's destroyed within the current process every remaining device that was opened in this process before will be closed automatically! Thus every instance to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} objects or objects created with a pointer to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}} object will become invalid automatically. Therefore the user has to make sure there is always at least one instance to a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object within the current process unless no more device access functions shall be called! 
+\end{DoxyAttention}
+
+
+\subsection{构造及析构函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a20235ebedf424e31d1fed2433ba3408f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!Device@{Device}}
+\index{Device@{Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{Device}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::\+Device (
+\begin{DoxyParamCaption}
+\item[{const {\bf Device} \&}]{src}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a20235ebedf424e31d1fed2433ba3408f}
+
+
+Copy constructor. 
+
+Creates a new object from an existing device object. Keep in mind that this new object will provide access to the very same hardware and therefore you might as well use the original reference returned from the {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}}. This constructor is only provided for internal reference counting to guarantee correct operation of the objects of this class under all platforms and languages. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4eeacbcb3dcfd03d39faa3eba43ead6f}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!````~Device@{$\sim$\+Device}}
+\index{````~Device@{$\sim$\+Device}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{$\sim$\+Device}]{\setlength{\rightskip}{0pt plus 5cm}mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::$\sim$\+Device (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4eeacbcb3dcfd03d39faa3eba43ead6f}
+
+
+Class destructor. 
+
+\begin{DoxyNote}{注解}
+This destructor must only be called for objects that have been created directly by the user on unmanaged heaps. Under most circumstances this means {\bfseries N\+E\+V\+E\+R}. E.\+g. for instances that have been obtained from a {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} object do {\bfseries N\+O\+T} call this destructor. The {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager}} will take care of all the resources for you. 
+\end{DoxyNote}
+
+
+\subsection{成员函数说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!close@{close}}
+\index{close@{close}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::close (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}
+
+
+Closes an opened device. 
+
+This function closes a device previously opened again.
+
+\begin{DoxyAttention}{注意}
+Whenever a device is closed via a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::close}} all other objects constructed with a pointer to that device(e.\+g. {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_camera_settings_base}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Camera\+Settings\+Base}} before will become invalid and need to be reconstructed afterwards, so don't close a device needlessly.
+\end{DoxyAttention}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{Device\+::open}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9}{Device\+::is\+Open}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!device\+Driver\+Feature\+List@{device\+Driver\+Feature\+List}}
+\index{device\+Driver\+Feature\+List@{device\+Driver\+Feature\+List}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{device\+Driver\+Feature\+List}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Component\+List} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::device\+Driver\+Feature\+List (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1}
+
+
+Returns a list providing access to driver library specific features. 
+
+This list does exist only once per device driver library. Changes in this list will affect all devices that are operated using this device driver library.
+
+\begin{DoxySince}{自从}
+2.\+17.\+0 
+\end{DoxySince}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a41a5bc2d37b631bf6b258d9ac64a62b1_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a08734e0c6fd862e3c6e7160c66b927ec}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!get\+User\+Data@{get\+User\+Data}}
+\index{get\+User\+Data@{get\+User\+Data}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{get\+User\+Data}]{\setlength{\rightskip}{0pt plus 5cm}{\bf User\+Data}\& mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::get\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a08734e0c6fd862e3c6e7160c66b927ec}
+
+
+Returns a reference to a helper class to handle user specific data stored in the devices non-\/volatile memory(if available). 
+
+\begin{DoxyReturn}{返回}
+A reference to a helper class to handle user specific data stored in the devices non-\/volatile memory(if available). 
+\end{DoxyReturn}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1d37b729e39fcb65e29a66cb34c5b78c}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!has\+Capability@{has\+Capability}}
+\index{has\+Capability@{has\+Capability}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{has\+Capability}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::has\+Capability (
+\begin{DoxyParamCaption}
+\item[{{\bf T\+Device\+Capability}}]{capability}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1d37b729e39fcb65e29a66cb34c5b78c}
+
+
+Checks whether this device has a certain capability. 
+
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the device has the capability in question
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em capability} & The capability who's presence shall be checked. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a73fb3a8ac92b197700f04e1df9c250e7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!h\+Dev@{h\+Dev}}
+\index{h\+Dev@{h\+Dev}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{h\+Dev}]{\setlength{\rightskip}{0pt plus 5cm}H\+D\+E\+V mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::h\+Dev (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a73fb3a8ac92b197700f04e1df9c250e7}
+
+
+A unique identifier for this device. 
+
+\begin{DoxyNote}{注解}
+This handle is {\bfseries N\+O\+T} to be confused with the id stored in the devices E\+E\+P\+R\+O\+M The latter one represents a number stored somewhere in the physical device's E\+E\+P\+R\+O\+M, while this handle can be assumed as a handle from a software based point of view. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!h\+Drv@{h\+Drv}}
+\index{h\+Drv@{h\+Drv}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{h\+Drv}]{\setlength{\rightskip}{0pt plus 5cm}H\+D\+R\+V mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::h\+Drv (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe}
+
+
+A unique identifier for the functionality offered by this device. 
+
+\begin{DoxyNote}{注解}
+This identifier is only valid, if the device has been initialized before by a call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{Device\+::open}} 
+\end{DoxyNote}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a826a7861a74496152b8b56d917ae1dbe_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!is\+In\+Use@{is\+In\+Use}}
+\index{is\+In\+Use@{is\+In\+Use}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{is\+In\+Use}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::is\+In\+Use (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a}
+
+
+Returns the current usage status of this device. 
+
+If this function returns {\itshape true}, this device was not in use at the time of calling this function. A call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open()}} can still fail afterwards if some other process on the system claimed the device in the time between this call and the call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open()}}.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{Device\+::open}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{Device\+::close}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+0.\+11 
+\end{DoxySince}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the device is in use by at least one process(this includes the calling process).
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a300801d194f3800120140ad4bcdbcd1a_cgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!is\+Open@{is\+Open}}
+\index{is\+Open@{is\+Open}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{is\+Open}]{\setlength{\rightskip}{0pt plus 5cm}bool mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::is\+Open (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9}
+
+
+Returns the current initialisation status in this process. 
+
+If this function returns {\itshape true}, this only states that the current process has not opened the device in question already. A call to {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open()}} can still fail because of some other process using this device.
+
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{Device\+::open}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{Device\+::close}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item true if the device is initialized(opened) in the current process.
+\item false otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!open@{open}}
+\index{open@{open}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}void mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}
+
+
+Opens a device. 
+
+This function will try to open the device represented by this instance of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}. If this fails for any reason an exception will be thrown. The exception object will contain additional information about the reason for the error.
+
+Calling this function is not really necessary, as each object for accessing other settings of the device or even the function interface need the device to be opened in order to be constructed. Therefore all the constructors for these objects check if the device is open by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1c8ba8de5814f1034487245ae57840f9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::is\+Open}} and open the device if necessary.
+
+\begin{DoxyNote}{注解}
+Keep in mind that the first object trying to open the device might therefore throw an exception as well if opening the device fails for some reason.
+\end{DoxyNote}
+Whenever a device is opened, the driver executes the following procedure\+:
+
+ \begin{center}\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device}{Device} setting start procedure\end{center} 
+
+Please have a look \href{../GUI_page_mvPropView.html}{\tt here} for more information about automatic loading of settings when a device is opened. 
+
+函数调用图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+这是这个函数的调用关系图\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165_icgraph}
+\end{center}
+\end{figure}
+
+
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cf73e03bb07320488a703a573f043ac}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!set\+I\+D@{set\+I\+D}}
+\index{set\+I\+D@{set\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{set\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::set\+I\+D (
+\begin{DoxyParamCaption}
+\item[{int}]{new\+I\+D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cf73e03bb07320488a703a573f043ac}
+
+
+Assigns a new I\+D to this device. 
+
+To allow any application to distinguish between different devices of the same type the user can assign an unique I\+D to each device using this function. This I\+D currently is limited to values between 0 and 250 and is stored in the devices internal memory. This I\+D is {\bfseries N\+O\+T} volatile. It will remain stored even if the device is unplugged.
+
+\begin{DoxyNote}{注解}
+{\bfseries R\+E\+M\+A\+R\+K\+S\+:} 
+
+
+\begin{DoxyItemize}
+\item The device must be {\bfseries closed} to assign a new I\+D.
+\item This I\+D is not to be confused with the handle returned by the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a73fb3a8ac92b197700f04e1df9c250e7}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::h\+Dev}}. The latter one represents something which can be assumed as a handle from a software based point of view, while the I\+D represented by the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a239e7c6f214d441015ef15e4cbde83ca}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::device\+I\+D}} is an I\+D stored in the physical devices E\+E\+P\+R\+O\+M.
+\item Not every device will offer this feature! When calling this function for a device that does not offer this feature, the function will return {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E}.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::close}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+\begin{DoxyParams}[1]{参数}
+\mbox{\tt in}  & {\em new\+I\+D} & The new {\itshape I\+D} that shall be assigned to the device. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5584b58e68c8e3237b7fcdb698d36b7}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!update\+Firmware@{update\+Firmware}}
+\index{update\+Firmware@{update\+Firmware}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{update\+Firmware}]{\setlength{\rightskip}{0pt plus 5cm}int mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::update\+Firmware (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5584b58e68c8e3237b7fcdb698d36b7}
+
+
+Updates the firmware of the device. 
+
+calling this function will cause the driver to download the firmware version compiled into the driver library into the devices internal memory. This I\+D is {\bfseries N\+O\+T} volatile. It will remain stored even if the device is unplugged.
+
+\begin{DoxyNote}{注解}
+
+\begin{DoxyItemize}
+\item This feature currently is only available for {\bfseries mv\+Blue\+F\+O\+X} devices. To update the firmware of other devices please refer to the tool {\ttfamily mv\+Device\+Configure(this tool also offers a command line interface)} 
+\item Be sure what you are doing {\bfseries before} calling this function. Under normal circumstances it won't be necessary to update a devices firmware.
+\item The download will take some time (depending on the device up to 30 seconds). During this time the device and the thread calling this function will {\bfseries N\+O\+T} respond.
+\item Do {\bfseries N\+O\+T} interrupt this download.
+\item After a successful download a U\+S\+B device needs to be unplugged and plugged in again. Otherwise the new firmware version will not be activated.
+\item To download a new firmware version the device must be {\bfseries closed}.
+\item Not every device will offer this feature! When calling this function for a device that does not offer this feature, the function will return {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+F\+E\+A\+T\+U\+R\+E\+\_\+\+N\+O\+T\+\_\+\+A\+V\+A\+I\+L\+A\+B\+L\+E}.
+\end{DoxyItemize}
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_adf4cb4c232b202a51c7161caf9b36165}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::open}}, ~\newline
+ {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a00da7acbf28c1591163682b7bdf611a4}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::close}} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{返回}
+
+\begin{DoxyItemize}
+\item {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+D\+M\+R\+\_\+\+N\+O\+\_\+\+E\+R\+R\+O\+R} if successful.
+\item A negative error code of type {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+D\+M\+R\+\_\+\+E\+R\+R\+O\+R} otherwise. 
+\end{DoxyItemize}
+\end{DoxyReturn}
+
+
+\subsection{类成员变量说明}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!acquisition\+Start\+Stop\+Behaviour@{acquisition\+Start\+Stop\+Behaviour}}
+\index{acquisition\+Start\+Stop\+Behaviour@{acquisition\+Start\+Stop\+Behaviour}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{acquisition\+Start\+Stop\+Behaviour}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Acquisition\+Start\+Stop\+Behaviour} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::acquisition\+Start\+Stop\+Behaviour}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa5cdb4615de973bbf1c24f2fd5a3d1b5}
+
+
+An enumerated integer property defining the start/stop behaviour during acquisition of this driver instance. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Acquisition\+Start\+Stop\+Behaviour}.
+
+\begin{DoxyNote}{注解}
+This property will become read-\/only while the device is open.
+
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not.
+\end{DoxyNote}
+Not every device will offer the same options. Check for valid modes by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Acquisition\+Start\+Stop\+Behaviour\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Acquisition\+Start\+Stop\+Behaviour\+::get\+Translation\+Dict\+Value}}.
+
+\begin{DoxySince}{自从}
+1.\+12.\+11 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1cce00cf697d950dace425bcc7a61b82}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!allow\+Unrecommended\+Features@{allow\+Unrecommended\+Features}}
+\index{allow\+Unrecommended\+Features@{allow\+Unrecommended\+Features}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{allow\+Unrecommended\+Features}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::allow\+Unrecommended\+Features}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1cce00cf697d950dace425bcc7a61b82}
+
+
+An enumerated integer property which can be used to unlock certain features, that are available but not recommended by the device manufacturer. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+This property will be invisible by default. As the name indicates its use requires special knowledge that can be provided by the device manufacturer on request.
+
+\begin{DoxyNote}{注解}
+Once the device is in use (has been initialized) this property will become {\bfseries }(read-\/only).
+\end{DoxyNote}
+\begin{DoxyAttention}{注意}
+Unlocking certain unrecommended features might result in the appearance of new translation dictionary entries for certain properties. Some of these translation strings might contain an exclamation mark ('!') in its name. {\bfseries N\+E\+V\+E\+R} rely on that! These exclamation marks or even the complete entry might disappear with a new driver release without further notice! 
+\end{DoxyAttention}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3130a245e1dc22be91511ce6a6bdf957}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!auto\+Load\+Setting\+Order@{auto\+Load\+Setting\+Order}}
+\index{auto\+Load\+Setting\+Order@{auto\+Load\+Setting\+Order}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{auto\+Load\+Setting\+Order}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::auto\+Load\+Setting\+Order}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3130a245e1dc22be91511ce6a6bdf957}
+
+
+A string property {\bfseries }(read-\/only) containing the auto load order of feature settings that is executed during initialisation of the device. 
+
+The first setting detected on the system will be used. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ae12276c8f5655fa8d771774804e53c13}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!capabilities@{capabilities}}
+\index{capabilities@{capabilities}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{capabilities}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Capability} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::capabilities}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ae12276c8f5655fa8d771774804e53c13}
+
+
+An enumerated integer property {\bfseries }(read-\/only) defining special device capabilities. 
+
+This property allows to query certain device capabilities without opening the device.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Capability}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a356137fa9ec71b56e7981276aaf3c4f2}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!custom\+Data\+Directory@{custom\+Data\+Directory}}
+\index{custom\+Data\+Directory@{custom\+Data\+Directory}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{custom\+Data\+Directory}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::custom\+Data\+Directory}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a356137fa9ec71b56e7981276aaf3c4f2}
+
+
+A string property {\bfseries }(read-\/only once the device is open) containing a path to a custom directory for the location of. 
+
+camera description files, etc.
+
+When a custom path is assigned to this property this path will be used to locate certain driver specific files and folders. Under this folder the following structure must be created\+:
+
+
+\begin{DoxyCode}
+<\hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a356137fa9ec71b56e7981276aaf3c4f2}{customDataDirectory}>
+    |- CameraFiles  \textcolor{comment}{// this folder will be searched by frame grabbers for camera description files}
+    |- GenICam      \textcolor{comment}{// this folder will be searched by GenICam compliant devices that refer to a local
+       GenICam&trade; description file}
+\end{DoxyCode}
+
+
+If this property is left empty 
+\begin{DoxyCode}
+%ALL USERS%\(\backslash\)Documents\(\backslash\)MATRIX VISION\(\backslash\)mvIMPACT acquire
+\end{DoxyCode}
+ will be used by default on Windows\texttrademark{} platforms and 
+\begin{DoxyCode}
+/etc/matrix-vision/mvimpact-acquire
+\end{DoxyCode}
+ on Linux platforms. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a703ef11aee37b938415a85c9f9256222}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!default\+Request\+Count@{default\+Request\+Count}}
+\index{default\+Request\+Count@{default\+Request\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{default\+Request\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::default\+Request\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a703ef11aee37b938415a85c9f9256222}
+
+
+An integer property that defines the number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects to be created when the device is opened. 
+
+By writing to this property an application can define the default number of {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request}} objects that will be allocated when opening the device.
+
+\begin{DoxyNote}{注解}
+This property will become read-\/only while the device is open. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a26e3ec1dd3b45767268946aebfbc3250}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!desired\+Access@{desired\+Access}}
+\index{desired\+Access@{desired\+Access}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{desired\+Access}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Access\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::desired\+Access}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a26e3ec1dd3b45767268946aebfbc3250}
+
+
+An enumerated integer property that can be used to define the desired access to the device when opening it. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Access\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property will become read-\/only while the device is open.
+
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cc7db9051fa3ebe73a8f38a274dad19}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!device\+Class@{device\+Class}}
+\index{device\+Class@{device\+Class}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{device\+Class}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Class} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::device\+Class}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cc7db9051fa3ebe73a8f38a274dad19}
+
+
+An enumerated integer property {\bfseries }(read-\/only) defining the device class this device belongs to. 
+
+\begin{DoxyNote}{注解}
+This property has been added to the device driver in version 1.\+8.\+3 thus might not be available when working with old device drivers. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a239e7c6f214d441015ef15e4cbde83ca}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!device\+I\+D@{device\+I\+D}}
+\index{device\+I\+D@{device\+I\+D}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{device\+I\+D}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::device\+I\+D}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a239e7c6f214d441015ef15e4cbde83ca}
+
+
+An integer property {\bfseries }(read-\/only) containing the device I\+D associated with this device. 
+
+A device I\+D can be used to identify a certain device in the system. The I\+D is an 8 bit unsigned integer value stored in the device's E\+E\+P\+R\+O\+M. In order to allow the distinct detection of a device via its device I\+D, the user has to make sure that two devices belonging to the same product family never share the same I\+D.
+
+\begin{DoxyNote}{注解}
+{\bfseries R\+E\+M\+A\+R\+K\+S\+:} 
+
+
+\begin{DoxyItemize}
+\item To modify the device I\+D a separate tool will be provided. To modify the device I\+D without that tool the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a3cf73e03bb07320488a703a573f043ac}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::set\+I\+D}} can be called.
+\item This I\+D is not to be confused with the handle returned by the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a73fb3a8ac92b197700f04e1df9c250e7}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::h\+Dev}}. The latter one represents something which can be assumed as a handle from a software based point of view, while the I\+D represented by the property {\itshape device\+I\+D} is an I\+D stored in the physical devices E\+E\+P\+R\+O\+M. 
+\end{DoxyItemize}
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a52f3dd5742f14fff0c6fabeae0ccaee1}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!device\+Version@{device\+Version}}
+\index{device\+Version@{device\+Version}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{device\+Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::device\+Version}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a52f3dd5742f14fff0c6fabeae0ccaee1}
+
+
+A string property {\bfseries }(read-\/only) containing the version(e.\+g. the hard ware revision) of this device. 
+
+\begin{DoxyNote}{注解}
+This feature is supported by every device driver. If a device does not seem to support this feature (calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} returns false) a driver update will fix this. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a74abbd0bc1fda2dce54e28c6076f9528}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!firmware\+Version@{firmware\+Version}}
+\index{firmware\+Version@{firmware\+Version}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{firmware\+Version}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::firmware\+Version}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a74abbd0bc1fda2dce54e28c6076f9528}
+
+
+An integer property {\bfseries }(read-\/only) containing the firmware version of this device. 
+
+A firmware is considered to be something that is stored in non volatile device memory, thus when a device is disconnected from the power supply and plugged into a different target system the same code will be executed on the device.
+
+Some devices however may not support non volatile memory to accommodate a firmware. Typically the device driver then will download a firmware into the devices R\+A\+M at startup. Such devices will be considered as not supporting a firmware as in this case only the driver version present on the target system has impact on the devices behaviour.
+
+When a device does not support a non volatile firmware, reading this property will always return 0. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1bafdfce12e0ea8b8f9fa0c3c36ab4bb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!granted\+Access@{granted\+Access}}
+\index{granted\+Access@{granted\+Access}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{granted\+Access}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Access\+Mode} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::granted\+Access}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a1bafdfce12e0ea8b8f9fa0c3c36ab4bb}
+
+
+An enumerated integer property {\bfseries }(read-\/only) that can be used to query the granted access to the device after an attempt to open it. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Access\+Mode}.
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not. 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a8e6d960358632d3e55f2f20474a3aa26}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!H\+W\+Update\+Result@{H\+W\+Update\+Result}}
+\index{H\+W\+Update\+Result@{H\+W\+Update\+Result}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{H\+W\+Update\+Result}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+H\+W\+Update\+Result} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::\+H\+W\+Update\+Result}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a8e6d960358632d3e55f2f20474a3aa26}
+
+
+An enumerated integer property {\bfseries }(read-\/only) defining user executed hardware update results. 
+
+This property e.\+g. might contain the result of a user executed firmware update. Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+H\+W\+Update\+Result}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!interface\+Layout@{interface\+Layout}}
+\index{interface\+Layout@{interface\+Layout}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{interface\+Layout}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Interface\+Layout} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::interface\+Layout}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ab4dd0ecc9d456bb5ddc01d844c9d6f2d}
+
+
+An enumerated integer property which can be used to define which interface layout shall be used when the device is opened. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Interface\+Layout}.
+
+\begin{DoxyNote}{注解}
+Once the device is in use (has been initialized) this property will become {\bfseries }(read-\/only).
+
+This feature is available for every device. A device not offering this feature requires a driver update. Always check for the availability of this feature by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}}.
+\end{DoxyNote}
+Not every device will offer the same options. Check for valid modes by reading the properties translation dictionary with the functions {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_af5ec5a9c3657af2917f4ead78ef067db}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Device\+Interface\+Layout\+::get\+Translation\+Dict\+String}} and {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_enum_property_i_a0c50700ebff2806621c63d03b624f200}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Property\+I\+Device\+Interface\+Layout\+::get\+Translation\+Dict\+Value}}. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ac4bcb8da9f46585ea042a6b3fa618933}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!load\+Settings@{load\+Settings}}
+\index{load\+Settings@{load\+Settings}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{load\+Settings}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+Load\+Settings} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::load\+Settings}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ac4bcb8da9f46585ea042a6b3fa618933}
+
+
+An enumerated integer property which can be used to define which previously stored setting to load when the device is opened. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+Load\+Settings}.
+
+\begin{DoxyNote}{注解}
+Once the device is in use (has been initialized) this property will become {\bfseries }(read-\/only). 
+\end{DoxyNote}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa3ee34abadfd5192050fb3281282190d}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!manufacturer@{manufacturer}}
+\index{manufacturer@{manufacturer}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{manufacturer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::manufacturer}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_aa3ee34abadfd5192050fb3281282190d}
+
+
+A string property {\bfseries }(read-\/only) containing the name of the manufacturer of this device. 
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+11.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ad10fa0ebc71bae2bf872fcbed6d34701}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!manufacturer\+Specific\+Information@{manufacturer\+Specific\+Information}}
+\index{manufacturer\+Specific\+Information@{manufacturer\+Specific\+Information}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{manufacturer\+Specific\+Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+S} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::manufacturer\+Specific\+Information}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_ad10fa0ebc71bae2bf872fcbed6d34701}
+
+
+A string property {\bfseries }(read-\/only) containing manufacturer specific information of this device. 
+
+\begin{DoxyNote}{注解}
+This property is not supported by every device. Therefore always call the function {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_component_ac51e55e7e046101f3c6119d84123abd5}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Component\+::is\+Valid}} to check if this property is available or not.
+\end{DoxyNote}
+\begin{DoxySince}{自从}
+2.\+18.\+3 
+\end{DoxySince}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a93878aa300a8cff3dc3c4ef84d5d4276}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!result\+Queue\+Count@{result\+Queue\+Count}}
+\index{result\+Queue\+Count@{result\+Queue\+Count}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{result\+Queue\+Count}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::result\+Queue\+Count}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a93878aa300a8cff3dc3c4ef84d5d4276}
+
+
+An integer property that defines the number of result queues to be created when the device is opened. 
+
+By writing to this property an application can define the number of result queues that will be allocated when opening the device. When requesting buffers the user can define in which result queue a processed request shall end up by writing to the property {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a9a5ed0f41db0291bc13ebe37e09fb84d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::result\+Queue}}. When waiting for a request to become ready by calling {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}} the application can specify on which queue to wait.
+
+\begin{DoxyNote}{注解}
+This property will become read-\/only while the device is open.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_image_request_control_a9a5ed0f41db0291bc13ebe37e09fb84d}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Image\+Request\+Control\+::result\+Queue}}, ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_function_interface_a4cefdfda8e8940736ae9a4c97b6de8c9}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Function\+Interface\+::image\+Request\+Wait\+For}} 
+\end{DoxySeeAlso}
+\hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4861037a845148f813bc72bad7334ebd}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!state@{state}}
+\index{state@{state}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{state}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Device\+State} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::state}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4861037a845148f813bc72bad7334ebd}
+
+
+An enumerated integer property {\bfseries }(read-\/only) containing the current state of this device. 
+
+This property e.\+g. provides information about the current state of the device. For U\+S\+B devices this can e.\+g. indicate whether a device is currently plugged into the system or not.
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Device\+State}.
+
+{\bfseries Gen\+I\+Cam/\+Gen\+T\+L} {\bfseries device} {\bfseries specific\+:} In order to reduce the amount of network traffic to a minimum, this property will only be updated automatically for network devices if the property {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::register\+Error\+Event} is set to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} (which is the default behaviour). If the I\+P addresses stay the same the connection is automatically re-\/established then once the device is detected by the driver again. However if the I\+P address of the device and/or the network adapter of the system it is used from changes {\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_manager_a2078f9532f67854352c3be3e32364879}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+Manager\+::update\+Device\+List()}} must be called regardless of the value of {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::register\+Error\+Event} before a device that was lost can re-\/establish a connection to the capture driver. \hypertarget{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}{\index{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}!user\+Controlled\+Image\+Processing\+Enable@{user\+Controlled\+Image\+Processing\+Enable}}
+\index{user\+Controlled\+Image\+Processing\+Enable@{user\+Controlled\+Image\+Processing\+Enable}!mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device@{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device}}
+\subsubsection[{user\+Controlled\+Image\+Processing\+Enable}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Property\+I\+Boolean} mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Device\+::user\+Controlled\+Image\+Processing\+Enable}}\label{classmv_i_m_p_a_c_t_1_1acquire_1_1_device_a4d5db996353c3b9ada5f6a15fb19f9eb}
+
+
+An enumerated integer property defining whether user controlled image processing related features shall be created under 'System Settings' or not. 
+
+Valid values for this property are defined by the enumeration {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+T\+Boolean}.
+
+Setting this feature to {\bfseries mv\+I\+M\+P\+A\+C\+T\+::acquire\+::b\+True} will result in a separate thread being created when opening the device driver instance. The thread will decouple the host based image processing from the acquisition engine. Apart from that it will also create additional properties in the {\ttfamily Image\+Processing\+Control} list under {\ttfamily \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings}{System\+Settings}} that can be used to control the behaviour of this thread. This might be useful e.\+g. to make sure images can be acquired faster than they can be processed and it is not needed to processed each image.
+
+\begin{DoxyNote}{注解}
+This property will become read-\/only while the device is open.
+\end{DoxyNote}
+\begin{DoxySeeAlso}{参见}
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_system_settings_a0e9c91668ae90fb631d5d69c32395fce}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+System\+Settings\+::image\+Processing\+Mode}} ~\newline
+{\bfseries \hyperlink{classmv_i_m_p_a_c_t_1_1acquire_1_1_request_a523d15ab27c20de51f0c5ffd41ff3834}{mv\+I\+M\+P\+A\+C\+T\+::acquire\+::\+Request\+::has\+Processing\+Been\+Skipped}} 
+\end{DoxySeeAlso}
+\begin{DoxySince}{自从}
+2.\+14.\+0 
+\end{DoxySince}
+
+
+该类的文档由以下文件生成\+:\begin{DoxyCompactItemize}
+\item 
+mv\+I\+M\+P\+A\+C\+T\+\_\+\+C\+P\+P/mv\+I\+M\+P\+A\+C\+T\+\_\+acquire.\+h\end{DoxyCompactItemize}

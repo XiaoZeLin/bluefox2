@@ -1,0 +1,771 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.7"/>
+<title>mvIMPACT: PropViewFrame类 参考</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript">
+  $(document).ready(initResizable);
+  $(window).load(resizeHeight);
+</script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">mvIMPACT
+   &#160;<span id="projectnumber">2.18.3</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.7 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'搜索');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>首页</span></a></li>
+      <li><a href="pages.html"><span>相关页面</span></a></li>
+      <li><a href="modules.html"><span>模块</span></a></li>
+      <li><a href="namespaces.html"><span>命名空间</span></a></li>
+      <li class="current"><a href="annotated.html"><span>类</span></a></li>
+      <li><a href="files.html"><span>文件</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="搜索" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>类列表</span></a></li>
+      <li><a href="classes.html"><span>类索引</span></a></li>
+      <li><a href="inherits.html"><span>类继承关系</span></a></li>
+      <li><a href="functions.html"><span>类成员</span></a></li>
+    </ul>
+  </div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){initNavTree('class_prop_view_frame.html','');});
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>类</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>命名空间</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>类型定义</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>组</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>页</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">类</a> &#124;
+<a href="#pub-methods">Public 成员函数</a> &#124;
+<a href="#pro-methods">Protected 成员函数</a> &#124;
+<a href="class_prop_view_frame-members.html">所有成员列表</a>  </div>
+  <div class="headertitle">
+<div class="title">PropViewFrame类 参考</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="dynheader">
+类 PropViewFrame 继承关系图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_prop_view_frame__inherit__graph.png" border="0" usemap="#_prop_view_frame_inherit__map" alt="Inheritance graph"/></div>
+<map name="_prop_view_frame_inherit__map" id="_prop_view_frame_inherit__map">
+<area shape="rect" id="node2" href="class_prop_grid_frame_base.html" title="PropGridFrameBase" alt="" coords="5,80,144,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<div class="dynheader">
+PropViewFrame 的协作图:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_prop_view_frame__coll__graph.png" border="0" usemap="#_prop_view_frame_coll__map" alt="Collaboration graph"/></div>
+<map name="_prop_view_frame_coll__map" id="_prop_view_frame_coll__map">
+<area shape="rect" id="node2" href="class_prop_grid_frame_base.html" title="PropGridFrameBase" alt="" coords="5,80,144,107"/></map>
+<center><span class="legend">[<a target="top" href="graph_legend.html">图例</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public 成员函数</h2></td></tr>
+<tr class="memitem:a3c1d50f9516d1b5eef5ee077d538409b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c1d50f9516d1b5eef5ee077d538409b"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PropViewFrame</b> (const wxString &amp;title, const wxPoint &amp;pos, const wxSize &amp;size, int argc, wxChar **argv)</td></tr>
+<tr class="separator:a3c1d50f9516d1b5eef5ee077d538409b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd8bef12727ac8ea36af6244af3cd772"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd8bef12727ac8ea36af6244af3cd772"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>DetailedInfosOnCallback</b> (void) const </td></tr>
+<tr class="separator:acd8bef12727ac8ea36af6244af3cd772"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f5e28f6be2e6b21b6f26e713530f556"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f5e28f6be2e6b21b6f26e713530f556"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EndFullScreenMode</b> (void)</td></tr>
+<tr class="separator:a5f5e28f6be2e6b21b6f26e713530f556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac51539f24921cb00cda5a90a3bcbf260"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac51539f24921cb00cda5a90a3bcbf260"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>EnsureAcquisitionState</b> (bool boAcquire)</td></tr>
+<tr class="separator:ac51539f24921cb00cda5a90a3bcbf260"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73014ccb87ed749149f82a5e48914e8f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a73014ccb87ed749149f82a5e48914e8f"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>GetAutoShowQSWOnUseDevice</b> (void)</td></tr>
+<tr class="separator:a73014ccb87ed749149f82a5e48914e8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74b293c2caaba83fb3d9de6a73802db6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74b293c2caaba83fb3d9de6a73802db6"></a>
+DisplayWindowContainer::size_type&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayCount</b> (void) const </td></tr>
+<tr class="separator:a74b293c2caaba83fb3d9de6a73802db6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec16b512af341142c3d895da9bc24c89"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec16b512af341142c3d895da9bc24c89"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>HasEnforcedQSWBehavior</b> (void)</td></tr>
+<tr class="separator:aec16b512af341142c3d895da9bc24c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65cf4a5464672dfd87707b052bc13e65"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65cf4a5464672dfd87707b052bc13e65"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>LoadActiveDeviceFromFile</b> (const wxString &amp;path)</td></tr>
+<tr class="separator:a65cf4a5464672dfd87707b052bc13e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808e2be1cc3e602965bc450c3266922c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a808e2be1cc3e602965bc450c3266922c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>RestoreGUIStateAfterQuickSetupWizard</b> (bool boFirstRun=false)</td></tr>
+<tr class="separator:a808e2be1cc3e602965bc450c3266922c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46640402fa056f0c9f81d0024a7dbe18"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46640402fa056f0c9f81d0024a7dbe18"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetAutoShowQSWOnUseDevice</b> (bool boShow)</td></tr>
+<tr class="separator:a46640402fa056f0c9f81d0024a7dbe18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac90d87188c6956c3a7da4fa8538a4889"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac90d87188c6956c3a7da4fa8538a4889"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SetCurrentImage</b> (const wxFileName &amp;fileName, <a class="el" href="class_image_canvas.html">ImageCanvas</a> *pImageCanvas)</td></tr>
+<tr class="separator:ac90d87188c6956c3a7da4fa8538a4889"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c6dd842ee6fc7d818746fb564cc96b9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c6dd842ee6fc7d818746fb564cc96b9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetDisplayWindowCount</b> (unsigned int xCount, unsigned int yCount)</td></tr>
+<tr class="separator:a6c6dd842ee6fc7d818746fb564cc96b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afea3a7454c53317bd696efdec17d76a9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afea3a7454c53317bd696efdec17d76a9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteErrorMessage</b> (const wxString &amp;msg)</td></tr>
+<tr class="separator:afea3a7454c53317bd696efdec17d76a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047967db8aa587d480999f873077e2ea"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a047967db8aa587d480999f873077e2ea"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>WriteLogMessage</b> (const wxString &amp;msg, const wxTextAttr &amp;style=wxTextAttr(*wxBLACK))</td></tr>
+<tr class="separator:a047967db8aa587d480999f873077e2ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_prop_grid_frame_base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_prop_grid_frame_base')"><img src="closed.png" alt="-"/>&#160;Public 成员函数 继承自 <a class="el" href="class_prop_grid_frame_base.html">PropGridFrameBase</a></td></tr>
+<tr class="memitem:a47771957d6017132515598a4a3e781c0 inherit pub_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47771957d6017132515598a4a3e781c0"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PropGridFrameBase</b> (wxWindowID id, const wxString &amp;title, const wxPoint &amp;pos, const wxSize &amp;size)</td></tr>
+<tr class="separator:a47771957d6017132515598a4a3e781c0 inherit pub_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa094c258bb30b5e597dd9c3086bd92e2 inherit pub_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa094c258bb30b5e597dd9c3086bd92e2"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>SelectPropertyInPropertyGrid</b> (<a class="el" href="class_prop_data.html">PropData</a> *pPropData)</td></tr>
+<tr class="separator:aa094c258bb30b5e597dd9c3086bd92e2 inherit pub_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da41a079fd1ecd8f54bec245e6b2720 inherit pub_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0da41a079fd1ecd8f54bec245e6b2720"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StartPropertyGridUpdateTimer</b> (void)</td></tr>
+<tr class="separator:a0da41a079fd1ecd8f54bec245e6b2720 inherit pub_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6043d2b9aafb4fff7209d35d3e875686 inherit pub_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6043d2b9aafb4fff7209d35d3e875686"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>StopPropertyGridUpdateTimer</b> (void)</td></tr>
+<tr class="separator:a6043d2b9aafb4fff7209d35d3e875686 inherit pub_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected 成员函数</h2></td></tr>
+<tr class="memitem:a87aa1f344d462e6770db16c2cde90939"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a87aa1f344d462e6770db16c2cde90939"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>AppendCustomPropGridExecutionErrorMessage</b> (wxString &amp;msg) const </td></tr>
+<tr class="separator:a87aa1f344d462e6770db16c2cde90939"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57034c667d733512ce04baa935dfb9ba"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57034c667d733512ce04baa935dfb9ba"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>FeatureChangedCallbacksSupported</b> (void) const </td></tr>
+<tr class="separator:a57034c667d733512ce04baa935dfb9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a16a8fc6d2a0a8e7a744d9ebe54304b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a16a8fc6d2a0a8e7a744d9ebe54304b"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>FeatureHasChangedCallback</b> (<a class="el" href="classmv_i_m_p_a_c_t_1_1acquire_1_1_component.html">mvIMPACT::acquire::Component</a> c) const </td></tr>
+<tr class="separator:a1a16a8fc6d2a0a8e7a744d9ebe54304b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac54e19c02e8c7582d0e13a2ec74f8ae5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac54e19c02e8c7582d0e13a2ec74f8ae5"></a>
+virtual EDisplayFlags&#160;</td><td class="memItemRight" valign="bottom"><b>GetDisplayFlags</b> (void) const </td></tr>
+<tr class="separator:ac54e19c02e8c7582d0e13a2ec74f8ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7ead9bd67c28168c4432c045a0a3ee"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba7ead9bd67c28168c4432c045a0a3ee"></a>
+wxString&#160;</td><td class="memItemRight" valign="bottom"><b>GetDesktopPath</b> (void)</td></tr>
+<tr class="separator:aba7ead9bd67c28168c4432c045a0a3ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af32a0f56e9b3626492455110695dea24"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af32a0f56e9b3626492455110695dea24"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAction_DefaultDeviceInterface_Changed</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:af32a0f56e9b3626492455110695dea24"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1f7f0c31050ac780e07238080d206a1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae1f7f0c31050ac780e07238080d206a1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAction_DisplayConnectedDevicesOnly</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:ae1f7f0c31050ac780e07238080d206a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc581fdb9124877907fa6ceb39606572"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc581fdb9124877907fa6ceb39606572"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnConfigureImageDisplayCount</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:abc581fdb9124877907fa6ceb39606572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33be72ba8891f77444893014150216bd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33be72ba8891f77444893014150216bd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnActivateDisplay</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a33be72ba8891f77444893014150216bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ec60bb20a07b49787ada455b56b4f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a27ec60bb20a07b49787ada455b56b4f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBtnAbort</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a27ec60bb20a07b49787ada455b56b4f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cfdf662d220616b1abffb58c0783ce"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3cfdf662d220616b1abffb58c0783ce"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBtnUnlock</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ae3cfdf662d220616b1abffb58c0783ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d0ca0f5e5f740178feae5c3de3ea084"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d0ca0f5e5f740178feae5c3de3ea084"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBtnAcquire</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a6d0ca0f5e5f740178feae5c3de3ea084"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10ab945e732b9142b60d26b4219ecb59"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10ab945e732b9142b60d26b4219ecb59"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnBtnRecord</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a10ab945e732b9142b60d26b4219ecb59"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada65f27835c6da61b950e272a469a2bc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ada65f27835c6da61b950e272a469a2bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnIncDecRecordDisplay</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ada65f27835c6da61b950e272a469a2bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8be201c706a67cb02edcbea614e8bb8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8be201c706a67cb02edcbea614e8bb8"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUseDevice</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:ad8be201c706a67cb02edcbea614e8bb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f90897f4ca915590e4832f6b996808c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f90897f4ca915590e4832f6b996808c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotCBAOIFullMode</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a0f90897f4ca915590e4832f6b996808c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a666d720c72c9a0c0438618bdd116f390"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a666d720c72c9a0c0438618bdd116f390"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotCBProcessBayerParity</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a666d720c72c9a0c0438618bdd116f390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46c2c81ea8194bdbfcd00633d6d7b8b6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46c2c81ea8194bdbfcd00633d6d7b8b6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCapture_DefaultImageProcessingMode_Changed</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a46c2c81ea8194bdbfcd00633d6d7b8b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e4bdc5e5f43269a8fd7bbc0cd7919d9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e4bdc5e5f43269a8fd7bbc0cd7919d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCBEnableInfoPlot</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a7e4bdc5e5f43269a8fd7bbc0cd7919d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b40d5847e051c2002bc7bc30f14eafd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b40d5847e051c2002bc7bc30f14eafd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCBInfoPlotDifferences</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a3b40d5847e051c2002bc7bc30f14eafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22a84b6a905a00fb54877a54ded75c54"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22a84b6a905a00fb54877a54ded75c54"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCBInfoPlotAutoScale</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a22a84b6a905a00fb54877a54ded75c54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4db3f7d90f0d72efe5e8932692cf26dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4db3f7d90f0d72efe5e8932692cf26dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCBEnableFeatureValueVsTimePlot</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a4db3f7d90f0d72efe5e8932692cf26dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7110aa738fce6dc1ad4d002eb6a97249"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7110aa738fce6dc1ad4d002eb6a97249"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCBFeatureValueVsTimePlotDifferences</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a7110aa738fce6dc1ad4d002eb6a97249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e190b068cba52e0675e8d3ae52f22a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5e190b068cba52e0675e8d3ae52f22a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCBFeatureValueVsTimePlotAutoScale</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:ab5e190b068cba52e0675e8d3ae52f22a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a808e4a085510c8ee83183dbc55af23cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a808e4a085510c8ee83183dbc55af23cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnClose</b> (wxCloseEvent &amp;e)</td></tr>
+<tr class="separator:a808e4a085510c8ee83183dbc55af23cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa770cfe812af534de15f465eb3fcc063"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa770cfe812af534de15f465eb3fcc063"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnContinuousRecording</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aa770cfe812af534de15f465eb3fcc063"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a694a8aa5bcc854c7e8d169ee7d647487"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a694a8aa5bcc854c7e8d169ee7d647487"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDetailedRequestInformation</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a694a8aa5bcc854c7e8d169ee7d647487"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad38fe3c73d14c145ec8aea4c7b8f64e1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad38fe3c73d14c145ec8aea4c7b8f64e1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnDevComboTextChanged</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:ad38fe3c73d14c145ec8aea4c7b8f64e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacab2e0bae80815ea7ee613ee8133900"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacab2e0bae80815ea7ee613ee8133900"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnExportActiveDevice</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aacab2e0bae80815ea7ee613ee8133900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adeed059f1152e718929e6909d92ec796"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeed059f1152e718929e6909d92ec796"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAction_Exit</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:adeed059f1152e718929e6909d92ec796"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6cda23dc01781d2c9bf01bdd2138b8b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab6cda23dc01781d2c9bf01bdd2138b8b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIhChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:ab6cda23dc01781d2c9bf01bdd2138b8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a483352287d1e5c14c8354dca3c9e7dcb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a483352287d1e5c14c8354dca3c9e7dcb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIhTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a483352287d1e5c14c8354dca3c9e7dcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04309952bcd07c559a9e009c04ab5a7a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04309952bcd07c559a9e009c04ab5a7a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIwChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a04309952bcd07c559a9e009c04ab5a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a441fbb051ae7a817d341a8b950fd8f53"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a441fbb051ae7a817d341a8b950fd8f53"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIwTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a441fbb051ae7a817d341a8b950fd8f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1108d6b0d3ac04d41fcb9f942e009456"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1108d6b0d3ac04d41fcb9f942e009456"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIxChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a1108d6b0d3ac04d41fcb9f942e009456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6d822b0ca492fb1bae3751dfa058e6c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6d822b0ca492fb1bae3751dfa058e6c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIxTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:af6d822b0ca492fb1bae3751dfa058e6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67af72a1f4dce70881aaa84db52480eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67af72a1f4dce70881aaa84db52480eb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIyChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a67af72a1f4dce70881aaa84db52480eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae629fa811ea2a599cd924324c9163622"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae629fa811ea2a599cd924324c9163622"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotAOIyTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ae629fa811ea2a599cd924324c9163622"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7ddca8e55ebb17e0daa0b0274107c720"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7ddca8e55ebb17e0daa0b0274107c720"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlot_PlotSelectionChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a7ddca8e55ebb17e0daa0b0274107c720"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3ef1126a20bbc3ab515ef7c0873c01"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b3ef1126a20bbc3ab515ef7c0873c01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotHistoryDepthChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a4b3ef1126a20bbc3ab515ef7c0873c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3f02ec95554dee61e5d37cb8700f4fe"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3f02ec95554dee61e5d37cb8700f4fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotHistoryDepthTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ae3f02ec95554dee61e5d37cb8700f4fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba244b3679a98b2bd242d382f4b6d1c5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba244b3679a98b2bd242d382f4b6d1c5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotDrawStartChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:aba244b3679a98b2bd242d382f4b6d1c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9523db61aa6b0d85751bf8039323f1f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af9523db61aa6b0d85751bf8039323f1f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotDrawStartTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:af9523db61aa6b0d85751bf8039323f1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8045dd6ab123b5b80ca26b3c151a8447"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8045dd6ab123b5b80ca26b3c151a8447"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotDrawWindowChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a8045dd6ab123b5b80ca26b3c151a8447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98af39b7e6374d86633ede3da684c172"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98af39b7e6374d86633ede3da684c172"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotDrawWindowTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a98af39b7e6374d86633ede3da684c172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae03007db3a2df05dca4cfe9a9a8ecc91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae03007db3a2df05dca4cfe9a9a8ecc91"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotDrawStepWidthChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:ae03007db3a2df05dca4cfe9a9a8ecc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5912c0dbbae975c6fe15669e1839ca9"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad5912c0dbbae975c6fe15669e1839ca9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotDrawStepWidthTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ad5912c0dbbae975c6fe15669e1839ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09d2d2cecfcd86a2b38c733a1761038c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09d2d2cecfcd86a2b38c733a1761038c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotGridXStepsChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a09d2d2cecfcd86a2b38c733a1761038c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523b627e70461bda72c91d84b76610cc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a523b627e70461bda72c91d84b76610cc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotGridXStepsTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a523b627e70461bda72c91d84b76610cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7613b4d0c375e52963d078f5cd75d3d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7613b4d0c375e52963d078f5cd75d3d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotGridYStepsChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a7613b4d0c375e52963d078f5cd75d3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e6174cdb3017be7a460905935148881"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e6174cdb3017be7a460905935148881"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotGridYStepsTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a1e6174cdb3017be7a460905935148881"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a170695590c1498b854aae14f2608fdc4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a170695590c1498b854aae14f2608fdc4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotUpdateSpeedChanged</b> (wxSpinEvent &amp;)</td></tr>
+<tr class="separator:a170695590c1498b854aae14f2608fdc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a903740828675f843fa698445cb8187cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a903740828675f843fa698445cb8187cd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnAnalysisPlotUpdateSpeedTextChanged</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a903740828675f843fa698445cb8187cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab15667349dfde6edb32c49776dcbfcb1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab15667349dfde6edb32c49776dcbfcb1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFeatureChangedCallbackReceived</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ab15667349dfde6edb32c49776dcbfcb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2558a644fa0259b3e1aa6cf1490398d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2558a644fa0259b3e1aa6cf1490398d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHelp_About</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ac2558a644fa0259b3e1aa6cf1490398d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cfc3d9105dc087910241d65aa0f88f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cfc3d9105dc087910241d65aa0f88f7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHelp_DriverInformation</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a8cfc3d9105dc087910241d65aa0f88f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7eb64b9be51b100762cb744c05b22ceb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7eb64b9be51b100762cb744c05b22ceb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHelp_FindFeature</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a7eb64b9be51b100762cb744c05b22ceb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39236ae1ee310c49be5874e2beca19ed"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39236ae1ee310c49be5874e2beca19ed"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnHelp_OnlineDocumentation</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a39236ae1ee310c49be5874e2beca19ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab27d1a9ed17c64b60cd2becd6ee04036"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab27d1a9ed17c64b60cd2becd6ee04036"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImageTimeoutEvent</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ab27d1a9ed17c64b60cd2becd6ee04036"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a394f9e8de50c8c10ead045a8038f50"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a394f9e8de50c8c10ead045a8038f50"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImageCanvasSelected</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a2a394f9e8de50c8c10ead045a8038f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1cc84dd95d35f1d2959100232d20b04"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab1cc84dd95d35f1d2959100232d20b04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImageCanvasFullScreen</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ab1cc84dd95d35f1d2959100232d20b04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a91b3bad078667cfd7780940d6be2d80d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a91b3bad078667cfd7780940d6be2d80d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImageInfo</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a91b3bad078667cfd7780940d6be2d80d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf55f8147ea5e8018c6f5eec475b4241"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf55f8147ea5e8018c6f5eec475b4241"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnImageReady</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:adf55f8147ea5e8018c6f5eec475b4241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad015438bd5479213972cccde44c3e727"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_prop_view_frame.html#ad015438bd5479213972cccde44c3e727">OnImageSkipped</a> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ad015438bd5479213972cccde44c3e727"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a748decc0fa8a7749879ce4b76076c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a748decc0fa8a7749879ce4b76076c6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInfoPlot_PlotSelectionComboTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a6a748decc0fa8a7749879ce4b76076c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28154531a83e5270c05214d2dae092d7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28154531a83e5270c05214d2dae092d7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInfoPlotUpdateHistoryDepthChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a28154531a83e5270c05214d2dae092d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa69ec8f23c7a88f6f2d1accc8f5b48d4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa69ec8f23c7a88f6f2d1accc8f5b48d4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInfoPlotUpdateHistoryDepthTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aa69ec8f23c7a88f6f2d1accc8f5b48d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2fb8ec3307cbc85ff1b33d70a1adc35"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2fb8ec3307cbc85ff1b33d70a1adc35"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInfoPlotUpdateSpeedChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:af2fb8ec3307cbc85ff1b33d70a1adc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa1938f723553edfeef2966ddf4cc224"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa1938f723553edfeef2966ddf4cc224"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnInfoPlotUpdateSpeedTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:afa1938f723553edfeef2966ddf4cc224"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3e30be4a88a453d86108ff6f454ff6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9d3e30be4a88a453d86108ff6f454ff6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFeatureValueVsTimePlot_PlotSelectionComboTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a9d3e30be4a88a453d86108ff6f454ff6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911fb66f3582d08d7ceb53233767bd0c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a911fb66f3582d08d7ceb53233767bd0c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFeatureValueVsTimePlotUpdateHistoryDepthChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:a911fb66f3582d08d7ceb53233767bd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cb4d1f17c3c55cfb811a75f376b925d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb4d1f17c3c55cfb811a75f376b925d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFeatureValueVsTimePlotUpdateHistoryDepthTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a7cb4d1f17c3c55cfb811a75f376b925d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd6a10841006c505e89865a8957a209c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd6a10841006c505e89865a8957a209c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFeatureValueVsTimePlotUpdateSpeedChanged</b> (wxSpinEvent &amp;e)</td></tr>
+<tr class="separator:acd6a10841006c505e89865a8957a209c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf959ae552a464dd432239ee03998f94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adf959ae552a464dd432239ee03998f94"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnFeatureValueVsTimePlotUpdateSpeedTextChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:adf959ae552a464dd432239ee03998f94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ce18b32a2dde924331770973cf4d9a6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ce18b32a2dde924331770973cf4d9a6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLiveModeAborted</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a3ce18b32a2dde924331770973cf4d9a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6787295e922eaf57eb0a925fb6a4a861"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6787295e922eaf57eb0a925fb6a4a861"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLoadActiveDevice</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a6787295e922eaf57eb0a925fb6a4a861"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae06f3c28171450cbfdccc4b96bb9d166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae06f3c28171450cbfdccc4b96bb9d166"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLoadActiveDeviceFromFile</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ae06f3c28171450cbfdccc4b96bb9d166"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b8680aed1338f460f59530bd3ecf8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84b8680aed1338f460f59530bd3ecf8d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLoadCurrentProduct</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a84b8680aed1338f460f59530bd3ecf8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade507456da51c5aa03ab2b2815a7a74d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade507456da51c5aa03ab2b2815a7a74d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLoadFromDefault</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ade507456da51c5aa03ab2b2815a7a74d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2017f1f57caadee3f7eb10c76b44a0a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2017f1f57caadee3f7eb10c76b44a0a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnLoadImage</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ab2017f1f57caadee3f7eb10c76b44a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2176e3e920c6e30861fa269e7882c62"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2176e3e920c6e30861fa269e7882c62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnManageSettings</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ac2176e3e920c6e30861fa269e7882c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58a6c64d69b4229e7bdc44c60f3a4270"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58a6c64d69b4229e7bdc44c60f3a4270"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnMonitorImageClosed</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a58a6c64d69b4229e7bdc44c60f3a4270"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b3b5eda144c4ebcb0d58814eefee89c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b3b5eda144c4ebcb0d58814eefee89c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnNotebookPageChanged</b> (wxNotebookEvent &amp;e)</td></tr>
+<tr class="separator:a9b3b5eda144c4ebcb0d58814eefee89c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb77908cd95bafc0b1ddaa018927f233"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acb77908cd95bafc0b1ddaa018927f233"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnNBDisplayMethodPageChanged</b> (wxNotebookEvent &amp;e)</td></tr>
+<tr class="separator:acb77908cd95bafc0b1ddaa018927f233"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a854fbec9aada37dd17545006591a7990"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a854fbec9aada37dd17545006591a7990"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropReadFromFile</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a854fbec9aada37dd17545006591a7990"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4e51d1367ec0f879c21274925f3bc9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4e51d1367ec0f879c21274925f3bc9b"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropWriteToFile</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ab4e51d1367ec0f879c21274925f3bc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6704a436e9449f38e3f14f8f2ceebc8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6704a436e9449f38e3f14f8f2ceebc8e"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropAttachCallback</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a6704a436e9449f38e3f14f8f2ceebc8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a707ad570b277543bef20d090ee58426a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a707ad570b277543bef20d090ee58426a"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropDetachCallback</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a707ad570b277543bef20d090ee58426a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a131d6882ab8fa2fde0d2d1e526690ea3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a131d6882ab8fa2fde0d2d1e526690ea3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropPlotInFeatureValueVsTimePlot</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a131d6882ab8fa2fde0d2d1e526690ea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeff700242ec7699cbbccfefe11ddd1b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeff700242ec7699cbbccfefe11ddd1b7"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertyChangedCustom</b> (wxPropertyGridEvent &amp;)</td></tr>
+<tr class="separator:aeff700242ec7699cbbccfefe11ddd1b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7349c43b3e6d12d07966a96b9d99cde3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7349c43b3e6d12d07966a96b9d99cde3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertyGridTimer</b> (void)</td></tr>
+<tr class="separator:a7349c43b3e6d12d07966a96b9d99cde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31b5451804902180df7656ab9a92018f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31b5451804902180df7656ab9a92018f"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertyRightClickedCustom</b> (wxPropertyGridEvent &amp;)</td></tr>
+<tr class="separator:a31b5451804902180df7656ab9a92018f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2923446c7b70d742ec58f0476d2029d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2923446c7b70d742ec58f0476d2029d"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertySelectedCustom</b> (wxPropertyGridEvent &amp;e)</td></tr>
+<tr class="separator:af2923446c7b70d742ec58f0476d2029d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f4486de6369aea4d339ce0015e89da"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16f4486de6369aea4d339ce0015e89da"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRefreshAOIControls</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a16f4486de6369aea4d339ce0015e89da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a508aac7e62316b56f43041b15e1ff5cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a508aac7e62316b56f43041b15e1ff5cb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnRefreshCurrentPixelData</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a508aac7e62316b56f43041b15e1ff5cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde3a05d51436429c9ca6cb84fa2c700"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acde3a05d51436429c9ca6cb84fa2c700"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveActiveDevice</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:acde3a05d51436429c9ca6cb84fa2c700"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae69a3e94a3fddf52b52e44cb1d3aa6e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae69a3e94a3fddf52b52e44cb1d3aa6e4"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveCurrentProduct</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ae69a3e94a3fddf52b52e44cb1d3aa6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c836d8eac4fc42f6169252dcb91cf28"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c836d8eac4fc42f6169252dcb91cf28"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveImage</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a8c836d8eac4fc42f6169252dcb91cf28"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9322540c592b388b909fc87ee0344740"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9322540c592b388b909fc87ee0344740"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveImageSequenceToFiles</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a9322540c592b388b909fc87ee0344740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2518d19b06414c362b3a5b7f575ba355"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2518d19b06414c362b3a5b7f575ba355"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveImageSequenceToStream</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a2518d19b06414c362b3a5b7f575ba355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e016d4a150e289b355c09e3698e758c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e016d4a150e289b355c09e3698e758c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSaveToDefault</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a8e016d4a150e289b355c09e3698e758c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca2784286623468b37dba7ffe0f0bbc1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca2784286623468b37dba7ffe0f0bbc1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSequenceReady</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aca2784286623468b37dba7ffe0f0bbc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027c64a2666bf5ca381dab1d1ecc6ac3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a027c64a2666bf5ca381dab1d1ecc6ac3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_AllowFastSingleFrameAcquisition</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a027c64a2666bf5ca381dab1d1ecc6ac3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaac23185bb52ebff1b0094e89d33f751"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaac23185bb52ebff1b0094e89d33f751"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_Analysis_ShowControls</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aaac23185bb52ebff1b0094e89d33f751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ee380fb9cf1ebc857571d3c15826b2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6ee380fb9cf1ebc857571d3c15826b2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_Analysis_SynchronizeAOIs</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aa6ee380fb9cf1ebc857571d3c15826b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f1f439589678003172391020514856"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16f1f439589678003172391020514856"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_PropGrid_CreateEditorsWithSlider</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a16f1f439589678003172391020514856"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2ff3625369b2feb9f51be909c68026"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e2ff3625369b2feb9f51be909c68026"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_PropGrid_DisplayToolTips</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a3e2ff3625369b2feb9f51be909c68026"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a961e3f23e8ad942ff5f7627cb241eb81"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a961e3f23e8ad942ff5f7627cb241eb81"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_PropGrid_Show</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a961e3f23e8ad942ff5f7627cb241eb81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae26d328585deeed5d5236c708f86ab86"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae26d328585deeed5d5236c708f86ab86"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_PropGrid_UpdateViewMode</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:ae26d328585deeed5d5236c708f86ab86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f186e68e28dbfd3a9b4c259b6e8728b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f186e68e28dbfd3a9b4c259b6e8728b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_PropGrid_UseSelectorGrouping</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a4f186e68e28dbfd3a9b4c259b6e8728b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22ab91fbf6438dd0534edba30af1837c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a22ab91fbf6438dd0534edba30af1837c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_PropGrid_ViewModeChanged</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a22ab91fbf6438dd0534edba30af1837c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb080f720743e568c15afbe8e4cd4ae0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb080f720743e568c15afbe8e4cd4ae0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCapture_CaptureSettings_CreateCaptureSetting</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:adb080f720743e568c15afbe8e4cd4ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4a8090688e540d8e50740d19e704c55"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa4a8090688e540d8e50740d19e704c55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCapture_CaptureSettings_CaptureSettingHierarchy</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aa4a8090688e540d8e50740d19e704c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07447bc62deedbde04d543887cf30be1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07447bc62deedbde04d543887cf30be1"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCapture_CaptureSettings_AssignToDisplays</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a07447bc62deedbde04d543887cf30be1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29f1dac0f7986f859f114277197a3fb0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29f1dac0f7986f859f114277197a3fb0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnCapture_CaptureSettings_UsageMode_Changed</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a29f1dac0f7986f859f114277197a3fb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a198e5e4179c8e1250cc30e2c04191ad3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a198e5e4179c8e1250cc30e2c04191ad3"></a>
+virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimerCustom</b> (wxTimerEvent &amp;)</td></tr>
+<tr class="separator:a198e5e4179c8e1250cc30e2c04191ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a382738ee168f7899a4a192df8862a914"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a382738ee168f7899a4a192df8862a914"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizard_Open</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a382738ee168f7899a4a192df8862a914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80c7d4f89ac293a3f9a9f220bb3867aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80c7d4f89ac293a3f9a9f220bb3867aa"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_ColorCorrection</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a80c7d4f89ac293a3f9a9f220bb3867aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02e507f571a879acd813efdf1c11634d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a02e507f571a879acd813efdf1c11634d"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_FileAccessControl_UploadFile</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a02e507f571a879acd813efdf1c11634d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ce017d2b5428743ef7ce41204d69f25"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ce017d2b5428743ef7ce41204d69f25"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_FileAccessControl_DownloadFile</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a5ce017d2b5428743ef7ce41204d69f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c5b1dc3217a9b1387de934116cfa137"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c5b1dc3217a9b1387de934116cfa137"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_LensControl</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a6c5b1dc3217a9b1387de934116cfa137"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba1fe4eaec71a6d27370c7012058463e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba1fe4eaec71a6d27370c7012058463e"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_LUTControl</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:aba1fe4eaec71a6d27370c7012058463e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49760f43e5fcf485c58a968031fd9d00"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49760f43e5fcf485c58a968031fd9d00"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_QuickSetup</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a49760f43e5fcf485c58a968031fd9d00"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af9f63895e44035f6884a12327de3dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1af9f63895e44035f6884a12327de3dd"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnWizards_SequencerControl</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a1af9f63895e44035f6884a12327de3dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a109c0882203752ad90c9d4f70e9b5232"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a109c0882203752ad90c9d4f70e9b5232"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_SetUpdateFrequency</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a109c0882203752ad90c9d4f70e9b5232"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0edcb71ef4f18206348f2d99255b030"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0edcb71ef4f18206348f2d99255b030"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSettings_ShowQuickSetupOnUse</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:ab0edcb71ef4f18206348f2d99255b030"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69b848739097eb84045e81ba773c47f2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69b848739097eb84045e81ba773c47f2"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSetupCaptureQueueDepth</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a69b848739097eb84045e81ba773c47f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a474749308efdf3cd6e9de4481f6970"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8a474749308efdf3cd6e9de4481f6970"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSetupRecordSequenceSize</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a8a474749308efdf3cd6e9de4481f6970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad93db0bba1efde221c07a8710a6b2824"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad93db0bba1efde221c07a8710a6b2824"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSetupHardDiscRecording</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ad93db0bba1efde221c07a8710a6b2824"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9517486ae53a2f25b7c59550be2e0f2c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9517486ae53a2f25b7c59550be2e0f2c"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShowIncompleteFrames</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a9517486ae53a2f25b7c59550be2e0f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a782ce63c102140c44161d3f61cb0f926"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a782ce63c102140c44161d3f61cb0f926"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShowMonitorDisplay</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a782ce63c102140c44161d3f61cb0f926"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee594a8d3d5b06c7a475876ea52a03e0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aee594a8d3d5b06c7a475876ea52a03e0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShowStatusBar</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aee594a8d3d5b06c7a475876ea52a03e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4075372d288ca9424807ba7fa1335068"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4075372d288ca9424807ba7fa1335068"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShowLeftToolBar</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a4075372d288ca9424807ba7fa1335068"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaa58f108586098138fa00eaab190f46"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaaa58f108586098138fa00eaab190f46"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnShowUpperToolBar</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:aaaa58f108586098138fa00eaab190f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c2c57ff57beb71d5446ec4f63a2fb80"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c2c57ff57beb71d5446ec4f63a2fb80"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSize</b> (wxSizeEvent &amp;e)</td></tr>
+<tr class="separator:a4c2c57ff57beb71d5446ec4f63a2fb80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b575a724320e51b9115197dd4cd212a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b575a724320e51b9115197dd4cd212a"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSLRecordDisplay</b> (wxScrollEvent &amp;e)</td></tr>
+<tr class="separator:a3b575a724320e51b9115197dd4cd212a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e323126192c8b790e23564f8349f06b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e323126192c8b790e23564f8349f06b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnSplitterSashPosChanged</b> (wxSplitterEvent &amp;e)</td></tr>
+<tr class="separator:a2e323126192c8b790e23564f8349f06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad32138c3aa45e3f3a4655164fbb9bd75"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad32138c3aa45e3f3a4655164fbb9bd75"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnToggleDisplayWindowSize</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ad32138c3aa45e3f3a4655164fbb9bd75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6704edf12d0571b28b7f104ee8dca07f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6704edf12d0571b28b7f104ee8dca07f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnToggleFullScreenMode</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a6704edf12d0571b28b7f104ee8dca07f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa231f12dd2f8980ab1d3a8c990890105"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa231f12dd2f8980ab1d3a8c990890105"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUpdateDeviceList</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:aa231f12dd2f8980ab1d3a8c990890105"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a754b55b15c204cac2d8f96b9c7bf8115"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a754b55b15c204cac2d8f96b9c7bf8115"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnUserExperienceComboTextChanged</b> (wxCommandEvent &amp;)</td></tr>
+<tr class="separator:a754b55b15c204cac2d8f96b9c7bf8115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4548b9c5227f7df0252359338a165d4b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4548b9c5227f7df0252359338a165d4b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>SetupDlgControls</b> (void)</td></tr>
+<tr class="separator:a4548b9c5227f7df0252359338a165d4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac313f8ba6b32c4c4e6c1e0e06f59f9c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac313f8ba6b32c4c4e6c1e0e06f59f9c4"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShowPropGridMethodExecutionErrors</b> (void) const </td></tr>
+<tr class="separator:ac313f8ba6b32c4c4e6c1e0e06f59f9c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4a710ae941bf1d31bd653f9803a6b13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab4a710ae941bf1d31bd653f9803a6b13"></a>
+virtual bool&#160;</td><td class="memItemRight" valign="bottom"><b>ShowFeatureChangeTimeConsumption</b> (void) const </td></tr>
+<tr class="separator:ab4a710ae941bf1d31bd653f9803a6b13"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_class_prop_grid_frame_base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_prop_grid_frame_base')"><img src="closed.png" alt="-"/>&#160;Protected 成员函数 继承自 <a class="el" href="class_prop_grid_frame_base.html">PropGridFrameBase</a></td></tr>
+<tr class="memitem:ae594c1b6714229567d52ca4349fbc805 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae594c1b6714229567d52ca4349fbc805"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ConfigureToolTipsForPropertyGrids</b> (const bool boEnable)</td></tr>
+<tr class="separator:ae594c1b6714229567d52ca4349fbc805 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57db974b23c338c37b16c08b63cbfd07 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57db974b23c338c37b16c08b63cbfd07"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandPropertyRecursively</b> (wxPGProperty *id)</td></tr>
+<tr class="separator:a57db974b23c338c37b16c08b63cbfd07 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4cb34e1cb6bd12f518889e507906b29 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4cb34e1cb6bd12f518889e507906b29"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>ExpandPropertyTreeToDeviceSettings</b> (void)</td></tr>
+<tr class="separator:af4cb34e1cb6bd12f518889e507906b29 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f1342755ca6de1ef9588c8f13f134a2 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f1342755ca6de1ef9588c8f13f134a2"></a>
+wxPropertyGrid *&#160;</td><td class="memItemRight" valign="bottom"><b>GetPropertyGrid</b> (void)</td></tr>
+<tr class="separator:a5f1342755ca6de1ef9588c8f13f134a2 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49596726a654017a03afae5796d2051d inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a49596726a654017a03afae5796d2051d"></a>
+wxPropertyGridPage *&#160;</td><td class="memItemRight" valign="bottom"><b>GetSelectedPropertyGridPage</b> (void)</td></tr>
+<tr class="separator:a49596726a654017a03afae5796d2051d inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3cd5ee5a62997b9867b007c13afb399 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae3cd5ee5a62997b9867b007c13afb399"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnExecutePropGridMethod</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ae3cd5ee5a62997b9867b007c13afb399 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4add68ed57186fde59fec3fd38a691bc inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4add68ed57186fde59fec3fd38a691bc"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpDetailedFeatureInfo</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a4add68ed57186fde59fec3fd38a691bc inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd696bcead9ffb7d5464495841cbf208 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd696bcead9ffb7d5464495841cbf208"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropForceRefresh</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:abd696bcead9ffb7d5464495841cbf208 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2192393f6639c1ae27b34e1cd1435669 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2192393f6639c1ae27b34e1cd1435669"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropCopyToClipboard</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a2192393f6639c1ae27b34e1cd1435669 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade214d0abe64eb87b758845d1d05b7ec inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade214d0abe64eb87b758845d1d05b7ec"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropSetFromClipboard</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ade214d0abe64eb87b758845d1d05b7ec inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9b211e84bb0266476d236ce35269c16 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9b211e84bb0266476d236ce35269c16"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropRestoreDefault</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ad9b211e84bb0266476d236ce35269c16 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad62082c3983ece46f9cd14d8bf19734b inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad62082c3983ece46f9cd14d8bf19734b"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropAppendValue</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ad62082c3983ece46f9cd14d8bf19734b inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab75b22a172b3f8e7bbbadb19b7a81a55 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab75b22a172b3f8e7bbbadb19b7a81a55"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropDeleteValue</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:ab75b22a172b3f8e7bbbadb19b7a81a55 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1146653c8eb4a5fc2571b1046bdaa15 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af1146653c8eb4a5fc2571b1046bdaa15"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropSetMultiple_FixedValue</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:af1146653c8eb4a5fc2571b1046bdaa15 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a46bc09d8654fe2b8c24c2eba681357 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a46bc09d8654fe2b8c24c2eba681357"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPopUpPropSetMultiple_FromToRange</b> (wxCommandEvent &amp;e)</td></tr>
+<tr class="separator:a5a46bc09d8654fe2b8c24c2eba681357 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b2d55519765b6b1de4fc681f9a12ee0 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b2d55519765b6b1de4fc681f9a12ee0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertyChanged</b> (wxPropertyGridEvent &amp;e)</td></tr>
+<tr class="separator:a2b2d55519765b6b1de4fc681f9a12ee0 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0afb2cdd3da1a2844d2c3a89ef6be719 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_prop_grid_frame_base.html#a0afb2cdd3da1a2844d2c3a89ef6be719">OnPropertyRightClicked</a> (wxPropertyGridEvent &amp;e)</td></tr>
+<tr class="separator:a0afb2cdd3da1a2844d2c3a89ef6be719 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e5c4a2684721fe11ebc1f7802aa850 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58e5c4a2684721fe11ebc1f7802aa850"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertyGridItemExpandedOrCollapsed</b> (wxPropertyGridEvent &amp;)</td></tr>
+<tr class="separator:a58e5c4a2684721fe11ebc1f7802aa850 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac01aa2a2348a0bfb1bf99a42700b38bb inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac01aa2a2348a0bfb1bf99a42700b38bb"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnPropertySelected</b> (wxPropertyGridEvent &amp;e)</td></tr>
+<tr class="separator:ac01aa2a2348a0bfb1bf99a42700b38bb inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fafdb9b7eeb935faadaed67dd334086 inherit pro_methods_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5fafdb9b7eeb935faadaed67dd334086"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>OnTimer</b> (wxTimerEvent &amp;e)</td></tr>
+<tr class="separator:a5fafdb9b7eeb935faadaed67dd334086 inherit pro_methods_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+额外继承的成员函数</h2></td></tr>
+<tr class="inherit_header pro_types_class_prop_grid_frame_base"><td colspan="2" onclick="javascript:toggleInherit('pro_types_class_prop_grid_frame_base')"><img src="closed.png" alt="-"/>&#160;Protected 类型 继承自 <a class="el" href="class_prop_grid_frame_base.html">PropGridFrameBase</a></td></tr>
+<tr class="memitem:abf93ba6a2caf761a755c4a869f982f5b inherit pro_types_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf93ba6a2caf761a755c4a869f982f5b"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TTimerEvent</b> { <b>teListUpdate</b>, 
+<b>teCUSTOM_ID</b>
+ }</td></tr>
+<tr class="separator:abf93ba6a2caf761a755c4a869f982f5b inherit pro_types_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65687054c3cdb55081be11710833210a inherit pro_types_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65687054c3cdb55081be11710833210a"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>TMenuItemBase</b> { <br />
+&#160;&#160;<b>widPropertyGridManager</b> = 1, 
+<b>miPopUpMethExec</b>, 
+<b>miPopUpPropForceRefresh</b>, 
+<b>miPopUpPropCopyToClipboard</b>, 
+<br />
+&#160;&#160;<b>miPopUpPropSetFromClipboard</b>, 
+<b>miPopUpPropRestoreDefault</b>, 
+<b>miPopUpPropReadFromFile</b>, 
+<b>miPopUpPropWriteToFile</b>, 
+<br />
+&#160;&#160;<b>miPopUpPropAttachCallback</b>, 
+<b>miPopUpPropDetachCallback</b>, 
+<b>miPopUpPropPlotInFeatureValueVsTimePlot</b>, 
+<b>miPopUpPropAppendValue</b>, 
+<br />
+&#160;&#160;<b>miPopUpPropDeleteValue</b>, 
+<b>miPopUpPropSetMultiple</b>, 
+<b>miPopUpPropSetMultiple_FixedValue</b>, 
+<b>miPopUpPropSetMultiple_FromToRange</b>, 
+<br />
+&#160;&#160;<b>miPopUpDetailedFeatureInfo</b>, 
+<b>mibLAST</b>
+<br />
+ }</td></tr>
+<tr class="separator:a65687054c3cdb55081be11710833210a inherit pro_types_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc2ebbef6e9fad54aefe03a6900fc3d2 inherit pro_types_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afc2ebbef6e9fad54aefe03a6900fc3d2"></a>enum &#160;</td><td class="memItemRight" valign="bottom">{ <b>DEFAULT_PROP_GRID_UPDATE_PERIOD</b> = 750
+ }</td></tr>
+<tr class="separator:afc2ebbef6e9fad54aefe03a6900fc3d2 inherit pro_types_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_class_prop_grid_frame_base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_prop_grid_frame_base')"><img src="closed.png" alt="-"/>&#160;Protected 属性 继承自 <a class="el" href="class_prop_grid_frame_base.html">PropGridFrameBase</a></td></tr>
+<tr class="memitem:a7e4faba40d756a69d1561418543856e0 inherit pro_attribs_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7e4faba40d756a69d1561418543856e0"></a>
+wxPropertyGridManager *&#160;</td><td class="memItemRight" valign="bottom"><b>m_pPropGridManager</b></td></tr>
+<tr class="separator:a7e4faba40d756a69d1561418543856e0 inherit pro_attribs_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a348afa385359fe4b0317eb792e4ee7fb inherit pro_attribs_class_prop_grid_frame_base"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a348afa385359fe4b0317eb792e4ee7fb"></a>
+wxStopWatch&#160;</td><td class="memItemRight" valign="bottom"><b>m_stopWatch</b></td></tr>
+<tr class="separator:a348afa385359fe4b0317eb792e4ee7fb inherit pro_attribs_class_prop_grid_frame_base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员函数说明</h2>
+<a class="anchor" id="ad015438bd5479213972cccde44c3e727"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void PropViewFrame::OnImageSkipped </td>
+          <td>(</td>
+          <td class="paramtype">wxCommandEvent &amp;&#160;</td>
+          <td class="paramname"><em>e</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000005">待办事项:</a></b></dt><dd>handle 'sequencerSetActive -&gt; Display' here as well? </dd></dl>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>apps/mvPropView/<a class="el" href="_prop_view_frame_8h_source.html">PropViewFrame.h</a></li>
+<li>apps/mvPropView/PropViewFrame.cpp</li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_prop_view_frame.html">PropViewFrame</a></li>
+    <li class="footer">生成于 2017年 三月 19日 星期日 21:42:21 , 为 mvIMPACT使用 
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.8.7 </li>
+  </ul>
+</div>
+</body>
+</html>
